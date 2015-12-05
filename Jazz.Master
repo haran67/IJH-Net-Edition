@@ -1,0 +1,238 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
+<%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Marte5" />
+    <!-- Stylesheets
+	============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
+    <!-- Da scambiare in rilascio finale con la versione CSS compilata -->
+    <link rel="stylesheet" href="/custom.less" type="text/less" />
+    <!-- ============================================================= -->
+    <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+    <!-- External JavaScripts
+	============================================= -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/plugins.js"></script>
+    <!-- Compila sul client i file LESS. Da commentare (o eliminare del tutto) in rilascio finale con la versione CSS compilata -->
+    <!--script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script-->
+    <script type="text/javascript" src="/js/less.min.js"></script>
+    <!-- Document Title
+	============================================= -->
+    <title>Italian Jazz Hub</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="stretched sticky-footer">
+    <form id="frmPrincipale" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true" EnablePageMethods="true"
+        EnableScriptLocalization="true" AsyncPostBackTimeout="3600" ></telerik:RadScriptManager>
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+        <!-- Header
+		============================================= -->
+        <header id="header" class="transparent-header semi-transparent dark">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+					============================================= -->
+                    <div id="logo">
+                        <a href="/index.aspx" class="standard-logo" data-dark-logo="/images/logo-dark.png"><img src="/images/logo.png" alt="Canvas Logo"></a>
+                        <a href="/index.aspx" class="retina-logo" data-dark-logo="/images/logo-dark@2x.png"><img src="/images/logo@2x.png" alt="Canvas Logo"></a>
+                    </div>
+                    <!-- #logo end -->
+
+                    <!-- Primary Navigation
+					============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul>
+                            <li>
+                                <a href="/index.aspx">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/chisiamo.aspx">
+                                    Chi Siamo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contatti.aspx">
+                                    Contatti
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Top Cart
+						============================================= -->
+                        <div id="top-cart" style="display: none;">
+                            <a href="#" id="top-cart-trigger"><i class="icon-user"></i><span>5</span></a>
+                            <div class="top-cart-content">
+                                <div class="top-cart-title">
+                                    <h4>Attività</h4>
+                                </div>
+                                <div class="top-cart-items">
+                                    <div class="top-cart-item clearfix">
+                                        <div class="top-cart-item-desc">
+                                            <a href="#">Hai <strong>5</strong> nuovi commenti</a>
+                                            <a href="#">Hai <strong>4</strong> nuovi like</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="top-cart-action clearfix">
+                                    <button class="btn btn-primary btn-sm">Vedi tutto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #top-cart end -->
+
+                        <!-- Top Search
+						============================================= 
+						<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							</form>
+						</div> #top-search end -->
+
+                    </nav>
+                    <!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- #header end -->
+        <!-- Page Title
+		============================================= -->
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+        <!-- #page-title end -->
+        <!-- Content
+		============================================= -->
+        <section id="content">
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+        <!-- #content end -->
+        <!-- Footer
+		============================================= -->
+
+        <footer id="footer" class="dark nopadding nomargin">
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        <div class="widget clearfix">
+
+                            <img src="/images/footer-widget-logo.png" alt="" class="footer-logo">
+
+                            <div>
+                                <h4 class="nomargin">IMF Foundation</h4>
+                                <h5 class="nomargin">International Music Festival Foundation</h5>
+                                <div class="divider nomargin"><i class="icon-address"></i></div>
+                                <address>
+                                    <strong>Sede operativa:</strong><br>
+                                    Via Giuseppe Sacconi, 19 - Lotto G<br>
+                                    00196 roma<br>
+                                </address>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col_half col_last tright">
+                        <div class="fright clearfix">
+                            <a href="#" class="social-icon si-small si-borderless si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-gplus">
+                                <i class="icon-gplus"></i>
+                                <i class="icon-gplus"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                                <i class="icon-pinterest"></i>
+                                <i class="icon-pinterest"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-vimeo">
+                                <i class="icon-vimeo"></i>
+                                <i class="icon-vimeo"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-yahoo">
+                                <i class="icon-yahoo"></i>
+                                <i class="icon-yahoo"></i>
+                            </a>
+
+                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045<span class="middot"></span>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- #copyrights end -->
+
+        </footer>
+    <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-angle-up">
+    </div>
+    <!-- Footer Scripts
+	============================================= -->
+    <script type="text/javascript" src="/js/functions.js"></script>
+    </form>
+    <asp:ContentPlaceHolder ID="script" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>

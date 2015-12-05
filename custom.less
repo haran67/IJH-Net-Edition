@@ -1,0 +1,123 @@
+// out: custom.css, compress: true, strictMath: false
+
+@import "style.less";
+@import "less/dark.less";
+
+@screen-sm-min : 768px;
+@screen-md-min : 992px;
+@screen-lg-min : 1200px;
+
+@theme-color: #1D5268;
+
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: @screen-sm-min) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
+}
+
+
+// custom button style
+
+.button.button-bg {
+    background-image: url(images/custom/jazz-texture-white.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
+}
+
+.jazz-texture-white {
+    background-image: url(images/custom/jazz-texture-white.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: auto;
+}
+
+.panel.panel-bg {
+    background-image: url(images/custom/paint-texture.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.jazz-texture-red {
+    background-image: url(images/custom/jazz-texture-red.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.spray-texture {
+    background-image: url(images/custom/paint-texture.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
+.tab-nav.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+.tab-nav.nav-justified > li {
+    float: none;
+}
+.tab-nav.nav-justified > li > a {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.tab-nav.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (min-width: 768px) {
+    .tab-nav.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .tab-nav.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+.tab-nav.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+.tab-nav.nav-justified > .active > a,
+.tab-nav.nav-justified > .active > a:hover,
+.tab-nav.nav-justified > .active > a:focus {
+    border: 1px solid #dddddd;
+}
+@media (min-width: @screen-sm-min) {
+    .tab-nav.nav-justified > li > a {
+        border-bottom: 1px solid #dddddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .tab-nav.nav-justified > .active > a,
+    .tab-nav.nav-justified > .active > a:hover,
+    .tab-nav.nav-justified > .active > a:focus {
+        border-bottom-color: #ffffff;
+    }
+}
