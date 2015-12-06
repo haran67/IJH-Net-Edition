@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="ChiSiamo.aspx.vb" Inherits="JazzHub_Web.ChiSiamo" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="ChiSiamo.aspx.vb" Inherits="JazzHub_Web.ChiSiamo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
@@ -32,8 +32,8 @@
 
             <div class="row clearfix">
 
-                <h3 style="font-weight: normal"><strong>Italian Jazz Hub</strong> è un progetto di <strong>promozione internazionale del jazz italiano, un meeting-expo virtuale di settore</strong> che permetterà ai musicisti e addetti ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso filmati, teaser e videoclip.</h3>
-                <h3 style="font-weight: normal"><strong>Italian Jazz Hub</strong> è un’iniziativa firmata da <strong>IMF Foundation</strong>, già produttrice del roma jazz festival e si avvale della partnership editoriale di <strong>jazzit</strong>.</h3>
+                <h3 style="font-weight: normal"><strong>Italian Jazz Hub</strong> &egrave; un progetto di <strong>promozione internazionale del jazz italiano, un meeting-expo virtuale di settore</strong> che permetter&agrave; ai musicisti e addetti ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso filmati, teaser e videoclip.</h3>
+                <h3 style="font-weight: normal"><strong>Italian Jazz Hub</strong> &egrave; un'iniziativa firmata da <strong>IMF Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership editoriale di <strong>jazzit</strong>.</h3>
             </div>
 
         </div>
@@ -55,8 +55,8 @@
 
                 <div class="col_full">
                     <h3 style="font-weight: normal"><strong>Italian Jazz Hub</strong> rappresenta una straordinaria <strong>occasione per fare networking con utenti profilati</strong> e si rappresenta come una <strong>fiera di settore di nuova generazione</strong>.</h3>
-                    <h3 style="font-weight: normal">Si potranno <strong>trovare offerte di lavoro</strong>, si potranno <strong>comunicare day-off</strong> e <strong>nuove produzioni discografiche</strong>; si potranno creare nuovi contatti e si potrà accedere a informazioni di settore; <strong>si potranno attivare collaborazioni professionali</strong> e occasioni di <strong>business</strong>.</h3>
-                    <h3 style="font-weight: normal"><strong>Italian Jazz Hub</strong> pubblicherà, con cadenza settimanale, una classifica di video più visti e apprezzati.</h3>
+                    <h3 style="font-weight: normal">Si potranno <strong>trovare offerte di lavoro</strong>, si potranno <strong>comunicare day-off</strong> e <strong>nuove produzioni discografiche</strong>; si potranno creare nuovi contatti e si potr&acute;; accedere a informazioni di settore; <strong>si potranno attivare collaborazioni professionali</strong> e occasioni di <strong>business</strong>.</h3>
+                    <h3 style="font-weight: normal"><strong>Italian Jazz Hub</strong> pubblicher&aacute;, con cadenza settimanale, una classifica di video pi&uacute; visti e apprezzati.</h3>
                 </div>
 
             </div>
@@ -79,8 +79,8 @@
 
             <div class="row clearfix">
 
-                <h3 style="font-weight: normal">Da <strong>Espositore</strong>:<br />caricando video promozionali (con una serie estesa di tag, così da avere più opportunità di essere intercettati da altri espositori e visitatori: consigliamo questa opzione a musicisti, festival, agenzie di management & booking, scuole di musica, studi di registrazione, fotografi, videocamere, magazine, creativi, etc.</h3>
-                <h3 style="font-weight: normal">Da <strong>Visitatore</strong>:<br />senza possibilità di caricare video: consigliamo questa opzione a direttori artistici, manager, promoter, blogger, free lance, etc.</h3>
+                <h3 style="font-weight: normal">Da <strong>Espositore</strong>:<br />caricando video promozionali (con una serie estesa di tag, cos&iacute; da avere pi&ugrave; opportunit&agrave; di essere intercettati da altri espositori e visitatori: consigliamo questa opzione a musicisti, festival, agenzie di management &amp; booking, scuole di musica, studi di registrazione, fotografi, videocamere, magazine, creativi, etc.</h3>
+                <h3 style="font-weight: normal">Da <strong>Visitatore</strong>:<br />senza possibilit&agrave; di caricare video: consigliamo questa opzione a direttori artistici, manager, promoter, blogger, free lance, etc.</h3>
             </div>
 
         </div>

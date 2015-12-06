@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
     CodeBehind="Contatti.aspx.vb" Inherits="JazzHub_Web.Contatti" %>
 
 <%@ Register TagPrefix="cc1" Namespace="WebControlCaptcha" Assembly="WebControlCaptcha" %>
@@ -31,22 +31,22 @@
                         <div class="panel-body" style="padding: 40px;">
                             <div class="col_half">
                                 <label for="register-form-name">
-                                    Nome:</label>
+                                    Nome:*</label>
                                 <asp:TextBox ID="txt_nome" runat="server" MaxLength="64" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col_half col_last">
                                 <label for="register-form-email">
-                                    Email:</label>
+                                    Email:*</label>
                                 <asp:TextBox ID="txt_email" runat="server" MaxLength="64" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col_full">
                                 <label for="register-form-password">
-                                    Oggetto:</label>
+                                    Oggetto:*</label>
                                 <asp:TextBox ID="txt_oggetto" runat="server" MaxLength="64" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col_full">
                                 <label for="register-form-repassword">
-                                    Messaggio:</label>
+                                    Messaggio:*</label>
                                 <asp:TextBox ID="txt_messaggio" runat="server" MaxLength="64" TextMode="MultiLine" Rows="6" 
                                     CssClass="form-control"></asp:TextBox>
                             </div>
@@ -77,8 +77,8 @@
                     </address>
                     <div class="panel" style="padding: 10px; background-color: rgba(255,255,255,.75)">
                         <h5 class="nomargin">
-                            <i class="icon-phone-sign"></i>+39 06 90207045<br>
-                            <i class="icon-email2"></i>italianjazzhub@gmail.com</h5>
+                            <i class="icon-phone-sign"></i> +39 06 90207045<br>
+                            <i class="icon-email2"></i> italianjazzhub@gmail.com</h5>
                     </div>
                     <div class="dark">
                         <a href="#" class="social-icon si-small si-borderless si-facebook"><i class="icon-facebook">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
     CodeBehind="Index.aspx.vb" Inherits="JazzHub_Web.Index" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -179,20 +179,19 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
-        <div class="section spray-texture nomargin">
-            <div class="container clearfix">
-                <div class="fancy-title title-dotted-border title-left">
-                    <h3>
-                        Il progetto</h3>
-                </div> 
-                <div style="font-size:20px;">
-                    <strong>Italian Jazz Hub</strong> è un progetto di promozione internazionale del jazz
-                    italiano, un meeting-expo virtuale di settore che permetterà ai musicisti e addetti
-                    ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
-                    filmati, teaser e videoclip. <br> italia jazz hub è un’iniziativa firmata da <strong>IMF
-                    Foundation</strong>, già produttrice del roma jazz festival e si avvale della partnership
-                    editoriale di <strong>Jazzit</strong>. 
+        <div class="section intro-bg nomargin parallax"  data-stellar-background-ratio="0.3">
+            <div class="container clearfix center">
+                <div class="heading-block nobottomborder">
+                    <h2>Quali opportunit&agrave;</h2>
                 </div>
+                <h3 style="font-weight: normal">
+                    <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale del jazz
+                    italiano, un meeting-expo virtuale di settore che permetter&agrave; ai musicisti e addetti
+                    ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
+                    filmati, teaser e videoclip.<br><strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF
+                    Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership
+                    editoriale di <strong>Jazzit</strong>. 
+                </h3>
             </div>
             <div class="container clearfix hidden">
                 <div class="fancy-title title-dotted-border title-left">
