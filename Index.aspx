@@ -25,38 +25,28 @@
                 <div class="col_half">
                     <div class="feature-box fbox-plain">
                         <div class="fbox-icon" data-animate="bounceIn" data-delay="300">
-                            <a href="#">
-                                <img src="images/custom/icons/dark-visibility.png" alt="Cloud"></a>
+                            <a href="#"><img src="images/custom/icons/dark-visibility.png" alt="Cloud"></a>
                         </div>
-                        <h3>
-                            Maggior visibilit&aacute;</h3>
-                        <p>
-                            Registrati ed entra nel più grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un’occasione per fare networking solo con musicisti e addetti ai lavori
-                            </p>
-                        <p>
-                            <a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
+                        <h3>Maggior visibilit&aacute;</h3>
+                        <p>Registrati ed entra nel pi&uacute; grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un occasione per fare networking solo con musicisti e addetti ai lavori.</p>
+                        <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
                     </div>
                 </div>
                 <div class="col_half col_last">
                     <div class="feature-box fbox-plain">
                         <div class="fbox-icon" data-animate="bounceIn" data-delay="600">
-                            <a href="#">
-                                <img src="images/custom/icons/dark-opportunity.png" alt="Listen"></a>
+                            <a href="#"><img src="images/custom/icons/dark-opportunity.png" alt="Listen"></a>
                         </div>
-                        <h3>
-                            Più opportunit&aacute;</h3>
-                        <p>
-                            Carica i tuoi <strong style="color: #ccc">video</strong>, attiva nuovi <strong style="color: #ccc">contatti</strong>, collaborazioni e opportunità di <strong style="color: #ccc">business</strong>, segui le classifiche settimanali!
-                            </p>
-                        <p>
-                            <a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
+                        <h3>Pi&uacute; opportunit&aacute;</h3>
+                        <p>Carica i tuoi <strong style="color: #ccc">video</strong>, attiva nuovi <strong style="color: #ccc">contatti</strong>, collaborazioni e opportunit&aacute; di <strong style="color: #ccc">business</strong>, segui le classifiche settimanali!</p>
+                        <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col_one_third col_last nobottomargin nobottompadding">
             <div class="panel panel-default divcenter rounded" data-animate="fadeInUp"
-                data-delay="1000" style="max-width: 400px;>
+                data-delay="1000" style="max-width: 400px;">
                 <asp:UpdatePanel ID="upd_login" runat="server">
                     <ContentTemplate>
                         <div class="panel-body" style="padding: 40px;">
