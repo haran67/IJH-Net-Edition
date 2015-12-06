@@ -53,7 +53,7 @@
                             </div>
                             <div class="col_half">
                                 <cc:rDropDown ID="ddl_vc_categoria_key" runat="server" AutoPostBack="false" Label="Categoria"
-                                    Placeholder="Seleziona..." Form_Vertical="true" Visible="false" />
+                                    Placeholder="Seleziona..." Form_Vertical="true" />
                                 <cc:rTextBox ID="txt_titolo" runat="server" MaxLength="128" AutoPostBack="false"
                                     Label="Titolo" Form_Vertical="true" />
                                 <cc:rTextBox ID="txt_descrizione_breve" runat="server" TextMode="MultiLine" Rows="3" MaxLength="256"

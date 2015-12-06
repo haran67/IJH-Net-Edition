@@ -185,13 +185,13 @@
                     <h3>
                         Il progetto</h3>
                 </div> 
-                <div> 
-                    Italian jazz hub è un progetto di promozione internazionale del jazz
-                    italiano, un meeting-expo virtuale di settore che permetterà ai musi-cisti e addetti
+                <div style="font-size:20px;">
+                    <strong>Italian Jazz Hub</strong> è un progetto di promozione internazionale del jazz
+                    italiano, un meeting-expo virtuale di settore che permetterà ai musicisti e addetti
                     ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
-                    filmati, teaser e videoclip. <br> italia jazz hub è un’iniziativa firmata da imf
-                    foundation, già produttri-ce del roma jazz festival e si avvale della partnership
-                    editoriale di jazzit. 
+                    filmati, teaser e videoclip. <br> italia jazz hub è un’iniziativa firmata da <strong>IMF
+                    Foundation</strong>, già produttrice del roma jazz festival e si avvale della partnership
+                    editoriale di <strong>Jazzit</strong>. 
                 </div>
             </div>
             <div class="container clearfix hidden">
