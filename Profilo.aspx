@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Profilo.aspx.vb" Inherits="JazzHub_Web.Profilo" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Profilo.aspx.vb" Inherits="JazzHub_Web.Profilo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
@@ -23,9 +23,9 @@
                     <div class="tab-container" id="div_espositore" runat="server">
                         <div class="tab-content clearfix" id="tab-customjs-1">
                             <div class="fancy-title title-dotted-border">
-                                <h3>Attività</h3>
+                                <h3>Attivit&aacute;</h3>
                             </div>
-                            <div class="col_one_fourth nobottommargin center">
+                            <div class="col_one_fourth center">
                                 <div class="feature-box fbox-center fbox-bg fbox-light">
                                     <div class="fbox-icon">
                                         <span><i class="icon-eye"></i></span>
@@ -36,7 +36,7 @@
                                     <h5>visualizzazioni</h5>
                                 </div>
                             </div>
-                            <div class="col_one_fourth nobottommargin center">
+                            <div class="col_one_fourth center">
                                 <div class="feature-box fbox-center fbox-bg fbox-light">
                                     <div class="fbox-icon">
                                         <span><i class="icon-thumbs-up2"></i></span>
@@ -45,8 +45,8 @@
                                     <h5>likes</h5>
                                 </div>
                             </div>
-                            <div class="list-group col_half col_last">
-                                <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-rounded fright nomargin">
+                            <div class="col_half center col_last">
+                                <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-rounded nomargin">
                                     Carica un nuovo video <i class="icon-arrow-right2"></i>
                                 </asp:LinkButton>
                             </div>
@@ -85,22 +85,22 @@
                                                 <span class="subtitle">
                                                     <asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal>
                                                 </span>
-                                            </div>
-                                            <div class="list-group-item clearfix">
-                                                <span class="col_half nobottommargin text-left"  style="margin-top:5px;">
+                                                <div class="divider divider-center"><i class="icon-circle"></i></div>
+                                                <div class="col_half nobottommargin text-left" style="font-size: 20px;">
                                                     <asp:LinkButton ID="btn_delete" runat="server" CssClass="label label-danger" CommandName="DEL">
-                                                        <span class="icon-trash"></span>
+                                                        <span class="icon-line-trash"></span>
                                                     </asp:LinkButton>
                                                     &nbsp;
                                                     <asp:LinkButton ID="btn_modifica" runat="server" CssClass="label label-default" CommandName="MOD">
-                                                        <span class="icon-eye"></span>
+                                                        <span class="icon-edit"></span>
                                                     </asp:LinkButton>
-                                                </span> 
-                                                <span class="col_half col_last nobottommargin text-right">
+                                                </div> 
+                                                <div class="col_half col_last nobottommargin text-right" style="font-size: 20px;">
                                                     <span class="label label-success"><asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal>&nbsp;<span class="icon-thumbs-up"></span></span>
-                                                <span class="label label-primary"><asp:Literal ID="ltl_like" runat="server">0</asp:Literal>&nbsp;<span class="icon-eye"></span></span>
-                                                <span class="label label-default"><asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal>&nbsp;<span class="icon-comment"></span></span>
-                                                </span>
+                                                    <span class="label label-primary"><asp:Literal ID="ltl_like" runat="server">0</asp:Literal>&nbsp;<span class="icon-eye"></span></span>
+                                                    <span class="label label-default"><asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal>&nbsp;<span class="icon-comment"></span></span>
+                                                </div>
+                                                <div class="clearfix"></div>
                                             </div>
                                         </div>
                                     </div>

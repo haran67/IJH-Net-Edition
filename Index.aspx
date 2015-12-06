@@ -14,7 +14,7 @@
                     <h2 class="nopadding">
                         <%=Lingua.CaricaLingua("lgl_index_benvenuto")%>
                         </h2>
-                    <div class="divider divider-rounded divider-center topmargin-sm">
+                    <div class="divider divider-rounded divider-center"style="margin: 10px 0;">
                         <i class="icon-arrow-down2"></i>
                     </div>
                     <div id="div_registrati" runat="server">
@@ -28,7 +28,7 @@
                             <a href="#"><img src="images/custom/icons/dark-visibility.png" alt="Cloud"></a>
                         </div>
                         <h3>Maggior visibilit&aacute;</h3>
-                        <p>Registrati ed entra nel pi&uacute; grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un occasione per fare networking solo con musicisti e addetti ai lavori.</p>
+                        <p style="min-height: 90px:">Registrati ed entra nel pi&uacute; grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un occasione per fare networking solo con musicisti e addetti ai lavori.</p>
                         <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                             <a href="#"><img src="images/custom/icons/dark-opportunity.png" alt="Listen"></a>
                         </div>
                         <h3>Pi&uacute; opportunit&aacute;</h3>
-                        <p>Carica i tuoi <strong style="color: #ccc">video</strong>, attiva nuovi <strong style="color: #ccc">contatti</strong>, collaborazioni e opportunit&aacute; di <strong style="color: #ccc">business</strong>, segui le classifiche settimanali!</p>
+                        <p style="min-height: 90px;">Carica i tuoi <strong style="color: #ccc">video</strong>, attiva nuovi <strong style="color: #ccc">contatti</strong>, collaborazioni e opportunit&aacute; di <strong style="color: #ccc">business</strong>, segui le classifiche settimanali!</p>
                         <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
                     </div>
                 </div>
