@@ -28,7 +28,7 @@
                             <a href="#"><img src="images/custom/icons/dark-visibility.png" alt="Cloud"></a>
                         </div>
                         <h3>Maggior visibilit&aacute;</h3>
-                        <p style="min-height: 90px:">Registrati ed entra nel pi&uacute; grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un occasione per fare networking solo con musicisti e addetti ai lavori.</p>
+                        <p style="min-height: 90px;">Registrati ed entra nel pi&uacute; grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un occasione per fare networking solo con musicisti e addetti ai lavori.</p>
                         <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
                     </div>
                 </div>
