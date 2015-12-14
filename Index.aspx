@@ -67,10 +67,8 @@
                                             <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
                                                 <i class="icon-arrow-down2"></i>
                                             </div>
-                                            <div class="alert alert-danger display-hide" id="div_message" runat="server">
-                                                <span style="font-size:15px;">
-                                                    <asp:Literal ID="ltl_message_error" runat="server"></asp:Literal>
-                                                </span>
+                                            <div class="alert alert-danger display-hide display-hide" id="div_message" runat="server">
+                                                <i class="icon-warning-sign"></i> <asp:Literal ID="ltl_message_error" runat="server"></asp:Literal>
                                             </div>
                                             <div class="col_full">
                                                 <label for="login-form-username">
@@ -134,9 +132,7 @@
                                             <i class="icon-arrow-down2"></i>
                                         </div>
                                         <div class="alert alert-success display-hide" id="div_message_success" runat="server">
-                                            <span>
-                                                <asp:Literal ID="ltl_message_success" runat="server"></asp:Literal>
-                                            </span>
+                                            <i class="icon-thumbs-up"></i> <asp:Literal ID="ltl_message_success" runat="server"></asp:Literal>
                                         </div>
                                         <div class="col_full">
                                             <label for="login-form-username">
