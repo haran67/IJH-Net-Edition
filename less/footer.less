@@ -41,7 +41,17 @@
 			width: 100%;
 			z-index: 1;
 		}
+		&:not(.stretched) #footer {
+			left: 50%;
+			margin-left: -610px;
+			width: 1220px;
+		}
 	}
+}
+
+.device-md.sticky-footer:not(.stretched) #footer {
+	margin-left: -500px;
+	width: 1000px;
 }
 
 .footer-widgets-wrap {
