@@ -101,7 +101,7 @@
                                                      Form_Vertical="true" Required="true" />
                                             </div>
                                             <div class="col_full">
-                                                <div class="section nomargin nopadding">
+                                                <div class="section nomargin" style="padding: 15px 20px; border: solid 1px #ccc; font-style: italic">
                                                     <%=Lingua.CaricaLingua("lgl_register_autorizzazione_dati_txt")%>
                                                 </div>
                                                 <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center">
