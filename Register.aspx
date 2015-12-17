@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" MaintainScrollPositionOnPostback="true"
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" MaintainScrollPositionOnPostback="true"
     CodeBehind="Register.aspx.vb" Inherits="JazzHub_Web.Register" %>
 
 <%@ Register Src="/Controls/rTextBox.ascx" TagName="rTextBox" TagPrefix="cc" %>
@@ -131,6 +131,9 @@
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_azienda")%>
                                                         </label>
                                                     </div>
+                                                </div>
+                                                <div class="divider divider-center">
+                                                    <i class="icon-arrow-down2"></i>
                                                 </div>
                                                 <div class="col_full" id="div_ragione_sociale" runat="server" style="margin-bottom:0px;">
                                                     <cc:rTextBox ID="txt_ragione_sociale" name="txt_ragione_sociale" runat="server" MaxLength="256" 
