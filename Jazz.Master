@@ -1,4 +1,5 @@
-﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
+
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -205,8 +206,36 @@
             </div>
             <!-- #copyrights end -->
 
-        </footer>
-    <!-- #footer end -->
+        </footer><!-- #footer end -->
+        
+        <!-- Cookie Notification Bar
+        ============================================= -->
+        <div id="cookie-notification" class="dark">
+            <div class="container clearfix">
+                Per facilitare l'use del nostro sito web utilizziamo cookies. Continuando la navigazione nel sito autorizzi l'uso dei cookies.
+                <button class="cookie-accept notopmargin cookie-noti-btn fright button button-rounded button-red button-small">Accetta</button>
+                <button class="fright button notopmargin button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg">Info sui cookie</button>
+            </div>
+        </div>
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Informativa cookie</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Cookie di navigazione o sessione</h5>
+                            <p class="nobottommargin">Il Sito utilizza esclusivamente cookie 'tecnici'.<br>Specificatamente, vengono utilizzati cookie di navigazione o sessione , diretti a garantire la normale navigazione e fruizione del sito web, e quindi finalizzati a rendere funzionale ed ottimizzare la stessa navigazione all’interno del sito.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Ok ho letto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- #cookie end -->
     </div>
     <!-- #wrapper end -->
     <!-- Go To Top
