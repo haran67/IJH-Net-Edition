@@ -1,4 +1,4 @@
-<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -217,6 +217,12 @@
 	============================================= -->
     <script type="text/javascript" src="/js/functions.js"></script>
     </form>
+    <script type="text/javascript">
+        function SaveResetScrollPosition(div_ok) {
+            setTimeout("window.scrollTo(0,0)", 0);
+            $("#" + div_ok).effect("pulsate", { times: 5 }, 3000);
+        }
+    </script>
     <asp:ContentPlaceHolder ID="script" runat="server">
     </asp:ContentPlaceHolder>
 
