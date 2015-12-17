@@ -100,6 +100,16 @@
                                                      Form_Vertical="true" Required="true" />
                                             </div>
                                             <div class="col_full">
+                                                <%=Lingua.CaricaLingua("lgl_register_autorizzazione_dati_txt")%>
+                                                <br /><br />
+                                                <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin:0px;">
+                                                    <label>
+                                                        <asp:Checkbox ID="chk_autorizzazione" runat="server" AutoPostBack="true" />
+                                                        <%=Lingua.CaricaLingua("lgl_register_autorizzazione_dati_dati")%>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col_full">
                                                 <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin:0px;">
                                                     <label>
                                                         <asp:Checkbox ID="chk_fatturazione" runat="server" AutoPostBack="true" />
