@@ -36,7 +36,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body class="stretched">
+<body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
     <form id="frmPrincipale" runat="server">
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true" EnablePageMethods="true"
         EnableScriptLocalization="true" AsyncPostBackTimeout="3600" ></telerik:RadScriptManager>
@@ -212,9 +212,13 @@
         ============================================= -->
         <div id="cookie-notification" class="dark">
             <div class="container clearfix">
-                Per facilitare l'use del nostro sito web utilizziamo cookies. Continuando la navigazione nel sito autorizzi l'uso dei cookies.
-                <button class="cookie-accept notopmargin cookie-noti-btn fright button button-rounded button-red button-small">Accetta</button>
-                <button class="fright button notopmargin button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg">Info sui cookie</button>
+                <div class="col_three_fifth" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
+                    Per facilitare l'use del nostro sito web utilizziamo cookies. Continuando la navigazione nel sito autorizzi l'uso dei cookies.
+                </div>
+                <div class="col_two_fifth col_last" data-class-lg="tright" data-class-md="tright" data-class-sm="tright" data-class-xs="center" data-class-xxs="center">
+                    <button class="cookie-accept notopmargin cookie-noti-btn button button-rounded button-red button-small">Accetta</button>
+                    <button class="button notopmargin button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg">Info sui cookie</button>
+                </div>
             </div>
         </div>
         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">

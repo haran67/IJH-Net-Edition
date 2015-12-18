@@ -23,18 +23,18 @@
                     </div>
                 </div>
                 <div class="col_half">
-                    <div class="feature-box fbox-plain">
-                        <div class="fbox-icon" data-animate="bounceIn" data-delay="300">
+                    <div class="feature-box fbox-plain" data-class-lg="feature-box fbox-plain" data-class-md="feature-box fbox-plain" data-class-sm="feature-box fbox-plain nopadding" data-class-xs="feature-box fbox-plain nopadding" data-class-xxs="feature-box fbox-plain nopadding">
+                        <div class="fbox-icon" data-animate="bounceIn" data-delay="300" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden"  data-class-xxs="hidden">
                             <a href="#"><img src="images/custom/icons/dark-visibility.png" alt="Cloud"></a>
                         </div>
-                        <h3>Maggior visibilit&aacute;</h3>
+                        <h3>Maggiore visibilit&aacute;</h3>
                         <p style="min-height: 90px;">Registrati ed entra nel pi&uacute; grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un occasione per fare networking solo con musicisti e addetti ai lavori.</p>
                         <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
                     </div>
                 </div>
                 <div class="col_half col_last">
-                    <div class="feature-box fbox-plain">
-                        <div class="fbox-icon" data-animate="bounceIn" data-delay="600">
+                    <div class="feature-box fbox-plain" data-class-lg="feature-box fbox-plain" data-class-md="feature-box fbox-plain" data-class-sm="feature-box fbox-plain nopadding" data-class-xs="feature-box fbox-plain nopadding" data-class-xxs="feature-box fbox-plain nopadding">
+                        <div class="fbox-icon" data-animate="bounceIn" data-delay="600" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden"  data-class-xxs="hidden">
                             <a href="#"><img src="images/custom/icons/dark-opportunity.png" alt="Listen"></a>
                         </div>
                         <h3>Pi&uacute; opportunit&aacute;</h3>
@@ -45,8 +45,7 @@
             </div>
         </div>
         <div class="col_one_third col_last nobottomargin nobottompadding">
-            <div class="panel panel-default divcenter rounded" data-animate="fadeInUp"
-                data-delay="1000" style="max-width: 400px;">
+            <div class="panel panel-default divcenter rounded" data-animate="fadeInUp" data-delay="1000" style="max-width: 400px;">
                 <asp:UpdatePanel ID="upd_login" runat="server">
                     <ContentTemplate>
                         <div class="panel-body" style="padding: 40px;">
@@ -167,17 +166,17 @@
     <div class="content-wrap nopadding">
         <div class="section intro-bg nomargin parallax"  data-stellar-background-ratio="0.3">
             <div class="container clearfix center">
-                <div class="heading-block nobottomborder">
+                <div class="emphasis-title " data-animate="flipInX" data-delay="500">
                     <h2>Quali opportunit&agrave;</h2>
+                    <p class="lead topmargin-sm" data-animate="flipInX" data-delay="1000">
+                        <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale del jazz
+                        italiano, un meeting-expo virtuale di settore che permetter&agrave; ai musicisti e addetti
+                        ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
+                        filmati, teaser e videoclip.<br><strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF
+                        Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership
+                        editoriale di <strong>Jazzit</strong>. 
+                    </p>
                 </div>
-                <h3 style="font-weight: normal">
-                    <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale del jazz
-                    italiano, un meeting-expo virtuale di settore che permetter&agrave; ai musicisti e addetti
-                    ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
-                    filmati, teaser e videoclip.<br><strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF
-                    Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership
-                    editoriale di <strong>Jazzit</strong>. 
-                </h3>
             </div>
             <div class="container clearfix hidden">
                 <div class="fancy-title title-dotted-border title-left">
