@@ -165,93 +165,159 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
-        <div class="section intro-bg nomargin parallax"  data-stellar-background-ratio="0.3">
-            <div class="container clearfix center">
-                <div class="emphasis-title " data-animate="flipInX" data-delay="500">
-                    <h2>Quali opportunit&agrave;</h2>
-                    <p class="lead topmargin-sm" data-animate="flipInX" data-delay="1000">
-                        <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale del jazz
-                        italiano, un meeting-expo virtuale di settore che permetter&agrave; ai musicisti e addetti
-                        ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
-                        filmati, teaser e videoclip.<br><strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF
-                        Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership
-                        editoriale di <strong>Jazzit</strong>. 
-                    </p>
-                </div>
-            </div>
-            <div class="container clearfix hidden">
+        <div class="section nomargin parallax">
+            <div class="container clearfix ">
                 <div class="fancy-title title-dotted-border title-left">
                     <h3>
                         <%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
                 </div>
-                <div id="portfolio" class=" clearfix">
-                    <article class="portfolio-item pf-media pf-icons">
-                        <div class="portfolio-image">
-                            <a href="#">
-                                <img src="images/gallery/jazz1.jpg" alt="Open Imagination">
-                            </a>
-                            <div class="portfolio-overlay">
-                                <a href="images/gallery/jazz1.jpg" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="#">Open Imagination</a></h3>
-                            <span><a href="#">Bebop</a>, <a href="#">Latin jazz</a></span>
-                        </div>
-                    </article>
-                    <article class="portfolio-item pf-illustrations">
-                        <div class="portfolio-image">
-                            <a href="#">
-                                <img src="images/gallery/jazz2.jpg" alt="Locked Steel Gate">
-                            </a>
-                            <div class="portfolio-overlay">
-                                <a href="images/gallery/jazz2.jpg" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="#">Locked Steel Gate</a></h3>
-                            <span><a href="#">Free Jazz</a></span>
-                        </div>
-                    </article>
-                    <article class="portfolio-item pf-graphics pf-uielements">
-                        <div class="portfolio-image">
-                            <a href="#">
-                                <img src="images/gallery/jazz3.jpg" alt="Mac Sunglasses">
-                            </a>
-                            <div class="portfolio-overlay">
-                                <a href="http://vimeo.com/89396394" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="portfolio-single-video.html">Mac Sunglasses</a></h3>
-                            <span><a href="#">Acid Jazz</a>, <a href="#">Dixieland</a></span>
-                        </div>
-                    </article>
-                    <article class="portfolio-item pf-icons pf-illustrations">
-                        <div class="portfolio-image">
-                            <div class="fslider" data-arrows="false" data-speed="400" data-pause="4000">
-                                <div class="flexslider">
-                                    <div class="slider-wrap">
-                                        <div class="slide">
-                                            <img src="images/gallery/jazz4.jpg" alt="Morning Dew">
-                                        </div>
-                                        <div class="slide">
-                                            <img src="images/gallery/jazz4.jpg" alt="Morning Dew">
-                                        </div>
+                    <div id="portfolio" class="portfolio-3 clearfix">
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=35DjL82lmFU" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/35DjL82lmFU/0.jpg" alt="Mirko Pedrotti Quintet feat. Chris Montague - LIVE at Südtirol Jazzfestival 2015">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Mirko Pedrotti Quintet feat. Chris Montague<br><br>LIVE at Südtirol Jazzfestival 2015</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
                                     </div>
+                                    <a href="https://www.youtube.com/watch?v=35DjL82lmFU" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
                                 </div>
                             </div>
-                            <div class="portfolio-overlay" data-lightbox="gallery">
-                                <a href="images/gallery/jazz4.jpg" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
-                                <a href="images/gallery/jazz4.jpg" class="hidden" data-lightbox="gallery-item"></a>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=JeWj5SijjFo" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/JeWj5SijjFo/0.jpg" alt="Open Imagination">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Jazzit Fest: essere una good practice culturale » Jazzit TV</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=JeWj5SijjFo" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
                             </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="portfolio-single-gallery.html">Morning Dew</a></h3>
-                            <span><a href="#"><a href="#">Jazz Funk</a>, <a href="#">Nu Jazz</a></span>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=LiXrwWlA8oU" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/LiXrwWlA8oU/0.jpg" alt="Enrico Olivanti Quintet Il Pensiero Positivo (promo)">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Enrico Olivanti Quintet<br>Il Pensiero Positivo (promo)</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=LiXrwWlA8oU" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=mMn21SDyWS4" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/mMn21SDyWS4/0.jpg" alt="Leonardo De Lorenzo octet 'Waiting #3'">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Leonardo De Lorenzo octet<br>"Waiting #3"</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=mMn21SDyWS4" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=_0oS9Z75fgM" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/_0oS9Z75fgM/0.jpg" alt="Like at The Beginning - Angelo Mastronardi Trio">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Like at The Beginning<br>Angelo Mastronardi Trio</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=_0oS9Z75fgM" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=eoQHlLTiRqg" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/eoQHlLTiRqg/0.jpg" alt="Fabrizio Bosso Quartet & Paolo Silvestri Ensemble - Roma Jazz Festival 2015">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Fabrizio Bosso Quartet<br>&amp; Paolo Silvestri Ensemble<br><br>Roma Jazz Festival 2015</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=eoQHlLTiRqg" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=wOPvd_3dvPE" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/wOPvd_3dvPE/0.jpg" alt="Dr.Jazz - Ain't Misbehavin (live @RadioBaiano - INDIEfferenti,03/03/2015)">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Dr.Jazz - Ain't Misbehavin<br><br>(live @RadioBaiano - INDIEfferenti,03/03/2015)</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=wOPvd_3dvPE" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=-jVGc8BLi-A" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/-jVGc8BLi-A/0.jpg" alt="Donatello D'Attoma | Upcoming Album">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Donatello D'Attoma<br>Upcoming Album</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=-jVGc8BLi-A" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item pf-media pf-icons">
+                            <div class="portfolio-image">
+                                <a href="https://www.youtube.com/watch?v=5aGsU4qG624" data-lightbox="iframe">
+                                    <img src="http://img.youtube.com/vi/5aGsU4qG624/0.jpg" alt="Adovabadan Jazz Band - Cake Walking Babies from Home @ Teatro del Pane 2015">
+                                </a>
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-desc">
+                                        <h3>Adovabadan Jazz Band<br>Cake Walking Babies<br><br>from Home @ Teatro del Pane 2015</h3>
+                                        <!--                                            <span><a href="#">Media</a>, <a href="#">Icons</a></span>-->
+                                    </div>
+                                    <a href="https://www.youtube.com/watch?v=5aGsU4qG624" class="center-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
+                                    <!--                                        <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>-->
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
                 <!-- Portfolio Script
                         ============================================= -->
                 <script type="text/javascript">
@@ -286,6 +352,21 @@
                     });
                         </script>
                 <!-- Portfolio Script End -->
+            </div>
+        </div>
+        <div class="section intro-bg nomargin parallax"  data-stellar-background-ratio="0.3">
+            <div class="container clearfix center">
+                <div class="emphasis-title " data-animate="flipInX" data-delay="500">
+                    <h2>Quali opportunit&agrave;</h2>
+                    <p class="lead topmargin-sm" data-animate="flipInX" data-delay="1000">
+                        <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale del jazz
+                        italiano, un meeting-expo virtuale di settore che permetter&agrave; ai musicisti e addetti
+                        ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
+                        filmati, teaser e videoclip.<br><strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF
+                        Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership
+                        editoriale di <strong>Jazzit</strong>. 
+                    </p>
+                </div>
             </div>
         </div>
     </div>
