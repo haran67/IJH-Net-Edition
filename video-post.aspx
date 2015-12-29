@@ -1,5 +1,5 @@
-<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
-    CodeBehind="Index.aspx.vb" Inherits="JazzHub_Web.Index" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
+    CodeBehind="Video-post.aspx.vb" Inherits="JazzHub_Web.Video_post" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
@@ -240,17 +240,19 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
-        <div class="section intro-bg nomargin parallax"  data-stellar-background-ratio="0.3">
+        <div class="section intro-bg nomargin parallax" data-stellar-background-ratio="0.3">
             <div class="container clearfix center">
                 <div class="emphasis-title " data-animate="flipInX" data-delay="500">
-                    <h2>Quali opportunit&agrave;</h2>
+                    <h2>
+                        Quali opportunit&agrave;</h2>
                     <p class="lead topmargin-sm" data-animate="flipInX" data-delay="1000">
-                        <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale del jazz
-                        italiano, un meeting-expo virtuale di settore che permetter&agrave; ai musicisti e addetti
-                        ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
-                        filmati, teaser e videoclip.<br><strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF
-                        Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership
-                        editoriale di <strong>Jazzit</strong>. 
+                        <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale
+                        del jazz italiano, un meeting-expo virtuale di settore che permetter&agrave; ai
+                        musicisti e addetti ai lavori di entrare in contatto in remoto, con colleghi di
+                        tutto il mondo attraverso filmati, teaser e videoclip.<br>
+                        <strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF Foundation</strong>,
+                        gi&agrave; produttrice del roma jazz festival e si avvale della partnership editoriale
+                        di <strong>Jazzit</strong>.
                     </p>
                 </div>
             </div>
@@ -359,48 +361,13 @@
                         });
 
                     });
-                        </script>
+                </script>
                 <!-- Portfolio Script End -->
             </div>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
-<script type="text/javascript">
-    var my_tab = 0;
-    
-    $(document).ready(function () {
-
-        Init_Tab();
-
-        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
-
-    });
-
-    function endRequestHandler(sender, args) {
-        Init_Tab();
-        setTab(my_tab);
-    }
-
-    function Init_Tab() {
-        $("#processTabs").tabs({
-            show: {
-                effect: "fade",
-                duration: 400
-            }
-        });
-
-        $(".tab-linker").click(function () {
-            //alert($(this).attr('rel'));
-            setTab($(this).attr('rel'));
-            return false;
-        });
-
-    }
-
-    function setTab(tab) {
-        my_tab = tab;
-        $("#processTabs").tabs("option", "active", tab);
-    }
-</script>
+    <script type="text/javascript">
+    </script>
 </asp:Content>

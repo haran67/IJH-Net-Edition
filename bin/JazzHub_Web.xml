@@ -446,22 +446,6 @@ chk_autorizzazione control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Register.chk_fatturazione">
-	<summary>
-chk_fatturazione control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Register.div_fatturazione">
-	<summary>
-div_fatturazione control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.Register.rdb_tipo_giuridico_p">
 	<summary>
 rdb_tipo_giuridico_p control.
@@ -641,6 +625,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Register.txt_indirizzo">
 	<summary>
 txt_indirizzo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Register.chk_fatturazione">
+	<summary>
+chk_fatturazione control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Register.div_fatturazione">
+	<summary>
+div_fatturazione control.
 </summary>
 	<remarks>
 Auto-generated field.
