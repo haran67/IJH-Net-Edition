@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 <!--    <section id="page-title" class="page-title-parallax page-title-video yt-bg-player nobottompadding" data-quality="hd1080" data-start="11" data-stop="40" data-video="https://youtu.be/j8xPaAnx5OM" data-optimize="true" data-loop="true" data-opacity="1" style="background: #000; display: block !important">-->
-    <section id="page-title" class="page-title-parallax" style="background-image: url('images/custom/bg_jazz.jpg');" data-stellar-background-ratio="0.3">
+    <section id="page-title" class="page-title-parallax" style="background-image: url('images/custom/jazz-wallpaper.jpg');" data-stellar-background-ratio="0.3">
         <div class="container clearfix">
             <div class="col_two_third dark">
                 <div class="panel-body" style="padding: 0px 0;">
