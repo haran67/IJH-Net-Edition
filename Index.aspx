@@ -23,7 +23,7 @@
                         <h2 class="nopadding text-shadow">
                             <strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong>
                             </h2>
-                        <div class="divider divider-rounded divider-center"style="margin: 10px 0;">
+                        <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
                             <i class="icon-arrow-down2"></i>
                         </div>
                         <div id="div_registrati" runat="server">
