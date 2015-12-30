@@ -10,7 +10,7 @@
 <!--    <section id="page-title" class="page-title-parallax" style="background-image: url('images/custom/jazz-wallpaper.jpg');" data-stellar-background-ratio="0.3">-->
     <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         <div class="video-wrap" style="height: 100%;">
-            <video poster="images/custom/bg_jazz.jpg" preload="auto" loop autoplay muted>
+            <video poster="images/custom/jazz-wallpaper.jpg" preload="auto" loop autoplay muted>
                 <source src='images/videos/header-video.mp4' type='video/mp4' />
                 <source src='images/videos/explore.webm' type='video/webm' />
             </video>
