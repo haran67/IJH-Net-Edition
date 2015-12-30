@@ -122,7 +122,7 @@
                     ============================================= -->
                     <div id="comments" class="clearfix">
 
-                        <h3 id="comments-title"><span></span> Presto potrai lasciare i tuoi commenti</h3>
+                        <h3 id="comments-title"><span class="icon-comment"></span> Presto potrai lasciare qu&igrave; i tuoi commenti</h3>
 
                         <!-- Comments List
                         ============================================= -->
@@ -132,7 +132,7 @@
 
                                 <div id="comment-1" class="comment-wrap clearfix">
 
-                                    <!--<div class="comment-meta">
+                                    <div class="comment-meta">
 
                                         <div class="comment-author vcard">
 
@@ -141,7 +141,7 @@
 
                                         </div>
 
-                                    </div>-->
+                                    </div>
 
                                     <div class="comment-content clearfix">
 
@@ -161,7 +161,7 @@
 
                                 <div id="comment-2" class="comment-wrap clearfix">
 
-                                    <!--<div class="comment-meta">
+                                    <div class="comment-meta">
 
                                         <div class="comment-author vcard">
 
@@ -170,7 +170,7 @@
 
                                         </div>
 
-                                    </div>-->
+                                    </div>
 
                                     <div class="comment-content clearfix">
 

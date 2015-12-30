@@ -6,8 +6,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-<!--    <section id="page-title" class="page-title-parallax page-title-video yt-bg-player nobottompadding" data-quality="hd1080" data-start="11" data-stop="40" data-video="https://youtu.be/j8xPaAnx5OM" data-optimize="true" data-loop="true" data-opacity="1" style="background: #000; display: block !important">-->
-<!--    <section id="page-title" class="page-title-parallax" style="background-image: url('images/custom/jazz-wallpaper.jpg');" data-stellar-background-ratio="0.3">-->
     <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         <div class="video-wrap" style="height: 100%;">
             <video poster="images/custom/jazz-wallpaper.jpg" preload="auto" loop autoplay muted>
@@ -326,23 +324,23 @@
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
-                                    <div class="portfolio-image" style="background-color: #222;">
-                                        <video width="100%">
-                                            <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
-                                            Your browser does not support the video tag.
-                                        </video>
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <h3 style="background-color:transparent;">
-                                                <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            </div>
-                                            <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                <i class="icon-line-play"></i>
-                                            </asp:LinkButton>
+                                <div class="portfolio-image" style="background-color: #222;">
+                                    <video width="100%">
+                                        <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3 style="background-color:transparent;">
+                                            <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
                                         </div>
-
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <i class="icon-line-play"></i>
+                                        </asp:LinkButton>
                                     </div>
-                                </article>
+
+                                </div>
+                            </article>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
