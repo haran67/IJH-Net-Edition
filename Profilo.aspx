@@ -13,7 +13,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title">
         <div class="container clearfix">
-            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal> | <small>Il tuo profilo</small> | <small><asp:LinkButton ID="btn_modifica" runat="server">Modifica</asp:LinkButton> </small></h1>
+            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal> | <small><asp:LinkButton ID="btn_resume" runat="server">Il tuo profilo</asp:LinkButton></small> | <small><asp:LinkButton ID="btn_modifica" runat="server">Modifica</asp:LinkButton> </small></h1>
             <ol class="breadcrumb">
                 <li>
                     <asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout">

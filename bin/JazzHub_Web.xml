@@ -1430,6 +1430,14 @@ ltl_utente control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Profilo.btn_resume">
+	<summary>
+btn_resume control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Profilo.btn_modifica">
 	<summary>
 btn_modifica control.
