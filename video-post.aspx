@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
     CodeBehind="Video-post.aspx.vb" Inherits="JazzHub_Web.Video_post" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -59,7 +59,7 @@
                                 <div class=""><span>In Arrivo...</span></div>
                             </div>
                         </div>
-                        <div class="line hidden"></div>
+                        <div class="line"></div>
                         <div class="entry-content notopmargin">
 
                             <p>

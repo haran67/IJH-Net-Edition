@@ -318,7 +318,7 @@
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
-                                    <div class="portfolio-image">
+                                    <div class="portfolio-image" style="background-color: #222;">
                                         <video width="100%">
                                             <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                                             Your browser does not support the video tag.
