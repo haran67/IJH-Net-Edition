@@ -7,7 +7,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 <!--    <section id="page-title" class="page-title-parallax page-title-video yt-bg-player nobottompadding" data-quality="hd1080" data-start="11" data-stop="40" data-video="https://youtu.be/j8xPaAnx5OM" data-optimize="true" data-loop="true" data-opacity="1" style="background: #000; display: block !important">-->
-    <section id="page-title" class="page-title-parallax" style="background-image: url('images/custom/jazz-wallpaper.jpg');" data-stellar-background-ratio="0.3">
+<!--    <section id="page-title" class="page-title-parallax" style="background-image: url('images/custom/jazz-wallpaper.jpg');" data-stellar-background-ratio="0.3">-->
+    <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+        <div class="video-wrap" style="height: 100%;">
+            <video poster="images/custom/bg_jazz.jpg" preload="auto" loop autoplay muted>
+                <source src='images/videos/header-video.mp4' type='video/mp4' />
+                <source src='images/videos/explore.webm' type='video/webm' />
+            </video>
+            <div class="video-overlay"></div>
+        </div>
         <div class="container clearfix">
             <div class="col_two_third dark">
                 <div class="panel-body" style="padding: 0px 0;">
