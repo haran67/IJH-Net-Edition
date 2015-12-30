@@ -9,7 +9,7 @@
         <h1>Pagina in costruzione</h1>
 
         <div class="heading-block nobottomborder">
-            <a href="register.html" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i>Registrati ora!</a>
+            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i>Registrati ora!</a>
         </div>
 
     </div>

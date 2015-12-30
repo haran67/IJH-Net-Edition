@@ -78,11 +78,15 @@
                                             </div>
                                             <div class="col_half" style="margin-bottom:0px;">
                                                 <cc:rTextBox ID="txt_nome" runat="server" MaxLength="70" CssClass="form-control"
-                                                     Form_Vertical="true" Required="true" />
+                                                     Form_Vertical="true" Required="false" />
                                             </div>
                                             <div class="col_half  col_last" style="margin-bottom:0px;">
                                                 <cc:rTextBox ID="txt_cognome" runat="server" MaxLength="70" CssClass="form-control"
-                                                     Form_Vertical="true" Required="true" />
+                                                     Form_Vertical="true" Required="false" />
+                                            </div>
+                                            <div class="col_full" id="div_ragione_sociale" runat="server" style="margin-bottom:0px;">
+                                                <cc:rTextBox ID="txt_ragione_sociale" name="txt_ragione_sociale" runat="server" MaxLength="256" 
+                                                    CssClass="form-control" Form_Vertical="true" />
                                             </div>
                                             <div class="col_full" style="margin-bottom:0px;">
                                                 <cc:rDropDown ID="ddl_tipo_utente" runat="server" CssClass="form-control" 
@@ -141,10 +145,6 @@
                                                         </div>
                                                         <div class="divider divider-center">
                                                             <i class="icon-arrow-down2"></i>
-                                                        </div>
-                                                        <div class="col_full" id="div_ragione_sociale" runat="server" style="margin-bottom:0px;">
-                                                            <cc:rTextBox ID="txt_ragione_sociale" name="txt_ragione_sociale" runat="server" MaxLength="256" 
-                                                                CssClass="form-control" Form_Vertical="true" />
                                                         </div>
                                                         <div class="col_half" id="div_codice_fiscale" runat="server" style="margin-bottom:0px;">
                                                             <cc:rTextBox ID="txt_codice_fiscale" name="txt_codice_fiscale" runat="server" MaxLength="16" CssClass="form-control"

@@ -22,7 +22,10 @@
                         <!-- Portfolio Single Video
                         ============================================= -->
                         <div class="col_full portfolio-single-image">
-                            <iframe src="http://player.vimeo.com/video/80975867" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <video width="100%" controls>
+                                <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         <!-- .portfolio-single-image end -->
 
@@ -32,17 +35,17 @@
                             <!-- Entry Title
                             ============================================= -->
                             <div class="entry-title">
-                                <h2>Video #1</h2>
+                                <h2><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h2>
                             </div>
                             <!-- .entry-title end -->
 
                             <!-- Entry Meta
                             ============================================= -->
                             <ul class="entry-meta clearfix">
-                                <li><i class="icon-calendar3"></i> 10th July 2014</li>
-                                <li><a href="#"><i class="icon-user"></i> Utente #1</a></li>
-                                <li><i class="icon-folder-open"></i> <a href="#">Modal jazz</a>, <a href="#">funkie Jazz</a></li>
-                                <li><a href="#"><i class="icon-comments"></i> 3 Commenti</a></li>
+                                <li><i class="icon-calendar3"></i><asp:Literal ID="ltl_data" runat="server"></asp:Literal></li>
+                                <li><a href="#"><i class="icon-user"></i><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></a></li>
+                                <!--li><i class="icon-folder-open"></i> <a href="#">Modal jazz</a>, <a href="#">funkie Jazz</a></li>
+                                <li><a href="#"><i class="icon-comments"></i> 3 Commenti</a></li-->
                             </ul>
                             <!-- .entry-meta end -->
                         </div>
@@ -52,19 +55,21 @@
                                     <a href="#"><i class="icon-thumbs-up i-alt"></i></a>
                                 </div>
                                 <h3>Likes</h3>
-                                <div class="counter  counter-small"><span data-from="100" data-to="8465" data-refresh-interval="100" data-speed="2000">8465</span></div>
+                                <div class="counter  counter-small hidden"><span data-from="100" data-to="8465" data-refresh-interval="100" data-speed="2000">8465</span></div>
+                                <div class=""><span>In Arrivo...</span></div>
                             </div>
                         </div>
-                        <div class="line"></div>
+                        <div class="line hidden"></div>
                         <div class="entry-content notopmargin">
 
-                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                                <br> Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
+                            <p>
+                                <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
+                            </p>
                             <!-- Post Single - Content End -->
 
                             <!-- Tag Cloud
                             ============================================= -->
-                            <div class="tagcloud clearfix bottommargin">
+                            <div class="tagcloud clearfix bottommargin hidden">
                                 <a href="#">general</a>
                                 <a href="#">information</a>
                                 <a href="#">media</a>
@@ -78,7 +83,7 @@
 
                             <!-- Post Single - Share
                             ============================================= -->
-                            <div class="si-share noborder clearfix">
+                            <div class="si-share noborder clearfix hidden">
                                 <span>Condividi questo video:</span>
                                 <div>
                                     <a href="#" class="social-icon si-borderless si-facebook">
@@ -117,11 +122,11 @@
                     ============================================= -->
                     <div id="comments" class="clearfix">
 
-                        <h3 id="comments-title"><span>3</span> Commenti</h3>
+                        <h3 id="comments-title"><span></span> Presto potrai lasciare i tuoi commenti</h3>
 
                         <!-- Comments List
                         ============================================= -->
-                        <ol class="commentlist clearfix">
+                        <ol class="commentlist clearfix hidden">
 
                             <li class="comment even thread-even depth-1" id="li-comment-1">
 
@@ -190,7 +195,7 @@
 
                         <!-- Comment Form
                         ============================================= -->
-                        <div id="respond" class="clearfix">
+                        <div id="respond" class="clearfix hidden">
 
                             <h3>Lascia un <span>Commento</span></h3>
 
