@@ -97,12 +97,16 @@
                                                 </span>
                                                 <div class="divider divider-center"><i class="icon-circle"></i></div>
                                                 <div class="col_half nobottommargin text-left" style="font-size: 20px;">
-                                                    <asp:LinkButton ID="btn_delete" runat="server" CssClass="label label-danger" CommandName="DEL">
-                                                        <span class="icon-line-trash"></span>
+                                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="label label-success" runat="server">
+                                                        <span class="icon-line-play"></span>
                                                     </asp:LinkButton>
                                                     &nbsp;
                                                     <asp:LinkButton ID="btn_modifica" runat="server" CssClass="label label-default" CommandName="MOD">
                                                         <span class="icon-edit"></span>
+                                                    </asp:LinkButton>
+                                                    &nbsp;
+                                                    <asp:LinkButton ID="btn_delete" runat="server" CssClass="label label-danger" CommandName="DEL">
+                                                        <span class="icon-line-trash"></span>
                                                     </asp:LinkButton>
                                                 </div> 
                                                 <div class="col_half col_last nobottommargin text-right" style="font-size: 20px;">
