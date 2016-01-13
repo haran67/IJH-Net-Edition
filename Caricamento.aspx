@@ -33,7 +33,8 @@
                         <div class="tab-content clearfix" id="tab-customjs-1">
                             <div class="fancy-title title-dotted-border">
                                 <h3>
-                                    Carica un nuovo video</h3>
+                                    <asp:Literal ID="ltl_titolo" runat="server">Carica un nuovo video</asp:Literal>
+                                    </h3>
                             </div>
                             <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
                                 visible="false">
@@ -58,14 +59,32 @@
                                     Label="Titolo" Form_Vertical="true" />
                                 <cc:rTextBox ID="txt_descrizione_breve" runat="server" TextMode="MultiLine" Rows="3" MaxLength="256"
                                     AutoPostBack="false" Label="Abstract" Icon="" Form_Vertical="true" />
+                                <cc:rTextBox ID="txt_descrizione" runat="server" TextMode="MultiLine" Rows="10" 
+                                    AutoPostBack="false" Label="Descrizione" Icon="" Form_Vertical="true" />
+                            </div>
+                            <div class="col_half col_last">    
+                                <span for="upl_video" style="font-size:15px; color:Red;" id="span_upl_video" runat="server" visible="false">
+                                    <asp:Literal ID="ltl_msg_upl_video" runat="server"></asp:Literal></span>
                                 <label for="login-form-username">
-                                    Scegli il video (mpg,mp4,m4v,mov)</label>
-                                <div class="form-group" id="div_upload" runat="server">
-                                    <telerik:RadAsyncUpload runat="server" ID="upl_video" ChunkSize="1048576" AllowedFileExtensions="m4v,mp4,mov,mpg" 
+                                    Copertina</label>
+                                <div class="form-group">
+                                    <asp:Image ID="img_copertina" runat="server" Width="300" />
+                                </div> 
+                                <label for="login-form-username">
+                                    Scegli la copertina (jpg,jpeg) - Dimensione consigliata (500*380) pixel </label>
+                                <div class="form-group" id="div_upload_img" runat="server">
+                                    <telerik:RadAsyncUpload runat="server" ID="upl_foto" ChunkSize="1048576" AllowedFileExtensions="jpg,jpeg" 
                                        Localization-Cancel="Cancella" Localization-Remove="Elimina" Localization-Select="Seleziona" EnableInlineProgress="false"
-                                       OnClientFilesUploaded="OnClientFileUploaded" MultipleFileSelection="Disabled" />    
-                                    <span for="upl_video" style="font-size:15px; color:Red;" id="span_upl_video" runat="server" visible="false">
-                                        <asp:Literal ID="ltl_msg_upl_video" runat="server"></asp:Literal></span>
+                                       OnClientFilesUploaded="OnClientFileUploaded" MultipleFileSelection="Disabled" />
+                                </div>
+                                <div id="div_carica_video" runat="server">
+                                    <label for="login-form-username">
+                                        Scegli il video (mpg,mp4,m4v,mov) - Dimensione massima 300MB </label>
+                                    <div class="form-group" id="div_upload" runat="server">
+                                        <telerik:RadAsyncUpload runat="server" ID="upl_video" ChunkSize="1048576" AllowedFileExtensions="m4v,mp4,mov,mpg" 
+                                           Localization-Cancel="Cancella" Localization-Remove="Elimina" Localization-Select="Seleziona" EnableInlineProgress="false"
+                                           OnClientFilesUploaded="OnClientFileUploaded" MultipleFileSelection="Disabled" />
+                                    </div>
                                 </div>
                                 <telerik:RadProgressArea runat="server" ID="rpa_video" displaycancelbutton="True" 
                                     ProgressIndicators="TimeElapsed, TimeEstimated, TransferSpeed, TotalProgress, TotalProgressPercent, TotalProgressBar"
@@ -77,10 +96,6 @@
                                         Invia il video
                                     </asp:LinkButton>
                                 </div> 
-                            </div>
-                            <div class="col_half col_last">
-                                <cc:rTextBox ID="txt_descrizione" runat="server" TextMode="MultiLine" Rows="10" 
-                                    AutoPostBack="false" Label="Descrizione" Icon="" Form_Vertical="true" />
                             </div>
                         </div>
                     </div>

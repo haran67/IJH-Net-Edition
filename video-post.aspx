@@ -51,12 +51,18 @@
                         </div>
                         <div class="col_half col_last nobottommargin">
                             <div class="feature-box fbox-rounded fbox-effect fbox-light">
-                                <div class="fbox-icon">
-                                    <a href="#"><i class="icon-thumbs-up i-alt"></i></a>
-                                </div>
-                                <h3>Likes</h3>
-                                <div class="counter  counter-small hidden"><span data-from="100" data-to="8465" data-refresh-interval="100" data-speed="2000">8465</span></div>
-                                <div class=""><span>In Arrivo...</span></div>
+                                <asp:UpdatePanel ID="upd_likes" runat="server">
+                                    <ContentTemplate>
+                                        <div class="fbox-icon">
+                                            <asp:LinkButton id="btn_like" runat="server">
+                                                <i class="icon-thumbs-up i-alt"></i>
+                                            </asp:LinkButton>
+                                        </div>
+                                        <h3>Likes</h3>
+                                        <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
+                                        <div class="" id="div_no_like" runat="server"><span>In attesa di ricevere likes ...</span></div>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
                             </div>
                         </div>
                         <div class="line"></div>
@@ -124,8 +130,6 @@
 
                         <h3 id="comments-title"><span class="icon-comment"></span> Presto potrai lasciare qu&igrave; i tuoi commenti</h3>
 
-                        <!-- Comments List
-                        ============================================= -->
                         <ol class="commentlist clearfix hidden">
 
                             <li class="comment even thread-even depth-1" id="li-comment-1">
@@ -191,43 +195,65 @@
                         </ol>
                         <!-- .commentlist end -->
 
+
+                        <!-- Comments List
+                        ============================================= -->
+                        <ol class="commentlist clearfix">
+                            <asp:Repeater ID="rpt_comment" runat="server">
+                                <ItemTemplate>
+                                    <li class="comment even thread-even depth-1" id="li-comment-1">
+                                        <div id="comment-1" class="comment-wrap clearfix">
+                                            <div class="comment-meta">
+                                                <div class="comment-author vcard">
+                                                    <span class="comment-avatar clearfix">
+                                                    <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=60' class='avatar avatar-60 photo avatar-default' height='60' width='60' /></span>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content clearfix">
+                                                <div class="comment-author">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
+                                                    <span>
+                                                        <asp:Literal ID="ltl_data" runat="server"></asp:Literal>
+                                                    </span>
+                                                </div>
+                                                <p>
+                                                    <asp:Literal ID="ltl_commento" runat="server"></asp:Literal>
+                                                </p>
+                                            </div>
+                                            <asp:LinkButton ID="btn_delete" runat="server" CssClass="label label-danger" CommandName="DEL">
+                                                <span class="icon-line-trash"></span>
+                                            </asp:LinkButton>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ol>
+                        <!-- .commentlist end -->
+
                         <div class="clear"></div>
 
                         <!-- Comment Form
                         ============================================= -->
-                        <div id="respond" class="clearfix hidden">
+                        <div id="respond" class="clearfix">
 
                             <h3>Lascia un <span>Commento</span></h3>
 
-                            <form class="clearfix" action="#" method="post" id="commentform">
-
-                            <!--<div class="col_one_third">
-                                    <label for="author">Name</label>
-                                    <input type="text" name="author" id="author" value="" size="22" tabindex="1" class="sm-form-control" />
-                                </div>
-
-                                <div class="col_one_third">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" id="email" value="" size="22" tabindex="2" class="sm-form-control" />
-                                </div>
-
-                                <div class="col_one_third col_last">
-                                    <label for="url">Website</label>
-                                    <input type="text" name="url" id="url" value="" size="22" tabindex="3" class="sm-form-control" />
-                                </div>
-
-                                <div class="clear"></div>-->
+                            <div class="clearfix" action="#" method="post" id="commentform">    
+                                
+                                <span for="upl_video" style="font-size:15px; color:Red;" id="span_comment" runat="server" visible="false">
+                                    <asp:Literal ID="ltl_msg_span_comment" runat="server"></asp:Literal></span>
 
                                 <div class="col_full">
                                     <label for="comment" class="hidden">Commento</label>
-                                    <textarea name="comment" cols="58" rows="7" tabindex="4" class="sm-form-control"></textarea>
+                                    <asp:TextBox ID="txt_commento" runat="server" TextMode="MultiLine" Rows="7" CssClass="sm-form-control"></asp:TextBox>
                                 </div>
 
                                 <div class="col_full nobottommargin">
-                                    <button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="button button-rounded nomargin">Invia</button>
+                                    <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin">Invia</asp:LinkButton>
                                 </div>
 
-                            </form>
+                            </div>
 
                         </div>
                         <!-- #respond end -->

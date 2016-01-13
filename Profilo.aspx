@@ -57,7 +57,7 @@
                                         <span><i class="icon-eye"></i></span>
                                     </div>
                                     <h3 class="counter counter-large">
-                                        <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500"></span>
+                                        <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_vis" runat="server"></span>
                                     </h3>
                                     <h5>visualizzazioni</h5>
                                 </div>
@@ -67,7 +67,7 @@
                                     <div class="fbox-icon">
                                         <span><i class="icon-thumbs-up2"></i></span>
                                     </div>
-                                    <h3 class="counter counter-large"><span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500"></span></h3>
+                                    <h3 class="counter counter-large"><span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_lik" runat="server"></span></h3>
                                     <h5>likes</h5>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             </div>
                             <asp:Repeater ID="rpt_video" runat="server">
                                 <ItemTemplate>
-                                    <div class="col_one_third">
+                                    <div class="col-lg-4">
                                         <div class="feature-box center media-box fbox-bg">
                                             <div class="fbox-media">
                                                 <video width="100%" controls>
