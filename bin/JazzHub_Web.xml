@@ -966,6 +966,22 @@ ltl_help control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Video_list.rpt_categorie">
+	<summary>
+rpt_categorie control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_list.rpt_video">
+	<summary>
+rpt_video control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.rCheckBox.div_form">
 	<summary>
 div_form control.
