@@ -1,4 +1,4 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
     <!-- Da scambiare in rilascio finale con la versione CSS compilata -->
     <link rel="stylesheet" href="/custom.css" type="text/css" />
+
+    <link rel="stylesheet" href="/css/mesysPager.css" type="text/css" />
+
     <!-- ============================================================= -->
     <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

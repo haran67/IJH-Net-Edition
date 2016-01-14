@@ -6,7 +6,55 @@ JazzHub_Web
 </name>
 </assembly>
 <members>
-<member name="F:JazzHub_Web.Jazz.head">
+<member name="F:JazzHub_Web.Video_admin.div_message_ko">
+	<summary>
+div_message_ko control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_admin.ltl_messaggio_ko">
+	<summary>
+ltl_messaggio_ko control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_admin.div_message_ok">
+	<summary>
+div_message_ok control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_admin.ltl_messaggio_ok">
+	<summary>
+ltl_messaggio_ok control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_admin.rpt_video">
+	<summary>
+rpt_video control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_admin.pager">
+	<summary>
+pager control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.head">
 	<summary>
 head control.
 </summary>
@@ -326,17 +374,25 @@ btnInviaPassword control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Index.div_video">
+</member><member name="F:JazzHub_Web.Index.rpt_video">
 	<summary>
-div_video control.
+rpt_video control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Index.rpt_video">
+</member><member name="F:JazzHub_Web.Index.pager">
 	<summary>
-rpt_video control.
+pager control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Index.div_video">
+	<summary>
+div_video control.
 </summary>
 	<remarks>
 Auto-generated field.
