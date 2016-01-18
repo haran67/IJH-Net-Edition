@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
@@ -76,6 +76,15 @@
                                 <a href="/chisiamo.aspx">Chi Siamo</a>
                             </li>
                             <li>
+                                <a href="/wip.aspx">Utenti</a>
+                            </li>
+                            <li>
+                                <a href="/wip.aspx">Streaming</a>
+                            </li>
+                            <li>
+                                <a href="/wip.aspx">Crowdfunding</a>
+                            </li>
+                            <li>
                                 <a href="#">Partner</a>
                                 <ul>
                                     <li><a href="http://www.peperoncinojazzfestival.com/" target="_blank"><div>Peperoncino Jazz Festival</div></a></li>
@@ -88,17 +97,20 @@
                                     <li><a href="http://www.jazzitfest.it/" target="_blank"><div>Jazzit Fest</div></a></li>
                                 </ul>
                             </li>
+                            
+                            <li>
+                                <a href="#">Media</a>
+                                <ul>
+                                    <li><a href="/wip.aspx">Radio</a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCKWKlIjdJM69UL97D-5Yb0g" target="_blank">TV</a></li>
+                                </ul>
+                                
+                            </li>
+                            <li>
+                                <a href="/wip.aspx">Shop</a>
+                            </li>
                             <li>
                                 <a href="/wip.aspx">Link</a>
-                            </li>
-                            <li>
-                                <a href="/wip.aspx">Deezer</a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCKWKlIjdJM69UL97D-5Yb0g" target="_blank">Jazzit TV</a>
-                            </li>
-                            <li>
-                                <a href="/wip.aspx">E-Shop</a>
                             </li>
                             <li>
                                 <a href="/contatti.aspx">Contatti</a>

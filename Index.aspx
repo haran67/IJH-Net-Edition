@@ -27,28 +27,7 @@
                             <i class="icon-arrow-down2"></i>
                         </div>
                         <div id="div_registrati" runat="server">
-                            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin">
-                                <i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-                        </div>
-                    </div>
-                    <div class="col_half">
-                        <div class="feature-box fbox-plain" data-class-lg="feature-box fbox-plain" data-class-md="feature-box fbox-plain" data-class-sm="feature-box fbox-plain nopadding" data-class-xs="feature-box fbox-plain nopadding" data-class-xxs="feature-box fbox-plain nopadding">
-                            <div class="fbox-icon" data-animate="bounceIn" data-delay="300" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden"  data-class-xxs="hidden">
-                                <a href="#"><img src="images/custom/icons/dark-visibility.png" alt="Cloud"></a>
-                            </div>
-                            <h3>Maggiore visibilit&aacute;</h3>
-                            <p style="min-height: 90px;">Registrati ed entra nel pi&uacute; grande <strong style="color: #ccc">expo virtuale della musica jazz</strong>, un occasione per fare networking solo con musicisti e addetti ai lavori.</p>
-                            <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
-                        </div>
-                    </div>
-                    <div class="col_half col_last">
-                        <div class="feature-box fbox-plain" data-class-lg="feature-box fbox-plain" data-class-md="feature-box fbox-plain" data-class-sm="feature-box fbox-plain nopadding" data-class-xs="feature-box fbox-plain nopadding" data-class-xxs="feature-box fbox-plain nopadding">
-                            <div class="fbox-icon" data-animate="bounceIn" data-delay="600" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden"  data-class-xxs="hidden">
-                                <a href="#"><img src="images/custom/icons/dark-opportunity.png" alt="Listen"></a>
-                            </div>
-                            <h3>Pi&uacute; opportunit&aacute;</h3>
-                            <p style="min-height: 90px;">Carica i tuoi <strong style="color: #ccc">video</strong>, attiva nuovi <strong style="color: #ccc">contatti</strong>, collaborazioni e opportunit&aacute; di <strong style="color: #ccc">business</strong>, segui le classifiche settimanali!</p>
-                            <p><a href="chisiamo.aspx" class="button button-rounded button-small nobottommargin">Approfondisci</a></p>
+                            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +200,7 @@
                 </div>
             </div>
         </div>
-        <div class="section intro-bg nomargin parallax"  data-stellar-background-ratio="0.3">
+            <div class="section dark nomargin parallax"  style="background: url('images/custom/jazz-wallpaper.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
             <div class="container clearfix center">
                 <div class="emphasis-title " data-animate="flipInX" data-delay="500">
                     <h2>Quali opportunit&agrave;</h2>
