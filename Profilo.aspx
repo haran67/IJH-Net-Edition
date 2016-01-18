@@ -29,6 +29,7 @@
         <div class="container clearfix">
             <div class="col_full">
                 <div class="tabs tabs-tb tabs-alt customjs clearfix" id="tabs-customjs">
+<!--
                     <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
                         visible="false">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
@@ -45,6 +46,7 @@
                         <strong>
                             <asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
                     </div>
+-->
 
                     <div class="tab-container" id="div_espositore" runat="server">
                         <div class="tab-content clearfix" id="tab-customjs-1">
@@ -72,8 +74,37 @@
                                 </div>
                             </div>
                             <div class="col_half center col_last">
+                                <div class="list-group col_half col_last">
+                                    <h4>Dettaglio attività sui video</h4>
+                                    <div class="list-group-item clearfix">
+                                        <a href="#" class="col_half nobottommargin">Titolo #1</a>
+                                        <span class="col_half col_last nobottommargin text-right">
+                                            <span class="label label-success">16 <span class="icon-thumbs-up"></span></span>
+                                            <span class="label label-primary">14 <span class="icon-eye"></span></span>
+                                            <span class="label label-default">0 <span class="icon-comment"></span></span>
+                                        </span>
+                                    </div>
+                                    <div href="#" class="list-group-item clearfix">
+                                        <a href="#" class="col_half nobottommargin">Titolo #2</a>
+                                        <span class="col_half col_last nobottommargin text-right">
+                                            <span class="label label-success">16 <span class="icon-thumbs-up"></span></span>
+                                            <span class="label label-primary">14 <span class="icon-eye"></span></span>
+                                            <span class="label label-default">0 <span class="icon-comment"></span></span>
+                                        </span>
+                                    </div>
+                                    <div href="#" class="list-group-item clearfix">
+                                        <a href="#" class="col_half nobottommargin">Titolo #3</a>
+                                        <span class="col_half col_last nobottommargin text-right">
+                                            <span class="label label-success">16 <span class="icon-thumbs-up"></span></span>
+                                            <span class="label label-primary">14 <span class="icon-eye"></span></span>
+                                            <span class="label label-default">0 <span class="icon-comment"></span></span>
+                                        </span>
+                                    </div>
+                                    <div class="bottommargin-sm"></div>
+                                    <button class="button button-rounded fright nomargin">gestisci i tuoi video <i class="icon-arrow-right2"></i></button>
+                                </div>
                                 <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-rounded nomargin">
-                                    Carica un nuovo video <i class="icon-arrow-right2"></i>
+                                    Gestisci i tuoi video <i class="icon-arrow-right2"></i>
                                 </asp:LinkButton>
                             </div>
                             <div class="clear"></div>
