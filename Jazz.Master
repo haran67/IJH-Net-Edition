@@ -73,7 +73,24 @@
                                 <a href="/index.aspx">Home</a>
                             </li>
                             <li>
-                                <a href="/chisiamo.aspx">Chi Siamo</a>
+                                <a href="/chisiamo.aspx">IJH</a>
+                                <ul>
+                                    <li><a href="/chisiamo.aspx">About</a></li>
+                                    <li>
+                                        <a href="#">Partner</a>
+                                        <ul>
+                                            <li><a href="http://www.peperoncinojazzfestival.com/" target="_blank"><div>Peperoncino Jazz Festival</div></a></li>
+                                            <li><a href="http://www.roeromusicfest.com/" target="_blank"><div>Roero Music Fest</div></a></li>
+                                            <li><a href="http://www.bluesinvilla.com/" target="_blank"><div>Blues in Villa</div></a></li>
+                                            <li><a href="http://www.mywayfestival.it/" target="_blank"><div>My Way Festival</div></a></li>
+                                            <li><a href="http://www.jazzit.it/" target="_blank"><div>Jazzit</div></a></li>
+                                            <li><a href="http://www.romajazzfestival.it/" target="_blank"><div>Roma Jazz Festival</div></a></li>
+                                            <li><a href="http://www.facebook.com/Associazione-Culturale-Notabene-167944803237780/" target="_blank"><div>Scuola di Musica Notabene</div></a></li>
+                                            <li><a href="http://www.jazzitfest.it/" target="_blank"><div>Jazzit Fest</div></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/contatti.aspx">Contatti</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="/wip.aspx">Utenti</a>
@@ -111,9 +128,6 @@
                             </li>
                             <li>
                                 <a href="/wip.aspx">Link</a>
-                            </li>
-                            <li>
-                                <a href="/contatti.aspx">Contatti</a>
                             </li>
                         </ul>
 
