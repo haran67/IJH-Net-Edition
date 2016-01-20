@@ -48,7 +48,7 @@
     <div id="wrapper" class="clearfix">
         <!-- Header
 		============================================= -->
-        <header id="header" class="transparent-header semi-transparent dark">
+        <header id="header" class="transparent-header semi-transparent dark" data-sticky-class="">
 
             <div id="header-wrap">
 
@@ -100,19 +100,6 @@
                             </li>
                             <li>
                                 <a href="/wip.aspx">Crowdfunding</a>
-                            </li>
-                            <li>
-                                <a href="#">Partner</a>
-                                <ul>
-                                    <li><a href="http://www.peperoncinojazzfestival.com/" target="_blank"><div>Peperoncino Jazz Festival</div></a></li>
-                                    <li><a href="http://www.roeromusicfest.com/" target="_blank"><div>Roero Music Fest</div></a></li>
-                                    <li><a href="http://www.bluesinvilla.com/" target="_blank"><div>Blues in Villa</div></a></li>
-                                    <li><a href="http://www.mywayfestival.it/" target="_blank"><div>My Way Festival</div></a></li>
-                                    <li><a href="http://www.jazzit.it/" target="_blank"><div>Jazzit</div></a></li>
-                                    <li><a href="http://www.romajazzfestival.it/" target="_blank"><div>Roma Jazz Festival</div></a></li>
-                                    <li><a href="http://www.facebook.com/Associazione-Culturale-Notabene-167944803237780/" target="_blank"><div>Scuola di Musica Notabene</div></a></li>
-                                    <li><a href="http://www.jazzitfest.it/" target="_blank"><div>Jazzit Fest</div></a></li>
-                                </ul>
                             </li>
                             
                             <li>

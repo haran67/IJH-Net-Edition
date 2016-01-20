@@ -49,6 +49,7 @@
                             <li><a href="#">Gestione video</a></li>
                             <li><asp:LinkButton ID="btn_modifica" runat="server">Modifica profilo</asp:LinkButton> </li>
                         </ul>
+                        <div class="clearfix"></div>
                         <div class="col_one_fourth center">
                             <div class="feature-box fbox-center fbox-bg fbox-light">
                                 <div class="fbox-icon">
@@ -72,24 +73,24 @@
                         <div class="list-group col_half col_last">
                             <h4>Dettaglio attivit&agrave; sui video</h4>
                             <div class="list-group-item clearfix">
-                                <a href="#" class="col_half nobottommargin">Titolo #1</a>
-                                <span class="col_half col_last nobottommargin text-right">
+                                <a href="#" class="fleft" style="display: inline-block">Titolo #1</a>
+                                <span class="fright" style="display: inline-block">
                                     <span class="label label-success">16 <span class="icon-thumbs-up"></span></span>
                                     <span class="label label-primary">14 <span class="icon-eye"></span></span>
                                     <span class="label label-default">0 <span class="icon-comment"></span></span>
                                 </span>
                             </div>
                             <div href="#" class="list-group-item clearfix">
-                                <a href="#" class="col_half nobottommargin">Titolo #2</a>
-                                <span class="col_half col_last nobottommargin text-right">
+                                <a href="#" class="fleft" style="display: inline-block">Titolo #2</a>
+                                <span class="fright" style="display: inline-block">
                                     <span class="label label-success">16 <span class="icon-thumbs-up"></span></span>
                                     <span class="label label-primary">14 <span class="icon-eye"></span></span>
                                     <span class="label label-default">0 <span class="icon-comment"></span></span>
                                 </span>
                             </div>
                             <div href="#" class="list-group-item clearfix">
-                                <a href="#" class="col_half nobottommargin">Titolo #3</a>
-                                <span class="col_half col_last nobottommargin text-right">
+                                <a href="#" class="fleft" style="display: inline-block">Titolo #3</a>
+                                <span class="fright" style="display: inline-block">
                                     <span class="label label-success">16 <span class="icon-thumbs-up"></span></span>
                                     <span class="label label-primary">14 <span class="icon-eye"></span></span>
                                     <span class="label label-default">0 <span class="icon-comment"></span></span>
@@ -106,6 +107,7 @@
                         <div class="fancy-title title-dotted-border">
                             <h3>I tuoi video</h3>
                         </div>
+<!--
                         <asp:Repeater ID="rpt_video" runat="server">
                             <ItemTemplate>
                                 <div class="col-lg-4">
@@ -146,6 +148,7 @@
                                 </div>
                             </ItemTemplate>
                         </asp:Repeater>
+-->
                     </div>
                     <div id="div_visitatore" runat="server">
                         <div class="fancy-title title-dotted-border">

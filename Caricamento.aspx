@@ -62,7 +62,7 @@
                     <label for="login-form-username">
                         Copertina</label>
                     <div class="form-group">
-                        <asp:Image ID="img_copertina" runat="server" Width="300" />
+                        <asp:Image ID="img_copertina" runat="server" Width="300" CssClass="thumbnail" />
                     </div> 
                     <label for="login-form-username">
                         Scegli la copertina (jpg,jpeg) - Dimensione consigliata (500*380) pixel </label>
@@ -90,6 +90,41 @@
                             Invia il video
                         </asp:LinkButton>
                     </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col_full">
+            <div class="fancy-title title-dotted-border">
+                <h3>I tuoi video</h3>
+            </div>
+            <div class="col_one_third">
+                <div class="feature-box center media-box fbox-bg">
+                    <div class="fbox-media">
+                        <iframe src="//player.vimeo.com/video/88318922?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="fbox-desc">
+                        <h3>Titolo #1<span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare est tincidunt facilisis dignissim.</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col_one_third">
+                <div class="feature-box center media-box fbox-bg">
+                    <div class="fbox-media">
+                        <iframe width="560" height="315" src="http://www.youtube.com/embed/SZEflIVnhH8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="fbox-desc">
+                        <h3>Titolo #2<span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare est tincidunt facilisis dignissim.</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col_one_third col_last">
+                <div class="feature-box center media-box fbox-bg">
+                    <div class="fbox-media">
+                        <iframe frameborder="0" width="560" height="315" src="http://www.dailymotion.com/embed/video/x1jr2kd" allowfullscreen></iframe>
+                    </div>
+                    <div class="fbox-desc">
+                        <h3>Titolo #3<span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare est tincidunt facilisis dignissim.</span></h3>
+                    </div>
                 </div>
             </div>
         </div>
