@@ -41,9 +41,10 @@
     <div class="content-wrap nopadding">
         <div class="section nomargin parallax">
             <div class="container clearfix ">
-                <div class="fancy-title title-dotted-border title-left">
-                    <h3>
-                        <%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
+                <div class="container clearfix">
+                    <div class="heading-block center">
+                        <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
+                    </div>
                 </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
@@ -87,7 +88,7 @@
                 </div>
             </div>
         </div>
-            <div class="section dark nomargin parallax"  style="background: url('images/custom/jazz-wallpaper.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
+        <div class="section dark nomargin parallax hidden"  style="background: url('images/custom/jazz-wallpaper.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
             <div class="container clearfix center">
                 <div class="emphasis-title " data-animate="flipInX" data-delay="500">
                     <h2>Quali opportunit&agrave;</h2>

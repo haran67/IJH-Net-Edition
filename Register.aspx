@@ -48,7 +48,7 @@
                         <div class="divcenter" style="max-width: 700px">
                             <div id="register-form" name="register-form" class="nobottommargin">
                                 <div class="tab-content clearfix" id="tab-principale">
-                                    <div class="panel panel-default divcenter  " style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
+                                    <div class="panel panel-default divcenter" style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
                                         <div class="panel-body" style="padding: 40px;">
                                             <div class="col_full nobottommargin">
                                                 <h3 class="nopadding nomargin">Registrati ed inizia a condividere i tuoi video</h3>

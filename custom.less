@@ -4,11 +4,24 @@
 @import "less/dark.less";
 
 /* start custom */
+
+@heading-font:                  'Oswald', sans-serif;
+@body-font:                     'Quattrocento', sans-serif;
+@secondary-font:                'Crete Round', serif;
+
 @screen-sm-min : 768px;
 @screen-md-min : 992px;
 @screen-lg-min : 1200px;
 
 @theme-color: #1D5268;
+@dark-color: #311b12;
+
+.button {
+    background-image: url('images/custom/bg_button.png');
+    background-position: center;
+    background-size: cover;
+}
+
 
 .text-xs-left { text-align: left; }
 .text-xs-right { text-align: right; }
@@ -144,3 +157,13 @@
 #primary-menu ul li a {
     padding: 0 10px
 }
+
+
+.dark #header.sticky-header:not(.transparent-header) #header-wrap:not(.not-dark),
+.dark #header.sticky-header.transparent-header #header-wrap:not(.not-dark),
+.dark #header.transparent-header.floating-header .container,
+.dark #header.transparent-header.floating-header.sticky-header .container,
+#header.dark.sticky-header:not(.transparent-header) #header-wrap:not(.not-dark),
+#header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark),
+#header.dark.transparent-header.floating-header .container,
+#header.dark.transparent-header.floating-header.sticky-header .container { background-color: rgba(0,0,0,0.6); }
