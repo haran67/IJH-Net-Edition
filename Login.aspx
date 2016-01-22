@@ -12,12 +12,7 @@
         </div>
         <div class="section nobg full-screen nopadding nomargin">
             <div class="container vertical-middle divcenter clearfix">
-                <div class="row center">
-                    <a href="index.aspx">
-                        <img src="images/logo-dark.png" alt="Canvas Logo"></a>
-                </div>
-                <div class="panel panel-default divcenter noradius noborder" style="max-width: 400px;
-                    background-color: rgba(255,255,255,0.93);">
+                <div class="panel panel-default divcenter noradius noborder" style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
                     <asp:UpdatePanel ID="upd_login" runat="server">
                         <ContentTemplate>
                             <div class="panel-body" style="padding: 40px;">
@@ -128,31 +123,20 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="center">
+                                    <h3 class="nopadding nomargin">
+                                        <strong>Non hai ancora un'account?</strong>
+                                    </h3>
+                                    <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
+                                        <i class="icon-arrow-down2"></i>
+                                    </div>
+                                    <div id="div_registrati" runat="server">
+                                        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                                    </div>
+                                </div>
                             </div>
                         </ContentTemplate>
                     </asp:UpdatePanel>
-                </div>
-            </div>
-        </div>
-        <div class="container clearfix">
-            <div class="col_two_third dark">
-                <div class="panel-body" style="padding: 0px 0;">
-                    <div class="emphasis-title title-center">
-                        <h2 class="nopadding text-shadow">
-                            <strong>Non hai ancora un'account?</strong>
-                            </h2>
-                        <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
-                            <i class="icon-arrow-down2"></i>
-                        </div>
-                        <div id="div_registrati" runat="server">
-                            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col_one_third col_last nobottomargin nobottompadding">
-                <div class="panel panel-default divcenter rounded" data-animate="fadeInUp" data-delay="1000" style="max-width: 400px;">
-                    
                 </div>
             </div>
         </div>
