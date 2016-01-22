@@ -12,14 +12,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title">
-        <div class="container clearfix">
-            <h1><%=Lingua.CaricaLingua("lgl_register_title")%></h1>
-        </div>
-    </section>
+            <h1 class="hidden"><%=Lingua.CaricaLingua("lgl_register_title")%></h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap">
+        <div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute;
+                                                       left: 0; top: 0; background: url('images/custom/jazz-wallpaper.jpg') center center no-repeat;
+                                                       background-size: cover;">
+        </div>
         <div class="container clearfix">
             <asp:UpdatePanel ID="upd_register" runat="server">
                 <ContentTemplate>
@@ -48,8 +48,14 @@
                         <div class="divcenter" style="max-width: 700px">
                             <div id="register-form" name="register-form" class="nobottommargin">
                                 <div class="tab-content clearfix" id="tab-principale">
-                                    <div class="panel panel-default nobottommargin" id="div_dati_01" runat="server">
+                                    <div class="panel panel-default divcenter  " style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
                                         <div class="panel-body" style="padding: 40px;">
+                                            <div class="col_full nobottommargin">
+                                                <h3 class="nopadding nomargin">Registrati ed inizia a condividere i tuoi video</h3>
+                                                <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
+                                                    <i class="icon-arrow-down2"></i>
+                                                </div>
+                                            </div>
                                             <div class="col_half nobottommargin">
                                                 <div class="text-lg-left text-md-left text-sm-left  text-xs-center">
                                                     <label class="noleftpadding">
@@ -72,9 +78,6 @@
                                                         <%=Lingua.CaricaLingua("lgl_register_utente_visitatore")%>
                                                     </label>
                                                 </div>
-                                            </div>
-                                            <div class="divider divider-center">
-                                                <i class="icon-arrow-down2"></i>
                                             </div>
                                             <div class="col_half" style="margin-bottom:0px;">
                                                 <cc:rTextBox ID="txt_nome" runat="server" MaxLength="70" CssClass="form-control"
@@ -232,7 +235,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-content clearfix" id="tab-fatturazione">
+                                <div class="tab-content clearfix hidden" id="tab-fatturazione">
                                     <div class="panel panel-default nobottommargin" id="div_dati_02" runat="server">
                                     </div>
                                 </div>
