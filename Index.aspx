@@ -17,7 +17,7 @@
             <div class="video-overlay"></div>
         </div>
         <div class="container clearfix">
-            <div class="col_two_third dark">
+            <div class="col_full dark">
                 <div class="panel-body" style="padding: 0px 0;">
                     <div class="emphasis-title title-center">
                         <h2 class="nopadding text-shadow">
@@ -27,14 +27,11 @@
                             <i class="icon-arrow-down2"></i>
                         </div>
                         <div id="div_registrati" runat="server">
+                            
+                            <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin">Accedi</a> 
                             <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col_one_third col_last nobottomargin nobottompadding">
-                <div class="panel panel-default divcenter rounded" data-animate="fadeInUp" data-delay="1000" style="max-width: 400px;">
-                    
                 </div>
             </div>
         </div>
