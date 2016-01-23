@@ -13,14 +13,12 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title">
+    <section id="page-title" class="page-title-mini">
         <div class="container clearfix">
             <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
-                | 
-                <small><asp:LinkButton ID="btn_indietro" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></small>
             </h1>
             <ol class="breadcrumb">
-                <li><asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="btn_indietro" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></li>
             </ol>
         </div>
     </section>
@@ -31,9 +29,7 @@
             <div class="col_full">
                 <div id="div_dati" runat="server">
                     <div class="fancy-title title-dotted-border">
-                        <h3>
-                            <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                            </h3>
+                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
                     </div>
                     <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
                         visible="false">
