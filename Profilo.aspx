@@ -26,23 +26,16 @@
             <div class="content-wrap" style="padding: 20px 0">
                 <div class="container clearfix">
                     <div class="col_full">
-                        <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
-                            visible="false">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-                                x
-                            </button>
-                            <i class="fa-lg fa fa-warning"></i><strong>
-                                <%=Lingua.CaricaLingua("lgl_attenzione")%></strong>
-                            <asp:Literal ID="ltl_messaggio_ko" runat="server"></asp:Literal>
+                        <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server" visible="false">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                            <i class="fa-lg fa fa-warning"></i><strong><%=Lingua.CaricaLingua("lgl_attenzione")%></strong><asp:Literal ID="ltl_messaggio_ko" runat="server"></asp:Literal>
                         </div>
-                        <div class="alert alert-success alert-dismissable" id="div_message_ok" runat="server"
-                            visible="false">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-                                x
-                            </button>
-                            <strong>
-                                <asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
+                        <div class="alert alert-success alert-dismissable" id="div_message_ok" runat="server" visible="false">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                            <strong><asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
                         </div>
+                        
+                        <!-- tab di navigazione -->
                         <ul class="nav nav-tabs" style="margin-bottom: 30px;">
                             <li class="active" id="li_riepilogo" runat="server">
                                 <asp:LinkButton ID="btn_resume" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_riepilogo")%></asp:LinkButton>
@@ -57,9 +50,10 @@
                                 <asp:LinkButton ID="btn_profilo_pubblico" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_pubblico")%></asp:LinkButton>
                             </li>
                         </ul>
+                        <!-- FINE tab di navigazione -->
+                            
+                        <!-- Riepilogo -->
                         <div id="div_espositore" runat="server">
-                            <div class="clearfix">
-                            </div>
                             <div class="col_one_fourth center">
                                 <div class="feature-box fbox-center fbox-bg fbox-light">
                                     <div class="fbox-icon">
@@ -82,13 +76,11 @@
                                         <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_lik"
                                             runat="server"><asp:Literal ID="ltl_count_like" runat="server"></asp:Literal></span>
                                     </h3>
-                                    <h5>
-                                        <%=Lingua.CaricaLingua("lgl_profilo_likes")%></h5>
+                                    <h5><%=Lingua.CaricaLingua("lgl_profilo_likes")%></h5>
                                 </div>
                             </div>
                             <div class="list-group col_half col_last">
-                                <h4>
-                                    <%=Lingua.CaricaLingua("lgl_profilo_dettaglio_sui_video")%></h4>
+                                <h4><%=Lingua.CaricaLingua("lgl_profilo_dettaglio_sui_video")%></h4>
                                 <asp:Repeater ID="rpt_video_lista" runat="server">
                                     <ItemTemplate>
                                         <div class="list-group-item clearfix">
@@ -112,26 +104,24 @@
                                         </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
-                                <div class="bottommargin-sm">
-                                </div>
                                 <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-rounded nomargin">
                                     <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>&nbsp;<i class="icon-arrow-right2"></i>
                                 </asp:LinkButton>
                             </div>
                         </div>
+                        <!-- FINE Riepilogo -->
+                        
+                        <!-- Gestione Video -->
                         <div id="div_gestione_video" runat="server">
                             <div class="fancy-title title-dotted-border">
-                                <h3>
-                                    <%=Lingua.CaricaLingua("lgl_profilo_tuoi_video")%></h3>
+                                <h3><%=Lingua.CaricaLingua("lgl_profilo_tuoi_video")%></h3>
                             </div>
                             <asp:Repeater ID="rpt_video" runat="server">
                                 <ItemTemplate>
                                     <div id="portfolio" class="portfolio-1 clearfix">
                                         <article class="portfolio-item pf-media pf-icons clearfix">
                                             <div class="portfolio-image">
-                                                <a href="portfolio-single.html">
-                                                    <img src="images/custom/bg_jazz.jpg" alt="Open Imagination">
-                                                </a>
+                                                <a href="portfolio-single.html"><img src="images/custom/bg_jazz.jpg" alt="Open Imagination"></a>
                                                 <div class="portfolio-overlay">
                                                     <a href="images/portfolio/full/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
                                                     <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
@@ -161,26 +151,20 @@
                                         <div class="col-lg-4">
                                             <div class="feature-box center media-box fbox-bg">
                                                 <div class="fbox-desc" style="border:none!Important">
-                                                    <h3>
-                                                        <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                                    <span class="subtitle">
-                                                        <asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal>
-                                                    </span>
-                                                    <div class="divider divider-center">
-                                                        
-                                                    </div>
+                                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                                    <span class="subtitle"><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></span>
+                                                    <div class="divider divider-center"></div>
                                                     <div class="col_half nobottommargin text-left" style="font-size: 20px;">
-                                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="label label-success"
-                                                            runat="server">
-                                                    <span class="icon-line-play"></span>
+                                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="label label-success" runat="server">
+                                                            <span class="icon-line-play"></span>
                                                         </asp:LinkButton>
                                                         &nbsp;
                                                         <asp:LinkButton ID="btn_modifica" runat="server" CssClass="label label-default" CommandName="MOD">
-                                                    <span class="icon-edit"></span>
+                                                            <span class="icon-edit"></span>
                                                         </asp:LinkButton>
                                                         &nbsp;
                                                         <asp:LinkButton ID="btn_delete" runat="server" CssClass="label label-danger" CommandName="DEL">
-                                                    <span class="icon-line-trash"></span>
+                                                            <span class="icon-line-trash"></span>
                                                         </asp:LinkButton>
                                                     </div>
                                                     <div class="col_half col_last nobottommargin text-right" style="font-size: 20px; white-space:nowrap;">
@@ -191,8 +175,7 @@
                                                         <span class="label label-default">
                                                             <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal>&nbsp;<span class="icon-comment"></span></span>
                                                     </div>
-                                                    <div class="clearfix">
-                                                    </div>
+                                                    <div class="clearfix"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,12 +203,17 @@
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>
+                        
+                        <!-- Visitatore -->
                         <div id="div_visitatore" runat="server">
                             <div class="fancy-title title-dotted-border">
                                 <h3>
                                     <%=Lingua.CaricaLingua("lgl_profilo_selezione_video")%></h3>
                             </div>
                         </div>
+                        <!-- FINE Visitatore -->
+                            
+                        <!-- Modifica profilo -->
                         <div id="div_profilo" runat="server">
                             <div class="col_half" style="margin-bottom: 0px;">
                                 <div class="col_half" style="margin-bottom: 0px;">
@@ -330,6 +318,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- FINE modifica profilo -->
+                                    
+                        <!-- Profilo Pubblico -->
                         <div id="div_profilo_pubblico" runat="server">
                             <div class="col_half" style="margin-bottom: 0px;">
                                 <div class="col_full" style="margin-bottom: 0px;">
@@ -379,6 +370,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- FINE modifica profilo pubblico -->            
+                        
                     </div>
                 </div>
             </div>
