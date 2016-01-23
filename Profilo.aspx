@@ -53,6 +53,9 @@
                             <li id="li_profilo" runat="server">
                                 <asp:LinkButton ID="btn_modifica" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo")%></asp:LinkButton>
                             </li>
+                            <li id="li_pubblico" runat="server">
+                                <asp:LinkButton ID="btn_profilo_pubblico" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_pubblico")%></asp:LinkButton>
+                            </li>
                         </ul>
                         <div id="div_espositore" runat="server">
                             <div class="clearfix">
@@ -127,10 +130,7 @@
                                         <div class="col-lg-4">
                                             <div class="feature-box center media-box fbox-bg">
                                                 <div class="fbox-media">
-                                                    <video width="100%" controls>
-                                                        <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
-                                                        Your browser does not support the video tag.
-                                                    </video>
+                                                    <asp:Image ID="img_copertina" runat="server"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -301,6 +301,55 @@
                                     <telerik:RadAsyncUpload runat="server" ID="img_upload" MultipleFileSelection="Disabled"
                                         Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
                                     <asp:LinkButton ID="btn_carica" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_carica")%>&nbsp;<i class="icon-check"></i>
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div_profilo_pubblico" runat="server">
+                            <div class="col_half" style="margin-bottom: 0px;">
+                                <div class="col_full" style="margin-bottom: 0px;">
+                                    <cc:rTextBox ID="txt_descrizione_pubblica" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" Required="false" TextMode="MultiLine" Rows="15" />
+                                </div>
+                                <div class="col_full" style="margin-bottom: 0px;">
+                                    <label for="chk_stato_estero">
+                                        <%=Lingua.CaricaLingua("lgl_register_profilo_pubblicato")%></label>
+                                    <asp:CheckBox ID="chk_ut_profilo_pubblicato" runat="server" AutoPostBack="true" />
+                                </div> 
+                                <div class="col_full" style="margin-bottom: 0px;">
+                                    <asp:LinkButton ID="btn_salva_profilo_pubblico" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_modifica_profilo")%> <i class="icon-check"></i>
+                                    </asp:LinkButton>
+                                </div>
+                                <div class="col_full" style="margin-bottom: 0px;">
+                                </div>
+                            </div>
+                            <div class="col_half col_last" style="margin-bottom: 0px;">
+                                <div class="col_half" style="margin-bottom: 0px; margin-top: 50px;">
+                                    <%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%>
+                                    <asp:ImageButton ID="img_profilo_pubblico" runat="server" Style="width: 100%; min-width: 200px;" />
+                                    <br />
+                                    <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
+                                    </asp:LinkButton>
+                                </div>
+                                <div class="col_half col_last" style="margin-bottom: 0px; margin-top: 50px;">
+                                    <telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico" MultipleFileSelection="Disabled"
+                                        Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
+                                </div>
+                                <div class="col_half" style="margin-bottom: 0px; margin-top: 50px;">
+                                    <%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%>
+                                    <asp:ImageButton ID="img_profilo_pubblico_tn" runat="server" Style="width: 100%; min-width: 200px;" />
+                                    <br />
+                                    <asp:LinkButton ID="btn_cancella_profilo_pubblico_tn" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
+                                    </asp:LinkButton>
+                                </div>
+                                <div class="col_half col_last" style="margin-bottom: 0px; margin-top: 50px;">
+                                    <telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico_tn" MultipleFileSelection="Disabled"
+                                        Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
+                                    <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_carica")%>&nbsp;<i class="icon-check"></i>
                                     </asp:LinkButton>
                                 </div>
