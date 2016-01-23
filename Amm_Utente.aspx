@@ -16,11 +16,10 @@
         <div class="container clearfix">
             <h1>
                 <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
-                | 
-                <small><asp:LinkButton ID="btn_indietro" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></small>
+                
             </h1>
             <ol class="breadcrumb">
-                <li><asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="btn_indietro" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></li>
             </ol>
         </div>
     </section>
