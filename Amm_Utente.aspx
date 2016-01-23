@@ -139,11 +139,12 @@
                                     <cc:rDropDown ID="ddl_tipo_accesso" runat="server" CssClass="form-control" AutoPostBack="true"
                                         Form_Vertical="true" />
                                 </div>
-                                <div class="col_full col_last" style="margin-bottom: 0px;">
+                                <div class="col_half col_last" style="margin-bottom: 0px;">
                                     <label for="chk_ut_attivo">
                                         <%=Lingua.CaricaLingua("lgl_register_attivo")%></label>
                                     <asp:CheckBox ID="chk_ut_attivo" runat="server" AutoPostBack="true" />
                                 </div>
+                                <div class="clear"></div>
                                 <div class="col_full" style="margin-bottom: 0px;">
                                     <asp:LinkButton ID="btn_aggiorna_profilo" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_aggiorna_profilo")%> <i class="icon-check"></i>
