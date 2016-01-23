@@ -12,15 +12,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-            <h1 class="hidden"><%=Lingua.CaricaLingua("lgl_register_title")%></h1>
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+    <h1 class="hidden"><%=Lingua.CaricaLingua("lgl_register_title")%></h1>
     <div class="content-wrap">
         <div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute;
                                                        left: 0; top: 0; background: url('images/custom/jazz-wallpaper.jpg') center center no-repeat;
                                                        background-size: cover;">
         </div>
-        <div class="container clearfix">
+        <div class="container clearfix" style="padding-top: 50px; padding-bottom:30px">
             <asp:UpdatePanel ID="upd_register" runat="server">
                 <ContentTemplate>
                     <div class="alert alert-success display-hide" id="div_message_ok" runat="server">
@@ -50,7 +48,7 @@
                                 <div class="tab-content clearfix" id="tab-principale">
                                     <div class="panel panel-default divcenter" style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
                                         <div class="panel-body" style="padding: 40px;">
-                                            <div class="col_full nobottommargin">
+                                            <div class="col_full nobottommargin center">
                                                 <h3 class="nopadding nomargin">Registrati ed inizia a condividere i tuoi video</h3>
                                                 <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
                                                     <i class="icon-arrow-down2"></i>
@@ -246,6 +244,9 @@
             </asp:UpdatePanel>
         </div>
     </div>
+                
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
 <script type="text/javascript">

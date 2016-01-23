@@ -11,7 +11,7 @@
                 left: 0; top: 0; background: url('images/custom/jazz-wallpaper.jpg') center center no-repeat;
                 background-size: cover;">
             </div>
-            <div class="container clearfix" style="padding-top: 40px; padding-bottom:30px">
+            <div class="container clearfix" style="padding-top: 50px; padding-bottom:30px">
                 <div class="col_two_fifth nobottommargin">
                     <div class="panel panel-default divcenter  "style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
                         <asp:UpdatePanel ID="upd_login" runat="server">

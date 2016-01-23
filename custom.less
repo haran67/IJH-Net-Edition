@@ -1,12 +1,16 @@
-// out: custom.css, compress: true, strictMath: false
+// out: custom.css, compress: false, strictMath: false
 
 @import "style.less";
 @import "less/dark.less";
 
 /* start custom */
 
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
+
 @heading-font:                  'Oswald', sans-serif;
-@body-font:                     'Quattrocento', sans-serif;
+@body-font:                     'Lato', sans-serif;
 @secondary-font:                'Crete Round', serif;
 
 @screen-sm-min : 768px;
@@ -14,7 +18,21 @@
 @screen-lg-min : 1200px;
 
 @theme-color: #1D5268;
-@dark-color: #311b12;
+
+@menu-base-color: rgba(30,30,30,.85);
+
+.dark #top-cart .top-cart-content, .dark #primary-menu:not(.not-dark) ul ul,
+.dark #primary-menu:not(.not-dark) ul li .mega-menu-content,
+#primary-menu.dark ul ul,
+#primary-menu.dark ul li .mega-menu-content {
+    background-color: @menu-base-color;
+    border-color: lighten(@menu-base-color, 5);
+    border-top-color: @theme-color;
+}
+
+.dark .top-cart-title { border-bottom-color: lighten(@menu-base-color, 5) !important; }
+
+.dark .top-cart-item { border-top-color: lighten(@menu-base-color, 5) !important; }
 
 .button {
     background-image: url('images/custom/bg_button.png');

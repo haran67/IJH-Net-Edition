@@ -11,13 +11,17 @@
     <meta name="author" content="Marte5" />
     <!-- Stylesheets
 	============================================= -->
+<!--
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Quattrocento:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Crete+Round:400italic' rel='stylesheet' type='text/css'>
-    <!--
+-->
+    
+<!--
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
         rel="stylesheet" type="text/css" />
 -->
+
     <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />
@@ -80,7 +84,7 @@
                                 <a href="/index.aspx">Home</a>
                             </li>
                             <li>
-                                <a href="/chisiamo.aspx">IJH</a>
+                                <a href="#">IJH</a>
                                 <ul>
                                     <li><a href="/chisiamo.aspx">About</a></li>
                                     <li>
@@ -135,20 +139,22 @@
                                 <a href="#" id="top-cart-trigger"><i class="icon-user"></i><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>
                                 <div class="top-cart-content">
                                     <div class="top-cart-title hidden">
-                                        <h4>Attività</h4>
+                                        <h5>benvenuto</h5>
+                                        <h4>Nome Cognome</h4>
                                     </div>
-                                    <div class="top-cart-items hidden">
+                                    <div class="top-cart-items ">
                                         <div class="top-cart-item clearfix">
                                             <div class="top-cart-item-desc">
-                                                <a href="#">Hai <strong>5</strong> nuovi commenti</a>
-                                                <a href="#">Hai <strong>4</strong> nuovi like</a>
+                                                <div class="top-cart-item-image">
+                                                    <a href="#"><img src="images/ui-sam.jpg"></a>
+                                                </div>
+                                                <h5>Nome Cognome</h5>
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="top-cart-action clearfix">
-                                        <asp:Button ID="btn_profilo" runat="server" CssClass="btn btn-primary btn-sm"></asp:Button>
-                                        <asp:Button ID="btn_esci" runat="server" CssClass="btn btn-primary btn-sm"></asp:Button>
+                                        <asp:Button ID="btn_profilo" runat="server" CssClass="button button-rounded button-small fleft"></asp:Button>
+                                        <asp:Button ID="btn_esci" runat="server" CssClass="button button-rounded button-small fright"></asp:Button>
                                     </div>
                                 </div>
                             </div>
