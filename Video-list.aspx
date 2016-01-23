@@ -8,10 +8,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title">
 		<div class="container clearfix">
-            <h1><strong>IJH</strong>Video List</h1>
+            <h1><strong>IJH</strong><%=Lingua.CaricaLingua("lgl_videolist_title")%></h1>
 			<ol class="breadcrumb">
-				<li><a href="/Index.aspx">Home</a></li>
-				<li class="active">Video List</li>
+				<li><a href="/Index.aspx"><%=Lingua.CaricaLingua("lgl_videolist_home")%></a></li>
+				<li class="active"><%=Lingua.CaricaLingua("lgl_videolist_title")%></li>
 			</ol>
 		</div>
 	</section>
@@ -19,11 +19,11 @@
         <div id="page-menu-wrap">
             <div class="container clearfix">
                 <div class="menu-title">
-                    Sfoglia i video per <span>Categoria</span>
+                    <%=Lingua.CaricaLingua("lgl_videolist_sfoglia")%>
                 </div>
                 <nav>
                     <ul>
-                        <li class="current"><a href="#" data-filter="*">Tutti</a></li>
+                        <li class="current"><a href="#" data-filter="*"><%=Lingua.CaricaLingua("lgl_videolist_sfoglia_tutti")%></a></li>
                         <asp:Repeater ID="rpt_categorie" runat="server">
                             <ItemTemplate>
                                 <li>

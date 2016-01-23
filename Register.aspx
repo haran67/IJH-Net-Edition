@@ -49,7 +49,7 @@
                                     <div class="panel panel-default divcenter" style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
                                         <div class="panel-body" style="padding: 40px;">
                                             <div class="col_full nobottommargin center">
-                                                <h3 class="nopadding nomargin">Registrati ed inizia a condividere i tuoi video</h3>
+                                                <h3 class="nopadding nomargin"><%=Lingua.CaricaLingua("lgl_register_registrati_inizia")%></h3>
                                                 <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
                                                     <i class="icon-arrow-down2"></i>
                                                 </div>
@@ -244,9 +244,6 @@
             </asp:UpdatePanel>
         </div>
     </div>
-                
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
 <script type="text/javascript">

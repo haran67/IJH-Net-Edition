@@ -1,13 +1,15 @@
 <%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
     CodeBehind="Contatti.aspx.vb" Inherits="JazzHub_Web.Contatti" %>
 
+<%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 <%@ Register TagPrefix="cc1" Namespace="WebControlCaptcha" Assembly="WebControlCaptcha" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title">
         <div class="container clearfix">
-            <h1><i class="icon-email2"></i> Contattaci per informazioni</h1>
+            <h1><i class="icon-email2"></i> <%=Lingua.CaricaLingua("lgl_contattaci_contattaci")%></h1>
         </div>
     </section>
 </asp:Content>
@@ -31,32 +33,31 @@
                         <div class="panel-body" style="padding: 40px;">
                             <div class="col_half">
                                 <label for="register-form-name">
-                                    Nome:*</label>
+                                    <%=Lingua.CaricaLingua("lgl_contattaci_nome")%></label>
                                 <asp:TextBox ID="txt_nome" runat="server" MaxLength="64" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col_half col_last">
                                 <label for="register-form-email">
-                                    Email:*</label>
+                                    <%=Lingua.CaricaLingua("lgl_contattaci_email")%></label>
                                 <asp:TextBox ID="txt_email" runat="server" MaxLength="64" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col_full">
                                 <label for="register-form-password">
-                                    Oggetto:*</label>
+                                    <%=Lingua.CaricaLingua("lgl_contattaci_oggetto")%></label>
                                 <asp:TextBox ID="txt_oggetto" runat="server" MaxLength="64" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col_full">
                                 <label for="register-form-repassword">
-                                    Messaggio:*</label>
+                                    <%=Lingua.CaricaLingua("lgl_contattaci_messaggio")%></label>
                                 <asp:TextBox ID="txt_messaggio" runat="server" MaxLength="64" TextMode="MultiLine" Rows="6" 
                                     CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="col_full">
-                                <cc1:CaptchaControl ID="CaptchaControl1" runat="server" CaptchaWidth="150" Height="100"
-                                    Text="copia il codice visualizzato nell'immagine qui sotto"></cc1:CaptchaControl>
+                                <cc1:CaptchaControl ID="CaptchaControl1" runat="server" CaptchaWidth="150" Height="100"></cc1:CaptchaControl>
                             </div>
                             <div class="col_full nobottommargin center">
                                 <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin" >
-                                    Invia il messaggio <i class="icon-arrow-right2"></i>
+                                    <%=Lingua.CaricaLingua("lgl_contattaci_invia")%> <i class="icon-arrow-right2"></i>
                                 </asp:LinkButton>
                             </div>
                         </div>

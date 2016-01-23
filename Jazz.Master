@@ -1,4 +1,4 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -81,14 +81,14 @@
 
                         <ul>
                             <li>
-                                <a href="/index.aspx">Home</a>
+                                <a href="/index.aspx"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
                             </li>
                             <li>
                                 <a href="#">IJH</a>
                                 <ul>
-                                    <li><a href="/chisiamo.aspx">About</a></li>
+                                    <li><a href="/chisiamo.aspx"><%=Lingua.CaricaLingua("lgl_menu_about")%></a></li>
                                     <li>
-                                        <a href="#">Partner</a>
+                                        <a href="#"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a>
                                         <ul>
                                             <li><a href="http://www.peperoncinojazzfestival.com/" target="_blank"><div>Peperoncino Jazz Festival</div></a></li>
                                             <li><a href="http://www.roeromusicfest.com/" target="_blank"><div>Roero Music Fest</div></a></li>
@@ -100,35 +100,35 @@
                                             <li><a href="http://www.jazzitfest.it/" target="_blank"><div>Jazzit Fest</div></a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/contatti.aspx">Contatti</a></li>
+                                    <li><a href="/contatti.aspx"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="/wip.aspx">Utenti</a>
+                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
                             </li>
                             <li>
-                                <a href="/wip.aspx">Streaming</a>
+                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
                             </li>
                             <li>
-                                <a href="/wip.aspx">Crowdfunding</a>
+                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
                             </li>
                             
                             <li>
-                                <a href="#">Media</a>
+                                <a href="#"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
                                 <ul>
-                                    <li><a href="/wip.aspx">Radio</a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCKWKlIjdJM69UL97D-5Yb0g" target="_blank">TV</a></li>
+                                    <li><a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCKWKlIjdJM69UL97D-5Yb0g" target="_blank"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
                                 </ul>
                                 
                             </li>
                             <li>
-                                <a href="/wip.aspx">Shop</a>
+                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_shop")%></a>
                             </li>
                             <li>
-                                <a href="/wip.aspx">Link</a>
+                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
                             </li>
                             <li id="li_accedi" runat="server">
-                                <a href="/login.aspx">Accedi</a>
+                                <a href="/login.aspx"><%=Lingua.CaricaLingua("lgl_menu_accedi")%></a>
                             </li>
                         </ul>
 
@@ -151,6 +151,18 @@
                                                 <h5>Nome Cognome</h5>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="top-cart-title hidden">
+                                        <h4>Attività</h4>
+                                    </div>
+                                    <div class="top-cart-items hidden">
+                                        <div class="top-cart-item clearfix">
+                                            <div class="top-cart-item-desc">
+                                                <a href="#">Hai <strong>5</strong> nuovi commenti</a>
+                                                <a href="#">Hai <strong>4</strong> nuovi like</a>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div class="top-cart-action clearfix">
                                         <asp:Button ID="btn_profilo" runat="server" CssClass="button button-rounded button-small fleft"></asp:Button>
@@ -267,11 +279,11 @@
         <div id="cookie-notification" class="dark">
             <div class="container clearfix">
                 <div class="col_three_fifth" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
-                    Per facilitare l'use del nostro sito web utilizziamo cookies. Continuando la navigazione nel sito autorizzi l'uso dei cookies.
+                    <%=Lingua.CaricaLingua("lgl_master_cookies_01")%>
                 </div>
                 <div class="col_two_fifth col_last" data-class-lg="tright" data-class-md="tright" data-class-sm="tright" data-class-xs="center" data-class-xxs="center">
-                    <button class="cookie-accept notopmargin cookie-noti-btn button button-rounded button-red button-small">Accetta</button>
-                    <button class="button notopmargin button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg">Info sui cookie</button>
+                    <button class="cookie-accept notopmargin cookie-noti-btn button button-rounded button-red button-small"><%=Lingua.CaricaLingua("lgl_master_cookies_02")%></button>
+                    <button class="button notopmargin button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg"><%=Lingua.CaricaLingua("lgl_master_cookies_03")%></button>
                 </div>
             </div>
         </div>
@@ -281,14 +293,14 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">Informativa cookie</h4>
+                            <h4 class="modal-title" id="myModalLabel"><%=Lingua.CaricaLingua("lgl_master_cookies_04")%></h4>
                         </div>
                         <div class="modal-body">
-                            <h5>Cookie di navigazione o sessione</h5>
-                            <p class="nobottommargin">Il Sito utilizza esclusivamente cookie 'tecnici'.<br>Specificatamente, vengono utilizzati cookie di navigazione o sessione , diretti a garantire la normale navigazione e fruizione del sito web, e quindi finalizzati a rendere funzionale ed ottimizzare la stessa navigazione all’interno del sito.</p>
+                            <h5><%=Lingua.CaricaLingua("lgl_master_cookies_05")%></h5>
+                            <p class="nobottommargin"><%=Lingua.CaricaLingua("lgl_master_cookies_06")%></p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Ok ho letto</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><%=Lingua.CaricaLingua("lgl_master_cookies_07")%></button>
                         </div>
                     </div>
                 </div>

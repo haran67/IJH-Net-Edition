@@ -58,9 +58,9 @@
                                                 <i class="icon-thumbs-up i-alt"></i>
                                             </asp:LinkButton>
                                         </div>
-                                        <h3>Likes</h3>
+                                        <h3><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
                                         <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
-                                        <div class="" id="div_no_like" runat="server"><span>In attesa di ricevere likes ...</span></div>
+                                        <div class="" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
                                     </ContentTemplate>
                                 </asp:UpdatePanel>
                             </div>
@@ -90,7 +90,7 @@
                             <!-- Post Single - Share
                             ============================================= -->
                             <div class="si-share noborder clearfix hidden">
-                                <span>Condividi questo video:</span>
+                                <span><%=Lingua.CaricaLingua("lgl_videopost_likes_condividi")%></span>
                                 <div>
                                     <a href="#" class="social-icon si-borderless si-facebook">
                                         <i class="icon-facebook"></i>
@@ -128,7 +128,7 @@
                     ============================================= -->
                     <div id="comments" class="clearfix">
 
-                        <h3 id="comments-title"><span class="icon-comment"></span> Presto potrai lasciare qu&igrave; i tuoi commenti</h3>
+                        <h3 id="comments-title"><span class="icon-comment"></span> <%=Lingua.CaricaLingua("lgl_videopost_lascia_commenti")%></h3>
 
                         <ol class="commentlist clearfix hidden">
 
@@ -195,7 +195,6 @@
                         </ol>
                         <!-- .commentlist end -->
 
-
                         <!-- Comments List
                         ============================================= -->
                         <ol class="commentlist clearfix">
@@ -237,7 +236,7 @@
                         ============================================= -->
                         <div id="respond" class="clearfix">
 
-                            <h3>Lascia un <span>Commento</span></h3>
+                            <h3><%=Lingua.CaricaLingua("lgl_videopost_lascia_commento")%></h3>
 
                             <div class="clearfix" action="#" method="post" id="commentform">    
                                 
@@ -245,12 +244,14 @@
                                     <asp:Literal ID="ltl_msg_span_comment" runat="server"></asp:Literal></span>
 
                                 <div class="col_full">
-                                    <label for="comment" class="hidden">Commento</label>
+                                    <label for="comment" class="hidden"><%=Lingua.CaricaLingua("lgl_videopost_commento")%></label>
                                     <asp:TextBox ID="txt_commento" runat="server" TextMode="MultiLine" Rows="7" CssClass="sm-form-control"></asp:TextBox>
                                 </div>
 
                                 <div class="col_full nobottommargin">
-                                    <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin">Invia</asp:LinkButton>
+                                    <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin">
+                                        <%=Lingua.CaricaLingua("lgl_videopost_invia_commento")%>
+                                    </asp:LinkButton>
                                 </div>
 
                             </div>
@@ -275,125 +276,11 @@
             <div class="container clearfix center">
                 <div class="emphasis-title " data-animate="flipInX" data-delay="500">
                     <h2>
-                        Quali opportunit&agrave;</h2>
+                        <%=Lingua.CaricaLingua("lgl_videopost_opportunita")%></h2>
                     <p class="lead topmargin-sm" data-animate="flipInX" data-delay="1000">
-                        <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale
-                        del jazz italiano, un meeting-expo virtuale di settore che permetter&agrave; ai
-                        musicisti e addetti ai lavori di entrare in contatto in remoto, con colleghi di
-                        tutto il mondo attraverso filmati, teaser e videoclip.<br>
-                        <strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF Foundation</strong>,
-                        gi&agrave; produttrice del roma jazz festival e si avvale della partnership editoriale
-                        di <strong>Jazzit</strong>.
+                        <%=Lingua.CaricaLingua("lgl_videopost_opportunita_desc")%>
                     </p>
                 </div>
-            </div>
-            <div class="container clearfix hidden">
-                <div class="fancy-title title-dotted-border title-left">
-                    <h3>
-                        <%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
-                </div>
-                <div id="portfolio" class=" clearfix">
-                    <article class="portfolio-item pf-media pf-icons">
-                        <div class="portfolio-image">
-                            <a href="#">
-                                <img src="images/gallery/jazz1.jpg" alt="Open Imagination">
-                            </a>
-                            <div class="portfolio-overlay">
-                                <a href="images/gallery/jazz1.jpg" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="#">Open Imagination</a></h3>
-                            <span><a href="#">Bebop</a>, <a href="#">Latin jazz</a></span>
-                        </div>
-                    </article>
-                    <article class="portfolio-item pf-illustrations">
-                        <div class="portfolio-image">
-                            <a href="#">
-                                <img src="images/gallery/jazz2.jpg" alt="Locked Steel Gate">
-                            </a>
-                            <div class="portfolio-overlay">
-                                <a href="images/gallery/jazz2.jpg" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="#">Locked Steel Gate</a></h3>
-                            <span><a href="#">Free Jazz</a></span>
-                        </div>
-                    </article>
-                    <article class="portfolio-item pf-graphics pf-uielements">
-                        <div class="portfolio-image">
-                            <a href="#">
-                                <img src="images/gallery/jazz3.jpg" alt="Mac Sunglasses">
-                            </a>
-                            <div class="portfolio-overlay">
-                                <a href="http://vimeo.com/89396394" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="portfolio-single-video.html">Mac Sunglasses</a></h3>
-                            <span><a href="#">Acid Jazz</a>, <a href="#">Dixieland</a></span>
-                        </div>
-                    </article>
-                    <article class="portfolio-item pf-icons pf-illustrations">
-                        <div class="portfolio-image">
-                            <div class="fslider" data-arrows="false" data-speed="400" data-pause="4000">
-                                <div class="flexslider">
-                                    <div class="slider-wrap">
-                                        <div class="slide">
-                                            <img src="images/gallery/jazz4.jpg" alt="Morning Dew">
-                                        </div>
-                                        <div class="slide">
-                                            <img src="images/gallery/jazz4.jpg" alt="Morning Dew">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="portfolio-overlay" data-lightbox="gallery">
-                                <a href="images/gallery/jazz4.jpg" class="left-icon" style="margin-left:-14px!Important;" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
-                                <a href="images/gallery/jazz4.jpg" class="hidden" data-lightbox="gallery-item"></a>
-                            </div>
-                        </div>
-                        <div class="portfolio-desc">
-                            <h3><a href="portfolio-single-gallery.html">Morning Dew</a></h3>
-                            <span><a href="#"><a href="#">Jazz Funk</a>, <a href="#">Nu Jazz</a></span>
-                        </div>
-                    </article>
-                </div>
-                <!-- Portfolio Script
-                        ============================================= -->
-                <script type="text/javascript">
-                    jQuery(window).load(function () {
-
-                        var $container = $('#portfolio');
-
-                        $container.isotope({
-                            transitionDuration: '0.65s'
-                        });
-
-                        $('#portfolio-filter a').click(function () {
-                            $('#portfolio-filter li').removeClass('activeFilter');
-                            $(this).parent('li').addClass('activeFilter');
-                            var selector = $(this).attr('data-filter');
-                            $container.isotope({
-                                filter: selector
-                            });
-                            return false;
-                        });
-
-                        $('#portfolio-shuffle').click(function () {
-                            $container.isotope('updateSortData').isotope({
-                                sortBy: 'random'
-                            });
-                        });
-
-                        $(window).resize(function () {
-                            $container.isotope('layout');
-                        });
-
-                    });
-                </script>
-                <!-- Portfolio Script End -->
             </div>
         </div>
     </div>
