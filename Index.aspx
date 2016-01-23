@@ -27,8 +27,7 @@
                             <i class="icon-arrow-down2"></i>
                         </div>
                         <div id="div_registrati" runat="server">
-                            
-                            <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin">Accedi</a> 
+                            <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
                             <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
