@@ -6,13 +6,9 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Vs_user_stats_Base">
+<member name="T:JazzHub_Classi.Oggetti.Tab_profilo_pagamento_Base">
 	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella VS_USER_STATS
- </summary>
-</member><member name="T:JazzHub_Classi.Oggetti.Video_comment_Base">
-	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella VIDEO_COMMENT
+ Classe utilizzata per l'astrazione dei dati della tabella TAB_PROFILO_PAGAMENTO
  </summary>
 </member><member name="T:JazzHub_Classi.Controls.DDLReadOnly">
 	<summary>
@@ -54,6 +50,10 @@ JazzHub_Classi
 </member><member name="T:JazzHub_Classi.Oggetti.Video_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella VIDEO
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Vs_video_stats_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella VS_VIDEO_STATS
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Sottocategorie_lng_Base">
 	<summary>
@@ -244,9 +244,17 @@ JazzHub_Classi
  Ha le stesse caratteristiche del controllo Button, in più si disabilita
  automaticamente lato client non appena viene cliccato.
  </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Video_comment_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella VIDEO_COMMENT
+ </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Video_lng_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella VIDEO_LNG
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Vs_user_stats_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella VS_USER_STATS
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Canale_lng_Base">
 	<summary>
