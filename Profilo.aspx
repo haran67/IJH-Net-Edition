@@ -123,6 +123,30 @@
                             </div>
                             <asp:Repeater ID="rpt_video" runat="server">
                                 <ItemTemplate>
+                                    <div id="portfolio" class="portfolio-1 clearfix">
+                                        <article class="portfolio-item pf-media pf-icons clearfix">
+                                            <div class="portfolio-image">
+                                                <a href="portfolio-single.html">
+                                                    <img src="images/custom/bg_jazz.jpg" alt="Open Imagination">
+                                                </a>
+                                                <div class="portfolio-overlay">
+                                                    <a href="images/portfolio/full/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio-desc">
+                                                <h3><a href="portfolio-single.html">Open Imagination</a></h3>
+                                                <span><a href="#">Media</a>, <a href="#">Icons</a></span>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed. Optio, reprehenderit, ex.</p>
+                                                <ul class="iconlist">
+                                                    <li><i class="icon-ok"></i> <strong>Created Using:</strong> PHP, HTML5, CSS3</li>
+                                                    <li><i class="icon-ok"></i> <strong>Completed on:</strong> 12th January, 2014</li>
+                                                    <li><i class="icon-ok"></i> <strong>By:</strong> John Doe</li>
+                                                </ul>
+                                                <a href="portfolio-single.html" class="button button-3d noleftmargin">Launch Project</a>
+                                            </div>
+                                        </article>
+                                    </div>
                                     <div class="col-lg-12">
                                         <div class="col-lg-4">
                                             <div class="feature-box center media-box fbox-bg">
