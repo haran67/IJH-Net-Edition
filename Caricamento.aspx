@@ -85,9 +85,7 @@
                             ProgressIndicators="TimeElapsed, TimeEstimated, TransferSpeed, TotalProgress, TotalProgressPercent, TotalProgressBar" />
                         <div style="margin-top:30px;"></div>
                         <div class="form-group" id="div_bottone" runat="server">
-                            <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin">
-                                <%=Lingua.CaricaLingua("lgl_caricamento_video_invia")%>
-                            </asp:LinkButton>
+                            <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin"></asp:LinkButton>
                         </div> 
                     </div>
                 </div>

@@ -6,7 +6,15 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Tab_profilo_pagamento_Base">
+<member name="T:JazzHub_Classi.Oggetti.Utenti_social_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella UTENTI_SOCIAL
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Tab_social_network_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella TAB_SOCIAL_NETWORK
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Tab_profilo_pagamento_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella TAB_PROFILO_PAGAMENTO
  </summary>
