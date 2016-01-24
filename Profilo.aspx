@@ -285,7 +285,7 @@
                                     <telerik:RadAsyncUpload runat="server" ID="img_upload" MultipleFileSelection="Disabled"
                                         Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
                                     <asp:LinkButton ID="btn_carica" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_carica")%>&nbsp;<i class="icon-check"></i>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>&nbsp;<i class="icon-check"></i>
                                     </asp:LinkButton>
                                 </div>
                             </div>
@@ -309,11 +309,9 @@
                                         <%=Lingua.CaricaLingua("lgl_profilo_modifica_profilo")%> <i class="icon-check"></i>
                                     </asp:LinkButton>
                                 </div>
-                                <div class="col_full" style="margin-bottom: 0px;">
-                                </div>
                             </div>
                             <div class="col_half col_last" style="margin-bottom: 0px;">
-                                <div class="col_half" style="margin-bottom: 0px; margin-top: 50px;">
+                                <div class="col_half" style="margin-bottom: 0px;">
                                     <%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%>
                                     <asp:ImageButton ID="img_profilo_pubblico" runat="server" Style="width: 100%; min-width: 200px;" />
                                     <br />
@@ -336,8 +334,10 @@
                                 <div class="col_half col_last" style="margin-bottom: 0px; margin-top: 50px;">
                                     <telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico_tn" MultipleFileSelection="Disabled"
                                         Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
+                                </div>
+                                <div class="col_full" style="margin-bottom: 0px; padding-top:10px;">
                                     <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_carica")%>&nbsp;<i class="icon-check"></i>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>&nbsp;<i class="icon-check"></i>
                                     </asp:LinkButton>
                                 </div>
                             </div>

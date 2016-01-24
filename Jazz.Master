@@ -146,9 +146,11 @@
                                         <div class="top-cart-item clearfix">
                                             <div class="top-cart-item-desc">
                                                 <div class="top-cart-item-image">
-                                                    <a href="#"><img src="images/ui-sam.jpg"></a>
+                                                    <a href="#">
+                                                        <asp:Image ID="img_utente" runat="server" />
+                                                    </a>
                                                 </div>
-                                                <h5>Nome Cognome</h5>
+                                                <h5><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h5>
                                             </div>
                                         </div>
                                     </div>
