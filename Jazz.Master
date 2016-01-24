@@ -215,7 +215,7 @@
             <div id="copyrights">
                 <div class="container clearfix">
                     <div class="col_one_fifth nobottommargin">
-                        <img src="images/footer-widget-logo.png" alt="" class="footer-logo">
+                        <img src="/images/footer-widget-logo.png" alt="" class="footer-logo">
                     </div>
                     <div class="col_two_fifth nobottommargin">
                         <h4 class="nomargin">IMF Foundation</h4>

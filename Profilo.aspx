@@ -299,6 +299,23 @@
                                     <cc:rTextBox ID="txt_descrizione_pubblica" runat="server" MaxLength="70" CssClass="form-control"
                                         Form_Vertical="true" Required="false" TextMode="MultiLine" Rows="15" />
                                 </div>
+                                <div class="col_full" style="margin-bottom: 10px;">
+                                    <label for="">
+                                        <%=Lingua.CaricaLingua("lgl_register_social")%></label>
+                                    <div class="row">
+                                    <asp:Repeater ID="rpt_social" runat="server">
+                                        <ItemTemplate>
+                                            <div class="col-xs-2" style="margin-bottom: 0px;">
+                                                <asp:Literal ID="ltl_social" runat="server"></asp:Literal>
+                                            </div> 
+                                            <div class=" col-xs-10" style="margin-bottom: 0px;">
+                                                <asp:TextBox ID="txt_social" runat="server" MaxLength="70" CssClass="form-control"
+                                                    Form_Vertical="true" Required="false" />
+                                            </div> 
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                    </div>
+                                </div> 
                                 <div class="col_full" style="margin-bottom: 0px;">
                                     <label for="chk_stato_estero">
                                         <%=Lingua.CaricaLingua("lgl_register_profilo_pubblicato")%></label>
