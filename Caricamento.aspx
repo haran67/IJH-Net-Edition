@@ -59,7 +59,8 @@
                     </div>
                     <div class="col_half col_last">    
                         <span for="upl_video" style="font-size:15px; color:Red;" id="span_upl_video" runat="server" visible="false">
-                            <asp:Literal ID="ltl_msg_upl_video" runat="server"></asp:Literal></span>
+                            <asp:Literal ID="ltl_msg_upl_video" runat="server"></asp:Literal>
+                        </span>
                         <label for="login-form-username">
                             <%=Lingua.CaricaLingua("lgl_caricamento_copertina")%></label>
                         <div class="form-group">
@@ -75,7 +76,7 @@
                         <div id="div_carica_video" runat="server">
                             <label for="login-form-username">
                                 <%=Lingua.CaricaLingua("lgl_caricamento_video_help")%>
-                                </label>
+                            </label>
                             <div class="form-group" id="div_upload" runat="server">
                                 <telerik:RadAsyncUpload runat="server" ID="upl_video" ChunkSize="1048576" AllowedFileExtensions="m4v,mp4,mov,mpg" 
                                    EnableInlineProgress="false" OnClientFilesUploaded="OnClientFileUploaded" MultipleFileSelection="Disabled" />

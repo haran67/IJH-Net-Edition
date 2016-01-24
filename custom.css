@@ -15013,18 +15013,6 @@ body #side-panel.dark #side-panel-trigger-close a {
   background-position: center;
   background-size: cover;
 }
-#content {
-  background-image: url('images/custom/tribal-texture.jpg');
-}
-#header:after {
-  content: '';
-  display: block;
-  opacity: .75;
-  width: 100%;
-  height: 3px;
-  background: url('images/custom/jazz-gradient.jpg') no-repeat center center;
-  background-size: cover;
-}
 .text-xs-left {
   text-align: left;
 }
