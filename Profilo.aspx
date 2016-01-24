@@ -104,97 +104,68 @@
                                         </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
+                                <div class="divider"></div>
                                 <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-rounded nomargin">
                                     <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>&nbsp;<i class="icon-arrow-right2"></i>
                                 </asp:LinkButton>
+                                
                             </div>
                         </div>
                         <!-- FINE Riepilogo -->
                         
                         <!-- Gestione Video -->
                         <div id="div_gestione_video" runat="server">
-                            <div class="fancy-title title-dotted-border">
+                            <div class="fancy-title title-dotted-border hidden">
                                 <h3><%=Lingua.CaricaLingua("lgl_profilo_tuoi_video")%></h3>
                             </div>
                             <asp:Repeater ID="rpt_video" runat="server">
                                 <ItemTemplate>
-                                    <div id="portfolio" class="portfolio-1 clearfix">
-                                        <article class="portfolio-item pf-media pf-icons clearfix">
-                                            <div class="portfolio-image">
-                                                <a href="portfolio-single.html"><img src="images/custom/bg_jazz.jpg" alt="Open Imagination"></a>
-                                                <div class="portfolio-overlay">
-                                                    <a href="images/portfolio/full/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                                </div>
+                                    <div class="col_full learfix">
+                                        <div class="col_two_fifth nobottommargin">
+                                            <div style="position: absolute; top: 10px; left: 15px">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="noleftmargin button button-mini button-rounded" runat="server">
+                                                    Visualizza
+                                                </asp:LinkButton>
                                             </div>
-                                            <div class="portfolio-desc">
-                                                <h3><a href="portfolio-single.html">Open Imagination</a></h3>
-                                                <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed. Optio, reprehenderit, ex.</p>
+                                            <asp:Image ID="img_copertina" runat="server"/>
+                                        </div>
+                                        <div class="col_three_fifth col_last nobottommargin">
+                                            <h3 class="nomargin nopadding"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <p><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
+                                            <div class="col_half nobottommargin">
                                                 <ul class="iconlist">
-                                                    <li><i class="icon-ok"></i> <strong>Created Using:</strong> PHP, HTML5, CSS3</li>
-                                                    <li><i class="icon-ok"></i> <strong>Completed on:</strong> 12th January, 2014</li>
-                                                    <li><i class="icon-ok"></i> <strong>By:</strong> John Doe</li>
+                                                    <li><i class="icon-thumbs-up"></i> <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal> likes</li>
+                                                    <li><i class="icon-eye"></i>  <asp:Literal ID="ltl_like" runat="server">0</asp:Literal> visualizzazioni</li>
+                                                    <li><i class="icon-comment"></i> <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal> commenti</li>
                                                 </ul>
-                                                <a href="portfolio-single.html" class="button button-3d noleftmargin">Launch Project</a>
+                                                
+                                                <div class="clear"></div>
+                                                <asp:LinkButton ID="btn_modifica" runat="server" CssClass="noleftmargin button button-mini button-rounded button-green" CommandName="MOD">
+                                                    <span class="icon-edit"></span> Modifica
+                                                </asp:LinkButton>
+                                                <asp:LinkButton ID="btn_delete" runat="server" CssClass="noleftmargin button button-mini button-rounded button-red" CommandName="DEL">
+                                                    <span class="icon-line-trash"></span> Elimina
+                                                </asp:LinkButton>
                                             </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="col-lg-4">
-                                            <div class="feature-box center media-box fbox-bg">
-                                                <div class="fbox-media">
-                                                    <asp:Image ID="img_copertina" runat="server"/>
-                                                </div>
+                                            <div class="col_half col_last nobottommargin">
+                                                <h4 class="nobottommargin"><%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%></h4>
+                                                
+                                                <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound">
+                                                    <HeaderTemplate>
+                                                        <div class="panel panel-default divcenter nomargin" style="padding: 10px; height: 150px; overflow: auto">
+                                                    </HeaderTemplate>
+                                                    <ItemTemplate>
+                                                        <div class="list-group-item clearfix">
+                                                            <asp:Label ID="ltl_utente" runat="server" CssClass="fleft" style="display: inline-block"></asp:Label>
+                                                            <asp:Label ID="ltl_data" runat="server" CssClass="fright" style="display: inline-block"></asp:Label>
+                                                        </div>
+                                                    </ItemTemplate>
+                                                    <FooterTemplate>
+                                                        </div>
+                                                    </FooterTemplate>
+                                                </asp:Repeater>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="feature-box center media-box fbox-bg">
-                                                <div class="fbox-desc" style="border:none!Important">
-                                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                                    <span class="subtitle"><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></span>
-                                                    <div class="divider divider-center"></div>
-                                                    <div class="col_half nobottommargin text-left" style="font-size: 20px;">
-                                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="label label-success" runat="server">
-                                                            <span class="icon-line-play"></span>
-                                                        </asp:LinkButton>
-                                                        &nbsp;
-                                                        <asp:LinkButton ID="btn_modifica" runat="server" CssClass="label label-default" CommandName="MOD">
-                                                            <span class="icon-edit"></span>
-                                                        </asp:LinkButton>
-                                                        &nbsp;
-                                                        <asp:LinkButton ID="btn_delete" runat="server" CssClass="label label-danger" CommandName="DEL">
-                                                            <span class="icon-line-trash"></span>
-                                                        </asp:LinkButton>
-                                                    </div>
-                                                    <div class="col_half col_last nobottommargin text-right" style="font-size: 20px; white-space:nowrap;">
-                                                        <span class="label label-success">
-                                                            <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal>&nbsp;<span class="icon-thumbs-up"></span></span>
-                                                        <span class="label label-primary">
-                                                            <asp:Literal ID="ltl_like" runat="server">0</asp:Literal>&nbsp;<span class="icon-eye"></span></span>
-                                                        <span class="label label-default">
-                                                            <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal>&nbsp;<span class="icon-comment"></span></span>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <h3><%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%></h3> 
-                                            <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound">
-                                                <HeaderTemplate>
-                                                    <div style="max-height:200px; overflow:auto;">
-                                                </HeaderTemplate>
-                                                <ItemTemplate>
-                                                    <div class="list-group-item clearfix">
-                                                        <asp:Label ID="ltl_utente" runat="server" CssClass="fleft" style="display: inline-block"></asp:Label>
-                                                        <asp:Label ID="ltl_data" runat="server" CssClass="fright" style="display: inline-block"></asp:Label>
-                                                    </div>
-                                                </ItemTemplate>
-                                                <FooterTemplate>
-                                                    </div>
-                                                </FooterTemplate>
-                                            </asp:Repeater>
+<!--                                            </div> -->
                                         </div> 
                                     </div>
                                     <div class="divider divider-center">
@@ -202,6 +173,7 @@
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
+                                
                         </div>
                         
                         <!-- Visitatore -->
