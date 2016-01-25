@@ -2,6 +2,7 @@
     CodeBehind="Video-list.aspx.vb" Inherits="JazzHub_Web.Video_list" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
+<%@ Register Namespace="ASPnetControls" Assembly="ASPnetMesysPager" TagPrefix="pager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -74,6 +75,14 @@
                         </article>
                     </ItemTemplate>
                 </asp:Repeater>
+            </div>
+            <div class="clear"></div>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-lg-12">
+                    <pager:MesysPager ID="pager" runat="server" OnCommand="pager_Command" PageClause="Pagina"
+                        OfClause="di" GenerateGoToSection="false" GenerateToolTips="false" PageSize="3"
+                        Visible="false" />
+                </div>
             </div>
             <!-- Portfolio Script
                         ============================================= -->
