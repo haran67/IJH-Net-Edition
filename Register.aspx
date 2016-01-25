@@ -15,7 +15,7 @@
     <h1 class="hidden"><%=Lingua.CaricaLingua("lgl_register_title")%></h1>
     <div class="content-wrap">
         <div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute;
-                                                       left: 0; top: 0; background: url('images/custom/jazz-wallpaper.jpg') center center no-repeat;
+                                                       left: 0; top: 0; background: url('images/custom/sfondo.jpg') center center no-repeat;
                                                        background-size: cover;">
         </div>
         <div class="container clearfix" style="padding-top: 50px; padding-bottom:30px">

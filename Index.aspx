@@ -10,7 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         <div class="video-wrap" style="height: 100%;">
-            <video poster="images/custom/jazz-wallpaper.jpg" preload="auto" loop autoplay muted>
+            <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
                 <source src='images/videos/header-video.mp4' type='video/mp4' />
                 <source src='images/videos/explore.webm' type='video/webm' />
             </video>
@@ -38,7 +38,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
-        <div class="section nomargin dark parallax">
+        <div class="section nomargin parallax">
             <div class="container clearfix ">
                 <div class="heading-block center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
