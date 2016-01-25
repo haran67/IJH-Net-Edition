@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="ChiSiamo.aspx.vb" Inherits="JazzHub_Web.ChiSiamo" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Tv.aspx.vb" Inherits="JazzHub_Web.Tv" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
@@ -11,15 +11,15 @@
 
                 <div class="heading-block nobottomborder center text-shadow">
                     <h1>
-                        Jazz Hub
+                        <%=Lingua.CaricaLingua("lgl_tv_jazz_hub")%>
                     </h1>
-                    <h3>Accoglie i canali Youtube e vimeo ufficiali dedicati al grande jazz internazionale</h3>
+                    <h3><%=Lingua.CaricaLingua("lgl_tv_jazz_accoglie")%></h3>
                     <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
                         <i class="icon-arrow-down2" style="color: #fff;"></i>
                     </div>
-                    <h4>Per avere la visualizzazione del proprio canale abbiamo previsto un canone annuo di 99&euro;<br>
+                    <h4><%=Lingua.CaricaLingua("lgl_tv_jazz_canone")%><br>
                     </h4>
-                    <a href="/Contatti.aspx" class="button button-3d button-red"><i class="icon-info-sign"></i> contattaci</a> 
+                    <a href="/Contatti.aspx" class="button button-3d button-red"><i class="icon-info-sign"></i>&nbsp;<%=Lingua.CaricaLingua("lgl_tv_contattaci")%></a> 
                 </div>
 
             </div>
@@ -32,7 +32,7 @@
 
         <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-1.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
             <div class="heading-block nobottomborder tright text-shadow">
-                <h2>#artisti</h2>
+                <h2><%=Lingua.CaricaLingua("lgl_tv_artisti")%></h2>
             </div>
         </div>
 
@@ -65,7 +65,7 @@
 
         <div class="col-sm-5 col-padding dark" style="background: url('images/custom/festival-bg.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
             <div class="heading-block nobottomborder tright text-shadow">
-                <h2>Festival</h2>
+                <h2><%=Lingua.CaricaLingua("lgl_tv_festival")%></h2>
             </div>
         </div>
         <div class="col-sm-7 col-padding">
@@ -98,7 +98,7 @@
 
         <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-3.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
             <div class="heading-block nobottomborder tright text-shadow">
-                <h2>#Jazz Club</h2>
+                <h2><%=Lingua.CaricaLingua("lgl_tv_club")%></h2>
             </div>
         </div>
 
