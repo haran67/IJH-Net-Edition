@@ -1798,6 +1798,14 @@ div_upload control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Caricamento.ltl_video_tmp">
+	<summary>
+ltl_video_tmp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Caricamento.upl_video">
 	<summary>
 upl_video control.
