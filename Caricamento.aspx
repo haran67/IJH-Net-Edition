@@ -78,6 +78,7 @@
                                 <%=Lingua.CaricaLingua("lgl_caricamento_video_help")%>
                             </label>
                             <div class="form-group" id="div_upload" runat="server">
+                                <asp:Literal ID="ltl_video_tmp" runat="server"></asp:Literal>
                                 <telerik:RadAsyncUpload runat="server" ID="upl_video" ChunkSize="1048576" AllowedFileExtensions="m4v,mp4,mov,mpg" 
                                    EnableInlineProgress="false" OnClientFilesUploaded="OnClientFileUploaded" MultipleFileSelection="Disabled" />
                             </div>
