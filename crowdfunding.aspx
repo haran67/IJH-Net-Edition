@@ -9,10 +9,10 @@
 
     <div class="container vertical-middle center clearfix text-uppercase text-shadow">
 
-        <h1>Crowfunding</h1>
-        <h3>ciascun utente con profilo Expo potrà promuovere su Jazz Hub una cam- pagna di crowdfunding per la produzione di un nuovo video.</h3>
+        <h1><%=Lingua.CaricaLingua("lgl_crowfunding_title")%></h1>
+        <h3><%=Lingua.CaricaLingua("lgl_crowfunding_desc")%></h3>
         <div class="heading-block nobottomborder">
-            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i>Registrati ora!</a>
+            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
         </div>
 
     </div>

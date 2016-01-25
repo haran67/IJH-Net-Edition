@@ -6,7 +6,31 @@ JazzHub_Web
 </name>
 </assembly>
 <members>
-<member name="F:JazzHub_Web.Tv.div_registrati_00">
+<member name="F:JazzHub_Web.Radio.div_registrati_01">
+	<summary>
+div_registrati_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Partner.div_registrati_01">
+	<summary>
+div_registrati_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.crowdfunding.div_registrati_01">
+	<summary>
+div_registrati_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Tv.div_registrati_00">
 	<summary>
 div_registrati_00 control.
 </summary>

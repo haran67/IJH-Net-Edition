@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Radio.aspx.vb" Inherits="JazzHub_Web.Partner" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Radio.aspx.vb" Inherits="JazzHub_Web.Radio" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
@@ -9,10 +9,10 @@
 
     <div class="container vertical-middle center clearfix text-uppercase text-shadow">
 
-        <h1>Radio</h1>
-        <h3>Jazz Hub ha attivato una serie di profili con piattaforme di radio streaming per valorizzare l'attivit&agrave; dei musicisti iscritti.</h3>
+        <h1><%=Lingua.CaricaLingua("lgl_radio_title")%></h1>
+        <h3><%=Lingua.CaricaLingua("lgl_radio_desc")%></h3>
         <div class="heading-block nobottomborder">
-            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i>Registrati ora!</a>
+            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
         </div>
 
     </div>
@@ -22,4 +22,3 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
 </asp:Content>
-
