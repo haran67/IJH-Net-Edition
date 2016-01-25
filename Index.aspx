@@ -3,8 +3,6 @@
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
-<%@ Register Namespace="ASPnetControls" Assembly="ASPnetMesysPager" TagPrefix="pager" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
@@ -41,17 +39,13 @@
         <div class="section nomargin parallax">
             <div class="container clearfix ">
                 <div class="heading-block center">
-                    <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
+                    <h3><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
                 </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
-                    <asp:Repeater ID="rpt_video" runat="server">
+                    <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
                                 <div class="portfolio-image" style="background-color: #222;">
-                                    <video width="100%" id="video_span" runat="server">
-                                        <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
-                                        Your browser does not support the video tag.
-                                    </video>
                                     <asp:Image ID="img_copertina" runat="server"/>
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
@@ -67,35 +61,74 @@
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <pager:MesysPager ID="pager" runat="server" OnCommand="pager_Command" PageClause="Pagina"
-                            OfClause="di" GenerateGoToSection="false" GenerateToolTips="false" PageSize="6"
-                            Visible="false" />
-                    </div>
+                <div class="heading-block center">
+                    <h3><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
                 </div>
-            </div>
-            <div class="container clearfix hidden" id="div_video" runat="server" style="margin-top:50px;">
-                <div class="fancy-title title-dotted-border title-left">
-                    <h3>
-                        Selezione dei nostri video</h3>
+                <div id="Div1" class="portfolio-3 clearfix">
+                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
+                        <ItemTemplate>
+                            <article class="portfolio-item pf-media pf-icons">
+                                <div class="portfolio-image" style="background-color: #222;">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3 style="background-color:transparent;">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
-                <div id="portfolio" class="portfolio-3 clearfix">
+                <div class="heading-block center">
+                    <h3><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
                 </div>
-            </div>
-        </div>
-        <div class="section dark nomargin parallax hidden"  style="background: url('images/custom/jazz-wallpaper.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
-            <div class="container clearfix center">
-                <div class="emphasis-title " data-animate="flipInX" data-delay="500">
-                    <h2>Quali opportunit&agrave;</h2>
-                    <p class="lead topmargin-sm" data-animate="flipInX" data-delay="1000">
-                        <strong>Italian Jazz Hub</strong> &egrave; un progetto di promozione internazionale del jazz
-                        italiano, un meeting-expo virtuale di settore che permetter&agrave; ai musicisti e addetti
-                        ai lavori di entrare in contatto in remoto, con colleghi di tutto il mondo attraverso
-                        filmati, teaser e videoclip.<br><strong>Italian Jazz Hub</strong> &egrave; una iniziativa firmata da <strong>IMF
-                        Foundation</strong>, gi&agrave; produttrice del roma jazz festival e si avvale della partnership
-                        editoriale di <strong>Jazzit</strong>. 
-                    </p>
+                <div id="Div2" class="portfolio-3 clearfix">
+                    <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
+                        <ItemTemplate>
+                            <article class="portfolio-item pf-media pf-icons">
+                                <div class="portfolio-image" style="background-color: #222;">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3 style="background-color:transparent;">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div class="heading-block center">
+                    <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
+                </div>
+                <div id="Div3" class="portfolio-3 clearfix">
+                    <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
+                        <ItemTemplate>
+                            <article class="portfolio-item pf-media pf-icons">
+                                <div class="portfolio-image" style="background-color: #222;">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3 style="background-color:transparent;">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
         </div>
