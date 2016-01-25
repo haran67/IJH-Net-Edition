@@ -6,9 +6,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title" class="page-title-mini">
+    <section id="page-title">
             <div class="container clearfix">
-                <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>  | <small><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></small></h1>
+                <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
+                <span><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
+                </h1>
             </div>
         </section>
 </asp:Content>

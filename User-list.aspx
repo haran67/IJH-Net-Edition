@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title">
+    <section id="page-title" class="page-title-mini">
 		<div class="container clearfix">
             <h1><strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_userlist_title")%></h1>
 			<ol class="breadcrumb">
@@ -45,35 +45,46 @@
     <!-- #page-title end -->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap spray-texture " style="padding: 20px 0">
+    <div class="content-wrap" style="padding: 20px 0">
         <div class="container clearfix">
-            <div class="clear">
-            </div>
             <!-- Portfolio Items
                     ============================================= -->
-            <div id="portfolio" class="portfolio-3 clearfix">
+            <div id="portfolio" class="portfolio-5 clearfix">
                 <asp:Repeater ID="rpt_user" runat="server">
                     <ItemTemplate>
                         <article class="portfolio-item pf-media pf-" id="art_user" runat="server">
                             <div class="portfolio-image" style="background-color: #222;">
+                                <a href="#">
                                 <asp:Image ID="img_copertina" runat="server"/>
+                                </a>
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-desc">
-                                        <h3 style="background-color:transparent;">
+                                        <h3>
+                                            <asp:LinkButton ID="btn_user" CommandName="USER" runat="server">
                                             <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
-                                            <br>
-                                            <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                            </asp:LinkButton>
                                         </h3>
+                                        <span>
+                                            <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                        </span>
                                     </div>
-                                    <asp:LinkButton ID="btn_user" CommandName="USER" runat="server">
-                                        <i class="icon-user4"></i>
-                                    </asp:LinkButton>
+                                    
                                 </div>
                             </div>
                         </article>
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
+            <div class="clear"></div>
+            <ul class="pagination">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
             <!-- Portfolio Script
                         ============================================= -->
             <script type="text/javascript">
