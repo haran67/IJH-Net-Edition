@@ -151,7 +151,7 @@ h6 {
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 30px 0;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 h5,
 h6 {
@@ -922,7 +922,7 @@ body.stretched #header.full-header .container {
 #logo {
   position: relative;
   float: left;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 36px;
   line-height: 100%;
   margin-right: 40px;
@@ -1043,7 +1043,7 @@ body.stretched #header.full-header .container {
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
   -webkit-transition: height 0.4s ease, line-height 0.4s ease, margin 0.4s ease, padding 0.4s ease;
   -o-transition: height 0.4s ease, line-height 0.4s ease, margin 0.4s ease, padding 0.4s ease;
   transition: height 0.4s ease, line-height 0.4s ease, margin 0.4s ease, padding 0.4s ease;
@@ -1207,7 +1207,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 #primary-menu ul li .mega-menu-content.style-2 > ul > li.mega-menu-title > a {
   font-size: 13px;
   font-weight: bold;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase !important;
   margin-bottom: 15px;
@@ -1642,7 +1642,7 @@ body.top-search-open #top-search form {
   color: #333;
   font-weight: 700;
   margin-top: 0 !important;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
 }
 body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.full-header #top-search form input {
@@ -4928,7 +4928,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay {
   padding: 30px 0;
   text-align: center;
   color: #444;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 24px;
@@ -5224,7 +5224,7 @@ body:not(.device-touch) .entry-link {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .entry.entry-date-section + .entry .entry-timeline {
   top: 70px;
@@ -6491,7 +6491,7 @@ body:not(.device-touch) .button {
   font-size: 22px;
   height: auto;
   line-height: 1;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .button.button-desc span {
   display: block;
@@ -9922,7 +9922,7 @@ body:not(.device-touch) .team-overlay {
 .counter {
   font-size: 42px;
   font-weight: 600;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .counter.counter-small {
   font-size: 28px;
@@ -11071,7 +11071,7 @@ label {
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #555;
@@ -11562,7 +11562,7 @@ button.toast-close-button {
   font-weight: bold;
   text-align: right;
   text-transform: uppercase;
-  font-family: 'londrina_solidregular', sans-serif;
+  font-family: 'Oswald', sans-serif;
   letter-spacing: 2px;
 }
 .wedding-head .last-name {
@@ -15021,10 +15021,6 @@ body #side-panel.dark #side-panel-trigger-close a {
   font-weight: normal;
   font-style: normal;
 }
-.dark .section,
-.section.dark {
-  background-color: #3b1d08;
-}
 .dark #top-cart .top-cart-content,
 .dark #primary-menu:not(.not-dark) ul ul,
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content,
@@ -15044,6 +15040,10 @@ body #side-panel.dark #side-panel-trigger-close a {
   background-image: url('images/custom/bg_button.png');
   background-position: center;
   background-size: cover;
+}
+.comment-avatar img {
+  width: 60px;
+  height: 60px;
 }
 .text-xs-left {
   text-align: left;
@@ -15136,7 +15136,7 @@ body #side-panel.dark #side-panel-trigger-close a {
   background-size: cover;
 }
 .text-shadow {
-  text-shadow: 0 2px 2px #000000 !important;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.75) !important;
 }
 .tab-nav.nav-justified {
   width: 100%;

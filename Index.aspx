@@ -38,12 +38,10 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
-        <div class="section nomargin parallax">
+        <div class="section nomargin dark parallax">
             <div class="container clearfix ">
-                <div class="container clearfix">
-                    <div class="heading-block center">
-                        <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
-                    </div>
+                <div class="heading-block center">
+                    <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
                 </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
@@ -58,13 +56,12 @@
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
                                             <h3 style="background-color:transparent;">
-                                            <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
                                         </div>
-                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <i class="icon-line-play"></i>
-                                        </asp:LinkButton>
                                     </div>
-
                                 </div>
                             </article>
                         </ItemTemplate>

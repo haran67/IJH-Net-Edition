@@ -50,7 +50,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-    <body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
+<body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
     <form id="frmPrincipale" runat="server">
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true" EnablePageMethods="true"
         EnableScriptLocalization="true" AsyncPostBackTimeout="3600" ></telerik:RadScriptManager>

@@ -54,18 +54,16 @@
         url('fonts/londrinasolid-regular-webfont.svg#londrina_solidregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
 
-
-
-@heading-font:                  'londrina_solidregular', sans-serif;
+@heading-font:                  'Oswald', sans-serif;
 @body-font:                     'Lato', sans-serif;
 @secondary-font:                'Crete Round', serif;
+@alternative-font:               'Oswald', serif;
 
 @screen-sm-min : 768px;
 @screen-md-min : 992px;
@@ -74,11 +72,6 @@
 @theme-color: #4797BB;
 
 @menu-base-color: rgba(30,30,30,.85);
-
-.dark .section, .section.dark {
-    
-    background-color: #3b1d08;
-}
 
 
 .dark #top-cart .top-cart-content, .dark #primary-menu:not(.not-dark) ul ul,
@@ -98,6 +91,12 @@
     background-image: url('images/custom/bg_button.png');
     background-position: center;
     background-size: cover;
+}
+
+
+.comment-avatar img {
+    width: 60px;
+    height: 60px;
 }
 //#content {
 //    background-image: url('images/custom/tribal-texture.jpg');
@@ -187,10 +186,8 @@
 // custom style
 
 .text-shadow {
-    text-shadow: 0 2px 2px rgba(0,0,0,1) !important;
+    text-shadow: 0 2px 2px rgba(0,0,0,.75) !important;
 }
-
-
 
 
 .tab-nav.nav-justified {
