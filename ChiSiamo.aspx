@@ -51,14 +51,15 @@
 
     </div>
     <div class="section nomargin dark center parallax"  style="background: url('images/custom/jazz-wallpaper.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
-        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i>
+        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server">
+            <i class="icon-user2"></i>
             <%=Lingua.CaricaLingua("lgl_index_registrati")%>
         </a>
     </div>
     <div class="row common-height clearfix">
 
         <div class="col-sm-5 col-padding dark fright" style="background: url('images/custom/jazz-bg-2.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
-            <div class="heading-block nobottomborder tleft text-shadow">
+            <div class="heading-block nobottomborder tleft text-shadow" >
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h2>
             </div>
         </div>
@@ -85,7 +86,7 @@
 
     </div>
     <div class="section nomargin dark center parallax"  style="background: url('images/custom/jazz-wallpaper.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
-        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"  id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
     </div>
     <div class="row common-height clearfix">
 
@@ -130,7 +131,7 @@
                             </ul>
                         </div>
                         <div class="pricing-action">
-                            <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                            <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin" id="div_registrati_02" runat="server">><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
 
@@ -175,7 +176,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="pricing-action">
-                            <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                            <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin" id="div_registrati_03" runat="server">><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
 

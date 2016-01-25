@@ -6,7 +6,31 @@ JazzHub_Web
 </name>
 </assembly>
 <members>
-<member name="F:JazzHub_Web.User_list.rpt_categorie">
+<member name="F:JazzHub_Web.Tv.div_registrati_00">
+	<summary>
+div_registrati_00 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Tv.div_registrati_01">
+	<summary>
+div_registrati_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Tv.div_registrati_02">
+	<summary>
+div_registrati_02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.User_list.rpt_categorie">
 	<summary>
 rpt_categorie control.
 </summary>
@@ -929,6 +953,38 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Video_list.pager">
 	<summary>
 pager control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.ChiSiamo.div_registrati_00">
+	<summary>
+div_registrati_00 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.ChiSiamo.div_registrati_01">
+	<summary>
+div_registrati_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.ChiSiamo.div_registrati_02">
+	<summary>
+div_registrati_02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.ChiSiamo.div_registrati_03">
+	<summary>
+div_registrati_03 control.
 </summary>
 	<remarks>
 Auto-generated field.
