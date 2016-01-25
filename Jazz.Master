@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -117,7 +117,7 @@
                                 <a href="#"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
                                 <ul>
                                     <li><a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCKWKlIjdJM69UL97D-5Yb0g" target="_blank"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
+                                    <li><a href="/tv.aspx"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
                                 </ul>
                                 
                             </li>

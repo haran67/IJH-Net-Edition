@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title">
+    <section id="page-title page-title-mini">
         <div class="container clearfix">
             <h1><i class="icon-email2"></i> <%=Lingua.CaricaLingua("lgl_contattaci_contattaci")%></h1>
         </div>
