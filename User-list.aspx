@@ -2,6 +2,7 @@
     CodeBehind="User-list.aspx.vb" Inherits="JazzHub_Web.User_list" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
+<%@ Register Namespace="ASPnetControls" Assembly="ASPnetMesysPager" TagPrefix="pager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -76,15 +77,14 @@
                 </asp:Repeater>
             </div>
             <div class="clear"></div>
-            <ul class="pagination">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
-            </ul>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-lg-12">
+                    <pager:MesysPager ID="pager" runat="server" OnCommand="pager_Command" PageClause="Pagina"
+                        OfClause="di" GenerateGoToSection="false" GenerateToolTips="false" PageSize="3"
+                        Visible="false" />
+                </div>
+            </div>
+
             <!-- Portfolio Script
                         ============================================= -->
             <script type="text/javascript">
