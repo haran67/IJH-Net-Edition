@@ -55,7 +55,7 @@
                                     <ContentTemplate>
                                         <div class="fbox-icon">
                                             <asp:LinkButton id="btn_like" runat="server">
-                                                <i class="icon-thumbs-up i-alt"></i>
+                                                <i class="icon-thumbs-up"></i>
                                             </asp:LinkButton>
                                         </div>
                                         <h3><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
@@ -205,7 +205,7 @@
                                             <div class="comment-meta">
                                                 <div class="comment-author vcard">
                                                     <span class="comment-avatar clearfix">
-                                                        <asp:Image ID="img_utente" runat="server" />
+                                                        <asp:Image ID="img_utente" runat="server" style="width: 60px; height: 60px" />
                                                     </span>
                                                 </div>
                                             </div>
@@ -272,19 +272,6 @@
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap nopadding">
-        <div class="section intro-bg nomargin parallax" data-stellar-background-ratio="0.3">
-            <div class="container clearfix center">
-                <div class="emphasis-title " data-animate="flipInX" data-delay="500">
-                    <h2>
-                        <%=Lingua.CaricaLingua("lgl_videopost_opportunita")%></h2>
-                    <p class="lead topmargin-sm" data-animate="flipInX" data-delay="1000">
-                        <%=Lingua.CaricaLingua("lgl_videopost_opportunita_desc")%>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
     <script type="text/javascript">

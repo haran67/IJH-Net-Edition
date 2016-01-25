@@ -10,7 +10,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         <div class="video-wrap" style="height: 100%;">
-            <video poster="images/custom/jazz-wallpaper.jpg" preload="auto" loop autoplay muted>
+            <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
                 <source src='images/videos/header-video.mp4' type='video/mp4' />
                 <source src='images/videos/explore.webm' type='video/webm' />
             </video>
@@ -40,10 +40,8 @@
     <div class="content-wrap nopadding">
         <div class="section nomargin parallax">
             <div class="container clearfix ">
-                <div class="container clearfix">
-                    <div class="heading-block center">
-                        <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
-                    </div>
+                <div class="heading-block center">
+                    <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
                 </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
@@ -58,13 +56,12 @@
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
                                             <h3 style="background-color:transparent;">
-                                            <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
                                         </div>
-                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <i class="icon-line-play"></i>
-                                        </asp:LinkButton>
                                     </div>
-
                                 </div>
                             </article>
                         </ItemTemplate>

@@ -7,14 +7,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title page-title-mini">
+    <section id="page-title" class="page-title-mini">
         <div class="container clearfix">
             <h1><i class="icon-email2"></i> <%=Lingua.CaricaLingua("lgl_contattaci_contattaci")%></h1>
         </div>
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap parallax" style="background: url('images/custom/jazz-wallpaper.jpg');
+    <div class="content-wrap parallax" style="background: url('images/custom/sfondo.jpg');
         background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
         <div class="container clearfix">
             <div class="col_two_third">
