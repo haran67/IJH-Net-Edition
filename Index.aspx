@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
     <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title" class="page-title-parallax page-title-dark page-title-video hidden" style="background-color: #000;">
@@ -54,7 +55,7 @@
 
                         <div class="tp-caption customin"
                              data-x="0"
-                             data-y="80"
+                             data-y="40"
                              data-customin="x:0;y:0;z:0;rotationZ:0;scaleX:0.6;scaleY:0.6;skewX:0;skewY:0;s:850;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                              data-speed="850"
                              data-start="1200"
@@ -65,7 +66,7 @@
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
                              data-endeasing="Power4.easeIn"
-                             style='background-color: rgba(0,0,0,.75);width:600px;height:400px;border: none !important;'><video width='100%' controls=''><source src='http://video.italianjazzhub.it/JazzHub_Web/Video/5/301220151539_Sertango_Promo_1_.mp4' type='video/mp4'>Your browser does not support the video tag.</video>
+                             style='background-color: rgba(0,0,0,.75);width:600px;height:400px;border: none !important;'><video width='100%' height='100%' controls=''><source src='http://video.italianjazzhub.it/JazzHub_Web/Video/5/301220151539_Sertango_Promo_1_.mp4' type='video/mp4'>Your browser does not support the video tag.</video>
 <!--                            <iframe src='http://player.vimeo.com/video/102501580?title=0&byline=0&portrait=0;api=1' width='600' height='340' style='display: hidden;width:600px;height:340px;border: none !important;'></iframe>-->
                         </div>
 

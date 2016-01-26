@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -99,7 +99,7 @@
                                 <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
                             </li>
                             <li>
-                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
+                                <a href="/crowdfunding.aspx"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
                             </li>
                             
                             <li>
