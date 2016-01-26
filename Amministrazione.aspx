@@ -119,6 +119,11 @@
                                                     <%=Lingua.CaricaLingua("lgl_amministrazione_filtra_per_pub")%>
                                                 </asp:LinkButton>
                                             </li>
+                                            <li id="li_filter_highlight" runat="server">
+                                                <asp:LinkButton ID="btn_filtra_home_page" runat="server">
+                                                    <%=Lingua.CaricaLingua("lgl_amministrazione_filtra_per_highlight")%>
+                                                </asp:LinkButton>
+                                            </li>
                                             <li id="li_filter_primo_piano" runat="server">
                                                 <asp:LinkButton ID="btn_filtra_primo_piano" runat="server">
                                                     <%=Lingua.CaricaLingua("lgl_amministrazione_filtra_per_pri")%>
@@ -154,6 +159,7 @@
                                             <th style="width:1px;">#</th>
                                             <th style="width:35%;"><%=Lingua.CaricaLingua("lgl_amministrazione_video_titolo")%></th>
                                             <th style="width:25%;"><%=Lingua.CaricaLingua("lgl_amministrazione_video_utente")%></th>
+                                            <th style="width:10%;"><%=Lingua.CaricaLingua("lgl_amministrazione_video_highlight")%></th>
                                             <th style="width:10%;"><%=Lingua.CaricaLingua("lgl_amministrazione_video_primo")%></th>
                                             <th style="width:10%;"><%=Lingua.CaricaLingua("lgl_amministrazione_video_pubblicato")%></th>
                                             <th colspan="2" style="width:20%;"><%=Lingua.CaricaLingua("lgl_amministrazione_video_thumb")%></th>
@@ -166,6 +172,7 @@
                                                     <td><asp:Literal ID="ltl_key" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_video" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></td>
+                                                    <td><asp:CheckBox ID="chk_home_page" runat="server" AutoPostBack="true" OnCheckedChanged="chk_home_page_CheckedChanged" /></td>
                                                     <td><asp:CheckBox ID="chk_primo_piano" runat="server" AutoPostBack="true" OnCheckedChanged="chk_primo_piano_CheckedChanged" /></td>
                                                     <td><asp:CheckBox ID="chk_pubblicato" runat="server" AutoPostBack="true" OnCheckedChanged="chk_pubblicato_CheckedChanged" /></td>
                                                     <td><asp:Image ID="img_copertina" runat="server" Height="50"/></td>

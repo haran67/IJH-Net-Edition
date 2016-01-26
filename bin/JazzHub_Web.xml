@@ -1318,6 +1318,22 @@ btn_filtra_pubblicati control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Amministrazione.li_filter_highlight">
+	<summary>
+li_filter_highlight control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Amministrazione.btn_filtra_home_page">
+	<summary>
+btn_filtra_home_page control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Amministrazione.li_filter_primo_piano">
 	<summary>
 li_filter_primo_piano control.
