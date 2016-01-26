@@ -258,7 +258,7 @@
                     <h3><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
                 </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
-                    <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
+                    <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
                                 <div class="portfolio-image" style="background-color: #222;">
@@ -285,20 +285,18 @@
                     <h3><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
                 </div>
                 <div id="portfolio" class="portfolio-6 clearfix">
-                    <div id="Div1">
-                        <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
-                            <ItemTemplate>
-                                <article class="portfolio-item pf-media pf-icons">
-                                    <div class="portfolio-image" style="background-color: #222;">
-                                        <asp:Image ID="img_copertina" runat="server"/>
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <h3 style="background-color:transparent;">
-                                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                        <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                    </asp:LinkButton>
-                                                </h3>
-                                            </div>
+                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
+                        <ItemTemplate>
+                            <article class="portfolio-item pf-media pf-icons">
+                                <div class="portfolio-image" style="background-color: #222;">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3 style="background-color:transparent;">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
                                         </div>
                                     </div>
                                 </article>
@@ -313,21 +311,19 @@
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
                 </div>
-                <div id="portfolio" class="portfolio-6 clearfix">
-                    <div id="Div2">
-                        <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
-                            <ItemTemplate>
-                                <article class="portfolio-item pf-media pf-icons">
-                                    <div class="portfolio-image" style="background-color: #222;">
-                                        <asp:Image ID="img_copertina" runat="server"/>
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <h3 style="background-color:transparent;">
-                                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                        <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                    </asp:LinkButton>
-                                                </h3>
-                                            </div>
+                    <div id="portfolio" class="portfolio-6 clearfix">
+                    <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
+                        <ItemTemplate>
+                            <article class="portfolio-item pf-media pf-icons">
+                                <div class="portfolio-image" style="background-color: #222;">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3 style="background-color:transparent;">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
                                         </div>
                                     </div>
                                 </article>
@@ -342,21 +338,19 @@
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
                 </div>
-                <div id="portfolio" class="portfolio-6 clearfix">
-                    <div id="Div3">
-                        <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound">
-                            <ItemTemplate>
-                                <article class="portfolio-item pf-media pf-icons">
-                                    <div class="portfolio-image" style="background-color: #222;">
-                                        <asp:Image ID="img_copertina" runat="server"/>
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <h3 style="background-color:transparent;">
-                                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                        <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                    </asp:LinkButton>
-                                                </h3>
-                                            </div>
+                    <div id="portfolio" class="portfolio-6 clearfix">
+                    <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
+                        <ItemTemplate>
+                            <article class="portfolio-item pf-media pf-icons">
+                                <div class="portfolio-image" style="background-color: #222;">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3 style="background-color:transparent;">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </asp:LinkButton>
+                                            </h3>
                                         </div>
                                     </div>
                                 </article>

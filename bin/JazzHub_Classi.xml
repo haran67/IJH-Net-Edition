@@ -6,19 +6,7 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Utenti_social_Base">
-	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella UTENTI_SOCIAL
- </summary>
-</member><member name="T:JazzHub_Classi.Oggetti.Tab_social_network_Base">
-	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella TAB_SOCIAL_NETWORK
- </summary>
-</member><member name="T:JazzHub_Classi.Oggetti.Tab_profilo_pagamento_Base">
-	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella TAB_PROFILO_PAGAMENTO
- </summary>
-</member><member name="T:JazzHub_Classi.Controls.DDLReadOnly">
+<member name="T:JazzHub_Classi.Controls.DDLReadOnly">
 	<summary>
  DDL per la visualizzazione in readOnly
  </summary>
@@ -54,6 +42,10 @@ JazzHub_Classi
 </member><member name="T:JazzHub_Classi.Oggetti.Video_immagini_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella VIDEO_IMMAGINI
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Tab_profilo_pagamento_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella TAB_PROFILO_PAGAMENTO
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Video_Base">
 	<summary>
@@ -206,6 +198,10 @@ JazzHub_Classi
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella UTENTI
  </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Utenti_social_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella UTENTI_SOCIAL
+ </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Categorie_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella CATEGORIE
@@ -246,6 +242,10 @@ JazzHub_Classi
 </member><member name="T:JazzHub_Classi.Oggetti.Tab_lingua_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella TAB_LINGUA
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Tab_social_network_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella TAB_SOCIAL_NETWORK
  </summary>
 </member><member name="T:JazzHub_Classi.Controls.BottoneOneShot">
 	<summary>
