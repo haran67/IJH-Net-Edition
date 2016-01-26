@@ -14994,30 +14994,9 @@ body #side-panel.dark #side-panel-trigger-close a {
 }
 /* start custom */
 @font-face {
-  font-family: 'londrina_sketcheregular';
-  src: url('londrinasketche-regular-webfont.eot');
-  src: url('londrinasketche-regular-webfont.eot?#iefix') format('embedded-opentype'), url('londrinasketche-regular-webfont.woff2') format('woff2'), url('londrinasketche-regular-webfont.woff') format('woff'), url('londrinasketche-regular-webfont.ttf') format('truetype'), url('londrinasketche-regular-webfont.svg#londrina_sketcheregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'londrina_shadowregular';
-  src: url('londrinashadow-regular-webfont.eot');
-  src: url('londrinashadow-regular-webfont.eot?#iefix') format('embedded-opentype'), url('londrinashadow-regular-webfont.woff2') format('woff2'), url('londrinashadow-regular-webfont.woff') format('woff'), url('londrinashadow-regular-webfont.ttf') format('truetype'), url('londrinashadow-regular-webfont.svg#londrina_shadowregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'londrina_outlineregular';
-  src: url('londrinaoutline-regular-webfont.eot');
-  src: url('londrinaoutline-regular-webfont.eot?#iefix') format('embedded-opentype'), url('londrinaoutline-regular-webfont.woff2') format('woff2'), url('londrinaoutline-regular-webfont.woff') format('woff'), url('londrinaoutline-regular-webfont.ttf') format('truetype'), url('londrinaoutline-regular-webfont.svg#londrina_outlineregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'londrina_solidregular';
-  src: url('fonts/londrinasolid-regular-webfont.eot');
-  src: url('fonts/londrinasolid-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/londrinasolid-regular-webfont.woff2') format('woff2'), url('fonts/londrinasolid-regular-webfont.woff') format('woff'), url('fonts/londrinasolid-regular-webfont.ttf') format('truetype'), url('fonts/londrinasolid-regular-webfont.svg#londrina_solidregular') format('svg');
+  font-family: 'fibon_sansthin';
+  src: url('/fonts/fibon_sans_regular-webfont.eot');
+  src: url('/fonts/fibon_sans_regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/fibon_sans_regular-webfont.woff2') format('woff2'), url('/fonts/fibon_sans_regular-webfont.woff') format('woff'), url('/fonts/fibon_sans_regular-webfont.ttf') format('truetype'), url('/fonts/fibon_sans_regular-webfont.svg#fibon_sansthin') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15115,20 +15094,8 @@ body,
   background-position: center center;
   background-size: auto;
 }
-.panel.panel-bg {
-  background-image: url(images/custom/paint-texture.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.jazz-texture-red {
-  background-image: url(images/custom/jazz-texture-red.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.spray-texture {
-  background-image: url(images/custom/paint-texture.jpg);
+.bokeh {
+  background-image: url(images/custom/sfondo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

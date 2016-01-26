@@ -5,7 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark" style="background: url('images/custom/sfondo.jpg'); background-size: cover; background-position: center center" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+    <section id="slider" class="slider-parallax dark bokeh" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
         <div class="container clearfix">
             <div class="vertical-middle center">
 
@@ -50,7 +50,7 @@
         </div>
 
     </div>
-    <div class="section nomargin dark center parallax"  style="background: url('images/custom/sfondo.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
+    <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server">
             <i class="icon-user2"></i>
             <%=Lingua.CaricaLingua("lgl_index_registrati")%>
@@ -85,7 +85,7 @@
         </div>
 
     </div>
-    <div class="section nomargin dark center parallax"  style="background: url('images/custom/sfondo.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
+    <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"  id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
     </div>
     <div class="row common-height clearfix">
@@ -107,7 +107,7 @@
         </div>
 
     </div>
-    <div class="section dark nomargin clearfix" style="background: url('images/custom/sfondo.jpg'); background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
+    <div class="section dark nomargin clearfix bokeh" data-stellar-background-ratio="0.3">
         <div class="container">
             <div class="heading-block nobottomborder center">
                 <h1><%=Lingua.CaricaLingua("lgl_chisiamo_tariffe")%></h1>

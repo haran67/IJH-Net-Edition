@@ -47,7 +47,7 @@
         <div class="tp-banner-container">
             <div class="tp-banner" >
                 <ul> 
-                    <li data-transition="fade" class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500"data-thumb="images/slider/rev/bg2-thumb.jpg"  data-saveperformance="off"  data-title="Italian jazz Hub Highlight">
+                    <li data-transition="fade" class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/rev/bg2-thumb.jpg"  data-saveperformance="off"  data-title="Italian jazz Hub Highlight">
                         <!-- MAIN IMAGE -->
                         <img src="images/custom/sfondo.jpg"  alt="bg"  data-bgposition="left bottom" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="right top">
                         <!-- LAYERS -->
