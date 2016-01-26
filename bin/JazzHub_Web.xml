@@ -14,46 +14,6 @@ div_registrati_01 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Partner.div_registrati_01">
-	<summary>
-div_registrati_01 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.crowdfunding.div_registrati_01">
-	<summary>
-div_registrati_01 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Tv.div_registrati_00">
-	<summary>
-div_registrati_00 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Tv.div_registrati_01">
-	<summary>
-div_registrati_01 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Tv.div_registrati_02">
-	<summary>
-div_registrati_02 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.User_list.rpt_categorie">
 	<summary>
 rpt_categorie control.
@@ -793,6 +753,38 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.rTextBox.ltl_help">
 	<summary>
 ltl_help control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Partner.div_registrati_01">
+	<summary>
+div_registrati_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Tv.div_registrati_00">
+	<summary>
+div_registrati_00 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Tv.div_registrati_01">
+	<summary>
+div_registrati_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Tv.div_registrati_02">
+	<summary>
+div_registrati_02 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2846,9 +2838,25 @@ btn_password control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Profilo.img_utente">
+</member><member name="F:JazzHub_Web.Profilo.div_profilo_pubblico">
 	<summary>
-img_utente control.
+div_profilo_pubblico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.img_avatar">
+	<summary>
+img_avatar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.upl_img_avatar">
+	<summary>
+upl_img_avatar control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2862,25 +2870,33 @@ btn_cancella_foto control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Profilo.img_upload">
+</member><member name="F:JazzHub_Web.Profilo.img_profilo_pubblico">
 	<summary>
-img_upload control.
+img_profilo_pubblico control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Profilo.btn_carica">
+</member><member name="F:JazzHub_Web.Profilo.upl_img_profilo_pubblico">
 	<summary>
-btn_carica control.
+upl_img_profilo_pubblico control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Profilo.div_profilo_pubblico">
+</member><member name="F:JazzHub_Web.Profilo.btn_cancella_profilo_pubblico">
 	<summary>
-div_profilo_pubblico control.
+btn_cancella_profilo_pubblico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.btn_carica_profilo_pubblico">
+	<summary>
+btn_carica_profilo_pubblico control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2913,62 +2929,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Profilo.btn_salva_profilo_pubblico">
 	<summary>
 btn_salva_profilo_pubblico control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.img_profilo_pubblico">
-	<summary>
-img_profilo_pubblico control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.btn_cancella_profilo_pubblico">
-	<summary>
-btn_cancella_profilo_pubblico control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.upl_img_profilo_pubblico">
-	<summary>
-upl_img_profilo_pubblico control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.img_profilo_pubblico_tn">
-	<summary>
-img_profilo_pubblico_tn control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.btn_cancella_profilo_pubblico_tn">
-	<summary>
-btn_cancella_profilo_pubblico_tn control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.upl_img_profilo_pubblico_tn">
-	<summary>
-upl_img_profilo_pubblico_tn control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.btn_carica_profilo_pubblico">
-	<summary>
-btn_carica_profilo_pubblico control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3009,6 +2969,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Errore.ltlStack">
 	<summary>
 ltlStack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.crowdfunding.div_registrati_01">
+	<summary>
+div_registrati_01 control.
 </summary>
 	<remarks>
 Auto-generated field.
