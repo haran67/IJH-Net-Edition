@@ -292,7 +292,7 @@
             </div>
         </div>
         <div class="section nomarginbottom nopadding parallax">
-            <div class="container clearfix ">
+            <div class="container clearfix " id="div_like_visi" runat="server">
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
                 </div>
@@ -319,7 +319,7 @@
             </div>
         </div>
         <div class="section nomarginbottom nopadding parallax">
-            <div class="container clearfix ">
+            <div class="container clearfix " id="div_like_expo" runat="server">
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
                 </div>
