@@ -275,15 +275,18 @@
                             <article class="portfolio-item pf-media pf-icons">
                                 <div class="portfolio-image" style="background-color: #222;">
                                     <asp:Image ID="img_copertina" runat="server"/>
-                                    <div class="portfolio-overlay">
-                                        <div class="portfolio-desc">
-                                            <h3 style="background-color:transparent;">
-                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </asp:LinkButton>
-                                            </h3>
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="portfolio-overlay">
+                                            <div class="portfolio-desc">
+                                                <span>
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
+                                                </span>
+                                                <h3>
+                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </h3>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </asp:LinkButton>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -302,15 +305,16 @@
                             <article class="portfolio-item pf-media pf-icons">
                                 <div class="portfolio-image" style="background-color: #222;">
                                     <asp:Image ID="img_copertina" runat="server"/>
-                                    <div class="portfolio-overlay">
-                                        <div class="portfolio-desc">
-                                            <h3 style="background-color:transparent;">
-                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </asp:LinkButton>
-                                            </h3>
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="portfolio-overlay">
+                                            <div class="portfolio-desc">
+                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                                <h3>
+                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </h3>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </asp:LinkButton>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -329,15 +333,16 @@
                             <article class="portfolio-item pf-media pf-icons">
                                 <div class="portfolio-image" style="background-color: #222;">
                                     <asp:Image ID="img_copertina" runat="server"/>
-                                    <div class="portfolio-overlay">
-                                        <div class="portfolio-desc">
-                                            <h3 style="background-color:transparent;">
-                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </asp:LinkButton>
-                                            </h3>
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="portfolio-overlay">
+                                            <div class="portfolio-desc">
+                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                                <h3>
+                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </h3>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </asp:LinkButton>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -356,15 +361,16 @@
                             <article class="portfolio-item pf-media pf-icons">
                                 <div class="portfolio-image" style="background-color: #222;">
                                     <asp:Image ID="img_copertina" runat="server"/>
-                                    <div class="portfolio-overlay">
-                                        <div class="portfolio-desc">
-                                            <h3 style="background-color:transparent;">
-                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </asp:LinkButton>
-                                            </h3>
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="portfolio-overlay">
+                                            <div class="portfolio-desc">
+                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                                <h3>
+                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </h3>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </asp:LinkButton>
                                 </div>
                             </article>
                         </ItemTemplate>
