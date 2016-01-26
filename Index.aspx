@@ -15,27 +15,29 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title" class="page-title-parallax page-title-dark page-title-video hidden" style="background-color: #000;">
-        <div class="video-wrap" style="height: 100%;">
-            <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
-                <source src='images/videos/header-video.mp4' type='video/mp4' />
-                <source src='images/videos/header-video.webm' type='video/webm' />
-            </video>
-            <div class="video-overlay"></div>
-        </div>
-        <div class="container clearfix">
-            <div class="col_full dark">
-                <div class="panel-body" style="padding: 0px 0;">
-                    <div class="emphasis-title title-center">
-                        <h2 class="nopadding text-shadow">
-                            <strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong>
-                            </h2>
-                        <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
-                            <i class="icon-arrow-down2"></i>
-                        </div>
-                        <div id="div_registrati" runat="server">
-                            <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
-                            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+    <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+        <div  id="div_logging" runat="server">
+            <div class="video-wrap" style="height: 100%;">
+                <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
+                    <source src='images/videos/header-video.mp4' type='video/mp4' />
+                    <source src='images/videos/header-video.webm' type='video/webm' />
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="container clearfix">
+                <div class="col_full dark">
+                    <div class="panel-body" style="padding: 0px 0;">
+                        <div class="emphasis-title title-center">
+                            <h2 class="nopadding text-shadow">
+                                <strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong>
+                                </h2>
+                            <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
+                                <i class="icon-arrow-down2"></i>
+                            </div>
+                            <div id="div_registrati" runat="server">
+                                <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
+                                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +47,7 @@
     
     <section id="slider" class="slider-parallax revslider-wrap clearfix">
 
-        <div class="tp-banner-container">
+        <div class="tp-banner-container" id="div_logged" runat="server">
             <div class="tp-banner" >
                 <ul> 
                     <li data-transition="fade" class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/rev/bg2-thumb.jpg"  data-saveperformance="off"  data-title="Italian jazz Hub Highlight">
@@ -66,8 +68,11 @@
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
                              data-endeasing="Power4.easeIn"
-                             style='background-color: rgba(0,0,0,.75);width:600px;height:400px;border: none !important;'><video width='100%' height='100%' controls=''><source src='http://video.italianjazzhub.it/JazzHub_Web/Video/5/301220151539_Sertango_Promo_1_.mp4' type='video/mp4'>Your browser does not support the video tag.</video>
-<!--                            <iframe src='http://player.vimeo.com/video/102501580?title=0&byline=0&portrait=0;api=1' width='600' height='340' style='display: hidden;width:600px;height:340px;border: none !important;'></iframe>-->
+                             style='background-color: rgba(0,0,0,.75);width:600px;height:400px;border: none !important;'>
+                                <video width="100%" height="100%" controls>
+                                    <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                                    Your browser does not support the video tag.
+                                </video>
                         </div>
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
@@ -82,7 +87,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style="white-space: nowrap;">Massimiliano Sani</div>
+                             data-endeasing="Power4.easeIn" style="white-space: nowrap;"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></div>
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
                              data-x="672"
@@ -96,7 +101,7 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn">VIRGINIO AIELLO SERTANGO QUARTET LIVE</div>
+                             data-endeasing="Power4.easeIn"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></div>
 
 <!--
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text tleft"
@@ -126,7 +131,13 @@
                              data-elementdelay="0.01"
                              data-endelementdelay="0.1"
                              data-endspeed="1000"
-                             data-endeasing="Power4.easeIn"><a href="#" class="button button-border button-white button-light button-large button-rounded tright nomargin"><span>vai alla scheda</span> <i class="icon-angle-right"></i></a></div>
+                             data-endeasing="Power4.easeIn">
+                                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border button-white button-light button-large button-rounded tright nomargin">
+                                    <span>
+                                    <%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
+                                    </span> <i class="icon-angle-right"></i>
+                                </asp:LinkButton>
+                        </div>
 
                     </li>
                 </ul>
