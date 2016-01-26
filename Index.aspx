@@ -138,7 +138,7 @@
 
                 jQuery('.tp-banner').show().revolution(
                     {
-                        sliderType:"standard",
+                        sliderType:"hero",
                         jsFileLocation:"include/rs-plugin/js/",
                         sliderLayout:"fullwidth",
                         dottedOverlay:"none",
