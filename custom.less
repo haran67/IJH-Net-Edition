@@ -63,7 +63,7 @@
 @heading-font:                  'Oswald', sans-serif;
 @body-font:                     'Lato', sans-serif;
 @secondary-font:                'Crete Round', serif;
-@alternative-font:               'Oswald', serif;
+@alternative-font:              'Oswald', serif;
 
 @screen-sm-min : 768px;
 @screen-md-min : 992px;
@@ -73,6 +73,9 @@
 
 @menu-base-color: rgba(30,30,30,.85);
 
+body, #wrapper {
+    background-color: #000;
+}
 
 .dark #top-cart .top-cart-content, .dark #primary-menu:not(.not-dark) ul ul,
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content,
@@ -254,3 +257,36 @@
 #header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark),
 #header.dark.transparent-header.floating-header .container,
 #header.dark.transparent-header.floating-header.sticky-header .container { background-color: rgba(0,0,0,0.6); }
+
+
+/* REV SLIDER */
+
+.revo-slider-emphasis-text {
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    font-family: @heading-font;
+    padding: 15px 20px;
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    white-space: normal !important;
+    line-height: 1em;
+}
+
+.revo-slider-desc-text {
+    font-size: 20px;
+    font-family: @body-font;
+    width: 650px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.revo-slider-caps-text {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: @body-font;
+}
+.tp-video-play-button { display: none !important; }
+
+.tp-caption { white-space: nowrap; }
