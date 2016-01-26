@@ -326,9 +326,25 @@ rpt_video control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Index.div_like_visi">
+	<summary>
+div_like_visi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Index.rpt_video_visi">
 	<summary>
 rpt_video_visi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Index.div_like_expo">
+	<summary>
+div_like_expo control.
 </summary>
 	<remarks>
 Auto-generated field.
