@@ -5,19 +5,6 @@
 <%@ Register Namespace="ASPnetControls" Assembly="ASPnetMesysPager" TagPrefix="pager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-        .portfolio-image  .portfolio-overlay {
-            opacity: 1;
-            position: absolute;
-            z-index: 2;
-            top: 0;
-            left: 0;
-        }
-
-        .portfolio-image:hover .portfolio-overlay {
-            opacity: 0;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title" class="page-title-mini">
@@ -30,7 +17,7 @@
 		</div>
 	</section>
     <div id="page-menu" class="no-sticky">
-        <div id="page-menu-wrap">
+        <div id="page-menu-wrap" class="bokeh-transparent">
             <div class="container clearfix">
                 <div class="menu-title">
                     <%=Lingua.CaricaLingua("lgl_userlist_sfoglia")%>
@@ -63,14 +50,15 @@
         <div class="container clearfix">
             <!-- Portfolio Items
                     ============================================= -->
-            <div id="portfolio" class="portfolio-6 clearfix">
+            <div id="portfolio" class="portfolio-masonry portfolio-6 clearfix">
                 <asp:Repeater ID="rpt_user" runat="server">
                     <ItemTemplate>
                         <article class="portfolio-item pf-media pf-" id="art_user" runat="server">
-                            <div class="portfolio-image" style="background-color: #222;">
-                                <a href="#">
-                                <asp:Image ID="img_copertina" runat="server"/>
-                                </a>
+                            <div class="portfolio-image" style="background-image: url('images/custom/sfondo.jpg');">
+                                <div>
+                                    <img src="images/custom/blank.png">
+                                <!--<asp:Image ID="img_copertina" runat="server"/>-->
+                                </div>
                                 <asp:LinkButton ID="btn_user" CommandName="USER" runat="server">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">

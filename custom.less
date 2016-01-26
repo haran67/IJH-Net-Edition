@@ -34,11 +34,14 @@
 @screen-md-min : 992px;
 @screen-lg-min : 1200px;
 
-@theme-color: #4797BB;
+@theme-color: #8d3363;
 
 @menu-base-color: rgba(30,30,30,.85);
 
 body, #wrapper {
+    background-color: #000;
+}
+#footer.dark {
     background-color: #000;
 }
 
@@ -112,10 +115,17 @@ body, #wrapper {
 }
 
 .bokeh {
-    background-image: url(images/custom/sfondo.jpg);
+    background-image: url(images/custom/sfondo.jpg) !important;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.bokeh-transparent {
+    background-image: url(images/custom/sfondo-transparent.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
 }
 
 
@@ -204,6 +214,24 @@ body, #wrapper {
 
 #primary-menu ul li a {
     padding: 0 10px
+}
+
+/* custom portolio elements */
+
+.portfolio-image  .portfolio-overlay {
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-image:hover .portfolio-overlay {
+    opacity: 0;
+}
+.portfolio-image {
+    background-size:cover;
+    background-position: center
 }
 
 

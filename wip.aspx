@@ -5,9 +5,6 @@
     <section id="slider" class="slider-parallax full-screen dark error404-wrap bokeh">
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <h1>Pagina in costruzione</h1>
-            <div class="heading-block nobottomborder">
-                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i>Registrati ora!</a>
-            </div>
         </div>
     </section>
 </asp:Content>

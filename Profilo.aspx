@@ -285,7 +285,7 @@
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
                                 </div>
                                 <div class="col_half">
-                                    <asp:ImageButton ID="img_avatar" runat="server" Style="width: 100%; min-width: 200px;" />
+                                    <asp:ImageButton ID="img_avatar" CssClass="thumbnail" runat="server" />
                                 </div>
                                 <div class="col_half col_last">
                                     <telerik:RadAsyncUpload runat="server" ID="upl_img_avatar" MultipleFileSelection="Disabled"
