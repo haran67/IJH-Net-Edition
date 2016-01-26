@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
     <link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title" class="page-title-parallax page-title-dark page-title-video hidden" style="background-color: #000;">
@@ -54,7 +55,7 @@
 
                         <div class="tp-caption customin"
                              data-x="0"
-                             data-y="80"
+                             data-y="0"
                              data-customin="x:0;y:0;z:0;rotationZ:0;scaleX:0.6;scaleY:0.6;skewX:0;skewY:0;s:850;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                              data-speed="850"
                              data-start="1200"

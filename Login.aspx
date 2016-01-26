@@ -5,11 +5,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-<!--    <div id="content">-->
-        <div class="content-wrap">
-            <div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url('images/custom/sfondo.jpg') center center no-repeat;
-                background-size: cover;">
-            </div>
+    <div class="content-wrap">
+        <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
             <div class="container clearfix" style="padding-top: 50px; padding-bottom:30px">
                 <div class="col_two_fifth nobottommargin">
                     <div class="panel panel-default divcenter  "style="max-width: 400px; background-color: rgba(255,255,255,0.93);">
@@ -143,7 +140,7 @@
                 </div>
             </div>
         </div>
-<!--    </div>-->
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 </asp:Content>

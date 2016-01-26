@@ -7,15 +7,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title" class="page-title-mini">
-        <div class="container clearfix">
-            <h1><i class="icon-email2"></i> <%=Lingua.CaricaLingua("lgl_contattaci_contattaci")%></h1>
-        </div>
-    </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap parallax" style="background: url('images/custom/sfondo.jpg');
-        background-size: cover; background-position: center center" data-stellar-background-ratio="0.3">
+    <div class="content-wrap parallax bokeh" data-stellar-background-ratio="0.3">
         <div class="container clearfix">
             <div class="col_two_third">
                 <div id="contact-form" name="register-form" class="nobottommargin">
@@ -31,6 +25,10 @@
                     </div>
                     <div class="panel panel-default nobottommargin">
                         <div class="panel-body" style="padding: 40px;">
+                            <h3 class="nopadding nomargin center"><%=Lingua.CaricaLingua("lgl_contattaci_contattaci")%></h3>
+                            <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
+                                <i class="icon-arrow-down2"></i>
+                            </div>
                             <div class="col_half">
                                 <label for="register-form-name">
                                     <%=Lingua.CaricaLingua("lgl_contattaci_nome")%></label>
