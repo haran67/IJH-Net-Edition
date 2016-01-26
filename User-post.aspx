@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title">
+    <section id="page-title" class="page-title-medium">
             <div class="container clearfix">
                 <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                 <span><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>

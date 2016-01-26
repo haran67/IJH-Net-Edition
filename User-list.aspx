@@ -5,6 +5,19 @@
 <%@ Register Namespace="ASPnetControls" Assembly="ASPnetMesysPager" TagPrefix="pager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .portfolio-image  .portfolio-overlay {
+            opacity: 1;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
+
+        .portfolio-image:hover .portfolio-overlay {
+            opacity: 0;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="page-title" class="page-title-mini">
@@ -50,7 +63,7 @@
         <div class="container clearfix">
             <!-- Portfolio Items
                     ============================================= -->
-            <div id="portfolio" class="portfolio-5 clearfix">
+            <div id="portfolio" class="portfolio-6 clearfix">
                 <asp:Repeater ID="rpt_user" runat="server">
                     <ItemTemplate>
                         <article class="portfolio-item pf-media pf-" id="art_user" runat="server">
@@ -58,19 +71,19 @@
                                 <a href="#">
                                 <asp:Image ID="img_copertina" runat="server"/>
                                 </a>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3>
-                                            <asp:LinkButton ID="btn_user" CommandName="USER" runat="server">
-                                            <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
-                                            </asp:LinkButton>
-                                        </h3>
-                                        <span>
-                                            <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                        </span>
+                                <asp:LinkButton ID="btn_user" CommandName="USER" runat="server">
+                                    <div class="portfolio-overlay">
+                                        <div class="portfolio-desc">
+                                            <h3>
+                                                <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
+                                            </h3>
+                                            <span>
+                                                <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                            </span>
+                                        </div>
+
                                     </div>
-                                    
-                                </div>
+                                </asp:LinkButton>
                             </div>
                         </article>
                     </ItemTemplate>

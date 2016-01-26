@@ -15154,6 +15154,17 @@ body,
   }
 }
 /* customize page elements */
+#page-title.page-title-medium {
+  padding: 20px 0;
+}
+#page-title.page-title-medium h1 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #444;
+}
+#page-title.page-title-medium span {
+  font-size: 14px;
+}
 .video-wrap {
   height: 100%;
 }
@@ -15181,6 +15192,7 @@ body,
   border-bottom: 2px solid #FFF;
   white-space: normal !important;
   line-height: 1em;
+  text-transform: uppercase;
 }
 .revo-slider-desc-text {
   font-size: 20px;

@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <div class="content-wrap">
-        <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
+        <div class="section nomargin center parallax bokeh" data-stellar-background-ratio="0.3">
             <div class="container clearfix" style="padding-top: 50px; padding-bottom:30px">
                 <div class="col_two_fifth nobottommargin">
                     <div class="panel panel-default divcenter  "style="max-width: 400px; background-color: rgba(255,255,255,0.93);">

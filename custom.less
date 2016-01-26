@@ -27,6 +27,9 @@
 @secondary-font:                'Crete Round', serif;
 @alternative-font:              'fibon_sansthin', serif;
 
+@page-title-medium-size:				18px;
+@page-title-medium-subtitle-size:		14px;
+
 @screen-sm-min : 768px;
 @screen-md-min : 992px;
 @screen-lg-min : 1200px;
@@ -177,6 +180,24 @@ body, #wrapper {
 
 /* customize page elements */
 
+#page-title {
+    &.page-title-medium {
+        padding: @page-title-mini-padding 0;
+
+        h1 {
+            font-weight: 600;
+            font-size: @page-title-medium-size;
+            color: #444;
+        }
+
+        span {
+            //display: none;
+            font-size: @page-title-medium-subtitle-size;
+        }
+    }
+    
+}
+
 .video-wrap {
     height: 100%;
 }
@@ -208,6 +229,7 @@ body, #wrapper {
     border-bottom: 2px solid #FFF;
     white-space: normal !important;
     line-height: 1em;
+    text-transform: uppercase;
 }
 
 .revo-slider-desc-text {
