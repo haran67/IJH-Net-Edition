@@ -300,10 +300,10 @@
                                             </h3>
                                         </div>
                                     </div>
-                                </article>
-                            </ItemTemplate>
-                        </asp:Repeater>
-                    </div>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
         </div>
@@ -312,7 +312,7 @@
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
                 </div>
-                    <div id="portfolio" class="portfolio-6 clearfix">
+                <div id="portfolio" class="portfolio-6 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
@@ -327,10 +327,10 @@
                                             </h3>
                                         </div>
                                     </div>
-                                </article>
-                            </ItemTemplate>
-                        </asp:Repeater>
-                    </div>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
         </div>
@@ -339,7 +339,7 @@
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
                 </div>
-                    <div id="portfolio" class="portfolio-6 clearfix">
+                <div id="portfolio" class="portfolio-6 clearfix">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
@@ -354,10 +354,10 @@
                                             </h3>
                                         </div>
                                     </div>
-                                </article>
-                            </ItemTemplate>
-                        </asp:Repeater>
-                    </div>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
         </div>
