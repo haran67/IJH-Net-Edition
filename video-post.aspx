@@ -43,7 +43,11 @@
                             ============================================= -->
                             <ul class="entry-meta clearfix">
                                 <li><i class="icon-calendar3"></i><asp:Literal ID="ltl_data" runat="server"></asp:Literal></li>
-                                <li><a href="#"><i class="icon-user"></i><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></a></li>
+                                <li>
+                                    <asp:LinkButton ID="lnk_utente" runat="server">
+                                        <i class="icon-user"></i><asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
+                                    </asp:LinkButton>
+                                </li>
                                 <!--li><i class="icon-folder-open"></i> <a href="#">Modal jazz</a>, <a href="#">funkie Jazz</a></li>
                                 <li><a href="#"><i class="icon-comments"></i> 3 Commenti</a></li-->
                             </ul>
