@@ -35,19 +35,20 @@
         </section>
     </div>
     <div id="div_logged" runat="server">
-        <div id="page-title" class="page-title-dark" style="background: url('images/custom/video_default.jpg') center center; background-size: cover;  padding: 150px 0;">
+        <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+            <div class="video-wrap" style="height: 100%;">
+                <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
+                    <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div class="container clearfix">
                 <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
                 <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                 <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border margintop-sm button-white button-light button-large button-rounded tleft nomargin">
-                    
                     <%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                     <i class="icon-angle-right"></i>
                 </asp:LinkButton>
-                <video width="100%" height="100%" class="hidden" controls>
-                    <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
-                    Your browser does not support the video tag.
-                </video>
             </div>
         </div>
     </div>
