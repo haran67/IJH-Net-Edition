@@ -285,28 +285,28 @@
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
                                 </div>
                                 <div class="col_half">
-                                    <asp:ImageButton ID="img_avatar" CssClass="thumbnail" runat="server" />
+                                    <asp:ImageButton ID="img_avatar" CssClass="thumbnail" runat="server" style="max-width: 220px; max-height: 220px;" />
                                 </div>
                                 <div class="col_half col_last">
                                     <telerik:RadAsyncUpload runat="server" ID="upl_img_avatar" MultipleFileSelection="Disabled"
                                         Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
-                                    <asp:LinkButton ID="btn_cancella_foto" runat="server" CssClass="button button-rounded button-red nomargin">
+                                    <asp:LinkButton ID="btn_cancella_foto" runat="server" CssClass="button button-rounded button-red button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
-                                    </asp:LinkButton>
-                                        <small><i>Dimensione consigliata: 138*138 pixel</i></small>
+                                    </asp:LinkButton><br>
+                                    <small><i>Dimensione consigliata: 220*220 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
                                 </div>
                                 <div class="col_half">
-                                    <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%;" />
+                                    <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%; max-height: 200px;" />
                                 </div>
                                 <div class="col_half col_last">
                                     <telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico" MultipleFileSelection="Disabled"
                                         Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
-                                    <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-red nomargin">
+                                    <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-red button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
-                                    </asp:LinkButton>
+                                        </asp:LinkButton><br>
                                     <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
                                 </div>
                                 <div class="col_full">
