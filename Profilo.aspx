@@ -115,7 +115,7 @@
                         
                         <!-- Gestione Video -->
                         <div id="div_gestione_video" runat="server">
-                            <div class="fancy-title title-dotted-border hidden">
+                            <div class="fancy-title title-border hidden">
                                 <h3><%=Lingua.CaricaLingua("lgl_profilo_tuoi_video")%></h3>
                             </div>
                             <asp:Repeater ID="rpt_video" runat="server">
