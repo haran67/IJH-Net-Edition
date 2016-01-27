@@ -127,8 +127,11 @@
                 </div>
                 <div class="col_three_fifth col_last dark center">
                     <div style="padding: 40px 0 0 0">
-                        <h1 class="nomargin nopadding">
-                            Non hai ancora un'account?
+                        <h1 class="nomargin nopadding" id="h_def" runat="server">
+                            <%=Lingua.CaricaLingua("lgl_index_accedi_non_hai")%>
+                        </h1>
+                        <h1 class="nomargin nopadding" id="h_alert" runat="server" visible="false">
+                            <%=Lingua.CaricaLingua("lgl_index_accedi_per_accedere")%>
                         </h1>
                         <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
                             <i class="icon-arrow-down2"></i>
