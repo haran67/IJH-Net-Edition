@@ -20,8 +20,7 @@
             <!-- Immagine del profilo
                     ============================================= -->
             <div class="col_three_fifth portfolio-single-image ">
-                <!--<asp:Image ID="img_user" runat="server"/>-->
-                <img src="images/profile-cover.jpg">
+                <asp:Image ID="img_user" runat="server"/>
             </div>
             <!-- .portfolio-single-image end -->
             <!-- Info utente
