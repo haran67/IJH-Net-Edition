@@ -96,7 +96,7 @@
                                 <a href="/User-list.aspx"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
                             </li>
                             <li>
-                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
+                                <a href="/streaming.aspx"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
                             </li>
                             <li>
                                 <a href="/crowdfunding.aspx"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
