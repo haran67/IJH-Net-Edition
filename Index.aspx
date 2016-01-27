@@ -34,8 +34,8 @@
                 </div>
         </section>
     </div>
-        <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
-    <div id="div_logged" runat="server">
+    <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+        <div id="div_logged" runat="server">
             <div class="video-wrap" style="height: 100%;">
                 <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
                     <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
@@ -43,9 +43,9 @@
                 </video>
             </div>
             <div class="container clearfix">
-                <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
                 <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border nomargin  button-white button-light button-large button-rounded tleft ">
+                <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
+                <asp:LinkButton ID="btn_video" runat="server" style="margin: 20px 0 0 0;" CssClass="button button-border button-white button-light button-rounded tleft ">
                     <%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                     <i class="icon-angle-right"></i>
                 </asp:LinkButton>
