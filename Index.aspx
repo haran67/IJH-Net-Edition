@@ -34,8 +34,8 @@
                 </div>
         </section>
     </div>
-    <div id="div_logged" runat="server">
         <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+    <div id="div_logged" runat="server">
             <div class="video-wrap" style="height: 100%;">
                 <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
                     <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
