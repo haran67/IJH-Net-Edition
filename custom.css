@@ -15025,14 +15025,13 @@ body,
 .dark .top-cart-action {
   border-top-color: rgba(43, 43, 43, 0.85) !important;
 }
-.button {
-  background-image: url('images/custom/bg_button.png');
-  background-position: center;
-  background-size: cover;
-}
 .comment-avatar img {
   width: 60px;
   height: 60px;
+}
+.comment-avatar,
+.comment-avatar img {
+  border-radius: 0;
 }
 .text-xs-left {
   text-align: left;

@@ -55,7 +55,7 @@
                         <!-- Riepilogo -->
                         <div id="div_espositore" runat="server">
                             <div class="col_one_fourth center">
-                                <div class="feature-box fbox-center fbox-bg fbox-light">
+                                <div class="feature-box fbox-center fbox-bg fbox-border">
                                     <div class="fbox-icon">
                                         <span><i class="icon-eye"></i></span>
                                     </div>
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="col_one_fourth center">
-                                <div class="feature-box fbox-center fbox-bg fbox-light">
+                                <div class="feature-box fbox-center fbox-bg fbox-border">
                                     <div class="fbox-icon">
                                         <span><i class="icon-thumbs-up2"></i></span>
                                     </div>
