@@ -293,6 +293,7 @@
                                     <asp:LinkButton ID="btn_cancella_foto" runat="server" CssClass="button button-rounded button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
                                     </asp:LinkButton>
+                                        <small><i>Dimensione consigliata: 138*138 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
@@ -306,6 +307,7 @@
                                     <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
                                     </asp:LinkButton>
+                                    <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded button-red nomargin">

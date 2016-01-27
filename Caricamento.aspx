@@ -28,7 +28,7 @@
         <div class="container clearfix">
             <div class="col_full">
                 <div id="div_dati" runat="server">
-                    <div class="fancy-title title-dotted-border">
+                    <div class="fancy-title title-border">
                         <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
                     </div>
                     <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"

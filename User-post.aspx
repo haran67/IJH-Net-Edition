@@ -19,15 +19,14 @@
         <div class="container clearfix">
             <!-- Immagine del profilo
                     ============================================= -->
-            <div class="col_two_third portfolio-single-image ">
-                <a href="#">
-                    <asp:Image ID="img_user" runat="server"/>
-                </a>
+            <div class="col_three_fifth portfolio-single-image ">
+                <!--<asp:Image ID="img_user" runat="server"/>-->
+                <img src="images/profile-cover.jpg">
             </div>
             <!-- .portfolio-single-image end -->
             <!-- Info utente
                     ============================================= -->
-            <div class="col_one_third portfolio-single-content col_last">
+            <div class="col_two_fifth portfolio-single-content col_last">
                 <!-- Descrizione
                     ============================================= -->
                 <div class="fancy-title title-bottom-border">

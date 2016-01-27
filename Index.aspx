@@ -15,35 +15,35 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
-        <div  id="div_logging" runat="server">
-            <div class="video-wrap" style="height: 100%;">
-                <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
-                    <source src='images/videos/header-video.mp4' type='video/mp4' />
-                    <source src='images/videos/header-video.webm' type='video/webm' />
-                </video>
-                <div class="video-overlay"></div>
-            </div>
-            <div class="container clearfix">
-                <div class="col_full dark">
-                    <div class="panel-body" style="padding: 0px 0;">
-                        <div class="emphasis-title title-center">
-                            <h2 class="nopadding text-shadow">
-                                <strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong>
-                                </h2>
-                            <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
-                                <i class="icon-arrow-down2"></i>
-                            </div>
-                            <div id="div_registrati" runat="server">
-                                <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
-                                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+    <div  id="div_logging" runat="server">
+        <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+                <div class="video-wrap" style="height: 100%;">
+                    <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
+                        <source src='images/videos/header-video.mp4' type='video/mp4' />
+                        <source src='images/videos/header-video.webm' type='video/webm' />
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                <div class="container clearfix">
+                    <div class="col_full dark">
+                        <div class="panel-body" style="padding: 0px 0;">
+                            <div class="emphasis-title title-center">
+                                <h2 class="nopadding text-shadow">
+                                    <strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong>
+                                    </h2>
+                                <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
+                                    <i class="icon-arrow-down2"></i>
+                                </div>
+                                <div id="div_registrati" runat="server">
+                                    <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
+                                    <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     
     <section id="slider" class="slider-parallax revslider-wrap clearfix">
 
@@ -57,7 +57,7 @@
 
                         <div class="tp-caption customin"
                              data-x="0"
-                             data-y="40"
+                             data-y="100"
                              data-customin="x:0;y:0;z:0;rotationZ:0;scaleX:0.6;scaleY:0.6;skewX:0;skewY:0;s:850;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
                              data-speed="850"
                              data-start="1200"
@@ -77,7 +77,7 @@
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
                              data-x="675"
-                             data-y="115"
+                             data-y="175"
                              data-customin="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                              data-speed="800"
                              data-start="1000"
@@ -91,7 +91,7 @@
 
                         <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
                              data-x="672"
-                             data-y="150"
+                             data-y="220"
                              data-customin="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                              data-speed="800"
                              data-start="1200"
@@ -121,7 +121,7 @@
 
                         <div class="tp-caption customin ltl tp-resizeme"
                              data-x="675"
-                             data-y="300"
+                             data-y="370"
                              data-customin="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
                              data-speed="800"
                              data-start="1550"
@@ -156,7 +156,7 @@
                         dottedOverlay:"none",
                         delay:16000,
                         startwidth:1140,
-                        startheight:500,
+                        startheight:600,
                         hideThumbs:200,
 
                         thumbWidth:100,
