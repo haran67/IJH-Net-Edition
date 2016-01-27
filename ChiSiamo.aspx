@@ -100,8 +100,6 @@
 
             <div class="row clearfix">
                 <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
-                <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_02")%>
-                <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_03")%>
             </div>
 
         </div>

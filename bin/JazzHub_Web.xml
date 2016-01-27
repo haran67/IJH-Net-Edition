@@ -1702,6 +1702,22 @@ btnInviaPassword control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.fLogin.h_def">
+	<summary>
+h_def control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.fLogin.h_alert">
+	<summary>
+h_alert control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.fLogin.div_registrati">
 	<summary>
 div_registrati control.
