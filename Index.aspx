@@ -6,52 +6,48 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div  id="div_logging" runat="server">
-        <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
-                <div class="video-wrap" style="height: 100%;">
-                    <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
-                        <source src='images/videos/header-video.mp4' type='video/mp4' />
-                        <source src='images/videos/header-video.webm' type='video/webm' />
-                    </video>
-                </div>
-                <div class="container clearfix">
-                    <div class="col_full dark">
-                        <div class="panel-body" style="padding: 0px 0;">
-                            <div class="emphasis-title title-center">
-                                <h2 class="nopadding text-shadow">
-                                    <strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong>
-                                    </h2>
-                                <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
-                                    <i class="icon-arrow-down2"></i>
-                                </div>
-                                <div id="div_registrati" runat="server">
-                                    <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
-                                    <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-                                </div>
+    <section id="div_logging" runat="server" class="page-title page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+            <div class="video-wrap" style="height: 100%;">
+                <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
+                    <source src='images/videos/header-video.mp4' type='video/mp4' />
+                    <source src='images/videos/header-video.webm' type='video/webm' />
+                </video>
+            </div>
+            <div class="container clearfix">
+                <div class="col_full dark">
+                    <div class="panel-body" style="padding: 0px 0;">
+                        <div class="emphasis-title title-center">
+                            <h2 class="nopadding text-shadow">
+                                <strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong>
+                                </h2>
+                            <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
+                                <i class="icon-arrow-down2"></i>
+                            </div>
+                            <div id="div_registrati" runat="server">
+                                <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
+                                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-    </div>
-        <div id="div_logged" runat="server">
-    <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
-            <div class="video-wrap" style="height: 100%;">
-                <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
-                    <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="container clearfix">
-                <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
-                <asp:LinkButton ID="btn_video" runat="server" style="margin: 20px 0 0 0;" CssClass="button button-border button-white button-light button-rounded tleft ">
-                    <%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
-                    <i class="icon-angle-right"></i>
-                </asp:LinkButton>
             </div>
     </section>
+    <section id="div_logged" runat="server" class="page-title page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
+        <div class="video-wrap" style="height: 100%;">
+            <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
+                <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                Your browser does not support the video tag.
+            </video>
         </div>
+        <div class="container clearfix">
+            <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+            <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
+            <asp:LinkButton ID="btn_video" runat="server" style="margin: 20px 0 0 0;" CssClass="button button-border button-white button-light button-rounded tleft ">
+                <%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
+                <i class="icon-angle-right"></i>
+            </asp:LinkButton>
+        </div>
+    </section>
     <!--<section id="slider" class="slider-parallax revslider-wrap clearfix">
 
         <div class="tp-banner-container" >

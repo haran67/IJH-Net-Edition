@@ -11,7 +11,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title" class="page-title-mini">
+    <section class="page-title page-title-mini">
         <div class="container clearfix">
             <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
             <ol class="breadcrumb hidden">

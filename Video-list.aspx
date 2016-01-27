@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="page-title">
+    <section class="page-title">
 		<div class="container clearfix">
             <h1><strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_videolist_title")%></h1>
 			<ol class="breadcrumb">

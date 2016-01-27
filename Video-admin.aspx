@@ -8,7 +8,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div id="page-menu" class="no-sticky">
+    <div class="page-menu no-sticky">
         <div id="page-menu-wrap">
             <div class="container clearfix">
                 <div class="menu-title">
