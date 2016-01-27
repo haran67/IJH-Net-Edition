@@ -21,7 +21,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap  nopadding">
         <div class="row common-height clearfix">
-            <div class="col-sm-5 col-padding dark" style="background: url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+            <div class="col-sm-5 col-padding dark" style="background: #333 url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
                 <div class="heading-block nobottomborder tright text-shadow">
                     <h2>Pooling</h2>
                 </div>
@@ -44,7 +44,7 @@
             </a>
         </div>
         <div class="row common-height clearfix">
-            <div class="col-sm-5 col-padding dark" style="background: url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+            <div class="col-sm-5 col-padding dark" style="background: #333  url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
                 <div class="heading-block nobottomborder tright text-shadow">
                     <h2>Peer to Peer</h2>
                 </div>
@@ -67,7 +67,7 @@
             </a>
         </div>
         <div class="row common-height clearfix">
-            <div class="col-sm-5 col-padding dark" style="background: url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+            <div class="col-sm-5 col-padding dark" style="background: #333  url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
                 <div class="heading-block nobottomborder tright text-shadow">
                     <h2>Sharing</h2>
                 </div>
@@ -75,7 +75,7 @@
             <div class="col-sm-7 col-padding">
                 <div class="row clearfix">
                     <h3 class="nomargin" style="font-weight: normal">
-                        <a href="http://www.jazzit.it"><i class="icon-youtube-play"></i>Jazzit Fest</a>
+                        <a href="http://www.jazzit.it"><i class="icon-youtube-play"></i> Jazzit Fest</a>
                     </h3>
                     <div class="divider divider-left nomargin" style="height: 20px;"></div>
                     <h3 class="nomargin" style="font-weight: normal">

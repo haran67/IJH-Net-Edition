@@ -16,27 +16,18 @@
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap  nopadding">
-        
-        <div class="row common-height clearfix">
-            <div class="col-sm-5 col-padding dark" style="background: url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
-                <div class="heading-block nobottomborder tright text-shadow">
-                    <h2>Link</h2>
-                </div>
-            </div>
-            <div class="col-sm-7 col-padding">
-                <div class="row clearfix">
-                    <h3 class="nomargin" style="font-weight: normal">
-                        <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf"><i class="icon-youtube-play"></i>Spotify</a>
-                    </h3>
-                    <div class="divider divider-left nomargin" style="height: 20px;"></div>
-                    <h3 class="nomargin" style="font-weight: normal">
-                        <a href="http://www.deezer.com/playlist/1551552041"><i class="icon-youtube-play"></i> Deezer</a>
-                    </h3>
-                </div>
+    <div class="content-wrap ">
+        <div class="container clearfix">
+            <div class="col_full center">
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf"><i class="icon-youtube-play"></i> Spotify</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.deezer.com/playlist/1551552041"><i class="icon-youtube-play"></i> Deezer</a>
+                </h3>
             </div>
         </div>
-    
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
