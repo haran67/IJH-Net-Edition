@@ -48,6 +48,7 @@
 	&.transparent-header {
 		+ #slider,
 		+ #page-title.page-title-parallax,
+        + .page-title.page-title-parallax,
 		+ #google-map {
 			top: -@header-height;
 			margin-bottom: -@header-height;
@@ -73,6 +74,12 @@
 		z-index: 5;
 		padding-top: @header-height;
 	}
+    
+    &.transparent-header + .page-title.page-title-parallax .container {
+        z-index: 5;
+        padding-top: @header-height;
+    }
+    
 
 	&.full-header {
 		border-bottom-color: #EEE;

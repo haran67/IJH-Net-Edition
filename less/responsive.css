@@ -589,7 +589,8 @@
     -moz-border-radius: 0;
     border-radius: 0;
   }
-  #header.transparent-header + #page-title.page-title-parallax .container {
+  #header.transparent-header + #page-title.page-title-parallax .container,
+  #header.transparent-header + .page-title.page-title-parallax .container {
     padding-top: 0;
   }
   #header.transparent-header,
@@ -605,6 +606,7 @@
   }
   #header.transparent-header + #slider,
   #header.transparent-header + #page-title.page-title-parallax,
+  .page-title.page-title-parallax,
   #slider + #header.transparent-header,
   #header.transparent-header.floating-header + #slider {
     top: 0;
@@ -1552,18 +1554,22 @@
   form .col_five_sixth {
     margin-bottom: 25px !important;
   }
-  #page-title {
+  #page-title,
+  .page-title {
     padding: 20px 0 25px;
     text-align: center;
   }
-  #page-title h1 {
+  #page-title h1,
+  .page-title h1 {
     line-height: 1.5;
     font-size: 24px;
   }
-  #page-title span {
+  #page-title span,
+  .page-title span {
     display: none;
   }
-  #page-title .breadcrumb {
+  #page-title .breadcrumb,
+  .page-title .breadcrumb {
     position: relative !important;
     top: 0 !important;
     left: 0 !important;
@@ -1571,6 +1577,7 @@
     margin: 15px 0 0 !important;
   }
   #page-title #portfolio-navigation,
+  .page-title #portfolio-navigation,
   #portfolio-ajax-title #portfolio-navigation {
     position: relative;
     top: 0;
