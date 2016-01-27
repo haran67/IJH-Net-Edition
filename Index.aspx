@@ -22,7 +22,6 @@
                         <source src='images/videos/header-video.mp4' type='video/mp4' />
                         <source src='images/videos/header-video.webm' type='video/webm' />
                     </video>
-                    <div class="video-overlay"></div>
                 </div>
                 <div class="container clearfix">
                     <div class="col_full dark">
