@@ -48,82 +48,6 @@
             </asp:LinkButton>
         </div>
     </section>
-    <!--<section id="slider" class="slider-parallax revslider-wrap clearfix">
-
-        <div class="tp-banner-container" >
-            <div class="tp-banner" >
-                <ul> 
-                    <li data-transition="fade" class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/slider/rev/bg2-thumb.jpg"  data-saveperformance="off"  data-title="Italian jazz Hub Highlight">
-                        <img src="images/custom/sfondo.jpg"  alt="bg"  data-bgposition="left bottom" data-lazyload="images/custom/sfondo.jpg" data-bgposition="center top" data-scale="cover" data-bgrepeat="no-repeat">
-
-                        <div class="tp-caption customin"
-                             data-x="0"
-                             data-y="100"
-                             data-customin="x:0;y:0;z:0;rotationZ:0;scaleX:0.6;scaleY:0.6;skewX:0;skewY:0;s:850;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                             data-speed="850"
-                             data-start="1200"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-endeasing="Power4.easeIn"
-                             style='background-color: rgba(0,0,0,.75);width:600px;height:400px;border: none !important;'>
-                                
-                        </div>
-
-                        <div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-                             data-x="675"
-                             data-y="175"
-                             data-customin="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1000"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-endeasing="Power4.easeIn" style="white-space: nowrap;"></div>
-
-                        <div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-                             data-x="672"
-                             data-y="220"
-                             data-customin="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1200"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-endeasing="Power4.easeIn"></div>
-
-
-                        <div class="tp-caption customin ltl tp-resizeme"
-                             data-x="675"
-                             data-y="370"
-                             data-customin="x:140;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-                             data-speed="800"
-                             data-start="1550"
-                             data-easing="easeOutQuad"
-                             data-splitin="none"
-                             data-splitout="none"
-                             data-elementdelay="0.01"
-                             data-endelementdelay="0.1"
-                             data-endspeed="1000"
-                             data-endeasing="Power4.easeIn">
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-    </section>-->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
@@ -157,12 +81,12 @@
                 </div>
             </div>
         </div>
-        <div class="section nomarginbottom nopadding parallax">
+        <div class="section nomarginbottom nopadding parallax" >
             <div class="container clearfix " id="div_like_visi" runat="server">
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
                 </div>
-                <div id="portfolio" class="portfolio-6 clearfix">
+                <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
@@ -190,7 +114,7 @@
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
                 </div>
-                <div id="portfolio" class="portfolio-6 clearfix">
+                <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
@@ -218,11 +142,11 @@
                 <div class="fancy-title title-border title-center">
                     <h3><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
                 </div>
-                <div id="portfolio" class="portfolio-6 clearfix">
+                <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
-                                <div class="portfolio-image" style="background-color: #222;">
+                                <div class="portfolio-image">
                                     <asp:Image ID="img_copertina" runat="server"/>
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <div class="portfolio-overlay">
