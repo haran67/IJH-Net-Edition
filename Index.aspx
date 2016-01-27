@@ -34,8 +34,8 @@
                 </div>
         </section>
     </div>
-    <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         <div id="div_logged" runat="server">
+    <section id="page-title" class="page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
             <div class="video-wrap" style="height: 100%;">
                 <video poster="images/custom/sfondo.jpg" preload="auto" loop autoplay muted>
                     <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
@@ -50,8 +50,8 @@
                     <i class="icon-angle-right"></i>
                 </asp:LinkButton>
             </div>
+    </section>
         </div>
-    </div>
     <!--<section id="slider" class="slider-parallax revslider-wrap clearfix">
 
         <div class="tp-banner-container" >
