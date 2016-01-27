@@ -54,7 +54,7 @@
                 <asp:Repeater ID="rpt_user" runat="server">
                     <ItemTemplate>
                         <article class="portfolio-item pf-media pf-" id="art_user" runat="server">
-                            <div class="portfolio-image" style="background-image: url('images/custom/sfondo.jpg');">
+                            <div class="portfolio-image" style="background-image: url('images/profile-cover.jpg');">
                                 <div>
                                     <img src="images/custom/blank.png">
                                 <!--<asp:Image ID="img_copertina" runat="server"/>-->

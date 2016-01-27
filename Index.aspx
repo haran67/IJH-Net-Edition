@@ -35,11 +35,11 @@
         </section>
     </div>
     <div id="div_logged" runat="server">
-        <div id="page-title" class="page-title-parallax page-title-dark" style="background-image: url('images/custom/video_default.jpg'); background-size: cover;  padding: 150px 0;" data-stellar-background-ratio="0.3">
+        <div id="page-title" class="page-title-dark" style="background: url('images/custom/video_default.jpg') center center; background-size: cover;  padding: 150px 0;">
             <div class="container clearfix">
                 <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
                 <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border button-white button-light button-large button-rounded tleft nomargin">
+                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border margintop-sm button-white button-light button-large button-rounded tleft nomargin">
                     
                     <%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                     <i class="icon-angle-right"></i>
