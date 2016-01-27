@@ -139,7 +139,7 @@
                                                         <asp:Image ID="img_utente" runat="server" />
                                                     </a>
                                                 </div>
-                                                <h5><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h5>
+                                                <h4><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h4>
                                             </div>
                                         </div>
                                     </div>

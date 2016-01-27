@@ -15022,6 +15022,9 @@ body,
 .dark .top-cart-item {
   border-top-color: rgba(43, 43, 43, 0.85) !important;
 }
+.dark .top-cart-action {
+  border-top-color: rgba(43, 43, 43, 0.85) !important;
+}
 .button {
   background-image: url('images/custom/bg_button.png');
   background-position: center;
