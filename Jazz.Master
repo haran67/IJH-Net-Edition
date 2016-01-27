@@ -114,7 +114,7 @@
                                 <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_shop")%></a>
                             </li>
                             <li>
-                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
+                                <a href="/link.aspx"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
                             </li>
                             <li id="li_accedi" runat="server">
                                 <a href="/login.aspx"><%=Lingua.CaricaLingua("lgl_menu_accedi")%></a>
