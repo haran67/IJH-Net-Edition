@@ -124,7 +124,7 @@
                                         <div class="col_two_fifth nobottommargin">
                                             <div style="position: absolute; top: 10px; left: 15px">
                                                 <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="noleftmargin button button-mini button-rounded" runat="server">
-                                                    Visualizza
+                                                    <%=Lingua.CaricaLingua("lgl_profilo_visualizza")%>
                                                 </asp:LinkButton>
                                             </div>
                                             <asp:Image ID="img_copertina" runat="server"/>
@@ -134,29 +134,29 @@
                                             <p><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
                                             <div class="col_half nobottommargin">
                                                 <ul class="iconlist">
-                                                    <li><i class="icon-thumbs-up"></i> <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal> likes</li>
-                                                    <li><i class="icon-eye"></i>  <asp:Literal ID="ltl_like" runat="server">0</asp:Literal> visualizzazioni</li>
-                                                    <li><i class="icon-comment"></i> <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal> commenti</li>
+                                                    <li><i class="icon-thumbs-up"></i> <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_likes")%></li>
+                                                    <li><i class="icon-eye"></i>  <asp:Literal ID="ltl_like" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></li>
+                                                    <li><i class="icon-comment"></i> <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_commenti")%></li>
                                                 </ul>
                                                 
                                                 <div class="clear"></div>
                                                 <asp:LinkButton ID="btn_modifica" runat="server" CssClass="noleftmargin button button-mini button-rounded button-green" CommandName="MOD">
-                                                    <span class="icon-edit"></span> Modifica
+                                                    <span class="icon-edit"></span> <%=Lingua.CaricaLingua("lgl_profilo_modifica")%>
                                                 </asp:LinkButton>
                                                 <asp:LinkButton ID="btn_delete" runat="server" CssClass="noleftmargin button button-mini button-rounded button-red" CommandName="DEL">
-                                                    <span class="icon-line-trash"></span> Elimina
+                                                    <span class="icon-line-trash"></span> <%=Lingua.CaricaLingua("lgl_profilo_elimina")%>
                                                 </asp:LinkButton>
                                             </div>
                                             <div class="col_half col_last nobottommargin">
                                                 <h4 class="nobottommargin"><%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%></h4>
                                                 
-                                                <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound">
+                                                <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound" OnItemCommand="rpt_like_lista_ItemCommand">
                                                     <HeaderTemplate>
                                                         <div class="panel panel-default divcenter nomargin" style="padding: 10px; height: 150px; overflow: auto">
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <div class="list-group-item clearfix">
-                                                            <asp:Label ID="ltl_utente" runat="server" CssClass="fleft" style="display: inline-block"></asp:Label>
+                                                            <asp:LinkButton ID="lnk_utente" runat="server" CommandName="UTE" CssClass="fleft" style="display: inline-block"></asp:LinkButton>
                                                             <asp:Label ID="ltl_data" runat="server" CssClass="fright" style="display: inline-block"></asp:Label>
                                                         </div>
                                                     </ItemTemplate>
@@ -293,7 +293,7 @@
                                     <asp:LinkButton ID="btn_cancella_foto" runat="server" CssClass="button button-rounded button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
                                     </asp:LinkButton>
-                                        <small><i>Dimensione consigliata: 220*220 pixel</i></small>
+                                        <small><i>Dimensione consigliata: 138*138 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
@@ -307,7 +307,7 @@
                                     <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
                                     </asp:LinkButton>
-                                    <small><i>Dimensione consigliata: 2000*800 pixel</i></small>
+                                    <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded button-red nomargin">
@@ -339,6 +339,9 @@
                                     <asp:LinkButton ID="btn_salva_profilo_pubblico" runat="server" CssClass="button button-rounded button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_modifica_profilo")%> <i class="icon-check"></i>
                                     </asp:LinkButton>
+                                    <asp:HyperLink ID="lnk_preview" runat="server" Target="_blank" NavigateUrl="/User-Post.aspx" CssClass="button button-rounded button-red nomargin">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_anteprima_profilo")%> <i class="icon-check"></i>
+                                    </asp:HyperLink>
                                 </div>
                             </div>
                         </div>

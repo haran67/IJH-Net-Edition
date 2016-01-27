@@ -294,17 +294,17 @@ video_tag control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Index.ltl_utente">
+</member><member name="F:JazzHub_Web.Index.ltl_titolo">
 	<summary>
-ltl_utente control.
+ltl_titolo control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Index.ltl_titolo">
+</member><member name="F:JazzHub_Web.Index.ltl_utente">
 	<summary>
-ltl_titolo control.
+ltl_utente control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3017,6 +3017,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Profilo.btn_salva_profilo_pubblico">
 	<summary>
 btn_salva_profilo_pubblico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.lnk_preview">
+	<summary>
+lnk_preview control.
 </summary>
 	<remarks>
 Auto-generated field.
