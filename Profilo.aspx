@@ -190,11 +190,11 @@
                             <div class="col_half" style="margin-bottom: 0px;">
                                 <div class="col_half" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_nome" runat="server" MaxLength="70" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col_half col_last" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_cognome" runat="server" MaxLength="70" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col_half" id="div_ragione_sociale" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_ragione_sociale" name="txt_ragione_sociale" runat="server" MaxLength="256"
@@ -202,7 +202,7 @@
                                 </div>
                                 <div class="col_half col_last" style="margin-bottom: 0px;">
                                     <cc:rDropDown ID="ddl_tipo_utente" runat="server" CssClass="form-control" Form_Vertical="true"
-                                        Required="false" />
+                                        />
                                 </div>
                                 <div class="col_half" id="div_codice_fiscale" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_codice_fiscale" name="txt_codice_fiscale" runat="server" MaxLength="16"
@@ -318,7 +318,7 @@
                             <div class="col_half col_last">
                                 <div class="col_full" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_descrizione_pubblica" runat="server" MaxLength="70" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" TextMode="MultiLine" Rows="15" />
+                                        Form_Vertical="true" TextMode="MultiLine" Rows="15" />
                                 </div>
                                 <div class="col_full">
                                     <%--<label for="">
@@ -328,7 +328,7 @@
                                             <div class="col_full">
                                                 <label><asp:Literal ID="ltl_social" runat="server"></asp:Literal></label>
                                                 <asp:TextBox ID="txt_social" runat="server" MaxLength="70" CssClass="form-control"
-                                                    Form_Vertical="true" Required="false" />
+                                                    Form_Vertical="true" />
                                             </div>
                                         </ItemTemplate>
                                     </asp:Repeater>

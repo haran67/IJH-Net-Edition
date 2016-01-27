@@ -1,4 +1,4 @@
-<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Crowdfunding.aspx.vb" Inherits="JazzHub_Web.crowdfunding" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Link.aspx.vb" Inherits="JazzHub_Web.fLink" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
@@ -13,7 +13,7 @@
             </div>
             <h2>Pagina in costruzione</h2>
             <div class="heading-block nobottomborder">
-                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_02" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
             </div>
         </div>
     </section>
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
-            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server"><i class="icon-user2"></i>
+            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_01" runat="server"><i class="icon-user2"></i>
                 <%=Lingua.CaricaLingua("lgl_index_registrati")%>
             </a>
         </div>
@@ -93,4 +93,5 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
 </asp:Content>
+
 
