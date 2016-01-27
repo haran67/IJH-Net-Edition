@@ -8,7 +8,7 @@
     <section id="slider" class="slider-parallax full-screen dark error404-wrap bokeh">
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <h1>Streaming</h1>
-            <h3>Ciascun utente con profilo Expo potrà organizzare eventi in diretta streaming [concerti, prove, lezioni di musica, etc] promossi in esclusiva per gli utenti di Jazz Hub connessi da tutto il mondo: significherà produrre, vivere e condividere esperienze uniche e irripetibili.</h3>
+            <h3>Ciascun utente con profilo Expo potr&agrave; organizzare eventi in diretta streaming (concerti, prove, lezioni di musica, etc) promossi in esclusiva per gli utenti di Jazz Hub connessi da tutto il mondo: significher&agrave; produrre, vivere e condividere esperienze uniche e irripetibili.</h3>
             <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
                 <i class="icon-arrow-down2" style="color: #fff;"></i>
             </div>
