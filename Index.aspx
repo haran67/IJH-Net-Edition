@@ -45,7 +45,7 @@
             <div class="container clearfix">
                 <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
                 <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border margintop-sm button-white button-light button-large button-rounded tleft nomargin">
+                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border nomargin  button-white button-light button-large button-rounded tleft ">
                     <%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                     <i class="icon-angle-right"></i>
                 </asp:LinkButton>

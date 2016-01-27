@@ -215,7 +215,7 @@
                                             </div>
                                             <div class="comment-content clearfix">
                                                 <div class="comment-author">
-                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal> - 
+                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
                                                     
                                                     <span>
                                                         <asp:Literal ID="ltl_data" runat="server"></asp:Literal>
@@ -224,8 +224,8 @@
                                                 <p>
                                                     <asp:Literal ID="ltl_commento" runat="server"></asp:Literal>
                                                 </p>
-                                                <p><asp:LinkButton ID="btn_delete" runat="server" CssClass="button button-border button-mini" CommandName="DEL">
-                                                    elimina commento
+                                                <p><asp:LinkButton ID="btn_delete" runat="server" CssClass="btn btn-default btn-xs" CommandName="DEL">
+                                                    <span class="icon-line-trash"></span> elimina commento
                                                     </asp:LinkButton></p>
                                             </div>
                                             
