@@ -137,7 +137,7 @@
                             <i class="icon-arrow-down2"></i>
                         </div>
                         <div id="div_registrati" runat="server">
-                            <a href="register.aspx" class="button button-rounded button-3d button-red button-xlarge nobottommargin"><i class="icon-user2"></i><span><%=Lingua.CaricaLingua("lgl_index_registrati")%></span></a>
+                            <a href="register.aspx" class="button button-rounded  button-red button-xlarge nobottommargin"><i class="icon-user2"></i><span><%=Lingua.CaricaLingua("lgl_index_registrati")%></span></a>
                         </div>
                     </div>
                 </div>
