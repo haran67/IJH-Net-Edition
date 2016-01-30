@@ -7,9 +7,16 @@
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="/js/maxlength/jquery.maxlength.css" type="text/css" />
+    <script type="text/javascript" src="/js/maxlength/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="/js/maxlength/jquery.maxlength.min.js"></script>
     <script type="text/javascript">
         function OnClientFileUploaded(sender, args) {
         }
+        $(function () {
+            $('#<%=txt_descrizione_breve.txt_Client_Id%>').maxlength({ feedbackText: '<%=Lingua.CaricaLingua("lgl_usati")%> {c} <%=Lingua.CaricaLingua("lgl_di")%> {m}' });
+        });
+
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">

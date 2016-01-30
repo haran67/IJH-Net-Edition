@@ -73,7 +73,7 @@
                             <div class="fbox-desc">
                                 <h3>
                                     <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                    <span class="subtitle">
+                                    <span class="subtitle hidden">
                                         <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
                                     </span>
                                 </h3>
