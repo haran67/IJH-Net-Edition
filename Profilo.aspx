@@ -9,6 +9,36 @@
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="js/jquery.cropit.js"></script>
+    <style>
+        .cropit-image-preview {
+            background-color: #f8f8f8;
+            background-size: cover;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-top: 7px;
+            width: 250px;
+            height: 250px;
+            cursor: move;
+        }
+
+        .cropit-image-background {
+            opacity: .2;
+            cursor: auto;
+        }
+
+        .image-size-label {
+            margin-top: 10px;
+        }
+
+        input {
+            display: block;
+        }
+
+        .export {
+            margin-top: 10px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
@@ -298,17 +328,27 @@
                                 <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
                                 </div>
-                                <div class="col_half">
-                                    <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%; max-height: 200px;" />
-                                </div>
-                                <div class="col_half col_last">
-                                    <telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico" MultipleFileSelection="Disabled"
-                                        Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
-                                    <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-red button-mini nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
-                                        </asp:LinkButton><br>
-                                    <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
-                                </div>
+                                <div class="image-editor">
+                                    <div class="col_half">
+                                        <!--<asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%; max-height: 200px;" />-->
+                                    </div>
+                                    <div class="col_half col_last">
+                                        <!--<telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico" MultipleFileSelection="Disabled"
+                                            Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
+                                        <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-red button-mini nomargin">
+                                            <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-check"></i>
+                                            </asp:LinkButton><br>-->
+
+                                            <input type="file" class="cropit-image-input">
+                                            <div class="cropit-image-preview"></div>
+                                            <div class="image-size-label">
+                                                Resize image
+                                            </div>
+                                            <input type="range" class="cropit-image-zoom-input">
+                                            <button class="export">Export</button>
+                                        </div>
+                                        <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
+                                    </div>
                                 <div class="col_full">
                                     <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>&nbsp;<i class="icon-check"></i>
@@ -354,4 +394,19 @@
     </asp:UpdatePanel>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
+    
+    <script>
+        function trigger_cut(){
+            $('.image-editor').cropit({
+                imageState: {
+                    src: 'http://lorempixel.com/500/400/',
+                },
+            });
+
+            $('.export').click(function() {
+                var imageData = $('.image-editor').cropit('export');
+                window.open(imageData);
+            });
+        });
+    </script>
 </asp:Content>
