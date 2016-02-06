@@ -46,7 +46,7 @@
 	}
 
 	&.transparent-header {
-		+ #slider,
+		+ .slider,
 		+ #page-title.page-title-parallax,
         + .page-title.page-title-parallax,
 		+ #google-map {
@@ -56,14 +56,14 @@
 	}
 }
 
-#slider + #header.transparent-header {
+.slider + #header.transparent-header {
 	top: -@header-height;
 	margin-bottom: -@header-height;
 }
 
 #header {
 	&.transparent-header.floating-header {
-		+ #slider,
+		+ .slider,
 		+ #google-map {
 			top: -(@header-height + @header-floating-offset);
 			margin-bottom: -(@header-height + @header-floating-offset);
@@ -93,7 +93,7 @@ body.stretched #header.full-header .container {
 
 #header.transparent-header.full-header #header-wrap { border-bottom: 1px solid rgba(0,0,0,0.1); }
 
-#slider + #header.transparent-header.full-header #header-wrap {
+.slider + #header.transparent-header.full-header #header-wrap {
 	border-top: 1px solid rgba(0,0,0,0.1);
 	border-bottom: none;
 }

@@ -604,10 +604,10 @@
 		border-radius: 0;
 	}
 
-	#header.transparent-header + #slider,
+	#header.transparent-header + .slider,
 	#header.transparent-header + #page-title.page-title-parallax,
-	#slider + #header.transparent-header,
-	#header.transparent-header.floating-header + #slider {
+	.slider + #header.transparent-header,
+	#header.transparent-header.floating-header + .slider {
 		top: 0;
 		margin-bottom: 0;
 	}
@@ -1469,7 +1469,7 @@
 	}
 
 	#top-social,
-	#slider:not(.swiper_wrapper) .slider-caption,
+	.slider:not(.swiper_wrapper) .slider-caption,
 	.nivo-caption,
 	.flex-caption,
 	.slider-caption p,

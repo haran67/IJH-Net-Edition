@@ -1,10 +1,11 @@
+
 // out: custom.css, compress: false, strictMath: false
+
 
 @import "style.less";
 @import "less/dark.less";
 
 /* start custom */
-
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700);
@@ -21,19 +22,33 @@
 @screen-md-min : 992px;
 @screen-lg-min : 1200px;
 
-@theme-color: #1f2c50;
+@theme-color: #1e2630;
+@heading-color: #1e2630;
 
-@menu-base-color: rgba(30,30,30,.85);
+@menu-base-color: #1e2630;
 
+.section {
+    background-color: #fff;
+}
+
+.title:first-letter {
+    font-size: 1.5em;
+    line-height: 1em;
+    padding-left: 50px;
+}
+
+.button-red {
+    background-color: #7a0e0a;
+}
 body {
-    background: #000 url('images/custom/body_bg.jpg') repeat ;
+    background: #1e2630 url("images/custom/patch_background.png") center center;
 
 }
 #wrapper {
     background: transparent;
 }
 #footer.dark {
-    background-color: #000;
+    background-color: rgba(0,0,0,.25);
 }
 
 .dark #top-cart .top-cart-content, .dark #primary-menu:not(.not-dark) ul ul,
@@ -111,7 +126,7 @@ body {
 }
 
 .bokeh {
-    background-image: url(images/custom/sfondo_alt.jpg) !important;
+    background-image: url(images/custom/jazz-wallpaper.jpg) !important;
     background-repeat: no-repeat;
     background-position: center center !important;
     background-size: cover !important;
@@ -125,14 +140,27 @@ body {
 }
 
 
-.intro-bg {
-    background-image: url(images/custom/jazz-intro-wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
 
 // custom style
+
+.patch {
+    background-color: transparent;
+    background-position: -30px 50px;
+    background-repeat: no-repeat;
+}
+
+.patch.green {
+    background-image: url(images/custom/patch_green.png);
+}
+.patch.red {
+    background-image: url(images/custom/patch_red.png);
+}
+.patch.blue {
+    background-image: url(images/custom/patch_blue.png);
+}
+.patch.orange {
+    background-image: url(images/custom/patch_orange.png);
+}
 
 .text-shadow {
     text-shadow: 0 2px 2px rgba(0,0,0,.75) !important;
@@ -273,3 +301,8 @@ body {
 .tp-video-play-button { display: none !important; }
 
 .tp-caption { white-space: nowrap; }
+
+
+/* after */
+
+@import "less/responsive.less";

@@ -5,7 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark bokeh" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+    <section class="slider slider-parallax dark bokeh" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
         <div class="container clearfix">
             <div class="vertical-middle center">
 
@@ -39,10 +39,10 @@
 
             <div class="row clearfix">
 
-                <h3 style="font-weight: normal">
+                <h3 class="title" style="font-weight: normal">
                     <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_01")%>
                 </h3>
-                <h3 style="font-weight: normal">
+                <h3 class="title" style="font-weight: normal">
                     <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_02")%>
                 </h3>
             </div>
@@ -68,8 +68,10 @@
             <div class="row clearfix tright">
 
                 <div class="col_full">
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
-                    <h3>
+                    <h3 class="title" style="font-weight: normal">
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
+                    </h3>
+                    <h3 class="title" style="font-weight: normal">
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_03")%><br>
@@ -77,7 +79,9 @@
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_05")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_06")%>
                     </h3>
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
+                    <h3 class="title" style="font-weight: normal">
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
+                    </h3>
                 </div>
 
             </div>
@@ -99,7 +103,9 @@
         <div class="col-sm-7 col-padding">
 
             <div class="row clearfix">
-                <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
+                <h3 class="title" style="font-weight: normal">
+                    <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
+                </h3>
             </div>
 
         </div>

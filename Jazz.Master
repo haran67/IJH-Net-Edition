@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="/css/mesysPager.css" type="text/css" />
 
     <!-- ============================================================= -->
-    <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
+    <!--<link rel="stylesheet" href="/css/responsive.css" type="text/css" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -51,7 +51,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
+<body class="boxed" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
     <form id="frmPrincipale" runat="server">
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true" EnablePageMethods="true"
         EnableScriptLocalization="true" AsyncPostBackTimeout="3600" ></telerik:RadScriptManager>
@@ -201,8 +201,8 @@
 
             <!-- Copyrights
             ============================================= -->
-            <div id="copyrights">
-                <div class="container clearfix">
+            <div class="container">
+                <div class="footer-widgets-wrap clearfix">
                     <div class="col_one_fifth nobottommargin">
                         <img src="/images/footer-widget-logo.png" alt="" class="footer-logo">
                     </div>
