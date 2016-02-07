@@ -884,7 +884,6 @@ body.stretched .container-fullwidth {
   padding: 0 15px;
 }
 #header.transparent-header + .slider,
-#header.transparent-header + #page-title.page-title-parallax,
 #header.transparent-header + .page-title.page-title-parallax,
 #header.transparent-header + #google-map {
   top: -100px;
@@ -899,7 +898,7 @@ body.stretched .container-fullwidth {
   top: -160px;
   margin-bottom: -160px;
 }
-#header.transparent-header + #page-title.page-title-parallax .container {
+#header.transparent-header + .page-title.page-title-parallax .container {
   z-index: 5;
   padding-top: 100px;
 }
@@ -3218,18 +3217,15 @@ html[xmlns] .slider-wrap {
 /* ----------------------------------------------------------------
 	Page Title
 -----------------------------------------------------------------*/
-#page-title,
 .page-title {
   position: relative;
   padding: 50px 0;
   background-color: #f5f5f5;
   border-bottom: 1px solid #EEE;
 }
-#page-title .container,
 .page-title .container {
   position: relative;
 }
-#page-title h1,
 .page-title h1 {
   padding: 0;
   margin: 0;
@@ -3240,7 +3236,6 @@ html[xmlns] .slider-wrap {
   font-size: 28px;
   text-transform: uppercase;
 }
-#page-title span,
 .page-title span {
   display: block;
   margin-top: 10px;
@@ -3262,7 +3257,7 @@ html[xmlns] .slider-wrap {
 body.stretched .container-fullwidth .breadcrumb {
   right: 60px !important;
 }
-#header.transparent-header + #page-title.page-title-parallax .page-title.page-title-parallax .breadcrumb {
+#header.transparent-header + .page-title.page-title-parallax .page-title.page-title-parallax .breadcrumb {
   margin-top: 35px !important;
 }
 .breadcrumb a {
@@ -3276,7 +3271,6 @@ body.stretched .container-fullwidth .breadcrumb {
 }
 /* Page Title - Dark
 -----------------------------------------------------------------*/
-#page-title,
 .page-title {
   /* Page Title - Right Aligned
 	-----------------------------------------------------------------*/
@@ -3293,52 +3287,41 @@ body.stretched .container-fullwidth .breadcrumb {
   /* Page Title - Video
 	-----------------------------------------------------------------*/
 }
-#page-title.page-title-dark,
 .page-title.page-title-dark {
   background-color: #333;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15) !important;
   border-bottom: none;
 }
-#page-title.page-title-dark h1,
 .page-title.page-title-dark h1 {
   color: rgba(255, 255, 255, 0.9) !important;
 }
-#page-title.page-title-dark span,
 .page-title.page-title-dark span {
   color: rgba(255, 255, 255, 0.7);
 }
-#page-title.page-title-dark .breadcrumb > .active,
 .page-title.page-title-dark .breadcrumb > .active {
   color: rgba(255, 255, 255, 0.6);
 }
-#page-title.page-title-dark .breadcrumb a,
 .page-title.page-title-dark .breadcrumb a {
   color: rgba(255, 255, 255, 0.8);
 }
-#page-title.page-title-dark .breadcrumb a:hover,
 .page-title.page-title-dark .breadcrumb a:hover {
   color: rgba(255, 255, 255, 0.95);
 }
-#page-title.page-title-right,
 .page-title.page-title-right {
   text-align: right;
 }
-#page-title.page-title-right .breadcrumb,
 .page-title.page-title-right .breadcrumb {
   left: 15px !important;
   right: auto !important;
 }
-#page-title.page-title-center,
 .page-title.page-title-center {
   text-align: center;
 }
-#page-title.page-title-center span,
 .page-title.page-title-center span {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
-#page-title.page-title-center .breadcrumb,
 .page-title.page-title-center .breadcrumb {
   position: relative !important;
   top: 0 !important;
@@ -3346,13 +3329,11 @@ body.stretched .container-fullwidth .breadcrumb {
   right: 0 !important;
   margin: 20px 0 0 !important;
 }
-#page-title.page-title-pattern,
 .page-title.page-title-pattern {
   background-image: url('images/pattern.png');
   background-repeat: repeat;
   background-attachment: fixed;
 }
-#page-title.page-title-parallax,
 .page-title.page-title-parallax {
   padding: 100px 0;
   text-shadow: none;
@@ -3363,57 +3344,46 @@ body.stretched .container-fullwidth .breadcrumb {
   background-position: 50% 0;
   background-repeat: no-repeat;
 }
-#page-title.page-title-parallax h1,
 .page-title.page-title-parallax h1 {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 2px;
 }
-#page-title.page-title-parallax span,
 .page-title.page-title-parallax span {
   font-size: 22px;
 }
-#page-title.page-title-parallax .breadcrumb,
 .page-title.page-title-parallax .breadcrumb {
   font-size: 13px;
 }
-#page-title.page-title-mini,
 .page-title.page-title-mini {
   padding: 20px 0;
 }
-#page-title.page-title-mini h1,
 .page-title.page-title-mini h1 {
   font-weight: 600;
   font-size: 18px;
   color: #444;
 }
-#page-title.page-title-mini span,
 .page-title.page-title-mini span {
   display: none;
 }
-#page-title.page-title-nobg,
 .page-title.page-title-nobg {
   background: transparent !important;
   border-bottom: 1px solid #F5F5F5;
 }
-#page-title.page-title-video,
 .page-title.page-title-video {
   background: none;
   position: relative;
   overflow: hidden;
 }
-#page-title.page-title-video .container,
 .page-title.page-title-video .container {
   z-index: 3;
 }
-#page-title.page-title-video .video-wrap,
 .page-title.page-title-video .video-wrap {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
 }
-#page-title.page-title-video .video-wrap video,
 .page-title.page-title-video .video-wrap video {
   width: 100%;
 }
@@ -11647,8 +11617,6 @@ button.toast-close-button {
 .device-md.sticky-footer .slider,
 .device-lg.sticky-footer #page-submenu,
 .device-md.sticky-footer #page-submenu,
-.device-lg.sticky-footer #page-title,
-.device-md.sticky-footer #page-title,
 .device-lg.sticky-footer .page-title,
 .device-md.sticky-footer .page-title,
 .device-lg.sticky-footer #content,
@@ -11657,8 +11625,6 @@ button.toast-close-button {
 .device-md.sticky-footer .slider,
 .device-lg.sticky-footer #page-submenu,
 .device-md.sticky-footer #page-submenu,
-.device-lg.sticky-footer #page-title,
-.device-md.sticky-footer #page-title,
 .device-lg.sticky-footer .page-title,
 .device-md.sticky-footer .page-title,
 .device-lg.sticky-footer #content,
@@ -13471,16 +13437,14 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
   color: #222 !important;
   text-shadow: none;
 }
-.dark #page-title,
+.dark .page-title,
 .dark .page-title {
   background-color: #282828;
   border-bottom-color: #3F3F3F;
 }
-.dark #page-title h1,
 .dark .page-title h1 {
   color: rgba(255, 255, 255, 0.9) !important;
 }
-.dark #page-title span,
 .dark .page-title span {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -13490,7 +13454,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .breadcrumb a:hover {
   color: #EEE;
 }
-.dark #page-title.page-title-pattern {
+.dark .page-title.page-title-pattern {
   background-image: url('../images/pattern2.png');
 }
 .dark #portfolio-filter {
@@ -15226,17 +15190,14 @@ body {
   }
 }
 /* customize page elements */
-#page-title.page-title-medium,
 .page-title.page-title-medium {
   padding: 20px 0;
 }
-#page-title.page-title-medium h1,
 .page-title.page-title-medium h1 {
   font-weight: 600;
   font-size: 18px;
   color: #444;
 }
-#page-title.page-title-medium span,
 .page-title.page-title-medium span {
   font-size: 14px;
 }
@@ -15839,7 +15800,6 @@ body {
     -moz-border-radius: 0;
     border-radius: 0;
   }
-  #header.transparent-header + #page-title.page-title-parallax .container,
   #header.transparent-header + .page-title.page-title-parallax .container {
     padding-top: 0;
   }
@@ -15855,8 +15815,7 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   #header.transparent-header + .slider,
-  #header.transparent-header + #page-title.page-title-parallax,
-  .page-title.page-title-parallax,
+  #header.transparent-header + .page-title.page-title-parallax,
   .slider + #header.transparent-header,
   #header.transparent-header.floating-header + .slider {
     top: 0;
@@ -16804,21 +16763,17 @@ body {
   form .col_five_sixth {
     margin-bottom: 25px !important;
   }
-  #page-title,
   .page-title {
     padding: 20px 0 25px;
     text-align: center;
   }
-  #page-title h1,
   .page-title h1 {
     line-height: 1.5;
     font-size: 24px;
   }
-  #page-title span,
   .page-title span {
     display: none;
   }
-  #page-title .breadcrumb,
   .page-title .breadcrumb {
     position: relative !important;
     top: 0 !important;
@@ -16826,7 +16781,6 @@ body {
     right: 0 !important;
     margin: 15px 0 0 !important;
   }
-  #page-title #portfolio-navigation,
   .page-title #portfolio-navigation,
   #portfolio-ajax-title #portfolio-navigation {
     position: relative;

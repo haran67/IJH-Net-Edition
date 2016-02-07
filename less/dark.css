@@ -422,16 +422,14 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
   color: #222 !important;
   text-shadow: none;
 }
-.dark #page-title,
+.dark .page-title,
 .dark .page-title {
   background-color: #282828;
   border-bottom-color: #3F3F3F;
 }
-.dark #page-title h1,
 .dark .page-title h1 {
   color: rgba(255, 255, 255, 0.9) !important;
 }
-.dark #page-title span,
 .dark .page-title span {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -441,7 +439,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .breadcrumb a:hover {
   color: #EEE;
 }
-.dark #page-title.page-title-pattern {
+.dark .page-title.page-title-pattern {
   background-image: url('../images/pattern2.png');
 }
 .dark #portfolio-filter {
