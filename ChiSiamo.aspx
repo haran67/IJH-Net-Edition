@@ -111,7 +111,7 @@
         </div>
 
     </div>
-    <div class="section dark nomargin clearfix bokeh" data-stellar-background-ratio="0.3">
+    <div class="section dark nomargin clearfix parallax bokeh" data-stellar-background-ratio="0.3">
         <div class="container">
             <div class="heading-block nobottomborder center">
                 <h1><%=Lingua.CaricaLingua("lgl_chisiamo_tariffe")%></h1>

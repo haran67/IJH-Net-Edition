@@ -58,7 +58,7 @@
     <section id="div_logged" runat="server" class="page-title page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         
         <div class="video-wrap" style="height: 100%;">
-            <video id="slide-video" poster="images/custom/jazz-wallpaper.jpg" preload="auto" loop controls>
+            <video id="slide-video" poster="images/custom/jazz-wallpaper.jpg" preload="auto" loop autoplay controls>
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
@@ -67,11 +67,11 @@
         <div class="container center clearfix">
             <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
             <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
-            <a href="#" id="video-slider-play" class="button button-border button-white button-light button-rounded tleft ">
+            <a href="#" id="video-slider-play" class="button button-border button-white button-light button-small button-rounded tleft video-played">
                 <i class="icon-line-play nomargin"></i>
                 <i class="icon-line-pause nomargin"></i>
             </a>
-            <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border button-white button-light button-rounded tleft ">
+            <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border button-white button-light button-small button-rounded tleft ">
                 <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                 <i class="icon-angle-right"></i>-->
                     <i class="icon-line-paper nomargin"></i>

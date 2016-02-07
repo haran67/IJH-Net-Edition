@@ -17,7 +17,7 @@
 		</div>
 	</section>
     <div id="page-menu" class="no-sticky">
-        <div id="page-menu-wrap" class="bokeh-transparent">
+        <div id="page-menu-wrap" class="patch">
             <div class="container clearfix">
                 <div class="menu-title">
                     <%=Lingua.CaricaLingua("lgl_userlist_sfoglia")%>
@@ -46,7 +46,7 @@
     <!-- #page-title end -->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap" style="padding: 20px 0">
+    <div class="content-wrap" style="padding: 40px 0">
         <div class="container clearfix">
             <!-- Portfolio Items
                     ============================================= -->

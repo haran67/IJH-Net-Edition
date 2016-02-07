@@ -15126,6 +15126,18 @@ body {
   background-size: cover !important;
 }
 .patch {
+  background-image: url(images/custom/jazz-wallpaper.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center top !important;
+  background-size: cover !important;
+}
+.patch-transparent {
+  background-image: url(images/custom/patch_background.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  background-size: cover !important;
+}
+.patch {
   background-color: transparent;
   background-position: -30px 50px;
   background-repeat: no-repeat;
@@ -15230,7 +15242,7 @@ body {
 #header.dark.sticky-header.transparent-header #header-wrap:not(.not-dark),
 #header.dark.transparent-header.floating-header .container,
 #header.dark.transparent-header.floating-header.sticky-header .container {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(30, 38, 48, 0.6);
 }
 /* REV SLIDER */
 .revo-slider-emphasis-text {
