@@ -38,12 +38,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
             
-    <section id="div_logging" runat="server" class="slider slider-parallax dark" style="background: url('images/custom/jazz-wallpaper.jpg'); background-size: cover; background-position: center center" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="400">
+    <section id="div_logging" runat="server" class="slider slider-parallax dark" style="background: url('images/custom/patch-wallpaper.jpg'); background-size: cover; background-position: center center" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="400">
         <div class="container clearfix">
             <div class="vertical-middle center">
                 <div class="emphasis-title title-center nomargin col-padding">
                     <h2 class="nopadding text-shadow"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
-                    <h4><strong>Jazz Hub</strong> &egrave; una rete sociale dedicata alla musica Jazz e nasce per mettere in contatto musicisti, affetti ai lavori e appassionati connessi in remoto da tutto il mondo.</h4>
+                    <h3 style="font-weight: normal"><strong>Jazz Hub</strong> &egrave; una rete sociale dedicata alla musica Jazz e nasce per mettere in contatto musicisti, affetti ai lavori e appassionati connessi in remoto da tutto il mondo.</h3>
                     <div class="divider divider-rounded divider-center topmargin-sm"><i class="icon-arrow-down2"></i></div>
                     <div id="div_registrati" runat="server">
                         <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
@@ -58,11 +58,11 @@
     <section id="div_logged" runat="server" class="page-title page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         
         <div class="video-wrap" style="height: 100%;">
-            <video id="slide-video" poster="images/custom/jazz-wallpaper.jpg" preload="auto" loop autoplay controls>
+            <video id="slide-video" poster="images/custom/patch-wallpaper.jpg" preload="auto" loop autoplay controls>
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
-            <div class="video-overlay" style="background: url('images/custom/patch_background.png') no-repeat; background-size: cover" /></div>
+            <div class="video-overlay" style="background: url('images/custom/patch-wallpaper-lines.png') no-repeat; background-size: cover" /></div>
         </div>
         <div class="container center clearfix">
             <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>

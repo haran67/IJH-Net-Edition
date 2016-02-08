@@ -1,6 +1,4 @@
-
-// out: custom.css, compress: false, strictMath: false
-
+// out: custom.css, compress: true, strictMath: false
 
 @import "style.less";
 @import "less/dark.less";
@@ -41,7 +39,7 @@
     background-color: #7a0e0a;
 }
 body {
-    background: rgb(30, 38, 48) url("images/custom/patch_background.png") center center;
+    background: rgb(30, 38, 48) url("images/custom/patch-wallpaper-lines.png") center center;
 
 }
 #wrapper {
@@ -109,24 +107,13 @@ body {
 }
 
 
-// custom button style
+// custom background
 
-.button.button-bg {
-    background-image: url(images/custom/jazz-texture-white.png);
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: auto;
-}
 
-.jazz-texture-white {
-    background-image: url(images/custom/jazz-texture-white.png);
-    background-repeat: repeat;
-    background-position: center center;
-    background-size: auto;
-}
+
 
 .bokeh {
-    background-image: url(images/custom/jazz-wallpaper.jpg) !important;
+    background-image: url(images/custom/patch-wallpaper.jpg) !important;
     background-repeat: no-repeat;
     background-position: center center !important;
     background-size: cover !important;
@@ -139,14 +126,14 @@ body {
     background-size: cover !important;
 }
 
-.patch {
-    background-image: url(images/custom/jazz-wallpaper.jpg) !important;
+.patch-wallpaper {
+    background-image: url(images/custom/patch-wallpaper.jpg) !important;
     background-repeat: no-repeat;
     background-position: center top !important;
     background-size: cover !important;
 }
-.patch-transparent {
-    background-image: url(images/custom/patch_background.png) !important;
+.patch-wallpaper-lines {
+    background-image: url(images/custom/patch-wallpaper-lines.png) !important;
     background-repeat: no-repeat !important;
     background-position: center top !important;
     background-size: cover !important;
@@ -242,6 +229,10 @@ body {
         }
     }
     
+}
+
+.panel-default {
+    background-color: rgba(255,255,255,0.9);
 }
 
 .video-wrap {
