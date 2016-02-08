@@ -9,9 +9,6 @@
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <h1><%=Lingua.CaricaLingua("lgl_radio_title")%></h1>
             <h3><%=Lingua.CaricaLingua("lgl_radio_desc")%></h3>
-            <div class="heading-block nobottomborder">
-                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-            </div>
         </div>
     </section>
 </asp:Content>

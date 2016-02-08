@@ -11,10 +11,6 @@
             <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
                 <i class="icon-arrow-down2" style="color: #fff;"></i>
             </div>
-            <h2>Pagina in costruzione</h2>
-            <div class="heading-block nobottomborder">
-                <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_02" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-            </div>
         </div>
     </section>
 </asp:Content>
@@ -33,7 +29,7 @@
                     </h3>
                     <div class="divider divider-left nomargin" style="height: 20px;"></div>
                     <h3 class="nomargin" style="font-weight: normal">
-                        <a href="https://www.couchsurfing.com/"><i class="icon-youtube-play"></i> Couch Surfing</a>
+                        <a href="https://www.utorrent.com/intl/it/"><i class="icon-youtube-play"></i> uTorrent</a>
                     </h3>
                 </div>
             </div>

@@ -26,7 +26,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 <div class="content-wrap  nopadding">
     <div class="row common-height clearfix">
-        <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-1.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+        <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-1.jpg') center center no-repeat; background-size: cover;">
             <div class="heading-block nobottomborder tright text-shadow">
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h2>
             </div>
@@ -42,25 +42,22 @@
             </div>
         </div>
     </div>
-    <div class="section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
+    <div class="hidden section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server">
             <i class="icon-user2"></i>
             <%=Lingua.CaricaLingua("lgl_index_registrati")%>
         </a>
     </div>
-    <div class="row common-height clearfix">
-
-        <div class="col-sm-5 col-padding dark fright" style="background: url('images/custom/jazz-bg-2.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
-            <div class="heading-block nobottomborder tleft text-shadow" >
+    <div class="row common-height alt clearfix">
+        <div class="col-sm-5 col-padding dark " style="background: url('images/custom/jazz-bg-2.jpg') center center no-repeat; background-size: cover;">
+            <div class="heading-block nobottomborder tright text-shadow" >
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h2>
             </div>
         </div>
-        <div class="col-sm-7 col-padding fleft">
-            <div class="row clearfix tright">
+        <div class="col-sm-7 col-padding ">
+            <div class="row clearfix tleft">
                 <div class="col_full">
-                    <h3 style="font-weight: normal">
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
-                    </h3>
+                    <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
                     <h3 style="font-weight: normal">
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
@@ -69,18 +66,16 @@
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_05")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_06")%>
                     </h3>
-                    <h3 style="font-weight: normal">
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
-                    </h3>
+                    <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
+    <div class="hidden section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"  id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
     </div>
     <div class="row common-height clearfix">
-        <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-3.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+        <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-3.jpg') center center no-repeat; background-size: cover;">
             <div class="heading-block nobottomborder tright text-shadow">
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h2>
             </div>

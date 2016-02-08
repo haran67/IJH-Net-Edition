@@ -222,11 +222,11 @@
                         <div class="col_two_fifth col_last nobottommargin">
                             <div class="col_half">
                                 <p>Con il sostegno di:</p>
-                                <img src="images/custom/logo-ministero.png" style="height: 57px;">
+                                <a href="http://www.beniculturali.it/"><img src="images/custom/logo-ministero.png" style="height: 57px;"></a>
                             </div>
                                 <p>Prodotto da:</p>
                             <div class="col_half col_last">
-                                <img src="images/custom/logo-imf.png" style="height: 57px;">
+                                <a href="http://www.imffoundation.it/"><img src="images/custom/logo-imf.png" style="height: 57px;"></a>
                             </div>
                         </div>
                     </div>
@@ -235,7 +235,7 @@
             <!-- Copyrights
             ============================================= -->
             
-            <div id="copyrights">
+            <div id="copyrights" class="hidden">
 
                 <div class="container clearfix">
 
