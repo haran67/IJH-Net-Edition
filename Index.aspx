@@ -46,7 +46,7 @@
                     <h3 style="font-weight: normal"><strong>Jazz Hub</strong> &egrave; una rete sociale dedicata alla musica Jazz e nasce per mettere in contatto musicisti, affetti ai lavori e appassionati connessi in remoto da tutto il mondo.</h3>
                     <div class="divider divider-rounded divider-center topmargin-sm"><i class="icon-arrow-down2"></i></div>
                     <div id="div_registrati" runat="server">
-                        <a href="login.aspx" class="button button-rounded  button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
+                        <a href="login.aspx" class="button button-rounded button-green button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
                         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
-        <div class="section nomargin" style="background-color: #fffbf1">
+        <div class="section nomargin alt">
             <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio-3 clearfix">
@@ -121,30 +121,32 @@
         <div class="section nomargin nobottompadding">
             <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
             <div class="container clearfix " id="div_like_visi" runat="server">
-                <div class="oc-item">
+                <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <div class="iportfolio">
-                                <div class="portfolio-image">
-                                    <asp:Image ID="img_copertina" runat="server"/>
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                                <h3>
-                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </h3>
+                            <div class="oc-item">
+                                <article class="iportfolio">
+                                    <div class="portfolio-image">
+                                        <asp:Image ID="img_copertina" runat="server"/>
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <div class="portfolio-overlay">
+                                                <div class="portfolio-desc">
+                                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                                    <h3>
+                                                        <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                    </h3>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </asp:LinkButton>
-                                </div>
-                            </article>
+                                        </asp:LinkButton>
+                                    </div>
+                                </article>
+                            </div>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
             </div>
         </div>
-        <div class="section nomargin nobottompadding" style="background-color: #fffbf1">
+            <div class="section nomargin alt">
             <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
             <div class="container clearfix " id="div_like_expo" runat="server">
                 <div id="portfolio" class="portfolio-4 clearfix">
@@ -173,24 +175,22 @@
         <div class="section nomargin">
             <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio-3 clearfix">
+                <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item pf-media pf-icons">
-                                <div class="portfolio-image">
-                                    <asp:Image ID="img_copertina" runat="server"/>
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                                <h3>
-                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </asp:LinkButton>
-                                </div>
-                            </article>
+                            <div class="oc-item">
+                                <article class="iportfolio">
+                                    <div class="portfolio-image">
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <asp:Image ID="img_copertina" runat="server" />
+                                        </asp:LinkButton>
+                                    </div>
+                                    <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                    </div>
+                                </article>
+                            </div>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
@@ -199,7 +199,6 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
-    <!-- Portfolio Script ============================================= -->
     <script type="text/javascript">
         jQuery(window).load(function () {
 
@@ -228,21 +227,37 @@
             $(window).resize(function () {
                 $container.isotope('layout');
             });
+            
+            
 
         });
-    </script>
-    <!-- Portfolio Script End -->
-    <script type="text/javascript">
     
-    $(document).ready(function () {
+        $(document).ready(function () {
 
-        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
 
-    });
+            var ocPortfolio = $("#oc-portfolio");
 
-    function endRequestHandler(sender, args) {
+            ocPortfolio.owlCarousel({
+                margin: 20,
+                nav: true,
+                navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+                autoplay: false,
+                autoplayHoverPause: true,
+                dots: false,
+                responsive:{
+                    0:{ items:1 },
+                    600:{ items:3 },
+                    1000:{ items:3 },
+                    1200:{ items:3 }
+                }
+            });
 
-    }
+        });
 
-</script>
+        function endRequestHandler(sender, args) {
+
+        }
+
+    </script>
 </asp:Content>

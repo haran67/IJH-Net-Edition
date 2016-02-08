@@ -20,14 +20,27 @@
 @screen-md-min : 992px;
 @screen-lg-min : 1200px;
 
-@theme-color: #1e2630;
-@heading-color: #1e2630;
+@theme-color    : #1e2630;
 
-@menu-base-color: #1e2630;
+@heading-color: @theme-color;
+@menu-base-color: @theme-color;
+
+@red            : #672124;
+
+@orange         : #78331E;
+
+@green          : #3D4D34;
+
+@blue           : #2C5654;
 
 .section {
     background-color: #fff;
+    &.alt {
+        background-color: #f4f4f4;
+        
+    }
 }
+
 
 //.title:first-letter {
 //    font-size: 1.5em;
@@ -36,7 +49,13 @@
 //}
 
 .button-red {
-    background-color: #7a0e0a;
+    background-color: @red;
+    border: solid 1px lighten(@red, 5);
+}
+.button-green {
+    background-color: @green;
+    border: solid 1px lighten(@green, 5);
+    
 }
 body {
     background: rgb(30, 38, 48) url("images/custom/patch-wallpaper-lines.png") center center;
