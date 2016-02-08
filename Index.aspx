@@ -97,7 +97,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
         <div class="section nomargin alt">
-            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="section nomargin nobottompadding">
-            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
             <div class="container clearfix " id="div_like_visi" runat="server">
                 <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
@@ -147,7 +147,7 @@
             </div>
         </div>
             <div class="section nomargin alt">
-            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
             <div class="container clearfix " id="div_like_expo" runat="server">
                 <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
@@ -173,7 +173,7 @@
             </div>
         </div>
         <div class="section nomargin">
-            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
             <div class="container clearfix ">
                 <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
