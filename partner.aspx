@@ -7,13 +7,51 @@
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <h1><%=Lingua.CaricaLingua("lgl_partners_title")%></h1>
             <h3><%=Lingua.CaricaLingua("lgl_partners_desc")%></h3>
-            <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
-                <i class="icon-arrow-down2" style="color: #fff;"></i>
-            </div>
         </div>
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+    <div class="content-wrap  nopadding">
+        <div class="container clearfix">
+            <div class="col_full center">
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.bluesinvilla.com/"><i class="icon-youtube-play"></i> FVG Festival</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.milleunanota.com/"><i class="icon-youtube-play"></i> Modern Jazz Institute</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.abno.com/"><i class="icon-youtube-play"></i> Blue Note Orchestra</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.blueartmanagement.com/"><i class="icon-youtube-play"></i> Blueart</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff"><i class="icon-youtube-play"></i> Peperoncino Jazz Festival</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.associazionenotabene.org/"><i class="icon-youtube-play"></i> Notabene</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.onyxjazzclub.it/2013/"><i class="icon-youtube-play"></i> Gezziamoci</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13"><i class="icon-youtube-play"></i> Tuscia in Jazz</a>
+                </h3>
+                <div class="divider" style="height: 20px;"></div>
+                <h3 class="nomargin" style="font-weight: normal">
+                    <a href="http://www.agenziaeventibipede.it/"><i class="icon-youtube-play"></i> San Valentino Jazz Festival</a>
+                </h3>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
 </asp:Content>
