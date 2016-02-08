@@ -96,27 +96,21 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
-        <div class="section nomargin nobottompadding patch green">
-            <h3 class="title"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
+        <div class="section nomargin" style="background-color: #fffbf1">
+            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item pf-media pf-icons">
+                            <article class="portfolio-item">
                                 <div class="portfolio-image">
-                                    <asp:Image ID="img_copertina" runat="server" />
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <span>
-                                                    <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
-                                                </span>
-                                                <h3>
-                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </h3>
-                                            </div>
-                                        </div>
+                                        <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
+                                </div>
+                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
+                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -124,13 +118,13 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin nobottompadding patch orange">
-            <h3 class="title"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
+        <div class="section nomargin nobottompadding">
+            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
             <div class="container clearfix " id="div_like_visi" runat="server">
-                <div id="portfolio" class="portfolio-4 clearfix">
+                <div class="oc-item">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item pf-media pf-icons">
+                            <div class="iportfolio">
                                 <div class="portfolio-image">
                                     <asp:Image ID="img_copertina" runat="server"/>
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
@@ -150,13 +144,13 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin nobottompadding patch blue">
-            <h3 class="title"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
+        <div class="section nomargin nobottompadding" style="background-color: #fffbf1">
+            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
             <div class="container clearfix " id="div_like_expo" runat="server">
                 <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item pf-media pf-icons">
+                            <article class="portfolio-item">
                                 <div class="portfolio-image">
                                     <asp:Image ID="img_copertina" runat="server"/>
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
@@ -176,8 +170,8 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin patch red">
-            <h3 class="title"><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
+        <div class="section nomargin">
+            <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">

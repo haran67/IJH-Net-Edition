@@ -199,64 +199,47 @@
 
         <footer id="footer" class="dark nopadding nomargin">
 
-            <!-- Copyrights
-            ============================================= -->
+            
             <div class="container">
                 <div class="footer-widgets-wrap clearfix">
-                    <div class="col_one_fifth nobottommargin">
-                        <img src="/images/footer-widget-logo.png" alt="" class="footer-logo">
+                    <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
+                        <div class="col_one_fifth nobottommargin">
+                            <img src="/images/footer-widget-logo.png" alt="Italian Jazz Hub logo footer">
+                        </div>
+                        <div class="col_two_fifth nobottommargin">
+                            <h4 class="nomargin">IMF Foundation</h4>
+                            <h5 class="nomargin">International Music Festival Foundation</h5>
+                            <address class="nomargin nopadding">
+                                <strong>Sede operativa:</strong>
+                                Via Giuseppe Sacconi, 19 - Lotto G
+                                00196 Roma
+                            </address>
+                            <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045<span class="middot"></span>
+                        </div>
+                        <div class="visible-sm visible-xs line line"></div>
+                        <div class="col_two_fifth col_last nobottommargin">
+                            <div class="col_half">
+                                <p>Con il sostegno di:</p>
+                                <img src="images/custom/logo-ministero.png" style="height: 57px;">
+                            </div>
+                                <p>Prodotto da:</p>
+                            <div class="col_half col_last">
+                                <img src="images/custom/logo-imf.png" style="height: 57px;">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col_two_fifth nobottommargin">
-                        <h4 class="nomargin">IMF Foundation</h4>
-                        <h5 class="nomargin">International Music Festival Foundation</h5>
-                        <address class="nomargin nopadding">
-                            <strong>Sede operativa:</strong>
-                            Via Giuseppe Sacconi, 19 - Lotto G
-                            00196 Roma
-                        </address>
-                        <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045<span class="middot"></span>
-                    </div>
-                    <div class="col_two_fifth col_last nobottommargin fright">
-                        <div class="fright clearfix">
-                            <a href="#" class="social-icon si-small si-borderless si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
+                </div>
+            </div>
+            <!-- Copyrights
+            ============================================= -->
+            
+            <div id="copyrights">
 
-                            <a href="#" class="social-icon si-small si-borderless si-twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
-                            </a>
+                <div class="container clearfix">
 
-                            <a href="#" class="social-icon si-small si-borderless si-gplus">
-                                <i class="icon-gplus"></i>
-                                <i class="icon-gplus"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
-                                <i class="icon-pinterest"></i>
-                                <i class="icon-pinterest"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-vimeo">
-                                <i class="icon-vimeo"></i>
-                                <i class="icon-vimeo"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-github">
-                                <i class="icon-github"></i>
-                                <i class="icon-github"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-yahoo">
-                                <i class="icon-yahoo"></i>
-                                <i class="icon-yahoo"></i>
-                            </a>
-
-                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
+                    <div class="col_half">
+                        <div class="widget clearfix">
+                            
                         </div>
                     </div>
                 </div>
