@@ -110,9 +110,11 @@
                                 </ul>
                                 
                             </li>
+<!--
                             <li>
                                 <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_shop")%></a>
                             </li>
+-->
                             <li>
                                 <a href="/link.aspx"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
                             </li>
