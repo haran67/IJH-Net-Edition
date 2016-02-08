@@ -114,11 +114,11 @@
                         <h3 class="nomargin" style="font-weight: normal">
                             <a href="https://www.youtube.com/user/ACTMusicOfficial" target="_blank"><i class="icon-youtube-play"></i> ACT</a>
                         </h3>
-                        <div class="divider divider-left nomargin" style="height: 20px;"></div>
+                        <div class="line" style="margin: 20px; 0"></div>
                         <h3 class="nomargin" style="font-weight: normal">
                             <a href="https://www.youtube.com/channel/UCKWKlIjdJM69UL97D-5Yb0g" target="_blank"><i class="icon-youtube-play"></i> JazzIt</a>
                         </h3>
-                        <div class="divider divider-left nomargin" style="height: 20px;"></div>
+                        <div class="line" style="margin: 20px; 0"></div>
                         <h3 class="nomargin" style="font-weight: normal">
                             <a href="https://www.youtube.com/user/BerkleeCollege" target="_blank"><i class="icon-youtube-play"></i> Berklee College Of Music</a>
                         </h3>

@@ -82,9 +82,7 @@
         </div>
         <div class="col-sm-7 col-padding">
             <div class="row clearfix">
-                <h3 class="title" style="font-weight: normal">
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
-                </h3>
+                <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
             </div>
         </div>
     </div>

@@ -56,35 +56,32 @@
                 <!-- Portfolio Single - Share End -->
             </div>
             <!-- .portfolio-single-content end -->
-            <div class="clear">
-            </div>
-            <div class="fancy-title title-dotted-border">
-                <h3>
-                    <%=Lingua.CaricaLingua("lgl_userpost_video")%>
-                </h3>
-            </div>
-            <asp:Repeater ID="rpt_video" runat="server">
-                <ItemTemplate>
-                    <div class="col-md-4">
-                        <div class="feature-box center media-box fbox-bg">
-                            <div class="fbox-media">
-                                <asp:Image ID="img_copertina" runat="server"/>
-                            </div>
-                            <div class="fbox-desc">
-                                <h3>
-                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                    <span class="subtitle hidden">
-                                        <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
-                                    </span>
-                                </h3>
-                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                    <i class="icon-line-play"></i>
-                                </asp:LinkButton>
+            <div class="clear"></div>
+            <div class="section alt">
+                <h3><%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>
+                <asp:Repeater ID="rpt_video" runat="server">
+                    <ItemTemplate>
+                        <div class="col-md-4">
+                            <div class="feature-box center media-box fbox-bg">
+                                <div class="fbox-media">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                </div>
+                                <div class="fbox-desc">
+                                    <h3>
+                                        <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                        <span class="subtitle hidden">
+                                            <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
+                                        </span>
+                                    </h3>
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <i class="icon-line-play"></i>
+                                    </asp:LinkButton>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </ItemTemplate>
-            </asp:Repeater>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
         </div>
     </div>
 </asp:Content>

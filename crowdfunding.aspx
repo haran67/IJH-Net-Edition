@@ -15,11 +15,11 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap ">
         <div class="container clearfix">
-            <div class="col_full center">
+            <div class="col_full ">
                 <h3 class="nomargin" style="font-weight: normal">
                     <a href="https://www.musicraiser.com/it/how_it_works"><i class="icon-youtube-play"></i> Music Raiser</a>
                 </h3>
-                <div class="divider " style="height: 20px;"></div>
+                <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
                     <a href="https://www.kickstarter.com/?ref=nav"><i class="icon-youtube-play"></i> Kickstarter</a>
                 </h3>

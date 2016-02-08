@@ -8,14 +8,11 @@
     <section id="slider" class="slider-parallax dark bokeh" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <h1>Link</h1>
-            <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
-                <i class="icon-arrow-down2" style="color: #fff;"></i>
-            </div>
         </div>
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap  nopadding">
+    <div class="content-wrap nopadding">
         <div class="row common-height clearfix">
             <div class="col-sm-5 col-padding dark" style="background: #333 url('images/custom/') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
                 <div class="heading-block nobottomborder tright text-shadow">
@@ -25,11 +22,7 @@
             <div class="col-sm-7 col-padding">
                 <div class="row clearfix">
                     <h3 class="nomargin" style="font-weight: normal">
-                        <a href="http://www.carpooling.it/"><i class="icon-youtube-play"></i>Car Pooling</a>
-                    </h3>
-                    <div class="divider divider-left nomargin" style="height: 20px;"></div>
-                    <h3 class="nomargin" style="font-weight: normal">
-                        <a href="https://www.utorrent.com/intl/it/"><i class="icon-youtube-play"></i> uTorrent</a>
+                        <a href="http://www.carpooling.it/"><i class="icon-youtube-play"></i> Car Pooling</a>
                     </h3>
                 </div>
             </div>
@@ -52,7 +45,7 @@
                     </h3>
                     <div class="divider divider-left nomargin" style="height: 20px;"></div>
                     <h3 class="nomargin" style="font-weight: normal">
-                        <a href="https://www.couchsurfing.com/"><i class="icon-youtube-play"></i> Couch Surfing</a>
+                        <a href="https://www.utorrent.com/intl/it/"><i class="icon-youtube-play"></i> uTorrent</a>
                     </h3>
                 </div>
             </div>
