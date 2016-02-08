@@ -8,7 +8,6 @@
     <section class="slider slider-parallax dark patch-wallpaper" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
         <div class="container clearfix">
             <div class="vertical-middle center">
-
                 <div class="heading-block nobottomborder center">
                     <h1>
                         <div class="text-rotater shadow text-shadow" data-separator="|" data-rotate="flipInX" data-speed="3500" style="color: #ccc">
@@ -20,7 +19,6 @@
                         </div>
                     </h1>
                 </div>
-
             </div>
         </div>
     </section>
@@ -28,29 +26,23 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 <div class="content-wrap  nopadding">
     <div class="row common-height clearfix">
-
         <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-1.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
             <div class="heading-block nobottomborder tright text-shadow">
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h2>
             </div>
         </div>
-
         <div class="col-sm-7 col-padding">
-
             <div class="row clearfix">
-
-                <h3 class="title" style="font-weight: normal">
+                <h3 style="font-weight: normal">
                     <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_01")%>
                 </h3>
-                <h3 class="title" style="font-weight: normal">
+                <h3 style="font-weight: normal">
                     <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_02")%>
                 </h3>
             </div>
-
         </div>
-
     </div>
-            <div class="section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
+    <div class="section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server">
             <i class="icon-user2"></i>
             <%=Lingua.CaricaLingua("lgl_index_registrati")%>
@@ -64,14 +56,12 @@
             </div>
         </div>
         <div class="col-sm-7 col-padding fleft">
-
             <div class="row clearfix tright">
-
                 <div class="col_full">
-                    <h3 class="title" style="font-weight: normal">
+                    <h3 style="font-weight: normal">
                         <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
                     </h3>
-                    <h3 class="title" style="font-weight: normal">
+                    <h3 style="font-weight: normal">
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_03")%><br>
@@ -79,37 +69,29 @@
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_05")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_06")%>
                     </h3>
-                    <h3 class="title" style="font-weight: normal">
+                    <h3 style="font-weight: normal">
                         <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
                     </h3>
                 </div>
-
             </div>
-
         </div>
-
     </div>
     <div class="section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"  id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
     </div>
     <div class="row common-height clearfix">
-
         <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-3.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
             <div class="heading-block nobottomborder tright text-shadow">
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h2>
             </div>
         </div>
-
         <div class="col-sm-7 col-padding">
-
             <div class="row clearfix">
                 <h3 class="title" style="font-weight: normal">
                     <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
                 </h3>
             </div>
-
         </div>
-
     </div>
         <div class="section dark nomargin clearfix parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <div class="container">
@@ -118,9 +100,7 @@
             </div>
             <div class="divider divider-short divider-rounded divider-center"><i class="icon-chevron-down"></i></div>
             <div class="pricing bottommargin clearfix">
-
                 <div class="col-sm-6">
-
                     <div class="pricing-box">
                         <div class="pricing-title">
                             <h3><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore")%></h3>
@@ -138,11 +118,8 @@
                             <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin" id="div_registrati_02" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="col-sm-6">
-
                     <div class="pricing-box">
                         <div class="pricing-title">
                             <h3><%=Lingua.CaricaLingua("lgl_chisiamo_espositore")%></h3>
@@ -183,7 +160,6 @@
                             <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin" id="div_registrati_03" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
                     <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
                         <i class="icon-arrow-down2" style="color: #fff;"></i>
                     </div>
-                    <a href="/Contatti.aspx" class="button button-border button-white button-light button-large button-rounded"><%=Lingua.CaricaLingua("lgl_tv_contattaci")%></a> 
+                    <a href="/Contatti.aspx" class="button button-green button-large button-rounded"><%=Lingua.CaricaLingua("lgl_tv_contattaci")%></a> 
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
-            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server"><i class="icon-user2"></i>
+            <a href="register.aspx" class="button hidden button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server"><i class="icon-user2"></i>
                 <%=Lingua.CaricaLingua("lgl_index_registrati")%>
             </a>
         </div>
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
-            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+            <a href="register.aspx" class="button hidden button-rounded button-red button-xlarge nobottommargin" id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
         </div>
         <div class="row common-height clearfix">
             <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-3.jpg') center center no-repeat; background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
@@ -98,7 +98,7 @@
             </div>
         </div>
         <div class="section nomargin dark center parallax bokeh" data-stellar-background-ratio="0.3">
-            <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_02" runat="server"><i class="icon-user2"></i>
+            <a href="register.aspx" class="button  button-rounded button-red button-xlarge nobottommargin" id="div_registrati_02" runat="server"><i class="icon-user2"></i>
                 <%=Lingua.CaricaLingua("lgl_index_registrati")%>
             </a>
         </div>
