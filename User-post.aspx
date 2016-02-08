@@ -6,8 +6,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title page-title-medium">
+    <section class="page-title page-title-parallax page-title-dark" style="padding: 150px 0;background: url('http://sviluppo.mesys.it/Repository/JazzHub_Web/Utenti/16/pub/270120161642_original.jpg') no-repeat center center; background-size: cover" data-stellar-background-ratio="0.2">
             <div class="container clearfix">
+                <img src="images/ui-sam.jpg" style="height: 60px; width: 60px; float: left; margin-right: 20px;" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" >
                 <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                 <span><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
                 </h1>
@@ -15,31 +16,57 @@
         </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap">
+    <div class="content-wrap nobottompadding">
         <div class="container clearfix">
-            <!-- Immagine del profilo
-                    ============================================= -->
-            <div class="col_three_fifth portfolio-single-image ">
+<!--
+            <div class="col_two_fifth portfolio-single-image">
                 <asp:Image ID="img_user" runat="server"/>
             </div>
-            <!-- .portfolio-single-image end -->
-            <!-- Info utente
-                    ============================================= -->
-            <div class="col_two_fifth portfolio-single-content col_last">
-                <!-- Descrizione
-                    ============================================= -->
-                <div class="fancy-title title-bottom-border">
-                    <h2>
-                        <%=Lingua.CaricaLingua("lgl_userpost_sudime")%></h2>
+-->
+            <div class="col_full portfolio-single-content">
+                <div class="col_one_fifth nobottommargin">
+                    <h2>Who</h2>
+                    <h2 class="hidden"><%=Lingua.CaricaLingua("lgl_userpost_sudime")%></h2>
                 </div>
-                <p>
-                    <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
-                </p>
-                <!-- Portfolio Single - Description End -->
-                <div class="line">
+                <div class="col_four_fifth col_last nobottommargin">
+                    <h2>Pierluigi Montani</h2>
                 </div>
-                <!-- Convidisioni
-                        ============================================= -->
+                <div class="line" style="margin-bottom: 20px !important;"></div>
+                <div class="col_one_fifth nobottommargin">
+                    <h2>What</h2>
+                </div>
+                <div class="col_four_fifth col_last nobottommargin">
+                    <p><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal> </p>
+                </div>   
+                    <div class="line" style="margin-bottom: 20px !important;"></div>
+                <div class="col_one_fifth nobottommargin">
+                    <h2>Where</h2>
+                </div>
+                <div class="col_four_fifth col_last nobottommargin">
+                    <p>Via Marco mastacchi 166 Livorno</p>
+                </div>
+                    <div class="line" style="margin-bottom: 20px !important;"></div>
+                <div class="col_one_fifth nobottommargin">
+                    <h2>When</h2>
+                </div>
+                <div class="col_four_fifth col_last nobottommargin">
+                    <p>dsfs</p>
+                </div>        
+                    <div class="line" style="margin-bottom: 20px !important;"></div>
+                <div class="col_one_fifth nobottommargin">
+                    <h2>Email</h2>
+                </div>
+                <div class="col_four_fifth col_last nobottommargin">
+                    <p><a href="">info@pippo.it</a></p>
+                </div>
+                <div class="line" style="margin-bottom: 20px !important;"></div>
+                <div class="col_one_fifth nobottommargin">
+                    <h2>Web</h2>
+                </div>
+                <div class="col_four_fifth col_last nobottommargin">
+                    <p><a href="">www.gino.it</a></p>
+                </div>
+                <div class="clear"></div>
                 <div class="si-share clearfix">
                     <span><%=Lingua.CaricaLingua("lgl_userpost_contatti")%></span>
                     <div>
@@ -53,34 +80,28 @@
                         </asp:Repeater>
                     </div>
                 </div>
-                <!-- Portfolio Single - Share End -->
             </div>
-            <!-- .portfolio-single-content end -->
-            <div class="clear"></div>
-            <div class="section alt">
+        </div>
+        <div class="section alt nobottommargin">
+            <div class="container clearfix">
                 <h3><%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>
-                <asp:Repeater ID="rpt_video" runat="server">
-                    <ItemTemplate>
-                        <div class="col-md-4">
-                            <div class="feature-box center media-box fbox-bg">
-                                <div class="fbox-media">
-                                    <asp:Image ID="img_copertina" runat="server"/>
-                                </div>
-                                <div class="fbox-desc">
-                                    <h3>
-                                        <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                        <span class="subtitle hidden">
-                                            <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
-                                        </span>
-                                    </h3>
+                <div id="portfolio" class="portfolio-3 clearfix">
+                    <asp:Repeater ID="rpt_video" runat="server">
+                        <ItemTemplate>
+                            <article class="portfolio-item">
+                                <div class="portfolio-image">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <i class="icon-line-play"></i>
+                                        <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
                                 </div>
-                            </div>
-                        </div>
-                    </ItemTemplate>
-                </asp:Repeater>
+                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
+                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                    <span class="hidden"><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
             </div>
         </div>
     </div>
