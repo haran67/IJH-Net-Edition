@@ -173,7 +173,7 @@
         <div class="section nomargin">
             <h3 class="title center"><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio-4 clearfix">
+                <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item pf-media pf-icons">
