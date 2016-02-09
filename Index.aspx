@@ -156,10 +156,10 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin hidden">
+        <div class="section nomargin ">
             <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio-4 clearfix">
+                <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <div class="oc-item">
@@ -223,7 +223,7 @@
             var ocPortfolio = $("#oc-portfolio");
 
             ocPortfolio.owlCarousel({
-                margin: 20,
+                margin: 15,
                 nav: true,
                 navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
                 autoplay: false,
@@ -232,8 +232,8 @@
                 responsive:{
                     0:{ items:1 },
                     600:{ items:3 },
-                    1000:{ items:3 },
-                    1200:{ items:3 }
+                    1000:{ items:5 },
+                    1200:{ items:5 }
                 }
             });
 
