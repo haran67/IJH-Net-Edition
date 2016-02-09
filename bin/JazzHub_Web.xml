@@ -118,14 +118,6 @@ ltl_categoria control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.User_post.img_user">
-	<summary>
-img_user control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.User_post.ltl_nome">
 	<summary>
 ltl_nome control.

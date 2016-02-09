@@ -6,23 +6,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title page-title-dark" style="padding: 100px 0;background: url('images/custom/patch-wallpaper.jpg') no-repeat center center; background-size: cover" >
-            <div class="container clearfix">
-                <asp:Image ID="img_utente" runat="server" style="height: 60px; width: 60px; float: left; margin-right: 20px;" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" />
-                <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
-                <span><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
-                </h1>
-            </div>
-        </section>
+    <section class="page-title page-title-dark" 
+        style="padding: 100px 0; background: url('<%=user_background%>') no-repeat center center; background-size: cover" >
+        <div class="container clearfix">
+            <asp:Image ID="img_utente" runat="server" style="height: 60px; width: 60px; float: left; margin-right: 20px;" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" />
+            <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
+            <span><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
+            </h1>
+        </div>
+    </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nobottompadding">
         <div class="container clearfix">
-<!--
-            <div class="col_two_fifth portfolio-single-image">
-                <asp:Image ID="img_user" runat="server"/>
-            </div>
--->
             <div class="col_full portfolio-single-content">
                 <div class="col_one_fifth nobottommargin">
                     <h2>Who</h2>
