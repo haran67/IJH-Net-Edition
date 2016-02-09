@@ -323,7 +323,24 @@ body {
 
 .tp-caption { white-space: nowrap; }
 
+#video-slider-play {
+    display: inline-block;
+}
+
+#video-slider-play i:nth-of-type(1) {
+    position: relative;
+    left: 2px;
+}
+
+#video-slider-play i:nth-of-type(2),
+#video-slider-play.video-played i:nth-of-type(1) { display: none; }
+
+#video-slider-play.video-played i:nth-of-type(2) { display: inline-block; }
+
 
 /* after */
+
+
+
 
 @import "less/responsive.less";

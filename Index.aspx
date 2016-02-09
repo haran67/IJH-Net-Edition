@@ -4,37 +4,6 @@
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-        #video-slider-play {
-            /*position: absolute;
-            left: 50%;
-            top: auto;
-            bottom: 30px;
-            margin-left: -24px;*/
-            /*width: 48px;
-            height: 48px;
-            line-height: 48px;
-            border-radius: 50%;
-            background-color: rgba(255,255,255,0.2);
-            color: #FFF;
-            font-size: 18px;
-            text-align: center;
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
-            z-index: 8;*/
-            display: inline-block;
-        }
-
-        #video-slider-play i:nth-of-type(1) {
-            position: relative;
-            left: 2px;
-        }
-
-        #video-slider-play i:nth-of-type(2),
-        #video-slider-play.video-played i:nth-of-type(1) { display: none; }
-
-        #video-slider-play.video-played i:nth-of-type(2) { display: inline-block; }
-
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
             
@@ -58,7 +27,7 @@
     <section id="div_logged" runat="server" class="page-title page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         
         <div class="video-wrap" style="height: 100%;">
-            <video id="slide-video" poster="images/custom/patch-wallpaper.jpg" preload="auto" loop autoplay controls>
+            <video id="slide-video" preload="auto" loop poster="http://sviluppo.mesys.it/Repository/JazzHub_Web/Video/10/260120161218_preview.jpg">
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
@@ -67,7 +36,8 @@
         <div class="container center clearfix">
             <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
             <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
-            <a href="#" id="video-slider-play" class="button button-border button-white button-light button-small button-rounded tleft video-played">
+            <span data-animate="fadeInUp" data-delay="500">
+            <a href="#" id="video-slider-play"  class="button button-border button-white button-light button-small button-rounded tleft">
                 <i class="icon-line-play nomargin"></i>
                 <i class="icon-line-pause nomargin"></i>
             </a>
@@ -76,23 +46,10 @@
                 <i class="icon-angle-right"></i>-->
                     <i class="icon-line-paper nomargin"></i>
             </asp:LinkButton>
+            </span>
         </div>
     </section>
-        <script>
-            jQuery(document).ready(function($){
-                $('#video-slider-play').on('click', function(e){
-                e.preventDefault();
-
-                if( $(this).hasClass('video-played') ) {
-                $('#slide-video').get(0).pause();
-                } else {
-                $('#slide-video').get(0).play();
-                }
-
-                $(this).toggleClass('video-played');
-                });
-            });
-        </script>
+        
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
@@ -258,6 +215,18 @@
         function endRequestHandler(sender, args) {
 
         }
+        
+        $('#video-slider-play').on('click', function(e){
+            e.preventDefault();
+
+            if( $(this).hasClass('video-played') ) {
+                $('#slide-video').get(0).pause();
+            } else {
+                $('#slide-video').get(0).play();
+            }
+
+            $(this).toggleClass('video-played');
+        });
 
     </script>
 </asp:Content>
