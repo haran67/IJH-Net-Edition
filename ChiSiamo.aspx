@@ -57,7 +57,9 @@
         <div class="col-sm-7 col-padding ">
             <div class="row clearfix tleft">
                 <div class="col_full">
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
+                    <h3 style="font-weight: normal">
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
+                    </h3>
                     <h3 style="font-weight: normal">
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
@@ -66,7 +68,9 @@
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_05")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_06")%>
                     </h3>
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
+                    <h3 style="font-weight: normal">
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
+                    </h3> 
                 </div>
             </div>
         </div>
@@ -82,7 +86,9 @@
         </div>
         <div class="col-sm-7 col-padding">
             <div class="row clearfix">
-                <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
+                <h3 style="font-weight: normal">
+                    <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
+                </h3>
             </div>
         </div>
     </div>

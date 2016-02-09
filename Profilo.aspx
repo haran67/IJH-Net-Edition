@@ -108,7 +108,9 @@
                                 <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-rounded nomargin">
                                     <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>&nbsp;<i class="icon-arrow-right2"></i>
                                 </asp:LinkButton>
-                                
+                                <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-rounded button-red nomargin">
+                                    <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-money"></i>
+                                </asp:LinkButton>
                             </div>
                         </div>
                         <!-- FINE Riepilogo -->

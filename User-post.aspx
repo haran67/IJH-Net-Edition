@@ -8,7 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-dark" style="padding: 100px 0;background: url('http://sviluppo.mesys.it/Repository/JazzHub_Web/Utenti/16/pub/270120161642_original.jpg') no-repeat center center; background-size: cover" >
             <div class="container clearfix">
-                <img src="images/ui-sam.jpg" style="height: 60px; width: 60px; float: left; margin-right: 20px;" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" >
+                <asp:Image ID="img_utente" runat="server" style="height: 60px; width: 60px; float: left; margin-right: 20px;" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" />
                 <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                 <span><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
                 </h1>
@@ -29,7 +29,7 @@
                     <h2 class="hidden"><%=Lingua.CaricaLingua("lgl_userpost_sudime")%></h2>
                 </div>
                 <div class="col_four_fifth col_last nobottommargin">
-                    <h2>Pierluigi Montani</h2>
+                    <h2><asp:Literal ID="ltl_nome" runat="server"></asp:Literal></h2>
                 </div>
                 <div class="line" style="margin-bottom: 20px !important;"></div>
                 <div class="col_one_fifth nobottommargin">
@@ -39,17 +39,17 @@
                     <p><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal> </p>
                 </div>   
                     <div class="line" style="margin-bottom: 20px !important;"></div>
-                <div class="col_one_fifth nobottommargin">
+                <div class="col_one_fifth nobottommargin hidden">
                     <h2>Where</h2>
                 </div>
-                <div class="col_four_fifth col_last nobottommargin">
+                <div class="col_four_fifth col_last nobottommargin hidden">
                     <p>Via Marco mastacchi 166 Livorno</p>
                 </div>
                     <div class="line" style="margin-bottom: 20px !important;"></div>
-                <div class="col_one_fifth nobottommargin">
+                <div class="col_one_fifth nobottommargin hidde">
                     <h2>When</h2>
                 </div>
-                <div class="col_four_fifth col_last nobottommargin">
+                <div class="col_four_fifth col_last nobottommargin hidden">
                     <p>dsfs</p>
                 </div>        
                     <div class="line" style="margin-bottom: 20px !important;"></div>
@@ -57,13 +57,13 @@
                     <h2>Email</h2>
                 </div>
                 <div class="col_four_fifth col_last nobottommargin">
-                    <p><a href="">info@pippo.it</a></p>
+                    <p><a href="" id="a_mail" runat="server"><asp:Literal ID="ltl_mail" runat="server"></asp:Literal></a></p>
                 </div>
                 <div class="line" style="margin-bottom: 20px !important;"></div>
-                <div class="col_one_fifth nobottommargin">
+                <div class="col_one_fifth nobottommargin hidden">
                     <h2>Web</h2>
                 </div>
-                <div class="col_four_fifth col_last nobottommargin">
+                <div class="col_four_fifth col_last nobottommargin hidden">
                     <p><a href="">www.gino.it</a></p>
                 </div>
                 <div class="clear"></div>

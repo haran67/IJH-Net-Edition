@@ -10,12 +10,54 @@
     <link rel="stylesheet" href="/js/maxlength/jquery.maxlength.css" type="text/css" />
     <script type="text/javascript" src="/js/maxlength/jquery.plugin.min.js"></script>
     <script type="text/javascript" src="/js/maxlength/jquery.maxlength.min.js"></script>
+    <link rel="stylesheet" href="/js/select2/select2.css"/>
+    <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
+    <script type="text/javascript" src="/js/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/js/select2/select2_locale_it.js"></script>
     <script type="text/javascript">
-        function OnClientFileUploaded(sender, args) {
+        var selectedItems;
+
+        function setMultipleSelect(val) {
+            //select2_selected_items = val;
+            selectedItems = val.split(',');
+            //select2_object = '#ddl_video_tag';
         }
+
+        function Init_Select2() {
+            if ($().select2) {
+                //alert($('select.select2me'));
+                $('select.select2me').select2({
+                    placeholder: "Select",
+                    allowClear: true
+                });
+            }
+        }
+
+        function Init_MultipleSelect2() {
+            if ($().select2) {
+                $('select[multiple="multiple"]').each(function () {
+                    $('.select2-search-choice').remove();
+                    $(this).on("change", function (e) {
+                        //alert("change val=" + e.val);
+                        PageMethods.SalvaSelect2MultipleValues(e.val, PMSuccess, PMFailure);
+                    })
+                });
+            }
+        }
+
+        $(document).ready(function () {
+            Init_Select2();
+            Init_MultipleSelect2();
+            select2_already_init = true; //VARIABILE GLOBALE CHE NON INIZIALIZZA NELLA MASTER LA SELECT2
+            $('#ddl_video_tag').select2('val', selectedItems);
+        });
+
         $(function () {
             $('#<%=txt_descrizione_breve.txt_Client_Id%>').maxlength({ feedbackText: '<%=Lingua.CaricaLingua("lgl_usati")%> {c} <%=Lingua.CaricaLingua("lgl_di")%> {m}' });
         });
+
+        function OnClientFileUploaded(sender, args) {
+        }
 
     </script>
 </asp:Content>
@@ -64,7 +106,15 @@
                         <cc:rTextBox ID="txt_descrizione" runat="server" TextMode="MultiLine" Rows="10" 
                             AutoPostBack="false" Icon="" Form_Vertical="true" />
                     </div>
-                    <div class="col_half col_last">    
+                    <div class="col_half col_last">
+                        <div class="form-group">
+                            <label for="to" class="">
+                                <%=Lingua.CaricaLingua("lgl_caricamento_tag")%></label>
+                            <select ID="ddl_video_tag" multiple="multiple" class="select2me form-control"
+                                placeholder="Seleziona i tag dalla lista">
+                                <%=option_tag%>
+                            </select>
+                        </div>    
                         <span for="upl_video" style="font-size:15px; color:Red;" id="span_upl_video" runat="server" visible="false">
                             <asp:Literal ID="ltl_msg_upl_video" runat="server"></asp:Literal>
                         </span>

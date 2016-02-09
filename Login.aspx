@@ -8,10 +8,10 @@
     <div class="content-wrap">
         <div class="section nomargin center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
             <div class="container clearfix" style="padding-top: 50px; padding-bottom:30px">
-                <div class="col_two_fifth nobottommargin">
-                    <div class="panel panel-default divcenter" style="max-width: 400px;">
-                        <asp:UpdatePanel ID="upd_login" runat="server">
-                            <ContentTemplate>
+                <asp:UpdatePanel ID="upd_login" runat="server">
+                    <ContentTemplate>
+                        <div class="col_two_fifth nobottommargin">
+                            <div class="panel panel-default divcenter" style="max-width: 400px;">
                                 <div class="panel-body" style="padding: 40px;">
                                     <div id="processTabs">
                                         <ul class="hidden">
@@ -121,26 +121,28 @@
                                         </div>
                                     </div>
                                 </div>
-                            </ContentTemplate>
-                        </asp:UpdatePanel>
-                    </div>
-                </div>
-                <div class="col_three_fifth col_last dark center">
-                    <div style="padding: 40px 0 0 0">
-                        <h1 class="nomargin nopadding" id="h_def" runat="server">
-                            <%=Lingua.CaricaLingua("lgl_index_accedi_non_hai")%>
-                        </h1>
-                        <h1 class="nomargin nopadding" id="h_alert" runat="server" visible="false">
-                            <%=Lingua.CaricaLingua("lgl_index_accedi_per_accedere")%>
-                        </h1>
-                        <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
-                            <i class="icon-arrow-down2"></i>
+                            </div>
                         </div>
-                        <div id="div_registrati" runat="server">
-                            <a href="register.aspx" class="button button-rounded  button-red button-xlarge nobottommargin"><i class="icon-user2"></i><span><%=Lingua.CaricaLingua("lgl_index_registrati")%></span></a>
+                        <div class="col_three_fifth col_last dark center">
+                            <div style="padding: 40px 0 0 0">
+                                <h1 class="nomargin nopadding" id="h_def" runat="server">
+                                    <%=Lingua.CaricaLingua("lgl_index_accedi_non_hai")%>
+                                </h1>
+                                <h1 class="nomargin nopadding" id="h_alert" runat="server" visible="false">
+                                    <%=Lingua.CaricaLingua("lgl_index_accedi_per_accedere")%>
+                                </h1>
+                                <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
+                                    <i class="icon-arrow-down2"></i>
+                                </div>
+                                <div id="div_registrati" runat="server">
+                                    <a href="register.aspx" class="button button-rounded  button-red button-xlarge nobottommargin">
+                                        <i class="icon-user2"></i><span>
+                                            <%=Lingua.CaricaLingua("lgl_index_registrati")%></span></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
             </div>
         </div>
     </div>

@@ -2421,7 +2421,7 @@ var SEMICOLON = SEMICOLON || {};
 
 				$('.cookie-accept').click( function(){
 					$cookieNotification.css({ bottom: -cookieNotificationHeight });
-					$.cookie('websiteUsesCookies', 'yesConfirmed', { expires: 30 });
+					$.cookie('websiteUsesCookies', 'yesConfirmed', { expires: 300 });
 					return false;
 				});
 			}

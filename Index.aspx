@@ -7,12 +7,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
             
+
     <section id="div_logging" runat="server" class="slider slider-parallax dark" style="background: url('images/custom/patch-wallpaper.jpg'); background-size: cover; background-position: center center" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="400">
         <div class="container clearfix">
             <div class="vertical-middle center">
                 <div class="emphasis-title title-center nomargin col-padding">
                     <h2 class="nopadding text-shadow"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
-                    <h3 style="font-weight: normal"><strong>Jazz Hub</strong> &egrave; una rete sociale dedicata alla musica Jazz e nasce per mettere in contatto musicisti, affetti ai lavori e appassionati connessi in remoto da tutto il mondo.</h3>
+                    <h3 style="font-weight: normal">
+                        <strong>Jazz Hub</strong> 
+                        <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
+                    </h3>
                     <div class="divider divider-rounded divider-center topmargin-sm"><i class="icon-arrow-down2"></i></div>
                     <div id="div_registrati" runat="server">
                         <a href="login.aspx" class="button button-rounded button-green button-xlarge nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
@@ -49,7 +53,7 @@
             </span>
         </div>
     </section>
-        
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding">
@@ -75,11 +79,69 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin nobottompadding">
-            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
-            <div class="container clearfix " id="div_like_visi" runat="server">
-                <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
-                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
+        <div class="section nomargin" id="div_like_guest" runat="server">
+            <h3 class="center">
+                <%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h3>
+            <div class="container clearfix ">
+                <div id="portfolio" class="portfolio-4 clearfix">
+                    <asp:Repeater ID="rpt_video_guest" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
+                        OnItemCommand="rpt_video_ItemCommand">
+                        <ItemTemplate>
+                            <article class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="portfolio-overlay">
+                                            <div class="portfolio-desc">
+                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                                <h3>
+                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </asp:LinkButton>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </div>
+        </div>
+        <div class="section nomargin alt" id="div_like_expo" runat="server">
+            <h3 class="center">
+                <%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
+            <div class="container clearfix ">
+                <div id="portfolio" class="portfolio-4 clearfix">
+                    <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
+                        OnItemCommand="rpt_video_ItemCommand">
+                        <ItemTemplate>
+                            <article class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <asp:Image ID="img_copertina" runat="server"/>
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="portfolio-overlay">
+                                            <div class="portfolio-desc">
+                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                                <h3>
+                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </asp:LinkButton>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </div>
+        </div>
+        <div class="section nomargin" id="div_like_visi" runat="server">
+            <h3 class="center">
+                <%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
+            <div class="container clearfix ">
+                <div id="portfolio" class="portfolio-4 clearfix">
+                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
+                        OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <div class="oc-item">
                                 <article class="iportfolio">
@@ -103,36 +165,10 @@
                 </div>
             </div>
         </div>
-            <div class="section nomargin alt">
-            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
-            <div class="container clearfix " id="div_like_expo" runat="server">
-                <div id="portfolio" class="portfolio-4 clearfix">
-                    <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
-                        <ItemTemplate>
-                            <article class="portfolio-item">
-                                <div class="portfolio-image">
-                                    <asp:Image ID="img_copertina" runat="server"/>
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                                <h3>
-                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </asp:LinkButton>
-                                </div>
-                            </article>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                </div>
-            </div>
-        </div>
-        <div class="section nomargin">
-            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_in_evidenza")%></h3>
+        <div class="section nomargin hidden">
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h3>
             <div class="container clearfix ">
-                <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
+                <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <div class="oc-item">
@@ -215,11 +251,11 @@
         function endRequestHandler(sender, args) {
 
         }
-        
-        $('#video-slider-play').on('click', function(e){
+
+        $('#video-slider-play').on('click', function (e) {
             e.preventDefault();
 
-            if( $(this).hasClass('video-played') ) {
+            if ($(this).hasClass('video-played')) {
                 $('#slide-video').get(0).pause();
             } else {
                 $('#slide-video').get(0).play();
