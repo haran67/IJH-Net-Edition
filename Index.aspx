@@ -31,7 +31,7 @@
     <section id="div_logged" runat="server" class="page-title page-title-parallax page-title-dark page-title-video" style="background-color: #000;">
         
         <div class="video-wrap" style="height: 100%;">
-            <video id="slide-video" preload="auto" loop poster="http://sviluppo.mesys.it/Repository/JazzHub_Web/Video/10/260120161218_preview.jpg">
+            <video id="slide-video" preload="auto" loop poster="images/custom/patch-wallpaper.jpg">
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
@@ -89,17 +89,13 @@
                         <ItemTemplate>
                             <article class="portfolio-item">
                                 <div class="portfolio-image">
-                                    <asp:Image ID="img_copertina" runat="server"/>
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                                <h3>
-                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </h3>
-                                            </div>
-                                        </div>
+                                        <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
+                                </div>
+                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
+                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -108,8 +104,7 @@
             </div>
         </div>
         <div class="section nomargin alt" id="div_like_expo" runat="server">
-            <h3 class="center">
-                <%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
@@ -117,17 +112,13 @@
                         <ItemTemplate>
                             <article class="portfolio-item">
                                 <div class="portfolio-image">
-                                    <asp:Image ID="img_copertina" runat="server"/>
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <div class="portfolio-overlay">
-                                            <div class="portfolio-desc">
-                                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                                <h3>
-                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                </h3>
-                                            </div>
-                                        </div>
+                                        <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
+                                </div>
+                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
+                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                 </div>
                             </article>
                         </ItemTemplate>

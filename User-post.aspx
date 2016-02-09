@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title page-title-dark" style="padding: 100px 0;background: url('http://sviluppo.mesys.it/Repository/JazzHub_Web/Utenti/16/pub/270120161642_original.jpg') no-repeat center center; background-size: cover" >
+    <section class="page-title page-title-dark" style="padding: 100px 0;background: url('images/custom/patch-wallpaper.jpg') no-repeat center center; background-size: cover" >
             <div class="container clearfix">
                 <asp:Image ID="img_utente" runat="server" style="height: 60px; width: 60px; float: left; margin-right: 20px;" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" />
                 <h1><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
