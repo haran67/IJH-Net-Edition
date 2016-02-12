@@ -13,7 +13,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
         <div class="container clearfix">
-            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal> <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-rounded button-mini button-green nomargin">
+            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal> <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-rounded button-green nomargin">
                 <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-paypal"></i>
                     </asp:LinkButton></h1>
             <ol class="breadcrumb hidden">
@@ -123,7 +123,6 @@
                                 <ItemTemplate>
                                     <div class="col_full learfix">
                                         <div class="col_two_fifth nobottommargin">
-                                            
                                             <div style="position: absolute; top: 10px; left: 15px">
                                                 <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="noleftmargin button button-mini button-rounded" runat="server">
                                                     <%=Lingua.CaricaLingua("lgl_profilo_visualizza")%>
