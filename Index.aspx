@@ -53,17 +53,16 @@
             </span>
         </div>
     </section>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap nopadding">
-        <div class="section nomargin alt">
+    <div class="content-wrap nopadding standard-portfolio">
+        <div class="section nomargin alt box-shadow-custom">
             <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item">
+                            <article class="portfolio-item box-shadow-custom">
                                 <div class="portfolio-image">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <asp:Image ID="img_copertina" runat="server" />
@@ -79,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin" id="div_like_guest" runat="server">
+            <div class="section nomargin box-shadow-custom" id="div_like_guest" runat="server">
             <h3 class="center">
                 <%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h3>
             <div class="container clearfix ">
@@ -87,7 +86,7 @@
                     <asp:Repeater ID="rpt_video_guest" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item">
+                            <article class="portfolio-item box-shadow-custom">
                                 <div class="portfolio-image">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <asp:Image ID="img_copertina" runat="server" />
@@ -103,14 +102,14 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin alt" id="div_like_expo" runat="server">
+        <div class="section nomargin alt box-shadow-custom" id="div_like_expo" runat="server">
             <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio-4 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item">
+                            <article class="portfolio-item box-shadow-custom">
                                 <div class="portfolio-image">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <asp:Image ID="img_copertina" runat="server" />
@@ -126,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin" id="div_like_visi" runat="server">
+        <div class="section nomargin box-shadow-custom" id="div_like_visi" runat="server">
             <h3 class="center">
                 <%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
             <div class="container clearfix ">
@@ -229,14 +228,14 @@
                 autoplay: false,
                 autoplayHoverPause: true,
                 dots: false,
+                autoHeight: false,
                 responsive:{
                     0:{ items:1 },
                     600:{ items:3 },
-                    1000:{ items:5 },
-                    1200:{ items:5 }
+                    1000:{ items:4 },
+                    1200:{ items:4 }
                 }
             });
-
         });
 
         function endRequestHandler(sender, args) {

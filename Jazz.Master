@@ -62,25 +62,14 @@
         <!-- Header
 		============================================= -->
         <header id="header" class="transparent-header semi-transparent dark" data-sticky-class="bokeh-transparent" style="z-index: 10;">
-
             <div id="header-wrap">
-
                 <div class="container clearfix">
-
                     <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-                    <!-- Logo
-					============================================= -->
                     <div id="logo">
                         <a href="/index.aspx" class="standard-logo" data-dark-logo="/images/logo-dark.png"><img src="/images/logo.png" alt="Canvas Logo"></a>
                         <a href="/index.aspx" class="retina-logo" data-dark-logo="/images/logo-dark@2x.png"><img src="/images/logo@2x.png" alt="Canvas Logo"></a>
                     </div>
-                    <!-- #logo end -->
-
-                    <!-- Primary Navigation
-					============================================= -->
                     <nav id="primary-menu">
-
                         <ul>
                             <li>
                                 <asp:LinkButton ID="lnk_lingua" runat="server">
@@ -129,8 +118,6 @@
                             </li>
                         </ul>
 
-                        <!-- Top Cart
-						============================================= -->
                         <span id="div_account" runat="server">
                             <div id="top-cart">
                                 <a href="#" id="top-cart-trigger"><i class="icon-user"></i><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>
@@ -161,7 +148,6 @@
                                                 <a href="#">Hai <strong>4</strong> nuovi like</a>
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="top-cart-action clearfix">
                                         <asp:Button ID="btn_profilo" runat="server" CssClass="button button-green button-mini nomargin fleft"></asp:Button>
@@ -170,44 +156,25 @@
                                 </div>
                             </div>
                         </span>
-                        <!-- #top-cart end -->
-
-                        <!-- Top Search
-						============================================= 
+<!--
 						<div id="top-search">
 							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
 							<form action="search.html" method="get">
 								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
 							</form>
-						</div> #top-search end -->
-
+						</div>
+-->
                     </nav>
-                    <!-- #primary-menu end -->
-
                 </div>
-
             </div>
-
         </header>
-        <!-- #header end -->
-        <!-- Page Title
-		============================================= -->
         <asp:ContentPlaceHolder ID="body" runat="server">
         </asp:ContentPlaceHolder>
-        <!-- #page-title end -->
-        <!-- Content
-		============================================= -->
         <section id="content">
             <asp:ContentPlaceHolder ID="content" runat="server">
             </asp:ContentPlaceHolder>
         </section>
-        <!-- #content end -->
-        <!-- Footer
-		============================================= -->
-
         <footer id="footer" class="dark nopadding nomargin">
-
-            
             <div class="container">
                 <div class="footer-widgets-wrap clearfix">
                     <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
