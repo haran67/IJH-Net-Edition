@@ -36,7 +36,7 @@
                         </div>
                         <div class="alert alert-success">
                             <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">x</button>
-                            <strong>Scegli il tuo profilo e procedi con il pagamento</strong>
+                            <strong>Scegli il  profilo e procedi con il pagamento</strong>
                             <asp:LinkButton ID="btn_paga" runat="server" CssClass="btn btn-success btn-sm fright" Style="text-transform: uppercase; position: relative; top: -6px;">
                                 <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-arrow-right2"></i>
                             </asp:LinkButton>
@@ -61,24 +61,17 @@
                             
                         <!-- Riepilogo -->
                         <div id="div_espositore" runat="server">
-                            <div class="col_one_fourth center">
-                                <div class="feature-box fbox-center fbox-bg fbox-border">
-                                    <div class="fbox-icon">
-                                        <span><i class="icon-eye"></i></span>
-                                    </div>
+                            <div class="col_half">
+                                <div class="col-md-6 center" data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
+                                    <i class="i-plain i-xlarge divcenter nobottommargin icon-eye"></i>
                                     <h3 class="counter counter-large">
                                         <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_vis"
                                             runat="server"><asp:Literal ID="ltl_count_visualizzazioni" runat="server"></asp:Literal></span>
                                     </h3>
-                                    <h5>
-                                        <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></h5>
+                                    <h5><%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></h5>
                                 </div>
-                            </div>
-                            <div class="col_one_fourth center">
-                                <div class="feature-box fbox-center fbox-bg fbox-border">
-                                    <div class="fbox-icon">
-                                        <span><i class="icon-thumbs-up2"></i></span>
-                                    </div>
+                                <div class="col-md-6 center"  data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
+                                    <i class="i-plain i-xlarge divcenter nobottommargin icon-thumbs-up2"></i>
                                     <h3 class="counter counter-large">
                                         <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_lik"
                                             runat="server"><asp:Literal ID="ltl_count_like" runat="server"></asp:Literal></span>

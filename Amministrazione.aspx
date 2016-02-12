@@ -14,7 +14,7 @@
     <section class="page-title">
         <div class="container clearfix">
             <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
-            <ol class="breadcrumb">
+            <ol class="breadcrumb hidden">
                 <li><asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout"></asp:LinkButton></li>
             </ol>
         </div>
@@ -55,46 +55,29 @@
                             </li>
                         </ul>
                         <div id="div_riepilogo" runat="server">
-                            <div class="clearfix">
+                            <div class="col-md-4 center" data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-eye"></i>
+                                <h3 class="counter counter-large">
+                                    <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_video"
+                                        runat="server"><asp:Literal ID="ltl_count_video" runat="server"></asp:Literal></span>
+                                </h3>
+                                <h5><%=Lingua.CaricaLingua("lgl_amministrazione_video_caricati")%></h5>
                             </div>
-                            <div class="col_one_fourth center">
-                                <div class="feature-box fbox-center fbox-bg fbox-light">
-                                    <div class="fbox-icon">
-                                        <span><i class="icon-eye"></i></span>
-                                    </div>
-                                    <h3 class="counter counter-large">
-                                        <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_video"
-                                            runat="server"><asp:Literal ID="ltl_count_video" runat="server"></asp:Literal></span>
-                                    </h3>
-                                    <h5>
-                                        <%=Lingua.CaricaLingua("lgl_amministrazione_video_caricati")%></h5>
-                                </div>
+                            <div class="col-md-4 center" data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-thumbs-up2"></i>
+                                <h3 class="counter counter-large">
+                                    <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_user"
+                                        runat="server"><asp:Literal ID="ltl_count_user" runat="server"></asp:Literal></span>
+                                </h3>
+                                <h5><%=Lingua.CaricaLingua("lgl_amministrazione_utenti_registrati")%></h5>
                             </div>
-                            <div class="col_one_fourth center">
-                                <div class="feature-box fbox-center fbox-bg fbox-light">
-                                    <div class="fbox-icon">
-                                        <span><i class="icon-thumbs-up2"></i></span>
-                                    </div>
-                                    <h3 class="counter counter-large">
-                                        <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_user"
-                                            runat="server"><asp:Literal ID="ltl_count_user" runat="server"></asp:Literal></span>
-                                    </h3>
-                                    <h5>
-                                        <%=Lingua.CaricaLingua("lgl_amministrazione_utenti_registrati")%></h5>
-                                </div>
-                            </div>
-                            <div class="col_one_fourth center">
-                                <div class="feature-box fbox-center fbox-bg fbox-light">
-                                    <div class="fbox-icon">
-                                        <span><i class="icon-comment"></i></span>
-                                    </div>
-                                    <h3 class="counter counter-large">
-                                        <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_comment"
-                                            runat="server"><asp:Literal ID="ltl_count_comment" runat="server"></asp:Literal></span>
-                                    </h3>
-                                    <h5>
-                                        <%=Lingua.CaricaLingua("lgl_amministrazione_commenti")%></h5>
-                                </div>
+                                <div class="col-md-4 center col_last" data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
+                                <i class="i-plain i-xlarge divcenter nobottommargin icon-comment"></i>
+                                <h3 class="counter counter-large">
+                                    <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_comment"
+                                        runat="server"><asp:Literal ID="ltl_count_comment" runat="server"></asp:Literal></span>
+                                </h3>
+                                <h5><%=Lingua.CaricaLingua("lgl_amministrazione_commenti")%></h5>
                             </div>
                         </div>
                         <div id="div_gestione_video" runat="server">
