@@ -13,9 +13,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
         <div class="container clearfix">
-            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal> <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-rounded button-green nomargin">
-                <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-paypal"></i>
-                    </asp:LinkButton></h1>
+            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>    
             <ol class="breadcrumb hidden">
                 <li><asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout"></asp:LinkButton></li>
             </ol>
@@ -35,6 +33,13 @@
                         <div class="alert alert-success alert-dismissable" id="div_message_ok" runat="server" visible="false">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
+                        </div>
+                        <div class="alert alert-success">
+                            <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">x</button>
+                            <strong>Scegli il tuo profilo e procedi con il pagamento</strong>
+                            <asp:LinkButton ID="btn_paga" runat="server" CssClass="btn btn-success btn-sm fright" Style="text-transform: uppercase; position: relative; top: -6px;">
+                                <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-arrow-right2"></i>
+                            </asp:LinkButton>
                         </div>
                         
                         <!-- tab di navigazione -->
