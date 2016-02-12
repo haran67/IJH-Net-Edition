@@ -72,11 +72,6 @@
                     <nav id="primary-menu">
                         <ul>
                             <li>
-                                <asp:LinkButton ID="lnk_lingua" runat="server">
-                                    <asp:Image ID="img_lingua" runat="server" Width="20" style="padding-bottom:2px;" ImageUrl="/images/italy.png" />
-                                </asp:LinkButton>
-                            </li>
-                            <li>
                                 <a href="/index.aspx"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
                             </li>
                             <li>
@@ -115,6 +110,11 @@
                             </li>
                             <li id="li_accedi" runat="server">
                                 <a href="/login.aspx"><%=Lingua.CaricaLingua("lgl_menu_accedi")%></a>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="lnk_lingua" runat="server">
+                                    <asp:Image ID="img_lingua" runat="server" Width="20" style="padding-bottom:2px;" ImageUrl="/images/italy.png" />
+                                </asp:LinkButton>
                             </li>
                         </ul>
 

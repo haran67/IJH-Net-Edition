@@ -10,10 +10,6 @@
     <section class="page-title page-title-mini">
 		<div class="container clearfix">
             <h1><strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_userlist_title")%></h1>
-			<ol class="breadcrumb">
-				<li><a href="/Index.aspx"><%=Lingua.CaricaLingua("lgl_userlist_home")%></a></li>
-				<li class="active"><%=Lingua.CaricaLingua("lgl_userlist_title")%></li>
-			</ol>
 		</div>
 	</section>
     <div id="page-menu" class="no-sticky">

@@ -23,7 +23,7 @@
                                                 <div id="login-form" name="login-form" class="nobottommargin center">
                                                     <h3 class="nopadding nomargin">
                                                         <%=Lingua.CaricaLingua("lgl_index_accedi_profilo")%></h3>
-                                                    <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
+                                                        <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important"  data-class-lg="not-hidden" data-class-md="not-hidden" data-class-sm="not-hidden" data-class-xs="not-hidden" data-class-xxs="hidden">
                                                         <i class="icon-arrow-down2"></i>
                                                     </div>
                                                     <div class="alert alert-danger display-hide display-hide" id="div_message" runat="server">

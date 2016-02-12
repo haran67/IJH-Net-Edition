@@ -8,10 +8,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
             
 
-    <section id="div_logging" runat="server" class="slider slider-parallax dark" style="background: url('images/custom/patch-wallpaper.jpg'); background-size: cover; background-position: center center" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="400">
+    <section id="div_logging" runat="server" class="slider slider-parallax dark" style="background: url('images/custom/patch-wallpaper.jpg'); background-size: cover; background-position: center center" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="500">
         <div class="container clearfix">
             <div class="vertical-middle center">
-                <div class="emphasis-title title-center nomargin col-padding">
+                <div class="emphasis-title title-center nomargin">
                     <h2 class="nopadding text-shadow"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
                     <h3 style="font-weight: normal">
                         <strong>Jazz Hub</strong> 

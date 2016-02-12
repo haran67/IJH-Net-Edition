@@ -13,7 +13,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
         <div class="container clearfix">
-            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
+            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal> <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-rounded button-mini button-green nomargin">
+                <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-paypal"></i>
+                    </asp:LinkButton></h1>
             <ol class="breadcrumb hidden">
                 <li><asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout"></asp:LinkButton></li>
             </ol>
@@ -108,9 +110,6 @@
                                 <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-rounded nomargin">
                                     <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>&nbsp;<i class="icon-arrow-right2"></i>
                                 </asp:LinkButton>
-                                <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-rounded button-red nomargin">
-                                    <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-money"></i>
-                                </asp:LinkButton>
                             </div>
                         </div>
                         <!-- FINE Riepilogo -->
@@ -124,6 +123,7 @@
                                 <ItemTemplate>
                                     <div class="col_full learfix">
                                         <div class="col_two_fifth nobottommargin">
+                                            
                                             <div style="position: absolute; top: 10px; left: 15px">
                                                 <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="noleftmargin button button-mini button-rounded" runat="server">
                                                     <%=Lingua.CaricaLingua("lgl_profilo_visualizza")%>
