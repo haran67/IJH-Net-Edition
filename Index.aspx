@@ -63,7 +63,7 @@
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item box-shadow-custom">
-                                <div class="portfolio-image">
+                                <div class="portfolio-image patch-placeholder">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
@@ -87,7 +87,7 @@
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item box-shadow-custom">
-                                <div class="portfolio-image">
+                                <div class="portfolio-image patch-placeholder">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
@@ -110,7 +110,7 @@
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item box-shadow-custom">
-                                <div class="portfolio-image">
+                                <div class="portfolio-image patch-placeholder">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
@@ -135,7 +135,7 @@
                         <ItemTemplate>
                             <div class="oc-item">
                                 <article class="iportfolio">
-                                    <div class="portfolio-image">
+                                    <div class="portfolio-image patch-placeholder">
                                         <asp:Image ID="img_copertina" runat="server"/>
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <div class="portfolio-overlay">
@@ -163,7 +163,7 @@
                         <ItemTemplate>
                             <div class="oc-item">
                                 <article class="iportfolio">
-                                    <div class="portfolio-image">
+                                    <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
