@@ -5,7 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark bokeh" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <h1><%=Lingua.CaricaLingua("lgl_radio_title")%></h1>
             <h3><%=Lingua.CaricaLingua("lgl_radio_desc")%></h3>

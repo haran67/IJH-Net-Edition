@@ -9,7 +9,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap parallax bokeh" data-stellar-background-ratio="0.3">
+    <div class="content-wrap parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <div class="container clearfix">
             <div class="col_two_third">
                 <div id="contact-form" name="register-form" class="nobottommargin">

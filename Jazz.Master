@@ -61,7 +61,7 @@
     <div id="wrapper" class="clearfix">
         <!-- Header
 		============================================= -->
-        <header id="header" class="transparent-header semi-transparent dark" data-sticky-class="bokeh-transparent" style="z-index: 10;">
+        <header id="header" class="transparent-header semi-transparent dark" style="z-index: 10;">
             <div id="header-wrap">
                 <div class="container clearfix">
                     <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>

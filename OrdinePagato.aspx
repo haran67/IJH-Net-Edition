@@ -23,8 +23,7 @@
     <div class="content-wrap" style="padding: 20px 0">
         <div class="container clearfix">
         <div class="row common-height clearfix">
-            <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-1.jpg') center center no-repeat;
-                background-size: cover;" data-height-lg="500" data-height-md="450" data-height-sm="350"
+            <div class="col-sm-5 col-padding dark patch-wallpaper" data-height-lg="500" data-height-md="450" data-height-sm="350"
                 data-height-xs="250" data-height-xxs="200">
                 <div class="heading-block nobottomborder tright text-shadow">
                     <h2>
