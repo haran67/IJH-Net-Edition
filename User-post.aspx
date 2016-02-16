@@ -9,7 +9,7 @@
     <section class="page-title page-title-dark" style="padding: 20px 0;background: url('images/profile-cover.jpg') no-repeat top center; background-size: cover">
         <div class="container clearfix">
             <div class="col_three_fifth nobottommargin">
-                <asp:Image ID="img_utente" runat="server" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" style="height: 120px; width: 120px; float: left; margin-right: 20px;" />
+                <asp:Image ID="img_utente" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" style="height: 120px; width: 120px; float: left; margin-right: 20px;" />
                 <h1 class="topmargin-sm text-shadow"><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                 <span class="visible-xs visible-sm visible-md visible-lg"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
                 </h1>
