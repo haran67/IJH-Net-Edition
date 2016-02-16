@@ -21,15 +21,21 @@
                 <nav>
                     <ul>
                         <li class="current"><a href="#" data-filter="*"><%=Lingua.CaricaLingua("lgl_userlist_sfoglia_tutti")%></a></li>
-                        <asp:Repeater ID="rpt_categorie" runat="server">
-                            <ItemTemplate>
-                                <li>
-                                    <a href="#" data-filter=".pf-" id="a_categoria" runat="server">
-                                        <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
-                                    </a>
-                                </li>    
-                            </ItemTemplate>
-                        </asp:Repeater>
+                        
+                        <li class="mega-menu">
+                            <a href="#">Categoria</a>
+                            <ul>
+                                <asp:Repeater ID="rpt_categorie" runat="server">
+                                    <ItemTemplate>
+                                        <li>
+                                            <a href="#" data-filter=".pf-" id="a_categoria" runat="server">
+                                                <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
+                                            </a>
+                                        </li>    
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ul>
+                        </li>
                         <li><a href="#" id="portfolio-shuffle"><i class="icon-random"></i></a></li>
                     </ul>
                 </nav>
