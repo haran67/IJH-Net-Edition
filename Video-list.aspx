@@ -63,7 +63,7 @@
                         <article class="portfolio-item box-shadow-custom" id="art_video" runat="server">
                             <div class="portfolio-image patch-placeholder">
                                 <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                    <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                                    <asp:Image ID="img_copertina" runat="server" />
                                 </asp:LinkButton>
                             </div>
                             <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
