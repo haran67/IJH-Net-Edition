@@ -108,24 +108,27 @@
                             <li>
                                 <a href="/link.aspx"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
                             </li>
-                            <li id="li_accedi" runat="server">
-                                <a href="/login.aspx"><%=Lingua.CaricaLingua("lgl_menu_accedi")%></a>
-                            </li>
                             <li>
                                 <asp:LinkButton ID="lnk_lingua" runat="server">
                                     <asp:Image ID="img_lingua" runat="server" Width="20" style="padding-bottom:2px;" ImageUrl="/images/italy.png" />
                                 </asp:LinkButton>
                             </li>
+                            <li>
+                                <a href="#">Lingua</a>
+                                <ul>
+                                    <li><a href="#">Italiano</a></li>
+                                    <li><a href="#">Inglese</a></li>
+                                    <li><a href="#">Francese</a></li>
+                                </ul>
+                            </li>
+                            <li id="li_accedi" runat="server">
+                                <a href="/login.aspx" title="Accedi"><i class="icon-enter"></i></a>
+                            </li>
                         </ul>
-
                         <span id="div_account" runat="server">
                             <div id="top-cart">
-                                <a href="#" id="top-cart-trigger"><i class="icon-user"></i><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>
+                                <a href="#" id="top-cart-trigger"><i class="icon-user4"></i><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>
                                 <div class="top-cart-content">
-                                    <div class="top-cart-title hidden">
-                                        <h5>benvenuto</h5>
-                                        <h4>Nome Cognome</h4>
-                                    </div>
                                     <div class="top-cart-items ">
                                         <div class="top-cart-item clearfix">
                                             <div class="top-cart-item-desc">
@@ -138,17 +141,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="top-cart-title hidden">
-                                        <h4>Attività</h4>
-                                    </div>
-                                    <div class="top-cart-items hidden">
-                                        <div class="top-cart-item clearfix">
-                                            <div class="top-cart-item-desc">
-                                                <a href="#">Hai <strong>5</strong> nuovi commenti</a>
-                                                <a href="#">Hai <strong>4</strong> nuovi like</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="top-cart-action clearfix">
                                         <asp:Button ID="btn_profilo" runat="server" CssClass="button button-green button-mini nomargin fleft"></asp:Button>
                                         <asp:Button ID="btn_esci" runat="server" CssClass="button button-red button-mini nomargin fright"></asp:Button>
@@ -156,14 +148,6 @@
                                 </div>
                             </div>
                         </span>
-<!--
-						<div id="top-search">
-							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-							<form action="search.html" method="get">
-								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
-							</form>
-						</div>
--->
                     </nav>
                 </div>
             </div>
