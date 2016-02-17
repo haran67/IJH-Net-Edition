@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
+    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="250" data-height-md="200" data-height-sm="200" data-height-xs="200" data-height-xxs="150">
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <h1><%=Lingua.CaricaLingua("lgl_partners_title")%></h1>
             <h3><%=Lingua.CaricaLingua("lgl_partners_desc")%></h3>
@@ -15,39 +15,39 @@
         <div class="container clearfix">
             <div class="col_full">
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.bluesinvilla.com/"><i class="icon-youtube-play"></i> FVG Festival</a>
+                    <a href="http://www.bluesinvilla.com/"><i class="icon-line-link"></i> FVG Festival</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.milleunanota.com/"><i class="icon-youtube-play"></i> Modern Jazz Institute</a>
+                    <a href="http://www.milleunanota.com/"><i class="icon-line-link"></i> Modern Jazz Institute</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.abno.com/"><i class="icon-youtube-play"></i> Blue Note Orchestra</a>
+                    <a href="http://www.abno.com/"><i class="icon-line-link"></i> Blue Note Orchestra</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.blueartmanagement.com/"><i class="icon-youtube-play"></i> Blueart</a>
+                    <a href="http://www.blueartmanagement.com/"><i class="icon-line-link"></i> Blueart</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff"><i class="icon-youtube-play"></i> Peperoncino Jazz Festival</a>
+                    <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff"><i class="icon-line-link"></i> Peperoncino Jazz Festival</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.associazionenotabene.org/"><i class="icon-youtube-play"></i> Notabene</a>
+                    <a href="http://www.associazionenotabene.org/"><i class="icon-line-link"></i> Notabene</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.onyxjazzclub.it/2013/"><i class="icon-youtube-play"></i> Gezziamoci</a>
+                    <a href="http://www.onyxjazzclub.it/2013/"><i class="icon-line-link"></i> Gezziamoci</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13"><i class="icon-youtube-play"></i> Tuscia in Jazz</a>
+                    <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13"><i class="icon-line-link"></i> Tuscia in Jazz</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.agenziaeventibipede.it/"><i class="icon-youtube-play"></i> San Valentino Jazz Festival</a>
+                    <a href="http://www.agenziaeventibipede.it/"><i class="icon-line-link"></i> San Valentino Jazz Festival</a>
                 </h3>
             </div>
         </div>

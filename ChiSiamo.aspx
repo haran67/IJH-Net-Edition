@@ -5,20 +5,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="slider slider-parallax dark patch-wallpaper" data-height-lg="500" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="200">
-        <div class="container clearfix">
-            <div class="vertical-middle center">
-                <div class="heading-block nobottomborder center">
-                    <h1>
-                        <div class="text-rotater shadow text-shadow" data-separator="|" data-rotate="flipInX" data-speed="3500" style="color: #ccc">
-                            <%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%>
-                            <br />
-                            <span class="t-rotate" style="color: #fff">
-                            <%=Lingua.CaricaLingua("lgl_chisiamo_title_02")%>
-                            </span>
-                        </div>
-                    </h1>
-                </div>
+    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="250" data-height-md="200" data-height-sm="200" data-height-xs="200" data-height-xxs="150">
+        <div class="container vertical-middle center clearfix text-uppercase text-shadow">
+            <div class="heading-block nobottomborder ">
+                <h1>
+                    <div class="text-rotater shadow text-shadow" data-separator="|" data-rotate="flipInX" data-speed="3500" style="color: #ccc">
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%>
+                        <br />
+                        <span class="t-rotate" style="color: #fff">
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_title_02")%>
+                        </span>
+                    </div>
+                </h1>
             </div>
         </div>
     </section>
