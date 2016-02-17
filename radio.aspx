@@ -17,7 +17,7 @@
         <div class="container clearfix">
             <div class="col_full ">
                 <h3 class="nomargin" style="font-weight: normal">
-                    <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf"><i class="icon-youtube-play"></i> Spotify</a>
+                    <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf"><i class="icon-line-link"></i> Spotify</a>
                 </h3>
                 <div class="line" style="margin: 20px; 0"></div>
                 <h3 class="nomargin" style="font-weight: normal">
