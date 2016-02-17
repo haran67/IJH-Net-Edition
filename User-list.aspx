@@ -12,8 +12,8 @@
             <h1><strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_userlist_title")%></h1>
 		</div>
 	</section>
-    <div id="page-menu" class="no-sticky">
-        <div id="page-menu-wrap" class="patch">
+    <div id="page-menu">
+        <div id="page-menu-wrap">
             <div class="container clearfix">
                 <div class="menu-title">
                     <%=Lingua.CaricaLingua("lgl_userlist_sfoglia")%>
@@ -21,7 +21,6 @@
                 <nav>
                     <ul>
                         <li class="current"><a href="#" data-filter="*"><%=Lingua.CaricaLingua("lgl_userlist_sfoglia_tutti")%></a></li>
-                        
                         <li>
                             <a href="#">Categoria</a>
                             <ul>
@@ -36,12 +35,9 @@
                                 </asp:Repeater>
                             </ul>
                         </li>
-                        <li><a href="#" id="portfolio-shuffle"><i class="icon-random"></i></a></li>
                     </ul>
                 </nav>
-                <div id="page-submenu-trigger">
-                    <i class="icon-reorder"></i>
-                </div>
+                <div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
             </div>
         </div>
     </div>
