@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title">
+    <section class="page-title page-title-mini">
 		<div class="container clearfix">
             <h1><strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_videolist_title")%></h1>
 			<ol class="breadcrumb">
@@ -25,15 +25,19 @@
                 <nav>
                     <ul>
                         <li class="current"><a href="#" data-filter="*"><%=Lingua.CaricaLingua("lgl_videolist_sfoglia_tutti")%></a></li>
-                        <asp:Repeater ID="rpt_categorie" runat="server">
-                            <ItemTemplate>
-                                <li>
-                                    <a href="#" data-filter=".pf-" id="a_categoria" runat="server">
-                                        <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
-                                    </a>
-                                </li>    
-                            </ItemTemplate>
-                        </asp:Repeater>
+                        <li>
+                            <a href="#">Categoria</a>
+                            <ul>
+                                <asp:Repeater ID="rpt_categorie" runat="server">
+                                    <ItemTemplate>
+                                        <li>
+                                            <a href="#" data-filter=".pf-" id="a_categoria" runat="server">
+                                                <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
+                                            </a>
+                                        </li>    
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ul>
                         <li><a href="#" id="portfolio-shuffle"><i class="icon-random"></i></a></li>
                     </ul>
                 </nav>
@@ -55,24 +59,38 @@
             <div id="portfolio" class="portfolio-3 clearfix">
                 <asp:Repeater ID="rpt_video" runat="server">
                     <ItemTemplate>
-                        <article class="portfolio-item pf-media pf-" id="art_video" runat="server">
+                        
+                        <article class="portfolio-item box-shadow-custom" id="art_video" runat="server">
+                            <div class="portfolio-image patch-placeholder">
+                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                    <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                                </asp:LinkButton>
+                            </div>
+                            <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
+                                <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                            </div>
+                        </article>
+                        
+                        
+<!--
+                        <article class="portfolio-item pf-media pf-">
                             <div class="portfolio-image" style="background-color: #222;">
                                 <video width="100%">
                                     <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                                     Your browser does not support the video tag.
                                 </video>
-                                <div class="portfolio-overlay">
-                                    <div class="portfolio-desc">
-                                        <h3 style="background-color:transparent;">
-                                            <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                        </h3>
-                                    </div>
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <i class="icon-line-play"></i>
-                                    </asp:LinkButton>
+                                <div class="portfolio-desc">
+                                    <h3 style="background-color:transparent;">
+                                        <asp:Literal ID="ltl_utente" runat="server"></asp:Literal><br><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                                    </h3>
                                 </div>
+                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                    <i class="icon-line-play"></i>
+                                </asp:LinkButton>
                             </div>
                         </article>
+-->
                     </ItemTemplate>
                 </asp:Repeater>
             </div>

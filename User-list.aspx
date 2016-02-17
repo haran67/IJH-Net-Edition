@@ -22,7 +22,7 @@
                     <ul>
                         <li class="current"><a href="#" data-filter="*"><%=Lingua.CaricaLingua("lgl_userlist_sfoglia_tutti")%></a></li>
                         
-                        <li class="mega-menu">
+                        <li>
                             <a href="#">Categoria</a>
                             <ul>
                                 <asp:Repeater ID="rpt_categorie" runat="server">
@@ -97,13 +97,13 @@
 
                     $container.isotope({ transitionDuration: '0.65s' });
 
-                    $('#page-menu a').click(function () {
-                        $('#page-menu li').removeClass('current');
-                        $(this).parent('li').addClass('current');
-                        var selector = $(this).attr('data-filter');
-                        $container.isotope({ filter: selector });
-                        return false;
-                    });
+//                    $('#page-menu a').click(function () {
+//                        $('#page-menu li').removeClass('current');
+//                        $(this).parent('li').addClass('current');
+//                        var selector = $(this).attr('data-filter');
+//                        $container.isotope({ filter: selector });
+//                        return false;
+//                    });
 
                     $('#portfolio-shuffle').click(function () {
                         $container.isotope('updateSortData').isotope({
