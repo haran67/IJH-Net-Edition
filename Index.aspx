@@ -59,7 +59,7 @@
         <div class="section nomargin alt box-shadow-custom">
             <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio-3 clearfix">
+                <div id="portfolio" class="portfolio portfolio-3 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item box-shadow-custom">
@@ -82,7 +82,7 @@
             <h3 class="center">
                 <%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio-4 clearfix">
+                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video_guest" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -105,7 +105,7 @@
         <div class="section nomargin alt box-shadow-custom" id="div_like_expo" runat="server">
             <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio-4 clearfix">
+                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -129,7 +129,7 @@
             <h3 class="center">
                 <%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio-4 clearfix">
+                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -185,7 +185,7 @@
     <script type="text/javascript">
         jQuery(window).load(function () {
 
-            var $container = $('#portfolio');
+            var $container = $('.portfolio');
 
             $container.isotope({
                 transitionDuration: '0.65s'

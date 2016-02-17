@@ -47,7 +47,7 @@
     <div class="content-wrap standard-portfolio alt">
         <div class="container clearfix">
             <div class="postcontent">
-                <div id="portfolio" class="portfolio-3 clearfix">
+                <div id="portfolio" class="portfolio-3 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
                             <article class="portfolio-item box-shadow-custom" id="art_video" runat="server">
