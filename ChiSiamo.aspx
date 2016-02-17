@@ -5,7 +5,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="250" data-height-md="200" data-height-sm="200" data-height-xs="200" data-height-xxs="150">
+    <section id="slider" class="slider dark patch-wallpaper" data-height-lg="350" data-height-md="350" data-height-sm="300" data-height-xs="300" data-height-xxs="250">
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
             <div class="heading-block nobottomborder ">
                 <h1>

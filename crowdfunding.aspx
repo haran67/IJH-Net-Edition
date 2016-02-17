@@ -5,10 +5,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="300" data-height-md="300" data-height-sm="300" data-height-xs="300" data-height-xxs="300">
-        <div class="container vertical-middle center clearfix text-uppercase text-shadow">
-            <h1><%=Lingua.CaricaLingua("lgl_crowfunding_title")%></h1>
-            <h3><%=Lingua.CaricaLingua("lgl_crowfunding_desc")%></h3>
+    <section class="page-title page-title-dark patch-wallpaper" style="padding: 30px 0;">
+        <div class="container clearfix">
+            <h1 class="bottommargin-sm"><%=Lingua.CaricaLingua("lgl_crowfunding_title")%></h1>
+                <h3 style="color: #fff; font-weight: 300; margin-bottom: 0;"><%=Lingua.CaricaLingua("lgl_crowfunding_desc")%></h3>
         </div>
     </section>
 </asp:Content>

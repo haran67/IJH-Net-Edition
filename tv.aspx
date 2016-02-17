@@ -5,19 +5,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="350" data-height-md="350" data-height-sm="400" data-height-xs="400" data-height-xxs="400">
-        <div class="container vertical-middle center clearfix text-uppercase">
-            <div class="heading-block nobottomborder text-shadow">
-                <h1>
-                    <%=Lingua.CaricaLingua("lgl_tv_jazz_hub")%>
-                </h1>
-                <h3><%=Lingua.CaricaLingua("lgl_tv_jazz_accoglie")%></h3>
-                <h4><%=Lingua.CaricaLingua("lgl_tv_jazz_canone")%></h4>
-                <div class="divider divider-rounded divider-center" style="margin: 10px 0;">
-                    <i class="icon-arrow-down2" style="color: #fff;"></i>
-                </div>
-                <a href="/Contatti.aspx" class="button button-green button-large button-rounded"><%=Lingua.CaricaLingua("lgl_tv_contattaci")%></a> 
-            </div>
+    <section class="page-title page-title-dark patch-wallpaper" style="padding: 30px 0;">
+        <div class="container clearfix">
+            <h1 class="bottommargin-sm"><%=Lingua.CaricaLingua("lgl_tv_jazz_hub")%></h1>
+            <h3 style="color: #fff; font-weight: 300"><%=Lingua.CaricaLingua("lgl_tv_jazz_accoglie")%><br>
+            <%=Lingua.CaricaLingua("lgl_tv_jazz_canone")%></h3>
+            <a href="/Contatti.aspx" class="button nomargin button-green button-large button-rounded"><%=Lingua.CaricaLingua("lgl_tv_contattaci")%></a> 
         </div>
     </section>
 </asp:Content>

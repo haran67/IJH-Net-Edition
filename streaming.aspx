@@ -3,10 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider-parallax dark patch-wallpaper" data-height-lg="350" data-height-md="300" data-height-sm="300" data-height-xs="300" data-height-xxs="300">
-        <div class="container vertical-middle center clearfix text-uppercase text-shadow">
-            <h1>Streaming</h1>
-            <h3>Ciascun utente con profilo Expo potr&agrave; organizzare eventi in diretta streaming (concerti, prove, lezioni di musica, etc) promossi in esclusiva per gli utenti di Jazz Hub connessi da tutto il mondo: significher&agrave; produrre, vivere e condividere esperienze uniche e irripetibili.</h3>
+    <section class="page-title page-title-dark patch-wallpaper" style="padding: 30px 0;">
+        <div class="container clearfix">
+            <h1 class="bottommargin-sm">Streaming</h1>
+            <h3 style="color: #fff; font-weight: 300; margin-bottom: 0;">Ciascun utente con profilo Expo potr&agrave; organizzare eventi in diretta streaming (concerti, prove, lezioni di musica, etc) promossi in esclusiva per gli utenti di Jazz Hub connessi da tutto il mondo: significher&agrave; produrre, vivere e condividere esperienze uniche e irripetibili.</h3>
         </div>
     </section>
 </asp:Content>

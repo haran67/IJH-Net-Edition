@@ -6,9 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-            
-
-    <section id="div_logging" runat="server" class="slider slider-parallax dark" style="background: url('images/custom/patch-wallpaper.jpg'); background-size: cover; background-position: center center" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="500">
+    <section id="div_logging" runat="server" class="slider dark patch-wallpaper" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="500">
         <div class="container clearfix">
             <div class="vertical-middle center">
                 <div class="emphasis-title title-center nomargin">
