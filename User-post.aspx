@@ -11,7 +11,7 @@
             <div class="col_three_fifth nobottommargin">
                 <asp:Image ID="img_utente" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden" style="height: 120px; width: 120px; float: left; margin-right: 20px;" />
                 <h1 class="topmargin-sm text-shadow"><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
-                <span class="visible-xs visible-sm visible-md visible-lg"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
+                <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal> - <strong style="font-weight: normal">guest</strong></span>
                 </h1>
             </div>
             <div class="col_two_fifth col_last topmargin-sm nobottommargin" data-class-lg="tright" data-class-md="tright" data-class-sm="tright" data-class-xs="center" data-class-xxs="center">
