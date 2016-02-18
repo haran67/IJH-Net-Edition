@@ -37,7 +37,14 @@
 @lines          : #DDDDDD;
 
 
+/* custom page transition */
+
+.css3-spinner { background-color: @theme-color; }
+.css3-spinner > div { background-color: #444; }
+
 /* custom helper class */
+
+
 
 .allpadding {
     padding: 50px;
@@ -131,6 +138,15 @@
 .button-green {
     background-color: @green;
     border: solid 1px lighten(@green, 5);
+    
+}
+.button-danger {
+    background-color: #d9534f;
+    border: solid 1px lighten(#d9534f, 5);
+}
+.button-success {
+    background-color: #286090;
+    border: solid 1px lighten(#286090, 5);
     
 }
 body {
