@@ -70,7 +70,7 @@
                                                     <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_v" runat="server" GroupName="tipo_utente" Checked="false"
-                                                                OnClick="$('#div_ruolo').hide('slow'); $('#div_alert_guest').hide('slow');" />
+                                                                OnClick="$('#div_ruolo').hide('slow'); $('#div_alert_guest').hide('slow'); $('#div_fattura').show('slow');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_visitatore")%>
                                                         </label>
                                                     </div>
@@ -78,7 +78,7 @@
                                                         margin-bottom: 10px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_g" runat="server" GroupName="tipo_utente" Checked="false"
-                                                                OnClick="$('#div_alert_guest').show('slow'); $('#div_ruolo').show('slow');" />
+                                                                OnClick="$('#div_alert_guest').show('slow'); $('#div_ruolo').show('slow'); $('#div_fattura').hide('slow');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_guest")%>
                                                         </label>
                                                     </div>
@@ -124,7 +124,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col_full">
-                                                    <div class="toggle">
+                                                    <div class="toggle" id="div_fattura">
                                                         <div class="togglet" onclick="set_fatturazione()">
                                                             <i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle">
                                                             </i>
@@ -209,33 +209,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center hidden"
-                                                        style="margin: 0px;">
-                                                        <label>
-                                                            <asp:CheckBox ID="chk_fatturazione" runat="server" name="checkbox-fattura" AutoPostBack="true" />
-                                                            <%=Lingua.CaricaLingua("lgl_register_bisogno_fattura")%>
-                                                        </label>
-                                                    </div>
-                                                    <!--div class="panel-body" style="padding: 40px;"-->
-                                                    <div id="div_fatturazione" runat="server" visible="false">
-                                                    </div>
                                                 </div>
-                                                <!--
-                                                <div class="col_full nobottommargin text-lg-right text-md-right text-sm-right  text-xs-center hidden">
-                                                    <button class="button button-rounded nomargin tab-linker" rel="1" id="next" name="dati"
-                                                        value="next">
-                                                        <%=Lingua.CaricaLingua("lgl_register_dati_dettaglio_b")%> <i class="icon-arrow-right2"></i>
-                                                    </button>
-                                                </div>
-    -->
                                                 <div class="col_full nobottommargin">
-                                                    <!--
-                                                    <div class="col_half col_last nobottommargin text-lg-left text-md-left text-sm-left  text-xs-center hidden">
-                                                        <button class="button button-rounded nomargin tab-linker" rel="0" id="register-form-submit"
-                                                            name="register-form-submit" value="register">
-                                                            <i class="icon-arrow-left2"></i><%=Lingua.CaricaLingua("lgl_register_dati_principali_b")%></button>
-                                                    </div>
-    -->
                                                     <div class="col_full nobottommargin text-lg-right text-md-right text-sm-right text-center  center text-xs-center">
                                                         <asp:LinkButton ID="btn_registrati" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
                                                             <%=Lingua.CaricaLingua("lgl_register_registrati")%> <i class="icon-check"></i>

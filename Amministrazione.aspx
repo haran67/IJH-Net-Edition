@@ -207,8 +207,9 @@
                                     <thead>
                                         <tr>
                                             <th style="width:1px;">#</th>
-                                            <th style="width:40%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_utente")%></th>
-                                            <th style="width:30%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_email")%></th>
+                                            <th style="width:30%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_utente")%></th>
+                                            <th style="width:20%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_tipo")%></th>
+                                            <th style="width:20%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_email")%></th>
                                             <th style="width:20%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_stato")%></th>
                                             <th style="width:10%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_video")%></th>
                                             <th style="width:1px;"></th>
@@ -220,6 +221,7 @@
                                                 <tr class="" id="tr_utente" runat="server">
                                                     <td><asp:Literal ID="ltl_key" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></td>
+                                                    <td><asp:Literal ID="ltl_tipologia" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_mail" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_pagamento" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_video_caricati" runat="server"></asp:Literal></td>
