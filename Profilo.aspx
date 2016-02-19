@@ -112,11 +112,32 @@
                                     </ItemTemplate>
                                 </asp:Repeater>
                                 <div class="divider"></div>
-                                    <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-desc btn-block button-border button-rounded center">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>
-                                            <span>Non sono presenti video nel tuo profilo</span>
-                                        <span><i class="icon-video"></i></span>
+                                <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-desc btn-block button-border button-rounded center">
+                                    <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>
+                                    <span>Non sono presenti video nel tuo profilo</span>
+                                    <span><i class="icon-video"></i></span>
                                 </asp:LinkButton>
+                                <div class="divider"></div>
+                                <a href="#" data-toggle="modal" data-target=".invite" class="button btn-block  button-rounded center">
+                                    Invita un'amico
+                                    <span><i class="icon-line-share"></i></span>
+                                </a>
+                                    
+                                <div class="modal fade bs-example-modal-lg invite" tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-body">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModalLabel">Invita un'amico</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- FINE Riepilogo -->
