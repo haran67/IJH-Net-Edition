@@ -400,7 +400,20 @@
                 setTimeout(checkContainer, 50);
             }
         }
-            
+
+        function reinit_js() {
+            $('#<%=txt_descrizione_pubblica.txt_Client_Id%>').maxlength({ max: 500, feedbackText: '<%=Lingua.CaricaLingua("lgl_usati")%> {c} <%=Lingua.CaricaLingua("lgl_di")%> {m}' });
+        }
+
+        $(document).ready(function () {
+            reinit_js();
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+        });
+
+        function endRequestHandler(sender, args) {
+            reinit_js();
+        }
+   
     </script>
         
 </asp:Content>
