@@ -1,4 +1,4 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -112,17 +112,16 @@
                             <li>
                                 <a href="/link.aspx"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
                             </li>
-                            <li>
+                            <li class="hidden">
                                 <asp:LinkButton ID="lnk_lingua" runat="server">
                                     <asp:Image ID="img_lingua" runat="server" Width="20" style="padding-bottom:2px;" ImageUrl="/images/italy.png" />
                                 </asp:LinkButton>
                             </li>
                             <li>
-                                <a href="#">Lingua</a>
+                                <a href="#"><%=Lingua.CaricaLingua("lgl_menu_lingua")%></a>
                                 <ul>
-                                    <li><a href="#">Italiano</a></li>
-                                    <li><a href="#">Inglese</a></li>
-                                    <li><a href="#">Francese</a></li>
+                                    <li><asp:LinkButton ID="lnk_lingua_it" runat="server" OnClick="lnk_lingua_menu_Click" CommandArgument="it-IT"><%=Lingua.CaricaLingua("lgl_menu_lingua_it")%></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="lnk_lingua_en" runat="server" OnClick="lnk_lingua_menu_Click" CommandArgument="en-US" ><%=Lingua.CaricaLingua("lgl_menu_lingua_en")%></asp:LinkButton></li>
                                 </ul>
                             </li>
                             <li id="li_accedi" runat="server">

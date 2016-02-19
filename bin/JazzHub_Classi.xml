@@ -178,9 +178,13 @@ JazzHub_Classi
 	<summary>
  Ritorno.
  </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto_codicipromo.Ricerca">
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.Categoria">
 	<summary>
- _Ricerca se ="S" carica tutti i prodotti winclub.
+ _Categoria 
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.Tags">
+	<summary>
+ _Tags 
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.ErrorePagina">
 	<summary>

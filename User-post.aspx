@@ -15,10 +15,13 @@
                 </h1>
             </div>
             <div class="col_two_fifth col_last topmargin-sm nobottommargin" data-class-lg="tright" data-class-md="tright" data-class-sm="tright" data-class-xs="center" data-class-xxs="center">
-                <a href="#" style="display: inline-block"><i class="i-circled i-light icon-email3"></i></a>
-                <a href="#" style="display: inline-block"><i class="i-circled i-light icon-facebook2"></i></a>
-                <a href="#" style="display: inline-block"><i class="i-circled i-light icon-linkedin2"></i></a>
-                <a href="#" style="display: inline-block"><i class="i-circled i-light icon-twitter2 norightmargin"></i></a>
+                <asp:Repeater ID="rpt_social" runat="server">
+                    <ItemTemplate>
+                        <a href="#" target="_blank" style="display: inline-block" id="a_link" runat="server">
+                            <i class="i-circled i-light icon-email3" id="i_icon_01" runat="server"></i>
+                        </a>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
         </div>
     </section>
@@ -27,11 +30,12 @@
     <div class="content-wrap nobottompadding">
         <div class="container clearfix">
             <div class="postcontent bothsidebar ">
-                    <h3><%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>
-                    <div id="portfolio" class="portfolio-1 clearfix">
-                        <asp:Repeater ID="rpt_video" runat="server">
-                            <ItemTemplate>
-                                <article class="portfolio-item clearfix">
+                <h3>
+                    <%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>
+                <div id="portfolio" class="portfolio-1 clearfix">
+                    <asp:Repeater ID="rpt_video" runat="server">
+                        <ItemTemplate>
+                            <article class="portfolio-item clearfix">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <asp:Image ID="img_copertina" runat="server" />
@@ -39,68 +43,75 @@
                                     </div>
                                     <div class="portfolio-desc">
                                         <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <a href="#" class="label label-default">jazz modal</a> <a href="#" class="label label-default">sonas</a>
+                                        <asp:Repeater ID="rpt_tags" runat="server" OnItemDataBound="rpt_tags_ItemDataBound" OnItemCommand="rpt_tags_ItemCommand">
+                                            <ItemTemplate>
+                                                <asp:LinkButton ID="btn_tag" runat="server" CommandName="TAG" CssClass="label label-default"></asp:LinkButton>
+                                            </ItemTemplate>
+                                        </asp:Repeater> 
                                         <p><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></p>
                                     </div>
                                 </article>
-                            </ItemTemplate>
-                        </asp:Repeater>
-                    </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
             </div>
             <div class="sidebar ">
                 <div class="sidebar-widgets-wrap">
-                    <h5 class="hidden"><%=Lingua.CaricaLingua("lgl_userpost_sudime")%></h5>
-                    <h4 class="hidden"><asp:Literal ID="ltl_nome" runat="server"></asp:Literal></h4>
-                    <h3>What</h3>
-                        <p><asp:Literal ID="ltl_descrizione_short" runat="server"></asp:Literal>
+                    <h5 class="hidden">
+                        <%=Lingua.CaricaLingua("lgl_userpost_sudime")%></h5>
+                    <h4 class="hidden">
+                        <asp:Literal ID="ltl_nome" runat="server"></asp:Literal></h4>
+                    <h3>
+                        What</h3>
+                    <p>
+                        <asp:Literal ID="ltl_descrizione_short" runat="server"></asp:Literal>
                         <br />
-                        <a href="#" class="label label-default"  data-toggle="modal" data-target=".what-complete" id="a_leggi_tutto" runat="server">
-                            leggi tutto >
-                        </a></p>
-                        <div class="modal fade bs-example-modal-lg what-complete" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-body">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">What</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal> 
-                                        </div>
+                        <a href="#" class="label label-default" data-toggle="modal" data-target=".what-complete"
+                            id="a_leggi_tutto" runat="server">leggi tutto > </a>
+                    </p>
+                    <div class="modal fade bs-example-modal-lg what-complete" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-body">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            What</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
             <div class="sidebar  col_last">
                 <div class="sidebar-widgets-wrap">
-                    <h3>Where</h3>
-                    <p>Via Marco mastacchi 166 Livorno</p>
-                    <div class="line small"></div>
-                    <h3>Web</h3>
-                    <p><a href="">www.gino.it</a></p>
-                    <div class="line small"></div>
-                    <h3>Email</h3>
-                    <p>
+                    <h3 id="h_addr" runat="server">
+                        Where</h3>
+                    <p id="p_addr" runat="server">
+                        <asp:Literal ID="ltl_indirizzo" runat="server"></asp:Literal></p>
+                    <div class="line small">
+                    </div>
+                    <h3 id="h_web" runat="server">
+                        Web</h3>
+                    <p id="p_web" runat="server">
+                        <asp:HyperLink ID="lnk_web" runat="server"></asp:HyperLink>
+                    </p>
+                    <div class="line small">
+                    </div>
+                    <h3 id="h_email" runat="server">
+                        Email</h3>
+                    <p id="p_email" runat="server">
                         <a href="" id="a_mail" runat="server">
                             <asp:Literal ID="ltl_mail" runat="server"></asp:Literal>
                         </a>
-                     </p>
-                    <div class="clear"></div>
-                    <div class="si-share clearfix hidden">
-                        <span><%=Lingua.CaricaLingua("lgl_userpost_contatti")%></span>
-                        <div>
-                            <asp:Repeater ID="rpt_social" runat="server">
-                                <ItemTemplate>
-                                    <a href="#" target="_blank" class="social-icon si-borderless si-facebook" id="a_link" runat="server">
-                                        <i class="icon-facebook" id="i_icon_01" runat="server"></i>
-                                        <i class="icon-facebook" id="i_icon_02" runat="server"></i>
-                                    </a>
-                                </ItemTemplate>
-                            </asp:Repeater>
-                        </div>
+                    </p>
+                    <div class="clear">
                     </div>
                 </div>
             </div>

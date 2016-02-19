@@ -40,9 +40,9 @@
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
                         </div>
-                        <div class="alert alert-success">
+                        <div class="alert alert-success" id="div_paga" runat="server">
                             <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">x</button>
-                            <strong>Scegli il  profilo e procedi con il pagamento</strong>
+                            <strong><%=Lingua.CaricaLingua("lgl_profilo_paga_scegli")%></strong>
                             <asp:LinkButton ID="btn_paga" runat="server" CssClass="btn btn-success btn-sm fright" Style="text-transform: uppercase; position: relative; top: -6px;">
                                 <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-arrow-right2"></i>
                             </asp:LinkButton>
@@ -54,11 +54,11 @@
                             <li class="active" id="li_riepilogo" runat="server">
                                 <asp:LinkButton ID="btn_resume" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_riepilogo")%></asp:LinkButton>
                             </li>
-                            <li id="li_video" runat="server">
-                                <asp:LinkButton ID="btn_gestione_video" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_gestione_video")%></asp:LinkButton>
-                            </li>
                             <li id="li_profilo" runat="server">
                                 <asp:LinkButton ID="btn_modifica" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo")%></asp:LinkButton>
+                            </li>
+                            <li id="li_video" runat="server">
+                                <asp:LinkButton ID="btn_gestione_video" runat="server"></asp:LinkButton>
                             </li>
                             <li id="li_pubblico" runat="server">
                                 <asp:LinkButton ID="btn_profilo_pubblico" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_pubblico")%></asp:LinkButton>
@@ -114,12 +114,12 @@
                                 <div class="divider"></div>
                                 <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-desc btn-block button-border button-rounded center">
                                     <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>
-                                    <span>Non sono presenti video nel tuo profilo</span>
+                                    <span id="span_no_video" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video_non_pres")%></span>
                                     <span><i class="icon-video"></i></span>
                                 </asp:LinkButton>
                                 <div class="divider"></div>
                                 <a href="#" data-toggle="modal" data-target=".invite" class="button btn-block  button-rounded center">
-                                    Invita un'amico
+                                    <%=Lingua.CaricaLingua("lgl_profilo_invita_amico")%>
                                     <span><i class="icon-line-share"></i></span>
                                 </a>
                                     
@@ -129,10 +129,49 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                    <h4 class="modal-title" id="myModalLabel">Invita un'amico</h4>
+                                                    <h4 class="modal-title" id="myModalLabel"><%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%></h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    
+                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_nome_01" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_mail_01" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+
+                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_nome_02" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_mail_02" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+													
+                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_nome_03" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_mail_03" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+													
+                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_nome_04" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                        <cc:rTextBox ID="txt_invita_mail_04" runat="server" MaxLength="70" CssClass="form-control"
+                                                            Form_Vertical="true" Required="false" />
+                                                    </div>
+                                                    <div class="col_full" style="margin-bottom: 0px;">
+                                                        <asp:LinkButton ID="btn_invita_amoci" runat="server" CssClass="button btn-block  button-rounded center" OnClientClick="$('.invite').modal('hide');">
+                                                            <%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%>
+                                                        </asp:LinkButton>
+                                                    </div> 
                                                 </div>
                                             </div>
                                         </div>
@@ -210,6 +249,25 @@
                             <div class="fancy-title title-dotted-border">
                                 <h3>
                                     <%=Lingua.CaricaLingua("lgl_profilo_selezione_video")%></h3>
+                            </div> 
+                            <div class="container clearfix ">
+                                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
+                                    <asp:Repeater ID="rpt_video_guest" runat="server">
+                                        <ItemTemplate>
+                                            <article class="portfolio-item box-shadow-custom">
+                                                <div class="portfolio-image patch-placeholder">
+                                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                        <asp:Image ID="img_copertina" runat="server" />
+                                                    </asp:LinkButton>
+                                                </div>
+                                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
+                                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                                </div>
+                                            </article>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </div>
                             </div>
                         </div>
                         <!-- FINE Visitatore -->
@@ -327,27 +385,26 @@
                                 <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
                                 </div>
-                                <div class="col_half">
+                                <div class="col_half" id="div_pp_image" runat="server">
                                     <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%; max-height: 200px;" />
                                 </div>
-                                <div class="col_half col_last">
+                                <div class="col_half col_last" id="div_pp_cancella" runat="server">
                                     <telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico" MultipleFileSelection="Disabled"
-                                        Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
+                                        Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" Visible="true" />
                                     <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
                                     </asp:LinkButton><br>
+                                </div>
+                                <div class="col_full clearfix hidden" id="div_pp_drop" runat="server">
+                                    <div class="dropzone" class="thumbnail" data-width="960" data-height="540" data-ghost="false" data-resize="true" data-originalsize="false" style="width: 100%;">
+                                        <asp:FileUpload ID="upl_img_profilo_pubblico_drop" runat="server" />
+                                    </div>
                                     <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
                                     </asp:LinkButton>
-                                </div>
-                                
-                                <div class="col_full col_last clearfix">
-                                    <div class="dropzone" class="thumbnail" data-width="960" data-height="540" data-ghost="false" data-resize="true" data-originalsize="false" style="width: 100%;">
-                                        <input type="file" id="upload" value="Choose a file">
-                                    </div>
                                 </div>
                             </div>
                             <div class="col_half col_last">
@@ -367,14 +424,14 @@
                                             </div>
                                         </ItemTemplate>
                                     </asp:Repeater>
-                                    <div id="profile-switcher" class="alert alert-success">
+                                    <div id="profile_switcher" class="alert alert-success" runat="server">
                                         <asp:HyperLink ID="lnk_preview" runat="server" Target="_blank" NavigateUrl="/User-Post.aspx" CssClass="btn btn-sm btn-primary fright">
                                             <%=Lingua.CaricaLingua("lgl_profilo_anteprima_profilo")%></i>
                                         </asp:HyperLink>
-                                        <h4 class="nomargin">Gestisci la pubblicazione del tuo profilo</h4>
-                                        <p style="margin-bottom: 20px;">Attiva o disattiva la pubblicazione se lo ritieni necessario</p>
+                                        <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_profilo_gestisci_pubblicazione")%></h4>
+                                        <p style="margin-bottom: 20px;"><%=Lingua.CaricaLingua("lgl_profilo_attiva_pubblicazione")%></p>
                                         <strong><%=Lingua.CaricaLingua("lgl_register_profilo_pubblicato")%></strong>
-                                        <asp:CheckBox ID="chk_ut_profilo_pubblicato" CssClass="fright" style="position: relative; top: -6px" runat="server" AutoPostBack="true" />
+                                        <asp:CheckBox ID="chk_ut_profilo_pubblicato" CssClass="fright" style="position: relative; top: -6px" runat="server" />
                                     </div>
                                     <div class="clear"></div>
                                     <asp:LinkButton ID="btn_salva_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger nomargin">
@@ -390,29 +447,19 @@
                 </div>
             </div>
         </ContentTemplate>
+        <Triggers >
+            <asp:PostBackTrigger ControlID ="btn_carica_profilo_pubblico" />
+        </Triggers>
     </asp:UpdatePanel>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="/js/html5imageupload.js?v1.4.3"></script>
     <script>
         function demoUpload() {
             console.log('demoUpload avviato!');
             $('.dropzone').html5imageupload();
-            $("[ID='content_chk_ut_profilo_pubblicato']").bootstrapSwitch({
-                onColor: 'success',
-                offColor: 'danger',
-                labelWidth: 5,
-                onSwitchChange: function() {
-                    $("#profile-switcher" ).toggleClass( 'alert-danger' ).toggleClass('alert-success')
-                }
-            });
         };
         
-        jQuery(document).ready(function() {
-            checkContainer();
-        });
-
         function checkContainer () {
             if($('#ready').is(':visible')){ 
                 console.log('visibile!');
@@ -423,7 +470,22 @@
         }
 
         function reinit_js() {
+
+            checkContainer();
+
             $('#<%=txt_descrizione_pubblica.txt_Client_Id%>').maxlength({ max: 500, feedbackText: '<%=Lingua.CaricaLingua("lgl_usati")%> {c} <%=Lingua.CaricaLingua("lgl_di")%> {m}' });
+
+            $("[ID='<%=chk_ut_profilo_pubblicato.ClientId%>']").bootstrapSwitch({
+                onColor: 'success',
+                offColor: 'danger',
+                labelWidth: 5,
+                onSwitchChange: function () {
+                    $("#<%=profile_switcher.ClientId%>").toggleClass('alert-danger').toggleClass('alert-success')
+                    //alert($("#<%=chk_ut_profilo_pubblicato.ClientId%>").is(':checked'));
+                    PageMethods.SetProfiloPubblicato($("#<%=chk_ut_profilo_pubblicato.ClientId%>").is(':checked'), PMSuccess, PMFailure);
+                }
+            });
+
         }
 
         $(document).ready(function () {
