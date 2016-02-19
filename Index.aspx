@@ -26,7 +26,7 @@
         </div>
     </section>    
         
-    <section id="div_logged" runat="server" class="page-title page-title-dark page-title-video page-title-center patch-wallpaper" data-height-lg="350" data-height-md="350" data-height-sm="300" data-height-xs="250" data-height-xxs="250">
+    <section id="div_logged" runat="server" class="page-title page-title-dark page-title-video page-title-center patch-wallpaper" data-height-lg="450" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="250">
         <div class="video-wrap" style="height: 100%;">
             <video id="slide-video" preload="auto" loop >
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
