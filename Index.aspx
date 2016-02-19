@@ -26,16 +26,15 @@
         </div>
     </section>    
         
-    <section id="div_logged" runat="server" class="page-title page-title-parallax page-title-dark page-title-video patch-wallpaper" style="background-color: #000;">
-        
+    <section id="div_logged" runat="server" class="page-title page-title-dark page-title-video page-title-center patch-wallpaper" data-height-lg="350" data-height-md="350" data-height-sm="300" data-height-xs="250" data-height-xxs="250">
         <div class="video-wrap" style="height: 100%;">
             <video id="slide-video" preload="auto" loop >
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="container center clearfix">
-            <span data-animate="fadeInUp" data-delay="300"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+        <div class="container vertical-middle clearfix">
+            <span data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
             <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
             <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
             <a href="#" id="video-slider-play"  class="button button-border button-white button-light button-small button-rounded tleft">
