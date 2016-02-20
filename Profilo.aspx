@@ -40,10 +40,11 @@
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
                         </div>
-                        <div class="alert alert-success" id="div_paga" runat="server">
+                            <div class="alert alert-success clearfix" id="div_paga" runat="server" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
                             <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><%=Lingua.CaricaLingua("lgl_profilo_paga_scegli")%></strong>
-                            <asp:LinkButton ID="btn_paga" runat="server" CssClass="btn btn-success btn-sm fright" Style="text-transform: uppercase; position: relative; top: -6px;">
+                                <hr class="hidden" data-class-lg="hidden" data-class-md="hidden" data-class-sm="hidden" data-class-xs="not-hidden" data-class-xxs="not-hidden">
+                                <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-success button-rounded button-mini nomargin fright" data-class-lg="fright" data-class-md="fright" data-class-sm="fright" data-class-xs="divcenter" data-class-xxs="divcenter">
                                 <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-arrow-right2"></i>
                             </asp:LinkButton>
                         </div>
@@ -111,14 +112,13 @@
                                         </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
-                                <div class="divider"></div>
-                                <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-desc btn-block button-border button-rounded center">
+                                <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-desc btn-block button-border button-rounded center nomargin">
                                     <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>
                                     <span id="span_no_video" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video_non_pres")%></span>
                                     <span><i class="icon-video"></i></span>
                                 </asp:LinkButton>
-                                <div class="divider"></div>
-                                <a href="#" data-toggle="modal" data-target=".invite" class="button btn-block  button-rounded center">
+                                        <hr>
+                                <a href="#" data-toggle="modal" data-target=".invite" class="button btn-block button-primary button-rounded center nomargin">
                                     <%=Lingua.CaricaLingua("lgl_profilo_invita_amico")%>
                                     <span><i class="icon-line-share"></i></span>
                                 </a>
@@ -132,43 +132,47 @@
                                                     <h4 class="modal-title" id="myModalLabel"><%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%></h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                    <div class="col_full">
+                                                        <h3>Usa questo modulo per invitare i tuoi amici</h3>
+                                                        <i>(Puoi inserirne fino a 4 alla volta)</i>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="col_half nobottommargin">
                                                         <cc:rTextBox ID="txt_invita_nome_01" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
-                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                    <div class="col_half col_last nobottommargin">
                                                         <cc:rTextBox ID="txt_invita_mail_01" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
-
-                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                    <div class="col_half nobottommargin">
                                                         <cc:rTextBox ID="txt_invita_nome_02" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
-                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                    <div class="col_half col_last nobottommargin">
                                                         <cc:rTextBox ID="txt_invita_mail_02" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
 													
-                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                    <div class="col_half nobottommargin">
                                                         <cc:rTextBox ID="txt_invita_nome_03" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
-                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                    <div class="col_half col_last nobottommargin">
                                                         <cc:rTextBox ID="txt_invita_mail_03" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
 													
-                                                    <div class="col_half" style="margin-bottom: 0px;">
+                                                    <div class="col_half nobottommargin">
                                                         <cc:rTextBox ID="txt_invita_nome_04" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
-                                                    <div class="col_half col_last" style="margin-bottom: 0px;">
+                                                    <div class="col_half col_last">
                                                         <cc:rTextBox ID="txt_invita_mail_04" runat="server" MaxLength="70" CssClass="form-control"
                                                             Form_Vertical="true" Required="false" />
                                                     </div>
-                                                    <div class="col_full" style="margin-bottom: 0px;">
-                                                        <asp:LinkButton ID="btn_invita_amoci" runat="server" CssClass="button btn-block  button-rounded center" OnClientClick="$('.invite').modal('hide');">
+                                                    <div class="col_full nobottommargin">
+                                                        <asp:LinkButton ID="btn_invita_amoci" runat="server" CssClass="button btn-block button-rounded center nomargin" OnClientClick="$('.invite').modal('hide');">
                                                             <%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%>
                                                         </asp:LinkButton>
                                                     </div> 
@@ -425,7 +429,7 @@
                                         </ItemTemplate>
                                     </asp:Repeater>
                                     <div id="profile_switcher" class="alert alert-success" runat="server">
-                                        <asp:HyperLink ID="lnk_preview" runat="server" Target="_blank" NavigateUrl="/User-Post.aspx" CssClass="btn btn-sm btn-primary fright">
+                                        <asp:HyperLink ID="lnk_preview" runat="server" Target="_blank" NavigateUrl="/User-Post.aspx" CssClass="button button-primary button-mini button-rounded nomargin lowercase fright">
                                             <%=Lingua.CaricaLingua("lgl_profilo_anteprima_profilo")%></i>
                                         </asp:HyperLink>
                                         <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_profilo_gestisci_pubblicazione")%></h4>

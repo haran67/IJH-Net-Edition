@@ -131,23 +131,57 @@
     padding-left: 50px;
 }
 
+
 .button-red {
     background-color: @red;
     border: solid 1px lighten(@red, 5);
+    &:hover {
+        background-color: darken(@red, 4);
+        border: solid 1px lighten(@red, 1);
+    }
 }
+
+
 .button-green {
     background-color: @green;
     border: solid 1px lighten(@green, 5);
-    
+    &:hover {
+        background-color: darken(@green, 4);
+        border: solid 1px lighten(@green, 1);
+    }
+
 }
+
+/* bootstrap color style button */
+
 .button-danger {
     background-color: #d9534f;
     border: solid 1px lighten(#d9534f, 5);
 }
-.button-success {
+.button-danger:hover {
+    background-color: darken(#d9534f, 4);
+    border: solid 1px lighten(#d9534f, 1);
+}
+
+.button-primary {
     background-color: #286090;
     border: solid 1px lighten(#286090, 5);
     
+}
+.button-primary:hover {
+    background-color: darken(#286090, 4);
+    border: solid 1px lighten(#286090, 1);
+
+}
+.button-success {
+    background-color: #5cb85c;
+    border: solid 1px lighten(#5cb85c, 5);
+
+}
+.button-success:hover {
+    background-color: darken(#5cb85c, 4);
+    border: solid 1px lighten(#5cb85c, 1);
+
 }
 body {
     background: rgb(30, 38, 48) url("images/custom/patch-wallpaper-lines.png") center center;
@@ -487,11 +521,3 @@ body > form {
     }
 
 }
-
-//@media only screen and (max-width: 767px) {
-//    .page-title {
-//        span {
-//            display: inherit;
-//        }
-//    }
-//}
