@@ -62,7 +62,7 @@
     <div id="wrapper" class="clearfix">
         <!-- Header
 		============================================= -->
-        <header id="header" class="static-sticky dark" style="z-index: 10;">
+        <header id="header" class="static-sticky dark box-shadow-custom" style="z-index: 10;">
             <div id="header-wrap">
                 <div class="container clearfix">
                     <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
@@ -125,7 +125,7 @@
                                 </ul>
                             </li>
                             <li id="li_accedi" runat="server">
-                                <a href="/login.aspx" title="Accedi"><i class="icon-signin hidden">Accedi</i></a>
+                                <a href="/login.aspx" title="Accedi"><i class="icon-signin">Accedi</i></a>
                             </li>
                         </ul>
                         <span id="div_account" runat="server">

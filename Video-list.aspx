@@ -7,16 +7,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title page-title-mini">
-		<div class="container clearfix">
-            <h1><strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_videolist_title")%></h1>
-		</div>
-	</section>
     <div id="page-menu">
         <div id="page-menu-wrap">
             <div class="container clearfix">
                 <div class="menu-title">
-                    <%=Lingua.CaricaLingua("lgl_videolist_sfoglia")%>
+                    <strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_videolist_title")%>
+<!--                    <%=Lingua.CaricaLingua("lgl_videolist_sfoglia")%>-->
                 </div>
                 <nav>
                     <ul>

@@ -2,9 +2,47 @@
 
 @import "style.less";
 @import "less/dark.less";
-@import "less/elements.less";
 
 /* start custom */
+
+
+/* CUSTOM MIXIN */
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background: @color;
+  background: -webkit-gradient(linear,
+                               left bottom,
+                               left top,
+                               color-stop(0, @start),
+                               color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom,
+                                  @start,
+                                  @stop);
+  background: -moz-linear-gradient(center bottom,
+                                   @start 0%,
+                                   @stop 100%);
+  background: -o-linear-gradient(@stop,
+                                 @start);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
+  background: @color;
+  background: -webkit-gradient(linear,
+                               left bottom,
+                               left top,
+                               color-stop(0, rgb(@start,@start,@start)),
+                               color-stop(1, rgb(@stop,@stop,@stop)));
+  background: -ms-linear-gradient(bottom,
+                                  rgb(@start,@start,@start) 0%,
+                                  rgb(@stop,@stop,@stop) 100%);
+  background: -moz-linear-gradient(center bottom,
+                                   rgb(@start,@start,@start) 0%,
+                                   rgb(@stop,@stop,@stop) 100%);
+  background: -o-linear-gradient(rgb(@stop,@stop,@stop),
+                                 rgb(@start,@start,@start));
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",rgb(@stop,@stop,@stop),rgb(@start,@start,@start)));
+}
 
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
@@ -14,6 +52,9 @@
 @heading-font:                  'Oswald', sans-serif;
 @body-font:                     'Lato', sans-serif;
 @secondary-font:                'Crete Round', serif;
+
+@header-height:                 60px;
+#header.static-sticky ~ #page-menu.sticky-page-menu #page-menu-wrap { top: @header-height; }
 
 @page-title-medium-size:				18px;
 @page-title-medium-subtitle-size:		14px;
@@ -45,7 +86,9 @@
 
 /* custom helper class */
 
-
+#page-menu-wrap {
+    background-color: lighten(@menu-base-color, 5);
+}
 
 .allpadding {
     padding: 50px;
@@ -368,6 +411,34 @@ body > form {
 
 /* customize page elements */
 
+.citazione {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    &:before{
+        font-family: "font-icons";
+        content:"\e7ad";
+        font-size: 42px;
+        position: absolute;
+        top: -15px;
+        left: 10px;
+        color: rgba(255,255,255,.25);
+    }
+    &:after{
+        font-family: "font-icons";
+        content:"\e7ad";
+        font-size: 42px;
+        position: absolute;
+        bottom: -15px;
+        right: 10px;
+        color: rgba(255,255,255,.25);
+    }
+}
+
+.circled {
+    border-radius: 50%;
+}
+
 .line.small {
     margin-top: 0;
     margin-bottom: 20px !important;
@@ -647,6 +718,7 @@ body > form {
     }
 
 }
+
 
 .i-medium-custom {
     position: relative;
