@@ -55,18 +55,20 @@
         <div class="section nomargin alt box-shadow-custom">
             <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio portfolio-3 portfolio-masonry clearfix">
+                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item box-shadow-custom">
-                                <div class="portfolio-image patch-placeholder">
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <asp:Image ID="img_copertina" runat="server" />
-                                    </asp:LinkButton>
-                                </div>
-                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
-                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                            <article class="portfolio-item" >
+                                <div style="margin: 5px;" class="box-shadow-custom">
+                                    <div class="portfolio-image patch-placeholder">
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <asp:Image ID="img_copertina" runat="server" />
+                                        </asp:LinkButton>
+                                    </div>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                    </div>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -74,23 +76,24 @@
                 </div>
             </div>
         </div>
-            <div class="section nomargin box-shadow-custom" id="div_like_guest" runat="server">
-            <h3 class="center">
-                <%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h3>
+        <div class="section nomargin box-shadow-custom" id="div_like_guest" runat="server">
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
+                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_guest" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item box-shadow-custom">
-                                <div class="portfolio-image patch-placeholder">
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <asp:Image ID="img_copertina" runat="server" />
-                                    </asp:LinkButton>
-                                </div>
-                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
-                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                            <article class="portfolio-item" >
+                                <div style="margin: 5px;" class="box-shadow-custom">
+                                    <div class="portfolio-image patch-placeholder">
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <asp:Image ID="img_copertina" runat="server" />
+                                        </asp:LinkButton>
+                                    </div>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                    </div>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -101,19 +104,20 @@
         <div class="section nomargin alt box-shadow-custom" id="div_like_expo" runat="server">
             <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h3>
             <div class="container clearfix ">
-                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
-                    <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
-                        OnItemCommand="rpt_video_ItemCommand">
+                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
+                    <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item box-shadow-custom">
-                                <div class="portfolio-image patch-placeholder">
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <asp:Image ID="img_copertina" runat="server" />
-                                    </asp:LinkButton>
-                                </div>
-                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
-                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                            <article class="portfolio-item" >
+                                <div style="margin: 5px;" class="box-shadow-custom">
+                                    <div class="portfolio-image patch-placeholder">
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <asp:Image ID="img_copertina" runat="server" />
+                                        </asp:LinkButton>
+                                    </div>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                    </div>
                                 </div>
                             </article>
                         </ItemTemplate>
@@ -122,8 +126,7 @@
             </div>
         </div>
         <div class="section nomargin box-shadow-custom" id="div_like_visi" runat="server">
-            <h3 class="center">
-                <%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
+            <h3 class="center"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h3>
             <div class="container clearfix ">
                 <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
@@ -180,35 +183,21 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
     <script type="text/javascript">
         jQuery(window).load(function () {
-
+            
             var $container = $('.portfolio');
 
             $container.isotope({
-                transitionDuration: '0.65s'
+                transitionDuration: '0.25s',
+                masonry: {
+                    columnWidth: $container.find('.portfolio-item:not(.wide)')[0]
+                }
             });
 
-            $('#portfolio-filter a').click(function () {
-                $('#portfolio-filter li').removeClass('activeFilter');
-                $(this).parent('li').addClass('activeFilter');
-                var selector = $(this).attr('data-filter');
-                $container.isotope({
-                    filter: selector
-                });
-                return false;
-            });
-
-            $('#portfolio-shuffle').click(function () {
-                $container.isotope('updateSortData').isotope({
-                    sortBy: 'random'
-                });
-            });
 
             $(window).resize(function () {
                 $container.isotope('layout');
             });
             
-            
-
         });
     
         $(document).ready(function () {
@@ -232,6 +221,8 @@
                     1200:{ items:4 }
                 }
             });
+            
+            $(".portfolio").find(".portfolio-item:first-child").addClass("wide");
         });
 
         function endRequestHandler(sender, args) {
@@ -249,6 +240,7 @@
 
             $(this).toggleClass('video-played');
         });
+        
 
     </script>
 </asp:Content>

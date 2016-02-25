@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -62,7 +62,7 @@
     <div id="wrapper" class="clearfix">
         <!-- Header
 		============================================= -->
-        <header id="header" class="transparent-header semi-transparent dark" style="z-index: 10;">
+        <header id="header" class="static-sticky dark" style="z-index: 10;">
             <div id="header-wrap">
                 <div class="container clearfix">
                     <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
