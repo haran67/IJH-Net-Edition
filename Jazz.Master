@@ -124,10 +124,12 @@
                                     <li><asp:LinkButton ID="lnk_lingua_en" runat="server" OnClick="lnk_lingua_menu_Click" CommandArgument="en-US" ><%=Lingua.CaricaLingua("lgl_menu_lingua_en")%></asp:LinkButton></li>
                                 </ul>
                             </li>
-                            <li id="li_accedi" runat="server">
-                                <a href="/login.aspx" title="Accedi"><i class="icon-signin">Accedi</i></a>
-                            </li>
                         </ul>
+                        <span  id="li_accedi" runat="server">
+                            <div id="top-cart">
+                                <a href="/login.aspx"  id="top-cart-login" title="Accedi"><i class="icon-signin"></i></a>
+                            </div>
+                        </span>
                         <span id="div_account" runat="server">
                             <div id="top-cart">
                                 <a href="#" id="top-cart-trigger"><i class="icon-user4"></i><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>

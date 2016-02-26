@@ -647,40 +647,47 @@ body > form {
 
 #video-slider-play.video-played i:nth-of-type(2) { display: inline-block; }
 
+//.portfolio-masonry .portfolio-item .portfolio-image {     <-----\
+//    height: 150px !important;                             <----- test per allineamento tile masonry
+//}                                                         <-----/
 
-.standard-portfolio .portfolio-desc {
-    overflow: hidden;
-    height: 100px;
-    background-color: #fff;
-    padding: 10px;
-    h3 {
+.standard-portfolio {
+    .portfolio-desc {
         overflow: hidden;
-        height: 60px;
-        text-transform: capitalize;
-    }
-    span {
-        position: absolute;
-        overflow: hidden;
-        height: 1.5em;
-        bottom: 15px;
-        left: 15px;
-        text-transform: capitalize;
-        &:after{
-            content:"..."
+        height: 100px;
+        background-color: #fff;
+        padding: 10px;
+        h3 {
+            overflow: hidden;
+            height: 60px;
+            text-transform: capitalize;
+        }
+        span {
+            position: absolute;
+            overflow: hidden;
+            height: 1.5em;
+            bottom: 15px;
+            left: 15px;
+            text-transform: capitalize;
+            &:after{
+                content:"..."
+            }
         }
     }
 }
-.standard-portfolio .wide .portfolio-desc {
-    height: 200px;
-    padding: 20px;
-    h3 {
-        font-size: 3rem;
-        height: 120px;
-    }
-    span {
-        font-size: 2rem;
-        bottom: 20px;
-        left: 20px;
+.standard-portfolio .wide {
+    .portfolio-desc {
+        height: 210px;
+        padding: 20px !important;
+        h3 {
+            font-size: 3rem !important;
+            height: 120px;
+        }
+        span {
+            font-size: 2rem !important;
+            bottom: 20px;
+            left: 20px;
+        }
     }
 }
 
@@ -697,7 +704,7 @@ body > form {
 @media only screen and (max-width: 991px){
     #top-cart {
         display: block;
-        #top-cart-trigger {
+        #top-cart-trigger, #top-cart-login {
             position: absolute;
             top: -35px;
             right: -15px;
