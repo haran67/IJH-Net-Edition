@@ -15,10 +15,10 @@
                                 <div class="panel-body" style="padding: 40px;">
                                     <div id="processTabs">
                                         <ul class="hidden">
-                                            <li><a href="#tab-register"></a></li>
+                                            <li><a href="#tab-login"></a></li>
                                             <li><a href="#tab-password"></a></li>
                                         </ul>
-                                        <div class="tab-content clearfix" id="tab-register">
+                                        <div class="tab-content clearfix" id="tab-login">
                                             <div id="div_login" runat="server">
                                                 <div id="login-form" name="login-form" class="nobottommargin center">
                                                     <h3 class="nopadding nomargin">

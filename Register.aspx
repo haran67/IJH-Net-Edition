@@ -41,13 +41,11 @@
                             <div class="divcenter" style="max-width: 700px">
                                 <div id="register-form" name="register-form" class="nobottommargin">
                                     <div class="tab-content clearfix" id="tab-principale">
-                                        <div class="panel panel-default divcenter" style="background-color: rgba(255,255,255,0.93);"
-                                            id="div_dati_01" runat="server">
+                                        <div class="panel panel-default divcenter" style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
                                             <div class="panel-body" style="padding: 40px;">
                                                 <div class="col_full nobottommargin center">
-                                                    <h3 class="nopadding nomargin">
-                                                        <%=Lingua.CaricaLingua("lgl_register_registrati_inizia")%></h3>
-                                                        <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important"  data-class-lg="not-hidden" data-class-md="not-hidden" data-class-sm="not-hidden" data-class-xs="not-hidden" data-class-xxs="hidden">
+                                                    <h3 class="nopadding nomargin"><%=Lingua.CaricaLingua("lgl_register_registrati_inizia")%></h3>
+                                                    <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important"  data-class-lg="not-hidden" data-class-md="not-hidden" data-class-sm="not-hidden" data-class-xs="not-hidden" data-class-xxs="hidden">
                                                         <i class="icon-arrow-down2"></i>
                                                     </div>
                                                 </div>
@@ -84,9 +82,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="col_full" style="margin-bottom: 0px; display: none;" id="div_alert_guest">
-                                                    <label>
-                                                        <%=Lingua.CaricaLingua("lgl_register_utente_guest_alert")%>
-                                                    </label>
+                                                    <div class="alert alert-info tleft">
+                                                        <span style="font-size: 15px;">
+                                                            <i class="icon-hand-up"></i> <%=Lingua.CaricaLingua("lgl_register_utente_guest_alert")%>
+                                                        </span>
+                                                    </div>
                                                 </div>
                                                 <div class="col_half" style="margin-bottom: 0px;">
                                                     <cc:rTextBox ID="txt_nome" runat="server" MaxLength="70" CssClass="form-control"
@@ -125,10 +125,9 @@
                                                 </div>
                                                 <div class="col_full">
                                                     <div class="toggle" id="div_fattura">
-                                                        <div class="togglet" onclick="set_fatturazione()">
-                                                            <i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle">
-                                                            </i>
-                                                            <%=Lingua.CaricaLingua("lgl_register_bisogno_fattura")%></div>
+                                                        <div class="togglet tleft" onclick="set_fatturazione()">
+                                                            <i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i><%=Lingua.CaricaLingua("lgl_register_bisogno_fattura")%>
+                                                        </div>
                                                         <div class="togglec noleftpadding" style="display: none;" id="div_togglec" runat="server">
                                                             <div class="col_half nobottommargin">
                                                                 <div class="text-lg-left text-md-left text-sm-left  text-xs-center">
@@ -138,7 +137,7 @@
                                                                     </label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col_one_fourth nobottommargin">
+                                                            <div class="col_half col_last nobottommargin">
                                                                 <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
                                                                     <label>
                                                                         <asp:RadioButton ID="rdb_tipo_giuridico_p" runat="server" GroupName="tipo_giuridico"
@@ -156,9 +155,6 @@
                                                                     </label>
                                                                 </div>
                                                             </div>
-                                                            <div class="divider divider-center">
-                                                                <i class="icon-arrow-down2"></i>
-                                                            </div>
                                                             <div class="col_full" id="div_ragione_sociale" runat="server" style="margin-bottom: 0px;">
                                                                 <cc:rTextBox ID="txt_ragione_sociale" name="txt_ragione_sociale" runat="server" MaxLength="256"
                                                                     CssClass="form-control" Form_Vertical="true" />
@@ -171,26 +167,35 @@
                                                                 <cc:rTextBox ID="txt_partita_iva" name="txt_partita_iva" runat="server" MaxLength="12"
                                                                     CssClass="form-control" Form_Vertical="true" />
                                                             </div>
-                                                            <div class="col_full" style="margin-bottom: 0px;">
-                                                                <label for="chk_stato_estero">
-                                                                    <%=Lingua.CaricaLingua("lgl_register_indirizzo_estero")%></label>
-                                                                <asp:CheckBox ID="chk_stato_estero" runat="server" AutoPostBack="true" />
+                                                            <div class="clearfix">
+                                                                <div class="col_half nobottommargin">
+                                                                    <div class="text-lg-left text-md-left text-sm-left  text-xs-center">
+                                                                        <label for="chk_stato_estero"><%=Lingua.CaricaLingua("lgl_register_indirizzo_estero")%> <i class="hidden-xs icon-arrow-right2"></i></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col_half col_last nobottommargin">
+                                                                    <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
+                                                                        <asp:CheckBox ID="chk_stato_estero" runat="server" AutoPostBack="true" />
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div class="col_one_third" id="div_provincia" runat="server" style="margin-bottom: 0px;">
-                                                                <cc:rDropDown ID="ddl_provincia" runat="server" CssClass="form-control" AutoPostBack="true"
-                                                                    Form_Vertical="true" />
-                                                            </div>
-                                                            <div class="col_two_third col_last" id="div_comune" runat="server" style="margin-bottom: 0px;">
-                                                                <cc:rDropDown ID="ddl_citta" runat="server" CssClass="form-control" AutoPostBack="false"
-                                                                    Form_Vertical="true" />
-                                                            </div>
-                                                            <div class="col_half" id="div_provincia_estera" runat="server" style="margin-bottom: 0px;">
-                                                                <cc:rTextBox ID="txt_provincia_estera" name="txt_provincia_estera" runat="server"
-                                                                    MaxLength="128" CssClass="form-control" Form_Vertical="true" />
-                                                            </div>
-                                                            <div class="col_half col_last" id="div_comune_estero" runat="server" style="margin-bottom: 0px;">
-                                                                <cc:rTextBox ID="txt_comune_estero" runat="server" MaxLength="128" CssClass="form-control"
-                                                                    Form_Vertical="true" />
+                                                            <div class="clearfix">
+                                                                <div class="col_half" id="div_provincia" runat="server" style="margin-bottom: 0px;">
+                                                                    <cc:rDropDown ID="ddl_provincia" runat="server" CssClass="form-control" AutoPostBack="true"
+                                                                        Form_Vertical="true" />
+                                                                </div>
+                                                                <div class="col_half col_last" id="div_comune" runat="server" style="margin-bottom: 0px;">
+                                                                    <cc:rDropDown ID="ddl_citta" runat="server" CssClass="form-control" AutoPostBack="false"
+                                                                        Form_Vertical="true" />
+                                                                </div>
+                                                                <div class="col_half" id="div_provincia_estera" runat="server" style="margin-bottom: 0px;">
+                                                                    <cc:rTextBox ID="txt_provincia_estera" name="txt_provincia_estera" runat="server"
+                                                                        MaxLength="128" CssClass="form-control" Form_Vertical="true" />
+                                                                </div>
+                                                                <div class="col_half col_last" id="div_comune_estero" runat="server" style="margin-bottom: 0px;">
+                                                                    <cc:rTextBox ID="txt_comune_estero" runat="server" MaxLength="128" CssClass="form-control"
+                                                                        Form_Vertical="true" />
+                                                                </div>
                                                             </div>
                                                             <div class="col_one_third" style="margin-bottom: 0px;">
                                                                 <cc:rTextBox ID="txt_cap" runat="server" MaxLength="5" CssClass="form-control" Form_Vertical="true" />
@@ -213,7 +218,7 @@
                                                 <div class="col_full nobottommargin">
                                                     <div class="col_full nobottommargin text-lg-right text-md-right text-sm-right text-center  center text-xs-center">
                                                         <asp:LinkButton ID="btn_registrati" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
-                                                            <%=Lingua.CaricaLingua("lgl_register_registrati")%> <i class="icon-check"></i>
+                                                            <%=Lingua.CaricaLingua("lgl_register_registrati")%></i>
                                                         </asp:LinkButton>
                                                     </div>
                                                 </div>
