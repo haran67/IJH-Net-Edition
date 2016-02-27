@@ -43,6 +43,7 @@
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
                             <article class="portfolio-item clearfix box-shadow-custom">
+                                <a href="javascript:void()" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" aria-describedby="popover787516" style="position: absolute; top: 10px; right: 10px;"><i class="icon-tag"></i></a>
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <asp:Image ID="img_copertina" runat="server" />
@@ -50,17 +51,22 @@
                                     </div>
                                     <div class="portfolio-desc">
                                         <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+<!--
                                         <asp:Repeater ID="rpt_tags" runat="server" OnItemDataBound="rpt_tags_ItemDataBound" OnItemCommand="rpt_tags_ItemCommand">
                                             <ItemTemplate>
-                                                <asp:LinkButton ID="btn_tag" runat="server" CommandName="TAG" CssClass="label label-default"></asp:LinkButton>
+                                                <asp:LinkButton ID="btn_tag" runat="server" CommandName="TAG" CssClass="btn btn-default btn-xs"></asp:LinkButton>
                                             </ItemTemplate>
                                         </asp:Repeater> 
+-->
                                         <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
                                     </div>
                                 </article>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
+                    <script type="text/javascript">
+                        $('[data-toggle=popover]').popover();
+                    </script>
             </div>
             <div class="sidebar">
                 <div class="sidebar-widgets-wrap">

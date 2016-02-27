@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="div_logging" runat="server" class="slider dark patch-wallpaper" data-height-lg="550" data-height-md="550" data-height-sm="400" data-height-xs="400" data-height-xxs="500">
+    <section id="div_logging" runat="server" style="overflow: initial" class="slider dark patch-wallpaper" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
         <div class="container clearfix">
             <div class="vertical-middle center">
                 <div class="emphasis-title title-center nomargin">
@@ -16,16 +16,44 @@
                         <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
                     </h3>
                     <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
+<!--
                     <div id="div_registrati" runat="server">
                         <a href="login.aspx" class="button button-rounded button-green button-small nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
                         <a href="register.aspx" class="button button-rounded button-red button-small nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                     </div>
+-->
                 </div>
-
+                <div class="main-search box-shadow-custom" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-btn dropup">
+                            <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <div class="input-group-btn dropup">
+                            <button type="button" class="btn btn-default dropdown-toggle noradius" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="nome, strumento...">
+                        <div class="input-group-btn ">
+                            <button type="button" class="btn btn-default"><i class="icon-search"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>    
-        
     <section id="div_logged" runat="server" class="page-title page-title-dark page-title-video page-title-center patch-wallpaper" data-height-lg="450" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="250">
         <div class="video-wrap" style="height: 100%;">
             <video id="slide-video" preload="auto" loop >

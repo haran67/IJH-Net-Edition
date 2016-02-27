@@ -240,12 +240,8 @@
 <!--                                            </div> -->
                                         </div> 
                                     </div>
-                                    <div class="divider divider-center">
-                                        <i class="icon-circle"></i>
-                                    </div>
                                 </ItemTemplate>
                             </asp:Repeater>
-                                
                         </div>
                         
                         <!-- Visitatore -->

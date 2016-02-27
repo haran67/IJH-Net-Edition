@@ -411,6 +411,15 @@ body > form {
 
 /* customize page elements */
 
+
+.main-search {
+    margin: 30px auto 0 auto;
+    margin: 30px 15% 0 15%;
+    background: fade(lighten(@theme-color, 10), 10%);
+    border-radius: 9px;
+    padding: 2px
+}
+
 .citazione {
     position: relative;
     margin-left: 15%;
@@ -529,6 +538,9 @@ body > form {
     .gradient(@menu-base-color, @menu-base-color, lighten(@menu-base-color, 3));
 }
 
+
+/* CUSTOM TOP CART */
+
 .dark #top-cart .top-cart-content, .dark #primary-menu:not(.not-dark) ul ul,
 .dark #primary-menu:not(.not-dark) ul li .mega-menu-content,
 #primary-menu.dark ul ul,
@@ -543,6 +555,81 @@ body > form {
 .dark .top-cart-item { border-top-color: lighten(@menu-base-color, 5) !important; }
 
 .dark .top-cart-action { border-top-color: lighten(@menu-base-color, 5) !important; }
+
+/* CUSTOM TOP SEARCH */
+
+#top-search {
+    .form {
+        opacity: 0;
+        z-index: -2;
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+        padding: 0 15px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        -webkit-transition: opacity .3s ease-in-out;
+        -o-transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+    }
+}
+
+body.top-search-open #top-search .form {
+    opacity: 1;
+    z-index: 10;
+}
+
+#top-search {
+    .form {
+        input {
+            box-shadow: none !important;
+            pointer-events: none;
+            .border-radius(0);
+            border: 0;
+            outline: 0 !important;
+            font-size: 32px;
+            padding: 10px 80px 10px 0;
+            height: 100%;
+            background-color: transparent;
+            color: #333;
+            font-weight: 700;
+            margin-top: 0 !important;
+            font-family: @heading-font;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.full-header #top-search .form input { padding-left: 40px; }
+
+body:not(.device-sm):not(.device-xs):not(.device-xxs) .container-fullwidth #top-search .form input { padding-left: 60px; }
+
+body.top-search-open #top-search form input { pointer-events: auto; }
+
+body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header:not(.sticky-header):not(.full-header):not(.floating-header) #top-search .form input { border-bottom: 2px solid rgba(0,0,0,0.1); }
+
+#top-search .form input::-moz-placeholder {
+    color: #555;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+#top-search .form input:-ms-input-placeholder {
+    color: #555;
+    text-transform: uppercase;
+}
+
+#top-search .form input::-webkit-input-placeholder {
+    color: #555;
+    text-transform: uppercase;
+}
+
+#primary-menu .container #top-search form input,
+.sticky-header #top-search form input { border: none !important; }
+
+
+/* CUSTOM FOOTER */
 
 
 #footer.dark,
