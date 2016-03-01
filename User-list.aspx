@@ -48,6 +48,7 @@
                 <asp:Repeater ID="rpt_user" runat="server">
                     <ItemTemplate>
                         <article class="portfolio-item pf-media pf-" id="art_user" runat="server">
+                            <div class="" style="position: absolute; top: 10px; left: 10px;"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee3" style="color: #fff"></i></div>
                             <div class="portfolio-image " ID="img_copertina" runat="server">
                                 <div>
                                     <img src="images/custom/blank.png">

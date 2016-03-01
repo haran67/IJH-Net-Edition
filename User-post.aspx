@@ -9,10 +9,10 @@
     <section class="page-title page-title-dark" style="padding: 20px 0;background: url('images/profile-cover.jpg') no-repeat top center; background-size: cover">
         <div class="container clearfix" data-height-lg="500" data-height-md="500" data-height-sm="400" data-height-xs="350" data-height-xxs="300">
             <div class="profile-header">
-                <asp:Image ID="img_utente" runat="server" CssClass="mask" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter" />
-                <h1 class="topmargin-sm text-shadow">
+                <asp:Image ID="img_utente" runat="server" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter" />
+                <h1 class="topmargin-sm text-shadow" style="margin-top: 50px;">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
-                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal> - <strong style="font-weight: normal">guest</strong></span>
+                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee3" style="color: #fff"></i> | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
                 </h1>
                 <a href="#" target="_blank" style="display: inline-block">
                     <i class="i-circled i-light i-small icon-facebook"></i>
