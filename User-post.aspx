@@ -12,7 +12,7 @@
                 <asp:Image ID="img_utente" runat="server" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter" />
                 <h1 class="topmargin-sm text-shadow" style="margin-top: 50px;">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
-                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee3" style="color: #fff"></i> | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
+                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee2" style="color: #fff"></i> | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
                 </h1>
                 <a href="#" target="_blank" style="display: inline-block">
                     <i class="i-circled i-light i-small icon-facebook"></i>
