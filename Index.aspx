@@ -54,27 +54,27 @@
             </div>
         </div>
     </section>    
-    <section id="div_logged" runat="server" class="page-title page-title-dark page-title-video page-title-center patch-wallpaper" data-height-lg="450" data-height-md="450" data-height-sm="350" data-height-xs="250" data-height-xxs="250">
+    <section id="div_logged" runat="server" style="overflow: initial"  class="slider slider-video dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
+        <div class="center video-title text-shadow">
+            <h3 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h3>
+            <h2 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h2>
+            <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
+                <a href="#" id="video-slider-play"  class="button button-border button-white button-light button-small button-rounded tleft">
+                    <i class="icon-line-play nomargin"></i>
+                    <i class="icon-line-pause nomargin"></i>
+                </a>
+                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border button-white button-light button-small button-rounded tleft ">
+                    <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
+                    <i class="icon-angle-right"></i>-->
+                    <i class="icon-line-paper nomargin"></i>
+                </asp:LinkButton>
+            </span>
+        </div>
         <div class="video-wrap" style="height: 100%;">
-            <video id="slide-video" preload="auto" loop >
+            <video id="slide-video" preload="auto" loop>
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
-        </div>
-        <div class="container vertical-middle clearfix">
-            <span data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-            <h1 data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
-            <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
-            <a href="#" id="video-slider-play"  class="button button-border button-white button-light button-small button-rounded tleft">
-                <i class="icon-line-play nomargin"></i>
-                <i class="icon-line-pause nomargin"></i>
-            </a>
-            <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border button-white button-light button-small button-rounded tleft ">
-                <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
-                <i class="icon-angle-right"></i>-->
-                    <i class="icon-line-paper nomargin"></i>
-            </asp:LinkButton>
-            </span>
         </div>
     </section>
 </asp:Content>

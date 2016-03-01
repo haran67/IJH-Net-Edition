@@ -169,12 +169,6 @@
     background-color: #f4f4f4;
 }
 
-.title:first-letter {
-    font-size: 1.5em;
-    line-height: 1em;
-    padding-left: 50px;
-}
-
 
 .button-red {
     background-color: @red;
@@ -444,6 +438,13 @@ body > form {
     }
 }
 
+.user-type {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    bottom: 2em;
+}
+
 .circled {
     border-radius: 50%;
 }
@@ -506,6 +507,20 @@ body > form {
 .slider-video {
     h1, h2, h3, h4, h5 {
         line-height: 1.1em;
+    }
+    .video-title {
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,.5);
+        .author {
+            padding-bottom: .5em;
+            font-weight: 300;
+        }
+        .title {
+            padding-bottom: .5em;
+        }
     }
 }
 
