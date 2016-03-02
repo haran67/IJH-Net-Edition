@@ -190,9 +190,7 @@
                         
                         <!-- Gestione Video -->
                         <div id="div_gestione_video" runat="server">
-                            <div class="fancy-title title-dotted-border hidden">
-                                <h3><%=Lingua.CaricaLingua("lgl_profilo_tuoi_video")%></h3>
-                            </div>
+                            <h4><%=Lingua.CaricaLingua("lgl_profilo_tuoi_video")%></h4>
                             <asp:Repeater ID="rpt_video" runat="server">
                                 <ItemTemplate>
                                     <div class="col_full learfix">
@@ -249,10 +247,7 @@
                         
                         <!-- Visitatore -->
                         <div id="div_visitatore" runat="server">
-                            <div class="fancy-title title-dotted-border">
-                                <h3>
-                                    <%=Lingua.CaricaLingua("lgl_profilo_selezione_video")%></h3>
-                            </div> 
+                            <h4><%=Lingua.CaricaLingua("lgl_profilo_selezione_video")%></h4>
                             <div class="container clearfix ">
                                 <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
                                     <asp:Repeater ID="rpt_video_guest" runat="server">
