@@ -423,7 +423,7 @@
                                             <div class="col_full">
                                                 <label><asp:Literal ID="ltl_social" runat="server"></asp:Literal></label>
                                                 <asp:TextBox ID="txt_social" runat="server" MaxLength="70" CssClass="form-control"
-                                                    Form_Vertical="true" Required="false" />
+                                                    Form_Vertical="true" />
                                             </div>
                                         </ItemTemplate>
                                     </asp:Repeater>
@@ -433,7 +433,11 @@
                                         </asp:HyperLink>
                                         <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_profilo_gestisci_pubblicazione")%></h4>
                                         <p style="margin-bottom: 20px;"><%=Lingua.CaricaLingua("lgl_profilo_attiva_pubblicazione")%></p>
-                                        <strong><%=Lingua.CaricaLingua("lgl_register_profilo_pubblicato")%></strong>
+                                        <strong>
+                                            <span id="span_profilo_pubblicato">
+                                                <asp:Literal ID="ltl_profilo_pubblicato" runat="server"></asp:Literal>
+                                            </span>
+                                        </strong>
                                         <asp:CheckBox ID="chk_ut_profilo_pubblicato" CssClass="fright" style="position: relative; top: -6px" runat="server" />
                                     </div>
                                     <div class="clear"></div>
@@ -534,7 +538,7 @@
 
             checkContainer();
 
-            $('#<%=txt_descrizione_pubblica.txt_Client_Id%>').maxlength({ max: 500, feedbackText: '<%=Lingua.CaricaLingua("lgl_usati")%> {c} <%=Lingua.CaricaLingua("lgl_di")%> {m}' });
+            $('#<%=txt_descrizione_pubblica.txt_Client_Id%>').maxlength({ max: <%=max_desc%>, feedbackText: '<%=Lingua.CaricaLingua("lgl_usati")%> {c} <%=Lingua.CaricaLingua("lgl_di")%> {m}' });
 
             $("[ID='<%=chk_ut_profilo_pubblicato.ClientId%>']").bootstrapSwitch({
                 onColor: 'success',
@@ -542,6 +546,11 @@
                 labelWidth: 5,
                 onSwitchChange: function () {
                     $("#<%=profile_switcher.ClientId%>").toggleClass('alert-danger').toggleClass('alert-success')
+                    if ($("#<%=chk_ut_profilo_pubblicato.ClientId%>").is(':checked')) {
+                        $("#span_profilo_pubblicato").html('<%=Lingua.CaricaLingua("lgl_register_profilo_pubblicato")%>');
+                    } else {
+                        $("#span_profilo_pubblicato").html('<%=Lingua.CaricaLingua("lgl_register_profilo_non_pubblicato")%>');
+                    }
                     //alert($("#<%=chk_ut_profilo_pubblicato.ClientId%>").is(':checked'));
                     PageMethods.SetProfiloPubblicato($("#<%=chk_ut_profilo_pubblicato.ClientId%>").is(':checked'), PMSuccess, PMFailure);
                 }

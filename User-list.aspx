@@ -16,28 +16,37 @@
                 </div>
                 <nav>
                     <ul>
-                        <li class="current"><a href="#" data-filter="*"><%=Lingua.CaricaLingua("lgl_userlist_sfoglia_tutti")%></a></li>
+                        <li class="current">
+                            <asp:LinkButton ID="btn_tutti" runat="server">
+                                <%=Lingua.CaricaLingua("lgl_userlist_sfoglia_tutti")%>    
+                            </asp:LinkButton>
+                        </li>
                         <li>
-                            <a href="#">Categoria</a>
+                            <asp:HyperLink ID="lnk_categoria" runat="server"></asp:HyperLink>
                             <ul>
                                 <asp:Repeater ID="rpt_categorie" runat="server">
                                     <ItemTemplate>
                                         <li>
-                                            <a href="#" data-filter=".pf-" id="a_categoria" runat="server">
+                                            <asp:LinkButton ID="btn_categoria" runat="server" CommandName="GO"> 
                                                 <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
-                                            </a>
+                                            </asp:LinkButton>
                                         </li>    
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </ul>
                         </li>
+                        <li style="padding-top:5px;">
+                            <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control"
+                                Placeholder="Nominativo, luogo"></asp:TextBox>
+                        </li>
                     </ul>
                 </nav>
-                <div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
+                <div id="page-submenu-trigger">
+                    <i class="icon-reorder"></i>
+                </div>
             </div>
         </div>
     </div>
-    <!-- #page-title end -->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap" style="padding: 40px 0">
@@ -47,14 +56,18 @@
             <div id="portfolio" class="portfolio-masonry portfolio-6 clearfix">
                 <asp:Repeater ID="rpt_user" runat="server">
                     <ItemTemplate>
-                        <article class="portfolio-item pf-media pf-" id="art_user" runat="server">
+                        <article class="portfolio-item">
                             <div class="portfolio-image " ID="img_copertina" runat="server">
                                 <div>
                                     <img src="images/custom/blank.png">
                                 </div>
                                 <asp:LinkButton ID="btn_user" CommandName="USER" runat="server">
                                     <div class="portfolio-overlay">
-                                        <div class="user-type"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee2" style="color: #fff"></i></div>
+                                        <div class="user-type">
+                                            <i class="icon-facetime-video" style="color: #fff" id="i_expo" runat="server"></i> 
+                                            <i class="icon-eye-open" style="color: #fff" id="i_view" runat="server"></i> 
+                                            <i class="icon-coffee2" style="color: #fff" id="i_guest" runat="server"></i>
+                                        </div>
                                         <div class="portfolio-desc">
                                             <h3>
                                                 <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
@@ -71,51 +84,49 @@
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
-            <div class="clear"></div>
-            <div class="row" style="margin-top:10px;">
+            <div class="clear">
+            </div>
+            <div class="row" style="margin-top: 10px;">
                 <div class="col-lg-12">
                     <pager:MesysPager ID="pager" runat="server" OnCommand="pager_Command" PageClause="Pagina"
                         OfClause="di" GenerateGoToSection="false" GenerateToolTips="false" PageSize="3"
                         Visible="false" />
                 </div>
             </div>
-
-            <!-- Portfolio Script
-                        ============================================= -->
-            <script type="text/javascript">
-
-                jQuery(window).load(function () {
-
-                    var $container = $('#portfolio');
-
-                    $container.isotope({ transitionDuration: '0.65s' });
-
-//                    $('#page-menu a').click(function () {
-//                        $('#page-menu li').removeClass('current');
-//                        $(this).parent('li').addClass('current');
-//                        var selector = $(this).attr('data-filter');
-//                        $container.isotope({ filter: selector });
-//                        return false;
-//                    });
-
-                    $('#portfolio-shuffle').click(function () {
-                        $container.isotope('updateSortData').isotope({
-                            sortBy: 'random'
-                        });
-                    });
-
-                    $(window).resize(function () {
-                        $container.isotope('layout');
-                    });
-
-                });
-
-            </script>
-            <!-- Portfolio Script End -->
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
+    <!-- Portfolio Script
+        ============================================= -->
     <script type="text/javascript">
+
+        function init_js() {
+            var $container = $('#portfolio');
+
+            $container.isotope({ transitionDuration: '0.65s' });
+
+            $('#portfolio-shuffle').click(function () {
+                $container.isotope('updateSortData').isotope({
+                    sortBy: 'random'
+                });
+            });
+
+            $(window).resize(function () {
+                $container.isotope('layout');
+            });
+        }
+
+        $(document).ready(function () {
+            //init_js();
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
+        });
+
+        function endRequestHandler(sender, args) {
+            alert("");
+            //init_js();
+        }
+
     </script>
+    <!-- Portfolio Script End -->
 </asp:Content>

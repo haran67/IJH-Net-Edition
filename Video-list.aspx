@@ -18,7 +18,7 @@
                     <ul>
                         <li class="current"><asp:LinkButton id="lnk_categorie_tutti" runat="server"><%=Lingua.CaricaLingua("lgl_videolist_sfoglia_tutti")%></asp:LinkButton> </li>
                         <li>
-                            <a href="#">Categoria</a>
+                            <asp:HyperLink ID="lnk_categoria" runat="server"></asp:HyperLink>
                             <ul>
                                 <asp:Repeater ID="rpt_categorie" runat="server">
                                     <ItemTemplate>

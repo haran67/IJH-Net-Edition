@@ -34,8 +34,8 @@
     <div class="content-wrap nobottompadding alt">
         <div class="container clearfix">
             <div class="postcontent col_last standard-portfolio">
-                <h3><i class="i-circled i-medium-custom icon-play" style="background-color: #557d75;"></i><%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>
-                <div id="portfolio" class="portfolio-3 clearfix">
+                <h3 id="h_video" runat="server"><i class="i-circled i-medium-custom icon-play" style="background-color: #557d75;"></i><%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>
+                <div id="portfolio" class="portfolio-<%=pf_num%> clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
                             <article class="portfolio-item clearfix box-shadow-custom">

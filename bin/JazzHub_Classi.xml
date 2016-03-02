@@ -186,9 +186,25 @@ JazzHub_Classi
 	<summary>
  _Categoria 
  </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.Categoria_Desc">
+	<summary>
+ _Categoria_Desc 
+ </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.Tags">
 	<summary>
  _Tags 
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Categoria">
+	<summary>
+ _Categoria 
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Categoria_Desc">
+	<summary>
+ _Categoria_Desc 
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Campo_libero">
+	<summary>
+ _Campo_libero 
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.ErrorePagina">
 	<summary>
