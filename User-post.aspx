@@ -12,7 +12,12 @@
                 <asp:Image ID="img_utente" runat="server" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter" />
                 <h1 class="text-shadow" data-class-lg="topmargin-sm" data-class-md="topmargin-sm" data-class-sm="topmargin-sm" data-class-xs="notopmargin" data-class-xxs="notopmargin">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
-                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee2" style="color: #fff"></i> | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
+                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300">
+                        <i class="icon-facetime-video" style="color: #fff" id="i_expo" runat="server"></i> 
+                        <i class="icon-eye-open" style="color: #fff" id="i_view" runat="server"></i> 
+                        <i class="icon-coffee2" style="color: #fff" id="i_guest" runat="server"></i>
+                         | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
+                    </span>
                 </h1>
                 <div style="margin-top: 15px">
                 <asp:Repeater ID="rpt_social" runat="server">
