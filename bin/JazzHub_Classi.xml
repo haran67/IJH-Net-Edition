@@ -194,6 +194,10 @@ JazzHub_Classi
 	<summary>
  _Tags 
  </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.Campo_libero">
+	<summary>
+ _Campo_libero 
+ </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Categoria">
 	<summary>
  _Categoria 

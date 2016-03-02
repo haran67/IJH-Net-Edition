@@ -212,7 +212,7 @@
                                             <th style="width:20%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_email")%></th>
                                             <th style="width:20%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_stato")%></th>
                                             <th style="width:10%;"><%=Lingua.CaricaLingua("lgl_amministrazione_utente_video")%></th>
-                                            <th style="width:1px;"></th>
+                                            <th style="width:1px;" colspan="2"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -228,6 +228,11 @@
                                                     <td>
                                                         <asp:LinkButton ID="btn_go" runat="server" CssClass="btn btn-primary btn-xs" CommandName="GO">
                                                             <%=Lingua.CaricaLingua("lgl_amministrazione_utente_dettagli")%>
+                                                        </asp:LinkButton>
+                                                    </td>
+                                                    <td>
+                                                        <asp:LinkButton ID="btn_mail" runat="server" CssClass="btn btn-warning btn-xs" CommandName="SOLLECITA">
+                                                            <%=Lingua.CaricaLingua("lgl_amministrazione_utente_sollecito")%>
                                                         </asp:LinkButton>
                                                     </td>
                                                 </tr>

@@ -55,6 +55,10 @@
                                                         <asp:LinkButton ID="btnAccedi" runat="server" CssClass="button button-rounded button-background nomargin">
                                                             <%=Lingua.CaricaLingua("lgl_index_accedi")%>
                                                         </asp:LinkButton>
+                                                        <div class="checkbox-custom checkbox-inline checkbox-primary pull-left">
+                                                            <asp:CheckBox ID="chk_ricordami" runat="server"/>
+                                                            <label for="inputCheckbox"><%=Lingua.CaricaLingua("lgl_ricordami")%></label>
+                                                        </div>
                                                     </div>
                                                     <div class="col_full nobottommargin">
                                                         <a href="#" class="tab-linker" rel="1">

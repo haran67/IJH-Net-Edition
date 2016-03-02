@@ -31,6 +31,10 @@
                                 </asp:Repeater>
                             </ul>
                         </li>
+                        <li style="padding-top:5px;">
+                            <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control"
+                                Placeholder="Titolo, Artista"></asp:TextBox>
+                        </li>
                     </ul>
                 </nav>
                 <div id="page-submenu-trigger"><i class="icon-reorder"></i></div>

@@ -1398,6 +1398,14 @@ rpt_categorie control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Video_list.txt_ricerca">
+	<summary>
+txt_ricerca control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Video_list.rpt_video">
 	<summary>
 rpt_video control.
@@ -1969,6 +1977,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.fLogin.btnAccedi">
 	<summary>
 btnAccedi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.fLogin.chk_ricordami">
+	<summary>
+chk_ricordami control.
 </summary>
 	<remarks>
 Auto-generated field.
