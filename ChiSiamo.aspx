@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="slider" class="slider dark patch-wallpaper" data-height-lg="350" data-height-md="350" data-height-sm="300" data-height-xs="300" data-height-xxs="250">
         <div class="container vertical-middle center clearfix text-uppercase text-shadow">
-            <div class="heading-block nobottomborder ">
+            <div class="heading-block nobottomborder bottommargin-sm">
                 <h1>
                     <div class="text-rotater shadow text-shadow" data-separator="|" data-rotate="flipInX" data-speed="3500" style="color: #ccc">
                         <%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%>
@@ -18,13 +18,18 @@
                     </div>
                 </h1>
             </div>
+            <div id="div_registrati" runat="server">
+                <a href="login.aspx" class="button button-rounded button-green nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
+                     <span>oppure</span> 
+                <a href="register.aspx" class="button button-rounded button-red nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+            </div>
         </div>
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-<div class="content-wrap  nopadding">
+<div class="content-wrap nopadding">
     <div class="row common-height clearfix">
-        <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-1.jpg') center center no-repeat; background-size: cover;">
+        <div class="col-sm-5 col-padding dark chisiamo" >
             <div class="heading-block nobottomborder tright text-shadow">
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h2>
             </div>
@@ -47,13 +52,13 @@
         </a>
     </div>
     <div class="row common-height alt clearfix">
-        <div class="col-sm-5 col-padding dark " style="background: url('images/custom/jazz-bg-2.jpg') center center no-repeat; background-size: cover;">
-            <div class="heading-block nobottomborder tright text-shadow" >
+        <div class="col-sm-5 col-padding dark opportunita" data-class-lg="fright" data-class-md="fright" data-class-sm="fright" data-class-xs="nofloat" data-class-xxs="nofloat">
+            <div class="heading-block nobottomborder tleft text-shadow" >
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h2>
             </div>
         </div>
-        <div class="col-sm-7 col-padding ">
-            <div class="row clearfix tleft">
+        <div class="col-sm-7 col-padding" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="nofloat" data-class-xxs="nofloat">
+            <div class="row clearfix tright">
                 <div class="col_full">
                     <h3 style="font-weight: normal">
                         <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
@@ -77,7 +82,7 @@
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"  id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
     </div>
     <div class="row common-height clearfix">
-        <div class="col-sm-5 col-padding dark" style="background: url('images/custom/jazz-bg-3.jpg') center center no-repeat; background-size: cover;">
+        <div class="col-sm-5 col-padding dark partecipare">
             <div class="heading-block nobottomborder tright text-shadow">
                 <h2><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h2>
             </div>
@@ -90,7 +95,7 @@
             </div>
         </div>
     </div>
-        <div class="section dark nomargin clearfix parallax patch-wallpaper" data-stellar-background-ratio="0.3">
+    <div class="section dark nomargin clearfix parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <div class="container">
             <div class="heading-block nobottomborder center">
                 <h1><%=Lingua.CaricaLingua("lgl_chisiamo_tariffe")%></h1>

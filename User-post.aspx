@@ -10,7 +10,7 @@
         <div class="container clearfix" data-height-lg="500" data-height-md="500" data-height-sm="400" data-height-xs="350" data-height-xxs="300">
             <div class="profile-header">
                 <asp:Image ID="img_utente" runat="server" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter" />
-                <h1 class="topmargin-sm text-shadow" style="margin-top: 50px;">
+                <h1 class="text-shadow" data-class-lg="topmargin-sm" data-class-md="topmargin-sm" data-class-sm="topmargin-sm" data-class-xs="notopmargin" data-class-xxs="notopmargin">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                     <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300">
                         <i class="icon-facetime-video" style="color: #fff" id="i_expo" runat="server"></i> 
@@ -19,6 +19,7 @@
                          | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
                     </span>
                 </h1>
+                <div style="margin-top: 15px">
                 <asp:Repeater ID="rpt_social" runat="server">
                     <ItemTemplate>
                         <a href="#" target="_blank" style="display: inline-block" id="a_link" runat="server">
@@ -26,6 +27,7 @@
                         </a>
                     </ItemTemplate>
                 </asp:Repeater>
+                </div>
             </div>
         </div>
     </section>
@@ -56,19 +58,18 @@
                 <script type="text/javascript">
                     $('[data-toggle=popover]').popover();
                 </script>
-                <h3 id="h_when" runat="server"><i class="i-circled i-medium-custom icon-sitemap" style="background-color: #557d75;"></i>When</h3>
-                <div id="p_when" runat="server" class="panel-custom box-shadow-custom">
-                    <asp:Repeater ID="rpt_when" runat="server">
-                        <ItemTemplate>
-                            <p class="panel-custom box-shadow-custom">
-                                <asp:Literal ID="ltl_when_quando" runat="server"></asp:Literal>
-                                &nbsp;-&nbsp;
-                                <asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal>
-                                &nbsp;-&nbsp;
-                                <asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal>
-                            </p>
-                        </ItemTemplate> 
-                    </asp:Repeater> 
+                <div class="col_full topmargin-sm">
+                    <h3 id="h_when" runat="server"><i class="i-circled i-medium-custom icon-sitemap" style="background-color: #557d75;"></i>When</h3>
+                    <div id="p_when" runat="server" class="panel-custom box-shadow-custom">
+                        <asp:Repeater ID="rpt_when" runat="server">
+                            <ItemTemplate>
+                                <div class="date-list">
+                                    <h4 class="nomargin"><asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal> - <small><asp:Literal ID="ltl_when_quando" runat="server"></asp:Literal></small></h4>
+                                    <p class="nomargin"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
+                                </div>
+                            </ItemTemplate> 
+                        </asp:Repeater> 
+                    </div>
                 </div>
             </div>
             <div class="sidebar">

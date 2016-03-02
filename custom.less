@@ -86,6 +86,21 @@
 
 /* custom helper class */
 
+.date-list {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #efefef;
+    &:last-child {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+}
+
+.nofloat {
+    float: none;
+}
+
 #page-menu-wrap {
     background-color: lighten(@menu-base-color, 5);
 }
@@ -232,11 +247,6 @@ body > form {
 #wrapper {
     background: transparent;
 }
-//#footer.dark {
-//    background-color: rgba(0,0,0,.25);
-//}
-
-
 
 .full-width-element {
     width: 100%;
@@ -362,7 +372,7 @@ body > form {
     width: 100%;
     border-bottom: 0;
 }
-        .tab-nav.nav-justified > li {
+.tab-nav.nav-justified > li {
     float: none;
 }
 .tab-nav.nav-justified > li > a {
@@ -404,6 +414,21 @@ body > form {
 }
 
 /* customize page elements */
+
+.chisiamo {
+    background: url('images/custom/jazz-bg-1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.opportunita {
+    background: url('images/custom/jazz-bg-2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.partecipare {
+    background: url('images/custom/jazz-bg-3.jpg') center center no-repeat;
+    background-size: cover;
+}
 
 
 .main-search {
@@ -838,10 +863,10 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
         .top-cart-content {
             top: 21px;
         }
+        
     }
 
 }
-
 
 .i-medium-custom {
     position: relative;
