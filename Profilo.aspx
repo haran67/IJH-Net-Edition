@@ -449,63 +449,63 @@
                             </div>
                         </div>
                         <!-- FINE modifica profilo pubblico -->            
-                        
+                        <div class="col_full">
+                            <hr>            
+                        </div>
                         <!-- Calendario Eventi -->
                         <div id="div_profilo_when" runat="server">
                             <div class="col_full">
-                                <label><%=Lingua.CaricaLingua("lgl_profilo_appuntamento")%></label>
-                            </div> 
-                            <div class="col_full">
-                                <div class="col_full">
-                                    <div class="col-md-1">
-                                        <div style="padding-top:20px;">
-                                            <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="button button-rounded button-danger">
-                                                ADD
-                                            </asp:LinkButton>
-                                        </div>
-                                    </div> 
-                                    <div class="col-md-3">
-                                        <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
-                                            Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy hh:mm" />
-                                    </div>
-                                    <div class="col-md-4">
-                                        <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                            Form_Vertical="true" Required="false" />
-                                    </div>
-                                    <div class="col-md-4">
-                                        <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
-                                            Form_Vertical="true" Required="false" />
-                                    </div>
-                                </div>     
-                                <asp:Repeater ID="rpt_when" runat="server">
-                                    <ItemTemplate>
-                                        <div class="col_full">
-                                            <div class="col-md-1">
-                                                <div style="padding-top:20px;">
-                                                    <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CommandName="MOD">
-                                                        <i class="icon-save"></i>
-                                                    </asp:LinkButton>
-                                                    <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL">
-                                                        <i class="icon-trash"></i>
-                                                    </asp:LinkButton>
-                                                </div>
-                                            </div> 
-                                            <div class="col-md-3">
-                                                <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
-                                                    Form_Vertical="true" Required="false" Label="" />
-                                            </div>
-                                            <div class="col-md-4">
-                                                <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                                    Form_Vertical="true" Required="false" />
-                                            </div>
-                                            <div class="col-md-4">
-                                                <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
-                                                    Form_Vertical="true" Required="false" />
-                                             </div>
-                                        </div>
-                                    </ItemTemplate>
-                                </asp:Repeater>
+                                <h4><%=Lingua.CaricaLingua("lgl_profilo_appuntamento")%></h4>
                             </div>
+                            <div class="panel panel-default clearfix" style="padding-top: 10px;">
+                                <div class="col-md-2">
+                                    <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
+                                        Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy hh:mm" />
+                                </div>
+                                <div class="col-md-4">
+                                    <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                        Form_Vertical="true" Required="false" />
+                                </div>
+                                <div class="col-md-4">
+                                    <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
+                                        Form_Vertical="true" Required="false" />
+                                </div>
+                                <div class="col-md-2">
+                                    <div style="padding-top:24px;">
+                                        <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="fright button button-rounded button-small button-success">
+                                            <i class="icon-plus nomargin"></i>
+                                        </asp:LinkButton>
+                                    </div>
+                                </div> 
+                            </div>
+                            <asp:Repeater ID="rpt_when" runat="server">
+                                <ItemTemplate>
+                                    <div class="col_full">
+                                        <div class="col-md-2">
+                                            <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
+                                                Form_Vertical="true" Required="false" Label="" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                                Form_Vertical="true" Required="false" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
+                                                Form_Vertical="true" Required="false" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div style="padding-top:15px;">
+                                                <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL" CssClass="fright button button-rounded button-small button-danger">
+                                                    <i class="icon-remove nomargin"></i>
+                                                </asp:LinkButton>
+                                                <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CommandName="MOD" CssClass="fright button button-rounded button-small button-success">
+                                                    <i class="icon-save nomargin"></i>
+                                                </asp:LinkButton>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </div> 
                         <!-- FINE Calendario Eventi -->            
                     </div>
