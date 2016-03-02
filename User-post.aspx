@@ -10,19 +10,11 @@
         <div class="container clearfix" data-height-lg="500" data-height-md="500" data-height-sm="400" data-height-xs="350" data-height-xxs="300">
             <div class="profile-header">
                 <asp:Image ID="img_utente" runat="server" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter" />
-                <h1 class="topmargin-sm text-shadow" style="margin-top: 50px;">
+                <h1 class="text-shadow" data-class-lg="topmargin-sm" data-class-md="topmargin-sm" data-class-sm="topmargin-sm" data-class-xs="notopmargin" data-class-xxs="notopmargin">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                     <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee2" style="color: #fff"></i> | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
                 </h1>
-                <a href="#" target="_blank" style="display: inline-block">
-                    <i class="i-circled i-light i-small icon-facebook"></i>
-                </a>
-                <a href="#" target="_blank" style="display: inline-block">
-                    <i class="i-circled i-light i-small icon-twitter"></i>
-                </a>
-                <a href="#" target="_blank" style="display: inline-block">
-                    <i class="i-circled i-light i-small icon-linkedin"></i>
-                </a>
+                <div style="margin-top: 15px">
                 <asp:Repeater ID="rpt_social" runat="server">
                     <ItemTemplate>
                         <a href="#" target="_blank" style="display: inline-block" id="a_link" runat="server">
@@ -30,6 +22,7 @@
                         </a>
                     </ItemTemplate>
                 </asp:Repeater>
+                </div>
             </div>
         </div>
     </section>
@@ -51,22 +44,28 @@
                                     </div>
                                     <div class="portfolio-desc">
                                         <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-<!--
-                                        <asp:Repeater ID="rpt_tags" runat="server" OnItemDataBound="rpt_tags_ItemDataBound" OnItemCommand="rpt_tags_ItemCommand">
-                                            <ItemTemplate>
-                                                <asp:LinkButton ID="btn_tag" runat="server" CommandName="TAG" CssClass="btn btn-default btn-xs"></asp:LinkButton>
-                                            </ItemTemplate>
-                                        </asp:Repeater> 
--->
                                         <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
                                     </div>
                                 </article>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
-                    <script type="text/javascript">
-                        $('[data-toggle=popover]').popover();
-                    </script>
+                <script type="text/javascript">
+                    $('[data-toggle=popover]').popover();
+                </script>
+                <div class="col_full topmargin-sm">
+                    <h3 id="h_when" runat="server"><i class="i-circled i-medium-custom icon-sitemap" style="background-color: #557d75;"></i>When</h3>
+                    <div id="p_when" runat="server" class="panel-custom box-shadow-custom">
+                        <asp:Repeater ID="rpt_when" runat="server">
+                            <ItemTemplate>
+                                <div class="date-list">
+                                    <h4 class="nomargin"><asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal> - <small><asp:Literal ID="ltl_when_quando" runat="server"></asp:Literal></small></h4>
+                                    <p class="nomargin"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
+                                </div>
+                            </ItemTemplate> 
+                        </asp:Repeater> 
+                    </div>
+                </div>
             </div>
             <div class="sidebar">
                 <div class="sidebar-widgets-wrap">
@@ -96,21 +95,13 @@
                         </div>
                     </div>
                         
-                    <h3><i class="i-circled i-medium-custom icon-tags" style="background-color: #557d75;"></i>What</h3>
-                    <p class="panel-custom box-shadow-custom">
-                        <a class="label label-primary" href="#">Composizione originale</a>
-
-                        <a class="label label-primary" href="#">Latin jazz</a>
-
-                        <a class="label label-primary" href="#">Nu jazz</a>
-
-                        <a class="label label-primary" href="#">Chitarra acustica</a>
-
-                        <a class="label label-primary" href="#">Fisarmonica</a>
-
-                        <a class="label label-primary" href="#">Organo Hammond</a>
-
-                        <a class="label label-primary" href="#">Pianoforte</a>
+                    <h3 id="h_tag" runat="server"><i class="i-circled i-medium-custom icon-tags" style="background-color: #557d75;"></i>What</h3>
+                    <p id="p_tag" runat="server" class="panel-custom box-shadow-custom">
+                        <asp:Repeater ID="rpt_tags" runat="server" OnItemDataBound="rpt_tags_ItemDataBound" OnItemCommand="rpt_tags_ItemCommand">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="btn_tag" runat="server" CommandName="TAG" CssClass="label label-primary"></asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </p>
                         
                     <h3 id="h_addr" runat="server"><i class="i-circled i-medium-custom icon-map-marker" style="background-color: #557d75;"></i>Where</h3>

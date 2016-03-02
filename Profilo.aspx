@@ -40,7 +40,7 @@
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
                         </div>
-                            <div class="alert alert-success clearfix" id="div_paga" runat="server" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
+                        <div class="alert alert-success clearfix" id="div_paga" runat="server" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
                             <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><%=Lingua.CaricaLingua("lgl_profilo_paga_scegli")%></strong>
                                 <hr class="hidden" data-class-lg="hidden" data-class-md="hidden" data-class-sm="hidden" data-class-xs="not-hidden" data-class-xxs="not-hidden">
@@ -63,6 +63,9 @@
                             </li>
                             <li id="li_pubblico" runat="server">
                                 <asp:LinkButton ID="btn_profilo_pubblico" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_pubblico")%></asp:LinkButton>
+                            </li>
+                            <li id="li_when" runat="server">
+                                <asp:LinkButton ID="btn_profilo_when" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_when")%></asp:LinkButton>
                             </li>
                         </ul>
                         <!-- FINE tab di navigazione -->
@@ -443,6 +446,64 @@
                         </div>
                         <!-- FINE modifica profilo pubblico -->            
                         
+                        <!-- Calendario Eventi -->
+                        <div id="div_profilo_when" runat="server">
+                            <div class="col_full">
+                                <label><%=Lingua.CaricaLingua("lgl_profilo_appuntamento")%></label>
+                            </div> 
+                            <div class="col_full">
+                                <div class="col_full">
+                                    <div class="col-md-1">
+                                        <div style="padding-top:20px;">
+                                            <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="button button-rounded button-danger">
+                                                ADD
+                                            </asp:LinkButton>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-3">
+                                        <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
+                                            Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy hh:mm" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                            Form_Vertical="true" Required="false" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
+                                            Form_Vertical="true" Required="false" />
+                                    </div>
+                                </div>     
+                                <asp:Repeater ID="rpt_when" runat="server">
+                                    <ItemTemplate>
+                                        <div class="col_full">
+                                            <div class="col-md-1">
+                                                <div style="padding-top:20px;">
+                                                    <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CommandName="MOD">
+                                                        <i class="icon-save"></i>
+                                                    </asp:LinkButton>
+                                                    <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL">
+                                                        <i class="icon-trash"></i>
+                                                    </asp:LinkButton>
+                                                </div>
+                                            </div> 
+                                            <div class="col-md-3">
+                                                <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
+                                                    Form_Vertical="true" Required="false" Label="" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                                    Form_Vertical="true" Required="false" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
+                                                    Form_Vertical="true" Required="false" />
+                                             </div>
+                                        </div>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
+                        </div> 
+                        <!-- FINE Calendario Eventi -->            
                     </div>
                 </div>
             </div>
