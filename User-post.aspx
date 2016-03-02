@@ -14,15 +14,6 @@
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                     <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300"><i class="icon-facetime-video" style="color: #fff"></i> <i class="icon-eye-open" style="color: #fff"></i> <i class="icon-coffee2" style="color: #fff"></i> | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></span>
                 </h1>
-                <a href="#" target="_blank" style="display: inline-block">
-                    <i class="i-circled i-light i-small icon-facebook"></i>
-                </a>
-                <a href="#" target="_blank" style="display: inline-block">
-                    <i class="i-circled i-light i-small icon-twitter"></i>
-                </a>
-                <a href="#" target="_blank" style="display: inline-block">
-                    <i class="i-circled i-light i-small icon-linkedin"></i>
-                </a>
                 <asp:Repeater ID="rpt_social" runat="server">
                     <ItemTemplate>
                         <a href="#" target="_blank" style="display: inline-block" id="a_link" runat="server">
@@ -51,22 +42,29 @@
                                     </div>
                                     <div class="portfolio-desc">
                                         <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-<!--
-                                        <asp:Repeater ID="rpt_tags" runat="server" OnItemDataBound="rpt_tags_ItemDataBound" OnItemCommand="rpt_tags_ItemCommand">
-                                            <ItemTemplate>
-                                                <asp:LinkButton ID="btn_tag" runat="server" CommandName="TAG" CssClass="btn btn-default btn-xs"></asp:LinkButton>
-                                            </ItemTemplate>
-                                        </asp:Repeater> 
--->
                                         <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
                                     </div>
                                 </article>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
-                    <script type="text/javascript">
-                        $('[data-toggle=popover]').popover();
-                    </script>
+                <script type="text/javascript">
+                    $('[data-toggle=popover]').popover();
+                </script>
+                <h3 id="h_when" runat="server"><i class="i-circled i-medium-custom icon-sitemap" style="background-color: #557d75;"></i>When</h3>
+                <div id="p_when" runat="server" class="panel-custom box-shadow-custom">
+                    <asp:Repeater ID="rpt_when" runat="server">
+                        <ItemTemplate>
+                            <p class="panel-custom box-shadow-custom">
+                                <asp:Literal ID="ltl_when_quando" runat="server"></asp:Literal>
+                                &nbsp;-&nbsp;
+                                <asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal>
+                                &nbsp;-&nbsp;
+                                <asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal>
+                            </p>
+                        </ItemTemplate> 
+                    </asp:Repeater> 
+                </div>
             </div>
             <div class="sidebar">
                 <div class="sidebar-widgets-wrap">
@@ -96,21 +94,13 @@
                         </div>
                     </div>
                         
-                    <h3><i class="i-circled i-medium-custom icon-tags" style="background-color: #557d75;"></i>What</h3>
-                    <p class="panel-custom box-shadow-custom">
-                        <a class="label label-primary" href="#">Composizione originale</a>
-
-                        <a class="label label-primary" href="#">Latin jazz</a>
-
-                        <a class="label label-primary" href="#">Nu jazz</a>
-
-                        <a class="label label-primary" href="#">Chitarra acustica</a>
-
-                        <a class="label label-primary" href="#">Fisarmonica</a>
-
-                        <a class="label label-primary" href="#">Organo Hammond</a>
-
-                        <a class="label label-primary" href="#">Pianoforte</a>
+                    <h3 id="h_tag" runat="server"><i class="i-circled i-medium-custom icon-tags" style="background-color: #557d75;"></i>What</h3>
+                    <p id="p_tag" runat="server" class="panel-custom box-shadow-custom">
+                        <asp:Repeater ID="rpt_tags" runat="server" OnItemDataBound="rpt_tags_ItemDataBound" OnItemCommand="rpt_tags_ItemCommand">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="btn_tag" runat="server" CommandName="TAG" CssClass="label label-primary"></asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </p>
                         
                     <h3 id="h_addr" runat="server"><i class="i-circled i-medium-custom icon-map-marker" style="background-color: #557d75;"></i>Where</h3>
