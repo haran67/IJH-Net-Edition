@@ -1822,6 +1822,14 @@ btn_cerca control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Amministrazione.btn_operazione">
+	<summary>
+btn_operazione control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Amministrazione.rpt_video">
 	<summary>
 rpt_video control.
@@ -3630,14 +3638,6 @@ div_profilo_when control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Profilo.btn_salva_profilo_when">
-	<summary>
-btn_salva_profilo_when control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.Profilo.txt_uw_quando">
 	<summary>
 txt_uw_quando control.
@@ -3657,6 +3657,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Profilo.txt_uw_location">
 	<summary>
 txt_uw_location control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.btn_salva_profilo_when">
+	<summary>
+btn_salva_profilo_when control.
 </summary>
 	<remarks>
 Auto-generated field.

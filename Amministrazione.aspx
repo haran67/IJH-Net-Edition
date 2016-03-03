@@ -132,6 +132,9 @@
                                             </div>
                                             <asp:Button ID="btn_cerca" runat="server" CssClass="btn btn-default" />
                                         </div>
+                                        <div class="navbar-form navbar-right nobottommargin" role="search">
+                                            <asp:Button ID="btn_operazione" runat="server" CssClass="btn btn-danger" Text="ONE SHOT" />
+                                        </div>
                                     </div><!-- /.navbar-collapse -->
                                 </div><!-- /.container-fluid -->
                             </nav>
