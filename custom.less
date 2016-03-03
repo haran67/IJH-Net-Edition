@@ -237,7 +237,8 @@
 
 }
 body {
-    background: rgb(30, 38, 48) url("images/custom/patch-wallpaper-lines.png") center center;
+//    background: rgb(30, 38, 48) url("images/custom/patch-wallpaper-lines.png") center center;
+    background: rgb(30, 38, 48);
 
 }
 
@@ -517,6 +518,17 @@ body > form {
     background-color: rgba(255,255,255,0.9);
 }
 
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:0;
+    background: url('images/grid.png') repeat;
+    background-color: fade(@theme-color,35%);
+}
+
 .video-wrap {
     height: 100%;
     .slider-video & {
@@ -788,10 +800,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 
 #video-slider-play.video-played i:nth-of-type(2) { display: inline-block; }
 
-//.portfolio-masonry .portfolio-item .portfolio-image {     <-----\
-//    height: 150px !important;                             <----- test per allineamento tile masonry
-//}                                                         <-----/
-
 .standard-portfolio {
     .portfolio-desc {
         overflow: hidden;
@@ -804,11 +812,9 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
             text-transform: capitalize;
         }
         span {
-            position: absolute;
+            height: 21px;
             overflow: hidden;
             height: 1.5em;
-            bottom: 15px;
-            left: 15px;
             text-transform: capitalize;
             &:after{
                 content:"..."
@@ -818,16 +824,15 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 }
 .standard-portfolio .wide {
     .portfolio-desc {
-        height: 210px;
+        height: 202px;
         padding: 20px !important;
         h3 {
             font-size: 3rem !important;
-            height: 120px;
+            height: 140px;
         }
         span {
+            height: 30px;
             font-size: 2rem !important;
-            bottom: 20px;
-            left: 20px;
         }
     }
 }

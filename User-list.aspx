@@ -63,17 +63,15 @@
                                 </div>
                                 <asp:LinkButton ID="btn_user" CommandName="USER" runat="server">
                                     <div class="portfolio-overlay">
-                                        <div class="user-type">
-                                            <i class="icon-facetime-video" style="color: #fff" id="i_expo" runat="server"></i> 
-                                            <i class="icon-eye-open" style="color: #fff" id="i_view" runat="server"></i> 
-                                            <i class="icon-coffee2" style="color: #fff" id="i_guest" runat="server"></i>
-                                        </div>
                                         <div class="portfolio-desc">
                                             <h3>
                                                 <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
                                             </h3>
                                             <span>
-                                                <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br>
+                                                <i class="icon-facetime-video" style="color: #fff; position: relative; top: 1px" id="i_expo" runat="server"></i> 
+                                                <i class="icon-eye-open" style="color: #fff; position: relative; top: 1px" id="i_view" runat="server"></i> 
+                                                <i class="icon-coffee2" style="color: #fff; position: relative; top: 1px" id="i_guest" runat="server"></i>
+                                                 | <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br>
                                             </span>
                                         </div>
 
