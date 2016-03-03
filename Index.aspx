@@ -57,7 +57,7 @@
                 <div class="main-search notopmargin">
                     <div class="input-group input-group-lg">
                         <div class="input-group-btn">
-                            <button type="button" style="border-right: none;" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                            <button type="button" style="border: none;" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
                             <ul class="dropdown-menu dropdown-menu-left">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -67,7 +67,7 @@
                             </ul>
                         </div>
                         <div class="input-group-btn">
-                            <button type="button" style="border-right: none;" class="btn btn-default dropdown-toggle noradius" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                            <button type="button" style="border: none;" class="btn btn-default dropdown-toggle noradius" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
                             <ul class="dropdown-menu dropdown-menu-left">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -76,9 +76,9 @@
                                 <li><a href="#">Separated link</a></li>
                             </ul>
                         </div>
-                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="nome, strumento...">
+                        <input type="text" class="form-control" style="border: none; box-shadow: none; border-bottom: dashed 1px #ccc" aria-label="Text input with segmented button dropdown" placeholder="nome, strumento...">
                         <div class="input-group-btn ">
-                            <button type="button" class="btn btn-default"><i class="icon-search"></i></button>
+                            <button type="button" style="border: none" class="btn btn-default"><i class="icon-search"></i></button>
                         </div>
                     </div>
                 </div>
