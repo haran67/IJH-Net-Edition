@@ -55,30 +55,27 @@
         <section class="nomargin nopadding" style="padding: 20px 0 !important;"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
             <div class="container clearfix">
                 <div class="main-search notopmargin">
-                    <div class="input-group input-group-lg">
-                        <div class="input-group-btn">
-                            <button type="button" style="border: none;" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-                            <ul class="dropdown-menu dropdown-menu-left">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
+                    <div class="col_three_fifth nobottommargin">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-btn">
+                                <button type="button" style="border: none;" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control" style="border: none; box-shadow: none; border-bottom: dashed 1px #ccc" aria-label="Text input with segmented button dropdown" placeholder="nome, strumento...">
+                            <div class="input-group-btn hidden">
+                                <button type="button" style="border: none" class="btn btn-default"><i class="icon-search"></i></button>
+                            </div>
                         </div>
-                        <div class="input-group-btn">
-                            <button type="button" style="border: none;" class="btn btn-default dropdown-toggle noradius" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-                            <ul class="dropdown-menu dropdown-menu-left">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>
-                        <input type="text" class="form-control" style="border: none; box-shadow: none; border-bottom: dashed 1px #ccc" aria-label="Text input with segmented button dropdown" placeholder="nome, strumento...">
-                        <div class="input-group-btn ">
-                            <button type="button" style="border: none" class="btn btn-default"><i class="icon-search"></i></button>
+                    </div>
+                    <div class="col_two_fifth col_last nobottommargin">
+                        <div class="input-group input-group-lg" style="width: 100%;">
+                            <input type="text" class="form-control" style="border: none; box-shadow: none; border-bottom: dashed 1px #ccc" aria-label="Text input with segmented button dropdown" placeholder="cerca per tags...">
                         </div>
                     </div>
                 </div>
