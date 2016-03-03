@@ -33,7 +33,7 @@
                         </li>
                         <li style="padding-top:5px;">
                             <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control"
-                                Placeholder="Titolo, Artista"></asp:TextBox>
+                                Placeholder="Titolo/artista, poi invio"></asp:TextBox>
                         </li>
                     </ul>
                 </nav>

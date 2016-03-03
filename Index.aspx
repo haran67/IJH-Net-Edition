@@ -80,6 +80,38 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding standard-portfolio">
+        <section class="nomargin nopadding" style="padding: 20px 0 !important;"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
+            <div class="container clearfix">
+                <div class="main-search notopmargin">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-btn">
+                            <button type="button" style="border-right: none;" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <div class="input-group-btn">
+                            <button type="button" style="border-right: none;" class="btn btn-default dropdown-toggle noradius" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with segmented button dropdown" placeholder="nome, strumento...">
+                        <div class="input-group-btn ">
+                            <button type="button" class="btn btn-default"><i class="icon-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="section nomargin alt box-shadow-custom">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
