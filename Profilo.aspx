@@ -392,6 +392,7 @@
                                     <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
                                     </asp:LinkButton><br>
+                                    <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
                                 </div>
                                 <div class="col_full clearfix hidden" id="div_pp_drop" runat="server">
                                     <div class="dropzone" class="thumbnail" data-width="960" data-height="540" data-ghost="false" data-resize="true" data-originalsize="false" style="width: 100%;">
