@@ -53,9 +53,14 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="div_logging" runat="server" style="overflow: initial" class="slider dark patch-wallpaper" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
-        <div class="container clearfix">
-            <div class="vertical-middle center">
+    <section id="div_logging" runat="server" style="overflow: initial" class="slider dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
+        <div class="video-wrap" style="height: 100%;">
+            <video id="slide-video" preload="auto" loop autoplay >
+                <source src='images/videos/header-video.mp4' type='video/mp4' />
+                <source src='images/videos/explore.webm' type='video/webm' />
+            </video>
+        </div>
+            <div class="vertical-middle center" style="z-index: 5">
                 <div class="emphasis-title title-center nomargin">
                     <h2 class="nopadding text-shadow"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
                     <h3 class="citazione" style="font-weight: normal">
@@ -65,7 +70,6 @@
                     <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
                 </div>
             </div>
-        </div>
     </section>    
     <section id="div_logged" runat="server" style="overflow: initial"  class="slider slider-video dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
         <div class="clearfix video-title text-shadow">
@@ -83,13 +87,11 @@
                     </asp:LinkButton>
                 </h3>
                 <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
-                    
-                    
                 </span>
             </div>
         </div>
         <div class="video-wrap" style="height: 100%;">
-            <video id="slide-video" preload="auto" loop>
+            <video id="slide-video" preload="auto" loop autoplay >
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
@@ -98,22 +100,20 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding standard-portfolio">
-        <section class="nomargin nopadding" style="padding: 20px 0 !important;"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
+        <div class="section nomargin nopadding alt box-shadow-custom center">
+        <section class="nomargin nopadding box-shadow-custom" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
             <div class="container clearfix">
                 <div class="main-search notopmargin">
-                    <div class="input-group input-group-lg">
+                    <div style="margin-left: auto; margin-right: auto; float: none">
                         <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server">
-                        <div class="input-group-btn">
-                            <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none;">
-                                <i class="icon-search"></i>
-                            </asp:LinkButton>
-                        </div>
+                        <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none; margin-top: 5px;">
+                            <i class="icon-search"></i>
+                        </asp:LinkButton>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="section nomargin alt box-shadow-custom center">
-            <div class="container clearfix ">
+            <div class="container clearfix topmargin-sm">
                 <h4><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">

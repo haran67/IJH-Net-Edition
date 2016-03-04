@@ -86,10 +86,21 @@
 
 /* custom helper class */
 
-.select2-choices [
+.select2-choices {
     border: none;
-    border-bottom: dotted 1pc #ccc;
-]
+    border-bottom: dotted 1pc #efefef;
+    input {
+        text-align: center;
+    }
+}
+
+.select2-results {
+    text-align: center;
+}
+
+.select2-input select2-default {
+    width: 100% !important;
+}
 
 
 .date-list {
@@ -493,10 +504,10 @@ body > form {
 
 
 .main-search {
-//    margin: 30px auto 0 auto;
-//    margin: 30px 15% 0 15%;
-    //background: fade(lighten(@theme-color, 10), 10%);
-    padding: 0px
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
 }
 
 .citazione {

@@ -86,9 +86,11 @@
                             <li>
                                 <a href="/User-list.aspx"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
                             </li>
+<!--
                             <li>
                                 <a href="/Video-list.aspx">Video</a>
                             </li>
+-->
                             <li>
                                 <a href="/streaming.aspx"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
                             </li>
