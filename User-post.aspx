@@ -65,7 +65,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 <asp:UpdatePanel ID="upd_dati" runat="server">
     <ContentTemplate>
-    <div class="content-wrap ">
+    <div class="content-wrap" id="div_content" runat="server">
         <div class="container clearfix">
             <div id="portfolio" class="portfolio-<%=pf_num%> clearfix">
                 <asp:Repeater ID="rpt_video" runat="server">

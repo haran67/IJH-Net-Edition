@@ -6,11 +6,15 @@
 <%@ Register Src="/Controls/rTextData.ascx" TagName="rTextData" TagPrefix="cc" %>
 <%@ Register Src="/Controls/rDropDown.ascx" TagName="rDropDown" TagPrefix="cc" %>
 <%@ Register Src="/Controls/rCheckBox.ascx" TagName="rCheckBox" TagPrefix="cc" %>
+<%@ Register Src="/Messaggio.ascx" TagName="Messaggio" TagPrefix="msg" %>
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+
+    <msg:Messaggio id="Mail" runat="server"></msg:Messaggio>
+
     <section class="page-title">
         <div class="container clearfix">
             <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
@@ -132,7 +136,7 @@
                                             </div>
                                             <asp:Button ID="btn_cerca" runat="server" CssClass="btn btn-default" />
                                         </div>
-                                        <div class="navbar-form navbar-right nobottommargin" role="search">
+                                        <div class="navbar-form navbar-right nobottommargin hidden" role="search">
                                             <asp:Button ID="btn_operazione" runat="server" CssClass="btn btn-danger" Text="ONE SHOT" />
                                         </div>
                                     </div><!-- /.navbar-collapse -->
@@ -229,13 +233,13 @@
                                                     <td><asp:Literal ID="ltl_pagamento" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_video_caricati" runat="server"></asp:Literal></td>
                                                     <td>
-                                                        <asp:LinkButton ID="btn_go" runat="server" CssClass="btn btn-primary btn-xs" CommandName="GO">
+                                                        <asp:LinkButton ID="btn_go" runat="server" CssClass="btn btn-primary btn-xs" CommandName="GO" OnClientClick="openModal('#myModalMail'); return false;">
                                                             <%=Lingua.CaricaLingua("lgl_amministrazione_utente_dettagli")%>
                                                         </asp:LinkButton>
                                                     </td>
                                                     <td>
                                                         <asp:LinkButton ID="btn_mail" runat="server" CssClass="btn btn-warning btn-xs" CommandName="SOLLECITA">
-                                                            <%=Lingua.CaricaLingua("lgl_amministrazione_utente_sollecito")%>
+                                                            <%=Lingua.CaricaLingua("lgl_amministrazione_utente_comunica")%>
                                                         </asp:LinkButton>
                                                     </td>
                                                 </tr>
