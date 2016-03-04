@@ -33,7 +33,7 @@
                         </li>
                         <li style="padding-top:5px;">
                             <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control"
-                                Placeholder="Titolo/artista, poi invio"></asp:TextBox>
+                                Placeholder="Titolo/artista, poi invio" style="border: none; border-bottom: dotted 1px rgba(255,255,255,.5); background: none; color: #fff;"></asp:TextBox>
                         </li>
                     </ul>
                 </nav>
@@ -55,10 +55,10 @@
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
-                                </div>
-                                <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
-                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                    </div>
                                 </div>
                             </article>
                         </ItemTemplate>

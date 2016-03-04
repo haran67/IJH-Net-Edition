@@ -72,14 +72,13 @@
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
                 <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br><br>
-                
                     <a href="#" id="video-slider-play" style="color: #ccc;">
                         <i class="icon-line-play nomargin"></i>
                         <i class="icon-line-pause nomargin"></i>
                     </a>&nbsp;
                     <asp:LinkButton ID="btn_video" runat="server"  style="color: #ccc;">
                         <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
-<i class="icon-angle-right"></i>-->
+                        <i class="icon-angle-right"></i>-->
                         <i class="icon-line-paper nomargin"></i>
                     </asp:LinkButton>
                 </h3>
@@ -102,17 +101,13 @@
         <section class="nomargin nopadding" style="padding: 20px 0 !important;"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
             <div class="container clearfix">
                 <div class="main-search notopmargin">
-                    <div class="col_three_fifth nobottommargin">
-                        <div class="input-group input-group-lg">
-                            <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server" style="border: none; border-bottom: dotted 1px #ccc; box-shadow: none;">
-                            <div class="input-group-btn">
-							    <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none;">
-								    <i class="icon-search"></i>
-							    </asp:LinkButton>
-                            </div>
+                    <div class="input-group input-group-lg">
+                        <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server">
+                        <div class="input-group-btn">
+                            <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none;">
+                                <i class="icon-search"></i>
+                            </asp:LinkButton>
                         </div>
-                    </div>
-                    <div class="col_two_fifth col_last nobottommargin">
                     </div>
                 </div>
             </div>

@@ -59,7 +59,9 @@ Select2 Plugin
 }
 
 .select2-search input {
-  border: 1px solid #cccccc;
+    border: none;
+    border-bottom: solid 1px #ccc;
+/*  border: 1px solid #cccccc;*/
   background-color: #fff !important;
   filter: none;
   margin: 0;
@@ -89,7 +91,9 @@ Select2 Plugin
 
 .select2-container-active .select2-choice,
 .select2-container-active .select2-choices {
-  border: 1px solid #999999 !important;
+    border: none;
+    border-bottom: solid 1px #ccc;
+/*  border: 1px solid #999999 !important;*/
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
@@ -105,7 +109,9 @@ Select2 Plugin
 
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
-  border: 1px solid #999999 !important;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    /*  border: 1px solid #999999 !important;*/
   border-top: 0 !important;
   background-image: none;
   background-color: #fff;
@@ -157,7 +163,9 @@ Select2 Plugin
 .select2-container-multi .select2-choices {
   padding-left: 6px;
   min-height: 34px;
-  border: 1px solid #cccccc;
+    border: none;
+    border-bottom: solid 1px #ccc;
+/*  border: 1px solid #cccccc;*/
   background-image: none;
   background-color: #fff;
   filter: none;
@@ -166,7 +174,9 @@ Select2 Plugin
 }
 
 .select2-container-multi.select2-container-active .select2-choices {
-  border: 1px solid #999 !important;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    /*  border: 1px solid #999 !important;*/
   background-image: none;
   background-color: #fff;
   filter: none;
@@ -177,7 +187,9 @@ Select2 Plugin
 .select2-container-multi .select2-choices .select2-search-choice {
   padding: 3px 5px 3px 18px;
   margin: 5px 0 3px 5px;
-  border: 1px solid #cccccc;
+    border: none;
+    border-bottom: solid 1px #ccc;
+/*  border: 1px solid #cccccc;*/
   background-image: none;
   background-color: #fff;
   filter: none;
@@ -195,7 +207,9 @@ Color variants
 
 .has-warning .select2-container.select2-dropdown-open .select2-choice,
 .has-warning .select2-container.select2-dropdown-open .select2-choices {
-  border-color: #cccccc;
+    border: none;
+    border-bottom: solid 1px #ccc;
+/*  border-color: #cccccc;*/
 }
 
 .has-warning .select2-container.select2-dropdown-open .select2-choice > span {
@@ -223,7 +237,9 @@ Color variants
 
 .has-success .select2-container.select2-dropdown-open .select2-choice,
 .has-success .select2-container.select2-dropdown-open .select2-choices {
-  border-color: #cccccc;
+    border: none;
+    border-bottom: solid 1px #ccc;
+/*  border-color: #cccccc;*/
 }
 
 .has-success .select2-container.select2-dropdown-open .select2-choice > span {
