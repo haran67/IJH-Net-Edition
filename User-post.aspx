@@ -6,8 +6,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-<asp:UpdatePanel ID="upd_header" runat="server">
-    <ContentTemplate>
     <section class="page-title page-title-dark" style="padding: 20px 0;background: url('<%=user_background%>') no-repeat top center; background-size: cover;">
         <div class="video-overlay"></div>
         <div class="container center clearfix">
@@ -49,6 +47,8 @@
             </div>
         </div>
     </section>
+<asp:UpdatePanel ID="upd_header" runat="server">
+    <ContentTemplate>
     <div class="section nomargin nopadding profile-submenu" style="background: #3C4B5E;">
         <div class="container center clearfix">
             <asp:LinkButton ID="btn_video" runat="server" CssClass="active">
