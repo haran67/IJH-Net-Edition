@@ -12,18 +12,18 @@
             <div class="profile-header">
                 <div>
                 <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
-                <div class="user-profile-type" style="position: relative; top: -23px;">
+                <div class="user-profile-type">
                     <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block" id="i_expo" runat="server"></i> 
                     <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block" id="i_view" runat="server"></i> 
                     <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block" id="i_guest" runat="server"></i>
                 </div>
                 <h1 class="text-shadow">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
-                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 400">
-                         <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
+                    <span class="visible-xs visible-sm visible-md visible-lg">
+                        <strong style="font-weight: 400"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong> - citt&agrave;
                     </span>
                 </h1>
-                <div class="noheight" style="max-width: 200px; margin-left: auto; margin-right: auto; border-bottom: solid 1px rgba(255,255,255,.5); margin-bottom: 15px; padding-bottom: 15px;"></div>
+                <div class="noheight" style="max-width: 200px; margin-left: auto; margin-right: auto; border-bottom: solid 1px rgba(255,255,255,.25); margin-bottom: 15px; padding-bottom: 15px;"></div>
                 <div class="user-profile-head-content">
                     <p class="article nomargin text-shadow"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></p>
                             <div style="height: 30px;"></div>
