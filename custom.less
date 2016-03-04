@@ -316,9 +316,9 @@ body > form {
 // custom style
 
 .profile-header {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
+//    position: absolute;
+//    bottom: 40px;
+//    left: 0;
     width: 100%;
     img {
         height: 180px;
@@ -330,6 +330,29 @@ body > form {
     &.small {
         height: 140px;
         width: 140px;
+    }
+}
+.user-profile-type {
+    position: relative;
+    top: -20px;
+    i {
+        background-color: #3B4B5F;
+        width: 36px;
+        height: 36px;
+        line-height: 36px
+    }
+}
+
+.profile-submenu {
+    background: #3C4B5E;
+    a {
+        color: #fff; padding: 2px 14px; border-radius: 20px; display: inline-block; margin: 6px 0;
+        &:hover {
+            background-color: rgba(0,0,0,.25);
+        }
+        &.active {
+            background-color: rgba(0,0,0,.25);
+        }
     }
 }
 
@@ -526,7 +549,7 @@ body > form {
     height: 100%;
     z-index:0;
     background: url('images/grid.png') repeat;
-    background-color: fade(@theme-color,35%);
+    background-color: fade(@theme-color,50%);
 }
 
 .video-wrap {

@@ -8,58 +8,52 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-dark" style="padding: 20px 0;background: url('<%=user_background%>') no-repeat top center; background-size: cover;">
         <div class="video-overlay"></div>
-        <div class="container clearfix" data-height-lg="500" data-height-md="500" data-height-sm="400" data-height-xs="350" data-height-xxs="300">
+        <div class="container center clearfix">
             <div class="profile-header">
-                <asp:Image ID="img_utente" runat="server" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter" />
-                <h1 class="text-shadow" data-class-lg="topmargin-sm" data-class-md="topmargin-sm" data-class-sm="topmargin-sm" data-class-xs="notopmargin" data-class-xxs="notopmargin">
+                <div>
+                <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
+                <div class="user-profile-type" style="position: relative; top: -23px;">
+                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block" id="i_expo" runat="server"></i> 
+                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block" id="i_view" runat="server"></i> 
+                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block" id="i_guest" runat="server"></i>
+                </div>
+                <h1 class="text-shadow">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
-                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 300">
-                        <i class="icon-facetime-video" style="color: #fff" id="i_expo" runat="server"></i> 
-                        <i class="icon-eye-open" style="color: #fff" id="i_view" runat="server"></i> 
-                        <i class="icon-coffee2" style="color: #fff" id="i_guest" runat="server"></i>
-                         | <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
+                    <span class="visible-xs visible-sm visible-md visible-lg" style="font-weight: 400">
+                         <asp:Literal ID="ltl_categoria" runat="server"></asp:Literal>
                     </span>
                 </h1>
-                <div style="margin-top: 15px">
-                <asp:Repeater ID="rpt_social" runat="server">
-                    <ItemTemplate>
-                        <a href="#" target="_blank" style="display: inline-block" id="a_link" runat="server">
-                            <i class="i-circled i-light i-small icon-email3" id="i_icon_01" runat="server"></i>
-                        </a>
-                    </ItemTemplate>
-                </asp:Repeater>
+                <div class="noheight" style="max-width: 200px; margin-left: auto; margin-right: auto; border-bottom: solid 1px rgba(255,255,255,.5); margin-bottom: 15px; padding-bottom: 15px;"></div>
+                <div style="margin-top: 15px;  max-width: 550px; margin-left: auto; margin-right: auto; color: #fff;">
+                    <p class="article nomargin text-shadow"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></p>
+                            <div style="height: 30px;"></div>
+                    <asp:Repeater ID="rpt_social" runat="server">
+                        <ItemTemplate>
+                            <a href="#" target="_blank" style="display: inline-block; margin-left: 11px;" id="a_link" runat="server">
+                                <i class="i-circled i-light i-small icon-email3 nomargin" id="i_icon_01" runat="server"></i>
+                            </a>
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
             </div>
         </div>
     </section>
-    <div id="page-menu">
-        <div id="page-menu-wrap">
-            <div class="container center clearfix">
-                <nav class="nofloat divcenter">
-                    <ul>
-                        <li class="current"><a href="#"><i class="icon-user4"></i> Who</a></li>
-                        <li><a href="#"><i class="icon-tags"></i> What</a></li>
-                        <li><a href="#"><i class="icon-play"></i> Video</a></li>
-                        <li><a href="#"><i class="icon-map-marker"></i> Where</a></li>
-                        <li><a href="#"><i class="icon-time"></i> When</a></li>
-                    </ul>
-                </nav>
-                <div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
-            </div>
+    <div class="section nomargin nopadding profile-submenu" style="background: #3C4B5E;">
+        <div class="container center clearfix">
+            <a href="#" class="active">Video</a>
+            <a href="#">When</a>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap nobottompadding">
+    <div class="content-wrap ">
         <div class="container clearfix">
-            <div>
+            
 <!--
+            <div>
                 <h5 class="hidden"><%=Lingua.CaricaLingua("lgl_userpost_sudime")%></h5>
                 <h4 class="hidden"><asp:Literal ID="ltl_nome" runat="server"></asp:Literal></h4>
--->
-                <h3>Who</h3>
                 <p>
-                    <asp:Literal ID="ltl_descrizione_short" runat="server"></asp:Literal>
                     <br />
                     <a href="#" class="label label-default" data-toggle="modal" data-target=".what-complete" id="a_leggi_tutto" runat="server">leggi tutto > </a>
                 </p>
@@ -73,13 +67,15 @@
                                     <h4 class="modal-title" id="myModalLabel">Who</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal>
+                                    <asp:Literal ID="ltl_descrizione_short" runat="server"></asp:Literal>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+-->
+<!--
             <div>
                 <h3 id="h_email" runat="server">Email</h3>
                 <p id="p_email" runat="server">
@@ -92,30 +88,26 @@
                 </p>
             </div>
             <div>
-            <h3 id="h_video" runat="server"><%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>
-                <div id="portfolio" class="portfolio-<%=pf_num%> clearfix">
-                    <asp:Repeater ID="rpt_video" runat="server">
-                        <ItemTemplate>
-                            <article class="portfolio-item clearfix">
-                                <div class="portfolio-image patch-placeholder">
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <asp:Image ID="img_copertina" runat="server" />
-                                    </asp:LinkButton>
-                                </div>
-                                <div class="portfolio-desc">
-                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                    <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
-                                </div>
-                            </article>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                </div>
+-->
+<!--                <h3 id="h_video" runat="server"><%=Lingua.CaricaLingua("lgl_userpost_video")%></h3>-->
+            <div id="portfolio" class="portfolio-<%=pf_num%> clearfix">
+                <asp:Repeater ID="rpt_video" runat="server">
+                    <ItemTemplate>
+                        <article class="portfolio-item clearfix">
+                            <div class="portfolio-image patch-placeholder">
+                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                    <asp:Image ID="img_copertina" runat="server" />
+                                </asp:LinkButton>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
+                            </div>
+                        </article>
+                    </ItemTemplate>
+                </asp:Repeater>
             </div>
-            <script type="text/javascript">
-                $('[data-toggle=popover]').popover();
-            </script>
             <div>
-                <h3 id="h_when" runat="server">When</h3>
                 <div id="p_when" runat="server">
                     <asp:Repeater ID="rpt_when" runat="server">
                         <ItemTemplate>
@@ -127,6 +119,7 @@
                     </asp:Repeater> 
                 </div>
             </div>
+<!--
             <div>
                 <h3 id="h_tag" runat="server">What</h3>
                 <p id="p_tag" runat="server">
@@ -137,14 +130,26 @@
                     </asp:Repeater>
                 </p>
             </div>
+-->
+<!--
             <div>
                 <h3 id="h_addr" runat="server">Where</h3>
                 <p id="p_addr" runat="server">
                     <asp:Literal ID="ltl_indirizzo" runat="server"></asp:Literal>
                 </p>
             </div>
+-->
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
+    <script type="text/javascript" src="/js/readmore.js"></script>
+    <script>
+        $('.article').readmore({
+            speed: 750,
+            collapsedHeight: 150,
+            moreLink: '<a href="#" style="color: #fff;">Leggi tutto</a>',
+            lessLink: '<a href="#" style="color: #fff;">Chiudi</a>'
+        });
+    </script>
 </asp:Content>
