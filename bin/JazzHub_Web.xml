@@ -174,14 +174,6 @@ pager control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.User_post.upd_header">
-	<summary>
-upd_header control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.User_post.img_utente">
 	<summary>
 img_utente control.
@@ -265,6 +257,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.User_post.rpt_social">
 	<summary>
 rpt_social control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.User_post.upd_header">
+	<summary>
+upd_header control.
 </summary>
 	<remarks>
 Auto-generated field.
