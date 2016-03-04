@@ -99,7 +99,6 @@
                             </div>
                         </div>
                     </div>
-                        
                     <h3 id="h_tag" runat="server"><i class="i-circled i-medium-custom icon-tags" style="background-color: #557d75;"></i>What</h3>
                     <p id="p_tag" runat="server" class="panel-custom box-shadow-custom">
                         <asp:Repeater ID="rpt_tags" runat="server" OnItemDataBound="rpt_tags_ItemDataBound" OnItemCommand="rpt_tags_ItemCommand">
@@ -108,7 +107,6 @@
                             </ItemTemplate>
                         </asp:Repeater>
                     </p>
-                        
                     <h3 id="h_addr" runat="server"><i class="i-circled i-medium-custom icon-map-marker" style="background-color: #557d75;"></i>Where</h3>
                     <p id="p_addr" runat="server" class="panel-custom box-shadow-custom">
                         <asp:Literal ID="ltl_indirizzo" runat="server"></asp:Literal>
