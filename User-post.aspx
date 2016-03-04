@@ -38,7 +38,7 @@
 --> 
                     <h3 class="user-social">
                         <a href="#" target="_blank">
-                            <i class="icon-icon-screen nomargin"></i>
+                            <i class="icon-world nomargin"></i>
                         </a>
                             <a href="#" target="_blank">
                             <i class="icon-email3 nomargin"></i>
