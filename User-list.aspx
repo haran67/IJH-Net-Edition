@@ -37,7 +37,7 @@
                         </li>
                         <li style="padding-top:5px;">
                             <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control"
-                                Placeholder="Nome/Luogo, poi invio"></asp:TextBox>
+                                         Placeholder="Nome/Luogo, poi invio" style="border: none; border-bottom: dotted 1px rgba(255,255,255,.5); background: none; color: #fff;"></asp:TextBox>
                         </li>
                     </ul>
                 </nav>
@@ -82,8 +82,7 @@
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
-            <div class="clear">
-            </div>
+            <div class="clear"></div>
             <div class="row" style="margin-top: 10px;">
                 <div class="col-lg-12">
                     <pager:MesysPager ID="pager" runat="server" OnCommand="pager_Command" PageClause="Pagina"
