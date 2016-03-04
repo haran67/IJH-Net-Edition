@@ -27,20 +27,26 @@
         </div>
     </section>    
     <section id="div_logged" runat="server" style="overflow: initial"  class="slider slider-video dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
-        <div class="center video-title text-shadow">
-            <h3 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h3>
-            <h2 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h2>
-            <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
-                <a href="#" id="video-slider-play"  class="button button-border button-white button-light button-small button-rounded tleft">
-                    <i class="icon-line-play nomargin"></i>
-                    <i class="icon-line-pause nomargin"></i>
-                </a>
-                <asp:LinkButton ID="btn_video" runat="server" CssClass="button button-border button-white button-light button-small button-rounded tleft ">
-                    <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
-                    <i class="icon-angle-right"></i>-->
-                    <i class="icon-line-paper nomargin"></i>
-                </asp:LinkButton>
-            </span>
+        <div class="clearfix video-title text-shadow">
+            <div class="center container clearfix">
+                <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
+                <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br><br>
+                
+                    <a href="#" id="video-slider-play" style="color: #ccc;">
+                        <i class="icon-line-play nomargin"></i>
+                        <i class="icon-line-pause nomargin"></i>
+                    </a>&nbsp;
+                    <asp:LinkButton ID="btn_video" runat="server"  style="color: #ccc;">
+                        <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
+<i class="icon-angle-right"></i>-->
+                        <i class="icon-line-paper nomargin"></i>
+                    </asp:LinkButton>
+                </h3>
+                <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
+                    
+                    
+                </span>
+            </div>
         </div>
         <div class="video-wrap" style="height: 100%;">
             <video id="slide-video" preload="auto" loop>
@@ -81,22 +87,22 @@
                 </div>
             </div>
         </section>
-        <div class="section nomargin alt box-shadow-custom">
+        <div class="section nomargin alt box-shadow-custom center">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item" >
-                                <div style="margin: 5px;" class="box-shadow-custom">
+                                <div style="margin: 5px;">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        </div>
                                     </div>
                                 </div>
                             </article>
@@ -105,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin box-shadow-custom" id="div_like_guest" runat="server">
+        <div class="section nomargin box-shadow-custom center" id="div_like_guest" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
@@ -113,15 +119,15 @@
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item" >
-                                <div style="margin: 5px;" class="box-shadow-custom">
+                                <div style="margin: 5px;">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        </div>
                                     </div>
                                 </div>
                             </article>
@@ -130,22 +136,22 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin alt box-shadow-custom" id="div_like_expo" runat="server">
+        <div class="section nomargin alt box-shadow-custom center" id="div_like_expo" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
-                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
+                <div id="portfolio" class="portfolio portfolio-first portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item" >
-                                <div style="margin: 5px;" class="box-shadow-custom">
+                                <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
-                                    </div>
-                                    <div class="portfolio-desc">
-                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        </div>
                                     </div>
                                 </div>
                             </article>
@@ -195,10 +201,10 @@
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
-                                    </div>
-                                    <div class="portfolio-desc" style="background-color: #fff; padding: 15px;">
-                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        </div>
                                     </div>
                                 </article>
                             </div>
@@ -251,7 +257,7 @@
                 }
             });
             
-            $(".portfolio").find(".portfolio-item:first-child").addClass("wide");
+            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
         });
 
         function endRequestHandler(sender, args) {

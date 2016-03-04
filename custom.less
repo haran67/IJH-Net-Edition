@@ -348,12 +348,12 @@ body > form {
 }
 .user-profile-type {
     position: relative;
-    top: -20px;
+    top: -16px;
     i {
         background-color: #3B4B5F;
-        width: 36px;
-        height: 36px;
-        line-height: 36px
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px !important;
     }
 }
 .user-profile-head-content {
@@ -603,7 +603,12 @@ body > form {
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: rgba(0,0,0,.5);
+        background: url('images/grid.png') repeat;
+        background-color: fade(@theme-color,50%);
+        text-transform: lowercase;
+        &:first-letter {
+            text-transform: uppercase;
+        }
         .author {
             padding-bottom: .5em;
             font-weight: 300;
@@ -855,39 +860,32 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 
 .standard-portfolio {
     .portfolio-desc {
-        overflow: hidden;
-        height: 100px;
-        background-color: #fff;
+        width: 100%;
+        position:absolute;
+        bottom: 0px;
+        background: url('images/grid.png') repeat;
+        background-color: fade(@theme-color,50%);
         padding: 10px;
+        text-align:left;
         h3 {
-            overflow: hidden;
-            height: 60px;
-            text-transform: capitalize;
+            text-transform: lowercase;
+            &:first-letter {
+                text-transform: uppercase;
+            }
+            color: #fff;
+            font-size: 1.2em;
+            line-height: 1.25em;
         }
         span {
-            height: 21px;
-            overflow: hidden;
-            height: 1.5em;
-            text-transform: capitalize;
-            &:after{
-                content:"..."
+            color: #dfdfdf;
+            text-transform: lowercase;
+            &:first-letter {
+                text-transform: uppercase;
             }
         }
     }
 }
 .standard-portfolio .wide {
-    .portfolio-desc {
-        height: 202px;
-        padding: 20px !important;
-        h3 {
-            font-size: 3rem !important;
-            height: 140px;
-        }
-        span {
-            height: 30px;
-            font-size: 2rem !important;
-        }
-    }
 }
 
 .dropzone img {
