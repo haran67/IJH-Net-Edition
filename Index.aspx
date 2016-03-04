@@ -104,9 +104,9 @@
                 <div class="main-search notopmargin">
                     <div class="col_three_fifth nobottommargin">
                         <div class="input-group input-group-lg">
-                            <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server">
-                            <div class="input-group-btn ">
-							    <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default">
+                            <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server" style="border: none; border-bottom: dotted 1px #ccc; box-shadow: none;">
+                            <div class="input-group-btn">
+							    <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none;">
 								    <i class="icon-search"></i>
 							    </asp:LinkButton>
                             </div>
