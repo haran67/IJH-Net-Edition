@@ -23,7 +23,7 @@
                         <strong style="font-weight: 400"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong> - citt&agrave;
                     </span>
                 </h1>
-                <div class="noheight" style="max-width: 200px; margin-left: auto; margin-right: auto; border-bottom: solid 1px rgba(255,255,255,.25); margin-bottom: 15px; padding-bottom: 15px;"></div>
+                <div class="noheight user-divider"></div>
                 <div class="user-profile-head-content">
                     <p class="article nomargin text-shadow"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></p>
                             <div style="height: 30px;"></div>
@@ -129,11 +129,11 @@
             
             <div>
 <!--                <h3 id="h_when" runat="server"><i class="i-circled i-medium-custom icon-sitemap" style="background-color: #557d75;"></i>When</h3>-->
-                <div id="p_when" runat="server">
+                <div id="p_when" runat="server" class="date-list center">
                     <asp:Repeater ID="rpt_when" runat="server">
                         <ItemTemplate>
                             <div class="date-list">
-                                <h4 class="nomargin"><asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal> - <small><asp:Literal ID="ltl_when_quando" runat="server"></asp:Literal></small></h4>
+                                <h4 class="nomargin"><asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal><br><small><asp:Literal ID="ltl_when_quando" runat="server"></asp:Literal></small></h4>
                                 <p class="nomargin"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
                             </div>
                         </ItemTemplate> 
