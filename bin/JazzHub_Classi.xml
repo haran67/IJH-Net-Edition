@@ -6,7 +6,11 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Utenti_when_Base">
+<member name="T:JazzHub_Classi.Oggetti.Vs_ricerca_globale_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella VS_RICERCA_GLOBALE
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Utenti_when_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella UTENTI_WHEN
  </summary>

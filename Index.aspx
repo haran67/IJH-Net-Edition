@@ -1,9 +1,56 @@
-    <%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
-    CodeBehind="Index.aspx.vb" Inherits="JazzHub_Web.Index" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Index.aspx.vb" Inherits="JazzHub_Web.Index" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="/js/select2/select2.css"/>
+    <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
+    <script type="text/javascript" src="/js/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/js/select2/select2_locale_it.js"></script>
+    <script type="text/javascript">
+        function reinitInput() {
+            Metronic.init(); // init metronic core componets
+        }
+        $(document).ready(function () {
+            $("#<%=ddl_ricerca.ClientID%>").select2({
+                placeholder: 'Cerca per tag, categoria, artista ...',
+                allowClear: true,
+                multiple: true,
+                minimumInputLength: 3,
+                query: function (query) {
+                    PageMethods.ElencoRicerca(query.term, "", NCSuccess, NCFailure);
+                    function NCSuccess(result) {
+                        var data = { results: [] };
+                        $.each(result, function (index, item) {
+                            data.results.push({ id: item.id, text: item.text });
+                        });
+                        query.callback(data);
+                    }
+                    function NCFailure(error) {
+                    }
+                },
+                initSelection: function (element, callback) {
+                    PageMethods.ElencoRicerca("", $(element).val(), NCSuccess, NCFailure);
+                    function NCSuccess(result) {
+
+                        callback(result[0]);
+                    }
+                    function NCFailure(error) {
+                    }
+                }
+            });
+
+            $("#<%=ddl_ricerca.ClientID%>").each(function () {
+                $('.select2-search-choice').remove();
+                $(this).on("change", function (e) {
+                    PageMethods.SalvaSelect2MultipleValues(e.val, PMSuccess, PMFailure);
+                })
+            });
+
+        });
+
+
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="div_logging" runat="server" style="overflow: initial" class="slider dark patch-wallpaper" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
@@ -16,12 +63,6 @@
                         <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
                     </h3>
                     <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
-<!--
-                    <div id="div_registrati" runat="server">
-                        <a href="login.aspx" class="button button-rounded button-green button-small nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
-                        <a href="register.aspx" class="button button-rounded button-red button-small nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-                    </div>
--->
                 </div>
             </div>
         </div>
@@ -57,26 +98,15 @@
                 <div class="main-search notopmargin">
                     <div class="col_three_fifth nobottommargin">
                         <div class="input-group input-group-lg">
-                            <div class="input-group-btn">
-                                <button type="button" style="border: none;" class="btn btn-default dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorie&nbsp;<span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-                                <ul class="dropdown-menu dropdown-menu-left">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                            <input type="text" class="form-control" style="border: none; box-shadow: none; border-bottom: dashed 1px #ccc" aria-label="Text input with segmented button dropdown" placeholder="nome, strumento...">
-                            <div class="input-group-btn hidden">
-                                <button type="button" style="border: none" class="btn btn-default"><i class="icon-search"></i></button>
+                            <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server">
+                            <div class="input-group-btn ">
+							    <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default">
+								    <i class="icon-search"></i>
+							    </asp:LinkButton>
                             </div>
                         </div>
                     </div>
                     <div class="col_two_fifth col_last nobottommargin">
-                        <div class="input-group input-group-lg" style="width: 100%;">
-                            <input type="text" class="form-control" style="border: none; box-shadow: none; border-bottom: dashed 1px #ccc" aria-label="Text input with segmented button dropdown" placeholder="cerca per tags...">
-                        </div>
                     </div>
                 </div>
             </div>
