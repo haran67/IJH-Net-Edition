@@ -111,6 +111,7 @@
                 </div>
             </div>
         </section>
+
         <div class="section nomargin alt box-shadow-custom">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
