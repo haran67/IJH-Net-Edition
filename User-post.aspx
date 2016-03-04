@@ -24,9 +24,10 @@
                     </span>
                 </h1>
                 <div class="noheight" style="max-width: 200px; margin-left: auto; margin-right: auto; border-bottom: solid 1px rgba(255,255,255,.5); margin-bottom: 15px; padding-bottom: 15px;"></div>
-                <div style="margin-top: 15px;  max-width: 550px; margin-left: auto; margin-right: auto; color: #fff;">
+                <div class="user-profile-head-content">
                     <p class="article nomargin text-shadow"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></p>
                             <div style="height: 30px;"></div>
+<!--
                     <asp:Repeater ID="rpt_social" runat="server">
                         <ItemTemplate>
                             <a href="#" target="_blank" style="display: inline-block; margin-left: 11px;" id="a_link" runat="server">
@@ -34,6 +35,24 @@
                             </a>
                         </ItemTemplate>
                     </asp:Repeater>
+--> 
+                    <h3 class="user-social">
+                        <a href="#" target="_blank">
+                            <i class="icon-icon-screen nomargin"></i>
+                        </a>
+                            <a href="#" target="_blank">
+                            <i class="icon-email3 nomargin"></i>
+                        </a>
+                            <a href="#" target="_blank">
+                            <i class="icon-facebook nomargin"></i>
+                        </a>
+                            <a href="#" target="_blank">
+                            <i class="icon-twitter nomargin"></i>
+                        </a>
+                            <a href="#" target="_blank">
+                            <i class="icon-linkedin nomargin"></i>
+                        </a>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -107,7 +126,9 @@
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
+            
             <div>
+<!--                <h3 id="h_when" runat="server"><i class="i-circled i-medium-custom icon-sitemap" style="background-color: #557d75;"></i>When</h3>-->
                 <div id="p_when" runat="server">
                     <asp:Repeater ID="rpt_when" runat="server">
                         <ItemTemplate>
