@@ -69,11 +69,9 @@
                 </h3>
                 <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
             </div>
-        </div>
-        <div class="center" style="position: absolute; bottom: 10px;">
-            <a href="#" id="video-slider-audio" class="audio-played" style="color: #ccc;">
-                <i class="icon-line-play nomargin"></i>
-                <i class="icon-line-pause nomargin"></i>
+                <a href="#" id="video-slider-audio" class="audio-played" style="color: #ccc;">
+                <i class="icon-mute nomargin"></i>
+                <i class="icon-volume nomargin"></i>
             </a>
         </div>
     </section>    
@@ -89,7 +87,7 @@
                     <asp:LinkButton ID="btn_video" runat="server"  style="color: #ccc;">
                         <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                         <i class="icon-angle-right"></i>-->
-                        <i class="icon-line-paper nomargin"></i>
+                        <i class="icon-line-eye nomargin"></i>
                     </asp:LinkButton>
                 </h3>
                 <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
@@ -278,10 +276,10 @@
             ocPortfolio.owlCarousel({
                 margin: 15,
                 nav: true,
-                navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+                navText: ['<i class="icon-chevron-left"></i>','<i class="icon-chevron-right"></i>'],
                 autoplay: false,
                 autoplayHoverPause: true,
-                dots: false,
+                dots: true,
                 autoHeight: false,
                 responsive:{
                     0:{ items:1 },

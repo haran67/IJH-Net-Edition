@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -53,10 +53,9 @@
     </asp:ContentPlaceHolder>
 </head>
     <%If page_is_index Then%>
-        <body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" 
-            data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
+        <body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
     <%else%>
-        <body class="stretched no-transition" data-loader-timeout="6000" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
+        <body class="stretched no-transition">
     <%end if%>
     <form id="frmPrincipale" runat="server">
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true" EnablePageMethods="true"

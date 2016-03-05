@@ -10,27 +10,27 @@
 
         <div class="content-wrap notoppadding">
             <div class="section notopmargin nopadding" style="background: #000">
-                <div class=" clearfix">
+                <div class="container clearfix">
                     <div class="col_full portfolio-single-image nomargin">
                         <video width="100%" controls autoplay>
                             <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                </div>
-                <div class="feature-box fbox-circled fbox-effect fbox-light"style="position: absolute; bottom: 50px; left: 0px; background: rgba(0, 0, 0, .5); color: #fff; padding: 10px 10px 10px 90px">
-                    <asp:UpdatePanel ID="upd_likes" runat="server">
-                        <ContentTemplate>
-                            <div class="fbox-icon" style="top:initial; left: 10px; ">
-                                <asp:LinkButton id="btn_like" runat="server">
-                                    <i class="icon-thumbs-up"></i>
-                                </asp:LinkButton>
-                            </div>
-                            <h3 style="color: #ccc"><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
-                            <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
-                            <div style="padding-bottom: 20px;" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
-                        </ContentTemplate>
-                    </asp:UpdatePanel>
+                    <div class="feature-box fbox-circled fbox-effect fbox-light"style="position: absolute; bottom: 50px; left: 0px; background: rgba(0, 0, 0, .5); color: #fff; padding: 10px 10px 10px 90px">
+                        <asp:UpdatePanel ID="upd_likes" runat="server">
+                            <ContentTemplate>
+                                <div class="fbox-icon" style="top:initial; left: 10px; ">
+                                    <asp:LinkButton id="btn_like" runat="server">
+                                        <i class="icon-thumbs-up"></i>
+                                    </asp:LinkButton>
+                                </div>
+                                <h3 style="color: #ccc"><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
+                                <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
+                                <div style="padding-bottom: 20px;" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@
                             
                         </div>
                         <hr>
-                        <div class="entry-content notopmargin">
+                        <div class="entry-content center notopmargin">
 
                             <p>
                                 <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
