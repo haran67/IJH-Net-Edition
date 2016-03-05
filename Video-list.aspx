@@ -12,7 +12,6 @@
             <div class="container clearfix">
                 <div class="menu-title">
                     <strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_videolist_title")%>
-<!--                    <%=Lingua.CaricaLingua("lgl_videolist_sfoglia")%>-->
                 </div>
                 <nav>
                     <ul>
@@ -47,6 +46,7 @@
     <div class="content-wrap standard-portfolio alt">
         <div class="container clearfix">
             <div class="postcontent">
+                <asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal>
                 <div id="portfolio" class="portfolio-3 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
