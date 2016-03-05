@@ -25,7 +25,7 @@
                     </span>
                 </h1>
                 <div class="noheight user-divider"></div>
-                <div class="user-profile-head-content">
+                <div class="user-profile-head-content" id="inizio-testo">
                     <p class="article nomargin text-shadow"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></p>
                     <div style="height: 30px;"></div>
                     <h3 class="user-social">

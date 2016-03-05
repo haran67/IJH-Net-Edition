@@ -213,30 +213,26 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin box-shadow-custom" id="div_like_visi" runat="server">
+        <div class="section nomargin box-shadow-custom center" id="div_like_visi" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
-                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
+                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <div class="oc-item">
-                                <article class="iportfolio">
+                            <article class="portfolio-item" >
+                                <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
-                                        <asp:Image ID="img_copertina" runat="server"/>
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <div class="portfolio-overlay">
-                                                <div class="portfolio-desc">
-                                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                                    <h3>
-                                                        <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                    </h3>
-                                                </div>
-                                            </div>
+                                            <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        </div>
                                     </div>
-                                </article>
-                            </div>
+                                </div>
+                            </article>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
