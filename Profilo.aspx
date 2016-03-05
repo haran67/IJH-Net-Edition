@@ -462,7 +462,7 @@
                                     <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
                                         Form_Vertical="true" Required="false" />
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-2">
                                     <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
                                         Form_Vertical="true" Required="false" />
                                 </div>
@@ -470,7 +470,7 @@
                                     <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
                                         Form_Vertical="true" Required="false" />
                                 </div>
-                                <div class="col-md-1">
+                                <div class="col-md-2">
                                     <div style="padding-top:24px;">
                                         <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="fright button button-rounded button-small button-success">
                                             <i class="icon-plus nomargin"></i>
@@ -489,7 +489,7 @@
                                             <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-2">
                                             <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>
@@ -497,13 +497,13 @@
                                             <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="col-md-2">
                                             <div style="padding-top:15px;">
                                                 <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL" CssClass="fright button button-rounded button-small button-danger">
                                                     <i class="icon-remove nomargin"></i>
                                                 </asp:LinkButton>
                                                 <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CommandName="MOD" CssClass="fright button button-rounded button-small button-success">
-                                                    <i class="icon-save nomargin"></i>
+                                                    <i class="icon-ok nomargin"></i>
                                                 </asp:LinkButton>
                                             </div>
                                         </div> 

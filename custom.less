@@ -870,6 +870,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 
 .tp-caption { white-space: nowrap; }
 
+/* switch play video */
 #video-slider-play {
     display: inline-block;
 }
@@ -883,6 +884,25 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 #video-slider-play.video-played i:nth-of-type(1) { display: none; }
 
 #video-slider-play.video-played i:nth-of-type(2) { display: inline-block; }
+
+
+
+/* switch audio */
+
+#video-slider-audio {
+    display: inline-block;
+}
+
+#video-slider-audio i:nth-of-type(1) {
+    position: relative;
+    left: 2px;
+}
+
+#video-slider-audio i:nth-of-type(2),
+#video-slider-audio.audio-played i:nth-of-type(1) { display: none; }
+
+#video-slider-audio.audio-played i:nth-of-type(2) { display: inline-block; }
+
 
 .standard-portfolio {
     .portfolio-desc {
