@@ -13,9 +13,9 @@
                 <div>
                 <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
                 <div class="user-profile-type">
-                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block" id="i_expo" runat="server"></i> 
-                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block" id="i_view" runat="server"></i> 
-                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block" id="i_guest" runat="server"></i>
+                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block" id="i_expo" runat="server" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
+                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block" id="i_view" runat="server" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
+                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block" id="i_guest" runat="server" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                 </div>
                 <h1 class="text-shadow">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
@@ -109,6 +109,7 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
     <script type="text/javascript" src="/js/readmore.js"></script>
     <script type="text/javascript" >
+        $('[data-toggle=popover]').popover();
         $('.article').readmore({
             speed: 750,
             collapsedHeight: 150,
