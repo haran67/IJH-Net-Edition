@@ -355,6 +355,15 @@ body > form {
         width: 140px;
     }
 }
+
+.divider {
+    color: fade(@theme-color, 60%);
+}
+.divider.divider-custom{
+    &:after {
+        margin-left: 60px !important;
+    }
+}
 .user-divider {
     max-width: 160px;
     margin-left: auto;

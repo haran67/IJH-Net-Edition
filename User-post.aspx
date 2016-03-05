@@ -65,7 +65,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 <asp:UpdatePanel ID="upd_dati" runat="server">
     <ContentTemplate>
-    <div class="content-wrap" id="div_content" runat="server">
+    <div class="content-wrap alt" id="div_content" runat="server">
         <div class="container clearfix">
             <div id="portfolio" class="portfolio-<%=pf_num%> clearfix">
                 <asp:Repeater ID="rpt_video" runat="server">
@@ -76,7 +76,7 @@
                                     <asp:Image ID="img_copertina" runat="server" />
                                 </asp:LinkButton>
                             </div>
-                            <div class="portfolio-desc">
+                            <div class="portfolio-desc box-shadow-custom" style="background: #fff; padding: 10px;">
                                 <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
                                 <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
                             </div>
@@ -89,11 +89,13 @@
                     <ItemTemplate>
                         <div class="date-list">
                             <h4 class="nomargin">
-                                <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal><br>
+                                <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal>
+                            </h4>
+                            <h3 class="nomargin">
                                 <asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal><br>
                                 <small><asp:Literal ID="ltl_when_quando_data" runat="server"></asp:Literal></small>
                                 <small><asp:Literal ID="ltl_when_quando_ora" runat="server"></asp:Literal></small>
-                            </h4>
+                            </h3>
                             <p class="nomargin"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
                         </div>
                     </ItemTemplate> 

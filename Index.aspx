@@ -120,7 +120,15 @@
                 </div>
             </section>
             <div class="container clearfix topmargin-sm">
+<!--
+                <div class="user-profile-type">
+                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block" id="i_expo" runat="server"></i> 
+                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block" id="i_view" runat="server"></i> 
+                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block" id="i_guest" runat="server"></i>
+                </div>
+-->
                 <h4><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
+                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-like" style="background-color: #e6e6e6"></i></div>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -166,9 +174,11 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin box-shadow-custom center" id="div_like_guest" runat="server">
+        <div class="section nomargin box-shadow-custom alt center" id="div_like_guest" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
+<!--                <h4><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>-->
+                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-coffee2" style="background-color: #e6e6e6"></i><i class="icon-chevron-right"></i><i class="icon-like" style="background-color: #e6e6e6"></i></div>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_guest" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
@@ -191,9 +201,10 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin alt box-shadow-custom center" id="div_like_expo" runat="server">
+        <div class="section nomargin box-shadow-custom center" id="div_like_expo" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
+                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-facetime-video"></i><i class="icon-chevron-right" style="background-color: #fff"></i><i class="icon-like"></i></div>
                 <div id="portfolio-first" class="portfolio-first portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -218,6 +229,7 @@
         <div class="section nomargin alt box-shadow-custom center" id="div_like_visi" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
+                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-eye-open" style="background-color: #e6e6e6"></i><i class="icon-chevron-right"></i><i class="icon-like" style="background-color: #e6e6e6"></i></div>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
