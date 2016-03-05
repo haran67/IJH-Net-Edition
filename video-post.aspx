@@ -8,7 +8,31 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="content">
 
-        <div class="content-wrap">
+        <div class="content-wrap notoppadding">
+            <div class="section notopmargin nopadding" style="background: #000">
+                <div class=" clearfix">
+                    <div class="col_full portfolio-single-image nomargin">
+                        <video width="100%" controls autoplay>
+                            <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="feature-box fbox-circled fbox-effect fbox-light"style="position: absolute; bottom: 50px; left: 0px; background: rgba(0, 0, 0, .5); color: #fff; padding: 10px 10px 10px 90px">
+                    <asp:UpdatePanel ID="upd_likes" runat="server">
+                        <ContentTemplate>
+                            <div class="fbox-icon" style="top:initial; left: 10px; ">
+                                <asp:LinkButton id="btn_like" runat="server">
+                                    <i class="icon-thumbs-up"></i>
+                                </asp:LinkButton>
+                            </div>
+                            <h3 style="color: #ccc"><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
+                            <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
+                            <div class="" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+            </div>
 
             <div class="container clearfix">
 
@@ -21,55 +45,31 @@
 
                         <!-- Portfolio Single Video
                         ============================================= -->
-                        <div class="col_full portfolio-single-image">
-                            <video width="100%" controls>
-                                <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                        
                         <!-- .portfolio-single-image end -->
 
                         <!-- Entry Content
                         ============================================= -->
-                        <div class="col_half nobottommargin">
-                            <!-- Entry Title
-                            ============================================= -->
-                            <div class="entry-title">
-                                <h2><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h2>
-                            </div>
+                        <div class="col_full nobottommargin center">
+                            <h4 class="nomargin author"><asp:LinkButton ID="lnk_utente" runat="server"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></asp:LinkButton></h4>
+                            <h3 class="nomargin title"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
                             <!-- .entry-title end -->
 
                             <!-- Entry Meta
                             ============================================= -->
+<!--
                             <ul class="entry-meta clearfix">
                                 <li><i class="icon-calendar3"></i><asp:Literal ID="ltl_data" runat="server"></asp:Literal></li>
-                                <li>
-                                    <asp:LinkButton ID="lnk_utente" runat="server">
-                                        <i class="icon-user"></i><asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
-                                    </asp:LinkButton>
-                                </li>
-                                <!--li><i class="icon-folder-open"></i> <a href="#">Modal jazz</a>, <a href="#">funkie Jazz</a></li>
-                                <li><a href="#"><i class="icon-comments"></i> 3 Commenti</a></li-->
+                                <li><i class="icon-folder-open"></i> <a href="#">Modal jazz</a>, <a href="#">funkie Jazz</a></li>
+                                <li><a href="#"><i class="icon-comments"></i> 3 Commenti</a></li
                             </ul>
+-->
                             <!-- .entry-meta end -->
                         </div>
-                        <div class="col_half col_last nobottommargin">
-                            <div class="feature-box fbox-rounded fbox-effect fbox-light">
-                                <asp:UpdatePanel ID="upd_likes" runat="server">
-                                    <ContentTemplate>
-                                        <div class="fbox-icon">
-                                            <asp:LinkButton id="btn_like" runat="server">
-                                                <i class="icon-thumbs-up"></i>
-                                            </asp:LinkButton>
-                                        </div>
-                                        <h3><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
-                                        <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
-                                        <div class="" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
-                                    </ContentTemplate>
-                                </asp:UpdatePanel>
-                            </div>
+                        <div class="col_full  nobottommargin">
+                            
                         </div>
-                        <div class="line"></div>
+                        <hr>
                         <div class="entry-content notopmargin">
 
                             <p>
@@ -130,75 +130,8 @@
 
                     <!-- Commenti
                     ============================================= -->
-                    <div id="comments" class="clearfix">
-
-                        <h3 id="comments-title"><span class="icon-comment"></span> <%=Lingua.CaricaLingua("lgl_videopost_lascia_commenti")%></h3>
-
-                        <ol class="commentlist clearfix hidden">
-
-                            <li class="comment even thread-even depth-1" id="li-comment-1">
-
-                                <div id="comment-1" class="comment-wrap clearfix">
-
-                                    <div class="comment-meta">
-
-                                        <div class="comment-author vcard">
-
-                                        <span class="comment-avatar clearfix">
-                                        <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=60' class='avatar avatar-60 photo avatar-default' height='60' width='60' /></span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="comment-content clearfix">
-
-                                        <div class="comment-author">Utente #1<span>April 24, 2012 at 10:46 am</span></div>
-
-                                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-
-                                    </div>
-
-                                    <div class="clear"></div>
-
-                                </div>
-
-                            </li>
-
-                            <li class="comment byuser comment-author-_smcl_admin even thread-odd thread-alt depth-1" id="li-comment-2">
-
-                                <div id="comment-2" class="comment-wrap clearfix">
-
-                                    <div class="comment-meta">
-
-                                        <div class="comment-author vcard">
-
-                                        <span class="comment-avatar clearfix">
-                                        <img alt='' src='http://1.gravatar.com/avatar/30110f1f3a4238c619bcceb10f4c4484?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></span>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="comment-content clearfix">
-
-                                        <div class="comment-author">Utente #3<span>Aprile 25, 2012 at 1:03 am</span></div>
-
-                                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-
-
-
-                                    </div>
-
-                                    <div class="clear"></div>
-
-                                </div>
-
-                            </li>
-
-                        </ol>
-                        <!-- .commentlist end -->
-
+                    <div id="comments" class="clearfix" style="border: none;">
+<!--                        <h3 id="comments-title"><span class="icon-comment"></span> <%=Lingua.CaricaLingua("lgl_videopost_lascia_commenti")%></h3>-->
                         <!-- Comments List
                         ============================================= -->
                         <ol class="commentlist clearfix">

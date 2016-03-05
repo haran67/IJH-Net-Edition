@@ -383,9 +383,12 @@ body > form {
         a {
             display: inline-block;
             color: #fff;
-            margin-right: 10px;
-            &:last-child {
-                margin-right: none;
+            margin-left: 5px;
+            margin-right: 5px;
+            &:hover {
+                -ms-transform: scale(2,2); /* IE 9 */
+                -webkit-transform: scale(2,2); /* Safari */
+                transform: scale(2,2);
             }
         }
     }
@@ -615,27 +618,35 @@ body > form {
     h1, h2, h3, h4, h5 {
         line-height: 1.1em;
     }
-    .video-title {
-        padding: 20px 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background: url('images/grid.png') repeat;
-        background-color: fade(@theme-color,50%);
-        text-transform: lowercase;
-        &:first-letter {
-            text-transform: uppercase;
-        }
-        .author {
-            padding-bottom: .5em;
-            font-weight: 300;
-        }
-        .title {
-            padding-bottom: .5em;
-        }
+    
+}
+.video-title {
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url('images/grid.png') repeat;
+    background-color: fade(@theme-color,50%);
+    text-transform: lowercase;
+    &:first-letter {
+        text-transform: uppercase;
     }
 }
-
+.author {
+    padding-bottom: .5em;
+    font-weight: 300;
+    text-transform: lowercase;
+    &:first-letter {
+        text-transform: uppercase;
+    }
+}
+.title {
+    padding-bottom: .5em;
+    text-transform: lowercase;
+    &:first-letter {
+        text-transform: uppercase;
+    }
+}
 #primary-menu ul li a {
     padding: 0 10px
 }
@@ -892,6 +903,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
             color: #fff;
             font-size: 1.2em;
             line-height: 1.25em;
+            font-weight: 400;
         }
         span {
             color: #dfdfdf;

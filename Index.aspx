@@ -76,7 +76,7 @@
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
                 <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br><br>
-                    <a href="#" id="video-slider-play" style="color: #ccc;">
+                    <a href="#" id="video-slider-play" class="video-played" style="color: #ccc;">
                         <i class="icon-line-play nomargin"></i>
                         <i class="icon-line-pause nomargin"></i>
                     </a>&nbsp;
@@ -100,19 +100,19 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding standard-portfolio">
-        <div class="section nomargin nopadding alt box-shadow-custom center">
-        <section class="nomargin nopadding box-shadow-custom" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
-            <div class="container clearfix">
-                <div class="main-search notopmargin">
-                    <div style="margin-left: auto; margin-right: auto; float: none">
-                        <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server">
-                        <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none; margin-top: 5px;">
-                            <i class="icon-search"></i>
-                        </asp:LinkButton>
+        <div class="section notopmargin notoppadding alt box-shadow-custom center">
+            <section class="nomargin nopadding box-shadow-custom" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
+                <div class="container clearfix">
+                    <div class="main-search notopmargin">
+                        <div style="margin-left: auto; margin-right: auto; float: none">
+                            <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server">
+                            <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none; margin-top: 5px;">
+                                <i class="icon-search"></i>
+                            </asp:LinkButton>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
             <div class="container clearfix topmargin-sm">
                 <h4><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
@@ -131,6 +131,30 @@
                                     </div>
                                 </div>
                             </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </div>
+        </div>
+        <div class="section nopadding center">
+            <div class="container clearfix ">
+                <h4><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4>
+                <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
+                    <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
+                        <ItemTemplate>
+                            <div class="oc-item">
+                                <article class="iportfolio">
+                                    <div class="portfolio-image patch-placeholder">
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <asp:Image ID="img_copertina" runat="server" />
+                                        </asp:LinkButton>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
@@ -214,30 +238,7 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin ">
-            <div class="container clearfix ">
-                <h4><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4>
-                <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
-                    <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
-                        <ItemTemplate>
-                            <div class="oc-item">
-                                <article class="iportfolio">
-                                    <div class="portfolio-image patch-placeholder">
-                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <asp:Image ID="img_copertina" runat="server" />
-                                        </asp:LinkButton>
-                                        <div class="portfolio-desc">
-                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
