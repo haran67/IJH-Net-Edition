@@ -28,7 +28,7 @@
                             </div>
                             <h3 style="color: #ccc"><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
                             <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
-                            <div class="" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
+                            <div style="padding-bottom: 20px;" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
                         </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
@@ -130,7 +130,7 @@
 
                     <!-- Commenti
                     ============================================= -->
-                    <div id="comments" class="clearfix" style="border: none;">
+                    <div id="comments" class="clearfix notopmargin noborder">
 <!--                        <h3 id="comments-title"><span class="icon-comment"></span> <%=Lingua.CaricaLingua("lgl_videopost_lascia_commenti")%></h3>-->
                         <!-- Comments List
                         ============================================= -->
@@ -176,7 +176,7 @@
                         ============================================= -->
                         <div id="respond" class="clearfix">
 
-                            <h3><%=Lingua.CaricaLingua("lgl_videopost_lascia_commento")%></h3>
+                            <h4><%=Lingua.CaricaLingua("lgl_videopost_lascia_commento")%></h4>
 
                             <div class="clearfix" action="#" method="post" id="commentform">    
                                 
