@@ -69,9 +69,11 @@
                 </h3>
                 <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
             </div>
-                <a href="#" id="video-slider-audio" class="audio-played" style="color: #ccc;">
-                <i class="icon-mute nomargin"></i>
-                <i class="icon-volume nomargin"></i>
+        </div>
+        <div class="center" style="position: absolute; bottom: 10px;">
+            <a href="#" id="video-slider-audio" class="audio-played" style="color: #ccc;">
+                <i class="icon-line-play nomargin"></i>
+                <i class="icon-line-pause nomargin"></i>
             </a>
         </div>
     </section>    
@@ -87,7 +89,7 @@
                     <asp:LinkButton ID="btn_video" runat="server"  style="color: #ccc;">
                         <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                         <i class="icon-angle-right"></i>-->
-                        <i class="icon-line-eye nomargin"></i>
+                        <i class="icon-line-paper nomargin"></i>
                     </asp:LinkButton>
                 </h3>
                 <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
@@ -192,10 +194,10 @@
         <div class="section nomargin alt box-shadow-custom center" id="div_like_expo" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
-                <div id="portfolio" class="portfolio portfolio-first portfolio-full portfolio-masonry mixed-masonry clearfix">
+                <div id="portfolio-first" class="portfolio-first portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item" >
+                            <article class="portfolio-item">
                                 <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
@@ -213,14 +215,13 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin box-shadow-custom center" id="div_like_visi" runat="server">
+        <div class="section nomargin alt box-shadow-custom center" id="div_like_visi" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
-                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
-                        OnItemCommand="rpt_video_ItemCommand">
+                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item" >
+                            <article class="portfolio-item">
                                 <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
@@ -238,19 +239,21 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
     <script type="text/javascript">
         jQuery(window).load(function () {
             
-            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
+            //$(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
             
         });
-    
+
         $(document).ready(function () {
-            
+
+            //alert($(".portfolio-first").find(".portfolio-item:first-child").find(".portfolio-desc")); //portfolio-desc
+            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
+
             var $container = $('.portfolio');
 
             $container.isotope({
@@ -260,9 +263,18 @@
                 }
             });
 
+            var $container_expo = $('.portfolio-first');
+
+            $container_expo.isotope({
+                transitionDuration: '0.25s',
+                masonry: {
+                    columnWidth: $container_expo.find('.portfolio-item:not(.wide)')[0]
+                }
+            });
 
             $(window).resize(function () {
                 $container.isotope('layout');
+                $container_expo.isotope('layout');
             });
 
             Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
@@ -272,20 +284,20 @@
             ocPortfolio.owlCarousel({
                 margin: 15,
                 nav: true,
-                navText: ['<i class="icon-chevron-left"></i>','<i class="icon-chevron-right"></i>'],
+                navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
                 autoplay: false,
                 autoplayHoverPause: true,
-                dots: true,
+                dots: false,
                 autoHeight: false,
-                responsive:{
-                    0:{ items:1 },
-                    600:{ items:3 },
-                    1000:{ items:4 },
-                    1200:{ items:4 }
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 3 },
+                    1000: { items: 4 },
+                    1200: { items: 4 }
                 }
             });
-            
-            
+
+
         });
 
         function endRequestHandler(sender, args) {
