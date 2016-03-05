@@ -194,10 +194,10 @@
         <div class="section nomargin alt box-shadow-custom center" id="div_like_expo" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
-                <div id="portfolio" class="portfolio portfolio-first portfolio-full portfolio-masonry mixed-masonry clearfix">
+                <div id="portfolio-first" class="portfolio-first portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <article class="portfolio-item" >
+                            <article class="portfolio-item">
                                 <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
@@ -215,48 +215,45 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin box-shadow-custom" id="div_like_visi" runat="server">
+        <div class="section nomargin alt box-shadow-custom center" id="div_like_visi" runat="server">
             <div class="container clearfix ">
                 <h4><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
-                <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
-                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
-                        OnItemCommand="rpt_video_ItemCommand">
+                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
+                    <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
-                            <div class="oc-item">
-                                <article class="iportfolio">
+                            <article class="portfolio-item">
+                                <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
-                                        <asp:Image ID="img_copertina" runat="server"/>
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <div class="portfolio-overlay">
-                                                <div class="portfolio-desc">
-                                                    <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                                    <h3>
-                                                        <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
-                                                    </h3>
-                                                </div>
-                                            </div>
+                                            <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        </div>
                                     </div>
-                                </article>
-                            </div>
+                                </div>
+                            </article>
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>
             </div>
         </div>
-        
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
     <script type="text/javascript">
         jQuery(window).load(function () {
             
-            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
+            //$(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
             
         });
-    
+
         $(document).ready(function () {
-            
+
+            //alert($(".portfolio-first").find(".portfolio-item:first-child").find(".portfolio-desc")); //portfolio-desc
+            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
+
             var $container = $('.portfolio');
 
             $container.isotope({
@@ -266,9 +263,18 @@
                 }
             });
 
+            var $container_expo = $('.portfolio-first');
+
+            $container_expo.isotope({
+                transitionDuration: '0.25s',
+                masonry: {
+                    columnWidth: $container_expo.find('.portfolio-item:not(.wide)')[0]
+                }
+            });
 
             $(window).resize(function () {
                 $container.isotope('layout');
+                $container_expo.isotope('layout');
             });
 
             Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
@@ -278,20 +284,20 @@
             ocPortfolio.owlCarousel({
                 margin: 15,
                 nav: true,
-                navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+                navText: ['<i class="icon-angle-left"></i>', '<i class="icon-angle-right"></i>'],
                 autoplay: false,
                 autoplayHoverPause: true,
                 dots: false,
                 autoHeight: false,
-                responsive:{
-                    0:{ items:1 },
-                    600:{ items:3 },
-                    1000:{ items:4 },
-                    1200:{ items:4 }
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 3 },
+                    1000: { items: 4 },
+                    1200: { items: 4 }
                 }
             });
-            
-            
+
+
         });
 
         function endRequestHandler(sender, args) {

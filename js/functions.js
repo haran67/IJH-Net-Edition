@@ -1539,6 +1539,8 @@ var SEMICOLON = SEMICOLON || {};
 		arrange: function(){
 			SEMICOLON.initialize.setFullColumnWidth( $portfolio );
 			$('#portfolio.portfolio-full').isotope('layout');
+			SEMICOLON.initialize.setFullColumnWidth( $portfoliofirst );
+			$('#portfolio-first.portfolio-full').isotope('layout');
 		},
 
 		ajaxload: function(){
@@ -1789,6 +1791,7 @@ var SEMICOLON = SEMICOLON || {};
 							SEMICOLON.initialize.verticalMiddle();
 							slider.parent().removeClass('preloader2');
 							var t = setTimeout( function(){ $('#portfolio.portfolio-masonry,#portfolio.portfolio-full,#posts.post-masonry').isotope('layout'); }, 1200 );
+							var te = setTimeout( function(){ $('#portfolio-first.portfolio-masonry,#portfolio-first.portfolio-full').isotope('layout'); }, 1500 );
 							SEMICOLON.initialize.lightbox();
 							$('.flex-prev').html('<i class="icon-angle-left"></i>');
 							$('.flex-next').html('<i class="icon-angle-right"></i>');
@@ -1797,6 +1800,10 @@ var SEMICOLON = SEMICOLON || {};
 						after: function(){
 							if( $portfolio.has('portfolio-full') ) {
 								$('#portfolio.portfolio-full').isotope('layout');
+								SEMICOLON.portfolio.portfolioDescMargin();
+							}
+							if( $portfoliofirst.has('portfolio-full') ) {
+								$('#portfolio-first.portfolio-full').isotope('layout');
 								SEMICOLON.portfolio.portfolioDescMargin();
 							}
 						}
@@ -2512,6 +2519,7 @@ var SEMICOLON = SEMICOLON || {};
 			SEMICOLON.header.init();
 			if( $slider.length > 0 ) { SEMICOLON.slider.init(); }
 			if( $portfolio.length > 0 ) { SEMICOLON.portfolio.init(); }
+			if( $portfoliofirst.length > 0 ) { SEMICOLON.portfolio.init(); }
 			SEMICOLON.widget.init();
 			SEMICOLON.documentOnReady.windowscroll();
 		},
@@ -2615,6 +2623,7 @@ var SEMICOLON = SEMICOLON || {};
 		$onePageMenuEl = $('.one-page-menu'),
 		onePageGlobalOffset = 0,
 		$portfolio = $('#portfolio'),
+        $portfoliofirst = $('#portfolio-first'),
 		$slider = $('.slider'),
 		$sliderParallaxEl = $('.slider-parallax'),
 		$pageTitle = $('.page-title'),
