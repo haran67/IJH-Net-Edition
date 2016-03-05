@@ -60,16 +60,22 @@
                 <source src='images/videos/explore.webm' type='video/webm' />
             </video>
         </div>
-            <div class="vertical-middle center" style="z-index: 5">
-                <div class="emphasis-title title-center nomargin">
-                    <h2 class="nopadding text-shadow"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
-                    <h3 class="citazione" style="font-weight: normal">
-                        <strong>Jazz Hub</strong> 
-                        <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
-                    </h3>
-                    <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
-                </div>
+        <div class="vertical-middle center" style="z-index: 5">
+            <div class="emphasis-title title-center nomargin">
+                <h2 class="nopadding text-shadow"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
+                <h3 class="citazione" style="font-weight: normal">
+                    <strong>Jazz Hub</strong> 
+                    <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
+                </h3>
+                <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
             </div>
+        </div>
+        <div class="center" style="position: absolute; bottom: 10px;">
+            <a href="#" id="video-slider-audio" class="audio-played" style="color: #ccc;">
+                <i class="icon-line-play nomargin"></i>
+                <i class="icon-line-pause nomargin"></i>
+            </a>
+        </div>
     </section>    
     <section id="div_logged" runat="server" style="overflow: initial"  class="slider slider-video dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
         <div class="clearfix video-title text-shadow">
@@ -245,6 +251,12 @@
     <script type="text/javascript">
         jQuery(window).load(function () {
             
+            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
+            
+        });
+    
+        $(document).ready(function () {
+            
             var $container = $('.portfolio');
 
             $container.isotope({
@@ -258,10 +270,6 @@
             $(window).resize(function () {
                 $container.isotope('layout');
             });
-            
-        });
-    
-        $(document).ready(function () {
 
             Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
 
@@ -283,12 +291,24 @@
                 }
             });
             
-            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
+            
         });
 
         function endRequestHandler(sender, args) {
 
         }
+        
+        $('#video-slider-audio').on('click', function (e) {
+            e.preventDefault();
+
+            if ($(this).hasClass('audio-played')) {
+                $('video').prop('muted', true);
+            } else {
+                $('video').prop('muted', false);
+            }
+
+            $(this).toggleClass('audio-played');
+        });
 
         $('#video-slider-play').on('click', function (e) {
             e.preventDefault();

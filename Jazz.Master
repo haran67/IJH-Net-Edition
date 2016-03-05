@@ -256,7 +256,7 @@
                 $cookieNotification.css({ bottom: -cookieNotificationHeight });
 
                 if( $.cookie('websiteUsesCookies') != 'yesConfirmed' ) {
-                    $cookieNotification.css({ bottom: 0 });
+                    $cookieNotification.css({ display: 'hidden' });
                 }
 
             }
