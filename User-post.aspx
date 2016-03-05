@@ -49,7 +49,7 @@
     </section>
 <asp:UpdatePanel ID="upd_header" runat="server">
     <ContentTemplate>
-    <div class="section nomargin nopadding profile-submenu" style="background: #3C4B5E;">
+    <div class="section nomargin nopadding profile-submenu" style="background: #3C4B5E;" id="top_section">
         <div class="container center clearfix">
             <asp:LinkButton ID="btn_video" runat="server" CssClass="active">
                 Video
