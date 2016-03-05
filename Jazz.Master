@@ -1,4 +1,4 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -52,8 +52,12 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<!--<body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">-->
-    <body class="stretched no-transition" data-loader-timeout="6000" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
+    <%If page_is_index Then%>
+        <body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" 
+            data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
+    <%else%>
+        <body class="stretched no-transition" data-loader-timeout="6000" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
+    <%end if%>
     <form id="frmPrincipale" runat="server">
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true" EnablePageMethods="true"
         EnableScriptLocalization="true" AsyncPostBackTimeout="3600" ></telerik:RadScriptManager>
@@ -246,6 +250,11 @@
         function SaveResetScrollPosition(div_ok) {
             setTimeout("window.scrollTo(0,0)", 0);
             $("#" + div_ok).effect("pulsate", { times: 5 }, 3000);
+        }
+        function GotoScrollPosition(id, top) {
+            $('html,body').animate({
+                scrollTop: ($("#" + id).offset().top - top)
+            },'slow');
         }
         var $cookieNotification = $('#cookie-notification');
         
