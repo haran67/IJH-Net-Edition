@@ -1406,6 +1406,14 @@ txt_ricerca control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Video_list.ltl_nessun_risultato">
+	<summary>
+ltl_nessun_risultato control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Video_list.rpt_video">
 	<summary>
 rpt_video control.
@@ -3833,22 +3841,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.lng_Resource.btn_login">
 	<summary>
 btn_login control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.fLink.div_registrati_00">
-	<summary>
-div_registrati_00 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.fLink.div_registrati_01">
-	<summary>
-div_registrati_01 control.
 </summary>
 	<remarks>
 Auto-generated field.
