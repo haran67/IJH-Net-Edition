@@ -13,14 +13,14 @@
                 <div>
                 <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
                 <div class="user-profile-type">
-                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block" id="i_expo" runat="server" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
-                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block" id="i_view" runat="server" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
-                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block" id="i_guest" runat="server" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
+                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block box-shadow-custom" id="i_expo" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
+                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block box-shadow-custom" id="i_view" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
+                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block box-shadow-custom" id="i_guest" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                 </div>
                 <h1 class="text-shadow">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                     <span class="visible-xs visible-sm visible-md visible-lg">
-                        <strong style="font-weight: 400"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong>
+                        <strong style="font-weight: 400; color: #fff"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong>
                          - <asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
                     </span>
                 </h1>
@@ -67,7 +67,7 @@
     <ContentTemplate>
     <div class="content-wrap alt" id="div_content" runat="server">
         <div class="container clearfix">
-            <div id="portfolio" class="portfolio-<%=pf_num%> clearfix">
+            <div id="portfolio" class="<%=pf_num%> clearfix standard-portfolio">
                 <asp:Repeater ID="rpt_video" runat="server">
                     <ItemTemplate>
                         <article class="portfolio-item clearfix">
@@ -76,7 +76,7 @@
                                     <asp:Image ID="img_copertina" runat="server" />
                                 </asp:LinkButton>
                             </div>
-                            <div class="portfolio-desc box-shadow-custom" style="background: #fff; padding: 10px;">
+                            <div class="portfolio-desc box-shadow-custom" style="padding: 10px;">
                                 <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
                                 <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
                             </div>

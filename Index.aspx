@@ -69,11 +69,9 @@
                 </h3>
                 <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
             </div>
-        </div>
-        <div class="center" style="position: absolute; bottom: 10px;">
             <a href="#" id="video-slider-audio" class="audio-played" style="color: #ccc;">
-                <i class="icon-line-play nomargin"></i>
-                <i class="icon-line-pause nomargin"></i>
+                <i class="icon-mute nomargin"></i>
+                <i class="icon-volume nomargin"></i>
             </a>
         </div>
     </section>    
@@ -128,7 +126,7 @@
                 </div>
 -->
                 <h4><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
-                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-like" style="background-color: #e6e6e6"></i></div>
+                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-star" style="background-color: #e6e6e6"></i></div>
                 <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
