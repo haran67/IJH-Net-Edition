@@ -158,6 +158,14 @@ ltl_categoria control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.User_post.ltl_trattino_where">
+	<summary>
+ltl_trattino_where control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.User_post.ltl_citta">
 	<summary>
 ltl_citta control.

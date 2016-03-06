@@ -21,7 +21,7 @@
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                     <span class="visible-xs visible-sm visible-md visible-lg">
                         <strong style="font-weight: 400; color: #fff"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong>
-                         - <asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
+                        &nbsp;<asp:Literal ID="ltl_trattino_where" runat="server">-</asp:Literal>&nbsp;<asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
                     </span>
                 </h1>
                 <div class="noheight user-divider"></div>
