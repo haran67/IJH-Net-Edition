@@ -51,6 +51,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap" style="padding: 40px 0">
         <div class="container clearfix">
+            <asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal>
             <!-- Portfolio Items
                     ============================================= -->
             <div id="portfolio" class="portfolio-masonry portfolio-6 clearfix">
