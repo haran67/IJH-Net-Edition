@@ -67,11 +67,11 @@
         <div class="content-wrap alt" id="div_content" runat="server">
             <div class="container center clearfix">
                 <div id="p_video" runat="server">
-                    <h4>
+                    <h4 style="font-weight: 400;" class="color">
                         <asp:literal ID="ltl_titolo" runat="server"></asp:literal>
                     </h4>
                     <div class="divider divider-rounded divider-center divider-custom"><i class="icon-play" style="background-color: #e6e6e6"></i></div>
-                    <h2 style="font-weight: 300; color: #6481A6" id="h_nessun_video" runat="server">
+                    <h2 style="font-weight: 300;" class="color" id="h_nessun_video" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_video")%>
                     </h2>
                     <div id="portfolio" class="<%=pf_num%> clearfix standard-portfolio">
@@ -93,9 +93,9 @@
                     </div>
                 </div> 
                 <div id="p_when" runat="server" class="date-list divcenter center">
-                    <h4><%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
+                    <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
                     <div class="divider divider-rounded divider-center divider-custom"><i class="icon-calendar3" style="background-color: #e6e6e6"></i></div>
-                    <h2 style="font-weight: 300; color: #6481A6" id="h_nessun_eventi" runat="server">
+                    <h2 style="font-weight: 300;" class="color" id="h_nessun_eventi" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>
                     </h2>
                     <asp:Repeater ID="rpt_when" runat="server">
