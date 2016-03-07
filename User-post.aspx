@@ -84,8 +84,8 @@
                                         </asp:LinkButton>
                                     </div>
                                     <div class="portfolio-desc box-shadow-custom" style="padding: 10px;">
-                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
+                                        <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
                                     </div>
                                 </article>
                             </ItemTemplate>
