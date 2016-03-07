@@ -66,30 +66,38 @@
     <ContentTemplate>
         <div class="content-wrap alt" id="div_content" runat="server">
             <div class="container center clearfix">
-                <h4>Video caricati / Liked(audience)</h4>
-                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-play" style="background-color: #e6e6e6"></i></div>
-                <h2 style="font-weight: 300; color: #6481A6">Nessun video presente</h2>
-                <div id="portfolio" class="<%=pf_num%> clearfix standard-portfolio">
-                    <asp:Repeater ID="rpt_video" runat="server">
-                        <ItemTemplate>
-                            <article class="portfolio-item clearfix">
-                                <div class="portfolio-image patch-placeholder">
-                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                        <asp:Image ID="img_copertina" runat="server" />
-                                    </asp:LinkButton>
-                                </div>
-                                <div class="portfolio-desc box-shadow-custom" style="padding: 10px;">
-                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                    <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
-                                </div>
-                            </article>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                </div>
+                <div id="p_video" runat="server">
+                    <h4>
+                        <asp:literal ID="ltl_titolo" runat="server"></asp:literal>
+                    </h4>
+                    <div class="divider divider-rounded divider-center divider-custom"><i class="icon-play" style="background-color: #e6e6e6"></i></div>
+                    <h2 style="font-weight: 300; color: #6481A6" id="h_nessun_video" runat="server">
+                        <%=Lingua.CaricaLingua("lgl_user_post_nessun_video")%>
+                    </h2>
+                    <div id="portfolio" class="<%=pf_num%> clearfix standard-portfolio">
+                        <asp:Repeater ID="rpt_video" runat="server">
+                            <ItemTemplate>
+                                <article class="portfolio-item clearfix">
+                                    <div class="portfolio-image patch-placeholder">
+                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <asp:Image ID="img_copertina" runat="server" />
+                                        </asp:LinkButton>
+                                    </div>
+                                    <div class="portfolio-desc box-shadow-custom" style="padding: 10px;">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
+                                    </div>
+                                </article>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
+                </div> 
                 <div id="p_when" runat="server" class="date-list divcenter center">
-                    <h4>Eventi in programma</h4>
+                    <h4><%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
                     <div class="divider divider-rounded divider-center divider-custom"><i class="icon-calendar3" style="background-color: #e6e6e6"></i></div>
-                    <h2 style="font-weight: 300; color: #6481A6">Nessun evento presente</h2>
+                    <h2 style="font-weight: 300; color: #6481A6" id="h_nessun_eventi" runat="server">
+                        <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>
+                    </h2>
                     <asp:Repeater ID="rpt_when" runat="server">
                         <ItemTemplate>
                             <div class="date-list">
