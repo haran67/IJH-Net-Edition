@@ -54,7 +54,7 @@
                 Video
             </asp:LinkButton>
             <asp:LinkButton ID="btn_when" runat="server" CssClass="active">
-                When
+                Eventi
             </asp:LinkButton>
         </div>
     </div>
@@ -64,44 +64,48 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 <asp:UpdatePanel ID="upd_dati" runat="server">
     <ContentTemplate>
-    <div class="content-wrap alt" id="div_content" runat="server">
-        <div class="container clearfix">
-            <div id="portfolio" class="<%=pf_num%> clearfix standard-portfolio">
-                <asp:Repeater ID="rpt_video" runat="server">
-                    <ItemTemplate>
-                        <article class="portfolio-item clearfix">
-                            <div class="portfolio-image patch-placeholder">
-                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                    <asp:Image ID="img_copertina" runat="server" />
-                                </asp:LinkButton>
+        <div class="content-wrap alt" id="div_content" runat="server">
+            <div class="container center clearfix">
+                <h4>Video caricati / Liked(audience)</h4>
+                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-play" style="background-color: #e6e6e6"></i></div>
+                <h2 style="font-weight: 300; color: #6481A6">Nessun video presente</h2>
+                <div id="portfolio" class="<%=pf_num%> clearfix standard-portfolio">
+                    <asp:Repeater ID="rpt_video" runat="server">
+                        <ItemTemplate>
+                            <article class="portfolio-item clearfix">
+                                <div class="portfolio-image patch-placeholder">
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <asp:Image ID="img_copertina" runat="server" />
+                                    </asp:LinkButton>
+                                </div>
+                                <div class="portfolio-desc box-shadow-custom" style="padding: 10px;">
+                                    <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                    <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
+                                </div>
+                            </article>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+                <div id="p_when" runat="server" class="date-list divcenter center">
+                    <h4>Eventi in programma</h4>
+                    <div class="divider divider-rounded divider-center divider-custom"><i class="icon-calendar3" style="background-color: #e6e6e6"></i></div>
+                    <h2 style="font-weight: 300; color: #6481A6">Nessun evento presente</h2>
+                    <asp:Repeater ID="rpt_when" runat="server">
+                        <ItemTemplate>
+                            <div class="date-list">
+                                <h4 class="nomargin" style="font-weight: 300; color: #6481A6">
+                                    <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal> - <small style="color: #6481A6"><asp:Literal ID="ltl_when_quando_data" runat="server"></asp:Literal> at <asp:Literal ID="ltl_when_quando_ora" runat="server"></asp:Literal></small>
+                                </h4>
+                                <h3 class="nomargin" style="color: #3A4B5F">
+                                    <asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal>
+                                </h3>
+                                <p class="nomargin" style="color: #6481A6"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
                             </div>
-                            <div class="portfolio-desc box-shadow-custom" style="padding: 10px;">
-                                <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
-                            </div>
-                        </article>
-                    </ItemTemplate>
-                </asp:Repeater>
-            </div>
-            <div id="p_when" runat="server" class="date-list divcenter center">
-                <asp:Repeater ID="rpt_when" runat="server">
-                    <ItemTemplate>
-                        <div class="date-list">
-                            <h4 class="nomargin">
-                                <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal>
-                            </h4>
-                            <h3 class="nomargin">
-                                <asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal><br>
-                                <small><asp:Literal ID="ltl_when_quando_data" runat="server"></asp:Literal></small>
-                                <small><asp:Literal ID="ltl_when_quando_ora" runat="server"></asp:Literal></small>
-                            </h3>
-                            <p class="nomargin"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
-                        </div>
-                    </ItemTemplate> 
-                </asp:Repeater> 
+                        </ItemTemplate> 
+                    </asp:Repeater> 
+                </div>
             </div>
         </div>
-    </div>
     </ContentTemplate>
 </asp:UpdatePanel>
 </asp:Content>
@@ -110,10 +114,18 @@
     <script type="text/javascript" >
         $('[data-toggle=popover]').popover();
         $('.article').readmore({
+            afterToggle: function(trigger, element, expanded) {
+                if(expanded) { // The "Close" link was clicked
+                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
+                }
+                if(! expanded) { // The "Close" link was clicked
+                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
+                }
+            },
             speed: 750,
-            collapsedHeight: 150,
-            moreLink: '<a href="#" style="color: #fff;"><i class="icon-chevron-down"></i></a>',
-            lessLink: '<a href="#" style="color: #fff;"><i class="icon-chevron-up"></i></a>'
+            collapsedHeight: 130,
+            moreLink: '<a href="#" style="color: #fff; font-size: 20px; margin-top: 20px;"><i class="icon-chevron-down"></i></a>',
+            lessLink: '<a href="#" style="color: #fff; font-size: 20px; margin-top: 20px;"><i class="icon-chevron-up"></i></a>'
         });
     </script>
 </asp:Content>

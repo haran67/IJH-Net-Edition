@@ -91,10 +91,10 @@
                         </asp:Repeater> 
                     </p>
                     <p class="hidden">
-                        <a href="#" class="label label-primary">jazz mdal</a> + 1200<br>
-                        <a href="#" class="label label-primary">bepop</a> + 550<br>
-                        <a href="#" class="label label-primary">sassofono</a> + 200<br>
-                        <a href="#" class="label label-primary">piano</a> + 20<br>
+                        <a href="#"jazz mdal <span class="badge">1200</span></a>
+                        <a href="#"jazz mdal <span class="badge">120</span></a> 
+                        <a href="#"jazz mdal <span class="badge">1100</span></a>
+                        <a href="#"jazz mdal <span class="badge">12</span></a>
                     </p>
                 </div>
             </div>
