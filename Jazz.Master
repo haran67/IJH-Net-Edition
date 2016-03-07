@@ -132,7 +132,7 @@
                         </ul>
                         <span  id="li_accedi" runat="server">
                             <div id="top-cart">
-                                <a href="/login.aspx" id="top-cart-login" title="Accedi"><i class="icon-signin"></i></a>
+                                <a href="/login.aspx" id="top-cart-login" title="Accedi"><i class="icon-signin hidden"></i>ACCEDI</a>
                             </div>
                         </span>
                         <span id="div_account" runat="server">

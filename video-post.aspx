@@ -7,11 +7,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section id="content">
-
         <div class="content-wrap notoppadding">
             <div class="section notopmargin nopadding" style="background: #000">
                 <div class="container clearfix">
-                    <div class="col_full portfolio-single-image nomargin">
+                    <div class="col_full custom-video-post nomargin">
                         <video width="100%" controls autoplay>
                             <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                             Your browser does not support the video tag.

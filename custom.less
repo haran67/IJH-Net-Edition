@@ -964,15 +964,34 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 
 /* importazione classi responsive in coda */
 
-
+#top-cart a {
+    width: auto;
+    border: solid 1px rgba(255, 255, 255, .1);
+    height: auto; 
+    padding: 5px 10px; top: -6px;
+    border-radius: 3px;
+    font-family: oswald;
+    font-size: 13px;
+    font-weight: bold;
+    &:hover {
+        background-color: rgba(255,255,255,.05)
+    }
+}
 @import "less/responsive.less";
 
 
 #portfolio.portfolio-2.item-single {
     margin: 0 !important;
 }
-
+.custom-video-post {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 @media only screen and (min-width:992px) and (max-width:1199px) {
+    .custom-video-post {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .standard-portfolio.portfolio-2.item-single {
         margin: 0 !important;
         .portfolio-item {
@@ -983,6 +1002,10 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
     }
 }
 @media only screen and (max-width:991px) {
+    .custom-video-post {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .standard-portfolio.portfolio-2.item-single {
         margin: 0 !important;
         .portfolio-item {
@@ -994,7 +1017,10 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 }
 
 @media only screen and (max-width:767px) and (min-width:480px) {
-    
+    .custom-video-post {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .standard-portfolio.portfolio-2.item-single {
         margin: 0 !important;
         .portfolio-item {
@@ -1028,15 +1054,20 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 @media only screen and (max-width: 991px){
     #top-cart {
         display: block;
+        width: 70px;
+        top: 0;
+        right: 0;
+        margin: 24px 0;
         #top-cart-trigger, #top-cart-login {
             position: absolute;
-            top: -35px;
-            right: -15px;
-            width: 50px;
-            height: 50px;
-            font-size: 16px;
-            line-height: 50px;
+//            top: -35px;
+//            right: -15px;
+//            width: 50px;
+//            height: 50px;
+//            font-size: 16px;
+//            line-height: 50px;
             cursor: pointer;
+            border: none;
             img {
                 top: 0;
                 height: auto;
