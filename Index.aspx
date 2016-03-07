@@ -53,7 +53,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="div_logging" runat="server" style="overflow: initial" class="slider dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
+    <section id="div_logging" runat="server" style="overflow: initial;background: #000" class="slider dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
         <div class="video-wrap" style="height: 100%;">
             <video id="slide-video" preload="auto" loop autoplay >
                 <source src='images/videos/header-video.mp4' type='video/mp4' />
@@ -75,7 +75,7 @@
             </a>
         </div>
     </section>    
-    <section id="div_logged" runat="server" style="overflow: initial"  class="slider slider-video dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
+    <section id="div_logged" runat="server" style="overflow: initial; background: #000;"  class="slider slider-video dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
         <div class="clearfix video-title text-shadow">
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
@@ -137,8 +137,8 @@
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
-                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
                                 </div>
@@ -161,8 +161,8 @@
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
-                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
                                 </article>
@@ -188,8 +188,8 @@
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
-                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
                                 </div>
@@ -213,8 +213,8 @@
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
-                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
                                 </div>
@@ -238,8 +238,8 @@
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
-                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
                                 </div>
@@ -301,7 +301,7 @@
                 autoHeight: false,
                 responsive: {
                     0: { items: 1 },
-                    600: { items: 3 },
+                    600: { items: 2 },
                     1000: { items: 4 },
                     1200: { items: 4 }
                 }

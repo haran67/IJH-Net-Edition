@@ -132,8 +132,8 @@
             },
             speed: 750,
             collapsedHeight: 130,
-            moreLink: '<a href="#" style="color: #fff; font-size: 20px; margin-top: 20px;"><i class="icon-chevron-down"></i></a>',
-            lessLink: '<a href="#" style="color: #fff; font-size: 20px; margin-top: 20px;"><i class="icon-chevron-up"></i></a>'
+            moreLink: '<a href="#" style="color: #fff; font-style: italic; margin-top: 20px;">leggi tutto<br><i style="font-size: 26px;" class="icon-chevron-down"></i></a>',
+            lessLink: '<a href="#" style="color: #fff; font-style: italic;"><i style="font-size: 26px; margin-top: 20px;" class="icon-chevron-up"></i><br>chiudi</a>'
         });
     </script>
 </asp:Content>
