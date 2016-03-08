@@ -53,29 +53,40 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="div_logging" runat="server" style="overflow: initial;background: #000" class="slider dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
+    <section id="div_logging" runat="server" style="overflow: initial;background: #000" class="slider dark"
+         data-height-lg="550"
+         data-height-md="550"
+         data-height-sm="450"
+         data-height-xs="450"
+         data-height-xxs="550">
         <div class="video-wrap" style="height: 100%;">
             <video id="slide-video" preload="auto" loop autoplay >
-                <source src='images/videos/header-video.mp4' type='video/mp4' />
-                <source src='images/videos/explore.webm' type='video/webm' />
+<!--                <source src='images/videos/header-video.mp4' type='video/mp4' />-->
+                <source src='images/videos/video-test.mp4' type='video/mp4' />
             </video>
         </div>
-        <div class="vertical-middle center" style="z-index: 5">
+        <div class="vertical-middle center text-shadow" style="z-index: 5">
             <div class="emphasis-title title-center nomargin">
-                <h2 class="nopadding text-shadow"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
+                <h2 class="nopadding"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
                 <h3 class="citazione" style="font-weight: normal">
                     <strong>Jazz Hub</strong> 
                     <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
                 </h3>
                 <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
             </div>
-            <a href="#" id="video-slider-audio" class="audio-played" style="color: #ccc;">
+            <a href="#" id="video-slider-audio" class="audio-played">
                 <i class="icon-mute nomargin"></i>
                 <i class="icon-volume nomargin"></i>
             </a>
         </div>
+        <div class="video-overlay"></div>
     </section>    
-    <section id="div_logged" runat="server" style="overflow: initial; background: #000;"  class="slider slider-video dark" data-height-lg="600" data-height-md="600" data-height-sm="450" data-height-xs="450" data-height-xxs="550">
+    <section id="div_logged" runat="server" style="overflow: initial; background: #000;"  class="slider slider-video dark"
+         data-height-lg="550"
+         data-height-md="550"
+         data-height-sm="450"
+         data-height-xs="450"
+         data-height-xxs="550">
         <div class="clearfix video-title text-shadow">
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
@@ -134,6 +145,7 @@
                                 <div style="margin: 5px;">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <div class="goto-video"><i class="icon-line-play"></i></div>
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
@@ -158,6 +170,7 @@
                                 <article class="iportfolio">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <div class="goto-video"><i class="icon-line-play"></i></div>
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
@@ -185,6 +198,7 @@
                                 <div style="margin: 5px;">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <div class="goto-video"><i class="icon-line-play"></i></div>
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
@@ -210,6 +224,7 @@
                                 <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <div class="goto-video"><i class="icon-line-play"></i></div>
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
@@ -235,6 +250,7 @@
                                 <div style="margin: 5px">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <div class="goto-video"><i class="icon-line-play"></i></div>
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">

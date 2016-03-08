@@ -53,11 +53,12 @@
                             <article class="portfolio-item box-shadow-custom">
                                 <div class="portfolio-image patch-placeholder">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="goto-video"><i class="icon-line-play"></i></div>
                                         <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
                                     <div class="portfolio-desc">
-                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                     </div>
                                 </div>
                             </article>

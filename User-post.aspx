@@ -7,10 +7,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-dark" style="padding: 20px 0;background: url('<%=user_background%>') no-repeat top center; background-size: cover;">
-        <div class="video-overlay"></div>
-        <div class="container center clearfix">
+        <div class="container center clearfix" style="z-index: 2">
             <div class="profile-header">
-                <div>
                 <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
                 <div class="user-profile-type">
                     <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block box-shadow-custom" id="i_expo" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
@@ -45,6 +43,7 @@
                 </div>
             </div>
         </div>
+        <div class="video-overlay"></div>
     </section>
 <asp:UpdatePanel ID="upd_header" runat="server">
     <ContentTemplate>
@@ -70,7 +69,7 @@
                     <h4 style="font-weight: 400;" class="color">
                         <asp:literal ID="ltl_titolo" runat="server"></asp:literal>
                     </h4>
-                    <div class="divider divider-rounded divider-center divider-custom"><i class="icon-play" style="background-color: #e6e6e6"></i></div>
+                    <div class="divider divider-rounded divider-center"><i class="icon-play" style="background-color: #e6e6e6"></i></div>
                     <h2 style="font-weight: 300;" class="color" id="h_nessun_video" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_video")%>
                     </h2>
