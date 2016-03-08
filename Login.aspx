@@ -64,14 +64,14 @@
                                                                     <%=Lingua.CaricaLingua("lgl_index_accedi")%>
                                                                 </asp:LinkButton>
                                                             </div>
-                                                            <div class="col_half nobottommargin tleft">
+                                                            <div class="col_half nobottommargin" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
                                                                 <div class="checkbox-custom checkbox-inline checkbox-primary">
                                                                     <label>
                                                                         <asp:CheckBox ID="chk_ricordami" runat="server" /> <%=Lingua.CaricaLingua("lgl_ricordami")%>
                                                                     </label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col_half col_last nobottommargin tright">
+                                                                <div class="col_half col_last nobottommargin" data-class-lg="tright" data-class-md="tright" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
                                                                 <a href="#" class="tab-linker" rel="1">
                                                                     <%=Lingua.CaricaLingua("lgl_index_password_dimenticata")%>
                                                                 </a>

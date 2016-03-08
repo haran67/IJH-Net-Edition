@@ -659,7 +659,13 @@ body > form {
     }
 }
 #primary-menu ul li a {
-    padding: 0 10px
+    padding: 0 10px;
+    font-weight: 400;
+    color: rgba(255,255,255,.75) !important;
+    &:hover {
+        color: rgba(255,255,255,1) !important;
+        
+    }
 }
 
 /* custom portolio elements */
@@ -962,23 +968,48 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
     }
 }
 
-/* importazione classi responsive in coda */
 
-#top-cart a {
+#top-cart #top-cart-login {
+
     width: auto;
-    border: solid 1px rgba(255, 255, 255, .1);
     height: auto; 
-    padding: 5px 10px; top: -6px;
+    border: solid 1px rgba(255, 255, 255, .1);
+    padding: 5px 10px;
+    top: -6px;
     border-radius: 3px;
     font-family: oswald;
     font-size: 13px;
     font-weight: 400;
     color: rgba(255,255,255,.75);
-    background-color: rgba(255,255,255,.05)
+    background-color: rgba(255,255,255,.05);
     &:hover {
         background-color: rgba(255,255,255,.075)
     }
 }
+
+#top-cart #top-cart-trigger {
+
+    width: auto;
+    border: solid 1px rgba(255, 255, 255, .1);
+    height: auto; 
+    //  padding: 5px 10px;
+    height: 32px;
+    width: 32px;
+    top: -6px;
+    border-radius: 3px;
+    font-family: oswald;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255,255,255,.75);
+    background-color: rgba(255,255,255,.05);
+    &:hover {
+        background-color: rgba(255,255,255,.075)
+    }
+}
+
+
+/* importazione classi responsive in coda */
+
 @import "less/responsive.less";
 
 
@@ -1056,20 +1087,12 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 @media only screen and (max-width: 991px){
     #top-cart {
         display: block;
-        width: 70px;
-        top: 0;
-        right: 0;
+        width: 32px;
         margin: 24px 0;
         #top-cart-trigger, #top-cart-login {
             position: absolute;
-//            top: -35px;
-//            right: -15px;
-//            width: 50px;
-//            height: 50px;
-//            font-size: 16px;
-//            line-height: 50px;
             cursor: pointer;
-            border: none;
+            top: -10px;
             img {
                 top: 0;
                 height: auto;
@@ -1077,7 +1100,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
             }
         }
         .top-cart-content {
-            top: 21px;
+            top: 50px;
         }
         
     }

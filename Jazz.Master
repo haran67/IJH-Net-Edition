@@ -137,16 +137,17 @@
                         </span>
                         <span id="div_account" runat="server">
                             <div id="top-cart">
-                                <a href="#" id="top-cart-trigger"><i class="icon-user4"></i><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>
+                                <a href="#" id="top-cart-trigger"><i class="icon-user4 hidden"></i><asp:Image ID="img_utente" runat="server" /><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>
                                 <div class="top-cart-content">
                                     <div class="top-cart-items ">
                                         <div class="top-cart-item clearfix">
                                             <div class="top-cart-item-desc">
+<!--
                                                 <div class="top-cart-item-image">
                                                     <a href="#">
-                                                        <asp:Image ID="img_utente" runat="server" />
                                                     </a>
                                                 </div>
+-->
                                                 <h4><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h4>
                                             </div>
                                         </div>
