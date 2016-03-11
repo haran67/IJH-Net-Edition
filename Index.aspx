@@ -105,7 +105,7 @@
                 </span>
             </div>
         </div>
-        <div class="video-wrap" style="height: 100%;">
+        <div class="video-wrap" style="height: 100%; z-index: 1">
             <video id="slide-video" preload="auto" loop autoplay >
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
