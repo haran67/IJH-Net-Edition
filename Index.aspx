@@ -91,7 +91,7 @@
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
                 <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br><br>
-                    <a href="#" id="video-slider-play" class="video-played" style="color: #ccc;">
+                    <a href="#" id="video-slider-play" style="color: #ccc;">
                         <i class="icon-line-play nomargin"></i>
                         <i class="icon-line-pause nomargin"></i>
                     </a>&nbsp;
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="video-wrap" style="height: 100%; z-index: 1">
-            <video id="slide-video" preload="auto" loop autoplay >
+            <video id="slide-video" preload="auto" loop  >
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
@@ -116,7 +116,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap nopadding standard-portfolio">
         <div class="section notopmargin notoppadding alt box-shadow-custom center">
-            <section class="nomargin nopadding box-shadow-custom" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="hidden" data-class-xxs="hidden">
+            <section class="nomargin nopadding box-shadow-custom" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
                 <div class="container clearfix">
                     <div class="main-search notopmargin">
                         <div style="margin-left: auto; margin-right: auto; float: none">
@@ -138,11 +138,11 @@
 -->
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom"><i class="icon-star" style="background-color: #e6e6e6"></i></div>
-                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
+                <div id="portfolio" class="portfolio portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item" >
-                                <div style="margin: 5px;">
+<!--                                <div style="margin: 5px;">-->
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <div class="goto-video"><i class="icon-line-play"></i></div>
@@ -153,7 +153,7 @@
                                             <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
-                                </div>
+<!--                                </div>-->
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
@@ -190,12 +190,12 @@
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
 <!--                <h4><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>-->
                 <div class="divider divider-rounded divider-center divider-custom"><i class="icon-coffee2" style="background-color: #e6e6e6"></i><i class="icon-chevron-right"></i><i class="icon-like" style="background-color: #e6e6e6"></i></div>
-                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
+                <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video_guest" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item" >
-                                <div style="margin: 5px;">
+<!--                                <div style="margin: 5px;">-->
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <div class="goto-video"><i class="icon-line-play"></i></div>
@@ -206,7 +206,7 @@
                                             <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
-                                </div>
+<!--                                </div>-->
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
@@ -217,11 +217,11 @@
             <div class="container clearfix ">
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom"><i class="icon-facetime-video"></i><i class="icon-chevron-right" style="background-color: #fff"></i><i class="icon-like"></i></div>
-                <div id="portfolio-first" class="portfolio-first portfolio-full portfolio-masonry mixed-masonry clearfix">
+                <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item">
-                                <div style="margin: 5px">
+<!--                                <div style="margin: 5px">-->
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <div class="goto-video"><i class="icon-line-play"></i></div>
@@ -232,7 +232,7 @@
                                             <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
-                                </div>
+<!--                                </div>-->
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
@@ -243,11 +243,11 @@
             <div class="container clearfix ">
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom"><i class="icon-eye-open" style="background-color: #e6e6e6"></i><i class="icon-chevron-right"></i><i class="icon-like" style="background-color: #e6e6e6"></i></div>
-                <div id="portfolio" class="portfolio portfolio-full portfolio-masonry mixed-masonry clearfix">
+                <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item">
-                                <div style="margin: 5px">
+<!--                                <div style="margin: 5px">-->
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                             <div class="goto-video"><i class="icon-line-play"></i></div>
@@ -258,7 +258,7 @@
                                             <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
-                                </div>
+<!--                                </div>-->
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
