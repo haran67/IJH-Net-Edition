@@ -142,19 +142,13 @@
                                     <div class="top-cart-items ">
                                         <div class="top-cart-item clearfix">
                                             <div class="top-cart-item-desc">
-<!--
-                                                <div class="top-cart-item-image">
-                                                    <a href="#">
-                                                    </a>
-                                                </div>
--->
-                                                <h4><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h4>
+                                                <h4 class="nomargin tright"><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h4>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="top-cart-action clearfix">
-                                        <asp:Button ID="btn_profilo" runat="server" CssClass="button button-green button-mini nomargin fleft"></asp:Button>
-                                        <asp:Button ID="btn_esci" runat="server" CssClass="button button-red button-mini nomargin fright"></asp:Button>
+                                        <asp:Button ID="btn_profilo" runat="server" CssClass="button button-grey button-mini nomargin fleft"></asp:Button>
+                                        <asp:Button ID="btn_esci" runat="server" CssClass="button button-primary button-mini nomargin fright"></asp:Button>
                                     </div>
                                 </div>
                             </div>
