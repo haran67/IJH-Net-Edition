@@ -233,7 +233,7 @@
                                                     <td><asp:Literal ID="ltl_pagamento" runat="server"></asp:Literal></td>
                                                     <td><asp:Literal ID="ltl_video_caricati" runat="server"></asp:Literal></td>
                                                     <td>
-                                                        <asp:LinkButton ID="btn_go" runat="server" CssClass="btn btn-primary btn-xs" CommandName="GO" OnClientClick="openModal('#myModalMail'); return false;">
+                                                        <asp:LinkButton ID="btn_go" runat="server" CssClass="btn btn-primary btn-xs" CommandName="GO">
                                                             <%=Lingua.CaricaLingua("lgl_amministrazione_utente_dettagli")%>
                                                         </asp:LinkButton>
                                                     </td>

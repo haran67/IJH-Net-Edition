@@ -574,6 +574,30 @@ btn_cerca control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Index.i_expo">
+	<summary>
+i_expo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Index.i_view">
+	<summary>
+i_view control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Index.i_guest">
+	<summary>
+i_guest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Index.rpt_video">
 	<summary>
 rpt_video control.
