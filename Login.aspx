@@ -25,7 +25,7 @@
                                                 <div class="tab-content clearfix" id="tab-login">
                                                     <div id="div_login" runat="server">
                                                         <div id="login-form" name="login-form" class="nobottommargin center">
-                                                            <h3 class="nopadding nomargin"><%=Lingua.CaricaLingua("lgl_index_accedi_profilo")%></h3>
+                                                            <h3 class="nopadding nomargin" style="font-weight: 400"><%=Lingua.CaricaLingua("lgl_index_accedi_profilo")%></h3>
                                                             <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important" data-class-lg="not-hidden" data-class-md="not-hidden" data-class-sm="not-hidden" data-class-xs="not-hidden" data-class-xxs="hidden">
                                                                 <i class="icon-arrow-down2"></i>
                                                             </div>
@@ -60,7 +60,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col_full">
-                                                                <asp:LinkButton ID="btnAccedi" runat="server" CssClass="button button-rounded btn-block button-green nomargin">
+                                                                <asp:LinkButton ID="btnAccedi" runat="server" CssClass="button button-rounded btn-block button-success nomargin">
                                                                     <%=Lingua.CaricaLingua("lgl_index_accedi")%>
                                                                 </asp:LinkButton>
                                                             </div>
@@ -92,10 +92,10 @@
                                                             </div>
                                                             <br />
                                                             <div class="col_full">
-                                                                <asp:LinkButton ID="btn_profilo" runat="server" CssClass="button button-rounded button-background nomargin">
+                                                                <asp:LinkButton ID="btn_profilo" runat="server" CssClass="button button-rounded button-primary nomargin">
                                                                     <%=Lingua.CaricaLingua("lgl_index_vai_profilo")%>
                                                                 </asp:LinkButton>
-                                                                <asp:LinkButton ID="btn_esci" runat="server" CssClass="button button-rounded button-background nomargin">
+                                                                <asp:LinkButton ID="btn_esci" runat="server" CssClass="button button-rounded button-danger nomargin">
                                                                     <%=Lingua.CaricaLingua("lgl_index_esci")%>
                                                                 </asp:LinkButton>
                                                             </div>
@@ -104,7 +104,7 @@
                                                 </div>
                                                 <div class="tab-content clearfix" id="tab-password">
                                                     <div id="request_psw" name="request_psw" class="nobottommargin center">
-                                                        <h3 class="nopadding nomargin"><%=Lingua.CaricaLingua("lgl_index_richiedi_password")%></h3>
+                                                        <h3 class="nopadding nomargin" style="font-weight: 400"><%=Lingua.CaricaLingua("lgl_index_richiedi_password")%></h3>
                                                         <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important">
                                                             <i class="icon-arrow-down2"></i>
                                                         </div>
@@ -123,7 +123,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col_full">
-                                                            <asp:LinkButton ID="btnInviaPassword" runat="server" CssClass="button button-rounded button-background nomargin">
+                                                            <asp:LinkButton ID="btnInviaPassword" runat="server" CssClass="button button-rounded btn-block button-primary nomargin">
                                                                 <%=Lingua.CaricaLingua("lgl_index_invia_password")%>
                                                             </asp:LinkButton>
                                                         </div>
@@ -150,7 +150,7 @@
                                             <i class="icon-arrow-down2"></i>
                                         </div>
                                         <div id="div_registrati" runat="server">
-                                            <a href="register.aspx" class="button button-rounded  button-red button-xlarge nobottommargin">
+                                            <a href="register.aspx" class="button button-border button-white button-light button-xlarge button-rounded nobottommargin">
                                                 <i class="icon-user2"></i><span>
                                             <%=Lingua.CaricaLingua("lgl_index_registrati")%></span></a>
                                         </div>

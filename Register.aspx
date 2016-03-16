@@ -44,7 +44,7 @@
                                         <div class="panel panel-default divcenter" style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
                                             <div class="panel-body" style="padding: 40px;">
                                                 <div class="col_full nobottommargin center">
-                                                    <h3 class="nopadding nomargin"><%=Lingua.CaricaLingua("lgl_register_registrati_inizia")%></h3>
+                                                    <h3 class="nopadding nomargin" style="font-weight: 400"><%=Lingua.CaricaLingua("lgl_register_registrati_inizia")%></h3>
                                                     <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important"  data-class-lg="not-hidden" data-class-md="not-hidden" data-class-sm="not-hidden" data-class-xs="not-hidden" data-class-xxs="hidden">
                                                         <i class="icon-arrow-down2"></i>
                                                     </div>
@@ -217,7 +217,7 @@
                                                 </div>
                                                 <div class="col_full nobottommargin">
                                                     <div class="col_full nobottommargin text-lg-right text-md-right text-sm-right text-center  center text-xs-center">
-                                                        <asp:LinkButton ID="btn_registrati" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
+                                                        <asp:LinkButton ID="btn_registrati" runat="server" CssClass="button button-rounded btn-block button-success nomargin">
                                                             <%=Lingua.CaricaLingua("lgl_register_registrati")%></i>
                                                         </asp:LinkButton>
                                                     </div>
