@@ -50,10 +50,10 @@
             <h4 style="font-weight: 400;" class="color"><asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal></h4>
 <!--            <div class="postcontent">-->
                 
-                <div id="portfolio" class="portfolio-3 portfolio-masonry clearfix">
+                <div id="portfolio" class="portfolio portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
-                            <article class="portfolio-item box-shadow-custom">
+                            <article class="portfolio-item">
                                 <div class="portfolio-image patch-placeholder">
                                     <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
                                         <div class="goto-video"><i class="icon-line-play"></i></div>
@@ -109,5 +109,16 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
     <script type="text/javascript">
+        $(document).ready(function () {
+            var $container = $('.portfolio');
+            $container.isotope({
+                transitionDuration: '0.25s'
+            });
+            
+            $(window).resize(function () {
+                $container.isotope('layout');
+                $container_expo.isotope('layout');
+            });
+        }
     </script>
 </asp:Content>
