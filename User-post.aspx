@@ -11,9 +11,9 @@
             <div class="profile-header">
                 <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
                 <div class="user-profile-type">
-                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block box-shadow-custom" id="i_expo" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
-                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block box-shadow-custom" id="i_view" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
-                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block box-shadow-custom" id="i_guest" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
+                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block box-shadow-custom" id="i_expo" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
+                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block box-shadow-custom" id="i_view" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
+                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block box-shadow-custom" id="i_guest" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                 </div>
                 <h1 class="text-shadow">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
@@ -69,7 +69,7 @@
                     <h4 style="font-weight: 400;" class="color">
                         <asp:literal ID="ltl_titolo" runat="server"></asp:literal>
                     </h4>
-                    <div class="divider divider-rounded divider-center"><i class="icon-play" style="background-color: #e6e6e6"></i></div>
+                    <div class="divider divider-rounded divider-center"><i class="icon-line-play" style="background-color: #e6e6e6"></i></div>
                     <h2 style="font-weight: 300;" class="color" id="h_nessun_video" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_video")%>
                     </h2>
