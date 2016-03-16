@@ -10,12 +10,12 @@
     <div id="page-menu">
         <div id="page-menu-wrap">
             <div class="container clearfix">
-                <div class="menu-title">
+                <div class="menu-title hidden">
                     <strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_videolist_title")%>
                 </div>
                 <nav>
                     <ul>
-                        <li class="current"><asp:LinkButton id="lnk_categorie_tutti" runat="server"><%=Lingua.CaricaLingua("lgl_videolist_sfoglia_tutti")%></asp:LinkButton> </li>
+                        <li><asp:LinkButton id="lnk_categorie_tutti" runat="server"><%=Lingua.CaricaLingua("lgl_videolist_sfoglia_tutti")%></asp:LinkButton> </li>
                         <li>
                             <asp:HyperLink ID="lnk_categoria" runat="server"></asp:HyperLink>
                             <ul>
@@ -31,22 +31,25 @@
                             </ul>
                         </li>
                         <li style="padding-top:5px;">
-                            <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control"
-                                Placeholder="Titolo/artista, poi invio" style="border: none; border-bottom: dotted 1px rgba(255,255,255,.5); background: none; color: #fff;"></asp:TextBox>
+                            <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control custom-input"
+                                Placeholder="Titolo/artista, poi invio"></asp:TextBox>
                         </li>
                     </ul>
                 </nav>
-                <div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
+<!--                <div id="page-submenu-trigger"><i class="icon-reorder"></i></div>-->
             </div>
         </div>
     </div>
     <!-- #page-title end -->
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap standard-portfolio alt">
-        <div class="container clearfix">
-            <div class="postcontent">
-                <asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal>
+    <div class="content-wrap standard-portfolio alt" style="padding: 40px 0">
+        <div class="container center clearfix">
+            <h4 style="font-weight: 400;" class="color">Video</h4>
+            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-line-play" style="background-color: #e6e6e6"></i></div>
+            <h4 style="font-weight: 400;" class="color"><asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal></h4>
+<!--            <div class="postcontent">-->
+                
                 <div id="portfolio" class="portfolio-3 portfolio-masonry clearfix">
                     <asp:Repeater ID="rpt_video" runat="server">
                         <ItemTemplate>
@@ -73,7 +76,7 @@
                             Visible="false" />
                     </div>
                 </div>
-            </div>
+<!--            </div>-->
             <!-- Portfolio Script
                         ============================================= -->
             <script type="text/javascript">
@@ -81,6 +84,7 @@
             </script>
             <!-- Portfolio Script End -->
             
+<!--
             <div class="sidebar col_last">
                 <div class="sidebar-widgets-wrap">
                     <h3>Cerca per Tag</h3>
@@ -99,6 +103,7 @@
                     </p>
                 </div>
             </div>
+-->
         </div>
     </div>
 </asp:Content>

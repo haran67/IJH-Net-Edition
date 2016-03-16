@@ -7,16 +7,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div id="page-menu">
+    <div id="page-menu" class="box-shadow-custom">
         <div id="page-menu-wrap">
             <div class="container clearfix">
-                <div class="menu-title">
+                <div class="menu-title hidden">
                     <strong>IJH</strong>&nbsp;<%=Lingua.CaricaLingua("lgl_userlist_title")%>
-                    <!--<%=Lingua.CaricaLingua("lgl_userlist_sfoglia")%>-->
+                    <%=Lingua.CaricaLingua("lgl_userlist_sfoglia")%>
                 </div>
-                <nav>
-                    <ul>
-                        <li class="current">
+                <nav class="clearfix">
+                    <ul class="clearfix">
+                        <li>
                             <asp:LinkButton ID="btn_tutti" runat="server">
                                 <%=Lingua.CaricaLingua("lgl_userlist_sfoglia_tutti")%>    
                             </asp:LinkButton>
@@ -36,8 +36,8 @@
                             </ul>
                         </li>
                         <li style="padding-top:5px;">
-                            <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control"
-                                         Placeholder="Nome/Luogo, poi invio" style="border: none; border-bottom: dotted 1px rgba(255,255,255,.5); background: none; color: #fff;"></asp:TextBox>
+                            <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control custom-input"
+                                         Placeholder="Nome/Luogo, poi invio"></asp:TextBox>
                         </li>
                     </ul>
                 </nav>
@@ -49,9 +49,16 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap" style="padding: 40px 0">
-        <div class="container clearfix">
-            <asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal>
+    <div class="content-wrap alt" style="padding: 40px 0">
+        <div class="container center clearfix">
+            <h4 style="font-weight: 400;" class="color">People</h4>
+            <div class="divider divider-rounded divider-center divider-custom">
+                <i class="icon-coffee2" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
+                <i class="icon-facetime-video" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i>
+                <i class="icon-eye-open" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i>
+            </div>
+<!--            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-user4" style="background-color: #e6e6e6"></i></div>-->
+            <h4 style="font-weight: 400;" class="color"><asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal></h4>
             <!-- Portfolio Items
                     ============================================= -->
             <div id="portfolio" class="portfolio-masonry portfolio-6 clearfix">
@@ -98,7 +105,7 @@
     <!-- Portfolio Script
         ============================================= -->
     <script type="text/javascript">
-
+        $('[data-toggle=popover]').popover();
         function init_js() {
             var $container = $('#portfolio');
 
