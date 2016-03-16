@@ -974,44 +974,6 @@
   }
   /* Page Menu
 	-----------------------------------------------------------------*/
-  #page-menu .container {
-    position: relative;
-  }
-  #page-menu.pagemenu-active #page-submenu-trigger {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  #page-menu.pagemenu-active nav {
-    display: block;
-  }
-  #page-menu nav {
-    display: none;
-    position: absolute;
-    float: none;
-    width: 200px;
-    top: 43px;
-    left: auto;
-    right: 15px;
-    height: auto;
-    background-color: #1abc9c;
-    z-index: 11;
-  }
-  #page-menu nav ul {
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  #page-menu nav li {
-    float: none;
-  }
-  #page-menu nav li a {
-    height: 40px;
-    line-height: 40px;
-    padding: 0 15px;
-  }
-  #page-submenu-trigger {
-    opacity: 1;
-    pointer-events: auto;
-    color: #FFF;
-  }
   .ei-slider {
     height: 350px;
   }
