@@ -91,9 +91,13 @@
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
                 <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br><br>
-                    <a href="#" id="video-slider-play" style="color: #ccc;">
-                        <i class="icon-line-play nomargin"></i>
+                    <a href="#" id="video-slider-play" class="video-played "style="color: #ccc;">
                         <i class="icon-line-pause nomargin"></i>
+                        <i class="icon-line-play nomargin"></i>
+                    </a>&nbsp;
+                    <a href="#" id="video-slider-audio" >
+                        <i class="icon-mute nomargin"></i>
+                        <i class="icon-volume nomargin"></i>
                     </a>&nbsp;
                     <asp:LinkButton ID="btn_video" runat="server"  style="color: #ccc;">
                         <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
@@ -106,7 +110,7 @@
             </div>
         </div>
         <div class="video-wrap" style="height: 100%; z-index: 1">
-            <video id="slide-video" preload="auto" loop  >
+            <video id="slide-video" preload="auto" loop autoplay muted>
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>
