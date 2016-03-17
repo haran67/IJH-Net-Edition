@@ -165,14 +165,14 @@
         </section>
         <footer id="footer" class="dark nopadding nomargin">
             <div class="container">
-                <div class="footer-widgets-wrap clearfix">
+                <div class="footer-widgets-wrap clearfix" style="padding: 40px 0">
                     <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
                         <div class="col_one_fifth nobottommargin">
-                            <img src="/images/footer-widget-logo.png" alt="Italian Jazz Hub logo footer">
+                            <img src="/images/footer-widget-logo.png" alt="Italian Jazz Hub logo footer" style="margin-top: 5px">
                         </div>
-                        <div class="col_two_fifth nobottommargin">
+                        <div class="col_two_fifth nobottommargin" style="font-size: 12px;">
                             <h4 class="nomargin">IMF Foundation</h4>
-                            <h5 class="nomargin">International Music Festival Foundation</h5>
+                            <h5 class="nomargin" style="font-weight 400; margin-bottom: 10px;">International Music Festival Foundation</h5>
                             <address class="nomargin nopadding">
                                 <strong>Sede operativa:</strong>
                                 Via Giuseppe Sacconi, 19 - Lotto G
@@ -183,10 +183,10 @@
                         <div class="visible-sm visible-xs line line"></div>
                         <div class="col_two_fifth col_last nobottommargin">
                             <div class="col_half">
-                                <p>Con il sostegno di:</p>
+                                <p style=" margin-bottom: 15px;">Con il sostegno di:</p>
                                 <a href="http://www.beniculturali.it/"><img src="/images/custom/logo-ministero.png" style="height: 57px;"></a>
                             </div>
-                                <p>Prodotto da:</p>
+                                <p style="margin-bottom: 15px;">Prodotto da:</p>
                             <div class="col_half col_last">
                                 <a href="http://www.imffoundation.it/"><img src="/images/custom/logo-imf.png" style="height: 57px;"></a>
                             </div>
@@ -239,6 +239,7 @@
     <script type="text/javascript" src="/js/smoke/smoke.js"></script>
     <script type="text/javascript" src="/js/smoke/utility.js"></script>
     <script type="text/javascript" src="/js/functions.js"></script>
+    <script type="text/javascript" src="/js/jquery.truncate.js"></script>
     </form>
     <script type="text/javascript">
         function SaveResetScrollPosition(div_ok) {
@@ -265,8 +266,39 @@
             }
         }
         
+        $(document).ready(function() {
+            $('.portfolio-item h3').truncate({
+                width: 'auto',
+                token: '&hellip;',
+                side: 'right',
+                addclass: false,
+                addtitle: true,
+            });
+            $('.portfolio-item span').truncate({
+                width: 'auto',
+                token: '&hellip;',
+                side: 'right',
+                addclass: false,
+                addtitle: true,
+            });
+
+        });
         $(window).resize(function(){
             cookieResize();
+            $('.portfolio-item h3').truncate({
+                width: 'auto',
+                token: '&hellip;',
+                side: 'right',
+                addclass: false,
+                addtitle: true,
+            });
+            $('.portfolio-item span').truncate({
+                width: 'auto',
+                token: '&hellip;',
+                side: 'right',
+                addclass: false,
+                addtitle: true,
+            });
         })
     </script>
     <asp:ContentPlaceHolder ID="script" runat="server">

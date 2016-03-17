@@ -90,21 +90,21 @@
         <div class="clearfix video-title text-shadow">
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
-                <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br><br>
-                    <a href="#" id="video-slider-play" class="video-played "style="color: #ccc;">
-                        <i class="icon-line-pause nomargin"></i>
-                        <i class="icon-line-play nomargin"></i>
-                    </a>&nbsp;
-                    <a href="#" id="video-slider-audio" >
+                <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal>
+                </h3>
+                    <a href="#" id="video-slider-audio">
                         <i class="icon-mute nomargin"></i>
                         <i class="icon-volume nomargin"></i>
-                    </a>&nbsp;
-                    <asp:LinkButton ID="btn_video" runat="server"  style="color: #ccc;">
+                    </a>
+                    <a href="#" id="video-slider-play" class="video-played">
+                        <i class="icon-line-pause nomargin"></i>
+                        <i class="icon-line-play nomargin"></i>
+                    </a>
+                    <asp:LinkButton ID="btn_video" runat="server">
                         <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                         <i class="icon-angle-right"></i>-->
                         <i class="icon-line-paper nomargin"></i>
                     </asp:LinkButton>
-                </h3>
                 <span data-animate="fadeInUp" data-delay="500" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
                 </span>
             </div>
@@ -146,18 +146,16 @@
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item" >
-<!--                                <div style="margin: 5px;">-->
-                                    <div class="portfolio-image patch-placeholder">
-                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <div class="goto-video"><i class="icon-line-play"></i></div>
-                                            <asp:Image ID="img_copertina" runat="server" />
-                                        </asp:LinkButton>
-                                        <div class="portfolio-desc">
-                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                        </div>
+                                <div class="portfolio-image patch-placeholder">
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="goto-video"><i class="icon-line-play"></i></div>
+                                        <asp:Image ID="img_copertina" runat="server" />
+                                    </asp:LinkButton>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                     </div>
-<!--                                </div>-->
+                                </div>
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
@@ -178,8 +176,8 @@
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                         <div class="portfolio-desc">
-                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                         </div>
                                     </div>
                                 </article>
@@ -199,18 +197,16 @@
                         OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item" >
-<!--                                <div style="margin: 5px;">-->
-                                    <div class="portfolio-image patch-placeholder">
-                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <div class="goto-video"><i class="icon-line-play"></i></div>
-                                            <asp:Image ID="img_copertina" runat="server" />
-                                        </asp:LinkButton>
-                                        <div class="portfolio-desc">
-                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                        </div>
+                                <div class="portfolio-image patch-placeholder">
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="goto-video"><i class="icon-line-play"></i></div>
+                                        <asp:Image ID="img_copertina" runat="server" />
+                                    </asp:LinkButton>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                     </div>
-<!--                                </div>-->
+                                </div>
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
@@ -225,18 +221,16 @@
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item">
-<!--                                <div style="margin: 5px">-->
-                                    <div class="portfolio-image patch-placeholder">
-                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <div class="goto-video"><i class="icon-line-play"></i></div>
-                                            <asp:Image ID="img_copertina" runat="server" />
-                                        </asp:LinkButton>
-                                        <div class="portfolio-desc">
-                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                        </div>
+                                <div class="portfolio-image patch-placeholder">
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="goto-video"><i class="icon-line-play"></i></div>
+                                        <asp:Image ID="img_copertina" runat="server" />
+                                    </asp:LinkButton>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                     </div>
-<!--                                </div>-->
+                                </div>
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
@@ -251,18 +245,16 @@
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
                             <article class="portfolio-item">
-<!--                                <div style="margin: 5px">-->
-                                    <div class="portfolio-image patch-placeholder">
-                                        <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
-                                            <div class="goto-video"><i class="icon-line-play"></i></div>
-                                            <asp:Image ID="img_copertina" runat="server" />
-                                        </asp:LinkButton>
-                                        <div class="portfolio-desc">
-                                            <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
-                                        </div>
+                                <div class="portfolio-image patch-placeholder">
+                                    <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                        <div class="goto-video"><i class="icon-line-play"></i></div>
+                                        <asp:Image ID="img_copertina" runat="server" />
+                                    </asp:LinkButton>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                     </div>
-<!--                                </div>-->
+                                </div>
                             </article>
                         </ItemTemplate>
                     </asp:Repeater>
