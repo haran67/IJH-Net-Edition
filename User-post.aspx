@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title page-title-dark" style="padding: 20px 0;background: url('<%=user_background%>') no-repeat top center; background-size: cover;">
+    <section class="page-title page-title-dark" style="padding: 80px 0;background: url('<%=user_background%>') no-repeat top center; background-size: cover;">
         <div class="container center clearfix" style="z-index: 2">
             <div class="profile-header">
                 <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
@@ -23,8 +23,10 @@
                 </h1>
                 <div class="noheight user-divider"></div>
                 <div class="user-profile-head-content" id="inizio-testo">
-                    <p class="article nomargin text-shadow"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></p>
+<!--
+                    <p class="article nomargin text-shadow"></p>
                     <div style="height: 30px;"></div>
+-->
                     <h3 class="user-social">
                         <a href="#" target="_blank" id="a_web" runat="server">
                             <i class="icon-world nomargin"></i>
@@ -49,6 +51,7 @@
     <ContentTemplate>
     <div class="section nomargin nopadding profile-submenu" style="background: #3C4B5E;" id="top_section">
         <div class="container center clearfix">
+            <a href="#">Profilo</a>
             <asp:LinkButton ID="btn_video" runat="server" CssClass="active">
                 Video
             </asp:LinkButton>
@@ -63,13 +66,16 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 <asp:UpdatePanel ID="upd_dati" runat="server">
     <ContentTemplate>
-        <div class="content-wrap alt" id="div_content" runat="server">
+        <div class="content-wrap alt" id="div_content" runat="server" style="padding: 40px 0;">
             <div class="container center clearfix">
+                <div>
+                    <h4 style="font-weight: 400;" class="color">The Artist</h4>
+                    <div class="divider divider-rounded divider-center"><i class="icon-line2-moustache" style="background-color: rgba(0,0,0,.1)"></i></div>
+                    <h4 style="font-weight: 300" class="citazione"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></h4>
+                </div>
                 <div id="p_video" runat="server">
-                    <h4 style="font-weight: 400;" class="color">
-                        <asp:literal ID="ltl_titolo" runat="server"></asp:literal>
-                    </h4>
-                    <div class="divider divider-rounded divider-center"><i class="icon-line-play" style="background-color: #e6e6e6"></i></div>
+                    <h4 style="font-weight: 400;" class="color"><asp:literal ID="ltl_titolo" runat="server"></asp:literal></h4>
+                    <div class="divider divider-rounded divider-center"><i class="icon-tv" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <h2 style="font-weight: 300;" class="color" id="h_nessun_video" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_video")%>
                     </h2>
@@ -93,7 +99,7 @@
                 </div> 
                 <div id="p_when" runat="server" class="date-list divcenter center">
                     <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
-                    <div class="divider divider-rounded divider-center divider-custom"><i class="icon-calendar3" style="background-color: #e6e6e6"></i></div>
+                    <div class="divider divider-rounded divider-center divider-custom"><i class="icon-calendar3" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <h2 style="font-weight: 300;" class="color" id="h_nessun_eventi" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>
                     </h2>
@@ -117,22 +123,22 @@
 </asp:UpdatePanel>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
-    <script type="text/javascript" src="/js/readmore.js"></script>
+<!--    <script type="text/javascript" src="/js/readmore.js"></script>-->
     <script type="text/javascript" >
         $('[data-toggle=popover]').popover();
-        $('.article').readmore({
-            afterToggle: function(trigger, element, expanded) {
-                if(expanded) { // The "Close" link was clicked
-                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
-                }
-                if(! expanded) { // The "Close" link was clicked
-                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
-                }
-            },
-            speed: 750,
-            collapsedHeight: 130,
-            moreLink: '<a href="#" style="color: #fff; font-style: italic; margin-top: 20px;">leggi tutto<br><i style="font-size: 26px;" class="icon-chevron-down"></i></a>',
-            lessLink: '<a href="#" style="color: #fff; font-style: italic;"><i style="font-size: 26px; margin-top: 20px;" class="icon-chevron-up"></i><br>chiudi</a>'
-        });
+//        $('.article').readmore({
+//            afterToggle: function(trigger, element, expanded) {
+//                if(expanded) { // The "Close" link was clicked
+//                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
+//                }
+//                if(! expanded) { // The "Close" link was clicked
+//                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
+//                }
+//            },
+//            speed: 750,
+//            collapsedHeight: 130,
+//            moreLink: '<a href="#" style="color: #fff; font-style: italic; margin-top: 20px;">leggi tutto<br><i style="font-size: 26px;" class="icon-chevron-down"></i></a>',
+//            lessLink: '<a href="#" style="color: #fff; font-style: italic;"><i style="font-size: 26px; margin-top: 20px;" class="icon-chevron-up"></i><br>chiudi</a>'
+//        });
     </script>
 </asp:Content>

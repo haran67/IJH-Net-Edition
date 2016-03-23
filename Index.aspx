@@ -100,7 +100,7 @@
                         <i class="icon-line-play nomargin"></i>
                         <i class="icon-line-pause nomargin"></i>
                     </a>
-                    <asp:LinkButton ID="btn_video" runat="server">
+                    <asp:LinkButton ID="btn_video" CssClass="btn_video" runat="server">
                         <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
                         <i class="icon-angle-right"></i>-->
                         <i class="icon-line-paper nomargin"></i>
