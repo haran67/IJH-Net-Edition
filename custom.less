@@ -290,6 +290,12 @@
 .alt {
     background-color: #f4f4f4;
 }
+.home .alt:nth-child(even) {
+    background: #f4f4f4 !important;
+}
+.home .alt:nth-child(odd) {
+    background: #ffffff !important;
+}
 
 
 .button-grey {
@@ -454,10 +460,14 @@ body > form {
 
 .divider {
     color: fade(@theme-color, 60%) !important;
+        border-color: rgba(0,0,0,.05);
 }
 .divider.divider-custom{
     &:after {
-        margin-left: 60px !important;
+        margin-left: 62px !important;
+    }
+    &:before {
+        margin-left: -63px !important;
     }
 }
 .user-divider {
