@@ -97,8 +97,8 @@
                         <i class="icon-volume nomargin"></i>
                     </a>
                     <a href="#" id="video-slider-play" class="video-played">
-                        <i class="icon-line-pause nomargin"></i>
                         <i class="icon-line-play nomargin"></i>
+                        <i class="icon-line-pause nomargin"></i>
                     </a>
                     <asp:LinkButton ID="btn_video" runat="server">
                         <!--<%=Lingua.CaricaLingua("lgl_index_vai_scheda")%>
@@ -118,9 +118,11 @@
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap nopadding standard-portfolio">
-        <div class="section notopmargin notoppadding alt box-shadow-custom center">
-            <section class="nomargin nopadding box-shadow-custom" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
+    <div class="content-wrap nopadding standard-portfolio home">
+        
+        <!-- ricerca -->
+        <div class="section nomargin nopadding center">
+            <section class="nomargin nopadding" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
                 <div class="container clearfix">
                     <div class="main-search notopmargin">
                         <div style="margin-left: auto; margin-right: auto; float: none">
@@ -132,16 +134,14 @@
                     </div>
                 </div>
             </section>
+        </div>
+        
+        <!-- sponsored -->
+        <div class="section nomargin notoppadding alt center">
             <div class="container clearfix topmargin-sm">
-<!--
-                <div class="user-profile-type">
-                    <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block" id="i_expo" runat="server"></i> 
-                    <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block" id="i_view" runat="server"></i> 
-                    <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block" id="i_guest" runat="server"></i>
-                </div>
--->
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
-                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-star" style="background-color: #e6e6e6"></i></div>
+                <div class="divider divider-rounded divider-center divider-custom">
+                    <i class="icon-star" style="background-color: rgba(0,0,0,.1)"></i></div>
                 <div id="portfolio" class="portfolio portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -162,9 +162,16 @@
                 </div>
             </div>
         </div>
-        <div class="section nopadding center">
+
+        <!-- Ultimi video -->
+        <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4>
+                <div class="divider divider-rounded divider-center divider-custom">
+                    <i class="icon-coffee2" style="background-color:  rgba(0,0,0,.1)"></i>
+                    <i class="icon-chevron-right" style="background-color: rgba(0,0,0,.025)"></i>
+                    <i class="icon-like" style="background-color:  rgba(0,0,0,.1)"></i>
+                </div>
                 <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -187,11 +194,17 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin box-shadow-custom alt center" id="div_like_guest" runat="server">
+
+        <!-- Guest  -->
+        <div class="section nomargin alt center" id="div_like_guest" runat="server">
             <div class="container clearfix ">
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
 <!--                <h4><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>-->
-                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-coffee2" style="background-color: #e6e6e6"></i><i class="icon-chevron-right"></i><i class="icon-like" style="background-color: #e6e6e6"></i></div>
+                <div class="divider divider-rounded divider-center divider-custom">
+                    <i class="icon-coffee2" style="background-color:  rgba(0,0,0,.1)"></i>
+                    <i class="icon-chevron-right" style="background-color:  rgba(0,0,0,.025)"></i>
+                    <i class="icon-like" style="background-color:  rgba(0,0,0,.1)"></i>
+                </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video_guest" runat="server" OnItemDataBound="rpt_video_ItemDataBound"
                         OnItemCommand="rpt_video_ItemCommand">
@@ -213,10 +226,16 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin box-shadow-custom center" id="div_like_expo" runat="server">
+
+        <!-- Espositori -->
+        <div class="section nomargin alt center" id="div_like_expo" runat="server">
             <div class="container clearfix ">
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
-                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-facetime-video"></i><i class="icon-chevron-right" style="background-color: #fff"></i><i class="icon-like"></i></div>
+                <div class="divider divider-rounded divider-center divider-custom">
+                    <i class="icon-facetime-video" style="background-color: rgba(0,0,0,.1)"></i>
+                    <i class="icon-chevron-right" style="background-color: rgba(0,0,0,.025)"></i>
+                    <i class="icon-like" style="background-color: rgba(0,0,0,.1)"></i>
+                </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video_expo" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -237,10 +256,16 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin alt box-shadow-custom center" id="div_like_visi" runat="server">
+        
+        <!-- Visitatori -->
+            <div class="section nomargin alt center" id="div_like_visi" runat="server">
             <div class="container clearfix ">
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
-                <div class="divider divider-rounded divider-center divider-custom"><i class="icon-eye-open" style="background-color: #e6e6e6"></i><i class="icon-chevron-right"></i><i class="icon-like" style="background-color: #e6e6e6"></i></div>
+                <div class="divider divider-rounded divider-center divider-custom">
+                    <i class="icon-eye-open" style="background-color: rgba(0,0,0,.1)"></i>
+                    <i class="icon-chevron-right" style="background-color: rgba(0,0,0,.025)"></i>
+                    <i class="icon-like" style="background-color: rgba(0,0,0,.1)"></i>
+                </div>
                 <div id="portfolio" class="portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video_visi" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
