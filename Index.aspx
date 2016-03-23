@@ -61,8 +61,8 @@
          data-height-xxs="550">
         <div class="video-wrap" style="height: 100%;">
             <video id="slide-video" preload="auto" loop autoplay >
-                <source src='images/videos/header-video.mp4' type='video/mp4' />
-<!--                <source src='images/videos/video-test.mp4' type='video/mp4' />-->
+                <asp:Literal ID="video_not_logged" runat="server"></asp:Literal>
+                Your browser does not support the video tag.
             </video>
         </div>
         <div class="vertical-middle center text-shadow" style="z-index: 5">

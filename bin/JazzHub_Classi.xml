@@ -6,15 +6,7 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Vs_ricerca_globale_Base">
-	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella VS_RICERCA_GLOBALE
- </summary>
-</member><member name="T:JazzHub_Classi.Oggetti.Utenti_when_Base">
-	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella UTENTI_WHEN
- </summary>
-</member><member name="T:JazzHub_Classi.Controls.DDLReadOnly">
+<member name="T:JazzHub_Classi.Controls.DDLReadOnly">
 	<summary>
  DDL per la visualizzazione in readOnly
  </summary>
@@ -279,6 +271,10 @@ JazzHub_Classi
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella TAB_SOCIAL_NETWORK
  </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Vs_ricerca_globale_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella VS_RICERCA_GLOBALE
+ </summary>
 </member><member name="T:JazzHub_Classi.Controls.BottoneOneShot">
 	<summary>
  Ha le stesse caratteristiche del controllo Button, in più si disabilita
@@ -303,6 +299,10 @@ JazzHub_Classi
 </member><member name="T:JazzHub_Classi.Oggetti.Tab_tipo_utente_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella TAB_TIPO_UTENTE
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Utenti_when_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella UTENTI_WHEN
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Video_like_Base">
 	<summary>
