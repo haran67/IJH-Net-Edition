@@ -168,9 +168,7 @@
             <div class="container clearfix ">
                 <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom">
-                    <i class="icon-coffee2" style="background-color:  rgba(0,0,0,.1)"></i>
-                    <i class="icon-chevron-right" style="background-color: rgba(0,0,0,.025)"></i>
-                    <i class="icon-like" style="background-color:  rgba(0,0,0,.1)"></i>
+                    <i class="icon-clock" style="background-color: rgba(0,0,0,.1)"></i>
                 </div>
                 <div id="oc-portfolio" class="owl-carousel portfolio-carousel">
                     <asp:Repeater ID="rpt_video_random" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">

@@ -76,11 +76,15 @@
                                                 <asp:Literal ID="ltl_utente" runat="server"></asp:Literal>
                                             </h3>
                                             <span>
-                                                <i class="icon-facetime-video" style="color: #fff; position: relative; top: 1px" id="i_expo" runat="server"></i> 
-                                                <i class="icon-eye-open" style="color: #fff; position: relative; top: 1px" id="i_view" runat="server"></i> 
-                                                <i class="icon-coffee2" style="color: #fff; position: relative; top: 1px" id="i_guest" runat="server"></i>
-                                                 | <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br>
+                                                <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br>
                                             </span>
+                                            <div class="user-profile-type" style="top:20px;">
+                                                <span>
+                                                    <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-facetime-video" id="i_expo" runat="server"></i> 
+                                                    <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server"></i> 
+                                                    <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-coffee2" id="i_guest" runat="server"></i>
+                                                </span>
+                                            </div>
                                         </div>
 
                                     </div>
