@@ -518,6 +518,14 @@ div_logging control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Index.video_not_logged">
+	<summary>
+video_not_logged control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Index.div_logged">
 	<summary>
 div_logged control.

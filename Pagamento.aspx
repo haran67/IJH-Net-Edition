@@ -52,6 +52,9 @@
                                     Form_Vertical="true" />
                             </div>
                             <div class="form-group">
+                                <%=Lingua.CaricaLingua("lgl_pagamento_torna_esercente")%>
+                            </div> 
+                            <div class="form-group">
                                 <img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/logo_paypal_pagamento.jpg" border="0" alt="Marchi di accettazione PayPal" 
                                     style="margin-right:20px; padding: 0 20px; background-color: #fff;"/>
                                 <asp:LinkButton ID="btn_paga_pp" runat="server">
