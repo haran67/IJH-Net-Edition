@@ -64,7 +64,7 @@
             <div id="portfolio" class="portfolio-masonry portfolio-6 clearfix">
                 <asp:Repeater ID="rpt_user" runat="server">
                     <ItemTemplate>
-                        <article class="portfolio-item">
+                        <article class="portfolio-item portfolio-user">
                             <div class="portfolio-image " ID="img_copertina" runat="server">
                                 <div>
                                     <img src="images/custom/blank.png">
@@ -78,15 +78,14 @@
                                             <span>
                                                 <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal><br>
                                             </span>
-                                            <div class="user-profile-type" style="top:20px;">
-                                                <span>
-                                                    <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-facetime-video" id="i_expo" runat="server"></i> 
-                                                    <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server"></i> 
-                                                    <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-coffee2" id="i_guest" runat="server"></i>
-                                                </span>
-                                            </div>
                                         </div>
-
+                                        <div class="user-profile-type user-profile-type-list">
+                                            <span>
+                                                <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-facetime-video" id="i_expo" runat="server"></i> 
+                                                <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server"></i> 
+                                                <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-coffee2" id="i_guest" runat="server"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                 </asp:LinkButton>
                             </div>

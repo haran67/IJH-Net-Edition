@@ -499,6 +499,13 @@ body > form {
         height: 32px !important;
         line-height: 32px !important;
     }
+    &.user-profile-type-list {
+        position:absolute;
+        bottom: -12px;
+        width: 100%;
+        top: auto;
+        font-size: 12px;
+    }
 }
 .user-profile-head-content {
     margin-top: 15px;
@@ -1183,7 +1190,19 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
         margin-left: auto !important;
         margin-right: auto !important;
         float: none !important;
-        
+    }
+}
+
+.portfolio-user {
+    overflow: inherit;
+    border-radius: 50%;
+    margin: 0 6px 30px 0 !important;
+    .portfolio-image {
+        overflow: inherit;
+        border-radius: 50%;
+    }
+    .portfolio-overlay {
+        border-radius: 50%;
     }
 }
 
