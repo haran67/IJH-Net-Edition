@@ -51,7 +51,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap alt" style="padding: 40px 0">
         <div class="container center clearfix">
-            <h4 style="font-weight: 400;" class="color">People</h4>
+            <h4 class="color">People</h4>
             <div class="divider divider-rounded divider-center divider-custom">
                 <i class="icon-coffee2" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                 <i class="icon-facetime-video" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i>
