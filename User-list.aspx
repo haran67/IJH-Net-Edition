@@ -80,11 +80,9 @@
                                             </span>
                                         </div>
                                         <div class="user-profile-type user-profile-type-list">
-                                            <span>
-                                                <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-facetime-video" id="i_expo" runat="server"></i> 
-                                                <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server"></i> 
-                                                <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-coffee2" id="i_guest" runat="server"></i>
-                                            </span>
+                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-facetime-video" id="i_expo" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
+                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
+                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-coffee2" id="i_guest" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                                         </div>
                                     </div>
                                 </asp:LinkButton>

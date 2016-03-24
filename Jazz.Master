@@ -53,7 +53,7 @@
     </asp:ContentPlaceHolder>
 </head>
     <%If page_is_index Then%>
-        <body class="stretched" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
+        <body class="stretched" data-loader="3" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
     <%else%>
         <body class="stretched no-transition">
     <%end if%>

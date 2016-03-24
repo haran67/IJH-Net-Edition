@@ -50,11 +50,11 @@
                     </h4>
                     <h4>
                         <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
-                    </h4> 
+                    </h4>
                 </div>
             </div>
         </div>
-            
+
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h3>
@@ -79,7 +79,9 @@
                             </div>
                             <div class="pricing-features">
                                 <ul>
-                                    <li><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore_desc")%></li>
+                                    <li>
+                                        <%=Lingua.CaricaLingua("lgl_chisiamo_visitatore_desc")%>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="pricing-action">
@@ -99,7 +101,9 @@
                                 </div>
                                 <div class="pricing-features">
                                     <ul>
-                                        <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_01")%></li>
+                                        <li>
+                                            <%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_01")%>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -109,7 +113,9 @@
                                 </div>
                                 <div class="pricing-features">
                                     <ul>
-                                        <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_02")%></li>
+                                        <li>
+                                            <%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_02")%>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -119,7 +125,9 @@
                                 </div>
                                 <div class="pricing-features">
                                     <ul>
-                                        <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_03")%></li>
+                                        <li>
+                                            <%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_03")%>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -132,6 +140,16 @@
                 </div>
             </div>
         </div>
+    </div>
+                            
+    <div class="hidden section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
+        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server">
+            <i class="icon-user2"></i>
+            <%=Lingua.CaricaLingua("lgl_index_registrati")%>
+        </a>
+    </div>
+    <div class="hidden section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
+        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"  id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
