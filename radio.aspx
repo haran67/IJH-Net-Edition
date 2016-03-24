@@ -5,24 +5,24 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title page-title-dark patch-wallpaper" style="padding: 30px 0;">
-        <div class="container clearfix">
-            <h1 class="bottommargin-sm"><%=Lingua.CaricaLingua("lgl_radio_title")%></h1>
-            <h3 style="color: #fff; font-weight: 300; margin-bottom: 0;"><%=Lingua.CaricaLingua("lgl_radio_desc")%></h3>
-        </div>
-    </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap">
-        <div class="container clearfix">
-            <div class="col_full ">
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf"><i class="icon-line-link"></i> Spotify</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.deezer.com/playlist/1551552041"><i class="icon-line-link"></i> Deezer</a>
-                </h3>
+    <div class="content-wrap home nopadding">
+        <div class="section nomargin  center">
+            <div class="container clearfix">
+                <h2 class="color"><%=Lingua.CaricaLingua("lgl_radio_title")%></h2>
+                <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_radio_desc")%></h4>
+            </div>
+        </div>
+        <div class="section nomargin alt center">
+            <div class="container clearfix">
+                <h4 class="nomargin">
+                    <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf">Spotify</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.deezer.com/playlist/1551552041">Deezer</a>
+                </h4>
             </div>
         </div>
     </div>

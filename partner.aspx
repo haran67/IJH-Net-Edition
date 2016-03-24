@@ -3,52 +3,52 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section class="page-title page-title-dark patch-wallpaper" style="padding: 30px 0;">
-        <div class="container clearfix">
-            <h1 class="bottommargin-sm"><%=Lingua.CaricaLingua("lgl_partners_title")%></h1>
-            <h3 style="color: #fff; font-weight: 300; margin-bottom: 0;"><%=Lingua.CaricaLingua("lgl_partners_desc")%></h3>
-        </div>
-    </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-    <div class="content-wrap">
-        <div class="container clearfix">
-            <div class="col_full">
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.bluesinvilla.com/"><i class="icon-line-link"></i> FVG Festival</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.milleunanota.com/"><i class="icon-line-link"></i> Modern Jazz Institute</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.abno.com/"><i class="icon-line-link"></i> Blue Note Orchestra</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.blueartmanagement.com/"><i class="icon-line-link"></i> Blueart</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff"><i class="icon-line-link"></i> Peperoncino Jazz Festival</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.associazionenotabene.org/"><i class="icon-line-link"></i> Notabene</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.onyxjazzclub.it/2013/"><i class="icon-line-link"></i> Gezziamoci</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13"><i class="icon-line-link"></i> Tuscia in Jazz</a>
-                </h3>
-                <div class="line" style="margin: 20px; 0"></div>
-                <h3 class="nomargin" style="font-weight: normal">
-                    <a href="http://www.agenziaeventibipede.it/"><i class="icon-line-link"></i> San Valentino Jazz Festival</a>
-                </h3>
+    <div class="content-wrap nopadding">
+        <div class="section nomargin  center">
+            <div class="container clearfix">
+                <h2 class="color"><%=Lingua.CaricaLingua("lgl_partners_title")%></h2>
+                <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_partners_desc")%></h4>
+            </div>
+        </div>
+        <div class="section nomargin alt center">
+            <div class="container clearfix">
+                <h4 class="nomargin">
+                    <a href="http://www.bluesinvilla.com/"> FVG Festival</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.milleunanota.com/"> Modern Jazz Institute</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.abno.com/"> Blue Note Orchestra</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.blueartmanagement.com/"> Blueart</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff"> Peperoncino Jazz Festival</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.associazionenotabene.org/"> Notabene</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.onyxjazzclub.it/2013/"> Gezziamoci</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13"> Tuscia in Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.agenziaeventibipede.it/"> San Valentino Jazz Festival</a>
+                </h4>
             </div>
         </div>
     </div>

@@ -11,7 +11,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <h1 class="hidden"><%=Lingua.CaricaLingua("lgl_register_title")%></h1>
     <div class="content-wrap">
-        <div class="section nomargin center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
+        <div class="section nomargin alt center">
             <div class="container clearfix" style="padding-top: 50px; padding-bottom: 30px">
                 <asp:UpdatePanel ID="upd_register" runat="server">
                     <ContentTemplate>
@@ -44,7 +44,7 @@
                                         <div class="panel panel-default divcenter" style="background-color: rgba(255,255,255,0.93);" id="div_dati_01" runat="server">
                                             <div class="panel-body" style="padding: 40px;">
                                                 <div class="col_full nobottommargin center">
-                                                    <h3 class="nopadding nomargin" style="font-weight: 400"><%=Lingua.CaricaLingua("lgl_register_registrati_inizia")%></h3>
+                                                    <h3 class="nopadding nomargin"><%=Lingua.CaricaLingua("lgl_register_registrati_inizia")%></h3>
                                                     <div class="divider divider-rounded divider-center nomargin" style="margin: 10px 0!important"  data-class-lg="not-hidden" data-class-md="not-hidden" data-class-sm="not-hidden" data-class-xs="not-hidden" data-class-xxs="hidden">
                                                         <i class="icon-arrow-down2"></i>
                                                     </div>

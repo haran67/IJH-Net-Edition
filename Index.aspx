@@ -68,7 +68,7 @@
         <div class="vertical-middle center text-shadow" style="z-index: 5">
             <div class="emphasis-title title-center nomargin">
                 <h2 class="nopadding"><strong><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></strong></h2>
-                <h3 class="citazione" style="font-weight: normal">
+                <h3 class="citazione">
                     <strong>Jazz Hub</strong> 
                     <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
                 </h3>
@@ -139,9 +139,10 @@
         <!-- sponsored -->
         <div class="section nomargin notoppadding alt center">
             <div class="container clearfix topmargin-sm">
-                <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
+                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom">
-                    <i class="icon-star" style="background-color: rgba(0,0,0,.1)"></i></div>
+                    <i class="icon-star" style="background-color: rgba(0,0,0,.1)"></i>
+                </div>
                 <div id="portfolio" class="portfolio portfolio-3 clearfix">
                     <asp:Repeater ID="rpt_video" runat="server" OnItemDataBound="rpt_video_ItemDataBound" OnItemCommand="rpt_video_ItemCommand">
                         <ItemTemplate>
@@ -166,7 +167,7 @@
         <!-- Ultimi video -->
         <div class="section nomargin alt center">
             <div class="container clearfix ">
-                <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4>
+                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom">
                     <i class="icon-clock" style="background-color: rgba(0,0,0,.1)"></i>
                 </div>
@@ -196,7 +197,7 @@
         <!-- Guest  -->
         <div class="section nomargin alt center" id="div_like_guest" runat="server">
             <div class="container clearfix ">
-                <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
+                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
 <!--                <h4><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>-->
                 <div class="divider divider-rounded divider-center divider-custom">
                     <i class="icon-coffee2" style="background-color:  rgba(0,0,0,.1)"></i>
@@ -228,7 +229,7 @@
         <!-- Espositori -->
         <div class="section nomargin alt center" id="div_like_expo" runat="server">
             <div class="container clearfix ">
-                <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
+                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom">
                     <i class="icon-facetime-video" style="background-color: rgba(0,0,0,.1)"></i>
                     <i class="icon-chevron-right" style="background-color: rgba(0,0,0,.025)"></i>
@@ -256,9 +257,9 @@
         </div>
         
         <!-- Visitatori -->
-            <div class="section nomargin alt center" id="div_like_visi" runat="server">
+        <div class="section nomargin alt center" id="div_like_visi" runat="server">
             <div class="container clearfix ">
-                <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
+                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
                 <div class="divider divider-rounded divider-center divider-custom">
                     <i class="icon-eye-open" style="background-color: rgba(0,0,0,.1)"></i>
                     <i class="icon-chevron-right" style="background-color: rgba(0,0,0,.025)"></i>

@@ -5,168 +5,134 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <section id="slider" class="slider dark patch-wallpaper" data-height-lg="350" data-height-md="350" data-height-sm="300" data-height-xs="300" data-height-xxs="250">
-        <div class="container vertical-middle center clearfix text-uppercase text-shadow">
-            <div class="heading-block nobottomborder bottommargin-sm">
-                <h1>
-                    <div class="text-rotater shadow text-shadow" data-separator="|" data-rotate="flipInX" data-speed="3500" style="color: #ccc">
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%>
-                        <br />
-                        <span class="t-rotate" style="color: #fff">
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_title_02")%>
-                        </span>
-                    </div>
-                </h1>
-            </div>
-            <div id="div_registrati" runat="server">
-                <a href="login.aspx" class="button button-rounded button-green nobottommargin"><%=Lingua.CaricaLingua("lgl_index_accedi")%></a> 
-                     <span>oppure</span> 
-                <a href="register.aspx" class="button button-rounded button-red nobottommargin"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-            </div>
-        </div>
-    </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
-<div class="content-wrap nopadding">
-    <div class="row common-height clearfix">
-        <div class="col-sm-5 col-padding dark chisiamo" >
-            <div class="heading-block nobottomborder tright text-shadow">
-                <h2><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h2>
+    <div class="content-wrap home nopadding">
+        <div class="section nomargin alt center">
+            <div class="container clearfix">
+                <h2 class="color "><%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%></h2>
+                <div class="text-rotater" data-separator="|" data-rotate="flipInX" data-speed="3500">
+                    <h4 class="t-rotate color nomargin">
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_title_02")%>
+                    </h4>
+                </div>
             </div>
         </div>
-        <div class="col-sm-7 col-padding">
-            <div class="row clearfix">
-                <h3 style="font-weight: normal">
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_01")%>
-                </h3>
-                <h3 style="font-weight: normal">
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_02")%>
-                </h3>
+        <div class="section nomargin alt center">
+            <div class="container clearfix ">
+                <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h3>
+                <div class="chisiamo divcenter" style="margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <div class="citazione">
+                    <h4>
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_01")%>
+                    </h4>
+                    <h4>
+                        <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_02")%>
+                    </h4>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="hidden section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
-        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server">
-            <i class="icon-user2"></i>
-            <%=Lingua.CaricaLingua("lgl_index_registrati")%>
-        </a>
-    </div>
-    <div class="row common-height alt clearfix">
-        <div class="col-sm-5 col-padding dark opportunita" data-class-lg="fright" data-class-md="fright" data-class-sm="fright" data-class-xs="nofloat" data-class-xxs="nofloat">
-            <div class="heading-block nobottomborder tleft text-shadow" >
-                <h2><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h2>
-            </div>
-        </div>
-        <div class="col-sm-7 col-padding" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="nofloat" data-class-xxs="nofloat">
-            <div class="row clearfix tright">
-                <div class="col_full">
-                    <h3 style="font-weight: normal">
+        <div class="section nomargin alt center">
+            <div class="container clearfix ">
+                <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h3>
+                <div class="opportunita divcenter" style="margin-bottom: 20px; width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <div class="citazione">
+                    <h4>
                         <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
-                    </h3>
-                    <h3 style="font-weight: normal">
+                    </h4>
+                    <h4>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_03")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_04")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_05")%><br>
                         - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_06")%>
-                    </h3>
-                    <h3 style="font-weight: normal">
+                    </h4>
+                    <h4>
                         <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
-                    </h3> 
+                    </h4> 
                 </div>
             </div>
         </div>
-    </div>
-    <div class="hidden section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
-        <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin"  id="div_registrati_01" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
-    </div>
-    <div class="row common-height clearfix">
-        <div class="col-sm-5 col-padding dark partecipare">
-            <div class="heading-block nobottomborder tright text-shadow">
-                <h2><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h2>
-            </div>
-        </div>
-        <div class="col-sm-7 col-padding">
-            <div class="row clearfix">
-                <h3 style="font-weight: normal">
+            
+        <div class="section nomargin alt center">
+            <div class="container clearfix ">
+                <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h3>
+                <div class="partecipare divcenter" style="margin-bottom: 20px; width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <h4>
                     <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
-                </h3>
+                </h4>
             </div>
         </div>
-    </div>
-    <div class="section dark nomargin clearfix parallax patch-wallpaper" data-stellar-background-ratio="0.3">
-        <div class="container">
-            <div class="heading-block nobottomborder center">
+        <div class="section nomargin alt center">
+            <div class="container clearfix">
                 <h1><%=Lingua.CaricaLingua("lgl_chisiamo_tariffe")%></h1>
-            </div>
-            <div class="divider divider-short divider-rounded divider-center"><i class="icon-chevron-down"></i></div>
-            <div class="pricing bottommargin clearfix">
-                <div class="col-sm-6">
-                    <div class="pricing-box">
-                        <div class="pricing-title">
-                            <h3><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore")%></h3>
-                            <span><%=Lingua.CaricaLingua("lgl_chisiamo_iscrizione_valida")%></span>
-                        </div>
-                        <div class="pricing-price">
-                            <span class="price-unit">&euro;</span>9,99<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
-                        </div>
-                        <div class="pricing-features">
-                            <ul>
-                                <li><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore_desc")%></li>
-                            </ul>
-                        </div>
-                        <div class="pricing-action">
-                            <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin" id="div_registrati_02" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                <div class="pricing bottommargin clearfix">
+                    <div class="col-sm-6">
+                        <div class="pricing-box">
+                            <div class="pricing-title">
+                                <h3 style="font-weight:400"><i class="icon-facetime-video"></i><br><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore")%></h3>
+                                <span><%=Lingua.CaricaLingua("lgl_chisiamo_iscrizione_valida")%></span>
+                            </div>
+                            <div class="pricing-price">
+                                <span class="price-unit">&euro;</span>9,99<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore_desc")%></li>
+                                </ul>
+                            </div>
+                            <div class="pricing-action">
+                                <a href="register.aspx" class="button button-rounded button-primary btn-block nomargin" id="div_registrati_02" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="pricing-box">
-                        <div class="pricing-title">
-                            <h3><%=Lingua.CaricaLingua("lgl_chisiamo_espositore")%></h3>
-                            <span><%=Lingua.CaricaLingua("lgl_chisiamo_iscrizione_valida")%></span>
-                        </div>
-                        <div class="col-sm-4 notopmargin">
-                            <div class="pricing-price">
-                                <span class="price-unit">&euro;</span>12<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                    <div class="col-sm-6">
+                        <div class="pricing-box">
+                            <div class="pricing-title">
+                                <h3 style="font-weight:400"><i class="icon-eye-open"></i><br><%=Lingua.CaricaLingua("lgl_chisiamo_espositore")%></h3>
+                                <span><%=Lingua.CaricaLingua("lgl_chisiamo_iscrizione_valida")%></span>
                             </div>
-                            <div class="pricing-features">
-                                <ul>
-                                    <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_01")%></li>
-                                </ul>
+                            <div class="col-sm-4 notopmargin">
+                                <div class="pricing-price">
+                                    <span class="price-unit">&euro;</span>12<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul>
+                                        <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_01")%></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4 notopmargin">
-                            <div class="pricing-price">
-                                <span class="price-unit">&euro;</span>24<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                            <div class="col-sm-4 notopmargin">
+                                <div class="pricing-price">
+                                    <span class="price-unit">&euro;</span>24<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul>
+                                        <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_02")%></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="pricing-features">
-                                <ul>
-                                    <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_02")%></li>
-                                </ul>
+                            <div class="col-sm-4 notopmargin">
+                                <div class="pricing-price">
+                                    <span class="price-unit">&euro;</span>50<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul>
+                                        <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_03")%></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4 notopmargin">
-                            <div class="pricing-price">
-                                <span class="price-unit">&euro;</span>50<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                            <div class="clearfix"></div>
+                            <div class="pricing-action">
+                                <a href="register.aspx" class="button button-rounded button-primary btn-block nomargin" id="div_registrati_03" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                             </div>
-                            <div class="pricing-features">
-                                <ul>
-                                    <li><%=Lingua.CaricaLingua("lgl_chisiamo_espositore_desc_03")%></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="pricing-action">
-                            <a href="register.aspx" class="button button-rounded btn-block button-red button-xlarge nomargin" id="div_registrati_03" runat="server"><i class="icon-user2"></i><%=Lingua.CaricaLingua("lgl_index_registrati")%></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
 </asp:Content>
