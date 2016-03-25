@@ -388,9 +388,9 @@ body > form {
     width: 60px;
     height: 60px;
 }
-.comment-avatar, .comment-avatar img, .portfolio-image, .portfolio.image img, .portfolio-overlay{
-    border-radius: 0;
-}
+//.comment-avatar, .comment-avatar img, .portfolio-image, .portfolio.image img, .portfolio-overlay{
+//    border-radius: 0;
+//}
 
 
 .text-xs-left { text-align: left; }
@@ -831,17 +831,11 @@ body > form {
     padding-bottom: .5em;
     font-weight: 300;
     text-transform: lowercase;
-    &:first-letter {
-        text-transform: uppercase;
-    }
 }
 .title {
     padding-bottom: .5em;
-    font-weight: 400 !important;
-    text-transform: lowercase;
-    &:first-letter {
-        text-transform: uppercase;
-    }
+    font-weight: 300 !important;
+    text-transform: uppercase;
 }
 #primary-menu ul li a {
     padding: 0 10px;
@@ -1188,10 +1182,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
         padding: 10px;
         text-align:left;
         h3 {
-            text-transform: lowercase;
-            &:first-letter {
-                text-transform: uppercase;
-            }
+            text-transform: uppercase;
             color: #fff;
             font-size: 1.2em;
             line-height: 1.25em;
@@ -1200,9 +1191,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
         span {
             color: #dfdfdf;
             text-transform: lowercase;
-            &:first-letter {
-                text-transform: uppercase;
-            }
         }
     }
 }
@@ -1235,6 +1223,16 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
     }
     .portfolio-overlay {
         border-radius: 50%;
+    }
+    h3 {
+        margin: 0 10px;
+        padding-top: 10px;
+        font-weight: 500 !important;
+        text-transform: uppercase;
+    }
+    span {
+        font-size: 14px !important;
+        text-transform: lowercase;
     }
 }
 

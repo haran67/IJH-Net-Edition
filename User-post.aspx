@@ -82,15 +82,16 @@
                     <div id="portfolio" class="<%=pf_num%> clearfix standard-portfolio">
                         <asp:Repeater ID="rpt_video" runat="server">
                             <ItemTemplate>
-                                <article class="portfolio-item clearfix">
+                                <article class="portfolio-item">
                                     <div class="portfolio-image patch-placeholder">
                                         <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                            <div class="goto-video"><i class="icon-line-play"></i></div>
                                             <asp:Image ID="img_copertina" runat="server" />
                                         </asp:LinkButton>
                                     </div>
-                                    <div class="portfolio-desc box-shadow-custom" style="padding: 10px;">
-                                        <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
+                                    <div class="portfolio-desc">
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
                                     </div>
                                 </article>
                             </ItemTemplate>

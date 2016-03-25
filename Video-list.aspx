@@ -46,7 +46,7 @@
     <div class="content-wrap standard-portfolio alt" style="padding: 40px 0">
         <div class="container center clearfix">
             <h4 style="font-weight: 400;" class="color">Video</h4>
-            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-line-play" style="background-color: #e6e6e6"></i></div>
+            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-tv" style="background-color: #e6e6e6"></i></div>
             <h4 style="font-weight: 400;" class="color"><asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal></h4>
 <!--            <div class="postcontent">-->
                 
@@ -60,8 +60,8 @@
                                         <asp:Image ID="img_copertina" runat="server" />
                                     </asp:LinkButton>
                                     <div class="portfolio-desc">
-                                        <h3 style="max-height: 2.5em; overflow: hidden"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                        <span style="max-height: 1.85em; overflow: hidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
+                                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                        <span><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></span>
                                     </div>
                                 </div>
                             </article>
@@ -117,8 +117,8 @@
             
             $(window).resize(function () {
                 $container.isotope('layout');
-                $container_expo.isotope('layout');
+//                $container_expo.isotope('layout');
             });
-        }
+        })
     </script>
 </asp:Content>
