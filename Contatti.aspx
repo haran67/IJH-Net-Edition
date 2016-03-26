@@ -64,11 +64,9 @@
                 <div class="col_one_third col_last ">
                     <div class="widget clearfix">
                         <img src="images/logo.png" alt="" >
-                        <h4 class="nomargin ">
-                            IMF Foundation</h4>
-                        <h5 class=" dark">
-                            International Music Festival Foundation</h5>
-                        <address class="">
+                        <h3 class="nomargin" style="font-weight: 400; letter-spacing: 0;">IMF Foundation</h3>
+                        <h5 style="font-weight: 400; letter-spacing: 0;">International Music Festival Foundation</h5>
+                        <address>
                             <strong>Sede operativa:</strong><br>
                             Via Giuseppe Sacconi, 19 - Lotto G<br>
                             00196 roma<br>

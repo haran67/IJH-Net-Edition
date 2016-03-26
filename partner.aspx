@@ -9,11 +9,8 @@
         <div class="section nomargin  center">
             <div class="container clearfix">
                 <h2 class="color"><%=Lingua.CaricaLingua("lgl_partners_title")%></h2>
-                <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_partners_desc")%></h4>
-            </div>
-        </div>
-        <div class="section nomargin alt center">
-            <div class="container clearfix">
+                <h4><%=Lingua.CaricaLingua("lgl_partners_desc")%></h4>
+                <div class="section-cover partner divcenter"></div> 
                 <h4 class="nomargin">
                     <a href="http://www.bluesinvilla.com/"> FVG Festival</a>
                 </h4>

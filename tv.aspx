@@ -18,7 +18,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_tv_artisti")%></h3>
-                <div class="chisiamo divcenter" style="margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <div class="section-cover artists divcenter"></div>
                 <h4 class="nomargin">
                     <a href="https://www.youtube.com/user/neilcowleytrio ">Neil Cowley Trio</a>
                 </h4>
@@ -35,7 +35,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_tv_festival")%></h3>
-                <div class="chisiamo divcenter" style="background-image: url('images/custom/festival-bg.jpg'); margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <div class="section-cover festival divcenter"></div>
                 <h4 class="nomargin">
                     <a href="https://www.youtube.com/user/romajazzfestival" target="_blank">Roma Jazz Festival</a>
                 </h4>
@@ -52,7 +52,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_tv_club")%></h3>
-                <div class="chisiamo divcenter" style="background-image: url('images/custom/jazz-bg-3.jpg'); margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <div class="section-cover jazz-club divcenter"></div>
                 <h4 class="nomargin">
                     <a href="https://www.youtube.com/user/SmokeJazzClubNYC" target="_blank">Smoke Jazz Club</a>
                 </h4>
@@ -65,7 +65,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_tv_label")%></h3>
-                <div class="chisiamo divcenter" style="background-image: url('images/custom/jazz-bg-2.jpg'); margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <div class="section-cover jazz-label divcenter"></div>
                 <h4 class="nomargin">
                     <a href="https://www.youtube.com/user/ACTMusicOfficial" target="_blank">ACT</a>
                 </h4>

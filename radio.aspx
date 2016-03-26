@@ -8,14 +8,11 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap home nopadding">
-        <div class="section nomargin  center">
-            <div class="container clearfix">
-                <h2 class="color"><%=Lingua.CaricaLingua("lgl_radio_title")%></h2>
-                <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_radio_desc")%></h4>
-            </div>
-        </div>
         <div class="section nomargin alt center">
             <div class="container clearfix">
+                <h2 class="color"><%=Lingua.CaricaLingua("lgl_radio_title")%></h2>
+                <h4><%=Lingua.CaricaLingua("lgl_radio_desc")%></h4>
+                <div class="section-cover onair divcenter"></div>
                 <h4 class="nomargin">
                     <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf">Spotify</a>
                 </h4>
