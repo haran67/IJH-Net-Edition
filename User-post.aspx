@@ -49,7 +49,7 @@
     </section>
 <asp:UpdatePanel ID="upd_header" runat="server">
     <ContentTemplate>
-    <div class="section nomargin nopadding profile-submenu" style="background: #3C4B5E;" id="top_section">
+    <div class="section nomargin nopadding profile-submenu" id="top_section">
         <div class="container center clearfix">
             <a href="#">Profilo</a>
             <asp:LinkButton ID="btn_video" runat="server" CssClass="active">
@@ -69,12 +69,12 @@
         <div class="content-wrap alt" id="div_content" runat="server" style="padding: 40px 0;">
             <div class="container center clearfix">
                 <div>
-                    <h4 style="font-weight: 400;" class="color">The Artist</h4>
-                    <div class="divider divider-rounded divider-center"><i class="icon-line2-moustache" style="background-color: rgba(0,0,0,.1)"></i></div>
-                    <h4 style="font-weight: 300" class="citazione"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></h4>
+                    <h4 class="color">Profilo</h4>
+                    <div class="divider divider-rounded divider-center"><i class="icon-user2" style="background-color: rgba(0,0,0,.1)"></i></div>
+                    <h4 style="font-weight: 200" class="citazione"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></h4>
                 </div>
                 <div id="p_video" runat="server">
-                    <h4 style="font-weight: 400;" class="color"><asp:literal ID="ltl_titolo" runat="server"></asp:literal></h4>
+                    <h4 class="color"><asp:literal ID="ltl_titolo" runat="server"></asp:literal></h4>
                     <div class="divider divider-rounded divider-center"><i class="icon-tv" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <h2 style="font-weight: 300;" class="color" id="h_nessun_video" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_video")%>
@@ -99,7 +99,7 @@
                     </div>
                 </div> 
                 <div id="p_when" runat="server" class="date-list divcenter center">
-                    <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
+                    <h4 class="color"><%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
                     <div class="divider divider-rounded divider-center divider-custom"><i class="icon-calendar3" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <h2 style="font-weight: 300;" class="color" id="h_nessun_eventi" runat="server">
                         <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>

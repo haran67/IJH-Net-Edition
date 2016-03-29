@@ -21,7 +21,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h3>
-                <div class="chisiamo divcenter" style="margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                <div class="chisiamo section-cover big divcenter"></div>
                 <div class="citazione">
                     <h4>
                         <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_01")%>
@@ -35,7 +35,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h3>
-                <div class="opportunita divcenter" style="margin-bottom: 20px; width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                    <div class="opportunita section-cover big divcenter"></div>
                 <div class="citazione">
                     <h4>
                         <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
@@ -58,7 +58,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h3>
-                <div class="partecipare divcenter" style="margin-bottom: 20px; width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>
+                    <div class="partecipare section-cover big divcenter"></div>
                 <h4>
                     <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
                 </h4>
