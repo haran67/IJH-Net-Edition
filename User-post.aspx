@@ -10,7 +10,7 @@
         <div class="container center clearfix" style="z-index: 2">
             <div class="profile-header">
                 <asp:Image ID="img_utente" runat="server" CssClass="nomargin" />
-                <div class="user-profile-type">
+                <div class="user-profile-type user-profile-type-single">
                     <i class="i-circled i-small icon-facetime-video nomargin nofloat inline-block box-shadow-custom" id="i_expo" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
                     <i class="i-circled i-small icon-eye-open nomargin nofloat inline-block box-shadow-custom" id="i_view" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
                     <i class="i-circled i-small icon-coffee2 nomargin nofloat inline-block box-shadow-custom" id="i_guest" runat="server" style="width: 40px !important; height: 40px !important; line-height: 40px !important;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
@@ -18,7 +18,7 @@
                 <h1 class="text-shadow">
                     <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>
                     <span class="visible-xs visible-sm visible-md visible-lg">
-                        <strong style="font-weight: 400; color: #fff"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong><asp:Literal ID="ltl_trattino_where" runat="server">-</asp:Literal>&nbsp;<asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
+                        <strong style="font-weight: 400; color: #fff"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong><asp:Literal ID="ltl_trattino_where" runat="server"> -</asp:Literal>&nbsp;<asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
                     </span>
                 </h1>
                 <div class="noheight user-divider"></div>
@@ -71,7 +71,7 @@
                 <div>
                     <h4 class="color">Profilo</h4>
                     <div class="divider divider-rounded divider-center"><i class="icon-user2" style="background-color: rgba(0,0,0,.1)"></i></div>
-                    <h4 style="font-weight: 200" class="citazione"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></h4>
+                    <h5 style="font-weight: 300" class="citazione"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></h5>
                 </div>
                 <div id="p_video" runat="server">
                     <h4 class="color"><asp:literal ID="ltl_titolo" runat="server"></asp:literal></h4>

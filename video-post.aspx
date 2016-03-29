@@ -17,9 +17,9 @@
                                     <i class="icon-thumbs-up"></i>
                                 </asp:LinkButton>
                             </div>
-                            <h3 style="color: #ccc"><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
-                            <div class="counter  counter-small" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
-                            <div style="padding-bottom: 20px;" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
+                            <h3 style="color: #ccc; font-weight: 300"><%=Lingua.CaricaLingua("lgl_videopost_likes")%></h3>
+                            <div class="counter counter-small" style=" font-weight: 300" id="div_yes_like" runat="server"><span data-from="0" data-to="8465" data-refresh-interval="100" data-speed="2000" id="span_like" runat="server"></span></div>
+                            <div style="padding-bottom: 20px; font-weight: 300" id="div_no_like" runat="server"><span><%=Lingua.CaricaLingua("lgl_videopost_likes_attesa")%></span></div>
                         </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
@@ -68,11 +68,10 @@
                             
                         </div>
                         <hr>
-                        <div class="entry-content center notopmargin">
-
-                            <p>
+                        <div class="entry-content center citazione notopmargin">
+                            <h5 style="font-weight: 300">
                                 <asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal>
-                            </p>
+                            </h5>
                             <!-- Post Single - Content End -->
 
                             <!-- Tag Cloud
