@@ -10,7 +10,7 @@
                     <div class="container clearfix" style="padding-top: 50px; padding-bottom:30px">
                         <asp:UpdatePanel ID="upd_login" runat="server">
                             <ContentTemplate>
-                                <div class="row common-height ">
+                                <div class="row common-height">
                                     <div class="col-md-5 nobottommargin">
                                         <div class="panel panel-default divcenter" style="max-width: 400px;">
                                             <div class="panel-body" style="padding: 40px;">
@@ -143,7 +143,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2 center oppure">
+                                    <div class="col-md-2 center oppure" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
                                         <span class="vertical-middle alt ">oppure</span>
                                     </div>
                                     <div class="col-md-5  center">

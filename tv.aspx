@@ -19,9 +19,11 @@
             <div class="container clearfix ">
                 <h3 class="color"><%=Lingua.CaricaLingua("lgl_tv_artisti")%></h3>
                 <div class="section-cover artists divcenter"></div>
+<!--
                 <h4 class="nomargin">
                     <a href="https://www.youtube.com/user/neilcowleytrio ">Neil Cowley Trio</a>
                 </h4>
+-->
                 <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
                 <h4 class="nomargin">
                     <a href="https://www.youtube.com/user/PatMethenyMedia/featured">Pat Metheny</a>

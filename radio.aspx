@@ -13,9 +13,6 @@
                 <h2 class="color"><%=Lingua.CaricaLingua("lgl_radio_title")%></h2>
                 <h4><%=Lingua.CaricaLingua("lgl_radio_desc")%></h4>
                 <div class="section-cover onair divcenter"></div>
-                <h4 class="nomargin">
-                    <a href="https://open.spotify.com/user/mejoresplaylistsspotify/playlist/05Hd48jdQIz3s8WRrvGnzf">Spotify</a>
-                </h4>
                 <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
                 <h4 class="nomargin">
                     <a href="http://www.deezer.com/playlist/1551552041">Deezer</a>

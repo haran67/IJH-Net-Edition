@@ -71,7 +71,7 @@
                     <div class="col-sm-6">
                         <div class="pricing-box">
                             <div class="pricing-title">
-                                <h3 style="font-weight:400"><i class="icon-facetime-video"></i><br><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore")%></h3>
+                                <h3 style="font-weight:400"><i class="icon-eye-open"></i><br><%=Lingua.CaricaLingua("lgl_chisiamo_visitatore")%></h3>
                                 <span><%=Lingua.CaricaLingua("lgl_chisiamo_iscrizione_valida")%></span>
                             </div>
                             <div class="pricing-price">
@@ -92,7 +92,7 @@
                     <div class="col-sm-6">
                         <div class="pricing-box">
                             <div class="pricing-title">
-                                <h3 style="font-weight:400"><i class="icon-eye-open"></i><br><%=Lingua.CaricaLingua("lgl_chisiamo_espositore")%></h3>
+                                <h3 style="font-weight:400"><i class="icon-facetime-video"></i><br><%=Lingua.CaricaLingua("lgl_chisiamo_espositore")%></h3>
                                 <span><%=Lingua.CaricaLingua("lgl_chisiamo_iscrizione_valida")%></span>
                             </div>
                             <div class="col-sm-4 notopmargin">

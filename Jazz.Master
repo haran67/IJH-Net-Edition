@@ -79,21 +79,26 @@
                                 <a href="/index.aspx"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
                             </li>
                             <li>
-                                <a href="#">IJH</a>
-                                <ul>
-                                    <li><a href="/chisiamo.aspx"><%=Lingua.CaricaLingua("lgl_menu_about")%></a></li>
-                                    <li><a href="/partner.aspx"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a></li>
-                                    <li><a href="/contatti.aspx"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a></li>
-                                </ul>
+                                <a href="/chisiamo.aspx"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
                             </li>
+<!--                                    <li><a href="/contatti.aspx"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a></li>-->
                             <li>
                                 <a href="/User-list.aspx"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
+                            </li>
+                            <li>
+                                <a href="#"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
+                                <ul>
+                                    <li><a href="/radio.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
+                                    <li><a href="/tv.aspx"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
+                                </ul>
+
                             </li>
 <!--
                             <li>
                                 <a href="/Video-list.aspx">Video</a>
                             </li>
 -->
+                            <li><a href="/partner.aspx"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a></li>
                             <li>
                                 <a href="/streaming.aspx"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
                             </li>
@@ -101,14 +106,7 @@
                                 <a href="/crowdfunding.aspx"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
                             </li>
                             
-                            <li>
-                                <a href="#"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
-                                <ul>
-                                    <li><a href="/radio.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
-                                    <li><a href="/tv.aspx"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
-                                </ul>
-                                
-                            </li>
+                            
 <!--
                             <li>
                                 <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_shop")%></a>
@@ -178,7 +176,7 @@
                                 Via Giuseppe Sacconi, 19 - Lotto G
                                 00196 Roma
                             </address>
-                            <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045<span class="middot"></span>
+                            <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045 <span class="middot">&middot;</span> <a href="/contatti.aspx" style="background-color: rgba(255, 255, 255, .15);padding: 0 6px;border-radius: 5px"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a>
                         </div>
                         <div class="visible-sm visible-xs line line"></div>
                         <div class="col_two_fifth col_last nobottommargin">
@@ -188,7 +186,7 @@
                             </div>
                                 <p style="margin-bottom: 15px;">Prodotto da:</p>
                             <div class="col_half col_last">
-                                <a href="http://www.imffoundation.it/"><img src="/images/custom/logo-imf.png" style="height: 57px;"></a>
+                                <a class="" href="http://www.imffoundation.it/"><img src="/images/custom/logo-imf.png" style="height: 57px;"></a>
                             </div>
                         </div>
                     </div>
@@ -204,7 +202,7 @@
                     <%=Lingua.CaricaLingua("lgl_master_cookies_01")%>
                 </div>
                 <div class="col_two_fifth col_last" data-class-lg="tright" data-class-md="tright" data-class-sm="tright" data-class-xs="center" data-class-xxs="center">
-                    <a href="javascript:void()" class="cookie-accept notopmargin cookie-noti-btn button button-rounded button-red button-small"><%=Lingua.CaricaLingua("lgl_master_cookies_02")%></a>
+                    <a href="javascript:void()" class="cookie-accept notopmargin cookie-noti-btn button button-rounded button-success button-small"><%=Lingua.CaricaLingua("lgl_master_cookies_02")%></a>
                     <a href="javascript:void()" class="button notopmargin button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg"><%=Lingua.CaricaLingua("lgl_master_cookies_03")%></a>
                 </div>
             </div>
@@ -255,9 +253,9 @@
         
         function cookieResize() {
             if( $cookieNotification.length > 0 ) {
-                var cookieNotificationHeight = $cookieNotification.outerHeight();
-
-                $cookieNotification.css({ bottom: -cookieNotificationHeight });
+//                var cookieNotificationHeight = $cookieNotification.outerHeight();
+//
+//                $cookieNotification.css({ bottom: -cookieNotificationHeight });
 
                 if( $.cookie('websiteUsesCookies') != 'yesConfirmed' ) {
                     $cookieNotification.css({ display: 'hidden' });
@@ -284,7 +282,7 @@
 
         });
         $(window).resize(function(){
-            cookieResize();
+            //cookieResize();
             $('.portfolio-item h3').truncate({
                 width: 'auto',
                 token: '&hellip;',

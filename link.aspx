@@ -10,35 +10,8 @@
     <div class="content-wrap home nopadding">
         <div class="section nomargin alt center">
             <div class="container clearfix">
-                <h2 class="color nomargin">Link</h2>
-            </div>
-        </div>
-        <div class="section nomargin alt center">
-            <div class="container clearfix ">
-                <h3 class="color">Pooling</h3>
-<!--                    <div class="chisiamo divcenter" style="margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>-->
-                <h4 class="nomargin">
-                    <a href="http://www.carpooling.it/">Car Pooling</a>
-                </h4>
-            </div>
-        </div>
-        <div class="section nomargin alt center">
-            <div class="container clearfix ">
-                <h3 class="color">Peer to Peer</h3>
-                <!--                    <div class="chisiamo divcenter" style="margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>-->
-                <h4 class="nomargin">
-                    <a href="http://www.emule.com/it/">Emule</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="https://www.utorrent.com/intl/it/">uTorrent</a>
-                </h4>
-            </div>
-        </div>
-        <div class="section nomargin alt center">
-            <div class="container clearfix ">
-                <h3 class="color">Sharing</h3>
-                <!--                    <div class="chisiamo divcenter" style="margin-bottom: 20px;width: 200px; height: 200px; border-radius: 50%; box-shadow: 0 0 0 4px rgba(0,0,0,.2)"></div>-->
+                <h2 class="color ">Link</h2>
+                <div class="section-cover partner divcenter"></div> 
                 <h4 class="nomargin">
                     <a href="http://www.jazzit.it">Jazzit Fest</a>
                 </h4>
@@ -49,6 +22,26 @@
                 <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
                 <h4 class="nomargin">
                     <a href="http://www.musicisti-jazz.it/">Musicisti italiani di Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.casajazz.it/">Casa del Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://italiajazz.it/">Italia Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.i-jazz.it/">Associazione Nazionale di Festival Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.europejazz.net/">Europe Jazz Network</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.sosmusicisti.org">Associazione Nazionale a tutela della musica e dei musicisti</a>
                 </h4>
             </div>
         </div>
