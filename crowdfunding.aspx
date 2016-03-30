@@ -11,11 +11,8 @@
         <div class="section nomargin  center">
             <div class="container clearfix">
                 <h2 class="color"><%=Lingua.CaricaLingua("lgl_crowfunding_title")%></h2>
-                <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_crowfunding_desc")%></h4>
-            </div>
-        </div>
-        <div class="section nomargin alt center">
-            <div class="container clearfix">
+                <h4><%=Lingua.CaricaLingua("lgl_crowfunding_desc")%></h4>
+                    <div class="section-cover crowfunding divcenter"></div>
                 <h4 class="nomargin">
                     <a href="https://www.musicraiser.com/it/how_it_works">Music Raiser</a>
                 </h4>

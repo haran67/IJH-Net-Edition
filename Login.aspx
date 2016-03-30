@@ -144,7 +144,9 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2 center oppure" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
-                                        <span class="vertical-middle alt ">oppure</span>
+                                        <div class="vertical-middle">
+                                            <span class="alt">oppure</span>
+                                        </div>
                                     </div>
                                     <div class="col-md-5  center">
                                         <div class="vertical-middle">

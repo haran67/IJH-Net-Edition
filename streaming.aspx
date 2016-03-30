@@ -9,7 +9,8 @@
         <div class="section nomargin  center">
             <div class="container clearfix">
                 <h2 class="color">Streaming</h2>
-                <h4 class="nomargin">Ciascun utente con profilo Expo potr&agrave; organizzare eventi in diretta streaming (concerti, prove, lezioni di musica, etc) promossi in esclusiva per gli utenti di Jazz Hub connessi da tutto il mondo: significher&agrave; produrre, vivere e condividere esperienze uniche e irripetibili.</h4>
+                <h4>Ciascun utente con profilo Expo potr&agrave; organizzare eventi in diretta streaming (concerti, prove, lezioni di musica, etc) promossi in esclusiva per gli utenti di Jazz Hub connessi da tutto il mondo: significher&agrave; produrre, vivere e condividere esperienze uniche e irripetibili.</h4>
+                <div class="section-cover streaming divcenter"></div>
             </div>
         </div>
     </div>

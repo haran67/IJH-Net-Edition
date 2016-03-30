@@ -53,9 +53,9 @@
     </asp:ContentPlaceHolder>
 </head>
     <%If page_is_index Then%>
-        <body class="stretched" data-loader="3" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800" data-loader-html="<img src='images/logo-dark.png' style='position:absolute;top:50%;left:50%;margin-top:-50px;margin-left:-100px;' />">
+        <body class="stretched" data-loader="3" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
     <%else%>
-        <body class="stretched no-transition">
+        <body class="stretched no-transition" style="background: #677688 url('images/grid.png') repeat;">
     <%end if%>
     <form id="frmPrincipale" runat="server">
     <telerik:RadScriptManager ID="RadScriptManager1" runat="server" EnableScriptGlobalization="true" EnablePageMethods="true"
@@ -203,7 +203,7 @@
                 </div>
                 <div class="col_two_fifth col_last" data-class-lg="tright" data-class-md="tright" data-class-sm="tright" data-class-xs="center" data-class-xxs="center">
                     <a href="javascript:void()" class="cookie-accept notopmargin cookie-noti-btn button button-rounded button-success button-small"><%=Lingua.CaricaLingua("lgl_master_cookies_02")%></a>
-                    <a href="javascript:void()" class="button notopmargin button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg"><%=Lingua.CaricaLingua("lgl_master_cookies_03")%></a>
+                    <a href="javascript:void()" class="button notopmargin button-border button-rounded button-small" data-toggle="modal" data-target=".bs-example-modal-lg"><%=Lingua.CaricaLingua("lgl_master_cookies_03")%></a>
                 </div>
             </div>
         </div>
