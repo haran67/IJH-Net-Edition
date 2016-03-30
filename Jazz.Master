@@ -1,4 +1,4 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -76,17 +76,17 @@
                     <nav id="primary-menu">
                         <ul>
                             <li>
-                                <a href="/index.aspx"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
+                                <a href="/index.aspx" id="a_home" runat="server"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
                             </li>
                             <li>
-                                <a href="/chisiamo.aspx"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
+                                <a href="/chisiamo.aspx" id="a_about" runat="server"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
                             </li>
 <!--                                    <li><a href="/contatti.aspx"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a></li>-->
                             <li>
-                                <a href="/User-list.aspx"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
+                                <a href="/User-list.aspx" id="a_user" runat="server"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
                             </li>
                             <li>
-                                <a href="#"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
+                                <a href="#" id="a_media" runat="server"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
                                 <ul>
                                     <li><a href="/radio.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
                                     <li><a href="/tv.aspx"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
@@ -98,12 +98,12 @@
                                 <a href="/Video-list.aspx">Video</a>
                             </li>
 -->
-                            <li><a href="/partner.aspx"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a></li>
+                            <li><a href="/partner.aspx" id="a_partner" runat="server"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a></li>
                             <li>
-                                <a href="/streaming.aspx"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
+                                <a href="/streaming.aspx" id="a_streaming" runat="server"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
                             </li>
                             <li>
-                                <a href="/crowdfunding.aspx"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
+                                <a href="/crowdfunding.aspx" id="a_crowfounding" runat="server"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
                             </li>
                             
                             
@@ -113,7 +113,7 @@
                             </li>
 -->
                             <li>
-                                <a href="/link.aspx"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
+                                <a href="/link.aspx" id="a_link" runat="server"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
                             </li>
                             <li class="hidden">
                                 <asp:LinkButton ID="lnk_lingua" runat="server">
