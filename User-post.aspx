@@ -47,28 +47,30 @@
         </div>
         <div class="video-overlay"></div>
     </section>
-<asp:UpdatePanel ID="upd_header" runat="server">
-    <ContentTemplate>
-    <div class="section nomargin nopadding profile-submenu" id="top_section">
-        <div class="container center clearfix">
-            <a href="#">Profilo</a>
-            <asp:LinkButton ID="btn_video" runat="server" CssClass="active">
-                Video
-            </asp:LinkButton>
-            <asp:LinkButton ID="btn_when" runat="server" CssClass="active">
-                Eventi
-            </asp:LinkButton>
-        </div>
-    </div>
-    </ContentTemplate>
-</asp:UpdatePanel>
+    <asp:UpdatePanel ID="upd_header" runat="server">
+        <ContentTemplate>
+            <div class="section nomargin nopadding profile-submenu" id="top_section">
+                <div class="container center clearfix">
+                    <asp:LinkButton ID="btn_profilo" runat="server" CssClass="active">
+                        Profilo
+                    </asp:LinkButton>
+                    <asp:LinkButton ID="btn_video" runat="server" CssClass="active">
+                        Video
+                    </asp:LinkButton>
+                    <asp:LinkButton ID="btn_when" runat="server" CssClass="active">
+                        Eventi
+                    </asp:LinkButton>
+                </div>
+            </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 <asp:UpdatePanel ID="upd_dati" runat="server">
     <ContentTemplate>
         <div class="content-wrap alt" id="div_content" runat="server" style="padding: 40px 0;">
             <div class="container center clearfix">
-                <div>
+                <div id="p_profilo" runat="server">
                     <h4 class="color">Profilo</h4>
                     <div class="divider divider-rounded divider-center"><i class="icon-user2" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <h5 style="font-weight: 300" class="citazione"><asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal></h5>
