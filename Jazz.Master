@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -176,7 +176,9 @@
                                 Via Giuseppe Sacconi, 19 - Lotto G
                                 00196 Roma
                             </address>
-                            <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045 <span class="middot">&middot;</span> <a href="/contatti.aspx" style="background-color: rgba(255, 255, 255, .15);padding: 0 6px;border-radius: 5px"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a>
+                            <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045
+                            <hr style="margin: 10px 0;">
+                            <a href="/contatti.aspx" class="button button-mini button-border nomargin"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a>
                         </div>
                         <div class="visible-sm visible-xs line line"></div>
                         <div class="col_two_fifth col_last nobottommargin">

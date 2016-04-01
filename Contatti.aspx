@@ -73,8 +73,9 @@
                         </address>
                         <div class="panel" style="padding: 10px; background-color: rgba(255,255,255,.75)">
                             <h5 class="nomargin">
-                                <i class="icon-phone-sign"></i> +39 06 90207045<br>
-                                <i class="icon-email2"></i> italianjazzhub@gmail.com</h5>
+                                <i class="icon-envelope2"></i> italianjazzhub@gmail.com<br>
+                                <i class="icon-headphones"></i> +39 06 90207045
+                            </h5>
                         </div>
 <!--
                         <div >
