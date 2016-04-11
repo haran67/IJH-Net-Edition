@@ -138,8 +138,8 @@
         <!-- Ultimi video -->
         <div class="section nomargin alt center">
             <div class="container clearfix ">
-                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4
-                <h4><i class="i-circled i-light icon-clock i-vetrina "></i></h4>
+                <h4 class="color nomargin"><%=Lingua.CaricaLingua("lgl_index_ultimi_video")%></h4>
+                <h4><i class="i-circled i-light icon-clock i-vetrina nomargin"></i></h4>
 <!--
                 <div class="divider divider-rounded divider-center divider-custom">
                     <i class="icon-clock" style="background-color: rgba(0,0,0,.1)"></i>
@@ -171,7 +171,7 @@
         <!-- Editor's pick -->
         <div class="section nomargin alt center">
             <div class="container clearfix">
-                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
+                <h4 class="color nomargin"><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
                 <h4><i class="i-circled i-light icon-star i-vetrina nomargin"></i></h4>
 <!--
                 <div class="divider divider-rounded divider-center divider-custom">
@@ -202,7 +202,7 @@
         <!-- Expo -->
         <div class="section nomargin alt center" id="div_like_expo" runat="server">
             <div class="container clearfix ">
-                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
+                <h4 class="color nomargin"><%=Lingua.CaricaLingua("lgl_index_votati_expo")%></h4>
                 <h4><i class="i-circled i-light icon-like i-vetrina nomargin"></i></h4>
                 <!--
                 <div class="divider divider-rounded divider-center divider-custom">
@@ -235,7 +235,7 @@
         <!-- Guest  -->
         <div class="section nomargin alt center" id="div_like_guest" runat="server">
             <div class="container clearfix ">
-                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
+                <h4 class="color nomargin"><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>
                 <h4><i class="i-circled i-light icon-like i-vetrina nomargin"></i></h4>
 <!--                <h4><%=Lingua.CaricaLingua("lgl_index_votati_guest")%></h4>-->
 <!--
@@ -270,7 +270,7 @@
         <!-- Visitatori -->
         <div class="section nomargin alt center" id="div_like_visi" runat="server">
             <div class="container clearfix ">
-                <h4 class="color"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
+                <h4 class="color nomargin"><%=Lingua.CaricaLingua("lgl_index_votati_visi")%></h4>
                 <h4><i class="i-circled i-small i-light icon-like i-vetrina hidden"></i></h4>
 <!--
                 <div class="divider divider-rounded divider-center divider-custom">
