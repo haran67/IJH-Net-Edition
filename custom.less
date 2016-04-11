@@ -81,6 +81,19 @@
 @grey           : #7e7e7e;
 
 
+@postcontent:                   760px;
+@postcontent-margin:            40px;
+
+@sidebar:                       1140px - (@postcontent + @postcontent-margin);
+@bothsidebar:                   1140px - ( ( @sidebar * 2 ) + ( @postcontent-margin * 2 ) );
+
+
+@postcontent-md:				600px;
+@postcontent-margin-md:			40px;
+
+@sidebar-md:					940px - (@postcontent-md + @postcontent-margin-md);
+@bothsidebar-md:				940px - ( ( @sidebar-md * 2 ) + ( @postcontent-margin-md * 2 ) );
+
 /* custom page transition */
 
 .css3-spinner { background-color: @theme-color; }
@@ -105,15 +118,15 @@
 
 
 .date-list {
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
+//    max-width: 550px;
+//    margin-left: auto;
+//    margin-right: auto;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: dashed 1px rgba(0,0,0,.2);
+    border-bottom: dotted 1px rgba(0,0,0,.1);
     &:last-child {
-        margin: 0;
-        padding: 0;
+//        margin: 0;
+//        padding: 0;
         border: none;
     }
 }
@@ -417,6 +430,7 @@ body > form {
 }
 
 .i-vetrina {
+    color: rgba(30, 38, 48, 0.6);
     background-color: rgba(0, 0, 0, .1);
     text-shadow: 0 0 0 rgba(0,0,0,0);
     box-shadow: 0 0 0 rgba(0,0,0,0);
@@ -431,15 +445,15 @@ body > form {
 //    bottom: 40px;
 //    left: 0;
     width: 100%;
-    h1 span {
-        color: #fff;
+    h1  {
+        font-weight: 400;
     }
     img {
-        height: 180px;
-        width: 180px;
+        height: 100px;
+        width: 100px;
         margin-right: 20px;
         border-radius: 50%;
-        border: solid 3px rgba(255,255,255,.2)
+        border: solid 2px rgba(0,0,0,.1)
     }
     &.small {
         height: 140px;
@@ -477,9 +491,9 @@ body > form {
     &.user-profile-type-single {
         i {
             .gradient(@menu-base-color, @menu-base-color, lighten(@menu-base-color, 3));
-            width: 40px !important;
-            height: 40px !important;
-            line-height: 40px !important;
+            width: 10px !important;
+            height: 10px !important;
+            line-height: 10px !important;
         }
     }
     &.user-profile-type-list {
@@ -496,21 +510,18 @@ body > form {
         }
     }
 }
-.user-profile-head-content {
-    margin-top: 15px;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-    .user-social {
-        a {
-            display: inline-block;
-            color: rgba(255,255,255,.75);
-            margin-left: 5px;
-            margin-right: 5px;
-            &:hover {
-                color: #fff;
-            }
+.user-social {
+    margin-top: 5px;
+    a {
+        display: inline-block;
+        color: rgba(0,0,0,.5);
+        margin-left: 5px;
+        margin-right: 5px;
+        &:hover {
+            color: rgba(0,0,0,.85);;
+        }
+        &:first-child {
+            margin-left: 0;
         }
     }
 }
@@ -1212,8 +1223,8 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 }
 .standard-portfolio.portfolio-2.item-single {
     .portfolio-item {
-        margin-left: auto !important;
-        margin-right: auto !important;
+//        margin-left: auto !important;
+//        margin-right: auto !important;
         float: none !important;
     }
 }
@@ -1287,6 +1298,9 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
     }
 }
 
+.postcontent { width: 760px; }
+.postcontent.bothsidebar { width: 380px; }
+.sidebar { width: 340px; }
 
 /* importazione classi responsive in coda */
 
@@ -1308,8 +1322,8 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
     .standard-portfolio.portfolio-2.item-single {
         margin: 0 !important;
         .portfolio-item {
-            margin-left: auto !important;
-            margin-right: auto !important;
+//            margin-left: auto !important;
+//            margin-right: auto !important;
             float: none !important;
         }
     }
@@ -1337,28 +1351,35 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
     .standard-portfolio.portfolio-2.item-single {
         margin: 0 !important;
         .portfolio-item {
-            width: 354px !important;
+            width: 100% !important;
+//            width: 354px !important;
             margin-left: auto !important;
             margin-right: auto !important;
             float: none !important;
             .portfolio-image, .portfolio-image a, .portfolio-image img {
-                width: 354px !important;
-                height: 264px !important;
+                width: 100% !important;
+                height: auto !important;
+//                width: 354px !important;
+//                height: 264px !important;
             }
         }
     }
 }
+
 @media only screen and (max-width:480px) {
     .standard-portfolio.portfolio-2.item-single {
             margin: 0 !important;
         .portfolio-item {
-            width: 354px !important;
+            width: 100% !important;
+//            width: 354px !important;
             margin-left: auto !important;
             margin-right: auto !important;
             float: none !important;
             .portfolio-image, .portfolio-image a, .portfolio-image img {
-                width: 354px !important;
-                height: 264px !important;
+                width: 100% !important;
+                height: auto !important;
+//                width: 354px !important;
+//                height: 264px !important;
             }
         }
     }
