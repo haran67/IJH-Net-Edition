@@ -10,11 +10,11 @@
     <div class="content-wrap home nopadding">
         <div class="section nomargin alt center">
             <div class="container clearfix">
-                <h2 class="color "><%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%></h2>
+                <h1 class="color "><%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%></h1>
                 <div class="text-rotater" data-separator="|" data-rotate="flipInX" data-speed="3500">
-                    <h4 class="t-rotate color nomargin">
+                    <h2 class="t-rotate color nomargin">
                         <%=Lingua.CaricaLingua("lgl_chisiamo_title_02")%>
-                    </h4>
+                    </h2>
                 </div>
             </div>
         </div>

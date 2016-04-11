@@ -46,6 +46,38 @@
                 <h4 class="nomargin">
                     <a href="http://www.agenziaeventibipede.it/"> San Valentino Jazz Festival</a>
                 </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.jazzit.it">Jazzit Fest</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.milkstudios.it/">Milk Studio</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.musicisti-jazz.it/">Musicisti italiani di Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.casajazz.it/">Casa del Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://italiajazz.it/">Italia Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.i-jazz.it/">Associazione Nazionale di Festival Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.europejazz.net/">Europe Jazz Network</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.sosmusicisti.org">Associazione Nazionale a tutela della musica e dei musicisti</a>
+                </h4>
             </div>
         </div>
     </div>
