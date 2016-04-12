@@ -81,8 +81,9 @@
                             </li>
 -->
                             <li>
-                                <a href="/chisiamo.aspx" id="a_about" runat="server"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
+                                <a href="#" >JazzHub</a>
                                 <ul>
+                                    <li><a href="/chisiamo.aspx" id="a_about" runat="server"><%=Lingua.CaricaLingua("lgl_menu_about")%></a></li>
                                     <li><a href="/partner.aspx" id="a_partner" runat="server"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a></li>
                                 </ul>
                             </li>
@@ -185,31 +186,92 @@
         <footer id="footer" class="dark nopadding nomargin">
             <div class="container">
                 <div class="footer-widgets-wrap clearfix" style="padding: 40px 0">
-                    <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
-                        <div class="col_one_fifth nobottommargin">
+                    <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
+                        <div class="col_one_fifth">
                             <img src="/images/footer-widget-logo.png" alt="Italian Jazz Hub logo footer" style="margin-top: 5px">
                         </div>
-                        <div class="col_two_fifth nobottommargin" style="font-size: 12px;">
+                        <div class="col_one_fifth" style="font-size: 12px;">
                             <h4 class="nomargin">IMF Foundation</h4>
-                            <h5 class="nomargin" style="font-weight 400; margin-bottom: 10px;">International Music Festival Foundation</h5>
-                            <address class="nomargin nopadding">
-                                <strong>Sede operativa:</strong>
-                                Via Giuseppe Sacconi, 19 - Lotto G
-                                00196 Roma
-                            </address>
+                            <h5 class="nomargin" style="font-weight 400; padding-bottom: 20px;">International Music Festival Foundation</h5>
+<!--
                             <i class="icon-envelope2"></i> italianjazzhub@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +39 06 90207045
                             <hr style="margin: 10px 0;">
+-->
                             <a href="/contatti.aspx" class="button button-mini button-border nomargin"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a>
                         </div>
-                        <div class="visible-sm visible-xs line line"></div>
-                        <div class="col_two_fifth col_last nobottommargin">
-                            <div class="col_half">
-                                <p style=" margin-bottom: 15px;">Con il sostegno di:</p>
-                                <a href="http://www.beniculturali.it/"><img src="/images/custom/logo-ministero.png" style="height: 57px;"></a>
-                            </div>
-                                <p style="margin-bottom: 15px;">Prodotto da:</p>
-                            <div class="col_half col_last">
-                                <a class="" href="http://www.imffoundation.it/"><img src="/images/custom/logo-imf.png" style="height: 57px;"></a>
+                        <div class="visible-sm visible-xs line"></div>
+                        <div class="col_one_fifth center">
+                            <p style=" margin-bottom: 15px;">Con il sostegno di:</p>
+                            <a href="http://www.beniculturali.it/"><img src="/images/custom/logo-ministero.png" style="height: 57px;"></a>
+                        </div>
+                        <div class="col_one_fifth center">
+                            <p style="margin-bottom: 15px;">Prodotto da:</p>
+                            <a class="" href="http://www.imffoundation.it/"><img src="/images/custom/logo-imf.png" style="height: 57px;"></a>
+                        </div>
+                        <div class="col_one_fifth col_last center">
+                            <p style="margin-bottom: 15px;">Media partner:</p>
+                            <a class="" href="http://www.jazzit.it"><img src="/images/custom/logo-jazzit.png" style="height: 57px;"></a>
+                        </div>
+                    </div>
+                    <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
+                        <div class="col_full clearfix center">
+                            <div class="line" style="margin: 30px 0"></div>
+                            <div style="max-width: 180px; margin-left: auto; margin-right: auto;">
+                                <p style=" margin-bottom: 15px;">Siam presenti anche su:</p>
+                                <a href="#" class="social-icon si-colored si-facebook" title="Facebook">
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon si-colored si-kickstarter" title="Facebook">
+                                    <i class="icon-fontello-kickstarter"></i>
+                                    <i class="icon-fontello-kickstarter"></i>
+                                </a>
+                                <a href="#" class="social-icon si-colored si-musicraiser" title="Facebook">
+                                    <i class="icon-fontello-musicraiser"></i>
+                                    <i class="icon-fontello-musicraiser"></i>
+                                </a>
+                                <a href="#" class="social-icon si-colored si-deezer" title="Facebook">
+                                    <i class="icon-fontello-deezer"></i>
+                                    <i class="icon-fontello-deezer"></i>
+                                </a>
+                                <div class="clear"></div>
+                                <hr>
+                                <div class="clear"></div>
+                                <a href="#" class="social-icon si-borderless si-text-color si-facebook" title="Facebook">
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon si-borderless si-text-color si-kickstarter" title="Facebook">
+                                    <i class="icon-fontello-kickstarter"></i>
+                                    <i class="icon-fontello-kickstarter"></i>
+                                </a>
+                                <a href="#" class="social-icon si-borderless si-text-color si-musicraiser" title="Facebook">
+                                    <i class="icon-fontello-musicraiser"></i>
+                                    <i class="icon-fontello-musicraiser"></i>
+                                </a>
+                                <a href="#" class="social-icon si-borderless si-text-color si-deezer" title="Facebook">
+                                    <i class="icon-fontello-deezer"></i>
+                                    <i class="icon-fontello-deezer"></i>
+                                </a>
+                                <div class="clear"></div>
+                                <hr>
+                                <div class="clear"></div>
+                                <a href="#" class="social-icon si-borderless si-facebook" title="Facebook">
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon si-borderless si-kickstarter" title="Facebook">
+                                    <i class="icon-fontello-kickstarter"></i>
+                                    <i class="icon-fontello-kickstarter"></i>
+                                </a>
+                                <a href="#" class="social-icon si-borderless si-musicraiser" title="Facebook">
+                                    <i class="icon-fontello-musicraiser"></i>
+                                    <i class="icon-fontello-musicraiser"></i>
+                                </a>
+                                <a href="#" class="social-icon si-borderless si-deezer" title="Facebook">
+                                    <i class="icon-fontello-deezer"></i>
+                                    <i class="icon-fontello-deezer"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

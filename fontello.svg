@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="kickstarter" unicode="&#xe800;" d="M423 476l142 207c27 39 62 58 105 58 36 0 66-12 91-37 25-25 38-55 38-89 0-25-7-47-20-68l-129-187 157-200c16-19 23-43 23-69 0-36-11-65-37-91-25-25-54-38-90-38-38 0-68 12-89 37l-192 240v-133c0-39-6-67-20-89-23-39-59-58-105-58-41 0-74 13-96 41-21 30-31 64-31 107v492c0 40 10 74 32 101 23 26 55 41 95 41 39 0 70-15 95-41 15-15 24-31 27-46 3-11 3-28 3-55v-123h1z" horiz-adv-x="1000" />
+
+<glyph glyph-name="musicraiser" unicode="&#xe801;" d="M162 692l291-335-291-333v668z m337-684l145 194v-178h192v668l-457-524 120-160z m-247 16h104v118l-104-118z" horiz-adv-x="1000" />
+
+<glyph glyph-name="deezer" unicode="&#xe802;" d="M31 140h171v-51h-171v51z m0 16h171v52h-171v-52z m0 67h171v52h-171v-52z m0 68h171v51h-171v-51z m0 67h171v52h-171v-52z m191-269h171v51h-171v-51z m0 67h171v52h-171v-52z m0 67h171v52h-171v-52z m192-134h171v51h-171v-51z m0 67h171v52h-171v-52z m0 67h171v52h-171v-52z m0 68h171v51h-171v-51z m0 67h171v52h-171v-52z m0 67h171v52h-171v-52z m0 68h171v52h-171v-52z m192-404h171v51h-171v-51z m0 67h171v52h-171v-52z m0 67h171v52h-171v-52z m0 68h171v51h-171v-51z m0 67h171v52h-171v-52z m192-269h171v51h-171v-51z m0 67h171v52h-171v-52z m0 67h171v52h-171v-52z m0 68h171v51h-171v-51z m0 67h171v52h-171v-52z m0 67h171v52h-171v-52z m0 68h171v52h-171v-52z m0 67h171v52h-171v-52z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
