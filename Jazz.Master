@@ -218,38 +218,38 @@
                             <div class="line" style="margin: 30px 0"></div>
                             <div style="max-width: 180px; margin-left: auto; margin-right: auto;">
                                 <p style=" margin-bottom: 15px;">Siam presenti anche su:</p>
-                                <a href="#" class="social-icon si-colored si-facebook" title="Facebook">
+                                <a href="#" class="social-icon si-rounded si-colored si-facebook" title="Facebook">
                                     <i class="icon-facebook"></i>
                                     <i class="icon-facebook"></i>
                                 </a>
-                                <a href="#" class="social-icon si-colored si-kickstarter" title="Facebook">
+                                <a href="https://www.kickstarter.com/?ref=nav" class="social-icon si-rounded si-colored si-kickstarter" title="Kickstarter">
                                     <i class="icon-fontello-kickstarter"></i>
                                     <i class="icon-fontello-kickstarter"></i>
                                 </a>
-                                <a href="#" class="social-icon si-colored si-musicraiser" title="Facebook">
+                                <a href="https://www.musicraiser.com/it/how_it_works" class="social-icon si-rounded si-colored si-musicraiser" title="Musicraiser">
                                     <i class="icon-fontello-musicraiser"></i>
                                     <i class="icon-fontello-musicraiser"></i>
                                 </a>
-                                <a href="#" class="social-icon si-colored si-deezer" title="Facebook">
+                                <a href="http://www.deezer.com/playlist/1551552041" class="social-icon si-rounded si-colored si-deezer" title="Deezer">
                                     <i class="icon-fontello-deezer"></i>
                                     <i class="icon-fontello-deezer"></i>
                                 </a>
                                 <div class="clear"></div>
                                 <hr>
                                 <div class="clear"></div>
-                                <a href="#" class="social-icon si-borderless si-text-color si-facebook" title="Facebook">
+                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-facebook" title="Facebook">
                                     <i class="icon-facebook"></i>
                                     <i class="icon-facebook"></i>
                                 </a>
-                                <a href="#" class="social-icon si-borderless si-text-color si-kickstarter" title="Facebook">
+                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-kickstarter" title="Kickstarter">
                                     <i class="icon-fontello-kickstarter"></i>
                                     <i class="icon-fontello-kickstarter"></i>
                                 </a>
-                                <a href="#" class="social-icon si-borderless si-text-color si-musicraiser" title="Facebook">
+                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-musicraiser" title="Musicraiser">
                                     <i class="icon-fontello-musicraiser"></i>
                                     <i class="icon-fontello-musicraiser"></i>
                                 </a>
-                                <a href="#" class="social-icon si-borderless si-text-color si-deezer" title="Facebook">
+                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-deezer" title="Deezer">
                                     <i class="icon-fontello-deezer"></i>
                                     <i class="icon-fontello-deezer"></i>
                                 </a>
@@ -257,19 +257,19 @@
                                 <hr>
                                 <div class="clear"></div>
                                 <a href="#" class="social-icon si-borderless si-facebook" title="Facebook">
+                                    <i class="icon-facebook" style="color: #fff"></i>
                                     <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
                                 </a>
-                                <a href="#" class="social-icon si-borderless si-kickstarter" title="Facebook">
+                                <a href="#" class="social-icon si-borderless si-kickstarter" title="Kickstarter">
+                                    <i class="icon-fontello-kickstarter" style="color: #fff"></i>
                                     <i class="icon-fontello-kickstarter"></i>
-                                    <i class="icon-fontello-kickstarter"></i>
                                 </a>
-                                <a href="#" class="social-icon si-borderless si-musicraiser" title="Facebook">
-                                    <i class="icon-fontello-musicraiser"></i>
+                                <a href="#" class="social-icon si-borderless si-musicraiser" title="Musicraiser">
+                                    <i class="icon-fontello-musicraiser" style="color: #fff"></i>
                                     <i class="icon-fontello-musicraiser"></i>
                                 </a>
-                                <a href="#" class="social-icon si-borderless si-deezer" title="Facebook">
-                                    <i class="icon-fontello-deezer"></i>
+                                <a href="#" class="social-icon si-borderless si-deezer" title="deezer">
+                                    <i class="icon-fontello-deezer" style="color: #fff"></i>
                                     <i class="icon-fontello-deezer"></i>
                                 </a>
                             </div>
