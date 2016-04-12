@@ -8,9 +8,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap home nopadding">
-        <div class="section nomargin alt center">
+        <div class="section nomargin alt center" style="padding: 30px 0">
             <div class="container clearfix">
-                <h1 class="color "><%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%></h1>
+                <h1 class="color nomargin"><%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%></h1>
                 <div class="text-rotater" data-separator="|" data-rotate="flipInX" data-speed="3500">
                     <h2 class="t-rotate color nomargin">
                         <%=Lingua.CaricaLingua("lgl_chisiamo_title_02")%>
@@ -18,50 +18,63 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin alt center">
+        <div class="section nomargin alt" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
             <div class="container clearfix ">
-                <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h3>
-                <div class="chisiamo section-cover big divcenter"></div>
-                <div class="citazione">
-                    <h4>
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_01")%>
-                    </h4>
-                    <h4>
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_02")%>
-                    </h4>
+                <div class="col_half">
+                    <div class="chisiamo section-cover divcenter" data-class-lg="big" data-class-md="big" data-class-sm="medium" data-class-xs="medium" data-class-xxs=""></div>
+                </div>
+                <div class="col_half col_last">
+                    <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_chisiamo")%></h3>
+                    <div class="citazione nomargin">
+                        <h4>
+                            <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_01")%>
+                        </h4>
+                        <h4>
+                            <%=Lingua.CaricaLingua("lgl_chisiamo_descrizione_02")%>
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section nomargin alt center">
+        <div class="section nomargin alt" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
             <div class="container clearfix ">
-                <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h3>
-                    <div class="opportunita section-cover big divcenter"></div>
-                <div class="citazione">
-                    <h4>
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
-                    </h4>
-                    <h4>
-                        - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
-                        - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
-                        - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_03")%><br>
-                        - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_04")%><br>
-                        - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_05")%><br>
-                        - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_06")%>
-                    </h4>
-                    <h4>
-                        <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
-                    </h4>
+                <div class="col_half">
+                    <div class="opportunita section-cover big divcenter" data-class-lg="big" data-class-md="big" data-class-sm="medium" data-class-xs="medium" data-class-xxs=""></div>
+                </div>
+                <div class="col_half col_last">
+                    <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_opportunita")%></h3>
+                    <div class="citazione nomargin">
+                        <h4>
+                            <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
+                        </h4>
+                        <h4>
+                            - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
+                            - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
+                            - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_03")%><br>
+                            - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_04")%><br>
+                            - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_05")%><br>
+                            - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_06")%>
+                        </h4>
+                        <h4>
+                            <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_02")%>
+                        </h4>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="section nomargin alt center">
+        <div class="section nomargin alt" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
             <div class="container clearfix ">
-                <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h3>
-                    <div class="partecipare section-cover big divcenter"></div>
-                <h4>
-                    <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
-                </h4>
+                <div class="col_half">
+                    <div class="partecipare section-cover big divcenter" data-class-lg="big" data-class-md="big" data-class-sm="medium" data-class-xs="medium" data-class-xxs=""></div>
+                </div>
+                <div class="col_half col_last">
+                    <h3 class="color"><%=Lingua.CaricaLingua("lgl_chisiamo_partecipare")%></h3>
+                    <div class="citazione nomargin">
+                        <h4>
+                            <%=Lingua.CaricaLingua("lgl_chisiamo_partecipare_desc_01")%>
+                        </h4>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section nomargin alt center">
@@ -140,8 +153,82 @@
                 </div>
             </div>
         </div>
+        <div class="section nomargin alt center">
+            <div class="container clearfix">
+                <h2 class="color"><%=Lingua.CaricaLingua("lgl_partners_title")%></h2>
+                <h4><%=Lingua.CaricaLingua("lgl_partners_desc")%></h4>
+                <div class="section-cover partner divcenter"></div> 
+                <h4 class="nomargin">
+                    <a href="http://www.bluesinvilla.com/"> FVG Festival</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.milleunanota.com/"> Modern Jazz Institute</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.abno.com/"> Blue Note Orchestra</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.blueartmanagement.com/"> Blueart</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff"> Peperoncino Jazz Festival</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.associazionenotabene.org/"> Notabene</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.onyxjazzclub.it/2013/"> Gezziamoci</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13"> Tuscia in Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.agenziaeventibipede.it/"> San Valentino Jazz Festival</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.jazzit.it">Jazzit Fest</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.milkstudios.it/">Milk Studio</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.musicisti-jazz.it/">Musicisti italiani di Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.casajazz.it/">Casa del Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://italiajazz.it/">Italia Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.i-jazz.it/">Associazione Nazionale di Festival Jazz</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.europejazz.net/">Europe Jazz Network</a>
+                </h4>
+                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
+                <h4 class="nomargin">
+                    <a href="http://www.sosmusicisti.org">Associazione Nazionale a tutela della musica e dei musicisti</a>
+                </h4>
+            </div>
+        </div>
     </div>
-                            
+    
     <div class="hidden section nomargin dark center parallax patch-wallpaper" data-stellar-background-ratio="0.3">
         <a href="register.aspx" class="button button-rounded button-red button-xlarge nobottommargin" id="div_registrati_00" runat="server">
             <i class="icon-user2"></i>
