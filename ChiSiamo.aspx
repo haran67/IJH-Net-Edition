@@ -153,78 +153,28 @@
                 </div>
             </div>
         </div>
-        <div class="section nomargin alt center">
+        <div class="section nomargin alt center partners-link">
             <div class="container clearfix">
                 <h2 class="color"><%=Lingua.CaricaLingua("lgl_partners_title")%></h2>
                 <h4><%=Lingua.CaricaLingua("lgl_partners_desc")%></h4>
-                <div class="section-cover partner divcenter"></div> 
-                <h4 class="nomargin">
-                    <a href="http://www.bluesinvilla.com/"> FVG Festival</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.milleunanota.com/"> Modern Jazz Institute</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.abno.com/"> Blue Note Orchestra</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.blueartmanagement.com/"> Blueart</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff"> Peperoncino Jazz Festival</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.associazionenotabene.org/"> Notabene</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.onyxjazzclub.it/2013/"> Gezziamoci</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13"> Tuscia in Jazz</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.agenziaeventibipede.it/"> San Valentino Jazz Festival</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.jazzit.it">Jazzit Fest</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.milkstudios.it/">Milk Studio</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.musicisti-jazz.it/">Musicisti italiani di Jazz</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.casajazz.it/">Casa del Jazz</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://italiajazz.it/">Italia Jazz</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.i-jazz.it/">Associazione Nazionale di Festival Jazz</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.europejazz.net/">Europe Jazz Network</a>
-                </h4>
-                <span class="dot-divider" style="font-size: 10px; color: rgba(0,0,0,.2)"><i class="icon-circle"></i></span>
-                <h4 class="nomargin">
-                    <a href="http://www.sosmusicisti.org">Associazione Nazionale a tutela della musica e dei musicisti</a>
-                </h4>
+<!--                <div class="section-cover partner divcenter"></div> -->
+                <a href="http://www.bluesinvilla.com/" alt="FVG Festival"><img src="images/custom/partners/fvg.png" title="FVG Festival"></a>
+                <a href="http://www.milleunanota.com/" alt="Modern Jazz Institute"><img src="images/custom/partners/mji.png" title="Modern Jazz Institute"></a>
+                <a href="http://www.abno.com/" alt="Blue Note Orchestra"><img class="hidden" src="images/custom/partners/bluenoteorchestra.png" title="Blue Note Orchestra">Blue Note Orchestra</a>
+                <a href="http://www.blueartmanagement.com/" alt="Blueart"><img src="images/custom/partners/blueart.png" title="Blueart"></a>
+                <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff">Peperoncino Jazz Festival</a>
+                <a href="http://www.associazionenotabene.org/" alt="Notabene"><img src="images/custom/partners/notabene.png" title="Notabene"></a>
+                <a href="http://www.onyxjazzclub.it/2013/" alt="Gezziamoci"><img src="images/custom/partners/gezziamoci.png" title="Gezziamoci"></a>
+                <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13" alt="Tuscia in Jazz"><img src="images/custom/partners/tuscia-in-jazz.png" title="Blueart" title="Tuscia in Jazz"></a>
+                    <a href="http://www.agenziaeventibipede.it/" alt="San Valentino Jazz Festival"><img src="images/custom/partners/svjf.png" title="Blueart" title="San Valentino Jazz Festival"></a>
+                <a href="http://www.jazzit.it" alt="Jazzit Fest"><img src="images/custom/partners/jazzit.png" title="Jazzit Fest"></a>
+                <a href="http://www.milkstudios.it/" alt="Milk Studio"><img src="images/custom/partners/milkstudio.png" title="Milk Studio"></a>
+                <a href="http://www.musicisti-jazz.it/" alt="Musicisti italiani di Jazz"><img src="images/custom/partners/midj.png" title="Musicisti italiani di Jazz"></a>
+                <a href="http://www.casajazz.it/" alt="Casa del Jazz"><img src="images/custom/partners/casadeljazz.png" title="Casa del Jazz"></a>
+                <a href="http://italiajazz.it/" alt="Italia Jazz"><img src="images/custom/partners/italiajazz.png" title="Italia Jazz"></a>
+                <a href="http://www.i-jazz.it/" alt="Associazione Nazionale di Festival Jazz"><img src="images/custom/partners/i-jazz.png" title="Associazione Nazionale di Festival Jazz"></a>
+                <a href="http://www.europejazz.net/" alt="Europe Jazz Network"><img src="images/custom/partners/ejn.png" title="Europe Jazz Network"></a>
+                <a href="http://www.sosmusicisti.org" alt="Associazione Nazionale a tutela della musica e dei musicisti"><img src="images/custom/partners/sosmusicisti.png" title="Associazione Nazionale a tutela della musica e dei musicisti"></a>
             </div>
         </div>
     </div>

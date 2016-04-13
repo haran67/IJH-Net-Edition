@@ -219,7 +219,7 @@
                             <div class="line" style="margin: 30px 0"></div>
                             <div style="max-width: 222px; margin-left: auto; margin-right: auto;">
                                 <p style=" margin-bottom: 15px;">Siam presenti anche su:</p>
-                                <a href="#" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-facebook" title="Facebook">
+                                <a href="https://www.facebook.com/Italian-Jazz-Hub-1659951054289987/" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-facebook" title="Facebook">
                                     <i class="icon-facebook"></i>
                                     <i class="icon-facebook"></i>
                                 </a>
@@ -306,14 +306,14 @@
         
         function cookieResize() {
             if( $cookieNotification.length > 0 ) {
-//                var cookieNotificationHeight = $cookieNotification.outerHeight();
-//
-//                $cookieNotification.css({ bottom: -cookieNotificationHeight });
+                var cookieNotificationHeight = $cookieNotification.outerHeight();
 
-                if( $.cookie('websiteUsesCookies') != 'yesConfirmed' ) {
-                    $cookieNotification.css({ display: 'hidden' });
-                }
+                $cookieNotification.css({ bottom: -cookieNotificationHeight });
 
+
+            }
+            if( $.cookie('websiteUsesCookies') != 'yesConfirmed' ) {
+                $cookieNotification.css({ display: 'none' });
             }
         }
         

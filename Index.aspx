@@ -312,30 +312,24 @@
         $(document).ready(function () {
 
             //alert($(".portfolio-first").find(".portfolio-item:first-child").find(".portfolio-desc")); //portfolio-desc
-            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
+//            $(".portfolio-first").find(".portfolio-item:first-child").addClass("wide");
 
             var $container = $('.portfolio');
 
             $container.isotope({
-                transitionDuration: '0.25s',
-                masonry: {
-                    columnWidth: $container.find('.portfolio-item:not(.wide)')[0]
-                }
+                transitionDuration: '0.25s'
             });
 
-            var $container_expo = $('.portfolio-first');
+//            var $container_expo = $('.portfolio-first');
+//
+//            $container_expo.isotope({
+//                transitionDuration: '0.25s',
+//                masonry: {
+//                    columnWidth: $container_expo.find('.portfolio-item:not(.wide)')[0]
+//                }
+//            });
 
-            $container_expo.isotope({
-                transitionDuration: '0.25s',
-                masonry: {
-                    columnWidth: $container_expo.find('.portfolio-item:not(.wide)')[0]
-                }
-            });
-
-            $(window).resize(function () {
-                $container.isotope('layout');
-                $container_expo.isotope('layout');
-            });
+            
 
             Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
 
@@ -359,11 +353,17 @@
 
 
         });
+        
+        $(window).resize(function () {
+            $container.isotope('layout');
+            //                $container_expo.isotope('layout');
+        });
 
         function endRequestHandler(sender, args) {
 
         }
         
+        /* gestione comando audio */
         $('#video-slider-audio').on('click', function (e) {
             e.preventDefault();
 
@@ -375,7 +375,8 @@
 
             $(this).toggleClass('audio-played');
         });
-
+        
+        /* gestione comando video */
         $('#video-slider-play').on('click', function (e) {
             e.preventDefault();
 
