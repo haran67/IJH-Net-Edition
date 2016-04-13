@@ -211,68 +211,35 @@
                         </div>
                         <div class="col_one_fifth col_last center">
                             <p style="margin-bottom: 15px;">Media partner:</p>
-                            <a class="" href="http://www.jazzit.it"><img src="/images/custom/logo-jazzit.png" style="height: 57px;"></a>
+                            <a class="" href="http://www.jazzit.it"><img src="/images/custom/logo-jazzit.png" style="height: 40px;"></a>
                         </div>
                     </div>
                     <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
                         <div class="col_full clearfix center">
                             <div class="line" style="margin: 30px 0"></div>
-                            <div style="max-width: 180px; margin-left: auto; margin-right: auto;">
+                            <div style="max-width: 222px; margin-left: auto; margin-right: auto;">
                                 <p style=" margin-bottom: 15px;">Siam presenti anche su:</p>
-                                <a href="#" class="social-icon si-rounded si-colored si-facebook" title="Facebook">
+                                <a href="#" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-facebook" title="Facebook">
                                     <i class="icon-facebook"></i>
                                     <i class="icon-facebook"></i>
                                 </a>
-                                <a href="https://www.kickstarter.com/?ref=nav" class="social-icon si-rounded si-colored si-kickstarter" title="Kickstarter">
+                                <a href="https://www.kickstarter.com/?ref=nav" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-kickstarter" title="Kickstarter">
                                     <i class="icon-fontello-kickstarter"></i>
                                     <i class="icon-fontello-kickstarter"></i>
                                 </a>
-                                <a href="https://www.musicraiser.com/it/how_it_works" class="social-icon si-rounded si-colored si-musicraiser" title="Musicraiser">
+                                <a href="https://www.musicraiser.com/it/how_it_works" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-musicraiser" title="Musicraiser">
                                     <i class="icon-fontello-musicraiser"></i>
                                     <i class="icon-fontello-musicraiser"></i>
                                 </a>
-                                <a href="http://www.deezer.com/playlist/1551552041" class="social-icon si-rounded si-colored si-deezer" title="Deezer">
+                                <a href="http://www.deezer.com/playlist/1551552041" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-deezer" title="Italian jazz Hub Deezer Playlist">
                                     <i class="icon-fontello-deezer"></i>
                                     <i class="icon-fontello-deezer"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCVnVzTCyWprl37d2IgRrReQ" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-youtube nomargin" title="Italian Jazz Hub Youtube Channel">
+                                    <i class="icon-youtube"></i>
+                                    <i class="icon-youtube"></i>
                                 </a>
                                 <div class="clear"></div>
-                                <hr>
-                                <div class="clear"></div>
-                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-facebook" title="Facebook">
-                                    <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
-                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-kickstarter" title="Kickstarter">
-                                    <i class="icon-fontello-kickstarter"></i>
-                                    <i class="icon-fontello-kickstarter"></i>
-                                </a>
-                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-musicraiser" title="Musicraiser">
-                                    <i class="icon-fontello-musicraiser"></i>
-                                    <i class="icon-fontello-musicraiser"></i>
-                                </a>
-                                <a href="#" class="social-icon si-rounded si-border-colored si-text-color si-deezer" title="Deezer">
-                                    <i class="icon-fontello-deezer"></i>
-                                    <i class="icon-fontello-deezer"></i>
-                                </a>
-                                <div class="clear"></div>
-                                <hr>
-                                <div class="clear"></div>
-                                <a href="#" class="social-icon si-borderless si-facebook" title="Facebook">
-                                    <i class="icon-facebook" style="color: #fff"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
-                                <a href="#" class="social-icon si-borderless si-kickstarter" title="Kickstarter">
-                                    <i class="icon-fontello-kickstarter" style="color: #fff"></i>
-                                    <i class="icon-fontello-kickstarter"></i>
-                                </a>
-                                <a href="#" class="social-icon si-borderless si-musicraiser" title="Musicraiser">
-                                    <i class="icon-fontello-musicraiser" style="color: #fff"></i>
-                                    <i class="icon-fontello-musicraiser"></i>
-                                </a>
-                                <a href="#" class="social-icon si-borderless si-deezer" title="deezer">
-                                    <i class="icon-fontello-deezer" style="color: #fff"></i>
-                                    <i class="icon-fontello-deezer"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
