@@ -145,7 +145,7 @@
                                     </div>
                                     <div class="col-md-2 center oppure" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
                                         <div class="vertical-middle">
-                                            <span class="alt">oppure</span>
+                                            <span class="alt"><%=Lingua.CaricaLingua("lgl_index_oppure")%></span>
                                         </div>
                                     </div>
                                     <div class="col-md-5  center">

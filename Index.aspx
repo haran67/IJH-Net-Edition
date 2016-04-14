@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="/js/select2/select2.css"/>
     <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
     <script type="text/javascript" src="/js/select2/select2.min.js"></script>
-    <script type="text/javascript" src="/js/select2/select2_locale_it.js"></script>
+    <script type="text/javascript" src="/js/select2/select2_locale_<%=select2_locale%>.js"></script>
     <script type="text/javascript">
         function reinitInput() {
             Metronic.init(); // init metronic core componets
         }
         $(document).ready(function () {
             $("#<%=ddl_ricerca.ClientID%>").select2({
-                placeholder: 'Cerca per tag, categoria, artista ...',
+                placeholder: '<%=Lingua.CaricaLingua("lgl_index_cerca_per")%>',
                 allowClear: true,
                 multiple: true,
                 minimumInputLength: 3,
@@ -72,7 +72,7 @@
                     <strong>Jazz Hub</strong> 
                     <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
                 </h3>
-                <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm">Scopri di pi&uacute;</a> 
+                <a href="ChiSiamo.aspx" class="button button-border button-white button-light button-xlarge button-rounded bottommargin-sm"><%=Lingua.CaricaLingua("lgl_index_scopri_piu")%></a> 
             </div>
             <a href="#" id="video-slider-audio">
                 <i class="icon-mute nomargin"></i>

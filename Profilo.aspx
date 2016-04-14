@@ -40,6 +40,10 @@
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
                         </div>
+                        <div class="alert alert-danger alert-dismissable" id="div_messaggio_profilo" runat="server" visible="false">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                            <i class="fa-lg fa fa-warning"></i><asp:Literal ID="ltl_messaggio_profilo" runat="server"></asp:Literal>
+                        </div>
                         <div class="alert alert-success clearfix" id="div_paga" runat="server" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
                             <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">x</button>
                             <strong><%=Lingua.CaricaLingua("lgl_profilo_paga_scegli")%></strong>
@@ -462,7 +466,7 @@
                                     <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
                                         Form_Vertical="true" Required="false" />
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3">
                                     <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
                                         Form_Vertical="true" Required="false" />
                                 </div>
@@ -470,7 +474,7 @@
                                     <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
                                         Form_Vertical="true" Required="false" />
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-1">
                                     <div style="padding-top:24px;">
                                         <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="fright button button-rounded button-small button-success">
                                             <i class="icon-plus nomargin"></i>
@@ -489,7 +493,7 @@
                                             <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-3">
                                             <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>
@@ -497,13 +501,13 @@
                                             <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>
-                                        <div class="col-md-2">
+                                        <div class="col-md-1">
                                             <div style="padding-top:15px;">
                                                 <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL" CssClass="fright button button-rounded button-small button-danger">
                                                     <i class="icon-remove nomargin"></i>
                                                 </asp:LinkButton>
                                                 <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CommandName="MOD" CssClass="fright button button-rounded button-small button-success">
-                                                    <i class="icon-ok nomargin"></i>
+                                                    <i class="icon-save nomargin"></i>
                                                 </asp:LinkButton>
                                             </div>
                                         </div> 

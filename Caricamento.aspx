@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/js/select2/select2.css"/>
     <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
     <script type="text/javascript" src="/js/select2/select2.min.js"></script>
-    <script type="text/javascript" src="/js/select2/select2_locale_it.js"></script>
+    <script type="text/javascript" src="/js/select2/select2_locale_<%=select2_locale%>.js"></script>
     <script type="text/javascript">
         var selectedItems;
 
@@ -111,7 +111,7 @@
                             <label for="to" class="">
                                 <%=Lingua.CaricaLingua("lgl_caricamento_tag")%></label>
                             <select ID="ddl_video_tag" multiple="multiple" class="select2me form-control"
-                                placeholder="Seleziona i tag dalla lista">
+                                placeholder="<%=Lingua.CaricaLingua("lgl_caricamento_seleziona_tag")%>">
                                 <%=option_tag%>
                             </select>
                         </div>    
