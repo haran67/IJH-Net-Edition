@@ -155,7 +155,7 @@
                                                     <asp:Literal ID="ltl_commento" runat="server"></asp:Literal>
                                                 </p>
                                                 <p><asp:LinkButton ID="btn_delete" runat="server" CssClass="btn btn-default btn-xs" CommandName="DEL">
-                                                    <span class="icon-line-trash"></span> elimina commento
+                                                    <span class="icon-line-trash"></span> <%=Lingua.CaricaLingua("lgl_videopost_elimina_commento")%>
                                                     </asp:LinkButton></p>
                                             </div>
                                             

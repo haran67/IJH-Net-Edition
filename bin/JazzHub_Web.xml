@@ -318,6 +318,14 @@ a_about control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_partner">
+	<summary>
+a_partner control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Jazz.a_user">
 	<summary>
 a_user control.
@@ -329,14 +337,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Jazz.a_media">
 	<summary>
 a_media control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_partner">
-	<summary>
-a_partner control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -622,38 +622,6 @@ btn_cerca control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Index.i_expo">
-	<summary>
-i_expo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Index.i_view">
-	<summary>
-i_view control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Index.i_guest">
-	<summary>
-i_guest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Index.rpt_video">
-	<summary>
-rpt_video control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.Index.rpt_video_random">
 	<summary>
 rpt_video_random control.
@@ -662,17 +630,9 @@ rpt_video_random control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Index.div_like_guest">
+</member><member name="F:JazzHub_Web.Index.rpt_video">
 	<summary>
-div_like_guest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Index.rpt_video_guest">
-	<summary>
-rpt_video_guest control.
+rpt_video control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -689,6 +649,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Index.rpt_video_expo">
 	<summary>
 rpt_video_expo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Index.div_like_guest">
+	<summary>
+div_like_guest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Index.rpt_video_guest">
+	<summary>
+rpt_video_guest control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2246,46 +2222,6 @@ div_registrati control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Video_post.video_tag">
-	<summary>
-video_tag control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Video_post.ltl_titolo">
-	<summary>
-ltl_titolo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Video_post.ltl_data">
-	<summary>
-ltl_data control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Video_post.lnk_utente">
-	<summary>
-lnk_utente control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Video_post.ltl_utente">
-	<summary>
-ltl_utente control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.Video_post.upd_likes">
 	<summary>
 upd_likes control.
@@ -2321,6 +2257,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Video_post.div_no_like">
 	<summary>
 div_no_like control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_post.video_tag">
+	<summary>
+video_tag control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_post.lnk_utente">
+	<summary>
+lnk_utente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_post.ltl_utente">
+	<summary>
+ltl_utente control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_post.ltl_titolo">
+	<summary>
+ltl_titolo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_post.ltl_data">
+	<summary>
+ltl_data control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3105,6 +3081,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Profilo.ltl_messaggio_ok">
 	<summary>
 ltl_messaggio_ok control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.div_messaggio_profilo">
+	<summary>
+div_messaggio_profilo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.ltl_messaggio_profilo">
+	<summary>
+ltl_messaggio_profilo control.
 </summary>
 	<remarks>
 Auto-generated field.

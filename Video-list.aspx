@@ -45,7 +45,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
     <div class="content-wrap standard-portfolio alt" style="padding: 40px 0">
         <div class="container center clearfix">
-            <h4 style="font-weight: 400;" class="color">Video</h4>
+            <h4 style="font-weight: 400;" class="color"><%=Lingua.CaricaLingua("lgl_videolist_video")%></h4>
             <div class="divider divider-rounded divider-center divider-custom"><i class="icon-tv" style="background-color: #e6e6e6"></i></div>
             <h4 style="font-weight: 400;" class="color"><asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal></h4>
 <!--            <div class="postcontent">-->

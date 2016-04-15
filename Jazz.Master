@@ -1,4 +1,4 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -202,15 +202,15 @@
                         </div>
                         <div class="visible-sm visible-xs line"></div>
                         <div class="col_one_fifth center">
-                            <p style=" margin-bottom: 15px;">Con il sostegno di:</p>
+                            <p style=" margin-bottom: 15px;"><%=Lingua.CaricaLingua("lgl_master_sostengno")%></p>
                             <a href="http://www.beniculturali.it/"><img src="/images/custom/logo-ministero.png" style="height: 57px;"></a>
                         </div>
                         <div class="col_one_fifth center">
-                            <p style="margin-bottom: 15px;">Prodotto da:</p>
+                            <p style="margin-bottom: 15px;"><%=Lingua.CaricaLingua("lgl_master_prodotto_da")%></p>
                             <a class="" href="http://www.imffoundation.it/"><img src="/images/custom/logo-imf.png" style="height: 57px;"></a>
                         </div>
                         <div class="col_one_fifth col_last center">
-                            <p style="margin-bottom: 15px;">Media partner:</p>
+                            <p style="margin-bottom: 15px;"><%=Lingua.CaricaLingua("lgl_master_media_partner")%></p>
                             <a class="" href="http://www.jazzit.it"><img src="/images/custom/logo-jazzit.png" style="height: 40px;"></a>
                         </div>
                     </div>
@@ -218,7 +218,7 @@
                         <div class="col_full clearfix center">
                             <div class="line" style="margin: 30px 0"></div>
                             <div style="max-width: 222px; margin-left: auto; margin-right: auto;">
-                                <p style=" margin-bottom: 15px;">Siam presenti anche su:</p>
+                                <p style=" margin-bottom: 15px;"><%=Lingua.CaricaLingua("lgl_master_siam_presenti")%></p>
                                 <a href="https://www.facebook.com/Italian-Jazz-Hub-1659951054289987/" target="_blank" class="social-icon si-rounded si-border-colored si-text-color si-facebook" title="Facebook">
                                     <i class="icon-facebook"></i>
                                     <i class="icon-facebook"></i>
