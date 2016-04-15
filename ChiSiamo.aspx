@@ -162,11 +162,11 @@
                 <a href="http://www.milleunanota.com/" alt="Modern Jazz Institute"><img src="images/custom/partners/mji.png" title="Modern Jazz Institute"></a>
                 <a href="http://www.abno.com/" alt="Blue Note Orchestra"><img class="hidden" src="images/custom/partners/bluenoteorchestra.png" title="Blue Note Orchestra">Blue Note Orchestra</a>
                 <a href="http://www.blueartmanagement.com/" alt="Blueart"><img src="images/custom/partners/blueart.png" title="Blueart"></a>
-                <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff">Peperoncino Jazz Festival</a>
+                <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff" alt="Peperoncino Jazz Festival"><img src="images/custom/partners/peperoncino-jazz-festival.png" title="Peperoncino Jazz Festival"></a>
                 <a href="http://www.associazionenotabene.org/" alt="Notabene"><img src="images/custom/partners/notabene.png" title="Notabene"></a>
                 <a href="http://www.onyxjazzclub.it/2013/" alt="Gezziamoci"><img src="images/custom/partners/gezziamoci.png" title="Gezziamoci"></a>
                 <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13" alt="Tuscia in Jazz"><img src="images/custom/partners/tuscia-in-jazz.png" title="Blueart" title="Tuscia in Jazz"></a>
-                    <a href="http://www.agenziaeventibipede.it/" alt="San Valentino Jazz Festival"><img src="images/custom/partners/svjf.png" title="Blueart" title="San Valentino Jazz Festival"></a>
+                <a href="http://www.agenziaeventibipede.it/" alt="San Valentino Jazz Festival"><img src="images/custom/partners/svjf.png" title="Blueart" title="San Valentino Jazz Festival"></a>
                 <a href="http://www.jazzit.it" alt="Jazzit Fest"><img src="images/custom/partners/jazzit.png" title="Jazzit Fest"></a>
                 <a href="http://www.milkstudios.it/" alt="Milk Studio"><img src="images/custom/partners/milkstudio.png" title="Milk Studio"></a>
                 <a href="http://www.musicisti-jazz.it/" alt="Musicisti italiani di Jazz"><img src="images/custom/partners/midj.png" title="Musicisti italiani di Jazz"></a>

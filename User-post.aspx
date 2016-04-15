@@ -79,6 +79,7 @@
                                 </article>
                             </ItemTemplate>
                         </asp:Repeater>
+                        
                     </div>
                 </div>
                 
@@ -90,6 +91,13 @@
                         <h3 class="nomargin" style="color: #3A4B5F" id="h_nessun_eventi" runat="server">
                             <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>
                         </h3>
+                    </div>
+                    <div class="date-list available">
+                        <h3 class="nomargin" style="font-weight: 300; color: #3c883c">Disponibile</h3>
+                        <h4 class="nomargin" style="font-weight: 300;">
+                            <small style="color: #4eb24e;">dal <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong> al <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong></small>
+                        </h4>
+                        <a href="#" class="button button-success button-rounded button-mini nomargin" style="margin-top: 10px !important;"><i class="icon-email3 nomargin"></i> Contatta</a>
                     </div>
                     <asp:Repeater ID="rpt_when" runat="server">
                         <ItemTemplate>
@@ -104,6 +112,13 @@
                             </div>
                         </ItemTemplate> 
                     </asp:Repeater>
+                    <div class="date-list available">
+                        <h3 class="nomargin" style="font-weight: 300; color: #3c883c">Disponibile</h3>
+                        <h4 class="nomargin" style="font-weight: 300;">
+                            <small style="color: #4eb24e;">dal <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong> al <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong></small>
+                        </h4>
+                        <a href="#" class="button button-success button-rounded button-mini nomargin" style="margin-top: 10px !important;"><i class="icon-email3 nomargin"></i> Contatta</a>
+                    </div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -112,22 +127,7 @@
 </asp:UpdatePanel>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
-<!--    <script type="text/javascript" src="/js/readmore.js"></script>-->
     <script type="text/javascript" >
         $('[data-toggle=popover]').popover();
-//        $('.article').readmore({
-//            afterToggle: function(trigger, element, expanded) {
-//                if(expanded) { // The "Close" link was clicked
-//                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
-//                }
-//                if(! expanded) { // The "Close" link was clicked
-//                    $('html, body').animate( { scrollTop: element.offset().top }, {duration: 1000 } );
-//                }
-//            },
-//            speed: 750,
-//            collapsedHeight: 130,
-//            moreLink: '<a href="#" style="color: #fff; font-style: italic; margin-top: 20px;">leggi tutto<br><i style="font-size: 26px;" class="icon-chevron-down"></i></a>',
-//            lessLink: '<a href="#" style="color: #fff; font-style: italic;"><i style="font-size: 26px; margin-top: 20px;" class="icon-chevron-up"></i><br>chiudi</a>'
-//        });
     </script>
 </asp:Content>
