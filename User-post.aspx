@@ -92,13 +92,6 @@
                             <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>
                         </h3>
                     </div>
-                    <div class="date-list available">
-                        <h3 class="nomargin" style="font-weight: 300; color: #3c883c">Disponibile</h3>
-                        <h4 class="nomargin" style="font-weight: 300;">
-                            <small style="color: #4eb24e;">dal <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong> al <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong></small>
-                        </h4>
-                        <a href="#" class="button button-success button-rounded button-mini nomargin" style="margin-top: 10px !important;"><i class="icon-email3 nomargin"></i> Contatta</a>
-                    </div>
                     <asp:Repeater ID="rpt_when" runat="server">
                         <ItemTemplate>
                             <div class="date-list">
@@ -112,12 +105,23 @@
                             </div>
                         </ItemTemplate> 
                     </asp:Repeater>
-                    <div class="date-list available">
-                        <h3 class="nomargin" style="font-weight: 300; color: #3c883c">Disponibile</h3>
-                        <h4 class="nomargin" style="font-weight: 300;">
-                            <small style="color: #4eb24e;">dal <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong> al <strong style="font-weight: 600; color: #4eb24e">20/10/2016</strong></small>
-                        </h4>
-                        <a href="#" class="button button-success button-rounded button-mini nomargin" style="margin-top: 10px !important;"><i class="icon-email3 nomargin"></i> Contatta</a>
+                    <div class="date-list available" id="div_disponibilita" runat="server">
+                        <h3 class="nomargin" style="font-weight: 300; color: #3c883c"><%=Lingua.CaricaLingua("lgl_user_post_disponibile")%></h3>
+                        <asp:Repeater ID="rpt_annunci" runat="server">
+                            <ItemTemplate>
+                                <h4 class="nomargin" style="font-weight: 300;">
+                                    <small style="color: #4eb24e;"><%=Lingua.CaricaLingua("lgl_user_post_disponibile_dal")%> 
+                                    <strong style="font-weight: 600; color: #4eb24e"><asp:Literal ID="ltl_ua_dal" runat="server"></asp:Literal></strong> 
+                                    <%=Lingua.CaricaLingua("lgl_user_post_disponibile_al")%> 
+                                    <strong style="font-weight: 600; color: #4eb24e"><asp:Literal ID="ltl_ua_al" runat="server"></asp:Literal></strong>
+                                    <br />
+                                    <asp:Literal ID="ltl_annuncio" runat="server"></asp:Literal>
+                                    </small>
+                                </h4>
+                            </ItemTemplate> 
+                        </asp:Repeater> 
+                        <a href="#" class="button button-success button-rounded button-mini nomargin" style="margin-top: 10px !important;" id="a_annuncio_mail" runat="server"><i class="icon-email3 nomargin"></i> 
+                            <%=Lingua.CaricaLingua("lgl_user_post_contatta")%></a>
                     </div>
                 </div>
                 <div class="clear"></div>

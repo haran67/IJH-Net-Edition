@@ -6,7 +6,11 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Controls.DDLReadOnly">
+<member name="T:JazzHub_Classi.Oggetti.Utenti_annuncio_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella UTENTI_ANNUNCIO
+ </summary>
+</member><member name="T:JazzHub_Classi.Controls.DDLReadOnly">
 	<summary>
  DDL per la visualizzazione in readOnly
  </summary>
