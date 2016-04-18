@@ -36,9 +36,10 @@
                                 </a>
                             </ItemTemplate>
                         </asp:Repeater>
-                            <a href="tel:+393497555400" target="_blank" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="+393497555400">
-                                <i class="icon-phone2 nomargin" ></i>
-                            </a>
+                        <a href="tel:+393497555400" target="_blank" data-container="body" data-trigger="hover" 
+                            data-toggle="popover" data-placement="bottom" data-content="+393497555400" id="a_phone" runat="server">
+                            <i class="icon-phone2 nomargin" ></i>
+                        </a>
                     </h4>
                 </div>
             </div>
