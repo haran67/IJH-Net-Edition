@@ -121,12 +121,12 @@
         
         <!-- ricerca -->
         <div class="section nomargin nopadding center">
-            <section class="nomargin nopadding" style="padding: 20px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
+            <section class="nomargin nopadding" style="padding: 40px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
                 <div class="container clearfix">
                     <div class="main-search notopmargin">
                         <div style="margin-left: auto; margin-right: auto; float: none">
                             <input type="hidden" id="ddl_ricerca" class="form-control select2" runat="server">
-                            <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn btn-default" style="border: none; margin-top: 5px;">
+                            <asp:LinkButton ID="btn_cerca" runat="server" CssClass="btn-main-search">
                                 <i class="icon-search"></i>
                             </asp:LinkButton>
                         </div>
