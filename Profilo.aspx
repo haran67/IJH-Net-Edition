@@ -534,7 +534,11 @@
                                     <cc:rTextBox ID="txt_ua_al" runat="server" MaxLength="256" CssClass="form-control"
                                         Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy" />
                                 </div>
-                                <div class="col-md-7">
+                                <div class="col-md-3">
+                                    <cc:rTextBox ID="txt_ua_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                        Form_Vertical="true" Required="false" />
+                                </div>
+                                <div class="col-md-4">
                                     <cc:rTextBox ID="txt_ua_annuncio" runat="server" MaxLength="512" CssClass="form-control"
                                         Form_Vertical="true" Required="false" />
                                 </div>
@@ -557,7 +561,11 @@
                                             <cc:rTextBox ID="txt_ua_al" runat="server" MaxLength="256" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>
-                                        <div class="col-md-7">
+                                        <div class="col-md-3">
+                                            <cc:rTextBox ID="txt_ua_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                                Form_Vertical="true" Required="false" />
+                                        </div>
+                                        <div class="col-md-4">
                                             <cc:rTextBox ID="txt_ua_annuncio" runat="server" MaxLength="512" CssClass="form-control"
                                                 Form_Vertical="true" Required="false" />
                                         </div>

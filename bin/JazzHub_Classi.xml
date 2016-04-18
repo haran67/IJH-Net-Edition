@@ -6,9 +6,9 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Utenti_annuncio_Base">
+<member name="T:JazzHub_Classi.Oggetti.Vs_appuntamenti_utente_Base">
 	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella UTENTI_ANNUNCIO
+ Classe utilizzata per l'astrazione dei dati della tabella VS_APPUNTAMENTI_UTENTE
  </summary>
 </member><member name="T:JazzHub_Classi.Controls.DDLReadOnly">
 	<summary>
@@ -38,6 +38,10 @@ JazzHub_Classi
 </member><member name="T:JazzHub_Classi.Controls.TextData">
 	<summary>
  TextBox per la visualizzazione della Data
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Utenti_annuncio_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella UTENTI_ANNUNCIO
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Video_categorie_Base">
 	<summary>
