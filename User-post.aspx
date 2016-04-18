@@ -24,7 +24,7 @@
                     </h1>
                     <h4 class="user-social nobottommargin">
                         <a href="#" target="_blank" id="a_web" runat="server">
-                            <i class="icon-world nomargin"></i>
+                            <i class="icon-fontello-world nomargin"></i>
                         </a>
                         <a href="#" class="hidden" target="_blank" id="a_email" runat="server">
                             <i class="icon-email3 nomargin"></i>
@@ -36,9 +36,10 @@
                                 </a>
                             </ItemTemplate>
                         </asp:Repeater>
-                            <a href="tel:+393497555400" target="_blank" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="+393497555400">
-                                <i class="icon-phone2 nomargin" ></i>
-                            </a>
+                        <a href="tel:+393497555400" target="_blank" data-container="body" data-trigger="hover" 
+                            data-toggle="popover" data-placement="bottom" data-content="+393497555400" id="a_phone" runat="server">
+                            <i class="icon-fontello-phone nomargin" ></i>
+                        </a>
                     </h4>
                 </div>
             </div>

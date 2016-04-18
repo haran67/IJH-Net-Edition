@@ -1,4 +1,5 @@
-<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Profilo.aspx.vb" Inherits="JazzHub_Web.Profilo" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Profilo.aspx.vb"  
+     EnableEventValidation="false" Inherits="JazzHub_Web.Profilo" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
@@ -385,7 +386,7 @@
                                     <asp:LinkButton ID="btn_cancella_foto" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
                                     </asp:LinkButton><br>
-                                        <small><i>Dimensione consigliata: 220*220 pixel</i></small>
+                                        <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 220*220 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
@@ -399,13 +400,13 @@
                                     <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
                                     </asp:LinkButton><br>
-                                    <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
+                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>
                                 </div>
                                 <div class="col_full clearfix hidden" id="div_pp_drop" runat="server">
                                     <div class="dropzone" class="thumbnail" data-width="960" data-height="540" data-ghost="false" data-resize="true" data-originalsize="false" style="width: 100%;">
                                         <asp:FileUpload ID="upl_img_profilo_pubblico_drop" runat="server" />
                                     </div>
-                                    <small><i>Dimensione consigliata: 1170*500 pixel</i></small>
+                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger nomargin">
