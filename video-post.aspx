@@ -169,33 +169,34 @@
 
                         <div class="clear"></div>
 
-                        <!-- Comment Form
-                        ============================================= -->
-                        <div id="respond" class="clearfix">
+                        <div id="div_commenta" runat="server">
+                            <!-- Comment Form
+                            ============================================= -->
+                            <div id="respond" class="clearfix">
 
-                            <h4><%=Lingua.CaricaLingua("lgl_videopost_lascia_commento")%></h4>
+                                <h4><%=Lingua.CaricaLingua("lgl_videopost_lascia_commento")%></h4>
 
-                            <div class="clearfix" action="#" method="post" id="commentform">    
+                                <div class="clearfix" action="#" method="post" id="commentform">    
                                 
-                                <span for="upl_video" style="font-size:15px; color:Red;" id="span_comment" runat="server" visible="false">
-                                    <asp:Literal ID="ltl_msg_span_comment" runat="server"></asp:Literal></span>
+                                    <span for="upl_video" style="font-size:15px; color:Red;" id="span_comment" runat="server" visible="false">
+                                        <asp:Literal ID="ltl_msg_span_comment" runat="server"></asp:Literal></span>
 
-                                <div class="col_full">
-                                    <label for="comment" class="hidden"><%=Lingua.CaricaLingua("lgl_videopost_commento")%></label>
-                                    <asp:TextBox ID="txt_commento" runat="server" TextMode="MultiLine" Rows="7" CssClass="sm-form-control"></asp:TextBox>
-                                </div>
+                                    <div class="col_full">
+                                        <label for="comment" class="hidden"><%=Lingua.CaricaLingua("lgl_videopost_commento")%></label>
+                                        <asp:TextBox ID="txt_commento" runat="server" TextMode="MultiLine" Rows="7" CssClass="sm-form-control"></asp:TextBox>
+                                    </div>
 
-                                <div class="col_full nobottommargin">
-                                    <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_videopost_invia_commento")%>
-                                    </asp:LinkButton>
+                                    <div class="col_full nobottommargin">
+                                        <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin">
+                                            <%=Lingua.CaricaLingua("lgl_videopost_invia_commento")%>
+                                        </asp:LinkButton>
+                                    </div>
+
                                 </div>
 
                             </div>
-
+                            <!-- #respond end -->
                         </div>
-                        <!-- #respond end -->
-
                     </div>
                     <!-- #comments end -->
 

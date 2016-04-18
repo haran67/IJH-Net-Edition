@@ -2342,6 +2342,14 @@ rpt_comment control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Video_post.div_commenta">
+	<summary>
+div_commenta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Video_post.span_comment">
 	<summary>
 span_comment control.
