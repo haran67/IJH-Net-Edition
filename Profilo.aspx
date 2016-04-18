@@ -15,7 +15,52 @@
     <script type="text/javascript" src="/js/maxlength/jquery.plugin.min.js"></script>
     <script type="text/javascript" src="/js/maxlength/jquery.maxlength.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap-switch.min.js"></script>
-    <link rel="stylesheet" href="/css/html5imageupload.css?v1.3" type="text/css" />
+    <script type="text/javascript" src="/js/jquery.cropit.js"></script>
+    
+    <style>
+        
+      .cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-top: 7px;
+      }
+
+      /* Hide file input */
+        input.cropit-image-input {
+          visibility: hidden;
+        }
+      .cropit-preview-image-container {
+        cursor: move;
+        width:100%;
+      }
+      .cropit-preview-image
+      {
+          max-width:none!Important;
+      }
+
+        /* Translucent background image */
+        .cropit-preview-background {
+          opacity: .2;
+          max-width:none!Important;
+        }
+
+        /*
+         * If the slider or anything else is covered by the background image,
+         * use relative or absolute position on it
+         */
+        input.cropit-image-zoom-input {
+          position: relative;
+        }
+
+        /* Limit the background image by adding overflow: hidden */
+        #image-cropper {
+          overflow: hidden;
+        }
+        
+    </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
@@ -128,7 +173,7 @@
                                     <span id="span_no_video" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video_non_pres")%></span>
                                     <span><i class="icon-video"></i></span>
                                 </asp:LinkButton>
-                                        <hr>
+                                <hr>
                                 <a href="#" data-toggle="modal" data-target=".invite" class="button btn-block button-primary button-rounded center nomargin">
                                     <%=Lingua.CaricaLingua("lgl_profilo_invita_amico")%>
                                     <span><i class="icon-line-share"></i></span>
@@ -381,12 +426,15 @@
                                     <asp:ImageButton ID="img_avatar" CssClass="thumbnail" runat="server" style="max-width: 220px; max-height: 220px;" />
                                 </div>
                                 <div class="col_half col_last">
-                                    <telerik:RadAsyncUpload runat="server" ID="upl_img_avatar" MultipleFileSelection="Disabled"
-                                        Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" />
+                                    <a href="#" onclick="openCrop(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
+                                        id="btn_carica_avatar" runat="server">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>
+                                        <span><i class="icon-camera"></i></span>
+                                    </a>
                                     <asp:LinkButton ID="btn_cancella_foto" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
                                     </asp:LinkButton><br>
-                                        <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 220*220 pixel</i></small>
+                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 250*250 pixel</i></small>
                                 </div>
                                 <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
@@ -395,23 +443,15 @@
                                     <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%; max-height: 200px;" />
                                 </div>
                                 <div class="col_half col_last" id="div_pp_cancella" runat="server">
-                                    <telerik:RadAsyncUpload runat="server" ID="upl_img_profilo_pubblico" MultipleFileSelection="Disabled"
-                                        Culture="it-IT" Localization-Select="Seleziona" AllowedFileExtensions="jpg,png,jpeg,gif" Visible="true" />
+                                    <a href="#" onclick="openCropPub(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
+                                        id="btn_carica_pubblica" runat="server">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>
+                                        <span><i class="icon-camera"></i></span>
+                                    </a>
                                     <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
                                     </asp:LinkButton><br>
                                     <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>
-                                </div>
-                                <div class="col_full clearfix hidden" id="div_pp_drop" runat="server">
-                                    <div class="dropzone" class="thumbnail" data-width="960" data-height="540" data-ghost="false" data-resize="true" data-originalsize="false" style="width: 100%;">
-                                        <asp:FileUpload ID="upl_img_profilo_pubblico_drop" runat="server" />
-                                    </div>
-                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>
-                                </div>
-                                <div class="col_full">
-                                    <asp:LinkButton ID="btn_carica_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
-                                    </asp:LinkButton>
                                 </div>
                             </div>
                             <div class="col_half col_last">
@@ -451,6 +491,7 @@
                                     
                                 </div>
                             </div>
+                            
                         </div>
                         <!-- FINE modifica profilo pubblico -->            
                         <div class="col_full">
@@ -588,31 +629,80 @@
                 </div>
             </div>
         </ContentTemplate>
-        <Triggers >
-            <asp:PostBackTrigger ControlID ="btn_carica_profilo_pubblico" />
-        </Triggers>
     </asp:UpdatePanel>
+    <asp:LinkButton ID="btn_salva_immagini_hidden" runat="server" style="display:none;" />
+    <div class="modal fade bs-example-modal-lg crop_avatar" tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="H1">Caricamento Immagine avatar</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col_full center">
+                            <div id="image-avatar">
+                                <input type="file" class="cropit-image-input" id="cropit-image-input">
+                                <div class="cropit-preview" style="width: 250px; height: 250px;">
+                                </div>
+                                <div class="image-size-label">
+                                    Ridimensiona immagine
+                                </div>
+                                <input type="range" class="cropit-image-zoom-input">
+                                <button class="rotate-ccw" id="rotate-ccw-avatar">
+                                    Ruota antiorario</button>
+                                <button class="rotate-cw" id="rotate-cw-avatar">
+                                    Ruota orario</button>
+                            </div>
+                        </div> 
+                        <div class="col_full nobottommargin">
+                            <asp:LinkButton ID="btn_salva_avatar" runat="server" CssClass="button btn-block button-rounded center nomargin" OnClientClick="exportCrop(); $('.crop_avatar').modal('hide'); return false;">
+                                SALVA IMMAGINE
+                            </asp:LinkButton>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bs-example-modal-lg crop_public" tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="H2">Caricamento Immagine pubblica</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col_full center">
+                            <div id="image-public">
+                                <input type="file" class="cropit-image-input" id="cropit-image-input-public">
+                                <div class="cropit-preview" style="width: 800px; height: 400px;">
+                                </div>
+                                <div class="image-size-label">
+                                    Ridimensiona immagine
+                                </div>
+                                <input type="range" class="cropit-image-zoom-input">
+                                <button class="rotate-ccw" id="rotate-ccw-public">
+                                    Ruota antiorario</button>
+                                <button class="rotate-cw" id="rotate-cw-public">
+                                    Ruota orario</button>
+                            </div>
+                        </div> 
+                        <div class="col_full nobottommargin">
+                            <asp:LinkButton ID="btn_salva_pubblica" runat="server" CssClass="button btn-block button-rounded center nomargin" OnClientClick="exportCropPublic(); $('.crop_public').modal('hide'); return false;">
+                                SALVA IMMAGINE
+                            </asp:LinkButton>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
-    <script src="/js/html5imageupload.js?v1.4.3"></script>
     <script>
-        function demoUpload() {
-            console.log('demoUpload avviato!');
-            $('.dropzone').html5imageupload();
-        };
-        
-        function checkContainer () {
-            if($('#ready').is(':visible')){ 
-                console.log('visibile!');
-                demoUpload();
-            } else {
-                setTimeout(checkContainer, 50);
-            }
-        }
-
         function reinit_js() {
-
-            checkContainer();
 
             $('#<%=txt_descrizione_pubblica.txt_Client_Id%>').maxlength({ max: <%=max_desc%>, feedbackText: '<%=Lingua.CaricaLingua("lgl_usati")%> {c} <%=Lingua.CaricaLingua("lgl_di")%> {m}' });
 
@@ -632,6 +722,31 @@
                 }
             });
 
+            Init_Crop_Avatar();
+        }
+
+        function Init_Crop_Avatar(){
+
+            $('#image-avatar').cropit({ imageBackground: false });
+            $('#image-public').cropit({ imageBackground: false });
+
+            $('#rotate-cw-avatar').click(function() {
+              $('#image-avatar').cropit('rotateCW');
+              return false;
+            });
+            $('#rotate-ccw-avatar').click(function() {
+              $('#image-avatar').cropit('rotateCCW');
+              return false;
+            });
+            $('#rotate-cw-public').click(function() {
+              $('#image-public').cropit('rotateCW');
+              return false;
+            });
+            $('#rotate-ccw-public').click(function() {
+              $('#image-public').cropit('rotateCCW');
+              return false;
+            });
+
         }
 
         $(document).ready(function () {
@@ -643,6 +758,40 @@
             reinit_js();
         }
    
+        function openCrop() {
+            $('.crop_avatar').modal('show');
+            $('#cropit-image-input').click();
+        }
+
+        function openCropPub() {
+            $('.crop_public').modal('show');
+            $('#cropit-image-input-public').click();
+        }
+
+        function exportCrop() {
+            var imageData = $('#image-avatar').cropit('export');
+            //window.open(imageData);
+            PageMethods.SetImmagineProfilo('A', imageData,
+                function () {
+                    javascript: __doPostBack('<%=btn_salva_immagini_hidden.UniqueID%>', '');
+                },
+                function (error) {
+                    alert("Errore non gestito: " + error);
+                });
+        }
+
+        function exportCropPublic() {
+            var imageData = $('#image-public').cropit('export');
+            //window.open(imageData);
+            PageMethods.SetImmagineProfilo('P', imageData,
+                function () {
+                    javascript: __doPostBack('<%=btn_salva_immagini_hidden.UniqueID%>', '');
+                },
+                function (error) {
+                    alert("Errore non gestito: " + error);
+                });
+        }
+        
     </script>
         
 </asp:Content>
