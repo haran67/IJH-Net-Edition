@@ -153,7 +153,7 @@
                         </ul>
                         <span  id="li_accedi" runat="server">
                             <div id="top-cart">
-                                <a href="/login.aspx" id="top-cart-login" class="box-shadow-custom" title="Accedi"><i class="icon-signin hidden"></i>ACCEDI</a>
+                                <a href="/login.aspx" id="top-cart-login" class="box-shadow-custom" title="Accedi"><i class="icon-signin hidden"></i><%=Lingua.CaricaLingua("lgl_menu_accedi").ToUpper()%></a>
                             </div>
                         </span>
                         <span id="div_account" runat="server">
