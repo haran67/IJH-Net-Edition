@@ -100,13 +100,16 @@
                     <asp:Repeater ID="rpt_when" runat="server">
                         <ItemTemplate>
                             <div class="date-list">
-                                <h4 class="nomargin" style="font-weight: 300; color: #6481A6">
-                                    <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal> - <small style="color: #6481A6"><asp:Literal ID="ltl_when_quando_data" runat="server"></asp:Literal> at <asp:Literal ID="ltl_when_quando_ora" runat="server"></asp:Literal></small>
-                                </h4>
                                 <h3 class="nomargin" style="color: #3A4B5F">
-                                    <asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal>
+                                    <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal>
                                 </h3>
-                                <p class="nomargin" style="color: #6481A6"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
+                                <h4 class="nomargin" style="font-weight: 300; color: #3A4B5F">
+                                    <asp:Literal ID="ltl_when_luogo" runat="server"></asp:Literal>
+                                </h4>
+                                <h4 class="nomargin" style="font-weight: 300; color: #6481A6">
+                                    <asp:Literal ID="ltl_when_quando_data" runat="server"></asp:Literal> at <asp:Literal ID="ltl_when_quando_ora" runat="server"></asp:Literal>
+                                </h4>
+                                <p class="nomargin" style="color: #999"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
                             </div>
                         </ItemTemplate> 
                     </asp:Repeater>
