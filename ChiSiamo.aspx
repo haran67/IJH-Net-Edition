@@ -12,7 +12,7 @@
             <div class="container clearfix">
                 <h1 class="color nomargin"><%=Lingua.CaricaLingua("lgl_chisiamo_title_01")%></h1>
                 <div class="text-rotater" data-separator="|" data-rotate="flipInX" data-speed="3500">
-                    <h2 class="t-rotate color nomargin">
+                    <h2 class="t-rotate color nomargin" style="font-weight: 200">
                         <%=Lingua.CaricaLingua("lgl_chisiamo_title_02")%>
                     </h2>
                 </div>
@@ -160,10 +160,10 @@
 <!--                <div class="section-cover partner divcenter"></div> -->
                 <a href="http://www.bluesinvilla.com/" alt="FVG Festival"><img src="images/custom/partners/fvg.png" title="FVG Festival"></a>
                 <a href="http://www.milleunanota.com/" alt="Modern Jazz Institute"><img src="images/custom/partners/mji.png" title="Modern Jazz Institute"></a>
-                <a href="http://www.abno.com/" alt="Blue Note Orchestra"><img class="hidden" src="images/custom/partners/bluenoteorchestra.png" title="Blue Note Orchestra">Blue Note Orchestra</a>
+                <a href="http://www.abno.com/" alt="Blue Note Orchestra"><img class="hidden" src="images/custom/partners/bluenoteorchestra.png" title="Blue Note Orchestra"><img src="images/custom/partners/abno_orchestra.png" title="Blue Note Orchestra"></a>
                 <a href="http://www.blueartmanagement.com/" alt="Blueart"><img src="images/custom/partners/blueart.png" title="Blueart"></a>
                 <a href="http://www.peperoncinojazzfestival.com/index.php?page=staff" alt="Peperoncino Jazz Festival"><img src="images/custom/partners/peperoncino-jazz-festival.png" title="Peperoncino Jazz Festival"></a>
-                <a href="http://www.associazionenotabene.org/" alt="Notabene"><img src="images/custom/partners/notabene.png" title="Notabene"></a>
+                <a href="http://www.associazionenotabene.org/" alt="Notabene"><img src="images/custom/partners/ass_notabene.png" title="Notabene"></a>
                 <a href="http://www.onyxjazzclub.it/2013/" alt="Gezziamoci"><img src="images/custom/partners/gezziamoci.png" title="Gezziamoci"></a>
                 <a href="http://italiajazz.it/organizzazioni/act-ronciglione/13" alt="Tuscia in Jazz"><img src="images/custom/partners/tuscia-in-jazz.png" title="Blueart" title="Tuscia in Jazz"></a>
                 <a href="http://www.agenziaeventibipede.it/" alt="San Valentino Jazz Festival"><img src="images/custom/partners/svjf.png" title="Blueart" title="San Valentino Jazz Festival"></a>

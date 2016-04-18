@@ -36,6 +36,9 @@
                                 </a>
                             </ItemTemplate>
                         </asp:Repeater>
+                            <a href="tel:+393497555400" target="_blank" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="+393497555400">
+                                <i class="icon-phone2 nomargin" ></i>
+                            </a>
                     </h4>
                 </div>
             </div>
@@ -53,6 +56,8 @@
             <div class="container  clearfix">
                 <div class="postcontent clearfix nopadding">
                     <asp:Image ID="img_copertina" runat="server" class="thumbnail" />
+                    <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-note i-vetrina nomargin"></i> Biosketch</h4>
+                    <div class="divider divider-center  divider-rounded" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-note" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <h5 class="citazione nomargin" style="font-weight: 300" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
                         <asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal>
                     </h5>

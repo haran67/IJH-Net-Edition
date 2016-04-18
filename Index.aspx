@@ -172,7 +172,7 @@
         <div class="section nomargin alt center">
             <div class="container clearfix">
                 <h4 class="color nomargin" style="margin-bottom: 10px !important; "><%=Lingua.CaricaLingua("lgl_index_scelti")%></h4>
-                <h4><i class="i-circled i-light icon-star i-vetrina nomargin"></i></h4>
+                <h4><i class="i-circled i-light icon-like i-vetrina nomargin"></i></h4>
 <!--
                 <div class="divider divider-rounded divider-center divider-custom">
                     <i class="icon-star" style="background-color: rgba(0,0,0,.1)"></i>
