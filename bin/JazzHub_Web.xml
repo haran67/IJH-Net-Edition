@@ -278,6 +278,14 @@ h_nessun_eventi control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.User_post.rpt_appuntamenti">
+	<summary>
+rpt_appuntamenti control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.User_post.rpt_when">
 	<summary>
 rpt_when control.
@@ -286,25 +294,9 @@ rpt_when control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.User_post.div_disponibilita">
-	<summary>
-div_disponibilita control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.User_post.rpt_annunci">
 	<summary>
 rpt_annunci control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.User_post.a_annuncio_mail">
-	<summary>
-a_annuncio_mail control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3889,6 +3881,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Profilo.txt_ua_al">
 	<summary>
 txt_ua_al control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_ua_titolo">
+	<summary>
+txt_ua_titolo control.
 </summary>
 	<remarks>
 Auto-generated field.

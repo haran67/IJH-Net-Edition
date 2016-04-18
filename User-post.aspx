@@ -98,9 +98,16 @@
                             <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>
                         </h3>
                     </div>
-                    <asp:Repeater ID="rpt_when" runat="server">
+                    <asp:Repeater ID="rpt_appuntamenti" runat="server">
                         <ItemTemplate>
+<<<<<<< HEAD
                             <div class="date-list">
+=======
+                            <div class="date-list" id="div_evento" runat="server">
+                                <h4 class="nomargin" style="font-weight: 300; color: #6481A6">
+                                    <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal> - <small style="color: #6481A6"><asp:Literal ID="ltl_when_quando_data" runat="server"></asp:Literal> at <asp:Literal ID="ltl_when_quando_ora" runat="server"></asp:Literal></small>
+                                </h4>
+>>>>>>> bfec2190f84ea4809750e1ff9df7a4de81361c4c
                                 <h3 class="nomargin" style="color: #3A4B5F">
                                     <asp:Literal ID="ltl_when_citta" runat="server"></asp:Literal>
                                 </h3>
@@ -112,12 +119,8 @@
                                 </h4>
                                 <p class="nomargin" style="color: #999"><asp:Literal ID="ltl_when_titolo" runat="server"></asp:Literal></p>
                             </div>
-                        </ItemTemplate> 
-                    </asp:Repeater>
-                    <div class="date-list available" id="div_disponibilita" runat="server">
-                        <h3 class="nomargin" style="font-weight: 300; color: #3c883c"><%=Lingua.CaricaLingua("lgl_user_post_disponibile")%></h3>
-                        <asp:Repeater ID="rpt_annunci" runat="server">
-                            <ItemTemplate>
+                            <div class="date-list available" id="div_disponibilita" runat="server">
+                                <h3 class="nomargin" style="font-weight: 300; color: #3c883c"><%=Lingua.CaricaLingua("lgl_user_post_disponibile")%></h3>
                                 <h4 class="nomargin" style="font-weight: 300;">
                                     <small style="color: #4eb24e;"><%=Lingua.CaricaLingua("lgl_user_post_disponibile_dal")%> 
                                     <strong style="font-weight: 600; color: #4eb24e"><asp:Literal ID="ltl_ua_dal" runat="server"></asp:Literal></strong> 
@@ -125,13 +128,23 @@
                                     <strong style="font-weight: 600; color: #4eb24e"><asp:Literal ID="ltl_ua_al" runat="server"></asp:Literal></strong>
                                     <br />
                                     <asp:Literal ID="ltl_annuncio" runat="server"></asp:Literal>
+                                    <br />
+                                    <asp:Literal ID="ltl_luogo" runat="server"></asp:Literal>
                                     </small>
                                 </h4>
-                            </ItemTemplate> 
-                        </asp:Repeater> 
-                        <a href="#" class="button button-success button-rounded button-mini nomargin" style="margin-top: 10px !important;" id="a_annuncio_mail" runat="server"><i class="icon-email3 nomargin"></i> 
-                            <%=Lingua.CaricaLingua("lgl_user_post_contatta")%></a>
-                    </div>
+                                <a href="#" class="button button-success button-rounded button-mini nomargin" style="margin-top: 10px !important;" id="a_annuncio_mail" runat="server"><i class="icon-email3 nomargin"></i> 
+                                    <%=Lingua.CaricaLingua("lgl_user_post_contatta")%></a>
+                            </div>
+                        </ItemTemplate> 
+                    </asp:Repeater>
+                    <asp:Repeater ID="rpt_when" runat="server">
+                        <ItemTemplate>
+                        </ItemTemplate> 
+                    </asp:Repeater>
+                    <asp:Repeater ID="rpt_annunci" runat="server">
+                        <ItemTemplate>
+                        </ItemTemplate> 
+                    </asp:Repeater> 
                 </div>
                 <div class="clear"></div>
             </div>
