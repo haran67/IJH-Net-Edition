@@ -143,8 +143,8 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="col_full">
-                                                        <h3>Usa questo modulo per invitare i tuoi amici</h3>
-                                                        <i>(Puoi inserirne fino a 4 alla volta)</i>
+                                                        <h3><%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa")%></h3>
+                                                        <i><%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa_help")%></i>
                                                     </div>
                                                     <hr>
                                                     <div class="col_half nobottommargin">
@@ -351,7 +351,7 @@
                             <div class="col_half col_last" style="margin-bottom: 0px;">
                                 <div class="col_full">
                                     <cc:rTextBox ID="txt_old_password" TextMode="Password" runat="server" MaxLength="100"
-                                        CssClass="form-control" Form_Vertical="true" Label="Vecchia password" />
+                                        CssClass="form-control" Form_Vertical="true" Label="" />
                                 </div>
                                 <div class="col_half">
                                     <cc:rTextBox ID="txt_password" TextMode="Password" runat="server" MaxLength="100"
