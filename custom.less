@@ -223,6 +223,10 @@
 //    padding-bottom: 5px;
     border-bottom: dotted 1px rgba(0,0,0,.1);
     padding: 10px;
+    text-transform: lowercase;
+    & *:first-letter {
+        text-transform: uppercase;
+    }
     &:last-child {
 //        margin: 0;
 //        padding: 0;
@@ -617,7 +621,7 @@ body > form {
     margin-top: 5px;
     a {
         display: inline-block;
-        color: rgba(0,0,0,.5);
+        color: rgba(0,0,0,.4);
         margin-left: 5px;
         margin-right: 5px;
         &:hover {
