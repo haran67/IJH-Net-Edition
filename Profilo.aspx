@@ -10,8 +10,8 @@
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="/js/maxlength/jquery.maxlength.css" type="text/css" />
-    <link rel="stylesheet" href="/css/bootstrap-switch.css" type="text/css" />
+    <link rel="stylesheet" href="/js/maxlength/jquery.maxlength.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-switch.css" type="text/css">
     <script type="text/javascript" src="/js/maxlength/jquery.plugin.min.js"></script>
     <script type="text/javascript" src="/js/maxlength/jquery.maxlength.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap-switch.min.js"></script>
@@ -426,7 +426,7 @@
                                     <asp:ImageButton ID="img_avatar" CssClass="thumbnail" runat="server" style="max-width: 220px; max-height: 220px;" />
                                 </div>
                                 <div class="col_half col_last">
-                                    <a href="#" onclick="openCrop(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
+                                    <a href="#" onClick="openCrop(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
                                         id="btn_carica_avatar" runat="server">
                                         <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>
                                         <span><i class="icon-camera"></i></span>
@@ -443,7 +443,7 @@
                                     <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%; max-height: 200px;" />
                                 </div>
                                 <div class="col_half col_last" id="div_pp_cancella" runat="server">
-                                    <a href="#" onclick="openCropPub(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
+                                    <a href="#" onClick="openCropPub(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
                                         id="btn_carica_pubblica" runat="server">
                                         <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>
                                         <span><i class="icon-camera"></i></span>
@@ -624,7 +624,7 @@
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div> 
-                        <!-- FINE Calendario Disponibilità -->            
+                        <!-- FINE Calendario DisponibilitÃ  -->            
                     </div>
                 </div>
             </div>
