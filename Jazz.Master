@@ -26,11 +26,11 @@
     <link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="/css/animate.css" type="text/css" />
     <link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/js/smoke/themes/jazz.css"/>
+    <link rel="stylesheet" href="/css/mesysPager.css" type="text/css" />
     <!-- Da scambiare in rilascio finale con la versione CSS compilata -->
     <link rel="stylesheet" href="/custom.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="/js/smoke/themes/jazz.css"/>
 
-    <link rel="stylesheet" href="/css/mesysPager.css" type="text/css" />
 
     <!-- ============================================================= -->
     <!--<link rel="stylesheet" href="/css/responsive.css" type="text/css" />-->

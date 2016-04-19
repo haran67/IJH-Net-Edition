@@ -16,50 +16,6 @@
     <script type="text/javascript" src="/js/maxlength/jquery.maxlength.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap-switch.min.js"></script>
     <script type="text/javascript" src="/js/jquery.cropit.js"></script>
-    
-    <style>
-        
-      .cropit-preview {
-        background-color: #f8f8f8;
-        background-size: cover;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        margin-top: 7px;
-      }
-
-      /* Hide file input */
-        input.cropit-image-input {
-          visibility: hidden;
-        }
-      .cropit-preview-image-container {
-        cursor: move;
-        width:100%;
-      }
-      .cropit-preview-image
-      {
-          max-width:none!Important;
-      }
-
-        /* Translucent background image */
-        .cropit-preview-background {
-          opacity: .2;
-          max-width:none!Important;
-        }
-
-        /*
-         * If the slider or anything else is covered by the background image,
-         * use relative or absolute position on it
-         */
-        input.cropit-image-zoom-input {
-          position: relative;
-        }
-
-        /* Limit the background image by adding overflow: hidden */
-        #image-cropper {
-          overflow: hidden;
-        }
-        
-    </style>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
@@ -419,38 +375,37 @@
                         <!-- Profilo Pubblico -->
                         <div id="div_profilo_pubblico" runat="server">
                             <div class="col_half" id="ready" style="margin-bottom: 0px;">
-                                <div class="col_full">
+                                <div class="col_full divcenter center">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
-                                </div>
-                                <div class="col_half">
-                                    <asp:ImageButton ID="img_avatar" CssClass="thumbnail" runat="server" style="max-width: 220px; max-height: 220px;" />
-                                </div>
-                                <div class="col_half col_last">
-                                    <a href="#" onClick="openCrop(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
-                                        id="btn_carica_avatar" runat="server">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>
-                                        <span><i class="icon-camera"></i></span>
-                                    </a>
-                                    <asp:LinkButton ID="btn_cancella_foto" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
-                                    </asp:LinkButton><br>
+                                    <div style="position: relative">
+                                        <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" style="display: inline-block;margin: 0 !important;" />
+                                        
+                                        <a href="#" onClick="openCrop(); return false;" class="image-action" data-toggle="modal" data-target="" id="btn_carica_avatar" runat="server">
+                                            <!--<%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
+                                                <span><i class="icon-camera"></i></span>
+                                        </a>
+                                        <asp:LinkButton ID="btn_cancella_foto" class="image-action" runat="server" >
+                                            <!--<%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>-->
+                                                <i class="icon-remove"></i>
+                                        </asp:LinkButton>
+                                    </div>
                                     <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 250*250 pixel</i></small>
                                 </div>
-                                <div class="col_full">
+                                <div class="col_full divcenter center">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
-                                </div>
-                                <div class="col_half" id="div_pp_image" runat="server">
-                                    <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="width: 100%; max-height: 200px;" />
-                                </div>
-                                <div class="col_half col_last" id="div_pp_cancella" runat="server">
-                                    <a href="#" onClick="openCropPub(); return false;" data-toggle="modal" data-target="" class="button button-rounded button-primary button-mini nomargin" 
-                                        id="btn_carica_pubblica" runat="server">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>
-                                        <span><i class="icon-camera"></i></span>
-                                    </a>
-                                    <asp:LinkButton ID="btn_cancella_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger button-mini nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>&nbsp;<i class="icon-ok-sign"></i>
-                                    </asp:LinkButton><br>
+                                    <div style="position: relative" id="div_pp_cancella" runat="server">
+                                        <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="display: inline-block; margin: 0; width: 100%;" />
+                                        
+                                        <a href="#" onClick="openCropPub(); return false;" class="image-action" data-toggle="modal" data-target="" 
+                                            id="btn_carica_pubblica" runat="server">
+<!--                                            <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
+                                            <span><i class="icon-camera"></i></span>
+                                        </a>
+                                        <asp:LinkButton ID="btn_cancella_profilo_pubblico" class="image-action" runat="server">
+<!--                                            <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>-->
+                                            <i class="icon-remove"></i>
+                                        </asp:LinkButton>
+                                    </div>
                                     <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>
                                 </div>
                             </div>
@@ -632,9 +587,9 @@
     </asp:UpdatePanel>
     <asp:LinkButton ID="btn_salva_immagini_hidden" runat="server" style="display:none;" />
     <div class="modal fade bs-example-modal-lg crop_avatar" tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog" style="max-width: 350px;">
             <div class="modal-body">
-                <div class="modal-content">
+                <div class="modal-content" style="max-width: 300px;">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title" id="H1">Caricamento Immagine avatar</h4>
@@ -643,21 +598,25 @@
                         <div class="col_full center">
                             <div id="image-avatar">
                                 <input type="file" class="cropit-image-input" id="cropit-image-input">
-                                <div class="cropit-preview" style="width: 250px; height: 250px;">
+                                <div class="cropit-preview" style="width: 250px; height: 250px; margin: 10px auto">
                                 </div>
-                                <div class="image-size-label">
+                                <div class="image-size-label hidden">
                                     Ridimensiona immagine
                                 </div>
-                                <input type="range" class="cropit-image-zoom-input">
-                                <button class="rotate-ccw" id="rotate-ccw-avatar">
-                                    Ruota antiorario</button>
-                                <button class="rotate-cw" id="rotate-cw-avatar">
-                                    Ruota orario</button>
+                                <div class="slider-wrapper">
+                                    <span class="icon icon-image small-image"></span>
+                                    <input type="range" value="0" class="cropit-image-zoom-input">
+                                    <span class="icon icon-image large-image"></span>
+                                </div>
+                                <div class="rotate-wrapper">
+                                    <i class="icon-fontello-rotate-ccw" id="rotate-ccw-avatar"></i>
+                                    <i class="icon-fontello-rotate-cw" id="rotate-cw-avatar"></i>
+                                </div>
                             </div>
                         </div> 
                         <div class="col_full nobottommargin">
-                            <asp:LinkButton ID="btn_salva_avatar" runat="server" CssClass="button btn-block button-rounded center nomargin" OnClientClick="exportCrop(); $('.crop_avatar').modal('hide'); return false;">
-                                SALVA IMMAGINE
+                            <asp:LinkButton ID="btn_salva_avatar" runat="server" CssClass="button btn-block button-success button-rounded center nomargin" OnClientClick="exportCrop(); $('.crop_avatar').modal('hide'); return false;">
+                                Salva immagine
                             </asp:LinkButton>
                         </div> 
                     </div>
@@ -679,19 +638,26 @@
                                 <input type="file" class="cropit-image-input" id="cropit-image-input-public">
                                 <div class="cropit-preview" style="width: 800px; height: 400px;">
                                 </div>
-                                <div class="image-size-label">
+                                <div class="image-size-label hidden">
                                     Ridimensiona immagine
                                 </div>
-                                <input type="range" class="cropit-image-zoom-input">
-                                <button class="rotate-ccw" id="rotate-ccw-public">
-                                    Ruota antiorario</button>
-                                <button class="rotate-cw" id="rotate-cw-public">
-                                    Ruota orario</button>
+                                
+                                <div class="slider-wrapper">
+                                    <span class="icon icon-image small-image"></span>
+                                    <input type="range" value="0" class="cropit-image-zoom-input">
+                                    <span class="icon icon-image large-image"></span>
+                                </div>
+                                
+                                
+                                <div class="rotate-wrapper">
+                                    <i class="icon-fontello-rotate-ccw" id="rotate-ccw-public"></i>
+                                    <i class="icon-fontello-rotate-cw" id="rotate-cw-public"></i>
+                                </div>
                             </div>
                         </div> 
                         <div class="col_full nobottommargin">
-                            <asp:LinkButton ID="btn_salva_pubblica" runat="server" CssClass="button btn-block button-rounded center nomargin" OnClientClick="exportCropPublic(); $('.crop_public').modal('hide'); return false;">
-                                SALVA IMMAGINE
+                            <asp:LinkButton ID="btn_salva_pubblica" runat="server" CssClass="button btn-block button-success button-rounded center nomargin" OnClientClick="exportCropPublic(); $('.crop_public').modal('hide'); return false;">
+                                Salva immagine
                             </asp:LinkButton>
                         </div> 
                     </div>
@@ -727,8 +693,10 @@
 
         function Init_Crop_Avatar(){
 
-            $('#image-avatar').cropit({ imageBackground: false });
-            $('#image-public').cropit({ imageBackground: false });
+            $('#image-avatar').cropit({ imageBackground: false, initialZoom: 'min' });
+            $('#image-public').cropit({ imageBackground: false, initialZoom: 'min', imageState: {
+                src: 'http://lorempixel.com/500/400/',
+            } });
 
             $('#rotate-cw-avatar').click(function() {
               $('#image-avatar').cropit('rotateCW');

@@ -10,12 +10,12 @@
             <div class="container clearfix">
                 <h2 class="color">Streaming</h2>
                 <h4>Ciascun utente con profilo Expo potr&agrave; organizzare eventi in diretta streaming (concerti, prove, lezioni di musica, etc) promossi in esclusiva per gli utenti di Jazz Hub connessi da tutto il mondo: significher&agrave; produrre, vivere e condividere esperienze uniche e irripetibili.</h4>
-                <div class="section-cover streaming divcenter hidden nomargin"></div>
-                <iframe width="450" height="350" src="https://www.streamera.tv/channel/57908/default/iframe/" frameborder="0" allowfullscreen></iframe>
+                <div class="section-cover streaming divcenter hidden"></div>
             </div>
         </div>
-        <div class="section alt nomargin center hidden">
+        <div class="section alt nomargin center">
             <div class="container clearfix">
+                <iframe width="450" height="350" src="https://www.streamera.tv/channel/57908/default/iframe/" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
