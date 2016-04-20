@@ -378,7 +378,7 @@
                                 <div class="col_full divcenter center">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
                                     <div style="position: relative">
-                                        <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" style="display: inline-block;margin: 0 !important;" />
+                                        <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" style="max-width: 248px; max-height: 248px; display: inline-block;margin: 0 !important;" />
                                         
                                         <a href="#" onClick="openCrop(); return false;" class="image-action" data-toggle="modal" data-target="" id="btn_carica_avatar" runat="server">
                                             <!--<%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
