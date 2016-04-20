@@ -92,12 +92,38 @@
                 </asp:Repeater>
             </div>
             <div class="clear"></div>
-            <div class="row" style="margin-top: 10px;">
-                <div class="col-lg-12">
-                    <pager:MesysPager ID="pager" runat="server" OnCommand="pager_Command" PageClause="Pagina"
-                        OfClause="di" GenerateGoToSection="false" GenerateToolTips="false" PageSize="3"
-                        Visible="false" />
-                </div>
+            <div class="col_full">
+                <pager:MesysPager ID="pager" runat="server" OnCommand="pager_Command" PageClause="Pagina"
+                    OfClause="di" GenerateGoToSection="false" GenerateToolTips="false" PageSize="3"
+                    Visible="false" />
+                <table cellpadding="3" cellspacing="1" border="0" class="PagerContainerTable hidden">
+                    <tbody><tr>
+                        <td class="PagerInfoCell">Pagina 1 di 2</td><td class="PagerCurrentPageCell"><span class="PagerHyperlinkStyle"><strong> 1 </strong></span></td><td class="PagerOtherPageCells"><a class="PagerHyperlinkStyle" href="javascript:__doPostBack('ctl00$content$pager','2')"> 2 </a></td><td class="PagerOtherPageCells"><a class="PagerHyperlinkStyle" href="javascript:__doPostBack('ctl00$content$pager','2')" title=" Avanti alla pagina 2"> &gt; </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col_full hidden">
+                <ul class="pagination">
+                    <li><a href="#"><<</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">>></a></li>
+                </ul>
             </div>
         </div>
     </div>

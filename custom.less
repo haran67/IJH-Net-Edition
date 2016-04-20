@@ -1899,3 +1899,41 @@ input[type="range"]::-webkit-slider-thumb {
         }
     }
 }
+
+/* override pager */
+
+.PagerContainerTable {
+    border-radius: 25px;
+    display: inline-block;
+    margin: 50px 0 0 0;
+    border: none;
+    box-shadow: 0 0 0 1px #eaeaea;
+    td {
+        border-top: none;
+        border-bottom: none;
+    }
+    td:first-child {
+        paddin-left: 16px;
+        border-radius: 25px 0 0 25px;
+        border: none;
+        border-right: #eaeaea;
+    }
+    td:last-child {
+        padding-right: 16px;
+        border-radius: 0 25px 25px 0;
+        border: none;
+        border-left: #eaeaea;
+    }
+    .PagerInfoCell, .PagerCurrentPageCell, .PagerOtherPageCells {
+        font-family: 'Lato', sans-serif;
+        padding: 6px 13px;
+    }
+    span.PagerHyperlinkStyle:hover {
+        color: #fff !important;
+        font-size: 14px !important;
+    }
+    a.PagerHyperlinkStyle:hover {
+        color: #337ab7 !important;
+        font-size: 11px !important;
+    }
+}
