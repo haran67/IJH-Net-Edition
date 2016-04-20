@@ -1,4 +1,4 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -70,8 +70,8 @@
                 <div class="container clearfix">
                     <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
                     <div id="logo">
-                        <a href="/index.aspx" class="standard-logo" data-dark-logo="/images/logo-dark.png"><img src="/images/logo.png" alt="Canvas Logo"></a>
-                        <a href="/index.aspx" class="retina-logo" data-dark-logo="/images/logo-dark@2x.png"><img src="/images/logo@2x.png" alt="Canvas Logo"></a>
+                        <a href="/index.aspx" class="standard-logo" id="a_logo_s" runat="server"><img alt="Canvas Logo" id="img_logo_s" runat="server"></a>
+                        <a href="/index.aspx" class="retina-logo" id="a_logo_r" runat="server"><img alt="Canvas Logo" id="img_logo_r" runat="server"></a>
                     </div>
                     <nav id="primary-menu">
                         <ul>
@@ -187,7 +187,7 @@
                 <div class="footer-widgets-wrap clearfix" style="padding: 40px 0">
                     <div class="row clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
                         <div class="col_one_fifth">
-                            <img src="/images/footer-widget-logo.png" alt="Italian Jazz Hub logo footer" style="margin-top: 5px">
+                            <img src="/images/footer-widget-logo.png" alt="Italian Jazz Hub logo footer" style="margin-top: 5px" id="img_logo_footer" runat="server">
                         </div>
                         <div class="col_one_fifth" style="font-size: 12px;">
                             <h4 class="nomargin">IMF Foundation</h4>
