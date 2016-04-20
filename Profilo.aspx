@@ -377,7 +377,7 @@
                             <div class="col_half" id="ready" style="margin-bottom: 0px;">
                                 <div class="col_full divcenter center">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
-                                    <div style="position: relative">
+                                    <div class="divcenter" style="position: relative; width: 248px; height: 248px;">
                                         <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" style="max-width: 248px; max-height: 248px; display: inline-block;margin: 0 !important;" />
                                         
                                         <a href="#" onClick="openCrop(); return false;" class="image-action" data-toggle="modal" data-target="" id="btn_carica_avatar" runat="server">
@@ -389,7 +389,7 @@
                                                 <i class="icon-remove"></i>
                                         </asp:LinkButton>
                                     </div>
-                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 250*250 pixel</i></small>
+<!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 250*250 pixel</i></small>-->
                                 </div>
                                 <div class="col_full divcenter center">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
@@ -406,7 +406,7 @@
                                             <i class="icon-remove"></i>
                                         </asp:LinkButton>
                                     </div>
-                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>
+<!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>-->
                                 </div>
                             </div>
                             <div class="col_half col_last">
