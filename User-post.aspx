@@ -9,15 +9,17 @@
     <section class="page-title" style="padding: 20px 0;background-color: #fff;/*background: url('<%=user_background%>') no-repeat top center; background-size: cover;*/">
         <div class="container clearfix">
             <div class="profile-header" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
-                <div data-class-lg="fleft" data-class-md="fleft" data-class-sm="nofloat" data-class-xs="nofloat" data-class-xxs="nofloat">
+                <div style="position: relative" data-class-lg="fleft" data-class-md="fleft" data-class-sm="nofloat" data-class-xs="nofloat" data-class-xxs="nofloat">
                     <asp:Image ID="img_utente" runat="server"  data-class-lg="" data-class-md="" data-class-sm="nomargin" data-class-xs="nomargin" data-class-xxs="nomargin" />
+                    <div style="position: absolute; top: -3px; left: -3px;">
+                        <i class="i-circled i-small i-light icon-facetime-video fright  nomargin" id="i_expo" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
+                        <i class="i-circled i-small i-light icon-eye-open fright  nomargin" id="i_view" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
+                        <i class="i-circled i-small i-light icon-coffee2 fright  nomargin" id="i_guest" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
+                    </div>
                 </div>
-                <div data-class-lg="fleft" data-class-md="fleft" data-class-sm="nofloat" data-class-xs="nofloat" data-class-xxs="nofloat">
+                <divdata-class-lg="fleft" data-class-md="fleft" data-class-sm="nofloat" data-class-xs="nofloat" data-class-xxs="nofloat">
                     <h1>
                         <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>&nbsp;
-                        <i class="i-circled i-small i-light icon-facetime-video fright i-vetrina nomargin" id="i_expo" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"></i> 
-                        <i class="i-circled i-small i-light icon-eye-open fright i-vetrina nomargin" id="i_view" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"></i> 
-                        <i class="i-circled i-small i-light icon-coffee2 fright i-vetrina nomargin" id="i_guest" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"></i>
                         <span class="visible-xs visible-sm visible-md visible-lg">
                             <strong style="font-weight: 400;"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong><asp:Literal ID="ltl_trattino_where" runat="server"> -</asp:Literal>&nbsp;<asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
                         </span>
