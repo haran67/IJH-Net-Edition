@@ -37,7 +37,7 @@
                         </li>
                         <li style="padding-top:5px;">
                             <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control custom-input"
-                                         Placeholder="Nome/Luogo, poi invio"></asp:TextBox>
+                                         Placeholder="nome o luogo, poi invio"></asp:TextBox>
                         </li>
                     </ul>
                 </nav>

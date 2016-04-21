@@ -243,12 +243,13 @@ serif;
 
 .btn-main-search {
     display: inline-block;
-    padding: 5px 10px;
-    margin-top: 10px;
-    font-size: 20px;
+    padding: 15px;
+    margin-top: 10px !important;
+    font-size: 15px;
     line-height: 1em;
-    font-size: 18px;
     opacity: 0.75;
+    background: rgba(0,0,0,.05);
+    border-radius: 50%;
     &:hover {
         opacity: 1;
     }
@@ -1863,7 +1864,7 @@ input[type="range"]::-webkit-slider-thumb {
     top: 0;
     left: 0;
     color: rgba(255, 255, 255, .75);
-    text-shadow: 0 0 2px #000;
+    //text-shadow: 0 0 2px #000;
     i {
         display: block;
         position: absolute;
@@ -1872,16 +1873,26 @@ input[type="range"]::-webkit-slider-thumb {
         left: 0;
         bottom: 0;
         right: 0;
-        width: 40px;
-        height: 40px;
-        font-size: 40px;
+        width: 60px;
+        height: 60px;
+        font-size: 60px;
         line-height: 1em;
     }
     &:hover {
         color: rgba(255, 255, 255, 1)
     }
+    &.inverse {
+        color: rgba(0,0,0, .2);
+        &:hover {
+            color: rgba(0,0,0, .4)
+        }
+    }
 }
 
+/* Show load indicator when image is being loaded */
+.cropit-preview.cropit-image-loading .spinner {
+    opacity: 1;
+}
 
 /* overrive smoke style */
 

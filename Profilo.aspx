@@ -380,7 +380,7 @@
                                     <div class="divcenter" style="position: relative; width: 248px; height: 248px;">
                                         <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" style="max-width: 248px; max-height: 248px; display: inline-block;margin: 0 !important;" />
                                         
-                                        <a href="#" onClick="openCrop(); return false;" class="image-action" data-toggle="modal" data-target="" id="btn_carica_avatar" runat="server">
+                                        <a href="#" onClick="openCrop(); return false;" class="image-action inverse" data-toggle="modal" data-target="" id="btn_carica_avatar" runat="server">
                                             <!--<%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
                                                 <span><i class="icon-camera"></i></span>
                                         </a>
@@ -396,7 +396,7 @@
                                     <div style="position: relative" id="div_pp_cancella" runat="server">
                                         <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="display: inline-block; margin: 0; width: 100%;" />
                                         
-                                        <a href="#" onClick="openCropPub(); return false;" class="image-action" data-toggle="modal" data-target="" 
+                                        <a href="#" onClick="openCropPub(); return false;" class="image-action inverse" data-toggle="modal" data-target="" 
                                             id="btn_carica_pubblica" runat="server">
 <!--                                            <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
                                             <span><i class="icon-camera"></i></span>
