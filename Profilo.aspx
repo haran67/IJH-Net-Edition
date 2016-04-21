@@ -16,7 +16,7 @@
     <script type="text/javascript" src="/js/maxlength/jquery.maxlength.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap-switch.min.js"></script>
     <script type="text/javascript" src="/js/jquery.cropit.js"></script>
-
+    <script type="text/javascript" src="/js/jquery.actual.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
@@ -634,9 +634,9 @@
                     </div>
                     <div class="modal-body">
                         <div class="col_full center">
-                            <div id="image-public">
+                            <div id="image-public" style="width:100%; height:100%">
                                 <input type="file" class="cropit-image-input" id="cropit-image-input-public">
-                                <div class="cropit-preview" style="width: 800px; height: 400px;">
+                                <div class="cropit-preview" style="width:100%; height:400px;" id="cropit-public">
                                 </div>
                                 <div class="image-size-label hidden">
                                     Ridimensiona immagine
@@ -694,9 +694,17 @@
         function Init_Crop_Avatar(){
 
             $('#image-avatar').cropit({ imageBackground: false, initialZoom: 'min' });
-            $('#image-public').cropit({ imageBackground: false, initialZoom: 'min', imageState: {
-                src: 'http://lorempixel.com/500/400/',
-            } });
+            $('#image-public').cropit(
+            { 
+                imageBackground: false, 
+                initialZoom: 'min',
+                onImageLoaded: function() {
+                    //var cw = $('#cropit-public').width();
+                    //alert(cw);
+                    //$('#cropit-public').css({'height':cw/2 + 'px'});
+                    resizeHandler();
+                }
+            });
 
             $('#rotate-cw-avatar').click(function() {
               $('#image-avatar').cropit('rotateCW');
@@ -722,6 +730,10 @@
             Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
         });
 
+        $(window).load(function () {
+
+        });
+
         function endRequestHandler(sender, args) {
             reinit_js();
         }
@@ -732,6 +744,8 @@
         }
 
         function openCropPub() {
+            var cw = $('#image-public').actual('width')
+            $('#cropit-public').css({'height':cw/2 + 'px'});
             $('.crop_public').modal('show');
             $('#cropit-image-input-public').click();
         }
@@ -760,6 +774,26 @@
                 });
         }
         
+
+        function resizeHandler()
+        {
+            /**
+             * Adjust the size of the preview area to be 100% of the image cropper container
+             */
+            if ( $('#image-public') )
+            {
+                var finalWidth  = 800, // The desired width for final image output
+                    finalHeight = 400, // The desired height for final image output
+                    sizeRatio   = finalHeight / finalWidth,
+                    newWidth    = $('#image-public').width(),
+                    newHeight   = newWidth * sizeRatio,
+                    newZoom     = finalWidth / newWidth;
+                $('#image-public').cropit('previewSize', { width: newWidth, height: newHeight });
+                $('#image-public').cropit('exportZoom', newZoom);
+                //alert(newWidth);
+            }
+        }
+
     </script>
         
 </asp:Content>
