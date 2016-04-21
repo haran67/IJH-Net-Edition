@@ -67,7 +67,7 @@
         </div>
         <div class="vertical-middle center text-shadow" style="z-index: 5">
             <div class="emphasis-title title-center nomargin">
-                <h2 class="nopadding" style="font-weight: 200 font-size: 50px"><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></h2>
+                <h2 class="nopadding" style="font-weight: 200; font-size: 50px"><%=Lingua.CaricaLingua("lgl_index_benvenuto")%></h2>
                 <h3 class="citazione">
                     <strong>Jazz Hub</strong> 
                     <%=Lingua.CaricaLingua("lgl_index_benvenuto_desc")%>
