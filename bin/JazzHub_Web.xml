@@ -118,14 +118,6 @@ img_utente control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.User_post.ltl_nominativo">
-	<summary>
-ltl_nominativo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.User_post.i_expo">
 	<summary>
 i_expo control.
@@ -145,6 +137,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.User_post.i_guest">
 	<summary>
 i_guest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.User_post.ltl_nominativo">
+	<summary>
+ltl_nominativo control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -174,9 +174,9 @@ ltl_citta control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.User_post.a_web">
+</member><member name="F:JazzHub_Web.User_post.a_phone">
 	<summary>
-a_web control.
+a_phone control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -190,17 +190,17 @@ a_email control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.User_post.rpt_social">
+</member><member name="F:JazzHub_Web.User_post.a_web">
 	<summary>
-rpt_social control.
+a_web control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.User_post.a_phone">
+</member><member name="F:JazzHub_Web.User_post.rpt_social">
 	<summary>
-a_phone control.
+rpt_social control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -297,6 +297,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.User_post.rpt_annunci">
 	<summary>
 rpt_annunci control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.User_post.txt_ricerca">
+	<summary>
+txt_ricerca control.
 </summary>
 	<remarks>
 Auto-generated field.

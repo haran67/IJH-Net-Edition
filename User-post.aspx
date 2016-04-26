@@ -139,10 +139,16 @@
                         <ItemTemplate>
                         </ItemTemplate> 
                     </asp:Repeater> 
-                    <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-user3 i-vetrina nomargin"></i> 
-                    Cerca  altri utenti</h4>
-                    <div class="divider divider-rounded divider-center" data-class-lg="hidden" data-class-md="hidden" data-class-sm="hidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-user3" style="background-color: rgba(0,0,0,.1)"></i></div>
-                    <input name="ctl00$body$txt_ricerca" type="text"  id="body_txt_ricerca" class="form-control custom-input" placeholder="Cerca per nome o luogo" style="width: 80%; float: left;">
+                    <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden"
+                        data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
+                        <i class="i-circled i-light i-small icon-user3 i-vetrina nomargin"></i>
+                            <%=Lingua.CaricaLingua("lgl_user_post_cerca")%></h4>
+                    <div class="divider divider-rounded divider-center" data-class-lg="hidden" data-class-md="hidden"
+                        data-class-sm="hidden" data-class-xs="nothidden" data-class-xxs="nothidden">
+                        <i class="icon-user3" style="background-color: rgba(0,0,0,.1)"></i>
+                    </div>
+                    <asp:TextBox ID="txt_ricerca" runat="server" AutoPostBack="true" CssClass="form-control custom-input"
+                                    Placeholder="nome o luogo, poi invio" style="width: 80%; float: left;"></asp:TextBox>
                     <a href="#" class="btn-search"><i class="icon-search"></i></a>
                 </div>
                 <div class="clear"></div>
