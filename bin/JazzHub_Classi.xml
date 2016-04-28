@@ -6,9 +6,9 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Vs_appuntamenti_utente_Base">
+<member name="T:JazzHub_Classi.Oggetti.Tab_nazioni_Base">
 	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella VS_APPUNTAMENTI_UTENTE
+ Classe utilizzata per l'astrazione dei dati della tabella TAB_NAZIONI
  </summary>
 </member><member name="T:JazzHub_Classi.Controls.DDLReadOnly">
 	<summary>
@@ -233,6 +233,10 @@ JazzHub_Classi
 </member><member name="T:JazzHub_Classi.Oggetti.Utenti_social_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella UTENTI_SOCIAL
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Vs_appuntamenti_utente_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella VS_APPUNTAMENTI_UTENTE
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Categorie_Base">
 	<summary>

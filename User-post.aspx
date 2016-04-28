@@ -21,7 +21,9 @@
                     <h1>
                         <asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal>&nbsp;
                         <span class="visible-xs visible-sm visible-md visible-lg">
-                            <strong style="font-weight: 400;"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong><asp:Literal ID="ltl_trattino_where" runat="server"> -</asp:Literal>&nbsp;<asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
+                            <strong style="font-weight: 400;"><asp:Literal ID="ltl_categoria" runat="server"></asp:Literal></strong>
+                            <asp:Literal ID="ltl_trattino_where" runat="server">&nbsp;-&nbsp;</asp:Literal>&nbsp;<asp:Literal ID="ltl_citta" runat="server"></asp:Literal>
+                            &nbsp;<small><asp:Literal ID="ltl_nazionalita" runat="server"></asp:Literal></small>
                         </span>
                     </h1>
                     <h4 class="user-social nobottommargin">

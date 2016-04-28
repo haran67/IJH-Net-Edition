@@ -307,9 +307,8 @@
                                         CssClass="form-control" Form_Vertical="true" />
                                 </div>
                                 <div class="col_full" style="margin-bottom: 0px;">
-                                    <label for="chk_stato_estero">
-                                        <%=Lingua.CaricaLingua("lgl_register_indirizzo_estero")%></label>
-                                    <asp:CheckBox ID="chk_stato_estero" runat="server" AutoPostBack="true" />
+                                    <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" AutoPostBack="true" 
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col_one_third" id="div_provincia" runat="server" style="margin-bottom: 0px;">
                                     <cc:rDropDown ID="ddl_provincia" runat="server" CssClass="form-control" AutoPostBack="true"
@@ -333,10 +332,6 @@
                                 <div class="col_two_third col_last" id="div_localita" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_localita" runat="server" MaxLength="128" CssClass="form-control"
                                         Form_Vertical="true" />
-                                </div>
-                                <div class="col_full" id="div_stato_estero" runat="server" style="margin-bottom: 0px;">
-                                    <cc:rTextBox ID="txt_stato_estero" name="txt_localita" runat="server" MaxLength="128"
-                                        CssClass="form-control" Form_Vertical="true" />
                                 </div>
                                 <div class="col_full" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_indirizzo" name="txt_indirizzo" runat="server" MaxLength="255"

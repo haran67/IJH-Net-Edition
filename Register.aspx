@@ -96,8 +96,11 @@
                                                     <cc:rTextBox ID="txt_cognome" runat="server" MaxLength="70" CssClass="form-control"
                                                         Form_Vertical="true" Required="false" />
                                                 </div>
-                                                <div class="col_full" style="margin-bottom: 0px;" id="div_ruolo">
+                                                <div class="col_half" style="margin-bottom: 0px;" id="div_ruolo">
                                                     <cc:rDropDown ID="ddl_tipo_utente" runat="server" CssClass="form-control" Form_Vertical="true" />
+                                                </div>
+                                                <div class="col_half col_last" style="margin-bottom: 0px;" id="div_nazione">
+                                                    <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" AutoPostBack="true" Form_Vertical="true" />
                                                 </div>
                                                 <div class="col_full" style="margin-bottom: 0px;">
                                                     <cc:rTextBox ID="txt_email" runat="server" MaxLength="100" CssClass="form-control"
@@ -168,18 +171,6 @@
                                                                     CssClass="form-control" Form_Vertical="true" />
                                                             </div>
                                                             <div class="clearfix">
-                                                                <div class="col_half nobottommargin">
-                                                                    <div class="text-lg-left text-md-left text-sm-left  text-xs-center">
-                                                                        <label for="chk_stato_estero"><%=Lingua.CaricaLingua("lgl_register_indirizzo_estero")%> <i class="hidden-xs icon-arrow-right2"></i></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col_half col_last nobottommargin">
-                                                                    <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
-                                                                        <asp:CheckBox ID="chk_stato_estero" runat="server" AutoPostBack="true" />
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="clearfix">
                                                                 <div class="col_half" id="div_provincia" runat="server" style="margin-bottom: 0px;">
                                                                     <cc:rDropDown ID="ddl_provincia" runat="server" CssClass="form-control" AutoPostBack="true"
                                                                         Form_Vertical="true" />
@@ -203,10 +194,6 @@
                                                             <div class="col_two_third col_last" id="div_localita" runat="server" style="margin-bottom: 0px;">
                                                                 <cc:rTextBox ID="txt_localita" runat="server" MaxLength="128" CssClass="form-control"
                                                                     Form_Vertical="true" />
-                                                            </div>
-                                                            <div class="col_two_third col_last" id="div_stato_estero" runat="server" style="margin-bottom: 0px;">
-                                                                <cc:rTextBox ID="txt_stato_estero" name="txt_localita" runat="server" MaxLength="128"
-                                                                    CssClass="form-control" Form_Vertical="true" />
                                                             </div>
                                                             <div class="col_full" style="margin-bottom: 0px;">
                                                                 <cc:rTextBox ID="txt_indirizzo" name="txt_indirizzo" runat="server" MaxLength="255"
