@@ -58,11 +58,16 @@
                         
                         <!-- tab di navigazione -->
                         <ul class="nav nav-tabs" style="margin-bottom: 30px;">
+<!--
                             <li class="active" id="li_riepilogo" runat="server">
                                 <asp:LinkButton ID="btn_resume" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_riepilogo")%></asp:LinkButton>
                             </li>
-                            <li id="li_profilo" runat="server">
-                                <asp:LinkButton ID="btn_modifica" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo")%></asp:LinkButton>
+-->                         
+                            <li id="li_when" runat="server">
+                                <asp:LinkButton ID="btn_profilo_when" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_when")%></asp:LinkButton>
+                                    </li>
+                            <li id="li_disp" runat="server">
+                                <asp:LinkButton ID="btn_profilo_disp" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_disp")%></asp:LinkButton>
                             </li>
                             <li id="li_video" runat="server">
                                 <asp:LinkButton ID="btn_gestione_video" runat="server"></asp:LinkButton>
@@ -70,16 +75,13 @@
                             <li id="li_pubblico" runat="server">
                                 <asp:LinkButton ID="btn_profilo_pubblico" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_pubblico")%></asp:LinkButton>
                             </li>
-                            <li id="li_when" runat="server">
-                                <asp:LinkButton ID="btn_profilo_when" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_when")%></asp:LinkButton>
-                            </li>
-                            <li id="li_disp" runat="server">
-                                <asp:LinkButton ID="btn_profilo_disp" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_disp")%></asp:LinkButton>
+                            <li id="li_profilo" runat="server">
+                                <asp:LinkButton ID="btn_modifica" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo")%></asp:LinkButton>
                             </li>
                         </ul>
                         <!-- FINE tab di navigazione -->
                             
-                        <!-- Riepilogo -->
+                        <!-- Riepilogo CANCELLATO! -->
                         <div id="div_espositore" runat="server">
                             <div class="col_half">
                                 <div class="col-md-6 center" data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
@@ -199,30 +201,28 @@
                         
                         <!-- Gestione Video -->
                         <div id="div_gestione_video" runat="server">
-                            <h4><%=Lingua.CaricaLingua("lgl_profilo_tuoi_video")%></h4>
                             <asp:Repeater ID="rpt_video" runat="server">
                                 <ItemTemplate>
-                                    <div class="col_full learfix">
+                                    <div class="col_full clearfix">
                                         <div class="col_two_fifth nobottommargin">
                                             <div style="position: absolute; top: 10px; left: 15px">
                                                 <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="noleftmargin button button-mini button-rounded" runat="server">
                                                     <%=Lingua.CaricaLingua("lgl_profilo_visualizza")%>
                                                 </asp:LinkButton>
                                             </div>
-                                            <asp:Image ID="img_copertina" runat="server"/>
+                                            <div class="thumbnail"><asp:Image ID="img_copertina" runat="server"/></div>
                                         </div>
                                         <div class="col_three_fifth col_last nobottommargin">
                                             <h3 class="nomargin nopadding"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <p><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
+                                            <p style="max-height: 50px; overflow: auto"><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
                                             <div class="col_half nobottommargin">
                                                 <ul class="iconlist">
                                                     <li><i class="icon-thumbs-up"></i> <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_likes")%></li>
                                                     <li><i class="icon-eye"></i>  <asp:Literal ID="ltl_like" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></li>
                                                     <li><i class="icon-comment"></i> <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_commenti")%></li>
                                                 </ul>
-                                                
                                                 <div class="clear"></div>
-                                                <asp:LinkButton ID="btn_modifica" runat="server" CssClass="noleftmargin button button-mini button-rounded button-green" CommandName="MOD">
+                                                <asp:LinkButton ID="btn_modifica" runat="server" CssClass="noleftmargin button button-mini button-rounded button-success" CommandName="MOD">
                                                     <span class="icon-edit"></span> <%=Lingua.CaricaLingua("lgl_profilo_modifica")%>
                                                 </asp:LinkButton>
                                                 <asp:LinkButton ID="btn_delete" runat="server" CssClass="noleftmargin button button-mini button-rounded button-danger" CommandName="DEL">
@@ -231,7 +231,6 @@
                                             </div>
                                             <div class="col_half col_last nobottommargin">
                                                 <h4 class="nobottommargin"><%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%></h4>
-                                                
                                                 <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound" OnItemCommand="rpt_like_lista_ItemCommand">
                                                     <HeaderTemplate>
                                                         <div class="panel panel-default divcenter nomargin" style="padding: 10px; height: 150px; overflow: auto">
@@ -247,7 +246,6 @@
                                                     </FooterTemplate>
                                                 </asp:Repeater>
                                             </div>
-<!--                                            </div> -->
                                         </div> 
                                     </div>
                                 </ItemTemplate>
@@ -369,10 +367,11 @@
                                     
                         <!-- Profilo Pubblico -->
                         <div id="div_profilo_pubblico" runat="server">
-                            <div class="col_half" id="ready" style="margin-bottom: 0px;">
-                                <div class="col_full divcenter center">
+                            <div class="col_three_fifth" id="ready" style="margin-bottom: 0px;">
+                                <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
-                                    <div class="divcenter" style="position: relative; width: 248px; height: 248px;">
+                                    <div class="clear"></div>
+                                    <div class="center" style="position: relative; width: 248px; height: 248px;" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter">
                                         <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" style="max-width: 248px; max-height: 248px; display: inline-block;margin: 0 !important;" />
                                         
                                         <a href="#" onClick="openCrop(); return false;" class="image-action inverse" data-toggle="modal" data-target="" id="btn_carica_avatar" runat="server">
@@ -386,9 +385,10 @@
                                     </div>
 <!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 250*250 pixel</i></small>-->
                                 </div>
-                                <div class="col_full divcenter center">
+                                <div class="col_full">
                                     <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
-                                    <div style="position: relative" id="div_pp_cancella" runat="server">
+                                    <div class="clear"></div>
+                                    <div class="center" style="position: relative" id="div_pp_cancella" runat="server">
                                         <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="display: inline-block; margin: 0; width: 100%;" />
                                         
                                         <a href="#" onClick="openCropPub(); return false;" class="image-action inverse" data-toggle="modal" data-target="" 
@@ -403,12 +403,13 @@
                                     </div>
 <!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>-->
                                 </div>
-                            </div>
-                            <div class="col_half col_last">
                                 <div class="col_full" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_descrizione_pubblica" runat="server" MaxLength="70" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" TextMode="MultiLine" Rows="15" />
+                                                 Form_Vertical="true" Required="false" TextMode="MultiLine" Rows="5" />
                                 </div>
+                            </div>
+                            <div class="col_two_fifth col_last">
+                                
                                 <div class="col_full">
                                     <%--<label for="">
                                     <%=Lingua.CaricaLingua("lgl_register_social")%></label>--%>
