@@ -91,7 +91,7 @@
             <div class="center container clearfix">
                 <h4 class="nomargin author" data-animate="fadeInUp" data-delay="300"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h4>
                 <h3 class="nomargin title" data-animate="fadeInUp"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                <a href="#" id="video-slider-audio" class="audio-played">
+                <a href="#" id="video-slider-audio">
                     <i class="icon-mute nomargin"></i>
                     <i class="icon-volume nomargin"></i>
                 </a>
@@ -109,7 +109,7 @@
             </div>
         </div>
         <div class="video-wrap" style="height: 100%; z-index: 1">
-            <video id="slide-video" preload="auto" loop autoplay>
+            <video id="slide-video" preload="auto" loop autoplay muted>
                 <asp:Literal ID="video_tag" runat="server">0</asp:Literal>
                 Your browser does not support the video tag.
             </video>

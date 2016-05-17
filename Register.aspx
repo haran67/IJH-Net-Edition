@@ -100,7 +100,8 @@
                                                     <cc:rDropDown ID="ddl_tipo_utente" runat="server" CssClass="form-control" Form_Vertical="true" />
                                                 </div>
                                                 <div class="col_half col_last" style="margin-bottom: 0px;" id="div_nazione">
-                                                    <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" AutoPostBack="true" Form_Vertical="true" />
+                                                    <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" 
+                                                    AutoPostBack="true" Form_Vertical="true" Required="true" />
                                                 </div>
                                                 <div class="col_full" style="margin-bottom: 0px;">
                                                     <cc:rTextBox ID="txt_email" runat="server" MaxLength="100" CssClass="form-control"
