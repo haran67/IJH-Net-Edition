@@ -510,6 +510,22 @@ ltl_nominativo control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Jazz.div_profilo_pubblico">
+	<summary>
+div_profilo_pubblico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.btn_profilo_pubblico">
+	<summary>
+btn_profilo_pubblico control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Jazz.btn_profilo">
 	<summary>
 btn_profilo control.
