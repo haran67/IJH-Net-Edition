@@ -588,7 +588,7 @@
                 <div class="modal-content" style="max-width: 300px;">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="H1">Caricamento Immagine avatar</h4>
+                        <h4 class="modal-title" id="H1"><%=Lingua.CaricaLingua("lgl_profilo_carica_avatar")%></h4>
                     </div>
                     <div class="modal-body">
                         <div class="col_full center">
@@ -597,7 +597,7 @@
                                 <div class="cropit-preview" style="width: 250px; height: 250px; margin: 10px auto">
                                 </div>
                                 <div class="image-size-label hidden">
-                                    Ridimensiona immagine
+                                    <%=Lingua.CaricaLingua("lgl_profilo_ridimensiona_immagine")%>
                                 </div>
                                 <div class="slider-wrapper">
                                     <span class="icon icon-image small-image"></span>
@@ -612,7 +612,7 @@
                         </div> 
                         <div class="col_full nobottommargin">
                             <asp:LinkButton ID="btn_salva_avatar" runat="server" CssClass="button btn-block button-success button-rounded center nomargin" OnClientClick="exportCrop(); $('.crop_avatar').modal('hide'); return false;">
-                                Salva immagine
+                                <%=Lingua.CaricaLingua("lgl_profilo_salva_immagine")%>
                             </asp:LinkButton>
                         </div> 
                     </div>
@@ -626,7 +626,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="H2">Caricamento Immagine pubblica</h4>
+                        <h4 class="modal-title" id="H2"><%=Lingua.CaricaLingua("lgl_profilo_carica_pubblica")%></h4>
                     </div>
                     <div class="modal-body">
                         <div class="col_full center">
@@ -635,7 +635,7 @@
                                 <div class="cropit-preview" style="width:100%; height:400px;" id="cropit-public">
                                 </div>
                                 <div class="image-size-label hidden">
-                                    Ridimensiona immagine
+                                    <%=Lingua.CaricaLingua("lgl_profilo_ridimensiona_immagine")%>
                                 </div>
                                 
                                 <div class="slider-wrapper">
@@ -653,7 +653,7 @@
                         </div> 
                         <div class="col_full nobottommargin">
                             <asp:LinkButton ID="btn_salva_pubblica" runat="server" CssClass="button btn-block button-success button-rounded center nomargin" OnClientClick="exportCropPublic(); $('.crop_public').modal('hide'); return false;">
-                                Salva immagine
+                                <%=Lingua.CaricaLingua("lgl_profilo_salva_immagine")%>
                             </asp:LinkButton>
                         </div> 
                     </div>
