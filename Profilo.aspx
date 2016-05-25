@@ -21,9 +21,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
         <div class="container clearfix">
-            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>    
-            <ol class="breadcrumb hidden">
-                <li><asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout"></asp:LinkButton></li>
+            <h1 style="font-weight: 400"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>    
+            <ol class="breadcrumb ">
+                <li>12 <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></li>
+                <li>59 <%=Lingua.CaricaLingua("lgl_profilo_likes")%></li>
             </ol>
         </div>
     </section>
@@ -205,46 +206,49 @@
                                 <ItemTemplate>
                                     <div class="col_full clearfix">
                                         <div class="col_two_fifth nobottommargin">
-                                            <div style="position: absolute; top: 10px; left: 15px">
-                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="noleftmargin button button-mini button-rounded" runat="server">
-                                                    <%=Lingua.CaricaLingua("lgl_profilo_visualizza")%>
+                                            <div class="btn-group" style="position: absolute; top: 10px; left:10px;">
+                                                <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="btn btn-primary" runat="server">
+                                                    <span class="icon-line-eye">
+                                                </asp:LinkButton>
+                                                <asp:LinkButton ID="btn_modifica" runat="server" CssClass="btn btn-primary" CommandName="MOD">
+                                                    <span class="icon-edit">
+                                                </asp:LinkButton>
+                                                <asp:LinkButton ID="btn_delete" runat="server" CssClass="btn btn-danger" CommandName="DEL">
+                                                    <span class="icon-line-trash">
                                                 </asp:LinkButton>
                                             </div>
                                             <div class="thumbnail"><asp:Image ID="img_copertina" runat="server"/></div>
                                         </div>
                                         <div class="col_three_fifth col_last nobottommargin">
-                                            <h3 class="nomargin nopadding"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                            <p style="max-height: 50px; overflow: auto"><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
                                             <div class="col_half nobottommargin">
+                                                <h3 class="nomargin nopadding"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                                <p style="max-height: 300px; overflow: auto"><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="col_half col_last nobottommargin">
                                                 <ul class="iconlist">
                                                     <li><i class="icon-thumbs-up"></i> <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_likes")%></li>
                                                     <li><i class="icon-eye"></i>  <asp:Literal ID="ltl_like" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></li>
                                                     <li><i class="icon-comment"></i> <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_commenti")%></li>
                                                 </ul>
                                                 <div class="clear"></div>
-                                                <asp:LinkButton ID="btn_modifica" runat="server" CssClass="noleftmargin button button-mini button-rounded button-success" CommandName="MOD">
-                                                    <span class="icon-edit"></span> <%=Lingua.CaricaLingua("lgl_profilo_modifica")%>
-                                                </asp:LinkButton>
-                                                <asp:LinkButton ID="btn_delete" runat="server" CssClass="noleftmargin button button-mini button-rounded button-danger" CommandName="DEL">
-                                                    <span class="icon-line-trash"></span> <%=Lingua.CaricaLingua("lgl_profilo_elimina")%>
-                                                </asp:LinkButton>
-                                            </div>
-                                            <div class="col_half col_last nobottommargin">
-                                                <h4 class="nobottommargin"><%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%></h4>
-                                                <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound" OnItemCommand="rpt_like_lista_ItemCommand">
-                                                    <HeaderTemplate>
-                                                        <div class="panel panel-default divcenter nomargin" style="padding: 10px; height: 150px; overflow: auto">
-                                                    </HeaderTemplate>
-                                                    <ItemTemplate>
-                                                        <div class="list-group-item clearfix">
-                                                            <asp:LinkButton ID="lnk_utente" runat="server" CommandName="UTE" CssClass="fleft" style="display: inline-block"></asp:LinkButton>
-                                                            <asp:Label ID="ltl_data" runat="server" CssClass="fright" style="display: inline-block"></asp:Label>
-                                                        </div>
-                                                    </ItemTemplate>
-                                                    <FooterTemplate>
-                                                        </div>
-                                                    </FooterTemplate>
-                                                </asp:Repeater>
+                                                <p class="nobottommargin"><%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%>:</p>
+                                                    <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound" OnItemCommand="rpt_like_lista_ItemCommand">
+                                                        <HeaderTemplate>
+                                                            <div class="panel panel-default divcenter nomargin" style="padding: 10px; height: 150px; overflow: auto">
+                                                                </HeaderTemplate>
+                                                            <ItemTemplate>
+                                                                <div class="list-group-item clearfix">
+                                                                    <asp:LinkButton ID="lnk_utente" runat="server" CommandName="UTE" CssClass="fleft" style="display: inline-block"></asp:LinkButton>
+                                                                    <asp:Label ID="ltl_data" runat="server" CssClass="fright" style="display: inline-block"></asp:Label>
+                                                                </div>
+                                                            </ItemTemplate>
+                                                            <FooterTemplate>
+                                                                </div>
+                                                            </FooterTemplate>
+                                                    </asp:Repeater>
                                             </div>
                                         </div> 
                                     </div>

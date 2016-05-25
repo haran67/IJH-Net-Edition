@@ -494,6 +494,26 @@ h5 {
     border: solid 1px lighten(#5cb85c, 1);
 }
 
+.btn-transparent {
+    border:none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.75);
+    &:hover {
+        border: none;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    &:active {
+        border: none;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    * {
+        text-shadow: 0 0 2px rgba(0,0,0,1);
+    }
+    
+}
+
 body {
     //    background: rgb(30, 38, 48) url("images/custom/patch-wallpaper-lines.png") center center;
     background: rgb(30, 38, 48);
