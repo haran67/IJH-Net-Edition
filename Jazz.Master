@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
@@ -158,18 +158,29 @@
                             <div id="top-cart">
                                 <a href="#" id="top-cart-trigger"><i class="icon-user4 hidden"></i><asp:Image ID="img_utente" runat="server" /><span class="hidden"><asp:Literal ID="ltl_count_notifiche" runat="server"></asp:Literal></span></a>
                                 <div class="top-cart-content">
+                                    <div class="top-cart-title">
+                                        <h3 class="nomargin tright"><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h3>
+                                    </div>
                                     <div class="top-cart-items ">
                                         <div class="top-cart-item clearfix">
                                             <div class="top-cart-item-desc">
-                                                <h4 class="nomargin tright"><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h4>
+                                                <asp:Button ID="btn_profilo_pubblico" style="border: none; background: transparent" runat="server" CssClass="nomargin nopadding fright"></asp:Button>
+                                            </div>
+                                        </div>
+                                        <div class="top-cart-item clearfix">
+                                            <div class="top-cart-item-desc">
+                                                <asp:Button ID="btn_profilo" runat="server" style="border: none; background: transparent" CssClass="nomargin nopadding fright"></asp:Button>
+                                            </div>
+                                        </div>
+                                        <div class="top-cart-item clearfix">
+                                            <div class="top-cart-item-desc">
+                                                <a href="#" data-toggle="modal" data-target=".invite" style="border: none; background: transparent" class="nomargin nopadding fright">
+                                                    <%=Lingua.CaricaLingua("lgl_profilo_invita_amico")%>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="top-cart-action clearfix" id="div_profilo_pubblico" runat="server">
-                                        <asp:Button ID="btn_profilo_pubblico" runat="server" CssClass="button button-grey button-mini nomargin fleft"></asp:Button>
-                                    </div> 
                                     <div class="top-cart-action clearfix">
-                                        <asp:Button ID="btn_profilo" runat="server" CssClass="button button-grey button-mini nomargin fleft"></asp:Button>
                                         <asp:Button ID="btn_esci" runat="server" CssClass="button button-primary button-mini nomargin fright"></asp:Button>
                                     </div>
                                 </div>
@@ -280,6 +291,10 @@
                 </div>
             </div>
         </div><!-- #cookie end -->
+                    
+        <!-- share -->
+                    
+        <!-- share end -->
     </div>
     <!-- #wrapper end -->
     <!-- Go To Top
