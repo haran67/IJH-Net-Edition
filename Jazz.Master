@@ -1,5 +1,10 @@
-
+﻿
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
+
+<%@ Register Src="/Controls/rTextBox.ascx" TagName="rTextBox" TagPrefix="cc" %>
+<%@ Register Src="/Controls/rTextData.ascx" TagName="rTextData" TagPrefix="cc" %>
+<%@ Register Src="/Controls/rDropDown.ascx" TagName="rDropDown" TagPrefix="cc" %>
+<%@ Register Src="/Controls/rCheckBox.ascx" TagName="rCheckBox" TagPrefix="cc" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
@@ -162,7 +167,7 @@
                                         <h3 class="nomargin tright"><asp:Literal ID="ltl_nominativo" runat="server"></asp:Literal> </h3>
                                     </div>
                                     <div class="top-cart-items ">
-                                        <div class="top-cart-item clearfix">
+                                        <div class="top-cart-item clearfix" id="div_profilo_pubblico_01" runat="server">
                                             <div class="top-cart-item-desc">
                                                 <asp:Button ID="btn_profilo_pubblico" style="border: none; background: transparent" runat="server" CssClass="nomargin nopadding fright"></asp:Button>
                                             </div>
@@ -172,7 +177,7 @@
                                                 <asp:Button ID="btn_profilo" runat="server" style="border: none; background: transparent" CssClass="nomargin nopadding fright"></asp:Button>
                                             </div>
                                         </div>
-                                        <div class="top-cart-item clearfix">
+                                        <div class="top-cart-item clearfix" id="div_profilo_pubblico_02" runat="server">
                                             <div class="top-cart-item-desc">
                                                 <a href="#" data-toggle="modal" data-target=".invite" style="border: none; background: transparent" class="nomargin nopadding fright">
                                                     <%=Lingua.CaricaLingua("lgl_profilo_invita_amico")%>
@@ -301,6 +306,87 @@
 	============================================= -->
     <div id="gotoTop" class="icon-angle-up">
     </div>
+    <asp:UpdatePanel ID="upd_invita" runat="server">
+        <ContentTemplate>
+            <div class="modal fade bs-example-modal-lg invite" tabindex="-1" role="dialog" aria-labelledby="test"
+                aria-hidden="true" id="modalinvite">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-body">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;</button>
+                                <h4 class="modal-title" id="H1">
+                                    <%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%></h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col_full">
+                                    <h3>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa")%></h3>
+                                    <i>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa_help")%></i>
+                                </div>
+                                <hr>
+                                <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
+                                    visible="false">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                        x</button>
+                                    <i class="fa-lg fa fa-warning"></i><strong>
+                                        <%=Lingua.CaricaLingua("lgl_attenzione")%></strong><asp:Literal ID="ltl_messaggio_ko"
+                                            runat="server"></asp:Literal>
+                                </div>
+                                <div class="alert alert-success alert-dismissable" id="div_message_ok" runat="server"
+                                    visible="false">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                        x</button>
+                                    <strong>
+                                        <asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
+                                </div>
+                                <div class="col_half nobottommargin">
+                                    <cc:rTextBox ID="txt_invita_nome_01" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_half col_last nobottommargin">
+                                    <cc:rTextBox ID="txt_invita_mail_01" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_half nobottommargin">
+                                    <cc:rTextBox ID="txt_invita_nome_02" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_half col_last nobottommargin">
+                                    <cc:rTextBox ID="txt_invita_mail_02" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_half nobottommargin">
+                                    <cc:rTextBox ID="txt_invita_nome_03" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_half col_last nobottommargin">
+                                    <cc:rTextBox ID="txt_invita_mail_03" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_half nobottommargin">
+                                    <cc:rTextBox ID="txt_invita_nome_04" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_half col_last">
+                                    <cc:rTextBox ID="txt_invita_mail_04" runat="server" MaxLength="70" CssClass="form-control"
+                                        Form_Vertical="true" />
+                                </div>
+                                <div class="col_full nobottommargin">
+                                    <asp:LinkButton ID="btn_invita_amoci" runat="server" CssClass="button btn-block button-rounded center nomargin"
+                                        OnClientClick="$('.invite').modal('hide');">
+                                                        <%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%>
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
     <!-- Footer Scripts
 	============================================= -->
     <script type="text/javascript" src="/js/smoke/smoke.js"></script>

@@ -510,9 +510,9 @@ ltl_nominativo control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Jazz.div_profilo_pubblico">
+</member><member name="F:JazzHub_Web.Jazz.div_profilo_pubblico_01">
 	<summary>
-div_profilo_pubblico control.
+div_profilo_pubblico_01 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -529,6 +529,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Jazz.btn_profilo">
 	<summary>
 btn_profilo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.div_profilo_pubblico_02">
+	<summary>
+div_profilo_pubblico_02 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -561,6 +569,118 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Jazz.img_logo_footer">
 	<summary>
 img_logo_footer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.upd_invita">
+	<summary>
+upd_invita control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.div_message_ko">
+	<summary>
+div_message_ko control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.ltl_messaggio_ko">
+	<summary>
+ltl_messaggio_ko control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.div_message_ok">
+	<summary>
+div_message_ok control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.ltl_messaggio_ok">
+	<summary>
+ltl_messaggio_ok control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_nome_01">
+	<summary>
+txt_invita_nome_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_mail_01">
+	<summary>
+txt_invita_mail_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_nome_02">
+	<summary>
+txt_invita_nome_02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_mail_02">
+	<summary>
+txt_invita_mail_02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_nome_03">
+	<summary>
+txt_invita_nome_03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_mail_03">
+	<summary>
+txt_invita_mail_03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_nome_04">
+	<summary>
+txt_invita_nome_04 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.txt_invita_mail_04">
+	<summary>
+txt_invita_mail_04 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.btn_invita_amoci">
+	<summary>
+btn_invita_amoci control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3150,14 +3270,6 @@ ltl_utente control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Profilo.btn_esci">
-	<summary>
-btn_esci control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.Profilo.upd_panel">
 	<summary>
 upd_panel control.
@@ -3374,6 +3486,14 @@ rpt_video_lista control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Profilo.div_gestione_video">
+	<summary>
+div_gestione_video control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Profilo.btn_aggiungi">
 	<summary>
 btn_aggiungi control.
@@ -3385,86 +3505,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Profilo.span_no_video">
 	<summary>
 span_no_video control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_01">
-	<summary>
-txt_invita_nome_01 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_01">
-	<summary>
-txt_invita_mail_01 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_02">
-	<summary>
-txt_invita_nome_02 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_02">
-	<summary>
-txt_invita_mail_02 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_03">
-	<summary>
-txt_invita_nome_03 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_03">
-	<summary>
-txt_invita_mail_03 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_04">
-	<summary>
-txt_invita_nome_04 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_04">
-	<summary>
-txt_invita_mail_04 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.btn_invita_amoci">
-	<summary>
-btn_invita_amoci control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Profilo.div_gestione_video">
-	<summary>
-div_gestione_video control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3969,6 +4009,78 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Profilo.btn_salva_pubblica">
 	<summary>
 btn_salva_pubblica control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_01">
+	<summary>
+txt_invita_nome_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_01">
+	<summary>
+txt_invita_mail_01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_02">
+	<summary>
+txt_invita_nome_02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_02">
+	<summary>
+txt_invita_mail_02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_03">
+	<summary>
+txt_invita_nome_03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_03">
+	<summary>
+txt_invita_mail_03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_nome_04">
+	<summary>
+txt_invita_nome_04 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.txt_invita_mail_04">
+	<summary>
+txt_invita_mail_04 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Profilo.btn_invita_amoci">
+	<summary>
+btn_invita_amoci control.
 </summary>
 	<remarks>
 Auto-generated field.

@@ -1,14 +1,12 @@
-<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master" CodeBehind="Profilo.aspx.vb"  
-     EnableEventValidation="false" Inherits="JazzHub_Web.Profilo" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Jazz.Master"
+    CodeBehind="Profilo.aspx.vb" EnableEventValidation="false" Inherits="JazzHub_Web.Profilo" %>
 
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
-
 <%@ Register Src="/Controls/rTextBox.ascx" TagName="rTextBox" TagPrefix="cc" %>
 <%@ Register Src="/Controls/rTextData.ascx" TagName="rTextData" TagPrefix="cc" %>
 <%@ Register Src="/Controls/rDropDown.ascx" TagName="rDropDown" TagPrefix="cc" %>
 <%@ Register Src="/Controls/rCheckBox.ascx" TagName="rCheckBox" TagPrefix="cc" %>
-<%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
-
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" href="/js/maxlength/jquery.maxlength.css" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap-switch.css" type="text/css">
@@ -34,44 +32,53 @@
         <ContentTemplate>
             <div class="content-wrap" style="padding: 20px 0">
                 <div class="container clearfix">
-                    
                     <div class="col_full">
-                        <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server" visible="false">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
-                            <i class="fa-lg fa fa-warning"></i><strong><%=Lingua.CaricaLingua("lgl_attenzione")%></strong><asp:Literal ID="ltl_messaggio_ko" runat="server"></asp:Literal>
+                        <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
+                            visible="false">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                x</button>
+                            <i class="fa-lg fa fa-warning"></i><strong>
+                                <%=Lingua.CaricaLingua("lgl_attenzione")%></strong><asp:Literal ID="ltl_messaggio_ko"
+                                    runat="server"></asp:Literal>
                         </div>
-                        <div class="alert alert-success alert-dismissable" id="div_message_ok" runat="server" visible="false">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
-                            <strong><asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
+                        <div class="alert alert-success alert-dismissable" id="div_message_ok" runat="server"
+                            visible="false">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                x</button>
+                            <strong>
+                                <asp:Literal ID="ltl_messaggio_ok" runat="server"></asp:Literal></strong>
                         </div>
-                        <div class="alert alert-danger alert-dismissable" id="div_messaggio_profilo" runat="server" visible="false">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
-                            <i class="fa-lg fa fa-warning"></i><asp:Literal ID="ltl_messaggio_profilo" runat="server"></asp:Literal>
+                        <div class="alert alert-danger alert-dismissable" id="div_messaggio_profilo" runat="server"
+                            visible="false">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                x</button>
+                            <i class="fa-lg fa fa-warning"></i>
+                            <asp:Literal ID="ltl_messaggio_profilo" runat="server"></asp:Literal>
                         </div>
-                        <div class="alert alert-success clearfix" id="div_paga" runat="server" data-class-lg="tleft" data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
-                            <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">x</button>
-                            <strong><%=Lingua.CaricaLingua("lgl_profilo_paga_scegli")%></strong>
-                                <hr class="hidden" data-class-lg="hidden" data-class-md="hidden" data-class-sm="hidden" data-class-xs="not-hidden" data-class-xxs="not-hidden">
-                                <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-success button-rounded button-mini nomargin fright" data-class-lg="fright" data-class-md="fright" data-class-sm="fright" data-class-xs="divcenter" data-class-xxs="divcenter">
+                        <div class="alert alert-success clearfix" id="div_paga" runat="server" data-class-lg="tleft"
+                            data-class-md="tleft" data-class-sm="tleft" data-class-xs="center" data-class-xxs="center">
+                            <button type="button" class="close hidden" data-dismiss="alert" aria-hidden="true">
+                                x</button>
+                            <strong>
+                                <%=Lingua.CaricaLingua("lgl_profilo_paga_scegli")%></strong>
+                            <hr class="hidden" data-class-lg="hidden" data-class-md="hidden" data-class-sm="hidden"
+                                data-class-xs="not-hidden" data-class-xxs="not-hidden">
+                            <asp:LinkButton ID="btn_paga" runat="server" CssClass="button button-success button-rounded button-mini nomargin fright"
+                                data-class-lg="fright" data-class-md="fright" data-class-sm="fright" data-class-xs="divcenter"
+                                data-class-xxs="divcenter">
                                 <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-arrow-right2"></i>
                             </asp:LinkButton>
                         </div>
-                           
-                        
-
-                        
-                        
-                        
                         <!-- tab di navigazione -->
                         <ul class="nav nav-tabs" style="margin-bottom: 30px;">
-<!--
+                            <!--
                             <li class="active" id="li_riepilogo" runat="server">
                                 <asp:LinkButton ID="btn_resume" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_riepilogo")%></asp:LinkButton>
                             </li>
--->                         
+-->
                             <li id="li_when" runat="server">
                                 <asp:LinkButton ID="btn_profilo_when" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_when")%></asp:LinkButton>
-                                    </li>
+                            </li>
                             <li id="li_disp" runat="server">
                                 <asp:LinkButton ID="btn_profilo_disp" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_disp")%></asp:LinkButton>
                             </li>
@@ -86,70 +93,67 @@
                             </li>
                         </ul>
                         <!-- FINE tab di navigazione -->
-                            
                         <!-- Riepilogo CANCELLATO! -->
                         <div id="div_espositore" runat="server">
                             <div class="col_half">
-                                <div class="col-md-6 center" data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
+                                <div class="col-md-6 center" data-class-lg="col_div_vert" data-class-md="col_div_vert"
+                                    data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
                                     <i class="i-plain i-xlarge divcenter nobottommargin icon-eye"></i>
                                     <h3 class="counter counter-large">
                                         <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_vis"
-                                            runat="server"><asp:Literal ID="ltl_count_visualizzazioni" runat="server"></asp:Literal></span>
+                                            runat="server">
+                                            <asp:Literal ID="ltl_count_visualizzazioni" runat="server"></asp:Literal></span>
                                     </h3>
-                                    <h5><%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></h5>
+                                    <h5>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></h5>
                                 </div>
-                                <div class="col-md-6 center"  data-class-lg="col_div_vert" data-class-md="col_div_vert" data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
+                                <div class="col-md-6 center" data-class-lg="col_div_vert" data-class-md="col_div_vert"
+                                    data-class-sm="col_div_horiz" data-class-xs="col_div_horiz" data-class-xxs="col_div_horiz">
                                     <i class="i-plain i-xlarge divcenter nobottommargin icon-thumbs-up2"></i>
                                     <h3 class="counter counter-large">
                                         <span data-from="0" data-to="0" data-refresh-interval="50" data-speed="2500" id="span_count_lik"
-                                            runat="server"><asp:Literal ID="ltl_count_like" runat="server"></asp:Literal></span>
+                                            runat="server">
+                                            <asp:Literal ID="ltl_count_like" runat="server"></asp:Literal></span>
                                     </h3>
-                                    <h5><%=Lingua.CaricaLingua("lgl_profilo_likes")%></h5>
+                                    <h5>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_likes")%></h5>
                                 </div>
                             </div>
                             <div class="list-group col_half col_last">
-                                <h4><%=Lingua.CaricaLingua("lgl_profilo_dettaglio_sui_video")%></h4>
+                                <h4>
+                                    <%=Lingua.CaricaLingua("lgl_profilo_dettaglio_sui_video")%></h4>
                                 <asp:Repeater ID="rpt_video_lista" runat="server">
                                     <ItemTemplate>
                                         <div class="list-group-item clearfix">
-                                            <asp:LinkButton ID="lnk_titolo" runat="server" CommandName="VIDEO" CssClass="fleft" style="display: inline-block"></asp:LinkButton>
-                                            <span class="fright" style="display: inline-block; white-space:nowrap;">
-                                                <span class="label label-success">
-                                                    <asp:Literal ID="ltl_visualizzazioni" runat="server"></asp:Literal>&nbsp;
-                                                    <span class="icon-thumbs-up"></span>&nbsp;
-                                                </span>
-                                                &nbsp;
-                                                <span class="label label-primary">
-                                                    <asp:Literal ID="ltl_like" runat="server"></asp:Literal>&nbsp;
-                                                    <span class="icon-eye"></span>&nbsp;
-                                                </span>
-                                                &nbsp;
-                                                <span class="label label-default">
-                                                    <asp:Literal ID="ltl_commenti" runat="server"></asp:Literal>&nbsp;
-                                                    <span class="icon-comment"></span>&nbsp;
-                                                </span>
-                                            </span>
+                                            <asp:LinkButton ID="lnk_titolo" runat="server" CommandName="VIDEO" CssClass="fleft"
+                                                Style="display: inline-block"></asp:LinkButton>
+                                            <span class="fright" style="display: inline-block; white-space: nowrap;"><span class="label label-success">
+                                                <asp:Literal ID="ltl_visualizzazioni" runat="server"></asp:Literal>&nbsp; <span class="icon-thumbs-up">
+                                                </span>&nbsp; </span>&nbsp; <span class="label label-primary">
+                                                    <asp:Literal ID="ltl_like" runat="server"></asp:Literal>&nbsp; <span class="icon-eye">
+                                                    </span>&nbsp; </span>&nbsp; <span class="label label-default">
+                                                        <asp:Literal ID="ltl_commenti" runat="server"></asp:Literal>&nbsp; <span class="icon-comment">
+                                                        </span>&nbsp; </span></span>
                                         </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
-                                
                             </div>
                         </div>
                         <!-- FINE Riepilogo -->
-                        
                         <!-- Gestione Video -->
                         <div id="div_gestione_video" runat="server">
                             <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-desc btn-block button-border button-rounded center nomargin">
                                 <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>
-                                <span id="span_no_video" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video_non_pres")%></span>
-                                <span><i class="icon-video"></i></span>
+                                <span id="span_no_video" runat="server">
+                                    <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video_non_pres")%></span> <span><i class="icon-video">
+                                    </i></span>
                             </asp:LinkButton>
                             <hr>
                             <asp:Repeater ID="rpt_video" runat="server">
                                 <ItemTemplate>
                                     <div class="col_full clearfix">
                                         <div class="col_two_fifth nobottommargin">
-                                            <div class="btn-group" style="position: absolute; top: 10px; left:10px;">
+                                            <div class="btn-group" style="position: absolute; top: 10px; left: 10px;">
                                                 <asp:LinkButton ID="btn_video" CommandName="VIDEO" CssClass="btn btn-primary" runat="server">
                                                     <span class="icon-line-eye">
                                                 </asp:LinkButton>
@@ -160,48 +164,59 @@
                                                     <span class="icon-line-trash">
                                                 </asp:LinkButton>
                                             </div>
-                                            <div class="thumbnail"><asp:Image ID="img_copertina" runat="server"/></div>
+                                            <div class="thumbnail">
+                                                <asp:Image ID="img_copertina" runat="server" /></div>
                                         </div>
                                         <div class="col_three_fifth col_last nobottommargin">
                                             <div class="col_half nobottommargin">
-                                                <h3 class="nomargin nopadding"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                                                <p style="max-height: 300px; overflow: auto"><asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
-                                                
-                                                
-                                                
+                                                <h3 class="nomargin nopadding">
+                                                    <asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                                <p style="max-height: 300px; overflow: auto">
+                                                    <asp:Literal ID="ltl_descrizione" runat="server">0</asp:Literal></p>
                                             </div>
                                             <div class="col_half col_last nobottommargin">
                                                 <ul class="iconlist">
-                                                    <li><i class="icon-thumbs-up"></i> <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_likes")%></li>
-                                                    <li><i class="icon-eye"></i>  <asp:Literal ID="ltl_like" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></li>
-                                                    <li><i class="icon-comment"></i> <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal> <%=Lingua.CaricaLingua("lgl_profilo_commenti")%></li>
+                                                    <li><i class="icon-thumbs-up"></i>
+                                                        <asp:Literal ID="ltl_visualizzazioni" runat="server">0</asp:Literal>
+                                                        <%=Lingua.CaricaLingua("lgl_profilo_likes")%></li>
+                                                    <li><i class="icon-eye"></i>
+                                                        <asp:Literal ID="ltl_like" runat="server">0</asp:Literal>
+                                                        <%=Lingua.CaricaLingua("lgl_profilo_visualizzazioni")%></li>
+                                                    <li><i class="icon-comment"></i>
+                                                        <asp:Literal ID="ltl_commenti" runat="server">0</asp:Literal>
+                                                        <%=Lingua.CaricaLingua("lgl_profilo_commenti")%></li>
                                                 </ul>
-                                                <div class="clear"></div>
-                                                <p class="nobottommargin"><%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%>:</p>
-                                                <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound" OnItemCommand="rpt_like_lista_ItemCommand">
+                                                <div class="clear">
+                                                </div>
+                                                <p class="nobottommargin">
+                                                    <%=Lingua.CaricaLingua("lgl_profilo_elenco_likes")%>:</p>
+                                                <asp:Repeater ID="rpt_like_lista" runat="server" OnItemDataBound="rpt_like_lista_ItemDataBound"
+                                                    OnItemCommand="rpt_like_lista_ItemCommand">
                                                     <HeaderTemplate>
-                                                        <div class="panel panel-default divcenter nomargin" style="padding: 10px; height: 150px; overflow: auto">
-                                                            </HeaderTemplate>
-                                                        <ItemTemplate>
-                                                            <div class="list-group-item clearfix">
-                                                                <asp:LinkButton ID="lnk_utente" runat="server" CommandName="UTE" CssClass="fleft" style="display: inline-block"></asp:LinkButton>
-                                                                <asp:Label ID="ltl_data" runat="server" CssClass="fright" style="display: inline-block"></asp:Label>
-                                                            </div>
-                                                        </ItemTemplate>
-                                                        <FooterTemplate>
-                                                            </div>
-                                                        </FooterTemplate>
+                                                        <div class="panel panel-default divcenter nomargin" style="padding: 10px; height: 150px;
+                                                            overflow: auto">
+                                                    </HeaderTemplate>
+                                                    <ItemTemplate>
+                                                        <div class="list-group-item clearfix">
+                                                            <asp:LinkButton ID="lnk_utente" runat="server" CommandName="UTE" CssClass="fleft"
+                                                                Style="display: inline-block"></asp:LinkButton>
+                                                            <asp:Label ID="ltl_data" runat="server" CssClass="fright" Style="display: inline-block"></asp:Label>
+                                                        </div>
+                                                    </ItemTemplate>
+                                                    <FooterTemplate>
+                                                        </div>
+                                                    </FooterTemplate>
                                                 </asp:Repeater>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>
-                        
                         <!-- Visitatore -->
                         <div id="div_visitatore" runat="server">
-                            <h4><%=Lingua.CaricaLingua("lgl_profilo_selezione_video")%></h4>
+                            <h4>
+                                <%=Lingua.CaricaLingua("lgl_profilo_selezione_video")%></h4>
                             <div class="container clearfix ">
                                 <div id="portfolio" class="portfolio portfolio-4 portfolio-masonry clearfix">
                                     <asp:Repeater ID="rpt_video_guest" runat="server">
@@ -223,17 +238,16 @@
                             </div>
                         </div>
                         <!-- FINE Visitatore -->
-                            
                         <!-- Modifica profilo -->
                         <div id="div_profilo" runat="server">
                             <div class="col_half" style="margin-bottom: 0px;">
                                 <div class="col_half" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_nome" runat="server" MaxLength="70" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col_half col_last" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_cognome" runat="server" MaxLength="70" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col_half" id="div_ragione_sociale" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_ragione_sociale" name="txt_ragione_sociale" runat="server" MaxLength="256"
@@ -241,7 +255,7 @@
                                 </div>
                                 <div class="col_half col_last" style="margin-bottom: 0px;">
                                     <cc:rDropDown ID="ddl_tipo_utente" runat="server" CssClass="form-control" Form_Vertical="true"
-                                        Required="false" />
+                                        />
                                 </div>
                                 <div class="col_half" id="div_codice_fiscale" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_codice_fiscale" name="txt_codice_fiscale" runat="server" MaxLength="16"
@@ -252,7 +266,7 @@
                                         CssClass="form-control" Form_Vertical="true" />
                                 </div>
                                 <div class="col_full" style="margin-bottom: 0px;">
-                                    <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" AutoPostBack="true" 
+                                    <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" AutoPostBack="true"
                                         Form_Vertical="true" />
                                 </div>
                                 <div class="col_one_third" id="div_provincia" runat="server" style="margin-bottom: 0px;">
@@ -311,141 +325,146 @@
                             </div>
                         </div>
                         <!-- FINE modifica profilo -->
-                                    
                         <!-- Profilo Pubblico -->
                         <div id="div_profilo_pubblico" runat="server">
                             <div class="col_three_fifth" id="ready" style="margin-bottom: 0px;">
                                 <div class="col_full">
-                                    <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
-                                    <div class="clear"></div>
-                                    <div class="center" style="position: relative; width: 248px; height: 248px;" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter">
-                                        <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" style="max-width: 248px; max-height: 248px; display: inline-block;margin: 0 !important;" />
-                                        
-                                        <a href="#" onClick="openCrop(); return false;" class="image-action inverse" data-toggle="modal" data-target="" id="btn_carica_avatar" runat="server">
+                                    <label>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica_tn")%></label>
+                                    <div class="clear">
+                                    </div>
+                                    <div class="center" style="position: relative; width: 248px; height: 248px;" data-class-lg="fleft"
+                                        data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter">
+                                        <asp:ImageButton ID="img_avatar" runat="server" CssClass="thumbnail" Style="max-width: 248px;
+                                            max-height: 248px; display: inline-block; margin: 0 !important;" />
+                                        <a href="#" onclick="openCrop(); return false;" class="image-action inverse" data-toggle="modal"
+                                            data-target="" id="btn_carica_avatar" runat="server">
                                             <!--<%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
-                                                <span><i class="icon-camera"></i></span>
-                                        </a>
-                                        <asp:LinkButton ID="btn_cancella_foto" class="image-action" runat="server" >
+                                            <span><i class="icon-camera"></i></span></a>
+                                        <asp:LinkButton ID="btn_cancella_foto" class="image-action" runat="server">
                                             <!--<%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>-->
                                                 <i class="icon-remove"></i>
                                         </asp:LinkButton>
                                     </div>
-<!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 250*250 pixel</i></small>-->
+                                    <!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 250*250 pixel</i></small>-->
                                 </div>
                                 <div class="col_full">
-                                    <label><%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
-                                    <div class="clear"></div>
+                                    <label>
+                                        <%=Lingua.CaricaLingua("lgl_profilo_immagine_pubblica")%></label>
+                                    <div class="clear">
+                                    </div>
                                     <div class="center" style="position: relative" id="div_pp_cancella" runat="server">
-                                        <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="display: inline-block; margin: 0; width: 100%;" />
-                                        
-                                        <a href="#" onClick="openCropPub(); return false;" class="image-action inverse" data-toggle="modal" data-target="" 
-                                            id="btn_carica_pubblica" runat="server">
-<!--                                            <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
-                                            <span><i class="icon-camera"></i></span>
-                                        </a>
+                                        <asp:ImageButton ID="img_profilo_pubblico" runat="server" CssClass="thumbnail" Style="display: inline-block;
+                                            margin: 0; width: 100%;" />
+                                        <a href="#" onclick="openCropPub(); return false;" class="image-action inverse" data-toggle="modal"
+                                            data-target="" id="btn_carica_pubblica" runat="server">
+                                            <!--                                            <%=Lingua.CaricaLingua("lgl_profilo_carica_immagine")%>-->
+                                            <span><i class="icon-camera"></i></span></a>
                                         <asp:LinkButton ID="btn_cancella_profilo_pubblico" class="image-action" runat="server">
 <!--                                            <%=Lingua.CaricaLingua("lgl_profilo_cancella_immagine")%>-->
                                             <i class="icon-remove"></i>
                                         </asp:LinkButton>
                                     </div>
-<!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>-->
+                                    <!--                                    <small><i><%=Lingua.CaricaLingua("lgl_profilo_dimensione_consigliata")%>: 1170*500 pixel</i></small>-->
                                 </div>
                                 <div class="col_full" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_descrizione_pubblica" runat="server" MaxLength="70" CssClass="form-control"
-                                                 Form_Vertical="true" Required="false" TextMode="MultiLine" Rows="5" />
+                                        Form_Vertical="true" TextMode="MultiLine" Rows="5" />
                                 </div>
                             </div>
                             <div class="col_two_fifth col_last">
-                                
                                 <div class="col_full">
                                     <%--<label for="">
                                     <%=Lingua.CaricaLingua("lgl_register_social")%></label>--%>
                                     <asp:Repeater ID="rpt_social" runat="server">
                                         <ItemTemplate>
                                             <div class="col_full">
-                                                <label><asp:Literal ID="ltl_social" runat="server"></asp:Literal></label>
+                                                <label>
+                                                    <asp:Literal ID="ltl_social" runat="server"></asp:Literal></label>
                                                 <asp:TextBox ID="txt_social" runat="server" MaxLength="70" CssClass="form-control"
                                                     Form_Vertical="true" />
                                             </div>
                                         </ItemTemplate>
                                     </asp:Repeater>
                                     <div id="profile_switcher" class="alert alert-success" runat="server">
-                                        <asp:HyperLink ID="lnk_preview" runat="server" Target="_blank" NavigateUrl="/User-Post.aspx" CssClass="button button-primary button-mini button-rounded nomargin lowercase fright">
+                                        <asp:HyperLink ID="lnk_preview" runat="server" Target="_blank" NavigateUrl="/User-Post.aspx"
+                                            CssClass="button button-primary button-mini button-rounded nomargin lowercase fright">
                                             <%=Lingua.CaricaLingua("lgl_profilo_anteprima_profilo")%></i>
                                         </asp:HyperLink>
-                                        <h4 class="nomargin"><%=Lingua.CaricaLingua("lgl_profilo_gestisci_pubblicazione")%></h4>
-                                        <p style="margin-bottom: 20px;"><%=Lingua.CaricaLingua("lgl_profilo_attiva_pubblicazione")%></p>
-                                        <strong>
-                                            <span id="span_profilo_pubblicato">
-                                                <asp:Literal ID="ltl_profilo_pubblicato" runat="server"></asp:Literal>
-                                            </span>
-                                        </strong>
-                                        <asp:CheckBox ID="chk_ut_profilo_pubblicato" CssClass="fright" style="position: relative; top: -6px" runat="server" />
+                                        <h4 class="nomargin">
+                                            <%=Lingua.CaricaLingua("lgl_profilo_gestisci_pubblicazione")%></h4>
+                                        <p style="margin-bottom: 20px;">
+                                            <%=Lingua.CaricaLingua("lgl_profilo_attiva_pubblicazione")%></p>
+                                        <strong><span id="span_profilo_pubblicato">
+                                            <asp:Literal ID="ltl_profilo_pubblicato" runat="server"></asp:Literal>
+                                        </span></strong>
+                                        <asp:CheckBox ID="chk_ut_profilo_pubblicato" CssClass="fright" Style="position: relative;
+                                            top: -6px" runat="server" />
                                     </div>
-                                    <div class="clear"></div>
+                                    <div class="clear">
+                                    </div>
                                     <asp:LinkButton ID="btn_salva_profilo_pubblico" runat="server" CssClass="button button-rounded button-danger nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_modifica_profilo")%> <i class="icon-ok-sign"></i>
                                     </asp:LinkButton>
-                                    
                                 </div>
                             </div>
-                            
                         </div>
-                        <!-- FINE modifica profilo pubblico -->            
+                        <!-- FINE modifica profilo pubblico -->
                         <div class="col_full">
-                            <hr>            
+                            <hr>
                         </div>
                         <!-- Calendario Eventi -->
                         <div id="div_profilo_when" runat="server">
                             <div class="col_full">
-                                <h4><%=Lingua.CaricaLingua("lgl_profilo_appuntamento")%></h4>
+                                <h4>
+                                    <%=Lingua.CaricaLingua("lgl_profilo_appuntamento")%></h4>
                             </div>
                             <div class="panel panel-default clearfix" style="padding-top: 10px;">
                                 <div class="col-md-2">
                                     <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy hh:mm" />
+                                        Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy hh:mm" />
                                 </div>
                                 <div class="col-md-3">
                                     <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col-md-3">
                                     <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col-md-3">
                                     <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col-md-1">
-                                    <div style="padding-top:24px;">
+                                    <div style="padding-top: 24px;">
                                         <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="fright button button-rounded button-small button-success">
                                             <i class="icon-plus nomargin"></i>
                                         </asp:LinkButton>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
                             <asp:Repeater ID="rpt_when" runat="server">
                                 <ItemTemplate>
                                     <div class="col_full">
                                         <div class="col-md-2">
                                             <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" Label="" />
+                                                Form_Vertical="true" Label="" />
                                         </div>
                                         <div class="col-md-3">
                                             <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" />
+                                                Form_Vertical="true" />
                                         </div>
                                         <div class="col-md-3">
                                             <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" />
+                                                Form_Vertical="true" />
                                         </div>
                                         <div class="col-md-3">
                                             <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" />
+                                                Form_Vertical="true" />
                                         </div>
                                         <div class="col-md-1">
-                                            <div style="padding-top:15px;">
+                                            <div style="padding-top: 15px;">
                                                 <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL" CssClass="fright button button-rounded button-small button-danger">
                                                     <i class="icon-remove nomargin"></i>
                                                 </asp:LinkButton>
@@ -453,63 +472,64 @@
                                                     <i class="icon-save nomargin"></i>
                                                 </asp:LinkButton>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
-                        </div> 
-                        <!-- FINE Calendario Eventi -->            
+                        </div>
+                        <!-- FINE Calendario Eventi -->
                         <!-- Calendario Disponibilita -->
                         <div id="div_profilo_disp" runat="server">
                             <div class="col_full">
-                                <h4><%=Lingua.CaricaLingua("lgl_profilo_disponibilita")%></h4>
+                                <h4>
+                                    <%=Lingua.CaricaLingua("lgl_profilo_disponibilita")%></h4>
                             </div>
                             <div class="panel panel-default clearfix" style="padding-top: 10px;">
                                 <div class="col-md-2">
                                     <cc:rTextBox ID="txt_ua_dal" runat="server" MaxLength="18" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy" />
+                                        Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy" />
                                 </div>
                                 <div class="col-md-2">
                                     <cc:rTextBox ID="txt_ua_al" runat="server" MaxLength="256" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy" />
+                                        Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy" />
                                 </div>
                                 <div class="col-md-3">
                                     <cc:rTextBox ID="txt_ua_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col-md-4">
                                     <cc:rTextBox ID="txt_ua_annuncio" runat="server" MaxLength="512" CssClass="form-control"
-                                        Form_Vertical="true" Required="false" />
+                                        Form_Vertical="true" />
                                 </div>
                                 <div class="col-md-1">
-                                    <div style="padding-top:24px;">
+                                    <div style="padding-top: 24px;">
                                         <asp:LinkButton ID="btn_salva_profilo_disp" runat="server" CssClass="fright button button-rounded button-small button-success">
                                             <i class="icon-plus nomargin"></i>
                                         </asp:LinkButton>
                                     </div>
-                                </div> 
+                                </div>
                             </div>
                             <asp:Repeater ID="rpt_disp" runat="server">
                                 <ItemTemplate>
                                     <div class="col_full">
                                         <div class="col-md-2">
                                             <cc:rTextBox ID="txt_ua_dal" runat="server" MaxLength="18" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" Label="" Placeholder="dd/mm/yyyy" />
+                                                Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy" />
                                         </div>
                                         <div class="col-md-2">
                                             <cc:rTextBox ID="txt_ua_al" runat="server" MaxLength="256" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" />
+                                                Form_Vertical="true" />
                                         </div>
                                         <div class="col-md-3">
                                             <cc:rTextBox ID="txt_ua_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" />
+                                                Form_Vertical="true" />
                                         </div>
                                         <div class="col-md-4">
                                             <cc:rTextBox ID="txt_ua_annuncio" runat="server" MaxLength="512" CssClass="form-control"
-                                                Form_Vertical="true" Required="false" />
+                                                Form_Vertical="true" />
                                         </div>
                                         <div class="col-md-1">
-                                            <div style="padding-top:15px;">
+                                            <div style="padding-top: 15px;">
                                                 <asp:LinkButton ID="btn_delete_profilo_disp" runat="server" CommandName="DEL" CssClass="fright button button-rounded button-small button-danger">
                                                     <i class="icon-remove nomargin"></i>
                                                 </asp:LinkButton>
@@ -517,25 +537,28 @@
                                                     <i class="icon-save nomargin"></i>
                                                 </asp:LinkButton>
                                             </div>
-                                        </div> 
+                                        </div>
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
-                        </div> 
-                        <!-- FINE Calendario Disponibilità -->            
+                        </div>
+                        <!-- FINE Calendario Disponibilità -->
                     </div>
                 </div>
             </div>
         </ContentTemplate>
     </asp:UpdatePanel>
-    <asp:LinkButton ID="btn_salva_immagini_hidden" runat="server" style="display:none;" />
-    <div class="modal fade bs-example-modal-lg crop_avatar" tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true">
+    <asp:LinkButton ID="btn_salva_immagini_hidden" runat="server" Style="display: none;" />
+    <div class="modal fade bs-example-modal-lg crop_avatar" tabindex="-1" role="dialog"
+        aria-labelledby="test" aria-hidden="true">
         <div class="modal-dialog" style="max-width: 350px;">
             <div class="modal-body">
                 <div class="modal-content" style="max-width: 300px;">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="H1"><%=Lingua.CaricaLingua("lgl_profilo_carica_avatar")%></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;</button>
+                        <h4 class="modal-title" id="H1">
+                            <%=Lingua.CaricaLingua("lgl_profilo_carica_avatar")%></h4>
                     </div>
                     <div class="modal-body">
                         <div class="col_full center">
@@ -552,121 +575,126 @@
                                     <span class="icon icon-image large-image"></span>
                                 </div>
                                 <div class="rotate-wrapper">
-                                    <i class="icon-fontello-rotate-ccw" id="rotate-ccw-avatar"></i>
-                                    <i class="icon-fontello-rotate-cw" id="rotate-cw-avatar"></i>
+                                    <i class="icon-fontello-rotate-ccw" id="rotate-ccw-avatar"></i><i class="icon-fontello-rotate-cw"
+                                        id="rotate-cw-avatar"></i>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="col_full nobottommargin">
-                            <asp:LinkButton ID="btn_salva_avatar" runat="server" CssClass="button btn-block button-success button-rounded center nomargin" OnClientClick="exportCrop(); $('.crop_avatar').modal('hide'); return false;">
+                            <asp:LinkButton ID="btn_salva_avatar" runat="server" CssClass="button btn-block button-success button-rounded center nomargin"
+                                OnClientClick="exportCrop(); $('.crop_avatar').modal('hide'); return false;">
                                 <%=Lingua.CaricaLingua("lgl_profilo_salva_immagine")%>
                             </asp:LinkButton>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade bs-example-modal-lg crop_public" tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true">
+    <div class="modal fade bs-example-modal-lg crop_public" tabindex="-1" role="dialog"
+        aria-labelledby="test" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-body">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="H2"><%=Lingua.CaricaLingua("lgl_profilo_carica_pubblica")%></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;</button>
+                        <h4 class="modal-title" id="H2">
+                            <%=Lingua.CaricaLingua("lgl_profilo_carica_pubblica")%></h4>
                     </div>
                     <div class="modal-body">
                         <div class="col_full center">
-                            <div id="image-public" style="width:100%; height:100%">
+                            <div id="image-public" style="width: 100%; height: 100%">
                                 <input type="file" class="cropit-image-input" id="cropit-image-input-public">
-                                <div class="cropit-preview" style="width:100%; height:400px;" id="cropit-public">
+                                <div class="cropit-preview" style="width: 100%; height: 400px;" id="cropit-public">
                                 </div>
                                 <div class="image-size-label hidden">
                                     <%=Lingua.CaricaLingua("lgl_profilo_ridimensiona_immagine")%>
                                 </div>
-                                
                                 <div class="slider-wrapper">
                                     <span class="icon icon-image small-image"></span>
                                     <input type="range" value="0" class="cropit-image-zoom-input">
                                     <span class="icon icon-image large-image"></span>
                                 </div>
-                                
-                                
                                 <div class="rotate-wrapper">
-                                    <i class="icon-fontello-rotate-ccw" id="rotate-ccw-public"></i>
-                                    <i class="icon-fontello-rotate-cw" id="rotate-cw-public"></i>
+                                    <i class="icon-fontello-rotate-ccw" id="rotate-ccw-public"></i><i class="icon-fontello-rotate-cw"
+                                        id="rotate-cw-public"></i>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="col_full nobottommargin">
-                            <asp:LinkButton ID="btn_salva_pubblica" runat="server" CssClass="button btn-block button-success button-rounded center nomargin" OnClientClick="exportCropPublic(); $('.crop_public').modal('hide'); return false;">
+                            <asp:LinkButton ID="btn_salva_pubblica" runat="server" CssClass="button btn-block button-success button-rounded center nomargin"
+                                OnClientClick="exportCropPublic(); $('.crop_public').modal('hide'); return false;">
                                 <%=Lingua.CaricaLingua("lgl_profilo_salva_immagine")%>
                             </asp:LinkButton>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-                
-                <div class="modal fade bs-example-modal-lg invite" tabindex="-1" role="dialog" aria-labelledby="test" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-body">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" id="myModalLabel"><%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%></h4>
-                                        </div>
-                                    <div class="modal-body">
-                                        <div class="col_full">
-                                            <h3><%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa")%></h3>
-                                                <i><%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa_help")%></i>
-                                                    </div>
-                                                <hr>
-                                                <div class="col_half nobottommargin">
-                                                    <cc:rTextBox ID="txt_invita_nome_01" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-                                                <div class="col_half col_last nobottommargin">
-                                                    <cc:rTextBox ID="txt_invita_mail_01" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-                                                <div class="col_half nobottommargin">
-                                                    <cc:rTextBox ID="txt_invita_nome_02" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-                                                <div class="col_half col_last nobottommargin">
-                                                    <cc:rTextBox ID="txt_invita_mail_02" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-
-                                                <div class="col_half nobottommargin">
-                                                    <cc:rTextBox ID="txt_invita_nome_03" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-                                                <div class="col_half col_last nobottommargin">
-                                                    <cc:rTextBox ID="txt_invita_mail_03" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-
-                                                <div class="col_half nobottommargin">
-                                                    <cc:rTextBox ID="txt_invita_nome_04" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-                                                <div class="col_half col_last">
-                                                    <cc:rTextBox ID="txt_invita_mail_04" runat="server" MaxLength="70" CssClass="form-control"
-                                                                 Form_Vertical="true" Required="false" />
-                                                </div>
-                                                <div class="col_full nobottommargin">
-                                                    <asp:LinkButton ID="btn_invita_amoci" runat="server" CssClass="button btn-block button-rounded center nomargin" OnClientClick="$('.invite').modal('hide');">
+    <div class="modal fade bs-example-modal-lg invite" tabindex="-1" role="dialog" aria-labelledby="test"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;</button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            <%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col_full">
+                            <h3>
+                                <%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa")%></h3>
+                            <i>
+                                <%=Lingua.CaricaLingua("lgl_profilo_invita_amici_usa_help")%></i>
+                        </div>
+                        <hr>
+                        <div class="col_half nobottommargin">
+                            <cc:rTextBox ID="txt_invita_nome_01" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_half col_last nobottommargin">
+                            <cc:rTextBox ID="txt_invita_mail_01" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_half nobottommargin">
+                            <cc:rTextBox ID="txt_invita_nome_02" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_half col_last nobottommargin">
+                            <cc:rTextBox ID="txt_invita_mail_02" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_half nobottommargin">
+                            <cc:rTextBox ID="txt_invita_nome_03" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_half col_last nobottommargin">
+                            <cc:rTextBox ID="txt_invita_mail_03" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_half nobottommargin">
+                            <cc:rTextBox ID="txt_invita_nome_04" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_half col_last">
+                            <cc:rTextBox ID="txt_invita_mail_04" runat="server" MaxLength="70" CssClass="form-control"
+                                Form_Vertical="true" />
+                        </div>
+                        <div class="col_full nobottommargin">
+                            <asp:LinkButton ID="btn_invita_amoci" runat="server" CssClass="button btn-block button-rounded center nomargin"
+                                OnClientClick="$('.invite').modal('hide');">
                                                         <%=Lingua.CaricaLingua("lgl_profilo_invita_amici")%>
-                                                            </asp:LinkButton>
-                                                        </div> 
-                                                </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            </asp:LinkButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
     <script>
@@ -797,5 +825,4 @@
         }
 
     </script>
-        
 </asp:Content>
