@@ -106,7 +106,7 @@
                         <div class="form-group">
                             <label for="to" class="">
                                 <%=Lingua.CaricaLingua("lgl_caricamento_tag")%></label>
-                            <select ID="ddl_video_tag" multiple="multiple" class="select2me form-control"
+                            <select ID="ddl_video_tag" multiple="multiple" class="select2me form-control" style="text-align:left;"
                                 placeholder="<%=Lingua.CaricaLingua("lgl_caricamento_seleziona_tag")%>">
                                 <%=option_tag%>
                             </select>

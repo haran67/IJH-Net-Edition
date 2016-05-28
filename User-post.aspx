@@ -6,6 +6,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+    <section class="page-title page-title-mini" id="div_profilo" runat="server">
+        <div class="container clearfix">
+            <h1><asp:Literal ID="ltl_utente_title" runat="server"></asp:Literal></h1>
+            <ol class="breadcrumb">
+                <li><asp:LinkButton ID="btn_indietro" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></li>
+            </ol>
+        </div>
+    </section>
     <section class="page-title" style="padding: 20px 0;background-color: #fff;/*background: url('<%=user_background%>') no-repeat top center; background-size: cover;*/">
         <div class="container clearfix">
             <div class="profile-header" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">

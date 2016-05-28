@@ -1,4 +1,4 @@
-﻿
+
 <%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Jazz.master.vb" Inherits="JazzHub_Web.Jazz" %>
 
 <%@ Register Src="/Controls/rTextBox.ascx" TagName="rTextBox" TagPrefix="cc" %>
@@ -9,10 +9,10 @@
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 <%@ register tagprefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI" %>
 
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head runat="server">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1">
     <meta name="author" content="Marte5" />
     <!-- Stylesheets
 	============================================= -->
@@ -179,9 +179,7 @@
                                         </div>
                                         <div class="top-cart-item clearfix" id="div_profilo_pubblico_02" runat="server">
                                             <div class="top-cart-item-desc">
-                                                <a href="#" data-toggle="modal" data-target=".invite" style="border: none; background: transparent" class="nomargin nopadding fright">
-                                                    <%=Lingua.CaricaLingua("lgl_profilo_invita_amico")%>
-                                                </a>
+                                                <asp:Button ID="btn_invita" data-toggle="modal" data-target=".invite" runat="server" OnClientClick="return false;" style="border: none; background: transparent" CssClass="nomargin nopadding fright"></asp:Button>
                                             </div>
                                         </div>
                                     </div>

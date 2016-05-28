@@ -129,8 +129,10 @@ Select2 Plugin
   background-position: -18px 1px;
 }
 
-.select2-results {
-  margin: 5px 0;
+.select2-results 
+{
+    text-align:left;
+    margin: 5px 0;
 }
 
 .select2-results .select2-highlighted {
