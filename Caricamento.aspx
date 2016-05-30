@@ -60,9 +60,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <section class="page-title page-title-mini">
         <div class="container clearfix">
-            <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
+            <h1 style="font-weight: 400; display: none"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
+            <h1 style="font-weight: 400;"><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h1>
             <ol class="breadcrumb">
-                <li><asp:LinkButton ID="btn_indietro" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></li>
+                <li><asp:LinkButton ID="btn_indietro" runat="server"  style="background:#e33; padding: 5px 10px; color: #fff; font-weight: 600; border-radius: 3px"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></li>
                 <li class="hidden"><asp:LinkButton ID="btn_esci" runat="server" CssClass="icon-line2-logout"></asp:LinkButton></li>
             </ol>
         </div>
@@ -73,9 +74,6 @@
         <div class="container clearfix">
             <div class="col_full">
                 <div id="div_dati" runat="server">
-                    <div class="fancy-title title-border">
-                        <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
-                    </div>
                     <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
                         visible="false">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
@@ -103,10 +101,10 @@
                             AutoPostBack="false" Icon="" Form_Vertical="true" />
                     </div>
                     <div class="col_half col_last">
-                        <div class="form-group">
+                        <div class="form-group select-left">
                             <label for="to" class="">
                                 <%=Lingua.CaricaLingua("lgl_caricamento_tag")%></label>
-                            <select ID="ddl_video_tag" multiple="multiple" class="select2me form-control" style="text-align:left;"
+                            <select ID="ddl_video_tag" multiple="multiple" class="select2me form-control"
                                 placeholder="<%=Lingua.CaricaLingua("lgl_caricamento_seleziona_tag")%>">
                                 <%=option_tag%>
                             </select>
@@ -148,7 +146,7 @@
                             ProgressIndicators="TimeElapsed, TimeEstimated, TransferSpeed, TotalProgress, TotalProgressPercent, TotalProgressBar" />
                         <div style="margin-top:30px;"></div>
                         <div class="form-group" id="div_bottone" runat="server">
-                            <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-rounded nomargin" style="margin-top:20px!Important;"></asp:LinkButton>
+                            <asp:LinkButton ID="btn_invia" runat="server" CssClass="button button-success button-rounded " style="margin-top:20px!Important;"></asp:LinkButton>
                         </div> 
                     </div>
                 </div>
