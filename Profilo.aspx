@@ -33,6 +33,8 @@
             <div class="content-wrap" style="padding: 20px 0">
                 <div class="container clearfix">
                     <div class="col_full">
+                        
+                        <!-- Comunicazioni varie -->
                         <div class="alert alert-danger alert-dismissable" id="div_message_ko" runat="server"
                             visible="false">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
@@ -69,13 +71,15 @@
                                 <%=Lingua.CaricaLingua("lgl_profilo_paga_adesso")%>&nbsp;<i class="icon-arrow-right2"></i>
                             </asp:LinkButton>
                         </div>
+                        <!-- FINE Comunicazioni varie -->
+                                
                         <!-- tab di navigazione -->
                         <ul class="nav nav-tabs" style="margin-bottom: 30px;">
                             <!--
-                            <li class="active" id="li_riepilogo_hidden" runat="server" visible="false">
-                                <asp:LinkButton ID="btn_resume" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_riepilogo")%></asp:LinkButton>
-                            </li>
--->
+                                <li class="active" id="li_riepilogo_hidden" runat="server" visible="false">
+                                    <asp:LinkButton ID="btn_resume" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_riepilogo")%></asp:LinkButton>
+                                </li>
+                            -->
                             <li class="active" id="li_when" runat="server">
                                 <asp:LinkButton ID="btn_profilo_when" runat="server"><%=Lingua.CaricaLingua("lgl_profilo_profilo_when_disp")%></asp:LinkButton>
                             </li>
@@ -93,7 +97,8 @@
                             </li>
                         </ul>
                         <!-- FINE tab di navigazione -->
-                        <!-- Riepilogo CANCELLATO! -->
+                                
+                        <!-- Riepilogo (RIMOSSO) -->
                         <div id="div_espositore_hidden" runat="server" visible="false">
                             <div class="col_half">
                                 <div class="col-md-6 center" data-class-lg="col_div_vert" data-class-md="col_div_vert"
@@ -140,12 +145,13 @@
                             </div>
                         </div>
                         <!-- FINE Riepilogo -->
+                                    
                         <!-- Gestione Video -->
                         <div id="div_gestione_video" runat="server">
-                            <asp:LinkButton ID="btn_aggiungi" runat="server" CssClass="button button-desc btn-block button-border button-rounded center nomargin">
+                            <asp:LinkButton ID="btn_aggiungi" runat="server" style="font-weight: 300; border: dashed 1px rgba(0, 0, 0, .35)" CssClass="button button-desc btn-block button-border button-rounded center nomargin">
                                 <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video")%>
                                 <span id="span_no_video" runat="server">
-                                    <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video_non_pres")%></span> <span><i class="icon-video">
+                                    <%=Lingua.CaricaLingua("lgl_profilo_aggiungi_video_non_pres")%></span> <span><i class="icon-video nomargin">
                                     </i></span>
                             </asp:LinkButton>
                             <hr>
@@ -213,6 +219,8 @@
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>
+                        <!-- FINE Gestione Video -->
+                                    
                         <!-- Visitatore -->
                         <div id="div_visitatore" runat="server">
                             <h4>
@@ -238,9 +246,10 @@
                             </div>
                         </div>
                         <!-- FINE Visitatore -->
+                            
                         <!-- Modifica profilo -->
                         <div id="div_profilo" runat="server">
-                            <div class="col_half" style="margin-bottom: 0px;">
+                            <div class="col_two_third" style="margin-bottom: 0px;">
                                 <div class="col_half" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_nome" runat="server" MaxLength="70" CssClass="form-control"
                                         Form_Vertical="true" />
@@ -265,7 +274,8 @@
                                     <cc:rTextBox ID="txt_partita_iva" name="txt_partita_iva" runat="server" MaxLength="12"
                                         CssClass="form-control" Form_Vertical="true" />
                                 </div>
-                                <div class="col_full" style="margin-bottom: 0px;">
+                                <div class="clear"></div>
+                                <div class="col_one_third" style="margin-bottom: 0px;">
                                     <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" AutoPostBack="true"
                                         Form_Vertical="true" />
                                 </div>
@@ -273,30 +283,33 @@
                                     <cc:rDropDown ID="ddl_provincia" runat="server" CssClass="form-control" AutoPostBack="true"
                                         Form_Vertical="true" />
                                 </div>
-                                <div class="col_two_third col_last" id="div_comune" runat="server" style="margin-bottom: 0px;">
+                                <div class="col_one_third col_last" id="div_comune" runat="server" style="margin-bottom: 0px;">
                                     <cc:rDropDown ID="ddl_citta" runat="server" CssClass="form-control" AutoPostBack="false"
                                         Form_Vertical="true" />
                                 </div>
-                                <div class="col_half" id="div_provincia_estera" runat="server" style="margin-bottom: 0px;">
+                                
+                                <div class="col_one_third" id="div_provincia_estera" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_provincia_estera" name="txt_provincia_estera" runat="server"
                                         MaxLength="128" CssClass="form-control" Form_Vertical="true" />
                                 </div>
-                                <div class="col_half col_last" id="div_comune_estero" runat="server" style="margin-bottom: 0px;">
+                                <div class="col_one_third col_last" id="div_comune_estero" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_comune_estero" runat="server" MaxLength="128" CssClass="form-control"
                                         Form_Vertical="true" />
                                 </div>
+                                <div class="clear"></div>
                                 <div class="col_one_third" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_cap" runat="server" MaxLength="5" CssClass="form-control" Form_Vertical="true" />
                                 </div>
-                                <div class="col_two_third col_last" id="div_localita" runat="server" style="margin-bottom: 0px;">
+                                <div class="col_one_third col_last" id="div_localita" runat="server" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_localita" runat="server" MaxLength="128" CssClass="form-control"
                                         Form_Vertical="true" />
                                 </div>
+                                <div class="clear"></div>
                                 <div class="col_full" style="margin-bottom: 0px;">
                                     <cc:rTextBox ID="txt_indirizzo" name="txt_indirizzo" runat="server" MaxLength="255"
                                         CssClass="form-control" Form_Vertical="true" />
                                 </div>
-                                <div class="col_half" style="margin-bottom: 0px;">
+                                <div class="col_full" style="margin-bottom: 0px;">
                                     <asp:LinkButton ID="btn_profilo" runat="server" CssClass="button button-rounded button-danger nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_modifica_profilo")%> <i class="icon-ok-sign"></i>
                                     </asp:LinkButton>
@@ -304,27 +317,34 @@
                                 <div class="col_full" style="margin-bottom: 0px;">
                                 </div>
                             </div>
-                            <div class="col_half col_last" style="margin-bottom: 0px;">
-                                <div class="col_full">
-                                    <cc:rTextBox ID="txt_old_password" TextMode="Password" runat="server" MaxLength="100"
-                                        CssClass="form-control" Form_Vertical="true" Label="" />
-                                </div>
-                                <div class="col_half">
-                                    <cc:rTextBox ID="txt_password" TextMode="Password" runat="server" MaxLength="100"
-                                        CssClass="form-control" Form_Vertical="true" />
-                                </div>
-                                <div class="col_half col_last">
-                                    <cc:rTextBox ID="txt_password_repeted" TextMode="Password" runat="server" MaxLength="100"
-                                        CssClass="form-control" Form_Vertical="true" />
-                                </div>
-                                <div class="col_half" style="margin-bottom: 0px;">
-                                    <asp:LinkButton ID="btn_password" runat="server" CssClass="button button-rounded button-danger nomargin">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_modifica_psw")%> <i class="icon-ok-sign"></i>
-                                    </asp:LinkButton>
+                            <div class="col_one_third col_last" style="margin-bottom: 0px;">
+                                <div class="panel panel-default divcenter">
+                                    <div class="panel-body" style="padding: 20px;">
+                                        <h3 class="nopadding nomargin">Modifica Password</h3>
+                                        <hr>
+                                        <div class="col_full" style="margin-bottom: 0px;">
+                                            <cc:rTextBox ID="txt_old_password" TextMode="Password" runat="server" MaxLength="100"
+                                                CssClass="form-control" Form_Vertical="true" Label="" />
+                                        </div>
+                                        <div class="col_full" style="margin-bottom: 0px;">
+                                            <cc:rTextBox ID="txt_password" TextMode="Password" runat="server" MaxLength="100"
+                                                CssClass="form-control" Form_Vertical="true" />
+                                        </div>
+                                        <div class="col_full" style="margin-bottom: 0px;">
+                                            <cc:rTextBox ID="txt_password_repeted" TextMode="Password" runat="server" MaxLength="100"
+                                                CssClass="form-control" Form_Vertical="true" />
+                                        </div>
+                                        <div class="col_full" style="margin-bottom: 0px;">
+                                            <asp:LinkButton ID="btn_password" runat="server" CssClass="button btn-block button-rounded button-danger nomargin">
+                                                <%=Lingua.CaricaLingua("lgl_profilo_modifica_psw")%> <i class="icon-ok-sign"></i>
+                                            </asp:LinkButton>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!-- FINE modifica profilo -->
+                                
                         <!-- Profilo Pubblico -->
                         <div id="div_profilo_pubblico" runat="server">
                             <div class="col_three_fifth" id="ready" style="margin-bottom: 0px;">
@@ -410,24 +430,21 @@
                             </div>
                         </div>
                         <!-- FINE modifica profilo pubblico -->
-                        <div class="col_full">
-                            <hr>
-                        </div>
+                        
                         <!-- Calendario Eventi -->
                         <div id="div_profilo_when" runat="server">
-                            
                             <div class="panel panel-default clearfix" style="padding-top: 10px;">
-                                <div class="col_full">
-                                    <h4 style="padding-left:10px;">
-                                        <%=Lingua.CaricaLingua("lgl_profilo_appuntamento")%>
+                                <div class="date-list clearfix">
+                                    <div class="col-md-12">
+                                        <label><%=Lingua.CaricaLingua("lgl_profilo_appuntamento")%></label>
                                         <asp:RadioButton ID="rdb_appuntamenti_a" GroupName="rdb_appuntamenti" style="margin-bottom:22px;" 
                                             CssClass="radio-inline" runat="server" AutoPostBack="true" OnCheckedChanged="rdb_appuntamenti_CheckedChanged" />
-                                        <%=Lingua.CaricaLingua("lgl_profilo_o_disponibilita")%>
+                                        <label><%=Lingua.CaricaLingua("lgl_profilo_o_disponibilita")%></label>
                                         <asp:RadioButton ID="rdb_appuntamenti_d" GroupName="rdb_appuntamenti" style="margin-bottom:22px;" 
                                             CssClass="radio-inline" runat="server" AutoPostBack="true" OnCheckedChanged="rdb_appuntamenti_CheckedChanged" />
-                                    </h4>
+                                    </div>
                                 </div>
-                                <div id="div_insert_app" runat="server" visible="false">
+                                <div id="div_insert_app" class="date-list clearfix" runat="server" visible="false">
                                     <div class="col-md-2">
                                         <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
                                             Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy hh:mm" />
@@ -445,14 +462,14 @@
                                             Form_Vertical="true" />
                                     </div>
                                     <div class="col-md-1">
-                                        <div style="padding-top: 24px;">
-                                            <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="fright button button-rounded button-small button-success">
+                                        <div style="padding-top: 30px;">
+                                            <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CssClass="fright btn btn-small btn-success">
                                                 <i class="icon-plus nomargin"></i>
                                             </asp:LinkButton>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="div_insert_dis" runat="server" visible="false">
+                                <div id="div_insert_dis" class="date-list available clearfix" runat="server" visible="false">
                                     <div class="col-md-2">
                                         <cc:rTextBox ID="txt_ua_dal" runat="server" MaxLength="18" CssClass="form-control"
                                             Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy" />
@@ -470,8 +487,8 @@
                                             Form_Vertical="true" />
                                     </div>
                                     <div class="col-md-1">
-                                        <div style="padding-top: 24px;">
-                                            <asp:LinkButton ID="btn_salva_profilo_disp" runat="server" CssClass="fright button button-rounded button-small button-success">
+                                        <div style="padding-top: 30px;">
+                                            <asp:LinkButton ID="btn_salva_profilo_disp" runat="server" CssClass="fright btn btn-small btn-success">
                                                 <i class="icon-plus nomargin"></i>
                                             </asp:LinkButton>
                                         </div>
@@ -482,58 +499,62 @@
                             <asp:Repeater ID="rpt_appuntamenti" runat="server">
                                 <ItemTemplate>
                                     <div class="col_full" id="div_appu" runat="server">
-                                        <div class="col-md-2">
-                                            <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
-                                                Form_Vertical="true" Label="" />
-                                        </div>
-                                        <div class="col-md-3">
-                                            <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                                Form_Vertical="true" />
-                                        </div>
-                                        <div class="col-md-2">
-                                            <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
-                                                Form_Vertical="true" />
-                                        </div>
-                                        <div class="col-md-3">
-                                            <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
-                                                Form_Vertical="true" />
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div style="padding-top: 15px; white-space:nowrap; margin-bottom: 15px;">
-                                                <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL_A" CssClass="fright button button-rounded button-small button-danger">
-                                                    <i class="icon-remove nomargin"></i>
-                                                </asp:LinkButton>
-                                                <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CommandName="MOD_A" CssClass="fright button button-rounded button-small button-success">
-                                                    <i class="icon-save nomargin"></i>
-                                                </asp:LinkButton>
+                                        <div class="date-list clearfix">
+                                            <div class="col-md-2">
+                                                <cc:rTextBox ID="txt_uw_quando" runat="server" MaxLength="18" CssClass="form-control"
+                                                    Form_Vertical="true" Label="" />
+                                            </div>
+                                            <div class="col-md-3">
+                                                <cc:rTextBox ID="txt_uw_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                                    Form_Vertical="true" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <cc:rTextBox ID="txt_uw_citta" runat="server" MaxLength="512" CssClass="form-control"
+                                                    Form_Vertical="true" />
+                                            </div>
+                                            <div class="col-md-3">
+                                                <cc:rTextBox ID="txt_uw_location" runat="server" MaxLength="512" CssClass="form-control"
+                                                    Form_Vertical="true" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="btn-group fright" style="padding-top: 20px; white-space:nowrap;">
+                                                    <asp:LinkButton ID="btn_salva_profilo_when" runat="server" CommandName="MOD_A" CssClass="btn btn-small btn-success">
+                                                        <i class="icon-ok nomargin"></i>
+                                                    </asp:LinkButton>
+                                                    <asp:LinkButton ID="btn_delete_profilo_when" runat="server" CommandName="DEL_A" CssClass="btn btn-small btn-danger">
+                                                        <i class="icon-remove nomargin"></i>
+                                                    </asp:LinkButton>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col_full" id="div_disp" runat="server">
-                                        <div class="col-md-2" style="background-color:lightgreen;">
-                                            <cc:rTextBox ID="txt_ua_dal" runat="server" MaxLength="18" CssClass="form-control"
-                                                Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy" />
-                                        </div>
-                                        <div class="col-md-2" style="background-color:lightgreen;">
-                                            <cc:rTextBox ID="txt_ua_al" runat="server" MaxLength="256" CssClass="form-control"
-                                                Form_Vertical="true" />
-                                        </div>
-                                        <div class="col-md-3" style="background-color:lightgreen;">
-                                            <cc:rTextBox ID="txt_ua_titolo" runat="server" MaxLength="256" CssClass="form-control"
-                                                Form_Vertical="true" />
-                                        </div>
-                                        <div class="col-md-3" style="background-color:lightgreen;">
-                                            <cc:rTextBox ID="txt_ua_annuncio" runat="server" MaxLength="512" CssClass="form-control"
-                                                Form_Vertical="true" />
-                                        </div>
-                                        <div class="col-md-2" style="background-color:lightgreen; margin-bottom:15px;">
-                                            <div style="padding-top: 15px; white-space:nowrap;">
-                                                <asp:LinkButton ID="btn_delete_profilo_disp" runat="server" CommandName="DEL_D" CssClass="fright button button-rounded button-small button-danger">
-                                                    <i class="icon-remove nomargin"></i>
-                                                </asp:LinkButton>
-                                                <asp:LinkButton ID="btn_salva_profilo_disp" runat="server" CommandName="MOD_D" CssClass="fright button button-rounded button-small button-success">
-                                                    <i class="icon-save nomargin"></i>
-                                                </asp:LinkButton>
+                                        <div class="date-list available clearfix">
+                                            <div class="col-md-2">
+                                                <cc:rTextBox ID="txt_ua_dal" runat="server" MaxLength="18" CssClass="form-control"
+                                                    Form_Vertical="true" Label="" Placeholder="dd/mm/yyyy" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <cc:rTextBox ID="txt_ua_al" runat="server" MaxLength="256" CssClass="form-control"
+                                                    Form_Vertical="true" />
+                                            </div>
+                                            <div class="col-md-3">
+                                                <cc:rTextBox ID="txt_ua_titolo" runat="server" MaxLength="256" CssClass="form-control"
+                                                    Form_Vertical="true" />
+                                            </div>
+                                            <div class="col-md-3">
+                                                <cc:rTextBox ID="txt_ua_annuncio" runat="server" MaxLength="512" CssClass="form-control"
+                                                    Form_Vertical="true" />
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="btn-group fright" style="padding-top: 20px; white-space:nowrap;">
+                                                    <asp:LinkButton ID="btn_salva_profilo_disp" runat="server" CommandName="MOD_D" CssClass="btn btn-small btn-success">
+                                                        <i class="icon-ok nomargin"></i>
+                                                    </asp:LinkButton>
+                                                    <asp:LinkButton ID="btn_delete_profilo_disp" runat="server" CommandName="DEL_D" CssClass="btn btn-small btn-danger">
+                                                        <i class="icon-remove nomargin"></i>
+                                                    </asp:LinkButton>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
