@@ -3,10 +3,6 @@
 <%@ Import Namespace="JazzHub_Servizi.Lingua" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="/js/select2/select2.css"/>
-    <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
-    <script type="text/javascript" src="/js/select2/select2.min.js"></script>
-    <script type="text/javascript" src="/js/select2/select2_locale_<%=select2_locale%>.js"></script>
     <script type="text/javascript">
         function reinitInput() {
             Metronic.init(); // init metronic core componets

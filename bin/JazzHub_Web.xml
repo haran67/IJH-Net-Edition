@@ -398,30 +398,6 @@ img_logo_r control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_home">
-	<summary>
-a_home control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_about">
-	<summary>
-a_about control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_partner">
-	<summary>
-a_partner control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.Jazz.a_user">
 	<summary>
 a_user control.
@@ -430,33 +406,9 @@ a_user control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_media">
+</member><member name="F:JazzHub_Web.Jazz.a_video">
 	<summary>
-a_media control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_streaming">
-	<summary>
-a_streaming control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_crowfounding">
-	<summary>
-a_crowfounding control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_link">
-	<summary>
-a_link control.
+a_video control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -489,6 +441,62 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Jazz.lnk_lingua_en">
 	<summary>
 lnk_lingua_en control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_home">
+	<summary>
+a_home control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_about">
+	<summary>
+a_about control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_partner">
+	<summary>
+a_partner control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_media">
+	<summary>
+a_media control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_streaming">
+	<summary>
+a_streaming control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_crowfounding">
+	<summary>
+a_crowfounding control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_link">
+	<summary>
+a_link control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -577,6 +585,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Jazz.btn_esci">
 	<summary>
 btn_esci control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.div_cerca">
+	<summary>
+div_cerca control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.ddl_ricerca_video">
+	<summary>
+ddl_ricerca_video control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.btn_cerca_video">
+	<summary>
+btn_cerca_video control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.ddl_ricerca_utenti">
+	<summary>
+ddl_ricerca_utenti control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.btn_cerca_utenti">
+	<summary>
+btn_cerca_utenti control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3006,14 +3054,6 @@ btn_indietro control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:JazzHub_Web.Amm_Utente.btn_esci">
-	<summary>
-btn_esci control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:JazzHub_Web.Amm_Utente.upd_panel">
 	<summary>
 upd_panel control.
@@ -3313,6 +3353,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Amm_Utente.btn_aggiorna_profilo">
 	<summary>
 btn_aggiorna_profilo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Amm_Utente.btn_cancella_profilo">
+	<summary>
+btn_cancella_profilo control.
 </summary>
 	<remarks>
 Auto-generated field.
