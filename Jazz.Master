@@ -51,7 +51,9 @@
     <link rel="stylesheet" href="/js/select2/select2.css"/>
     <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
     <script type="text/javascript" src="/js/select2/select2.min.js"></script>
+    <telerik:RadCodeBlock ID="RadCodeBlock2" runat="server">
     <script type="text/javascript" src="/js/select2/select2_locale_<%=select2_locale%>.js"></script>
+    </telerik:RadCodeBlock>
 
     <!-- Compila sul client i file LESS. Da commentare (o eliminare del tutto) in rilascio finale con la versione CSS compilata -->
     <!--script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script-->
@@ -420,6 +422,8 @@
     <script type="text/javascript" src="/js/functions.js"></script>
     <script type="text/javascript" src="/js/jquery.truncate.js"></script>
     </form>
+
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
     <script type="text/javascript">
         function SaveResetScrollPosition(div_ok) {
             setTimeout("window.scrollTo(0,0)", 0);
@@ -567,6 +571,8 @@
 //        }
 
     </script>
+    </telerik:RadCodeBlock>
+
     <asp:ContentPlaceHolder ID="script" runat="server">
     </asp:ContentPlaceHolder>
 

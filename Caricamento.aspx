@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/js/select2/select2.css"/>
     <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
     <script type="text/javascript" src="/js/select2/select2.min.js"></script>
+    <telerik:RadCodeBlock ID="RadCodeBlock2" runat="server">
     <script type="text/javascript" src="/js/select2/select2_locale_<%=select2_locale%>.js"></script>
     <script type="text/javascript">
         var selectedItems;
@@ -56,8 +57,10 @@
         }
 
     </script>
+    </telerik:RadCodeBlock> 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+
     <section class="page-title page-title-mini">
         <div class="container clearfix">
             <h1 style="font-weight: 400; display: none"><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
@@ -117,7 +120,7 @@
                         </span>
 
 
-                        <div class="" style="margin-bottom:20px;">
+                        <div class="" style="margin-bottom:20px;" id="div_immagine" runat="server">
                             <label><%=Lingua.CaricaLingua("lgl_caricamento_copertina")%></label>
                             <div class="clear"></div>
                             <div class="center" style="position: relative; width: 300px; height: 228px;" data-class-lg="fleft" data-class-md="fleft" data-class-sm="fleft" data-class-xs="divcenter" data-class-xxs="divcenter">
@@ -196,6 +199,8 @@
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+    
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -282,4 +287,5 @@
 
 
     </script>
+    </telerik:RadCodeBlock> 
 </asp:Content>
