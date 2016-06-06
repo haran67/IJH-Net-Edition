@@ -148,6 +148,10 @@
                                     <asp:LinkButton ID="btn_aggiorna_profilo" runat="server" CssClass="button button-rounded btn-block button-red nomargin">
                                         <%=Lingua.CaricaLingua("lgl_profilo_aggiorna_profilo")%> <i class="icon-check"></i>
                                     </asp:LinkButton>
+                                    &nbsp;
+                                    <asp:LinkButton ID="btn_cancella_profilo" runat="server" CssClass="button button-rounded btn-block button-danger nomargin">
+                                        <%=Lingua.CaricaLingua("lgl_profilo_elimina_profilo")%> <i class="icon-trash2"></i>
+                                    </asp:LinkButton>
                                 </div>
                             </div>
                         </div>

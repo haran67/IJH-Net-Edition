@@ -48,6 +48,13 @@
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/plugins.js"></script>
     <script type="text/javascript" src="/js/utility.js"></script>
+    <link rel="stylesheet" href="/js/select2/select2.css"/>
+    <link rel="stylesheet" href="/js/select2/select2_jazz.css"/>
+    <script type="text/javascript" src="/js/select2/select2.min.js"></script>
+    <telerik:RadCodeBlock ID="RadCodeBlock2" runat="server">
+    <script type="text/javascript" src="/js/select2/select2_locale_<%=select2_locale%>.js"></script>
+    </telerik:RadCodeBlock>
+
     <!-- Compila sul client i file LESS. Da commentare (o eliminare del tutto) in rilascio finale con la versione CSS compilata -->
     <!--script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script-->
     <!--<script type="text/javascript" src="/js/less.min.js"></script>-->
@@ -80,67 +87,21 @@
                     </div>
                     <nav id="primary-menu">
                         <ul>
-<!--
-                            <li>
-                                <a href="/index.aspx" id="a_home" runat="server"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
+
+                            <li class="hidden">
+                                <a href="javascript:$('#<%=div_cerca.ClientId%>').show('slow');">
+                                    <%=Lingua.CaricaLingua("lgl_menu_cerca")%>
+                                </a>
                             </li>
--->
-                            <li>
-                                <a href="/chisiamo.aspx" id="a_about" runat="server"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
-                            </li>
-<!--
-                            <li>
-                                <a href="/partner.aspx" id="a_partner" runat="server"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a>
-                            </li>
--->
+
                             <li>
                                 <a href="/User-list.aspx" id="a_user" runat="server"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
                             </li>
-<!--                                    <li><a href="/contatti.aspx"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a></li>-->
-<!--
-                            <li>
-                                <a href="#" id="a_media" runat="server"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
-                                <ul>
-                                    <li><a href="/radio.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
-                                    <li><a href="/tv.aspx"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
-                                </ul>
 
-                            </li>
--->
-<!--
                             <li>
-                                <a href="#">Services</a>
-                                <ul>
-                                    <li><a href="/radio.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
-                                </ul>
+                                <a href="/Video-list.aspx" id="a_video" runat="server"><%=Lingua.CaricaLingua("lgl_menu_video")%></a>
                             </li>
--->
-<!--
-                            <li>
-                                <a href="/Video-list.aspx">Video</a>
-                            </li>
--->
-                            
-                            <li>
-                                <a href="/streaming.aspx" id="a_streaming" runat="server"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
-                            </li>
-<!--
-                            <li>
-                                <a href="/crowdfunding.aspx" id="a_crowfounding" runat="server"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
-                            </li>
--->
-                            
-                            
-<!--
-                            <li>
-                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_shop")%></a>
-                            </li>
--->
-<!--
-                            <li>
-                                <a href="/link.aspx" id="a_link" runat="server"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
-                            </li>
--->
+
                             <li class="hidden">
                                 <asp:LinkButton ID="lnk_lingua" runat="server">
                                     <asp:Image ID="img_lingua" runat="server" Width="20" style="padding-bottom:2px;" ImageUrl="/images/italy.png" />
@@ -153,6 +114,46 @@
                                     <li><asp:LinkButton ID="lnk_lingua_en" runat="server" OnClick="lnk_lingua_menu_Click" CommandArgument="en-US" ><%=Lingua.CaricaLingua("lgl_menu_lingua_en")%></asp:LinkButton></li>
                                 </ul>
                             </li>
+
+                            <!--
+                            <li>
+                                <a href="/index.aspx" id="a_home" runat="server"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
+                            </li>
+                            <li>
+                                <a href="/chisiamo.aspx" id="a_about" runat="server"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
+                            </li>
+                            <li>
+                                <a href="/partner.aspx" id="a_partner" runat="server"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a>
+                            </li>
+                            <li><a href="/contatti.aspx"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a></li>
+                            <li>
+                                <a href="#" id="a_media" runat="server"><%=Lingua.CaricaLingua("lgl_menu_media")%></a>
+                                <ul>
+                                    <li><a href="/radio.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
+                                    <li><a href="/tv.aspx"><%=Lingua.CaricaLingua("lgl_menu_tv")%></a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                                <ul>
+                                    <li><a href="/radio.aspx"><%=Lingua.CaricaLingua("lgl_menu_radio")%></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/streaming.aspx" id="a_streaming" runat="server"><%=Lingua.CaricaLingua("lgl_menu_streaming")%></a>
+                            </li>
+                            <li>
+                                <a href="/crowdfunding.aspx" id="a_crowfounding" runat="server"><%=Lingua.CaricaLingua("lgl_menu_crow")%></a>
+                            </li>
+                            <li>
+                                <a href="/wip.aspx"><%=Lingua.CaricaLingua("lgl_menu_shop")%></a>
+                            </li>
+                            <li>
+                                <a href="/link.aspx" id="a_link" runat="server"><%=Lingua.CaricaLingua("lgl_menu_link")%></a>
+                            </li>
+                            -->
+
                         </ul>
                         <span  id="li_accedi" runat="server">
                             <div id="top-cart">
@@ -191,6 +192,34 @@
                         </span>
                     </nav>
                 </div>
+                <div id="div_cerca" runat="server" style="display:none;">
+                    <div id="page-menu">
+                        <div id="page-menu-wrap">
+                            <div class="container clearfix">
+                                <div class="col_half">
+                                    <div class="main-search notopmargin">
+                                        <div style="margin-left: auto; margin-right: auto; float: none">
+                                            <input type="hidden" id="ddl_ricerca_video" class="form-control select2" runat="server">
+                                            <asp:LinkButton ID="btn_cerca_video" runat="server" CssClass="btn-main-search">
+                                                <i class="icon-search"></i>
+                                            </asp:LinkButton>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_half col_last">
+                                    <div class="main-search notopmargin">
+                                        <div style="margin-left: auto; margin-right: auto; float: none">
+                                            <input type="hidden" id="ddl_ricerca_utenti" class="form-control select2" runat="server">
+                                            <asp:LinkButton ID="btn_cerca_utenti" runat="server" CssClass="btn-main-search">
+                                                <i class="icon-search"></i>
+                                            </asp:LinkButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </header>
         <asp:ContentPlaceHolder ID="body" runat="server">
@@ -214,6 +243,7 @@
                             <hr style="margin: 10px 0;">
 -->
                             <a href="/contatti.aspx" class="button button-mini button-border nomargin"><%=Lingua.CaricaLingua("lgl_menu_contatti")%></a>
+                            <a href="/chisiamo.aspx" class="button button-mini button-border nomargin"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
                         </div>
                         <div class="visible-sm visible-xs line"></div>
                         <div class="col_one_fifth center">
@@ -392,6 +422,8 @@
     <script type="text/javascript" src="/js/functions.js"></script>
     <script type="text/javascript" src="/js/jquery.truncate.js"></script>
     </form>
+
+    <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
     <script type="text/javascript">
         function SaveResetScrollPosition(div_ok) {
             setTimeout("window.scrollTo(0,0)", 0);
@@ -451,7 +483,96 @@
                 addtitle: true,
             });
         })
+
+        $(document).ready(function () {
+            $("#<%=ddl_ricerca_video.ClientID%>").select2({
+                placeholder: '<%=Lingua.CaricaLingua("lgl_index_cerca_per")%>',
+                allowClear: true,
+                multiple: true,
+                minimumInputLength: 3,
+                query: function (query) {
+                    PageMethods.ElencoRicerca(query.term, "", NCSuccess, NCFailure);
+                    function NCSuccess(result) {
+                        var data = { results: [] };
+                        $.each(result, function (index, item) {
+                            data.results.push({ id: item.id, text: item.text });
+                        });
+                        query.callback(data);
+                    }
+                    function NCFailure(error) {
+                    }
+                },
+                initSelection: function (element, callback) {
+                    PageMethods.ElencoRicerca("", $(element).val(), NCSuccess, NCFailure);
+                    function NCSuccess(result) {
+
+                        callback(result[0]);
+                    }
+                    function NCFailure(error) {
+                    }
+                }
+            });
+
+            $("#<%=ddl_ricerca_video.ClientID%>").each(function () {
+                $('.select2-search-choice').remove();
+                $(this).on("change", function (e) {
+                    PageMethods.SalvaSelect2MultipleValues(e.val, PMSuccess, PMFailure);
+                })
+            });
+
+            $("#<%=ddl_ricerca_utenti.ClientID%>").select2({
+                placeholder: '<%=Lingua.CaricaLingua("lgl_index_cerca_utenti_per")%>',
+                allowClear: true,
+                multiple: true,
+                minimumInputLength: 3,
+                query: function (query) {
+                    PageMethods.ElencoRicercaUtenti(query.term, "", NCSuccess, NCFailure);
+                    function NCSuccess(result) {
+                        var data = { results: [] };
+                        $.each(result, function (index, item) {
+                            data.results.push({ id: item.id, text: item.text });
+                        });
+                        query.callback(data);
+                    }
+                    function NCFailure(error) {
+                    }
+                },
+                initSelection: function (element, callback) {
+                    PageMethods.ElencoRicercaUtenti("", $(element).val(), NCSuccess, NCFailure);
+                    function NCSuccess(result) {
+
+                        callback(result[0]);
+                    }
+                    function NCFailure(error) {
+                    }
+                }
+            });
+
+            $("#<%=ddl_ricerca_utenti.ClientID%>").each(function () {
+                $('.select2-search-choice').remove();
+                $(this).on("change", function (e) {
+                    PageMethods.SalvaSelect2MultipleUsers(e.val, PMSuccess, PMFailure);
+                })
+            });
+
+            $('#<%=ddl_ricerca_utenti.ClientID%>').select2('val', <%=select2_users_values%>);
+            //$('#<%=ddl_ricerca_video.ClientID%>').select2('val', selectedItemsVideo);
+
+        });
+
+//        var selectedItemsVideo = ;
+//        function setMultipleSelectVideo(val) {
+//            selectedItemsVideo = val.split(',');
+//        }
+
+//        var selectedItemsUsers;
+//        function setMultipleSelectUsers(val) {
+//            selectedItemsUsers = val.split(',');
+//        }
+
     </script>
+    </telerik:RadCodeBlock>
+
     <asp:ContentPlaceHolder ID="script" runat="server">
     </asp:ContentPlaceHolder>
 
