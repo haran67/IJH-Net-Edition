@@ -22,9 +22,9 @@
                     <div style="position: relative" data-class-lg="fleft" data-class-md="fleft" data-class-sm="nofloat" data-class-xs="nofloat" data-class-xxs="nofloat">
                         <asp:Image ID="img_utente" runat="server"  data-class-lg="" data-class-md="" data-class-sm="nomargin" data-class-xs="nomargin" data-class-xxs="nomargin" />
                         <div style="position: absolute; top: -3px; left: -3px;">
-                            <i class="i-circled i-small i-light icon-facetime-video fright  nomargin" id="i_expo" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
-                            <i class="i-circled i-small i-light icon-eye-open fright  nomargin" id="i_view" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor"></i> 
-                            <i class="i-circled i-small i-light icon-coffee2 fright  nomargin" id="i_guest" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
+                            <i class="i-circled i-small i-light icon-facetime-video fright nomargin" id="i_expo" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
+                            <i class="i-circled i-small i-light icon-eye-open fright nomargin" id="i_view" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor"></i> 
+                            <i class="i-circled i-small i-light icon-coffee2 fright nomargin" id="i_guest" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                         </div>
                     </div>
                     <div data-class-lg="fleft" data-class-md="fleft" data-class-sm="nofloat" data-class-xs="nofloat" data-class-xxs="nofloat">
@@ -54,6 +54,18 @@
                                     </a>
                                 </ItemTemplate>
                             </asp:Repeater>
+                            <a href="#" target="_blank">
+                                <i class="icon-soundcloud nomargin"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon-spotify nomargin"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon-itunes nomargin"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="icon-amazon nomargin"></i>
+                            </a>
                         </h4>
                     </div>
                 </div>
