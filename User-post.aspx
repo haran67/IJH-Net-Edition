@@ -54,18 +54,7 @@
                                     </a>
                                 </ItemTemplate>
                             </asp:Repeater>
-                            <a href="#" target="_blank">
-                                <i class="icon-soundcloud nomargin"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="icon-spotify nomargin"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="icon-itunes nomargin"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="icon-amazon nomargin"></i>
-                            </a>
+                            
                         </h4>
                     </div>
                 </div>
@@ -151,11 +140,32 @@
                 </div>
                 
                 <div class="sidebar col_last clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
-                    <h4 class="color" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-calendar3 i-vetrina nomargin"></i> 
+                    <h4 class="color" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-music2 i-vetrina nomargin"></i> 
+                        My store</h4>
+                    <div class="divider divider-rounded divider-center notopmargin" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-music2" style="background-color: rgba(0,0,0,.1)"></i></div>
+                    <div class="clearfix">
+                        <a href="#" class="social-icon si-rounded si-light si-soundcloud" target="_blank">
+                            <i class="icon-soundcloud"></i>
+                            <i class="icon-soundcloud"></i>
+                        </a>
+                        <a href="#" class="social-icon si-rounded si-light si-spotify" target="_blank">
+                            <i class="icon-spotify"></i>
+                            <i class="icon-spotify"></i>
+                        </a>
+                        <a href="#" class="social-icon si-rounded si-light si-itunes" target="_blank">
+                            <i class="icon-itunes"></i>
+                            <i class="icon-itunes"></i>
+                        </a>
+                        <a href="#" class="social-icon si-rounded si-light si-amazon" target="_blank">
+                            <i class="icon-amazon"></i>
+                            <i class="icon-amazon"></i>
+                        </a>
+                    </div>
+                    <h4 style="margin-top: 40px" class="color" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-calendar3 i-vetrina nomargin"></i> 
                         <%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
-                        <div class="divider divider-rounded divider-center notopmargin" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-calendar3" style="background-color: rgba(0,0,0,.1)"></i></div>
-                    <div class="date-list">
-                        <h3 class="nomargin" style="color: #3A4B5F" id="h_nessun_eventi" runat="server">
+                    <div class="divider divider-rounded divider-center" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-calendar3" style="background-color: rgba(0,0,0,.1)"></i></div>
+                    <div class="date-list" id="h_nessun_eventi" runat="server">
+                        <h3 class="nomargin" style="color: #3A4B5F">
                             <%=Lingua.CaricaLingua("lgl_user_post_nessun_evento")%>
                         </h3>
                     </div>
