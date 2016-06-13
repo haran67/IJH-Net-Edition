@@ -34,8 +34,14 @@ sans-serif;
 sans-serif;
 @secondary-font: 'Crete Round',
 serif;
-@header-height: 60px;
+
+@header-height: 80px;
+
 #header.static-sticky ~ #page-menu.sticky-page-menu #page-menu-wrap {
+    top: @header-height;
+}
+
+#page-menu.sticky-page-menu #page-menu-wrap {
     top: @header-height;
 }
 
@@ -221,7 +227,9 @@ serif;
 
 
 /* custom helper class */
-
+.main.search input {
+    width: 100%;
+}
 .main-search .select2 {
     font-size: 130%;
 }
@@ -231,8 +239,8 @@ serif;
     input {
         text-align: center;
         .select-left & {
-        text-align: left;
-    }
+            text-align: left;
+        }
     }
 }
 
@@ -1789,10 +1797,17 @@ label {
         border: solid 1px rgba(0, 0, 0, .15);
         width: 100px;
         display: block;
-        padding-top: 38px;
-        padding-bottom: 38px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         margin-left: auto;
         margin-right: auto;
+        line-height: 1em;
+        &.small {
+            border: none;
+            background: #fff;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
     }
 }
 

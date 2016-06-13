@@ -87,9 +87,8 @@
                     </div>
                     <nav id="primary-menu">
                         <ul>
-
-                            <li class="">
-                                <a href="javascript:$('#<%=div_cerca.ClientId%>').show('slow');">
+                            <li>
+                                <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'visible');">
                                     <%=Lingua.CaricaLingua("lgl_menu_cerca")%>
                                 </a>
                             </li>
@@ -192,11 +191,14 @@
                         </span>
                     </nav>
                 </div>
-                <div id="div_cerca" runat="server" style="display:none;">
+                <div id="div_cerca" runat="server" style="visibility: hidden;">
                     <div id="page-menu">
-                        <div id="page-menu-wrap">
+                        <div id="page-menu-wrap" class="center">
+                                <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'hidden');" style="position: absolute; bottom: -35px; background: #fff; line-height: 1em; font-size: 16px; padding: 15px; right: 0px; border-radius: 0 0 0 10px;">
+                                    <i class="icon-line2-close"></i>
+                                </a>
                             <div class="container clearfix">
-                                <div class="col_half">
+                                <div class="col-md-5 nobottommargin">
                                     <div class="main-search notopmargin">
                                         <div style="margin-left: auto; margin-right: auto; float: none">
                                             <input type="hidden" id="ddl_ricerca_video" class="form-control select2" runat="server">
@@ -206,7 +208,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col_half col_last">
+                                <div class="col-md-2 center oppure nothidden" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" style="height: 100px;">
+                                    <div class="vertical-middle" style="position: absolute; top: 25%; width: 100%; padding-top: 0px; padding-bottom: 0px;">
+                                        <span class="small" style="border: none; background: #fff; position: relative; top: -17px;">oppure</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 nobottommargin">
                                     <div class="main-search notopmargin">
                                         <div style="margin-left: auto; margin-right: auto; float: none">
                                             <input type="hidden" id="ddl_ricerca_utenti" class="form-control select2" runat="server">
