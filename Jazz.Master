@@ -88,7 +88,7 @@
                     <nav id="primary-menu">
                         <ul>
 
-                            <li class="hidden">
+                            <li class="">
                                 <a href="javascript:$('#<%=div_cerca.ClientId%>').show('slow');">
                                     <%=Lingua.CaricaLingua("lgl_menu_cerca")%>
                                 </a>

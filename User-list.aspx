@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div id="page-menu" class="box-shadow-custom">
+    <div id="page-menu" class="box-shadow-custom hidden">
         <div id="page-menu-wrap">
             <div class="container clearfix">
                 <div class="menu-title hidden">
@@ -53,9 +53,15 @@
         <div class="container center clearfix">
             <h4 class="color">People</h4>
             <div class="divider divider-rounded divider-center divider-custom">
-                <i class="icon-coffee2" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
-                <i class="icon-facetime-video" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i>
-                <i class="icon-eye-open" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i>
+                <asp:LinkButton ID="btn_search_guest" runat="server">
+                    <i class="icon-coffee2" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest" id="icon_guest" runat="server"></i>
+                </asp:LinkButton>
+                <asp:LinkButton ID="btn_search_expo" runat="server">
+                    <i class="icon-facetime-video" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo" id="icon_expo" runat="server"></i>
+                </asp:LinkButton>
+                <asp:LinkButton ID="btn_search_visitor" runat="server">
+                    <i class="icon-eye-open" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor" id="icon_visit" runat="server"></i>
+                </asp:LinkButton>
             </div>
 <!--            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-user4" style="background-color: #e6e6e6"></i></div>-->
             <h4 style="font-weight: 400;" class="color"><asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal></h4>
@@ -81,7 +87,7 @@
                                         </div>
                                         <div class="user-profile-type user-profile-type-list">
                                             <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-facetime-video" id="i_expo" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
-                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
+                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor"></i> 
                                             <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-coffee2" id="i_guest" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                                         </div>
                                     </div>

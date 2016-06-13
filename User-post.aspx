@@ -9,7 +9,7 @@
     <section class="page-title page-title-mini" style="background-color: #fdd" id="div_profilo" runat="server">
         <div class="container clearfix">
             <h1 style="font-weight: 300; display: none"><asp:Literal ID="ltl_utente_title" runat="server"></asp:Literal></h1>
-            <h1 style="font-weight: 400; color: #900">Anteprima Profilo</h1>
+            <h1 style="font-weight: 400; color: #900"><%=Lingua.CaricaLingua("lgl_user_post_anterprima")%></h1>
             <ol class="breadcrumb">
                 <li><asp:LinkButton ID="btn_indietro" style="background:#e33; padding: 5px 10px; color: #fff; font-weight: 600; border-radius: 3px" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></li>
             </ol>
@@ -23,7 +23,7 @@
                         <asp:Image ID="img_utente" runat="server"  data-class-lg="" data-class-md="" data-class-sm="nomargin" data-class-xs="nomargin" data-class-xxs="nomargin" />
                         <div style="position: absolute; top: -3px; left: -3px;">
                             <i class="i-circled i-small i-light icon-facetime-video fright  nomargin" id="i_expo" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
-                            <i class="i-circled i-small i-light icon-eye-open fright  nomargin" id="i_view" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Audience"></i> 
+                            <i class="i-circled i-small i-light icon-eye-open fright  nomargin" id="i_view" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor"></i> 
                             <i class="i-circled i-small i-light icon-coffee2 fright  nomargin" id="i_guest" runat="server" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         </h4>
                     </div>
                 </div>
-                <div class="sidebar col_last clearfix nomargin">
+                <div class="sidebar col_last clearfix nomargin hidden">
                     <h4 class="color" style="margin: 10px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
                         <i class="i-circled i-light i-small icon-user3 i-vetrina nomargin"></i>
                         <%=Lingua.CaricaLingua("lgl_user_post_cerca")%></h4>
@@ -83,19 +83,19 @@
             <div class="container  clearfix">
                 <div class="postcontent clearfix nopadding">
                     <asp:Image ID="img_copertina" runat="server" class="thumbnail" />
-                    <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-note i-vetrina nomargin"></i> Biosketch</h4>
+                    <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-note i-vetrina nomargin"></i> <%=Lingua.CaricaLingua("lgl_userpost_biosketch")%></h4>
                     <div class="divider divider-center divider-rounded" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-note" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <h5 class="citazione nomargin" style="font-weight: 300" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
                         <asp:Literal ID="ltl_descrizione_full" runat="server"></asp:Literal>
                     </h5>
-                    <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-tv i-vetrina nomargin"></i> Video</h4>
+                    <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-tv i-vetrina nomargin"></i> <%=Lingua.CaricaLingua("lgl_videolist_video")%></h4>
                     <div class="divider divider-center divider-rounded" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-tv" style="background-color: rgba(0,0,0,.1)"></i></div>
                     <div id="portfolio"  class="<%=pf_num%> clearfix standard-portfolio">
                         <h4 class="color hidden"><asp:literal ID="ltl_titolo" runat="server"></asp:literal></h4>
                         <h2 style="font-weight: 300;" class="color" id="h_nessun_video" runat="server">
                             <%=Lingua.CaricaLingua("lgl_user_post_nessun_video")%>
                         </h2>
-                        <asp:Repeater ID="rpt_video" runat="server">
+                        <asp:Repeater ID="rpt_video" runat="server" OnItemCommand="rpt_video_ItemCommand" OnItemDataBound="rpt_video_ItemDataBound">
                             <ItemTemplate>
                                 <article class="portfolio-item">
                                     <div class="portfolio-image patch-placeholder">
@@ -112,6 +112,29 @@
                             </ItemTemplate>
                         </asp:Repeater>
                         
+                    </div>
+                    <div id="div_liked_expo" runat="server">
+                        <h4 class="color" style="margin-top: 40px" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-tv i-vetrina nomargin"></i> <%=Lingua.CaricaLingua("lgl_userpost_liked")%></h4>
+                        <div class="divider divider-center divider-rounded" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-tv" style="background-color: rgba(0,0,0,.1)"></i></div>
+                        <div id="portfolio"  class="<%=pf_num_liked%> clearfix standard-portfolio">
+                            <asp:Repeater ID="rpt_video_like_expo" runat="server" OnItemCommand="rpt_video_ItemCommand" OnItemDataBound="rpt_video_ItemDataBound">
+                                <ItemTemplate>
+                                    <article class="portfolio-item">
+                                        <div class="portfolio-image patch-placeholder">
+                                            <asp:LinkButton ID="btn_video" CommandName="VIDEO" runat="server">
+                                                <div class="goto-video"><i class="icon-line-play"></i></div>
+                                                <asp:Image ID="img_copertina" runat="server" />
+                                            </asp:LinkButton>
+                                        </div>
+                                        <div class="portfolio-desc">
+                                            <h3><asp:Literal ID="ltl_titolo" runat="server"></asp:Literal></h3>
+                                            <span><asp:Literal ID="ltl_descrizione" runat="server"></asp:Literal></span>
+                                        </div>
+                                    </article>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        
+                        </div>                    
                     </div>
                 </div>
                 

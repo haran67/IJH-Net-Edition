@@ -320,7 +320,7 @@
                             <div class="col_one_third col_last" style="margin-bottom: 0px;">
                                 <div class="panel panel-default divcenter">
                                     <div class="panel-body" style="padding: 20px;">
-                                        <h3 class="nopadding nomargin">Modifica Password</h3>
+                                        <h3 class="nopadding nomargin"><%=Lingua.CaricaLingua("lgl_profilo_modifica_password")%></h3>
                                         <hr>
                                         <div class="col_full" style="margin-bottom: 0px;">
                                             <cc:rTextBox ID="txt_old_password" TextMode="Password" runat="server" MaxLength="100"

@@ -9,7 +9,7 @@
     <section class="page-title page-title-mini" style="background-color: #fdd" id="div_profilo" runat="server">
         <div class="container clearfix">
             <h1 style="font-weight: 300; display: none"><asp:Literal ID="ltl_utente_title" runat="server"></asp:Literal></h1>
-            <h1 style="font-weight: 400; color: #900">Anteprima Video</h1>
+            <h1 style="font-weight: 400; color: #900"><%=Lingua.CaricaLingua("lgl_videopost_anteprima")%></h1>
             <ol class="breadcrumb">
                 <li><asp:LinkButton ID="btn_indietro" style="background:#e33; padding: 5px 10px; color: #fff; font-weight: 600; border-radius: 3px" runat="server"><%=Lingua.CaricaLingua("lgl_torna_profilo")%></asp:LinkButton></li>
             </ol>

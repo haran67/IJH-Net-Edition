@@ -61,14 +61,14 @@
                                                     <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_e" runat="server" GroupName="tipo_utente" Checked="true"
-                                                                OnClick="$('#div_ruolo').show('slow'); $('#div_alert_guest').hide('slow');" />
+                                                                OnClick="$('#div_ruolo_e').show('slow'); $('#div_alert_guest').hide('slow');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_espositore")%>
                                                         </label>
                                                     </div>
                                                     <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_v" runat="server" GroupName="tipo_utente" Checked="false"
-                                                                OnClick="$('#div_ruolo').hide('slow'); $('#div_alert_guest').hide('slow'); $('#div_fattura').show('slow');" />
+                                                                OnClick="$('#div_ruolo_g').hide('slow'); $('#div_ruolo_e').hide('slow'); $('#div_alert_guest').hide('slow'); $('#div_fattura').show('slow');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_visitatore")%>
                                                         </label>
                                                     </div>
@@ -76,7 +76,7 @@
                                                         margin-bottom: 10px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_g" runat="server" GroupName="tipo_utente" Checked="false"
-                                                                OnClick="$('#div_alert_guest').show('slow'); $('#div_ruolo').show('slow'); $('#div_fattura').hide('slow');" />
+                                                                OnClick="$('#div_alert_guest').show('slow'); $('#div_ruolo_e').hide('slow'); $('#div_ruolo_g').show('slow'); $('#div_fattura').hide('slow');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_guest")%>
                                                         </label>
                                                     </div>
@@ -96,8 +96,11 @@
                                                     <cc:rTextBox ID="txt_cognome" runat="server" MaxLength="70" CssClass="form-control"
                                                         Form_Vertical="true" Required="false" />
                                                 </div>
-                                                <div class="col_half" style="margin-bottom: 0px;" id="div_ruolo">
-                                                    <cc:rDropDown ID="ddl_tipo_utente" runat="server" CssClass="form-control" Form_Vertical="true" />
+                                                <div class="col_half" style="margin-bottom: 0px;" id="div_ruolo_g">
+                                                    <cc:rDropDown ID="ddl_tipo_utente_g" runat="server" CssClass="form-control" Form_Vertical="true" />
+                                                </div>
+                                                <div class="col_half" style="margin-bottom: 0px;" id="div_ruolo_e">
+                                                    <cc:rDropDown ID="ddl_tipo_utente_e" runat="server" CssClass="form-control" Form_Vertical="true" />
                                                 </div>
                                                 <div class="col_half col_last" style="margin-bottom: 0px;" id="div_nazione">
                                                     <cc:rDropDown ID="ddl_nazionalita" runat="server" CssClass="form-control" 
@@ -257,6 +260,7 @@
         var my_tab = 0;
 
         $(document).ready(function () {
+            $('#div_ruolo_g').hide(); 
             //Init_Tab();
             //Sys.WebForms.PageRequestManager.getInstance().add_endRequest(endRequestHandler);
         });

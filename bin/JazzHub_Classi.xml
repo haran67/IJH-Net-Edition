@@ -6,11 +6,7 @@ JazzHub_Classi
 </name>
 </assembly>
 <members>
-<member name="T:JazzHub_Classi.Oggetti.Vs_ricerca_globale_utenti_Base">
-	<summary>
- Classe utilizzata per l'astrazione dei dati della tabella VS_RICERCA_GLOBALE_UTENTI
- </summary>
-</member><member name="T:JazzHub_Classi.Controls.DDLReadOnly">
+<member name="T:JazzHub_Classi.Controls.DDLReadOnly">
 	<summary>
  DDL per la visualizzazione in readOnly
  </summary>
@@ -50,6 +46,10 @@ JazzHub_Classi
 </member><member name="T:JazzHub_Classi.Oggetti.Video_immagini_Base">
 	<summary>
  Classe utilizzata per l'astrazione dei dati della tabella VIDEO_IMMAGINI
+ </summary>
+</member><member name="T:JazzHub_Classi.Oggetti.Vs_ricerca_globale_utenti_Base">
+	<summary>
+ Classe utilizzata per l'astrazione dei dati della tabella VS_RICERCA_GLOBALE_UTENTI
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.Tab_profilo_pagamento_Base">
 	<summary>
@@ -201,6 +201,10 @@ JazzHub_Classi
 </member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.Campo_libero">
 	<summary>
  _Campo_libero 
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Tipologia">
+	<summary>
+ _Tipologia 
  </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Categoria">
 	<summary>
