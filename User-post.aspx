@@ -161,6 +161,7 @@
                             <i class="icon-amazon"></i>
                         </a>
                     </div>
+                    <hr>
                     <h4 style="margin-top: 40px" class="color" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-calendar3 i-vetrina nomargin"></i> 
                         <%=Lingua.CaricaLingua("lgl_user_post_eventi_programma")%></h4>
                     <div class="divider divider-rounded divider-center" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-calendar3" style="background-color: rgba(0,0,0,.1)"></i></div>
