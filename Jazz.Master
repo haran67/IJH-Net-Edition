@@ -191,12 +191,12 @@
                         </span>
                     </nav>
                 </div>
-                <div id="div_cerca" runat="server" style="visibility: hidden;">
+                <div id="div_cerca" class="div-cerca" runat="server" style="visibility: hidden;">
                     <div id="page-menu">
                         <div id="page-menu-wrap" class="center">
-                                <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'hidden');" style="position: absolute; bottom: -35px; background: #fff; line-height: 1em; font-size: 16px; padding: 15px; right: 0px; border-radius: 0 0 0 10px;">
-                                    <i class="icon-remove"></i>
-                                </a>
+                            <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'hidden');" style="position: absolute; bottom: -35px; background: #fff; line-height: 1em; font-size: 16px; padding: 15px; right: 0px; border-radius: 0 0 0 10px;">
+                                <i class="icon-remove"></i>
+                            </a>
                             <div class="container clearfix">
                                 <div class="col-md-5 nobottommargin">
                                     <div class="main-search notopmargin">
