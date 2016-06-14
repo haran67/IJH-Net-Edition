@@ -12,10 +12,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-
     <msg:Messaggio id="Mail" runat="server"></msg:Messaggio>
-
-    <section class="page-title">
+    <section class="page-title page-title-mini">
         <div class="container clearfix">
             <h1><asp:Literal ID="ltl_utente" runat="server"></asp:Literal></h1>
             <ol class="breadcrumb hidden">
