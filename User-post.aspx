@@ -143,7 +143,7 @@
                     <h4 class="color" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-vynil i-vetrina nomargin"></i> 
                         My Music</h4>
                     <div class="divider divider-rounded divider-center notopmargin" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-vynil" style="background-color: rgba(0,0,0,.1)"></i></div>
-                    <div class="clearfix" style="border-radius: 30px;padding: 10px;border: solid 1px #ddd; background: rgba(255,255,255,.5)">
+                    <div class="market-list clearfix" style="">
                         <a href="#" class="social-icon si-rounded si-outlined si-soundcloud nobottommargin" target="_blank">
                             <i class="icon-soundcloud"></i>
                             <i class="icon-soundcloud"></i>
@@ -156,7 +156,7 @@
                             <i class="icon-itunes"></i>
                             <i class="icon-itunes"></i>
                         </a>
-                        <a href="#" class="social-icon si-rounded si-outlined si-amazon nobottommargin" target="_blank">
+                        <a href="#" class="social-icon si-rounded si-outlined si-amazon nomargin" target="_blank">
                             <i class="icon-amazon"></i>
                             <i class="icon-amazon"></i>
                         </a>
