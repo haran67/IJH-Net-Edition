@@ -25,6 +25,11 @@
     filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", rgb(@stop, @stop, @stop), rgb(@start, @start, @start)));
 }
 
+.bg-transparent(@color, @alpha: 1) {
+  background: rgba( red(@color), green(@color), blue(@color), @alpha);
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Crete+Round:400,400italic);
@@ -280,12 +285,24 @@ serif;
     }
 }
 
+.title-market-list {
+    position: relative;
+    top: 18px;
+}
+
 .market-list {
     display: inline-block;
     border-radius: 30px;
     padding: 10px;
     border: solid 1px #ddd;
-    background: rgba(255,255,255,.5)
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    //background: rgba(255,255,255,.5);
+    //.bg-transparent(#fff,1);
+    .gradient(#fff,
+            #fff,
+            darken(#fff,
+            5));
+    margin-bottom: 40px;
 }
 
 .date-list {
@@ -337,6 +354,7 @@ h5 {
     height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 #page-menu {
