@@ -141,22 +141,22 @@
                 
                 <div class="sidebar col_last clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
                     <h4 class="color" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-vynil i-vetrina nomargin"></i> 
-                        My store</h4>
+                        My Music</h4>
                     <div class="divider divider-rounded divider-center notopmargin" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-vynil" style="background-color: rgba(0,0,0,.1)"></i></div>
-                    <div class="clearfix">
-                        <a href="#" class="social-icon si-rounded si-outlined si-soundcloud" target="_blank">
+                    <div class="clearfix" style="border-radius: 30px;padding: 10px;border: solid 1px #ddd; background: rgba(255,255,255,.5)">
+                        <a href="#" class="social-icon si-rounded si-outlined si-soundcloud nobottommargin" target="_blank">
                             <i class="icon-soundcloud"></i>
                             <i class="icon-soundcloud"></i>
                         </a>
-                        <a href="#" class="social-icon si-rounded si-outlined si-spotify" target="_blank">
+                        <a href="#" class="social-icon si-rounded si-outlined si-spotify nobottommargin" target="_blank">
                             <i class="icon-spotify"></i>
                             <i class="icon-spotify"></i>
                         </a>
-                        <a href="#" class="social-icon si-rounded si-outlined si-itunes" target="_blank">
+                        <a href="#" class="social-icon si-rounded si-outlined si-itunes nobottommargin" target="_blank">
                             <i class="icon-itunes"></i>
                             <i class="icon-itunes"></i>
                         </a>
-                        <a href="#" class="social-icon si-rounded si-outlined si-amazon" target="_blank">
+                        <a href="#" class="social-icon si-rounded si-outlined si-amazon nobottommargin" target="_blank">
                             <i class="icon-amazon"></i>
                             <i class="icon-amazon"></i>
                         </a>
