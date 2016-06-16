@@ -88,7 +88,7 @@
                     <nav id="primary-menu">
                         <ul>
                             <li>
-                                <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'visible').css('height', '160px')">
+                                <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'visible').css('height', '280px')">
                                     <%=Lingua.CaricaLingua("lgl_menu_cerca")%>
                                 </a>
                             </li>
@@ -193,34 +193,32 @@
                 </div>
                 <div id="div_cerca" class="div-cerca" runat="server" style="overflow: hidden; visibility: hidden; height: 0;">
                     <div id="page-menu">
-                        <div id="page-menu-wrap" class="center">
+                        <div id="page-menu-wrap" class="center" data-class-lg="search_choice_bg" data-class-md="search_choice_bg" data-class-sm="" data-class-xs="" data-class-xxs="">
                             <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'hidden').css('height', '0px');" style="position: absolute; bottom: -35px; background: #fff; line-height: 1em; font-size: 16px; padding: 15px; right: 0px; border-radius: 0 0 0 10px;">
                                 <i class="icon-remove"></i>
                             </a>
                             <div class="container clearfix">
                                 <div class="col-md-5 nobottommargin">
                                     <div class="main-search notopmargin">
-                                        <div style="margin-left: auto; margin-right: auto; float: none">
-                                            <input type="hidden" id="ddl_ricerca_video" class="form-control select2" runat="server">
-                                            <asp:LinkButton ID="btn_cerca_video" runat="server" CssClass="btn-main-search">
-                                                <i class="icon-search"></i>
-                                            </asp:LinkButton>
-                                        </div>
+                                        <input type="hidden" id="ddl_ricerca_video" class="form-control select2" runat="server">
+                                        <asp:LinkButton ID="btn_cerca_video" runat="server" CssClass="btn-main-search">
+                                            <i class="icon-search"></i>
+                                        </asp:LinkButton>
                                     </div>
                                 </div>
-                                <div class="col-md-2 center oppure nothidden" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden" style="height: 100px;">
+                                <div class="col-md-2 center oppure nothidden" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
+<!--
                                     <div class="vertical-middle" style="position: absolute; top: 25%; width: 100%; padding-top: 0px; padding-bottom: 0px;">
                                         <span class="small" style="border: none; background: #fff; position: relative; top: -17px;">oppure</span>
                                     </div>
+-->
                                 </div>
                                 <div class="col-md-5 nobottommargin">
                                     <div class="main-search notopmargin">
-                                        <div style="margin-left: auto; margin-right: auto; float: none">
-                                            <input type="hidden" id="ddl_ricerca_utenti" class="form-control select2" runat="server">
-                                            <asp:LinkButton ID="btn_cerca_utenti" runat="server" CssClass="btn-main-search">
-                                                <i class="icon-search"></i>
-                                            </asp:LinkButton>
-                                        </div>
+                                        <input type="hidden" id="ddl_ricerca_utenti" class="form-control select2" runat="server">
+                                        <asp:LinkButton ID="btn_cerca_utenti" runat="server" CssClass="btn-main-search">
+                                            <i class="icon-search"></i>
+                                        </asp:LinkButton>
                                     </div>
                                 </div>
                             </div>

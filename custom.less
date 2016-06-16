@@ -232,6 +232,18 @@ serif;
 
 
 /* custom helper class */
+
+.search_choice_bg {
+    background: #fff url('images/custom/search_choice_bg.jpg') no-repeat center center
+}
+
+.main-search {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
 .main.search input {
     width: 100%;
 }
@@ -987,11 +999,21 @@ body > form {
     background-size: cover;
 }
 
-.main-search {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
+input[type='text'], input[type='password'], select {
+    border: none;
+    border-bottom: dotted 1px rgba(0, 0, 0, .35);
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea {
+    border: dotted 1px rgba(0, 0, 0, .35) !important;
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .custom-input {
@@ -1001,7 +1023,7 @@ body > form {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-bottom: dotted 1px #ccc;
+    border-bottom: dotted 1px rgba(0,0,0,.35);
     //    text-align: center;
     //    &::-webkit-input-placeholder { text-align: center; }
     //    &::-moz-placeholder { text-align: center; } /* firefox 19+ */
