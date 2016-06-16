@@ -54,13 +54,13 @@
             <h4 class="color">People</h4>
             <div class="divider divider-rounded divider-center divider-custom">
                 <asp:LinkButton ID="btn_search_guest" runat="server">
-                    <i class="icon-coffee2" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest" id="icon_guest" runat="server"></i>
+                    <i class="icon-fontello-guest" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest" id="icon_guest" runat="server"></i>
                 </asp:LinkButton>
                 <asp:LinkButton ID="btn_search_expo" runat="server">
-                    <i class="icon-facetime-video" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo" id="icon_expo" runat="server"></i>
+                    <i class="icon-fontello-expo" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo" id="icon_expo" runat="server"></i>
                 </asp:LinkButton>
                 <asp:LinkButton ID="btn_search_visitor" runat="server">
-                    <i class="icon-eye-open" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor" id="icon_visit" runat="server"></i>
+                    <i class="icon-fontello-visitor" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor" id="icon_visit" runat="server"></i>
                 </asp:LinkButton>
             </div>
 <!--            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-user4" style="background-color: #e6e6e6"></i></div>-->
@@ -86,9 +86,9 @@
                                             </span>
                                         </div>
                                         <div class="user-profile-type user-profile-type-list">
-                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-facetime-video" id="i_expo" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
-                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-eye-open" id="i_view" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor"></i> 
-                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-coffee2" id="i_guest" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
+                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-fontello-expo" id="i_expo" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo"></i> 
+                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-fontello-visitor" id="i_view" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor"></i> 
+                                            <i class="i-circled i-small nomargin nofloat inline-block box-shadow-custom icon-fontello-guest" id="i_guest" runat="server" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest"></i>
                                         </div>
                                     </div>
                                 </asp:LinkButton>
@@ -108,28 +108,6 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
-            <div class="col_full hidden">
-                <ul class="pagination">
-                    <li><a href="#"><<</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">>></a></li>
-                </ul>
             </div>
         </div>
     </div>
