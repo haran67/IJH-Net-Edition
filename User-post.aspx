@@ -140,26 +140,38 @@
                 </div>
                 
                 <div class="sidebar col_last clearfix" data-class-lg="tleft" data-class-md="tleft" data-class-sm="center" data-class-xs="center" data-class-xxs="center">
-                    <h4 class="color title-market-list" data-class-lg="nothidden fleft" data-class-md="nothidden fleft" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-vynil i-vetrina nomargin"></i> 
-                        My Music</h4>
-                    <div class="divider divider-rounded divider-center notopmargin" data-class-lg="hidden" data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden"><i class="icon-vynil" style="background-color: rgba(0,0,0,.1)"></i></div>
-                    <div class="market-list clearfix" data-class-lg="fright" data-class-md="fright" data-class-sm="" data-class-xs="" data-class-xxs="">
-                        <a href="#" class="social-icon si-rounded si-colored si-soundcloud nobottommargin" target="_blank" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Ascolta su Soundcloud" >
-                            <i class="icon-soundcloud"></i>
-                            <i class="icon-soundcloud"></i>
-                        </a>
-                        <a href="#" class="social-icon si-rounded si-colored si-spotify nobottommargin" target="_blank" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Ascolta su Spotify" >
-                            <i class="icon-spotify"></i>
-                            <i class="icon-spotify"></i>
-                        </a>
-                        <a href="#" class="social-icon si-rounded si-colored si-itunes nobottommargin" target="_blank" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Acquista su iTunes" >
-                            <i class="icon-itunes"></i>
-                            <i class="icon-itunes"></i>
-                        </a>
-                        <a href="#" class="social-icon si-rounded si-colored si-amazon nomargin" target="_blank" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Acquista su Amazon" >
-                            <i class="icon-amazon"></i>
-                            <i class="icon-amazon"></i>
-                        </a>
+                    <div id="div_my_music" runat="server">
+                        <h4 class="color title-market-list" data-class-lg="nothidden fleft" data-class-md="nothidden fleft"
+                            data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
+                            <i class="i-circled i-light i-small icon-vynil i-vetrina nomargin"></i>
+                            <%=Lingua.CaricaLingua("lgl_user_post_mymusic")%></h4>
+                        <div class="divider divider-rounded divider-center notopmargin" data-class-lg="hidden"
+                            data-class-md="hidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
+                            <i class="icon-vynil" style="background-color: rgba(0,0,0,.1)"></i>
+                        </div>
+                        <div class="market-list clearfix" data-class-lg="fright" data-class-md="fright" data-class-sm=""
+                            data-class-xs="" data-class-xxs="">
+                            <a href="#" class="social-icon si-rounded si-colored si-soundcloud nobottommargin"
+                                target="_blank" data-container="body" data-trigger="hover" data-toggle="popover"
+                                data-placement="bottom" data-content="Ascolta su Soundcloud" id="a_my_music_soundcloud" runat="server">
+                                <i class="icon-soundcloud">
+                                </i><i class="icon-soundcloud"></i></a>
+                            <a href="#" class="social-icon si-rounded si-colored si-spotify nobottommargin"
+                                target="_blank" data-container="body" data-trigger="hover" data-toggle="popover"
+                                data-placement="bottom" data-content="Ascolta su Spotify" id="a_my_music_spotify" runat="server">
+                                <i class="icon-spotify">
+                                </i><i class="icon-spotify"></i></a>
+                            <a href="#" class="social-icon si-rounded si-colored si-itunes nobottommargin"
+                                target="_blank" data-container="body" data-trigger="hover" data-toggle="popover"
+                                data-placement="bottom" data-content="Acquista su iTunes" id="a_my_music_itunes" runat="server">
+                                <i class="icon-itunes">
+                                </i><i class="icon-itunes"></i></a>
+                            <a href="#" class="social-icon si-rounded si-colored si-amazon nomargin"
+                                target="_blank" data-container="body" data-trigger="hover" data-toggle="popover"
+                                data-placement="bottom" data-content="Acquista su Amazon" id="a_my_music_amazon" runat="server">
+                                <i class="icon-amazon">
+                                </i><i class="icon-amazon"></i></a>
+                        </div>
                     </div>
                     <div class="clear"></div>
                     <h4 class="color" style="margin-bottom: 20px;" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden"><i class="i-circled i-light i-small icon-calendar3 i-vetrina nomargin"></i> 

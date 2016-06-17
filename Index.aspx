@@ -116,7 +116,7 @@
     <div class="content-wrap nopadding standard-portfolio home">
         
         <!-- ricerca -->
-        <div class="section nomargin nopadding center">
+        <div class="section nomargin nopadding center hidden">
             <section class="nomargin nopadding" style="padding: 40px 0 !important; background: #fff"  data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="nothidden" data-class-xs="nothidden" data-class-xxs="nothidden">
                 <div class="container clearfix">
                     <div class="main-search notopmargin">

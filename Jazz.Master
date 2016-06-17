@@ -209,7 +209,7 @@
                                 <div class="col-md-2 center oppure nothidden" data-class-lg="nothidden" data-class-md="nothidden" data-class-sm="hidden" data-class-xs="hidden" data-class-xxs="hidden">
 <!--
                                     <div class="vertical-middle" style="position: absolute; top: 25%; width: 100%; padding-top: 0px; padding-bottom: 0px;">
-                                        <span class="small" style="border: none; background: #fff; position: relative; top: -17px;">oppure</span>
+                                        <span class="small" style="border: none; background: #fff; position: relative; top: -17px;"><%=Lingua.CaricaLingua("lgl_master_oppure")%></span>
                                     </div>
 -->
                                 </div>

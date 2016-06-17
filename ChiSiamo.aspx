@@ -47,7 +47,7 @@
                         <h4>
                             <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_01")%>
                         </h4>
-                        <h4>
+                        <h4 class="hidden">
                             - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_01")%><br>
                             - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_02")%><br>
                             - <%=Lingua.CaricaLingua("lgl_chisiamo_opportunita_descrizione_list_03")%><br>
@@ -88,7 +88,7 @@
                                 <span><%=Lingua.CaricaLingua("lgl_chisiamo_iscrizione_valida")%></span>
                             </div>
                             <div class="pricing-price">
-                                <span class="price-unit">&euro;</span>9,99<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
+                                <span class="price-unit">&euro;</span>5,00<span class="price-tenure">/<%=Lingua.CaricaLingua("lgl_chisiamo_anno")%></span>
                             </div>
                             <div class="pricing-features">
                                 <ul>

@@ -7,7 +7,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div id="page-menu">
+    <div id="page-menu" class="box-shadow-custom hidden">
         <div id="page-menu-wrap">
             <div class="container clearfix">
                 <div class="menu-title hidden">

@@ -206,6 +206,14 @@ JazzHub_Classi
 	<summary>
  _Tipologia 
  </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Citta">
+	<summary>
+ _Citta 
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Nazione">
+	<summary>
+ _Nazione 
+ </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Categoria">
 	<summary>
  _Categoria 
