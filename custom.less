@@ -55,6 +55,7 @@ serif;
 @screen-sm-min : 768px;
 @screen-md-min : 992px;
 @screen-lg-min : 1200px;
+
 @theme-color : #1e2630;
 @heading-color: @theme-color;
 @menu-base-color: @theme-color;
@@ -64,6 +65,8 @@ serif;
 @blue : #2C5654;
 @lines : #DDDDDD;
 @grey : #7e7e7e;
+@active-like:  #008ECA;
+
 @postcontent: 760px;
 @postcontent-margin: 40px;
 @sidebar: 1140px - (@postcontent + @postcontent-margin);
@@ -1132,6 +1135,10 @@ textarea {
     z-index: 1;
     background: url('images/grid.png') repeat;
     background-color: fade(@theme-color, 50%);
+}
+
+.active-like {
+    background-color: @active-like;
 }
 
 .like-counter {
