@@ -21,7 +21,7 @@
                 <div class="feature-box fbox-circled fbox-effect fbox-light like-counter">
                     <asp:UpdatePanel ID="upd_likes" runat="server">
                         <ContentTemplate>
-                            <div class="fbox-icon" style="top:initial; left: 10px; ">
+                            <div class="fbox-icon" style="top:initial; left: 10px;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="right" data-content="Click to like/unlike">
                                 <asp:LinkButton id="btn_like" runat="server">
                                     <i class="icon-thumbs-up"></i>
                                 </asp:LinkButton>
@@ -220,6 +220,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="script" runat="server">
-    <script type="text/javascript">
+    <script type="text/javascript" >
+        $('[data-toggle=popover]').popover();
     </script>
 </asp:Content>
