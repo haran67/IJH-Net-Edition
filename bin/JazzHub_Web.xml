@@ -134,6 +134,22 @@ icon_visit control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.User_list.btn_search_all">
+	<summary>
+btn_search_all control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.User_list.i1">
+	<summary>
+i1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.User_list.ltl_nessun_risultato">
 	<summary>
 ltl_nessun_risultato control.

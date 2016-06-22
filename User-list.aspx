@@ -62,6 +62,9 @@
                 <asp:LinkButton ID="btn_search_visitor" runat="server">
                     <i class="icon-fontello-visitor" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor" id="icon_visit" runat="server"></i>
                 </asp:LinkButton>
+                <asp:LinkButton ID="btn_search_all" runat="server">
+                    <i class=" icon-fontello-world" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="All" id="i1" runat="server"></i>
+                </asp:LinkButton>
             </div>
 <!--            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-user4" style="background-color: #e6e6e6"></i></div>-->
             <h4 style="font-weight: 400;" class="color"><asp:Literal ID="ltl_nessun_risultato" runat="server"></asp:Literal></h4>

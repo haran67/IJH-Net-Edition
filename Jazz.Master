@@ -94,11 +94,15 @@
                             </li>
 
                             <li>
-                                <a href="/User-list.aspx" id="a_user" runat="server"><%=Lingua.CaricaLingua("lgl_menu_utenti")%></a>
+                                <asp:LinkButton ID="a_user" runat="server">
+                                    <%=Lingua.CaricaLingua("lgl_menu_utenti")%>
+                                </asp:LinkButton> 
                             </li>
 
                             <li>
-                                <a href="/Video-list.aspx" id="a_video" runat="server"><%=Lingua.CaricaLingua("lgl_menu_video")%></a>
+                                <asp:LinkButton ID="a_video" runat="server">
+                                    <%=Lingua.CaricaLingua("lgl_menu_video")%>
+                                </asp:LinkButton> 
                             </li>
 
                             <li class="hidden">
