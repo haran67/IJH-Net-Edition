@@ -57,13 +57,13 @@
                     <i class="icon-fontello-guest" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Guest" id="icon_guest" runat="server"></i>
                 </asp:LinkButton>
                 <asp:LinkButton ID="btn_search_expo" runat="server">
-                    <i class="icon-fontello-expo" style="background-color: #e6e6e6; cursor: pointer" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo" id="icon_expo" runat="server"></i>
+                    <i class="icon-fontello-expo" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Expo" id="icon_expo" runat="server"></i>
                 </asp:LinkButton>
                 <asp:LinkButton ID="btn_search_visitor" runat="server">
                     <i class="icon-fontello-visitor" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="Visitor" id="icon_visit" runat="server"></i>
                 </asp:LinkButton>
                 <asp:LinkButton ID="btn_search_all" runat="server">
-                    <i class=" icon-fontello-world" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="All" id="i1" runat="server"></i>
+                    <i class="icon-fontello-asterisk" style="background-color: #e6e6e6;" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="All" id="i1" runat="server"></i>
                 </asp:LinkButton>
             </div>
 <!--            <div class="divider divider-rounded divider-center divider-custom"><i class="icon-user4" style="background-color: #e6e6e6"></i></div>-->
