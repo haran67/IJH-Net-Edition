@@ -526,6 +526,22 @@ img_logo_r control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:JazzHub_Web.Jazz.li_about">
+	<summary>
+li_about control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Jazz.a_about">
+	<summary>
+a_about control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:JazzHub_Web.Jazz.a_user">
 	<summary>
 a_user control.
@@ -577,14 +593,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Jazz.a_home">
 	<summary>
 a_home control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:JazzHub_Web.Jazz.a_about">
-	<summary>
-a_about control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2673,6 +2681,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:JazzHub_Web.Video_post.upd_likes">
 	<summary>
 upd_likes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:JazzHub_Web.Video_post.div_btn_like">
+	<summary>
+div_btn_like control.
 </summary>
 	<remarks>
 Auto-generated field.

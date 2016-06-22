@@ -87,6 +87,9 @@
                     </div>
                     <nav id="primary-menu">
                         <ul>
+                            <li id="li_about" runat="server">
+                                <a href="/chisiamo.aspx" id="a_about" runat="server"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
+                            </li>
                             <li>
                                 <a href="javascript:$('#<%=div_cerca.ClientId%>').css('visibility', 'visible').css('height', '280px')">
                                     <%=Lingua.CaricaLingua("lgl_menu_cerca")%>
@@ -121,9 +124,6 @@
                             <!--
                             <li>
                                 <a href="/index.aspx" id="a_home" runat="server"><%=Lingua.CaricaLingua("lgl_menu_home")%></a>
-                            </li>
-                            <li>
-                                <a href="/chisiamo.aspx" id="a_about" runat="server"><%=Lingua.CaricaLingua("lgl_menu_about")%></a>
                             </li>
                             <li>
                                 <a href="/partner.aspx" id="a_partner" runat="server"><%=Lingua.CaricaLingua("lgl_menu_partner")%></a>
