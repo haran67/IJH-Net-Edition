@@ -61,14 +61,14 @@
                                                     <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_e" runat="server" GroupName="tipo_utente" Checked="true"
-                                                                OnClick="$('#div_ruolo_e').show('slow'); $('#div_alert_guest').hide('slow');" />
+                                                                OnClick="setRuolo('E');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_espositore")%>
                                                         </label>
                                                     </div>
                                                     <div class="radio text-lg-left text-md-left text-sm-left  text-xs-center" style="margin: 0px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_v" runat="server" GroupName="tipo_utente" Checked="false"
-                                                                OnClick="$('#div_ruolo_g').hide('slow'); $('#div_ruolo_e').hide('slow'); $('#div_alert_guest').hide('slow'); $('#div_fattura').show('slow');" />
+                                                                OnClick="setRuolo('V');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_visitatore")%>
                                                         </label>
                                                     </div>
@@ -76,7 +76,7 @@
                                                         margin-bottom: 10px;">
                                                         <label>
                                                             <asp:RadioButton ID="rdb_tipo_utente_g" runat="server" GroupName="tipo_utente" Checked="false"
-                                                                OnClick="$('#div_alert_guest').show('slow'); $('#div_ruolo_e').hide('slow'); $('#div_ruolo_g').show('slow'); $('#div_fattura').hide('slow');" />
+                                                                OnClick="setRuolo('G');" />
                                                             <%=Lingua.CaricaLingua("lgl_register_utente_guest")%>
                                                         </label>
                                                     </div>
@@ -256,6 +256,19 @@
             alert(error);
         }
 
+        function setRuolo(tipo) {
+            switch (tipo) {
+                case "E":
+                    $('#div_ruolo_e').show('slow'); $('#div_ruolo_g').hide('slow'); $('#div_alert_guest').hide('slow'); $('#div_fattura').show('slow');
+                    break;
+                case "V":
+                    $('#div_ruolo_g').hide('slow'); $('#div_ruolo_e').hide('slow'); $('#div_alert_guest').hide('slow'); $('#div_fattura').show('slow');
+                    break;
+                case "G":
+                    $('#div_alert_guest').show('slow'); $('#div_ruolo_e').hide('slow'); $('#div_ruolo_g').show('slow'); $('#div_fattura').hide('slow');
+                    break;
+            }
+        }
 
         var my_tab = 0;
 
