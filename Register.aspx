@@ -132,10 +132,10 @@
                                                 </div>
                                                 <div class="col_full">
                                                     <div class="toggle" id="div_fattura">
-                                                        <div class="togglet tleft" onclick="set_fatturazione()">
+                                                        <div class="togglet tleft" > <!-- onclick="set_fatturazione()" -->
                                                             <i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i><%=Lingua.CaricaLingua("lgl_register_bisogno_fattura")%>
                                                         </div>
-                                                        <div class="togglec noleftpadding" style="display: none;" id="div_togglec" runat="server">
+                                                        <div class="noleftpadding" id="div_togglec" runat="server"> <!--togglec style="display: none;" -->
                                                             <div class="col_half nobottommargin">
                                                                 <div class="text-lg-left text-md-left text-sm-left  text-xs-center">
                                                                     <label class="noleftpadding">
