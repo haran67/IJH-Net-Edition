@@ -70,6 +70,9 @@
                     <a href="#" class="btn-search"><i class="icon-search"></i></a>
                 </div>
             </div>
+            <ol class="breadcrumb">
+                <li><a href="" ID="" style="background:#5b9254; padding: 5px 10px; color: #fff; font-weight: 600; border-radius: 3px">< Torna alla ricerca</a></li>
+            </ol>
         </div>
     </section>
     <asp:UpdatePanel ID="upd_header" runat="server">

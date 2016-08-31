@@ -18,6 +18,7 @@
     <section id="content">
         <div class="content-wrap notoppadding">
             <div class="section notopmargin nopadding" style="background: #000">
+                <div style="position: absolute; bottom: 150px;left: 0; z-index: 5"><a href="#ß" ID="" style="background:#5b9254; padding: 5px 10px; color: #fff; font-weight: 600; border-radius: 3px">< Torna alla ricerca</a></div>
                 <div class="feature-box fbox-circled fbox-effect fbox-light like-counter">
                     <asp:UpdatePanel ID="upd_likes" runat="server">
                         <ContentTemplate>
