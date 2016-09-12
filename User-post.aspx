@@ -71,7 +71,7 @@
                 </div>
             </div>
             <ol class="breadcrumb">
-                <li><a href="" ID="" style="background:#5b9254; padding: 5px 10px; color: #fff; font-weight: 600; border-radius: 3px">< Torna alla ricerca</a></li>
+                <li><a href="User-list.aspx" style="background:#5b9254; padding: 5px 10px; color: #fff; font-weight: 600; border-radius: 3px"><%=Lingua.CaricaLingua("lgl_post_torna_ricerca")%></a></li>
             </ol>
         </div>
     </section>
