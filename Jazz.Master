@@ -60,6 +60,11 @@
     <!--<script type="text/javascript" src="/js/less.min.js"></script>-->
     <!-- Document Title
 	============================================= -->
+
+    <script type="text/javascript">
+        
+    </script>
+
     <title>Italian Jazz Hub</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>

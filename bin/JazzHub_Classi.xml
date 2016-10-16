@@ -122,61 +122,17 @@ JazzHub_Classi
 	<summary>
  TextBox per la visualizzazione della Data
  </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.OrderBy">
-	<summary>
- OrderBy.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Pagina">
-	<summary>
- Pagina.
- </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto.ElementiXPagina">
 	<summary>
  ElementiXPagina.
  </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Reparto_Key">
+</member><member name="P:JazzHub_Classi.Oggetti.Dto.Cliente">
 	<summary>
- Reparto_Key.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Sottoreparto_Key">
-	<summary>
- Sottoreparto_Key.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Marchio_Key">
-	<summary>
- Marchio_Key.
+ _Cliente.
  </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto.Attivo">
 	<summary>
  Attivo.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.In_Promo">
-	<summary>
- In_Promo.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.In_Consegna_Gratis">
-	<summary>
- In_Consegna_Gratis.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Outlet">
-	<summary>
- Outlet.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Esporta_Prezzi">
-	<summary>
- Esporta_Prezzi.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Esporta_Amazon">
-	<summary>
- Esporta_Amazon.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Disponibile">
-	<summary>
- Disponibile.
- </summary>
-</member><member name="P:JazzHub_Classi.Oggetti.Dto.Cliente">
-	<summary>
- Cliente.
  </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto.Stato_Griglia">
 	<summary>
@@ -202,6 +158,14 @@ JazzHub_Classi
 	<summary>
  _Campo_libero 
  </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.Pagina">
+	<summary>
+ Pagina.
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_Video.ElementiXPagina">
+	<summary>
+ ElementiXPagina.
+ </summary>
 </member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Tipologia">
 	<summary>
  _Tipologia 
@@ -225,6 +189,14 @@ JazzHub_Classi
 </member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Campo_libero">
 	<summary>
  _Campo_libero 
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.Pagina">
+	<summary>
+ Pagina.
+ </summary>
+</member><member name="P:JazzHub_Classi.Oggetti.Dto_Filtri_User.ElementiXPagina">
+	<summary>
+ ElementiXPagina.
  </summary>
 </member><member name="T:JazzHub_Classi.Oggetti.ErrorePagina">
 	<summary>
